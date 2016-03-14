@@ -1,42 +1,5 @@
 classdef forge < handle
     properties
-        vote_template = struct(...
-            'rollcall_id',{},...
-            'description',{},...
-            'yes',{},...
-            'no',{},...
-            'abstain',{},...
-            'total_votes',{},...
-            'yes_percentage',{},...
-            'yes_list',{},...
-            'no_list',{},...
-            'abstain_list',{});
-        chamber_template = struct(...
-            'committee_id',{},... % make sure multiple comittees are possible
-            'committee_votes',{},...
-            'chamber_votes',{},...
-            'passed',{},...
-            'final_yes',{},...
-            'final_no',{},...
-            'final_abstain',{},...
-            'final_yes_percentage',{});
-        % final committe and final chamber vote
-        bill_template = struct(...
-            'bill_id',{},...
-            'bill_number',{},...
-            'title',{},...
-            'issue_category',{},...
-            'sponsors',{},... % first vs co, also authors
-            'date_introduced',{},...
-            'date_of_last_vote',{},...
-            'house_data',{},...
-            'passed_house',{},...
-            'senate_data',{},...
-            'passed_senate',{},...
-            'passed_both',{},...
-            'signed_into_law',{});
-        % originated in house/senate?
-        
         people
         bills
         history
@@ -46,9 +9,25 @@ classdef forge < handle
         
         bill_set
         
-        party_key = containers.Map([0,1],{'Democrat','Republican'})
-        vote_key = containers.Map([1,2,3,4],{'yea','nay','absent','no vote'});
-        issue_key = containers.Map([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],{...
+        chamber_leadership_key % key for leadership codes
+        committee_key
+        committee_leadership_key % key for committee leadership
+        
+        state
+        data_directory
+        
+        gif_directory
+        histogram_directory
+        
+        senate_size
+        house_size
+    end
+    
+    properties (Constant)
+        PARTY_KEY = containers.Map({'0','1','Democrat','Republican'},{'Democrat','Republican',0,1})
+        VOTE_KEY  = containers.Map({'1','2','3','4','yea','nay','absent','no vote'},{'yea','nay','absent','no vote',1,2,3,4});
+        
+        ISSUE_KEY = containers.Map([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],{...
             'Agriculture',...
             'Commerce, Business, Economic Development',...
             'Courts & Judicial',...
@@ -65,16 +44,6 @@ classdef forge < handle
             'Utilities, Energy & Telecommunications',...
             'Ways & Means, Appropriations',...
             'Other'});
-        
-        chamber_leadership_key % key for leadership codes
-        committee_key
-        committee_leadership_key % key for committee leadership
-        
-        state
-        data_directory
-        
-        gif_directory
-        histogram_directory
     end
     
     methods
@@ -84,6 +53,9 @@ classdef forge < handle
             
             obj.gif_directory = 'outputs/gif';
             obj.histogram_directory = 'outputs/histograms';
+            
+            obj.senate_size = 50;
+            obj.house_size = 100;
             
             if recompute ||  exist('saved_data.mat','file') ~= 2
                 
@@ -103,7 +75,7 @@ classdef forge < handle
                 
                 for i = 1:length(bills_create.bill_id)
                     
-                    template = obj.bill_template;
+                    template = obj.getBillTemplate();
                     
                     template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
                     template.bill_number = bills_create{i,'bill_number'};
@@ -113,51 +85,18 @@ classdef forge < handle
                     
                     template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
                     
-                    bill_history = history_create(bills_create{i,'bill_id'} == history_create.bill_id,:);
-                    if ~isempty(bill_history)
-                        template.history = bill_history;
-                        
-                        % date introduced?
-                        % date of last vote?
-                    end
+                    template.history = history_create(bills_create{i,'bill_id'} == history_create.bill_id,:);
+                    % date introduced?
+                    % date of last vote?
                     
                     bill_rollcalls = rollcalls_create(rollcalls_create.bill_id == bills_create{i,'bill_id'},:);
                     
                     % ------------------ House Data --------------------- %
                     house_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
                     
-                    house_data = {}; %#ok<NASGU>
                     if ~isempty(house_rollcalls)
                         
-                        house_data = obj.chamber_template;
-                        % house_data.committee_id = ??? how do I set this?
-                        
-                        committee_votes = {};
-                        chamber_votes = {};
-                        for j = 1:size(house_rollcalls,1);
-                            if house_rollcalls{j,'total_vote'} < 50; %#ok<BDSCA>
-                                if isempty(committee_votes)
-                                    committee_votes = house_rollcalls(j,:);
-                                else
-                                    committee_votes = [committee_votes ; house_rollcalls(j,:)];  %#ok<AGROW>
-                                end
-                            else % full chamber
-                                if isempty(chamber_votes)
-                                    chamber_votes = house_rollcalls(j,:);
-                                else
-                                    chamber_votes = [chamber_votes ; house_rollcalls(j,:)];  %#ok<AGROW>
-                                end
-                            end
-                        end
-
-                        house_data(end+1).committee_votes = committee_votes; %#ok<AGROW>
-                        house_data.chamber_votes = chamber_votes;
-                        if ~isempty(chamber_votes)
-                            house_data.final_yes = chamber_votes{end,'yea'};
-                            house_data.final_no = chamber_votes{end,'nay'};
-                            house_data.final_abstain = chamber_votes{end,'nv'};
-                            house_data.final_yes_percentage = chamber_votes{end,'yea'};
-                        end
+                        house_data = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*0.6);
                         
                         template.house_data = house_data;
                         template.passed_house = (house_data.final_yes_percentage > 0.5);
@@ -166,36 +105,9 @@ classdef forge < handle
                     % ------------------ Senate Data -------------------- %
                     senate_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
                     
-                    senate_data = {}; %#ok<NASGU>
                     if ~isempty(senate_rollcalls)
-                        senate_data = obj.chamber_template;
                         
-                        committee_votes = {};
-                        chamber_votes = {};
-                        for j = 1:size(senate_rollcalls,1);
-                            if senate_rollcalls{j,'total_vote'} < 50; %#ok<BDSCA>
-                                if isempty(committee_votes)
-                                    committee_votes = senate_rollcalls(j,:);
-                                else
-                                    committee_votes = [committee_votes ; senate_rollcalls(j,:)];  %#ok<AGROW>
-                                end
-                            else % full chamber
-                                if isempty(chamber_votes)
-                                    chamber_votes = senate_rollcalls(j,:);
-                                else
-                                    chamber_votes = [chamber_votes ; senate_rollcalls(j,:)];  %#ok<AGROW>
-                                end
-                            end
-                        end
-                        
-                        senate_data(end+1).committee_votes = committee_votes; %#ok<AGROW>
-                        senate_data.chamber_votes = chamber_votes;
-                        if ~isempty(chamber_votes)
-                            senate_data.final_yes = chamber_votes{end,'yea'};
-                            senate_data.final_no = chamber_votes{end,'nay'};
-                            senate_data.final_abstain = chamber_votes{end,'nv'};
-                            senate_data.final_yes_percentage = chamber_votes{end,'yea'};
-                        end
+                        senate_data = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*0.6);
                         
                         template.senate_data = senate_data;
                         template.passed_senate = (senate_data.final_yes_percentage > 0.5);
@@ -207,40 +119,6 @@ classdef forge < handle
                         template.passed_both = 0;
                     end
                     % signed into law?
-                    
-%                     if ~isempty(house_data) || ~isempty(senate_data)
-%                         keyboard
-%                     end
-%                     
-%                     'house_data',{},...
-%                         'passed_house',{},...
-%                         'senate_data',{},...
-%                         'passed_senate',{},...
-%                         'passed_both',{},...
-%                         'signed_into_law',{});
-%                     
-                    %                     chamber_template = struct(...
-                    %                         'committee_id',{},... % make sure multiple comittees are possible
-                    %                         'committee_votes',{},...
-                    %                         'chamber_votes',{},...
-                    %                         'passed',{},...
-                    %                         'final_yes',{},...
-                    %                         'final_no',{},...
-                    %                         'final_abstain',{},...
-                    %                         'final_yes_percentage',{});
-                    
-                    
-                    %                     'issue_category',{},...
-                    %                         'sponsors',{},... % first vs co, also authors
-                    %                         'date_introduced',{},...
-                    %                         'date_of_last_vote',{},...
-                    %                         'house_data',{},...
-                    %                         'passed_house',{},...
-                    %                         'senate_data',{},...
-                    %                         'passed_senate',{},...
-                    %                         'passed_both',{},...
-                    %                         'signed_into_law',{});
-                    %
                     
                     bill_set_create(bills_create{i,'bill_id'}) = template;
                 end
@@ -274,7 +152,7 @@ classdef forge < handle
             % senate and the house
             % this might be an opportunity to bring in the as-yet
             % unused "history" sheet - from which it should be possible
-            % to mine primary vs secondary sponsors 
+            % to mine primary vs secondary sponsors
             
             % build in a key for each coded variable on both a bill and
             % person basis: {bill : issue, committee of origin } {person :
@@ -312,6 +190,65 @@ classdef forge < handle
                     end
                 end
             end
+        end
+        
+        function vote_structure = addRollcallVotes(obj,new_rollcall,new_votelist)
+            vote_structure.rollcall_id = new_rollcall.roll_call_id;
+            vote_structure.description   = new_rollcall.description;
+            vote_structure.date          = new_rollcall.date;
+            vote_structure.yea = new_rollcall.yea;
+            vote_structure.nay = new_rollcall.nay;
+            vote_structure.nv  = new_rollcall.nv;
+            vote_structure.total_vote  = new_rollcall.total_vote;
+            vote_structure.yes_percent = new_rollcall.yes_percent;
+            vote_structure.yes_list     = new_votelist{new_votelist.vote == obj.VOTE_KEY('yea'),'sponsor_id'};
+            vote_structure.no_list      = new_votelist{new_votelist.vote == obj.VOTE_KEY('nay'),'sponsor_id'};
+            vote_structure.abstain_list = new_votelist{new_votelist.vote == obj.VOTE_KEY('absent'),'sponsor_id'};
+        end
+        
+        function chamber_data = processChamberRollcalls(obj,chamber_rollcalls,votes_create,committee_threshold)
+            
+            chamber_data = {};
+            
+            % chammber_data.committee_id = ??? how do I set this?
+            
+            committee_votes = obj.getVoteTemplate();
+            if sum(chamber_rollcalls.total_vote < committee_threshold) > 0
+                committee_votes(sum(chamber_rollcalls.total_vote < committee_threshold)).rollcall_id = 1;
+            end
+            
+            chamber_votes = obj.getVoteTemplate();
+            if sum(chamber_rollcalls.total_vote >= committee_threshold)
+                chamber_votes(sum(chamber_rollcalls.total_vote >= committee_threshold)).rollcall_id = 1;
+            end
+
+            committee_vote_count = 0;
+            chamber_vote_count = 0;
+            for j = 1:size(chamber_rollcalls,1);
+                
+                specific_votes = votes_create(votes_create.roll_call_id == chamber_rollcalls{j,'roll_call_id'},:);
+                
+                if chamber_rollcalls{j,'total_vote'} < committee_threshold; %#ok<BDSCA>
+                    committee_vote_count = committee_vote_count + 1;
+                    committee_votes(committee_vote_count) = obj.addRollcallVotes(chamber_rollcalls(j,:),specific_votes);
+                else % full chamber
+                    chamber_vote_count = chamber_vote_count +1;
+                    chamber_votes(chamber_vote_count) = obj.addRollcallVotes(chamber_rollcalls(j,:),specific_votes);
+                end
+            end
+            
+            chamber_data(end+1).committee_votes = committee_votes;
+            chamber_data.chamber_votes = chamber_votes;
+            if ~isempty(chamber_votes)
+                chamber_data.final_yea = chamber_votes(end).yea;
+                chamber_data.final_nay = chamber_votes(end).nay;
+                chamber_data.final_nv = chamber_votes(end).nv;
+                chamber_data.final_total_vote = chamber_votes(end).total_vote;
+                chamber_data.final_yes_percentage = chamber_votes(end).yes_percent;
+            else
+                chamber_data.final_yes_percentage = -1;
+            end
+            
         end
         
     end
@@ -395,6 +332,52 @@ classdef forge < handle
                 waitbar(i/length(file_name),h,[num2str(round(100*i/length(file_name))),'% done']) ;
             end
             close(h);
+        end
+        
+        
+        function vote_template = getVoteTemplate()
+            vote_template = struct('rollcall_id',{},...
+                'description',{},...
+                'date',{},...
+                'yea',{},...
+                'nay',{},...
+                'nv',{},...
+                'total_vote',{},...
+                'yes_percent',{},...
+                'yes_list',{},...
+                'no_list',{},...
+                'abstain_list',{});
+        end
+        
+        function chamber_template = getChamberTemplate()
+            chamber_template = struct(...
+                'committee_id',{},... % make sure multiple comittees are possible
+                'committee_votes',{},...
+                'chamber_votes',{},...
+                'passed',{},...
+                'final_yes',{},...
+                'final_no',{},...
+                'final_abstain',{},...
+                'final_yes_percentage',{});
+            % final committe and final chamber vote
+        end
+        
+        function bill_template = getBillTemplate()
+            bill_template = struct(...
+                'bill_id',{},...
+                'bill_number',{},...
+                'title',{},...
+                'issue_category',{},...
+                'sponsors',{},... % first vs co, also authors
+                'date_introduced',{},...
+                'date_of_last_vote',{},...
+                'house_data',{},...
+                'passed_house',{},...
+                'senate_data',{},...
+                'passed_senate',{},...
+                'passed_both',{},...
+                'signed_into_law',{});
+            % originated in house/senate?
         end
     end
 end
