@@ -1,6 +1,5 @@
 function learningAlgorithm()
 
-
 % read in processed text data
 learning_materials = readtable('data\IN\undergrad\description_learning_materials.xlsx');
 
@@ -8,7 +7,7 @@ issue_codes = unique(learning_materials.issue_codes);
 description_text = cell(1,length(issue_codes))';
 weights = cell(1,length(issue_codes))';
 
-common_words = {'and' 'of' 'a' 'an' 'the' 'is' 'or' 'on' 'by' 'for' 'in' 'to' 'bill' 'resolution' 'with' 'various' 'maatters' 'program'};
+common_words = {'and' 'of' 'a' 'an' 'the' 'is' 'or' 'on' 'by' 'for' 'in' 'to' 'bill' 'resolution' 'with' 'various' 'matters' 'program' 'public'};
 
 master_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
     {'Agriculture','Commerce, Business, Economic Development',...
@@ -31,17 +30,6 @@ additional_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16]
     'Taxation Taxes Tax',''});
 
 learning_table = table(issue_codes,description_text,weights);
-
-% results_table = table;
-% 
-% iwv = 1.4:0.02:1.8;
-% awv = 0.6:0.02:1;
-% threshold = 0.15:0.05:0.75;
-
-% steps = 2;
-% iwv = linspace(0.75,2,steps);
-% awv = linspace(0.5,1,steps);
-% threshold = linspace(0,0.9,steps);
 
 data_storage = struct();
 data_storage.unique_text_store = cell(1,length(issue_codes));
@@ -94,33 +82,112 @@ for i = 1:length(issue_codes)
     learning_table{learning_table.issue_codes == issue_codes(i),'weights'} = {[weights;issue_text_weight;additional_issue_text_weight]};
 end
 
-nIter = 500;
-x_storage = zeros(nIter,2);
-fval_storage = zeros(1,nIter);
+location = 'h2';
 
-for i = 1:nIter  
-    threshold = 0;
-    f = @(x)processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,common_words);
-    x0 = [rand*3.5,rand*2.5];
-    A = [-1 1];
-    b = 0;
-    options = optimoptions('fmincon','Algorithm','sqp','TolFun',1e-8);
-    [x,fval] = fmincon(f,x0,A,b,[],[],[0.3 0.2],[3.5 2.5],[],options);
-    fprintf('%5i ||| %8.3f%% || i %10.2f | a %10.2f \n',i,-1*fval,x(1),x(2));
-    x_storage(i,:) = x;
-    fval_storage(i) = -1*fval; 
+nIter = 150;
+
+robust = 4;
+max_grid_size = 3;
+
+for j = 1:robust
+    for k = 1:max_grid_size
+        for l = 1:max_grid_size
+            
+            
+            x = zeros(nIter,1);
+            y = zeros(nIter,1);
+            z = zeros(nIter,1);
+            
+            max_awv = k;
+            min_awv = k-1;
+            max_iwv = l;
+            min_iwv = l-1;
+            
+            for i = 1:nIter
+                threshold = 0;
+                f = @(x)processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,common_words);
+                x0 = [min_awv+rand*(max_awv-min_awv),min_iwv+rand*(max_iwv-min_iwv)];
+                options = optimoptions('fmincon','Algorithm','sqp','TolFun',1e-8);
+                [out,fval] = fmincon(f,x0,[],[],[],[],[min_awv min_iwv],[max_awv max_iwv],[],options);
+                fprintf('%5i ||| %8.3f%% || i %10.2f | a %10.2f \n',i,-fval,out(1),out(2));
+                x(i) = out(1);
+                y(i) = out(2);
+                z(i) = -fval;
+            end
+            
+%             [max_accuracy, index] = max(fval_storage);
+%             input_parameters = x_storage(index,:);
+            
+%             out = x_storage(:,1);
+%             y = x_storage(:,2);
+%             z = fval_storage;
+%             t = delaunay(x,y);
+            
+%             figure()
+%             hold on; grid on;
+%             fill3(x(t)',y(t)',z(t)',z(t)')
+%             title('Paraeto surface for learning algorithm weighting')
+%             xlabel('Additional Word Weights')
+%             ylabel('Issue Word Weights')
+%             zlabel('Accuracy (%)')
+%             colorbar
+%             grid off;
+%             saveas(gcf,sprintf('paraeto_surface_%s_%i%i%i',location,j,k,l),'png')
+            
+            
+%             fprintf('Max Accuracy %8.3f%% || i %10.2f | a %10.2f \n',max_accuracy,input_parameters(1),input_parameters(2));
+%             var_list = who;
+%             var_list = var_list(~ismember(var_list,'obj'));
+%             for i = 1:length(var_list)
+%                 assignin('base',var_list{i},eval(var_list{i}));
+%             end
+            
+            save(sprintf('learning_algorithm_outputs_%s_%i%i%i',location,j,k,l),'x','y','z')
+            
+        end
+    end
 end
 
-[max_accuracy, index] = max(fval_storage);
-input_parameters = x_storage(index,:);
+master_x = [];
+master_y = [];
+master_z = [];
+    
+files = dir('learning_algorithm_outputs*.mat');
+for i = 1:length(files)
 
-fprintf('Max Accuracy %8.3f%% || i %10.2f | a %10.2f \n',max_accuracy,input_parameters(1),input_parameters(2));
-var_list = who;
-var_list = var_list(~ismember(var_list,'obj'));
-for i = 1:length(var_list)
-    assignin('base',var_list{i},eval(var_list{i}));
+    output = load(files(i).name);
+    
+    master_x = [master_x;output.x];
+    master_y = [master_y;output.y];
+    master_z = [master_z;output.z];
 end
 
+master_z = master_z(master_x <= 3);
+master_y = master_y(master_x <= 3);
+
+master_x = master_x(master_x <= 3);
+
+
+t = delaunay(master_x,master_y);
+
+figure()
+hold on; grid on;
+fill3(master_x(t)',master_y(t)',master_z(t)',master_z(t)')
+title('Paraeto surface for learning algorithm weighting')
+xlabel('Additional Word Weights')
+ylabel('Issue Word Weights')
+zlabel('Accuracy (%)')
+colorbar
+grid off;
+saveas(gcf,'paraeto_surface_maximized','png')
+saveas(gcf,'paraeto_surface_maximized','fig')
+
+x = master_x;
+y = master_y; 
+z = master_z; 
+save('learning_algorithm_ouputs_combined','x','y','z')
+% should also save in the triggers used to get to this point, namely thw
+% word lists (as this is the major factor behind the possible thresholds)
 end
 
 function accuracy = processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,common_words)
