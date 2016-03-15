@@ -1,11 +1,14 @@
 function learningAlgorithm()
 
+optimize_frontier = 0;
+process_algorithm = 1;
+
+awv = 0.3870;
+iwv = 1.0262;
+threshold = 0;
+
 % read in processed text data
 learning_materials = readtable('data\IN\undergrad\description_learning_materials.xlsx');
-
-issue_codes = unique(learning_materials.issue_codes);
-description_text = cell(1,length(issue_codes))';
-weights = cell(1,length(issue_codes))';
 
 common_words = {'and' 'of' 'a' 'an' 'the' 'is' 'or' 'on' 'by' 'for' 'in' 'to' 'bill' 'resolution' 'with' 'various' 'matters' 'program' 'public'};
 
@@ -29,9 +32,74 @@ additional_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16]
     '','',...
     'Taxation Taxes Tax',''});
 
+[learning_table,data_storage] = generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes);
+
+if optimize_frontier
+    
+    [accuracy, awv, iwv] = optimizeFrontier(location,robust,max_grid_size,threshold,iterations,learning_materials,learning_table,data_storage);
+    
+    fprintf('Max Accuracy %8.3f%% || a %10.2f | i %10.2f \n',accuracy,awv,iwv);
+    
+end
+
+if process_algorithm
+    
+    x(1) = awv;
+    x(2) = iwv;
+    outputs = processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,0);
+    processed = outputs.processed;
+    correct   = outputs.correct;
+    total     = outputs.total;
+    accuracy  = outputs.accuracy;
+    
+    fprintf('Results: %i of %i (%0.2f%%) || a %10.2f | i %10.2f \n',correct,total,accuracy,awv,iwv);
+    
+    % manually make the histogram here so it can reflect all the categories    
+    figure()
+    hold on; grid on;
+    
+    keys = master_issue_codes.keys;
+    tick_values = cell(1,length(keys)+1);
+    
+    peak = -inf;
+    
+    for i = 1:length(keys)
+        tick_values{i} = sprintf('%i',keys{i});
+        
+        rectangle('Position',[i-0.5,0,1,sum(processed.issue_codes == keys{i})+0.000001],'FaceColor','b')
+        peak = max([peak, sum(processed.issue_codes == keys{i})]);
+    end
+    tick_values{i+1} = '17';
+    rectangle('Position',[i-0.5+1,0,1,sum(processed.issue_codes == 17)+0.000001],'FaceColor','b');
+    peak = max([peak, sum(processed.issue_codes == 17)]);
+    
+    axis([0.5,17.5,0,peak])
+    ax = gca;
+    set(ax,'XTick',[keys{:} 17])
+    set(ax,'XTickLabel',tick_values)
+
+    xlabel('Issue Codes')
+    ylabel('Frequency')
+    title('Distribution of Categorized Bills')
+    saveas(gcf,'learnning_algorithm_historgram','png')
+    
+    writetable(processed,'learning_algorithm_results.xlsx')
+end
+
+end
+
+function [learning_table,data_storage] = generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes)
+
+issue_codes = unique(learning_materials.issue_codes);
+description_text = cell(1,length(issue_codes))';
+weights = cell(1,length(issue_codes))';
+
 learning_table = table(issue_codes,description_text,weights);
 
 data_storage = struct();
+data_storage.common_words = common_words;
+data_storage.master_issue_codes = master_issue_codes;
+data_storage.additional_issue_codes = additional_issue_codes;
 data_storage.unique_text_store = cell(1,length(issue_codes));
 data_storage.issue_text_store = cell(1,length(issue_codes));
 data_storage.additional_issue_text_store = cell(1,length(issue_codes));
@@ -82,17 +150,13 @@ for i = 1:length(issue_codes)
     learning_table{learning_table.issue_codes == issue_codes(i),'weights'} = {[weights;issue_text_weight;additional_issue_text_weight]};
 end
 
-location = 'h2';
+end
 
-nIter = 150;
-
-robust = 4;
-max_grid_size = 3;
+function [accuracy, awv, iwv] = optimizeFrontier(location,robust,max_grid_size,threshold,iterations,learning_materials,learning_table,data_storage)
 
 for j = 1:robust
     for k = 1:max_grid_size
         for l = 1:max_grid_size
-            
             
             x = zeros(nIter,1);
             y = zeros(nIter,1);
@@ -103,44 +167,16 @@ for j = 1:robust
             max_iwv = l;
             min_iwv = l-1;
             
-            for i = 1:nIter
-                threshold = 0;
-                f = @(x)processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,common_words);
+            for i = 1:iterations
+                f = @(x)processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,1);
                 x0 = [min_awv+rand*(max_awv-min_awv),min_iwv+rand*(max_iwv-min_iwv)];
                 options = optimoptions('fmincon','Algorithm','sqp','TolFun',1e-8);
                 [out,fval] = fmincon(f,x0,[],[],[],[],[min_awv min_iwv],[max_awv max_iwv],[],options);
-                fprintf('%5i ||| %8.3f%% || i %10.2f | a %10.2f \n',i,-fval,out(1),out(2));
+                fprintf('%5i ||| %8.3f%% || a %10.2f | i %10.2f \n',i,-fval,out(1),out(2));
                 x(i) = out(1);
                 y(i) = out(2);
                 z(i) = -fval;
             end
-            
-%             [max_accuracy, index] = max(fval_storage);
-%             input_parameters = x_storage(index,:);
-            
-%             out = x_storage(:,1);
-%             y = x_storage(:,2);
-%             z = fval_storage;
-%             t = delaunay(x,y);
-            
-%             figure()
-%             hold on; grid on;
-%             fill3(x(t)',y(t)',z(t)',z(t)')
-%             title('Paraeto surface for learning algorithm weighting')
-%             xlabel('Additional Word Weights')
-%             ylabel('Issue Word Weights')
-%             zlabel('Accuracy (%)')
-%             colorbar
-%             grid off;
-%             saveas(gcf,sprintf('paraeto_surface_%s_%i%i%i',location,j,k,l),'png')
-            
-            
-%             fprintf('Max Accuracy %8.3f%% || i %10.2f | a %10.2f \n',max_accuracy,input_parameters(1),input_parameters(2));
-%             var_list = who;
-%             var_list = var_list(~ismember(var_list,'obj'));
-%             for i = 1:length(var_list)
-%                 assignin('base',var_list{i},eval(var_list{i}));
-%             end
             
             save(sprintf('learning_algorithm_outputs_%s_%i%i%i',location,j,k,l),'x','y','z')
             
@@ -151,46 +187,64 @@ end
 master_x = [];
 master_y = [];
 master_z = [];
-    
+
 files = dir('learning_algorithm_outputs*.mat');
-for i = 1:length(files)
-
-    output = load(files(i).name);
+if isempty(files)
+    warning('ERROR: FILES NOT FOUND')
+    accuracy = [];
+    awv = [];
+    iwv = [];
+else
     
-    master_x = [master_x;output.x];
-    master_y = [master_y;output.y];
-    master_z = [master_z;output.z];
+    for i = 1:length(files)
+        
+        output = load(files(i).name);
+        
+        if ~isfield(output.learning_materials)
+            
+            master_x = [master_x;output.x]; %#ok<AGROW>
+            master_y = [master_y;output.y]; %#ok<AGROW>
+            master_z = [master_z;output.z]; %#ok<AGROW>
+            
+            delete(files(i).name);
+        else
+            continue
+        end
+    end
+    
+    t = delaunay(master_x,master_y);
+    
+    figure()
+    hold on; grid on;
+    fill3(master_x(t)',master_y(t)',master_z(t)',master_z(t)')
+    title('Paraeto surface for learning algorithm weighting')
+    xlabel('Additional Word Weights')
+    ylabel('Issue Word Weights')
+    zlabel('Accuracy (%)')
+    colorbar
+    grid off;
+    saveas(gcf,'paraeto_surface_maximized','png')
+    saveas(gcf,'paraeto_surface_maximized','fig')
+    
+    x = master_x;
+    y = master_y;
+    z = master_z;
+    save(spritnf('learning_algorithm_results_%s',date),'x','y','z','learning_materials','data_storage');
+    
+    accuracy = max(z);
+    
+    index = (z == accuracy);
+    x_values = x(index);
+    y_values = y(index);
+    
+    sorted_values = sortrows([x_values y_values]');
+    
+    awv = sorted_values(1,1);
+    iwv = sorted_values(1,2);
+end
 end
 
-master_z = master_z(master_x <= 3);
-master_y = master_y(master_x <= 3);
-
-master_x = master_x(master_x <= 3);
-
-
-t = delaunay(master_x,master_y);
-
-figure()
-hold on; grid on;
-fill3(master_x(t)',master_y(t)',master_z(t)',master_z(t)')
-title('Paraeto surface for learning algorithm weighting')
-xlabel('Additional Word Weights')
-ylabel('Issue Word Weights')
-zlabel('Accuracy (%)')
-colorbar
-grid off;
-saveas(gcf,'paraeto_surface_maximized','png')
-saveas(gcf,'paraeto_surface_maximized','fig')
-
-x = master_x;
-y = master_y; 
-z = master_z; 
-save('learning_algorithm_ouputs_combined','x','y','z')
-% should also save in the triggers used to get to this point, namely thw
-% word lists (as this is the major factor behind the possible thresholds)
-end
-
-function accuracy = processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,common_words)
+function output = processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,output_flag)
 awv = x(1);
 iwv = x(2);
 
@@ -204,7 +258,7 @@ for i = 1:length(learning_materials.issue_codes)
     bill_title = regexp(bill_title,'\W|\s+','split');
     bill_title = bill_title{:};
     bill_title = bill_title(~cellfun(@isempty,bill_title));
-    bill_title = upper(bill_title(~ismember(upper(bill_title),upper(common_words))));
+    bill_title = upper(bill_title(~ismember(upper(bill_title),upper(data_storage.common_words))));
     
     issue_codes = unique(learning_table.issue_codes);
     matches = zeros(1,length(issue_codes));
@@ -239,8 +293,15 @@ accuracy = correct/total*100;
 
 count_17 = sum(learning_coded == 17);
 
-results_table = table(accuracy,correct,total,iwv,awv,threshold,count_17);
-
-accuracy = -1*accuracy;
+if output_flag
+    output = -1*accuracy;
+else
+    output = struct();
+    output.processed = processed;
+    output.correct = correct;
+    output.total = total;
+    output.accuracy = accuracy;
+    output.count_17 = count_17;
+end
 
 end
