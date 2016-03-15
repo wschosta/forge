@@ -200,7 +200,7 @@ else
         
         output = load(files(i).name);
         
-        if ~isfield(output.learning_materials)
+        if ~isfield(output,'learning_materials')
             
             master_x = [master_x;output.x]; %#ok<AGROW>
             master_y = [master_y;output.y]; %#ok<AGROW>
@@ -229,7 +229,7 @@ else
     x = master_x;
     y = master_y;
     z = master_z;
-    save(spritnf('learning_algorithm_results_%s',date),'x','y','z','learning_materials','data_storage');
+    save(sprintf('learning_algorithm_results_%s',date),'x','y','z','learning_materials','data_storage');
     
     accuracy = max(z);
     
