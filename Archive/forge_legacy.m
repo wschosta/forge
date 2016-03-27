@@ -1,4 +1,4 @@
-classdef forge < handle
+classdef forge_legacy < handle
     properties
         bills 
         people
@@ -20,7 +20,7 @@ classdef forge < handle
     end
     
     methods
-        function obj = forge(recompute,make_gifs,state)
+        function obj = forge_legacy(recompute,make_gifs,state)
             in = inputParser;
             addRequired(in,'recompute',@islogical);
             addRequired(in,'make_gifs',@islogical);

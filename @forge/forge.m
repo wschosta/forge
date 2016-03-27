@@ -13,14 +13,23 @@ classdef forge < handle
         committee_key
         committee_leadership_key % key for committee leadership
         
+        sponsor_filter
+        
         state
         data_directory
         
+        make_gifs
+        make_histograms
+        
         gif_directory
         histogram_directory
+        outputs_directory 
         
         senate_size
         house_size
+        
+        recompute
+        reprocess
     end
     
     properties (Constant)
@@ -47,17 +56,37 @@ classdef forge < handle
     end
     
     methods
-        function obj = forge(recompute)
+        %TODO LIST:
+        % - fix dates, Legiscan switches between M/D/YYYY and YYYY-MM-DD.
+        %   We want the latter so we can easily sort by date
+        % - differentiate between ammendment votes and third reading votes
+        % - fix committee AND chamber sponsorship issues
+        % - generate committee membership lists
+        function obj = forge(varargin)
+            in = inputParser;
+            addOptional(in,'recompute',0,@islogical);
+            addOptional(in,'reprocess',0,@islocical);
+            addOptional(in,'make_gifs',0,@islogical);
+            addOptional(in,'state','IN',@(x) ischar(x) && length(x) == 2);
+            parse(in,varargin{:});
+            
+            obj.recompute = in.Results.recompute;
+            obj.make_gifs = in.Results.make_gifs;
+            obj.state     = in.Results.state;
+            obj.reprocess = in.Results.reprocess;
+            
             obj.state = 'IN';
             obj.data_directory = 'data';
             
-            obj.gif_directory = 'outputs/gif';
-            obj.histogram_directory = 'outputs/histograms';
+            obj.outputs_directory = 'outputs';
+            obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
+            obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
+            
             
             obj.senate_size = 50;
             obj.house_size = 100;
             
-            if recompute ||  exist('saved_data.mat','file') ~= 2
+            if obj.reprocess || exist('processed_data.mat','file') ~= 2
                 
                 bills_create     = obj.readAllFilesOfSubject('bills');
                 people_create    = obj.readAllFilesOfSubject('people');
@@ -73,9 +102,13 @@ classdef forge < handle
                 
                 bill_set_create = containers.Map('KeyType','int32','ValueType','any');
                 
+                complete_check = table(bills_create.bill_id,zeros(length(bills_create.bill_id),1),zeros(length(bills_create.bill_id),1),'VariableNames',{'bill_id','complete','semi'});
+                
                 for i = 1:length(bills_create.bill_id)
                     
                     template = obj.getBillTemplate();
+                    
+                    complete = 1;
                     
                     template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
                     template.bill_number = bills_create{i,'bill_number'};
@@ -85,11 +118,15 @@ classdef forge < handle
                     
                     template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
                     
-                    template.history = history_create(bills_create{i,'bill_id'} == history_create.bill_id,:);
-                    % date introduced?
-                    % date of last vote?
+                    template.history = sortrows(history_create(bills_create{i,'bill_id'} == history_create.bill_id,:),'date');
+                    if ~isempty(template.history)
+                        template.date_introduced  = template.history{1,'date'};
+                        template.date_last_action = template.history{end,'date'};
+                    else
+                        complete = 0;
+                    end
                     
-                    bill_rollcalls = rollcalls_create(rollcalls_create.bill_id == bills_create{i,'bill_id'},:);
+                    bill_rollcalls = sortrows(rollcalls_create(rollcalls_create.bill_id == bills_create{i,'bill_id'},:),'date');
                     
                     % ------------------ House Data --------------------- %
                     house_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
@@ -100,10 +137,13 @@ classdef forge < handle
                         
                         template.house_data = house_data;
                         template.passed_house = (house_data.final_yes_percentage > 0.5);
+                    else
+                        template.passed_house = -1;
+                        complete = 0;
                     end
                     
                     % ------------------ Senate Data -------------------- %
-                    senate_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
+                    senate_rollcalls = bill_rollcalls(bill_rollcalls.senate == 1,:);
                     
                     if ~isempty(senate_rollcalls)
                         
@@ -111,18 +151,24 @@ classdef forge < handle
                         
                         template.senate_data = senate_data;
                         template.passed_senate = (senate_data.final_yes_percentage > 0.5);
+                    else
+                        template.passed_senate = -1;
+                        complete = 0;
                     end
                     
-                    if ~isempty(template.passed_senate) && ~isempty(template.passed_house)
+                    if (template.passed_senate ~= -1) && (template.passed_house ~= -1)
                         template.passed_both = (template.passed_senate && template.passed_house);
                     else
-                        template.passed_both = 0;
+                        template.passed_both = -1;
                     end
                     % signed into law?
                     
+                    template.complete = complete;
+                    complete_check{complete_check.bill_id == template.bill_id,'complete'} = complete;
                     bill_set_create(bills_create{i,'bill_id'}) = template;
                 end
-                clear chamber_votes committee_votes bill_history bill_rollcalls i j house_data house_rollcalls senate_data senate_rollcalls template
+                
+                clear complete chamber_votes committee_votes bill_history bill_rollcalls i j house_data house_rollcalls senate_data senate_rollcalls template
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
@@ -143,10 +189,114 @@ classdef forge < handle
         
         function run(obj)
             
+            if exist('saved_data.mat','file') ~= 2 || obj.recompute
+                
+                % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
+                % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
+                % CHAMBER DESCRIPTIONS
+                
+                % Read in the specific 2013-2014 Indiana List
+                house_people = readtable(sprintf('%s/%s/people_2013-2014.xlsx',obj.data_directory,obj.state));
+                                
+                [house_chamber_matrix,house_chamber_votes,...
+                house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
+                house_committee_matrix,house_committee_votes,...
+                house_sponsor_committee_matrix,house_sponsor_committee_votes]  = obj.processHouseVotes(house_people);
+                [house_chamber_matrix]           = obj.normalizeVotes(house_chamber_matrix, house_chamber_votes);
+                [house_sponsor_chamber_matrix]   = obj.normalizeVotes(house_sponsor_chamber_matrix, house_sponsor_chamber_votes);
+                [house_committee_matrix]         = obj.normalizeVotes(house_committee_matrix,house_committee_votes);
+                [house_sponsor_committee_matrix] = obj.normalizeVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes);
+                
+                house_seat_matrix = obj.processSeatProximity(house_people);
+                
+                % Create Republican and Democrat Lists (makes accounting easier)
+                [republican_ids, democrat_ids] = obj.processParties(house_people);
+                
+                
+                house_republicans_chamber_votes = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
+                house_democrats_chamber_votes   = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
+                
+                house_republicans_chamber_sponsor = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
+                house_democrats_chamber_sponsor   = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
+                
+                house_republicans_committee_votes = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,republican_ids),ismember(house_committee_matrix.Properties.VariableNames,republican_ids));
+                house_democrats_committee_votes   = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_committee_matrix.Properties.VariableNames,democrat_ids));
+                
+                house_republicans_committee_sponsor = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
+                house_democrats_committee_sponsor   = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
+                
+                
+                var_list = who;
+                var_list = var_list(~ismember(var_list,'obj'));
+                save('saved_data',var_list{:})
+                
+                delete(sprintf('%s/house_*.xlsx',obj.outputs_directory));
+                
+                writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                
+                writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                
+                writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                
+                writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                
+              
+                writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                [~,~,~] = rmdir(obj.gif_directory,'s');
+                [~,~,~] = rmdir(obj.histogram_directory,'s');
+                obj.make_gifs = true;
+                obj.make_histograms = true;
+            else
+                load('saved_data');
+            end
             
-            % The goal is to create a container map, keyed by bill id
-            bills = containers.Map('KeyType','int32','ValueType','struct');
+            % PLOTTING
+            % Chamber Vote Data
+            tic
+            obj.generatePlots(house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
+            obj.generatePlots(house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
+            obj.generatePlots(house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
+            toc
             
+            % Chamber Sponsorship Data
+            tic
+            obj.generatePlots(house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
+            obj.generatePlots(house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
+            obj.generatePlots(house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
+            toc
+
+            % Committee Vote Data
+            tic
+            obj.generatePlots(house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
+            obj.generatePlots(house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
+            obj.generatePlots(house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
+            toc
+            
+            % Committee Sponsorship Data
+            tic
+            obj.generatePlots(house_sponsor_committee_votes,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
+            obj.generatePlots(house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
+            obj.generatePlots(house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
+            toc
+            
+            var_list = who;
+            var_list = var_list(~ismember(var_list,'obj'));
+            for i = 1:length(var_list)
+                assignin('base',var_list{i},eval(var_list{i}));
+            end
+                        
             % each entry will be a structure that contains the important
             % information about the bill and its passage through both the
             % senate and the house
@@ -173,6 +323,184 @@ classdef forge < handle
             % it can be used in variable names more easily
         end
         
+        % There is probably a bettr, abstractable way to do this but it's a
+        % good rough cut way
+        function [house_chamber_matrix,house_chamber_votes,...
+                house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
+                house_committee_matrix,house_committee_votes,...
+                house_sponsor_committee_matrix,house_sponsor_committee_votes] = processHouseVotes(obj,house_people)
+            
+            ids = arrayfun(@(x) ['id' num2str(x)], house_people{:,'sponsor_id'}, 'Uniform', 0);
+            
+            % Initialize the people_matrix and possible_votes matrix
+            house_chamber_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_chamber_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            
+            house_committee_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_committee_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            
+            house_sponsor_chamber_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_sponsor_chamber_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            
+            house_sponsor_committee_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_sponsor_committee_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            
+            % Create a table to keep track of the unique sponsorships
+            sponsorship_counts = obj.createTable(unique(ids),{'count'},'zero');
+
+            bill_keys = cell2mat(obj.bill_set.keys);
+            
+            % Now we're going to iterate over all the bills
+            delete_str = '';
+            for i = bill_keys
+                % Screen updates
+                print_str = sprintf('%i',i);
+                fprintf([delete_str,print_str]);
+                delete_str = repmat(sprintf('\b'),1,length(print_str));
+                
+                % LIMITING CONDITIONS
+                % yes percentage less than 85%
+                % full chamber (greater than 60 votes)
+                agreement_threshold = 0.85;
+                if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold
+                    
+                    % Sponsor information
+                    sponsor_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).sponsors, 'Uniform', 0);
+                    sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));    
+                    
+                    % Increase the sponsorship count by one
+                    sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} = sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} + 1;
+                    
+                    %%% COMMITTEE INFORMATION - TODO probably can collapse this into a common function with the chamber data
+                    for j = 1:length(obj.bill_set(i).house_data.committee_votes)
+                        
+                        % Yes/No votes
+                        yes_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).house_data.committee_votes(j).yes_list, 'Uniform', 0);
+                        yes_ids = yes_ids(ismember(yes_ids,ids));
+                        
+                        no_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).house_data.committee_votes(j).no_list, 'Uniform', 0);
+                        no_ids = no_ids(ismember(no_ids,ids));
+                        
+                        % STRAIGHT VOTES
+                        house_committee_matrix = obj.addVotes(house_committee_matrix,yes_ids,yes_ids);
+                        house_committee_matrix = obj.addVotes(house_committee_matrix,no_ids,no_ids);
+                        
+                        % Place that information into possible votes matrix
+                        house_committee_votes = obj.addVotes(house_committee_votes,[yes_ids ; no_ids],[yes_ids ; no_ids]);
+                        
+                        print_str = sprintf('%i %i',i,j);
+                        fprintf([delete_str,print_str]);
+                        delete_str = repmat(sprintf('\b'),1,length(print_str));
+                    end
+                    
+                    if ~isempty(obj.bill_set(i).house_data.committee_votes)
+                        % SPONSORS - take the last *committee* vote - TODO is this really what we want to do here?
+                        house_sponsor_committee_matrix = obj.addVotes(house_sponsor_committee_matrix,sponsor_ids,yes_ids);
+                        
+                        % Place that information into possible votes matrix
+                        house_sponsor_committee_votes = obj.addVotes(house_sponsor_committee_votes,sponsor_ids,[yes_ids ; no_ids]);
+                    end
+                    
+                    %%% CHAMBER INFORMATION
+                    for j = 1:length(obj.bill_set(i).house_data.chamber_votes)
+                        
+                        % Yes/No votes
+                        yes_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).house_data.chamber_votes(j).yes_list, 'Uniform', 0);
+                        yes_ids = yes_ids(ismember(yes_ids,ids));
+                        
+                        no_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).house_data.chamber_votes(j).no_list, 'Uniform', 0);
+                        no_ids = no_ids(ismember(no_ids,ids));
+                        
+                        % STRAIGHT VOTES
+                        house_chamber_matrix = obj.addVotes(house_chamber_matrix,yes_ids,yes_ids);
+                        house_chamber_matrix = obj.addVotes(house_chamber_matrix,no_ids,no_ids);
+                        
+                        % Place that information into possible votes matrix
+                        house_chamber_votes = obj.addVotes(house_chamber_votes,[yes_ids ; no_ids],[yes_ids ; no_ids]);
+                        
+                        print_str = sprintf('%i %i',i,j);
+                        fprintf([delete_str,print_str]);
+                        delete_str = repmat(sprintf('\b'),1,length(print_str));
+                    end
+                    
+                    if ~isempty(obj.bill_set(i).house_data.chamber_votes)
+                        % SPONSORS - take the last chamber vote - TODO is this really what we want to do here?
+                        house_sponsor_chamber_matrix = obj.addVotes(house_sponsor_chamber_matrix,sponsor_ids,yes_ids);
+                        
+                        % Place that information into possible votes matrix
+                        house_sponsor_chamber_votes = obj.addVotes(house_sponsor_chamber_matrix,sponsor_ids,[yes_ids ; no_ids]);
+                    end
+                end
+                
+            end
+            print_str = 'Done!\n';
+            fprintf([delete_str,print_str]);
+            
+            [house_chamber_matrix, house_chamber_votes]  = obj.cleanVotes(house_chamber_matrix, house_chamber_votes);
+            [house_sponsor_chamber_matrix,house_sponsor_chamber_votes] = obj.cleanSponsorVotes(house_sponsor_chamber_matrix,house_sponsor_chamber_votes,sponsorship_counts);
+            
+            [house_committee_matrix, house_committee_votes]  = obj.cleanVotes(house_committee_matrix, house_committee_votes);
+            [house_sponsor_committee_matrix,house_sponsor_committee_votes] = obj.cleanSponsorVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes,sponsorship_counts);
+        end
+
+        function generatePlots(obj,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
+            h = figure();
+            hold on
+            title(sprintf('%s %s',label_string,specific_label))
+            xlabel(x_specific)
+            ylabel(y_specific)
+            zlabel(z_specific)
+            axis square
+            grid on
+            surf(people_matrix{:,:})
+            colorbar
+            view(3)
+            hold off
+            saveas(h,sprintf('%s/%s_%s',obj.outputs_directory,label_string,tag),'png')
+            
+            view(2)
+            saveas(h,sprintf('%s/%s_%s_flat',obj.outputs_directory,label_string,tag),'png')
+            
+            if obj.make_gifs
+                directory = sprintf('%s/%s_%s/',obj.gif_directory,label_string,tag);
+                [~, ~, ~] = mkdir(directory);
+                
+                for i = 0:4:360
+                    view(i,48)
+                    saveas(h,sprintf('%s/%03i',directory,i),'png')
+                end
+                
+                obj.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
+            end
+            
+            if obj.make_histograms
+                directory = sprintf(obj.histogram_directory);
+                [~, ~, ~] = mkdir(directory);
+                obj.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
+            end
+        end
+               
+        function [people_matrix,possible_votes] = cleanSponsorVotes(obj,people_matrix,possible_votes,sponsorship_counts)
+            
+            [people_matrix,possible_votes] = obj.cleanVotes(people_matrix,possible_votes);
+            
+            obj.sponsor_filter = mean(sponsorship_counts.count) - std(sponsorship_counts.count)/2;
+            
+            % Generate the list of column names
+            row_names = people_matrix.Properties.RowNames;
+            
+            % Iterate over the column names
+            for i = 1:length(row_names)
+                
+                % If the value for sponsorship is less than the filter
+                if sponsorship_counts{row_names{i},'count'} < obj.sponsor_filter %#ok<BDSCA>
+                    people_matrix.(row_names{i})  = []; % Clear the people matrix
+                    possible_votes.(row_names{i}) = []; % Clear the possible vote matrix
+                    fprintf('WARNING: %s did not meet the vote threshold with only %i\n',row_names{i},sponsorship_counts{i,'count'});
+                end
+            end
+        end
+   
         function output = readAllFilesOfSubject(obj,type)
             % initialize the full file list and output matrix
             directory = sprintf('%s/%s/legiscan',obj.data_directory,obj.state);
@@ -211,7 +539,6 @@ classdef forge < handle
             chamber_data = {};
             
             % chammber_data.committee_id = ??? how do I set this?
-            
             committee_votes = obj.getVoteTemplate();
             if sum(chamber_rollcalls.total_vote < committee_threshold) > 0
                 committee_votes(sum(chamber_rollcalls.total_vote < committee_threshold)).rollcall_id = 1;
@@ -221,7 +548,7 @@ classdef forge < handle
             if sum(chamber_rollcalls.total_vote >= committee_threshold)
                 chamber_votes(sum(chamber_rollcalls.total_vote >= committee_threshold)).rollcall_id = 1;
             end
-
+            
             committee_vote_count = 0;
             chamber_vote_count = 0;
             for j = 1:size(chamber_rollcalls,1);
@@ -248,12 +575,43 @@ classdef forge < handle
             else
                 chamber_data.final_yes_percentage = -1;
             end
-            
         end
-        
     end
     
     methods (Static)
+        function [people_matrix,possible_votes] = cleanVotes(people_matrix,possible_votes)
+            % Clear People who didn't have votes
+            % Generate the list of row names
+            row_names = people_matrix.Properties.RowNames;
+                        
+            % Iterate over the row names
+            for i = 1:length(people_matrix.Properties.RowNames)
+                % If there are votes (these two statements should always be equivalent)
+                if all(isnan(people_matrix{row_names{i},:})) || all(isnan(possible_votes{row_names{i},:}))
+                    people_matrix(row_names{i},:) = []; % Clear the people matrix row
+                    people_matrix.(row_names{i})  = []; % Clear the people matrix column
+                    
+                    possible_votes(row_names{i},:) = []; % Clear the people matrix row
+                    possible_votes.(row_names{i})  = []; % Clear the people matrix column
+                    
+                    fprintf('WARNING: NO VOTES RECORDED FOR %s\n',row_names{i});
+                end
+            end
+        end
+     
+        function [republican_ids, democrat_ids] = processParties(people)
+            % Create republican ids
+            republican_ids = arrayfun(@(x) ['id' num2str(x)], people{people.party == 1,'sponsor_id'}, 'Uniform', 0);
+            
+            % Create democrat ids
+            democrat_ids   = arrayfun(@(x) ['id' num2str(x)], people{people.party == 0,'sponsor_id'}, 'Uniform', 0);
+            
+            % Check for bad party IDs
+            bad_ids = arrayfun(@(x) ['id' num2str(x)], people{~ismember(people.party,[0 1]),'sponsor_id'}, 'Uniform', 0);
+            for i = 1:length(bad_ids)
+                fprintf('WARNING: INCORRECT PARTY ID FOR %s\n',bad_ids{i});
+            end
+        end
         
         function proximity_matrix = processSeatProximity(people)
             % Create the string array list (which allows for referencing variable names
@@ -304,7 +662,6 @@ classdef forge < handle
             saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,label_string,tag),'png')
         end
         
-        
         function [people_matrix] = normalizeVotes(people_matrix,vote_matrix)
             % Element-wise divide. This will take divide each value by the
             % possible value (person-vote total)/(possible vote total)
@@ -334,7 +691,6 @@ classdef forge < handle
             close(h);
         end
         
-        
         function vote_template = getVoteTemplate()
             vote_template = struct('rollcall_id',{},...
                 'description',{},...
@@ -347,6 +703,18 @@ classdef forge < handle
                 'yes_list',{},...
                 'no_list',{},...
                 'abstain_list',{});
+        end
+        
+        function return_table = createTable(rows,columns,type)
+            % Switch by type of table being created
+            switch type
+                case 'NaN'  % initalized with NaNs
+                    return_table = array2table(NaN(length(rows),length(columns)),'RowNames',rows,'VariableNames',columns);
+                case 'zero' % initialied with zeros
+                    return_table = array2table(zeros(length(rows),length(columns)),'RowNames',rows,'VariableNames',columns);
+                otherwise   % throw an error
+                    error('TABLE TYPE NOT FOUND');
+            end
         end
         
         function chamber_template = getChamberTemplate()
@@ -362,6 +730,20 @@ classdef forge < handle
             % final committe and final chamber vote
         end
         
+        function vote_matrix = addVotes(vote_matrix,row,column)
+            % pull out the data from the vote matrix
+            temp = vote_matrix{row,column};
+            
+            % if the value is NaN, make it one (for accounting)
+            temp(isnan(vote_matrix{row,column})) = 1;
+            
+            % if it's not NaN, add one to th existing value
+            temp(~isnan(vote_matrix{row,column})) = temp(~isnan(vote_matrix{row,column})) + 1;
+            
+            % put the data back into the matrix
+            vote_matrix{row,column} = temp;
+        end
+        
         function bill_template = getBillTemplate()
             bill_template = struct(...
                 'bill_id',{},...
@@ -370,13 +752,14 @@ classdef forge < handle
                 'issue_category',{},...
                 'sponsors',{},... % first vs co, also authors
                 'date_introduced',{},...
-                'date_of_last_vote',{},...
+                'date_last_action',{},...
                 'house_data',{},...
                 'passed_house',{},...
                 'senate_data',{},...
                 'passed_senate',{},...
                 'passed_both',{},...
-                'signed_into_law',{});
+                'signed_into_law',{},...
+                'complete',{});
             % originated in house/senate?
         end
     end
