@@ -1,13 +1,19 @@
-function output = processAlgorithm(x,threshold,learning_materials,learning_table,data_storage,output_flag)
+function output = processAlgorithm(x,learning_materials,learning_table,data_storage,output_flag)
 awv = x(1);
 iwv = x(2);
 
 % read in bill list
 learning_coded = zeros(length(learning_materials.issue_codes),1);
 issue = cell(1,length(learning_materials.issue_codes))';
+
+data_storage.awv = awv;
+data_storage.iwv = iwv;
+
 for i = 1:length(learning_materials.issue_codes)
     
     bill_title = learning_materials{i,'title'};
+    
+    [learning_coded(i), issue{i}] = la.classifyBill(bill_title,data_storage);
     
     bill_title = regexp(bill_title,'\W|\s+','split');
     bill_title = bill_title{:};
@@ -28,11 +34,8 @@ for i = 1:length(learning_materials.issue_codes)
         end
     end
     
-    if max(matches) > sum(matches)*threshold
-        [~,learning_coded(i)] = max(matches); % this will just take the highest match, do i need bounds as well?
-    else
-        learning_coded(i) = 17;
-    end
+    [~,learning_coded(i)] = max(matches); % this will just take the highest match, do i need bounds as well?
+    
     issue{i} = matches;
 end
 
