@@ -30,6 +30,7 @@ classdef forge < handle
         
         learning_algorithm_data
         
+        generate_outputs
         recompute
         reprocess
     end
@@ -68,13 +69,14 @@ classdef forge < handle
             addOptional(in,'recompute',0,@islogical);
             addOptional(in,'reprocess',0,@islogical);
             addOptional(in,'state','IN',@(x) ischar(x) && length(x) == 2);
+            addOptional(in,'generateOutputs',0,@islogical);
             parse(in,varargin{:});
             
             obj.recompute = in.Results.recompute;
             obj.reprocess = in.Results.reprocess;
             obj.state     = in.Results.state;
+            obj.generate_outputs = in.Results.generateOutputs;
             
-            obj.state = 'IN';
             obj.data_directory = 'data';
             
             obj.outputs_directory = 'outputs';
@@ -201,7 +203,7 @@ classdef forge < handle
                     house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
                     house_committee_matrix,house_committee_votes,...
                     house_sponsor_committee_matrix,house_sponsor_committee_votes,...
-                    house_consistency_matrix]  = obj.processHouseVotes(house_people);
+                    house_consistency_matrix,bill_ids]  = obj.processHouseVotes(house_people);
                 [house_chamber_matrix]           = obj.normalizeVotes(house_chamber_matrix, house_chamber_votes);
                 [house_sponsor_chamber_matrix]   = obj.normalizeVotes(house_sponsor_chamber_matrix, house_sponsor_chamber_votes);
                 [house_committee_matrix]         = obj.normalizeVotes(house_committee_matrix,house_committee_votes);
@@ -232,81 +234,88 @@ classdef forge < handle
                 var_list = var_list(~ismember(var_list,'obj'));
                 save('saved_data',var_list{:})
                 
-                delete(sprintf('%s/house_*.xlsx',obj.outputs_directory));
-                
-                writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                
-                [~,~,~] = rmdir(obj.gif_directory,'s');
-                [~,~,~] = rmdir(obj.histogram_directory,'s');
-                obj.make_gifs = true;
-                obj.make_histograms = true;
+                if obj.generate_outputs
+                    
+                    delete(sprintf('%s/house_*.xlsx',obj.outputs_directory));
+                    
+                    writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    [~,~,~] = rmdir(obj.gif_directory,'s');
+                    [~,~,~] = rmdir(obj.histogram_directory,'s');
+                    obj.make_gifs = true;
+                    obj.make_histograms = true;
+                    
+                end
             else
                 load('saved_data');
             end
             
-            % PLOTTING
-            % Chamber Vote Data
-            tic
-            obj.generatePlots(house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
-            obj.generatePlots(house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-            obj.generatePlots(house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
-            toc
-            
-            % Chamber Sponsorship Data
-            tic
-            obj.generatePlots(house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-            obj.generatePlots(house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-            obj.generatePlots(house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
-            toc
-            
-            % Committee Vote Data
-            tic
-            obj.generatePlots(house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
-            obj.generatePlots(house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-            obj.generatePlots(house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
-            toc
-            
-            % Committee Sponsorship Data
-            tic
-            obj.generatePlots(house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-            obj.generatePlots(house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-            obj.generatePlots(house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
-            toc
-            
-            % Chamber-Committee Consistency
-            h = figure();
-            hold on
-            title('Chamber-Committee Consistency')
-            xlabel('Agreement')
-            ylabel('Frequency')
-            grid on
-            histfit(house_consistency_matrix.percentage)
-            axis([0 1 0 inf])
-            hold off
-            saveas(h,sprintf('%s/histogram_chamber_committee_consistency',obj.outputs_directory),'png')
-            
+            if obj.generate_outputs
+                
+                % PLOTTING
+                % Chamber Vote Data
+                tic
+                obj.generatePlots(house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
+                obj.generatePlots(house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
+                obj.generatePlots(house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
+                toc
+                
+                % Chamber Sponsorship Data
+                tic
+                obj.generatePlots(house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
+                obj.generatePlots(house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
+                obj.generatePlots(house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
+                toc
+                
+                % Committee Vote Data
+                tic
+                obj.generatePlots(house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
+                obj.generatePlots(house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
+                obj.generatePlots(house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
+                toc
+                
+                % Committee Sponsorship Data
+                tic
+                obj.generatePlots(house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
+                obj.generatePlots(house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
+                obj.generatePlots(house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
+                toc
+                
+                % Chamber-Committee Consistency
+                h = figure();
+                hold on
+                title('Chamber-Committee Consistency')
+                xlabel('Agreement')
+                ylabel('Frequency')
+                grid on
+                histfit(house_consistency_matrix.percentage)
+                axis([0 1 0 inf])
+                hold off
+                saveas(h,sprintf('%s/histogram_chamber_committee_consistency',obj.outputs_directory),'png')
+                
+            end
             % each entry will be a structure that contains the important
             % information about the bill and its passage through both the
             % senate and the house
@@ -345,7 +354,7 @@ classdef forge < handle
                 house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
                 house_committee_matrix,house_committee_votes,...
                 house_sponsor_committee_matrix,house_sponsor_committee_votes,...
-                house_consistency_matrix] = processHouseVotes(obj,house_people)
+                house_consistency_matrix,bill_ids] = processHouseVotes(obj,house_people)
             
             ids = arrayfun(@(x) ['id' num2str(x)], house_people{:,'sponsor_id'}, 'Uniform', 0);
             
@@ -368,6 +377,7 @@ classdef forge < handle
             % Create a table to keep track of the unique sponsorships
             house_consistency_matrix = obj.createTable(unique(ids),{'consistency' 'opportunity'},'zero');
             
+            bill_ids = [];
             
             bill_keys = cell2mat(obj.bill_set.keys);
             bill_count = 0;
@@ -387,6 +397,8 @@ classdef forge < handle
                 agreement_threshold = 0.85;
                 if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold
                     bill_count = bill_count + 1;
+                    
+                    bill_ids(end+1) = i;
                     
                     % Sponsor information
                     sponsor_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).sponsors, 'Uniform', 0);
