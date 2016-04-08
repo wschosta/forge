@@ -64,6 +64,8 @@ classdef forge < handle
         %   We want the latter so we can easily sort by date
         % - differentiate between ammendment votes and third reading votes
         % - generate committee membership lists
+        % - create a function where you input the ID string and get back
+        %   the name of the legislator
         function obj = forge(varargin)
             in = inputParser;
             addOptional(in,'recompute',0,@islogical);
@@ -341,6 +343,22 @@ classdef forge < handle
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
             
+            accuracy = [];
+            for i = bill_ids
+                accuracy = [accuracy obj.predictOutcomes(i,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix)]; %#ok<AGROW>
+            end
+            
+            h = figure();
+            hold on
+            title('Predictive Model Accuracy at t_2')
+            xlabel('Accuracy')
+            ylabel('Frequency')
+            grid on
+            histfit(accuracy,20)
+            axis([0 100 0 inf])
+            hold off
+            saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
+            
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
             for i = 1:length(var_list)
@@ -395,11 +413,8 @@ classdef forge < handle
                 % yes percentage less than 85%
                 % full chamber (greater than 60 votes)
                 agreement_threshold = 0.85;
-                if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold
-                    bill_count = bill_count + 1;
-                    
-                    bill_ids(end+1) = i;
-                    
+                if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold && obj.bill_set(i).house_data.final_yes_percentage >= 0
+                                       
                     % Sponsor information
                     sponsor_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).sponsors, 'Uniform', 0);
                     sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));
@@ -414,7 +429,7 @@ classdef forge < handle
                         % so it's sort of pointless to do the loop and then
                         % only process the last bill but I want to preserve
                         % the functionality
-                        if j ~= length(obj.bill_set(i).house_data.committee_votes)
+                        if j < length(obj.bill_set(i).house_data.committee_votes)
                             continue
                         end
                         
@@ -458,7 +473,7 @@ classdef forge < handle
                         % so it's sort of pointless to do the loop and then
                         % only process the last bill but I want to preserve
                         % the functionality
-                        if j ~= length(obj.bill_set(i).house_data.chamber_votes)
+                        if isempty(regexp(upper(obj.bill_set(i).house_data.chamber_votes(j).description{:}),'THIRD READING','once'))
                             continue
                         end
                         
@@ -503,6 +518,10 @@ classdef forge < handle
                         
                         matched_set = [committee_yes_ids(ismember(committee_yes_ids,yes_ids)) ; committee_no_ids(ismember(committee_no_ids,no_ids))];
                         house_consistency_matrix{matched_set,'consistency'} = house_consistency_matrix{matched_set,'consistency'} + 1;
+                        
+                        bill_count = bill_count + 1;
+                    
+                        bill_ids(end+1) = i; %#ok<AGROW>
                     end
                 end
                 
@@ -517,6 +536,244 @@ classdef forge < handle
             
             [house_committee_matrix, house_committee_votes]  = obj.cleanVotes(house_committee_matrix, house_committee_votes);
             [house_sponsor_committee_matrix,house_sponsor_committee_votes] = obj.cleanSponsorVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes,sponsorship_counts);
+        end
+        
+        function accuracy = predictOutcomes(obj,bill_id,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committe_matrix,house_chamber_matrix)
+
+            bill_information = obj.bill_set(bill_id);
+            
+            ids = arrayfun(@(x) ['id' num2str(x)], house_people{:,'sponsor_id'}, 'Uniform', 0);
+            sponsor_ids = arrayfun(@(x) ['id' num2str(x)],bill_information.sponsors, 'Uniform', 0);
+            sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));
+            
+            % this is cheating, eventually we'll need the committee
+            % membership but this is fine for now (taking the people that
+            % vote and working back) since we have perfect information
+            
+            if isempty(bill_information.house_data.committee_votes) % no committee information available
+                accuracy = NaN;
+                return
+            end
+            committee_yes = bill_information.house_data.committee_votes.yes_list;
+            committee_no = bill_information.house_data.committee_votes.no_list;
+            committee_members = [committee_yes ; committee_no];
+            committee_ids = arrayfun(@(x) ['id' num2str(x)],committee_members, 'Uniform', 0);
+            committee_ids_yes = arrayfun(@(x) ['id' num2str(x)],committee_yes, 'Uniform', 0);
+            committee_ids_no = arrayfun(@(x) ['id' num2str(x)],committee_no, 'Uniform', 0);
+            committee_ids = committee_ids(ismember(committee_ids,ids));
+            committee_ids_yes = committee_ids_yes(ismember(committee_ids_yes,ids));
+            committee_ids_no = committee_ids_no(ismember(committee_ids_no,ids)); 
+                    
+            found_it = 0;
+            for i = 1:length(bill_information.house_data.chamber_votes)
+                if ~isempty(regexp(upper(bill_information.house_data.chamber_votes(i).description{:}),'THIRD READING','once'))
+                    bill_yes = bill_information.house_data.chamber_votes(end).yes_list;
+                    bill_no = bill_information.house_data.chamber_votes(end).no_list;
+                    found_it = 1;
+                    break
+                end
+            end
+            
+            if ~found_it
+                accuracy = NaN;
+                return
+            end
+            
+            bill_yes_ids = arrayfun(@(x) ['id' num2str(x)],bill_yes, 'Uniform', 0);
+            bill_no_ids = arrayfun(@(x) ['id' num2str(x)],bill_no, 'Uniform', 0);
+            bill_yes_ids = bill_yes_ids(ismember(bill_yes_ids,ids));
+            bill_no_ids = bill_no_ids(ismember(bill_no_ids,ids)); 
+            
+            
+            % initial assumption, eveyone is equally likely to vote yes as
+            % to vote no. This is probably not true, I'll have to figure
+            % out how to figure this out.
+            
+            % Hypothesis [1, -1] [yes, no]
+            
+            % so we make a table for the bayes, we'll keep track of effects
+            % here and then update at each time t. New column for ever
+            % large step, new time t for every update
+            bayes = array2table(0.5*ones(length(ids),1),'VariableNames',{'p_yes'},'RowNames',ids);
+            t_set = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
+            t_set.t1 = NaN(length(ids),1);
+            t_set{bill_yes_ids,'final'} = 1;
+            t_set{bill_no_ids,'final'} = 0;
+            bayes.sponsor_effect_committee_positive = NaN(length(ids),1);
+            bayes.sponsor_effect_committee_negative = NaN(length(ids),1);
+            
+            expressed_preference = array2table(zeros(length(ids),2),'VariableNames',{'expressed','locked'},'RowNames',ids);
+            
+            
+            % --------- COMMITTEE EFFECT ---------
+            % Calculate sponsor effect
+            for i = 1:length(committee_ids)
+                sponsor_effect_positive = 1;
+                sponsor_effect_negative = 1;
+                if ~ismember(committee_ids{i},house_sponsor_committe_matrix.Properties.RowNames)
+                    sponsor_effect_positive = -1;
+                    sponsor_effect_negative = -1;
+                else
+                    for j = 1:length(sponsor_ids)
+                        if ~ismember(sponsor_ids{j},house_sponsor_committe_matrix.Properties.VariableNames)
+                            continue
+                        end
+                        
+                        sponsor_specific_effect = house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{j}};
+                        
+                        switch sponsor_specific_effect % this is because 1 or 0 will squash out the results
+                            case 0
+                                sponsor_specific_effect = 0.01;
+                            case 1
+                                sponsor_specific_effect = 0.99;
+                        end
+
+                        
+                        sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
+                        sponsor_effect_negative = sponsor_effect_negative*(1-sponsor_specific_effect);
+                    end
+                end
+                bayes{committee_ids{i},'sponsor_effect_committee_positive'} = sponsor_effect_positive;
+                bayes{committee_ids{i},'sponsor_effect_committee_negative'} = sponsor_effect_negative;
+            end
+            
+            % Set T1
+            for i = t_set.Properties.RowNames'
+                if ~isnan(bayes{i,'sponsor_effect_committee_positive'})
+                    if bayes{i,'sponsor_effect_committee_positive'} == -1 %#ok<BDSCA>
+                        t_set{i,'t1'} = bayes{i,'p_yes'};
+                    else
+                        t_set{i,'t1'} = bayes{i,'sponsor_effect_committee_positive'}*bayes{i,'p_yes'} / (bayes{i,'sponsor_effect_committee_positive'}*bayes{i,'p_yes'} + bayes{i,'sponsor_effect_committee_negative'}*(1-bayes{i,'p_yes'}));
+                    end
+                end
+            end
+            
+            t_set.committee_vote = NaN(length(t_set.Properties.RowNames),1);
+            t_set{committee_ids_yes,'committee_vote'} = 1;
+            t_set{committee_ids_no,'committee_vote'} = 0;
+            
+            t_set.committee_consistency = NaN(length(t_set.Properties.RowNames),1);
+            t_set{committee_ids_yes,'committee_consistency'} = house_consistency_matrix{committee_ids_yes,'percentage'};
+            t_set{committee_ids_no,'committee_consistency'} = house_consistency_matrix{committee_ids_no,'percentage'};
+            
+            t_set.p_yes_rev_cs = NaN(length(t_set.Properties.RowNames),1);
+            
+            for i = t_set.Properties.RowNames'
+                if ~isnan(t_set{i,'committee_vote'})
+                    switch t_set{i,'committee_vote'}
+                        case 0 % voted no in committee
+                            switch t_set{i,'committee_consistency'}
+                                case 0
+                                    t_set{i,'p_yes_rev_cs'} = 0.99; % voted no, low consistency
+                                case 1
+                                    t_set{i,'p_yes_rev_cs'} = 0.01; % voted no, high consistency
+                                otherwise
+                                    t_set{i,'p_yes_rev_cs'} = 1 - t_set{i,'committee_consistency'};
+                            end
+                        case 1
+                            switch t_set{i,'committee_consistency'}
+                                case 0
+                                    t_set{i,'p_yes_rev_cs'} = 0.01; % voted yes, low consistency
+                                case 1
+                                    t_set{i,'p_yes_rev_cs'} = 0.99; % voted yes, high consistency
+                                otherwise
+                                    t_set{i,'p_yes_rev_cs'} = t_set{i,'committee_consistency'};
+                            end
+                                    
+                    end
+                end
+            end
+            
+            for i = sponsor_ids'
+                if ismember(i,house_sponsor_chamber_matrix.Properties.RowNames) && ismember(i,house_sponsor_chamber_matrix.Properties.VariableNames)
+                    switch house_sponsor_chamber_matrix{i,i}
+                        case 0
+                            t_set{i,'p_yes_rev_cs'} = 0.01; % low consistency
+                        case 1
+                            t_set{i,'p_yes_rev_cs'} = 0.99; % high consistency
+                        otherwise
+                            t_set{i,'p_yes_rev_cs'} = house_sponsor_chamber_matrix{i,i};
+                    end
+                else
+                    t_set{i,'p_yes_rev_cs'} = 0.5;
+                end
+            end
+            expressed_preference{[sponsor_ids; committee_ids],'expressed'} = 1;
+            
+            % So now we only update based on expressed preference 
+            
+            % calculate t2
+            t_set.t2 = NaN(length(ids),1);
+            
+            preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
+            preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+            
+            for i = preference_unknown
+                combined_impact = [];
+                for j = preference_known
+                    
+                    specific_impact = house_chamber_matrix{i,j};
+                    
+                    switch specific_impact % this is because 1 or 0 will squash out the results
+                        case 0
+                            specific_impact = 0.01;
+                        case 1
+                            specific_impact = 0.99;
+                    end
+                    
+                    combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
+                end
+                
+                t_set{i,'t2'} = (prod(combined_impact)*bayes{i,'p_yes'})/(prod(combined_impact)*bayes{i,'p_yes'} + prod(1-combined_impact)*(1-bayes{i,'p_yes'}));
+            end
+            
+            for i = preference_known
+                t_set{i,'t2'} = t_set{i,'p_yes_rev_cs'};
+            end
+            
+            % here is where the updating comes in, need to mock up some
+            % data whereby people declare preferences. However, things are
+            % prett damn solid at this point
+            
+            t_set.t2_check = round(t_set.t2) == t_set.final;
+            
+            incorrect = sum(t_set.t2_check == false);
+            are_nan = sum(isnan(t_set{t_set.t2_check == false,'final'}));
+            
+            accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
+            
+            if accuracy < 50
+                keyboard
+            end
+        end
+        
+        % in the future this is most likely abstractable, for now I'll do
+        % it manually and not use this function
+        function t_table = updateBayes(obj,bayes) %#ok<INUSL>
+            
+            t_table = array2table(NaN(length(bayes.Properties.RowNames),1),'VariableNames',{'p'},'RowNames',bayes.Properties.RowNames);
+            
+           for i = bayes.Properties.RowNames'
+               time_update = 1;
+               count = 1;
+               for j = bayes.Properties.VariableNames
+                   if count == length(bayes.Properties.VariableNames) && (isnan(bayes{i,j}) || bayes{i,j} == -1)
+                       time_update = bayes{i,j};
+                   end
+                   
+                   if ~isnan(bayes{i,j}) && (bayes{i,j} ~= -1)
+                       time_update = time_update * bayes{i,j};
+                   end
+                   
+                   count = count + 1;
+               end
+               
+               if (isnan(time_update) || time_update == -1) 
+                   t_table{i,'p'} = time_update/0.5;
+               else
+                   t_table{i,'p'} = time_update;
+               end
+           end
         end
         
         function generatePlots(obj,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
