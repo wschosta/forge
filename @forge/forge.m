@@ -358,7 +358,18 @@ classdef forge < handle
             axis([0 100 0 inf])
             hold off
             saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
-            
+
+            competitive_bills = cell2table(cell(length(bill_ids),6),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id'});
+            for i = 1:length(bill_ids)
+                competitive_bills{i,'bill_id'} = {obj.bill_set(bill_ids(i)).bill_id};
+                competitive_bills{i,'bill_number'} = obj.bill_set(bill_ids(i)).bill_number;
+                competitive_bills{i,'title'} = obj.bill_set(bill_ids(i)).title;
+                competitive_bills{i,'introduced'} = obj.bill_set(bill_ids(i)).date_introduced;
+                competitive_bills{i,'last_action'} = obj.bill_set(bill_ids(i)).date_last_action;
+                competitive_bills{i,'issue_id'} = {obj.bill_set(bill_ids(i)).issue_category};
+            end
+            writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
+                    
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
             for i = 1:length(var_list)
