@@ -616,10 +616,10 @@ classdef forge < handle
             committee_ids_no = committee_ids_no(ismember(committee_ids_no,ids)); 
             
             found_it = 0;
-            for i = 1:length(bill_information.house_data.chamber_votes)
+            for i = length(bill_information.house_data.chamber_votes):1
                 if ~isempty(regexp(upper(bill_information.house_data.chamber_votes(i).description{:}),'THIRD READING','once'))
-                    bill_yes = bill_information.house_data.chamber_votes(end).yes_list;
-                    bill_no = bill_information.house_data.chamber_votes(end).no_list;
+                    bill_yes = bill_information.house_data.chamber_votes(i).yes_list;
+                    bill_no = bill_information.house_data.chamber_votes(i).no_list;
                     found_it = 1;
                     break
                 end
@@ -710,7 +710,7 @@ classdef forge < handle
             t_set{committee_ids_yes,'committee_consistency'} = house_consistency_matrix{committee_ids_yes,'percentage'};
             t_set{committee_ids_no,'committee_consistency'} = house_consistency_matrix{committee_ids_no,'percentage'};
             
-            t_set.p_yes_rev_cs = NaN(length(t_set.Properties.RowNames),1);
+            t_set.p_yes_rev_cs = NaN(length(t_set.Properties.RowNames),1); % probability of yes, revised, for the committee and sponsor
             
             for i = t_set.Properties.RowNames'
                 if ~isnan(t_set{i,'committee_vote'})
@@ -754,8 +754,7 @@ classdef forge < handle
             end
             expressed_preference{[sponsor_ids; committee_ids],'expressed'} = 1;
             
-            % So now we only update based on expressed preference 
-            
+            % So now we only update based on expressed preference for t2            
             % calculate t2
             t_set.t2 = NaN(length(ids),1);
             
@@ -787,8 +786,41 @@ classdef forge < handle
             
             % here is where the updating comes in, need to mock up some
             % data whereby people declare preferences. However, things are
-            % prett damn solid at this point
+            % pretty damn solid at this point
             
+            % at this point, for t3, we do basically the same thing as t2
+            % but we just update everything
+            
+            % we'll know the id of the person we're updating so we just
+            % need the ids of the people we are not updating. We should
+            % also be able to do this in a loop? yeah?
+            
+            %             t_set.t3 = NaN(length(ids),1);
+            %
+            %% not super sure how to do this, mock data will help
+            %% also want to tag by date (metadata? separate list?)
+            
+            %             preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
+            %             preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+            %
+            %             for i = preference_unknown
+            %
+            %                 specific_impact = house_chamber_matrix{i,preference_known};
+            %
+            %                 switch specific_impact % this is because 1 or 0 will squash out the results
+            %                     case 0
+            %                         specific_impact = 0.01;
+            %                     case 1
+            %                         specific_impact = 0.99;
+            %                 end
+            %
+            %
+            %                 t_set{i,'t3'} = (specific_impact*bayes{i,'p_yes'})/(specific_impact*bayes{i,'p_yes'} + (1-specific_impact)*(1-bayes{i,'p_yes'}));
+            %             end
+            
+
+            
+            % Final check (as implemented right now, t2
             t_set.t2_check = round(t_set.t2) == t_set.final;
             
             incorrect = sum(t_set.t2_check == false);
@@ -796,9 +828,6 @@ classdef forge < handle
             
             accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
             
-            if accuracy < 50
-                keyboard
-            end
         end
         
         % in the future this is most likely abstractable, for now I'll do
