@@ -343,9 +343,14 @@ classdef forge < handle
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
             
-            accuracy = [];
-            for i = bill_ids
-                accuracy = [accuracy obj.predictOutcomes(i,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix)]; %#ok<AGROW>
+            accuracy_list = zeros(1,length(bill_ids));
+            sponsor_list = zeros(1,length(bill_ids));
+            committee_list = zeros(1,length(bill_ids));
+            for i = 1:length(bill_ids)
+                [accuracy, sponsor, committee] = obj.predictOutcomes(bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix);
+                accuracy_list(i) = accuracy;
+                sponsor_list(i) = sponsor;
+                committee_list(i) = committee;
             end
             
             h = figure();
@@ -354,19 +359,54 @@ classdef forge < handle
             xlabel('Accuracy')
             ylabel('Frequency')
             grid on
-            histfit(accuracy,20)
+            histfit(accuracy_list,20)
             axis([0 100 0 inf])
             hold off
             saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
 
-            competitive_bills = cell2table(cell(length(bill_ids),6),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id'});
+            h = figure();
+            hold on
+            title('Sponsor Count')
+            xlabel('Number of Sponsors')
+            ylabel('Frequency')
+            grid on
+            histfit(sponsor_list,10)
+            axis([0 max(sponsor_list) 0 inf])
+            hold off
+            saveas(h,sprintf('%s/sponsor_histogram',obj.outputs_directory),'png')
+            
+            h = figure();
+            hold on
+            title('Committee Member Count')
+            xlabel('Number of Committee Members')
+            ylabel('Frequency')
+            grid on
+            histfit(committee_list,10)
+            axis([0 max(committee_list) 0 inf])
+            hold off
+            saveas(h,sprintf('%s/committee_histogram',obj.outputs_directory),'png')
+            
+            competitive_bills = cell2table(cell(length(bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
             for i = 1:length(bill_ids)
                 competitive_bills{i,'bill_id'} = {obj.bill_set(bill_ids(i)).bill_id};
                 competitive_bills{i,'bill_number'} = obj.bill_set(bill_ids(i)).bill_number;
                 competitive_bills{i,'title'} = obj.bill_set(bill_ids(i)).title;
                 competitive_bills{i,'introduced'} = obj.bill_set(bill_ids(i)).date_introduced;
                 competitive_bills{i,'last_action'} = obj.bill_set(bill_ids(i)).date_last_action;
-                competitive_bills{i,'issue_id'} = {obj.bill_set(bill_ids(i)).issue_category};
+                competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(bill_ids(i)).issue_category)};
+                
+                sponsors_names = obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(1));
+                for j = 2:length(obj.bill_set(bill_ids(i)).sponsors)
+                    sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(j))]; %#ok<AGROW>
+                end
+                competitive_bills{i,'sponsors'} = {sponsors_names};
+                
+                comittee_ids = [obj.bill_set(bill_ids(i)).house_data.committee_votes(end).yes_list ; obj.bill_set(bill_ids(i)).house_data.committee_votes(end).no_list];
+                committee_names = obj.getSponsorName(comittee_ids(1));
+                for j = 2:length(comittee_ids)
+                    committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
+                end
+                competitive_bills{i,'committee_members'} = {committee_names};
             end
             writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
                     
@@ -549,7 +589,7 @@ classdef forge < handle
             [house_sponsor_committee_matrix,house_sponsor_committee_votes] = obj.cleanSponsorVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes,sponsorship_counts);
         end
         
-        function accuracy = predictOutcomes(obj,bill_id,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committe_matrix,house_chamber_matrix)
+        function [accuracy, number_sponsors, number_committee] = predictOutcomes(obj,bill_id,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committe_matrix,house_chamber_matrix)
 
             bill_information = obj.bill_set(bill_id);
             
@@ -574,7 +614,7 @@ classdef forge < handle
             committee_ids = committee_ids(ismember(committee_ids,ids));
             committee_ids_yes = committee_ids_yes(ismember(committee_ids_yes,ids));
             committee_ids_no = committee_ids_no(ismember(committee_ids_no,ids)); 
-                    
+            
             found_it = 0;
             for i = 1:length(bill_information.house_data.chamber_votes)
                 if ~isempty(regexp(upper(bill_information.house_data.chamber_votes(i).description{:}),'THIRD READING','once'))
@@ -584,6 +624,9 @@ classdef forge < handle
                     break
                 end
             end
+
+            number_sponsors = size(sponsor_ids,1);
+            number_committee = size(committee_ids,1);
             
             if ~found_it
                 accuracy = NaN;
@@ -843,6 +886,11 @@ classdef forge < handle
                     fprintf('WARNING: %s did not meet the vote threshold with only %i\n',row_names{i},sponsorship_counts{i,'count'});
                 end
             end
+        end
+        
+        function sponsor_name = getSponsorName(obj,id_code)
+            sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
+            sponsor_name = sponsor_name{1};
         end
         
         function output = readAllFilesOfSubject(obj,type)
