@@ -81,16 +81,24 @@ classdef forge < handle
             
             obj.data_directory = 'data';
             
-            obj.outputs_directory = 'outputs';
+            obj.outputs_directory = sprintf('%s/%s/outputs',obj.data_directory,obj.state);
             obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
             
             obj.learning_algorithm_data = la.loadLearnedMaterials();
+            switch obj.state
+                case 'IN'
+                    obj.senate_size = 50;
+                    obj.house_size = 100;
+                case 'OH'
+                    obj.senate_size = 33;
+                    obj.house_size = 99;
+                otherwise
+                    obj.senate_size = 50;
+                    obj.house_size = 100;
+            end
             
-            obj.senate_size = 50;
-            obj.house_size = 100;
-            
-            if obj.reprocess || exist('processed_data.mat','file') ~= 2
+            if obj.reprocess || exist(sprintf('%s_processed_data.mat',obj.state),'file') ~= 2
                 
                 bills_create     = obj.readAllFilesOfSubject('bills');
                 people_create    = obj.readAllFilesOfSubject('people');
@@ -136,7 +144,7 @@ classdef forge < handle
                     
                     if ~isempty(house_rollcalls)
                         
-                        house_data = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*0.6);
+                        house_data = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*0.75);
                         
                         template.house_data = house_data;
                         template.passed_house = (house_data.final_yes_percentage > 0.5);
@@ -150,7 +158,7 @@ classdef forge < handle
                     
                     if ~isempty(senate_rollcalls)
                         
-                        senate_data = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*0.6);
+                        senate_data = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*0.75);
                         
                         template.senate_data = senate_data;
                         template.passed_senate = (senate_data.final_yes_percentage > 0.5);
@@ -175,9 +183,9 @@ classdef forge < handle
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
-                save('processed_data',var_list{:})
+                save(sprintf('%s_processed_data',obj.state),var_list{:})
             else
-                load('processed_data') %
+                load(sprintf('%s_processed_data',obj.state)) %
             end
             
             obj.bills     = bills_create;
@@ -192,7 +200,7 @@ classdef forge < handle
         
         function run(obj)
             
-            if exist('saved_data.mat','file') ~= 2 || obj.recompute
+            if exist(sprintf('%s_saved_data.mat',obj.state),'file') ~= 2 || obj.recompute
                 
                 % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
                 % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
@@ -210,9 +218,7 @@ classdef forge < handle
                 [house_sponsor_chamber_matrix]   = obj.normalizeVotes(house_sponsor_chamber_matrix, house_sponsor_chamber_votes);
                 [house_committee_matrix]         = obj.normalizeVotes(house_committee_matrix,house_committee_votes);
                 [house_sponsor_committee_matrix] = obj.normalizeVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes);
-                
-                house_seat_matrix = obj.processSeatProximity(house_people);
-                
+
                 house_consistency_matrix.percentage = house_consistency_matrix.consistency ./ house_consistency_matrix.opportunity;
                 
                 % Create Republican and Democrat Lists (makes accounting easier)
@@ -234,7 +240,7 @@ classdef forge < handle
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
-                save('saved_data',var_list{:})
+                save(sprintf('%s_saved_data',obj.state),var_list{:})
                 
                 if obj.generate_outputs
                     
@@ -262,16 +268,13 @@ classdef forge < handle
                     
                     writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
                     
-                    writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
                     [~,~,~] = rmdir(obj.gif_directory,'s');
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
                     obj.make_gifs = true;
                     obj.make_histograms = true;
-                    
                 end
             else
-                load('saved_data');
+                load(sprintf('%s_saved_data.mat',obj.state));
             end
             
             if obj.generate_outputs
@@ -306,17 +309,18 @@ classdef forge < handle
                 toc
                 
                 % Chamber-Committee Consistency
-                h = figure();
-                hold on
-                title('Chamber-Committee Consistency')
-                xlabel('Agreement')
-                ylabel('Frequency')
-                grid on
-                histfit(house_consistency_matrix.percentage)
-                axis([0 1 0 inf])
-                hold off
-                saveas(h,sprintf('%s/histogram_chamber_committee_consistency',obj.outputs_directory),'png')
-                
+                if any(~isnan(house_consistency_matrix.percentage))
+                    h = figure();
+                    hold on
+                    title('Chamber-Committee Consistency')
+                    xlabel('Agreement')
+                    ylabel('Frequency')
+                    grid on
+                    histfit(house_consistency_matrix.percentage)
+                    axis([0 1 0 inf])
+                    hold off
+                    saveas(h,sprintf('%s/histogram_chamber_committee_consistency',obj.outputs_directory),'png')
+                end
             end
             % each entry will be a structure that contains the important
             % information about the bill and its passage through both the
@@ -342,7 +346,7 @@ classdef forge < handle
             
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
-            
+                       
             accuracy_list = zeros(1,length(bill_ids));
             sponsor_list = zeros(1,length(bill_ids));
             committee_list = zeros(1,length(bill_ids));
@@ -353,63 +357,71 @@ classdef forge < handle
                 committee_list(i) = committee;
             end
             
-            h = figure();
-            hold on
-            title('Predictive Model Accuracy at t_2')
-            xlabel('Accuracy')
-            ylabel('Frequency')
-            grid on
-            histfit(accuracy_list,20)
-            axis([0 100 0 inf])
-            hold off
-            saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
-
-            h = figure();
-            hold on
-            title('Sponsor Count')
-            xlabel('Number of Sponsors')
-            ylabel('Frequency')
-            grid on
-            histfit(sponsor_list,10)
-            axis([0 max(sponsor_list) 0 inf])
-            hold off
-            saveas(h,sprintf('%s/sponsor_histogram',obj.outputs_directory),'png')
-            
-            h = figure();
-            hold on
-            title('Committee Member Count')
-            xlabel('Number of Committee Members')
-            ylabel('Frequency')
-            grid on
-            histfit(committee_list,10)
-            axis([0 max(committee_list) 0 inf])
-            hold off
-            saveas(h,sprintf('%s/committee_histogram',obj.outputs_directory),'png')
-            
-            competitive_bills = cell2table(cell(length(bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
-            for i = 1:length(bill_ids)
-                competitive_bills{i,'bill_id'} = {obj.bill_set(bill_ids(i)).bill_id};
-                competitive_bills{i,'bill_number'} = obj.bill_set(bill_ids(i)).bill_number;
-                competitive_bills{i,'title'} = obj.bill_set(bill_ids(i)).title;
-                competitive_bills{i,'introduced'} = obj.bill_set(bill_ids(i)).date_introduced;
-                competitive_bills{i,'last_action'} = obj.bill_set(bill_ids(i)).date_last_action;
-                competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(bill_ids(i)).issue_category)};
-                
-                sponsors_names = obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(1));
-                for j = 2:length(obj.bill_set(bill_ids(i)).sponsors)
-                    sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(j))]; %#ok<AGROW>
-                end
-                competitive_bills{i,'sponsors'} = {sponsors_names};
-                
-                comittee_ids = [obj.bill_set(bill_ids(i)).house_data.committee_votes(end).yes_list ; obj.bill_set(bill_ids(i)).house_data.committee_votes(end).no_list];
-                committee_names = obj.getSponsorName(comittee_ids(1));
-                for j = 2:length(comittee_ids)
-                    committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
-                end
-                competitive_bills{i,'committee_members'} = {committee_names};
+            if ~isempty(accuracy_list)
+                h = figure();
+                hold on
+                title('Predictive Model Accuracy at t_2')
+                xlabel('Accuracy')
+                ylabel('Frequency')
+                grid on
+                histfit(accuracy_list,20)
+                axis([0 100 0 inf])
+                hold off
+                saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
             end
-            writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
+            
+            if ~isempty(sponsor_list)
+                h = figure();
+                hold on
+                title('Sponsor Count')
+                xlabel('Number of Sponsors')
+                ylabel('Frequency')
+                grid on
+                histfit(sponsor_list,10)
+                axis([0 max(sponsor_list) 0 inf])
+                hold off
+                saveas(h,sprintf('%s/sponsor_histogram',obj.outputs_directory),'png')
+            end
+            
+            if ~isempty(committee_list)
+                h = figure();
+                hold on
+                title('Committee Member Count')
+                xlabel('Number of Committee Members')
+                ylabel('Frequency')
+                grid on
+                histfit(committee_list,10)
+                axis([0 max(committee_list) 0 inf])
+                hold off
+                saveas(h,sprintf('%s/committee_histogram',obj.outputs_directory),'png')
+            end
+            
+            if ~isempty(bill_ids)
+                competitive_bills = cell2table(cell(length(bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
+                for i = 1:length(bill_ids)
+                    competitive_bills{i,'bill_id'} = {obj.bill_set(bill_ids(i)).bill_id};
+                    competitive_bills{i,'bill_number'} = obj.bill_set(bill_ids(i)).bill_number;
+                    competitive_bills{i,'title'} = obj.bill_set(bill_ids(i)).title;
+                    competitive_bills{i,'introduced'} = obj.bill_set(bill_ids(i)).date_introduced;
+                    competitive_bills{i,'last_action'} = obj.bill_set(bill_ids(i)).date_last_action;
+                    competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(bill_ids(i)).issue_category)};
                     
+                    sponsors_names = obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(1));
+                    for j = 2:length(obj.bill_set(bill_ids(i)).sponsors)
+                        sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(j))]; %#ok<AGROW>
+                    end
+                    competitive_bills{i,'sponsors'} = {sponsors_names};
+                    
+                    comittee_ids = [obj.bill_set(bill_ids(i)).house_data.committee_votes(end).yes_list ; obj.bill_set(bill_ids(i)).house_data.committee_votes(end).no_list];
+                    committee_names = obj.getSponsorName(comittee_ids(1));
+                    for j = 2:length(comittee_ids)
+                        committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
+                    end
+                    competitive_bills{i,'committee_members'} = {committee_names};
+                end
+                writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
+            end
+        
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
             for i = 1:length(var_list)
@@ -465,7 +477,7 @@ classdef forge < handle
                 % full chamber (greater than 60 votes)
                 agreement_threshold = 0.85;
                 if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold && obj.bill_set(i).house_data.final_yes_percentage >= 0
-                                       
+                    
                     % Sponsor information
                     sponsor_ids = arrayfun(@(x) ['id' num2str(x)], obj.bill_set(i).sponsors, 'Uniform', 0);
                     sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));
@@ -524,7 +536,7 @@ classdef forge < handle
                         % so it's sort of pointless to do the loop and then
                         % only process the last bill but I want to preserve
                         % the functionality
-                        if isempty(regexp(upper(obj.bill_set(i).house_data.chamber_votes(j).description{:}),'THIRD READING','once'))
+                        if isempty(regexp(upper(obj.bill_set(i).house_data.chamber_votes(j).description{:}),'THIRD','once'))
                             continue
                         end
                         
@@ -571,7 +583,7 @@ classdef forge < handle
                         house_consistency_matrix{matched_set,'consistency'} = house_consistency_matrix{matched_set,'consistency'} + 1;
                         
                         bill_count = bill_count + 1;
-                    
+                        
                         bill_ids(end+1) = i; %#ok<AGROW>
                     end
                 end
@@ -590,7 +602,7 @@ classdef forge < handle
         end
         
         function [accuracy, number_sponsors, number_committee] = predictOutcomes(obj,bill_id,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committe_matrix,house_chamber_matrix)
-
+            
             bill_information = obj.bill_set(bill_id);
             
             ids = arrayfun(@(x) ['id' num2str(x)], house_people{:,'sponsor_id'}, 'Uniform', 0);
@@ -613,10 +625,10 @@ classdef forge < handle
             committee_ids_no = arrayfun(@(x) ['id' num2str(x)],committee_no, 'Uniform', 0);
             committee_ids = committee_ids(ismember(committee_ids,ids));
             committee_ids_yes = committee_ids_yes(ismember(committee_ids_yes,ids));
-            committee_ids_no = committee_ids_no(ismember(committee_ids_no,ids)); 
+            committee_ids_no = committee_ids_no(ismember(committee_ids_no,ids));
             
             found_it = 0;
-            for i = length(bill_information.house_data.chamber_votes):1
+            for i = length(bill_information.house_data.chamber_votes):-1:1
                 if ~isempty(regexp(upper(bill_information.house_data.chamber_votes(i).description{:}),'THIRD READING','once'))
                     bill_yes = bill_information.house_data.chamber_votes(i).yes_list;
                     bill_no = bill_information.house_data.chamber_votes(i).no_list;
@@ -624,7 +636,7 @@ classdef forge < handle
                     break
                 end
             end
-
+            
             number_sponsors = size(sponsor_ids,1);
             number_committee = size(committee_ids,1);
             
@@ -636,7 +648,7 @@ classdef forge < handle
             bill_yes_ids = arrayfun(@(x) ['id' num2str(x)],bill_yes, 'Uniform', 0);
             bill_no_ids = arrayfun(@(x) ['id' num2str(x)],bill_no, 'Uniform', 0);
             bill_yes_ids = bill_yes_ids(ismember(bill_yes_ids,ids));
-            bill_no_ids = bill_no_ids(ismember(bill_no_ids,ids)); 
+            bill_no_ids = bill_no_ids(ismember(bill_no_ids,ids));
             
             
             % initial assumption, eveyone is equally likely to vote yes as
@@ -657,7 +669,6 @@ classdef forge < handle
             bayes.sponsor_effect_committee_negative = NaN(length(ids),1);
             
             expressed_preference = array2table(zeros(length(ids),2),'VariableNames',{'expressed','locked'},'RowNames',ids);
-            
             
             % --------- COMMITTEE EFFECT ---------
             % Calculate sponsor effect
@@ -681,7 +692,7 @@ classdef forge < handle
                             case 1
                                 sponsor_specific_effect = 0.99;
                         end
-
+                        
                         
                         sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
                         sponsor_effect_negative = sponsor_effect_negative*(1-sponsor_specific_effect);
@@ -733,7 +744,7 @@ classdef forge < handle
                                 otherwise
                                     t_set{i,'p_yes_rev_cs'} = t_set{i,'committee_consistency'};
                             end
-                                    
+                            
                     end
                 end
             end
@@ -754,7 +765,7 @@ classdef forge < handle
             end
             expressed_preference{[sponsor_ids; committee_ids],'expressed'} = 1;
             
-            % So now we only update based on expressed preference for t2            
+            % So now we only update based on expressed preference for t2
             % calculate t2
             t_set.t2 = NaN(length(ids),1);
             
@@ -797,8 +808,8 @@ classdef forge < handle
             
             %             t_set.t3 = NaN(length(ids),1);
             %
-            %% not super sure how to do this, mock data will help
-            %% also want to tag by date (metadata? separate list?)
+            % not super sure how to do this, mock data will help
+            % also want to tag by date (metadata? separate list?)
             
             %             preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
             %             preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
@@ -818,7 +829,7 @@ classdef forge < handle
             %                 t_set{i,'t3'} = (specific_impact*bayes{i,'p_yes'})/(specific_impact*bayes{i,'p_yes'} + (1-specific_impact)*(1-bayes{i,'p_yes'}));
             %             end
             
-
+            
             
             % Final check (as implemented right now, t2
             t_set.t2_check = round(t_set.t2) == t_set.final;
@@ -836,63 +847,66 @@ classdef forge < handle
             
             t_table = array2table(NaN(length(bayes.Properties.RowNames),1),'VariableNames',{'p'},'RowNames',bayes.Properties.RowNames);
             
-           for i = bayes.Properties.RowNames'
-               time_update = 1;
-               count = 1;
-               for j = bayes.Properties.VariableNames
-                   if count == length(bayes.Properties.VariableNames) && (isnan(bayes{i,j}) || bayes{i,j} == -1)
-                       time_update = bayes{i,j};
-                   end
-                   
-                   if ~isnan(bayes{i,j}) && (bayes{i,j} ~= -1)
-                       time_update = time_update * bayes{i,j};
-                   end
-                   
-                   count = count + 1;
-               end
-               
-               if (isnan(time_update) || time_update == -1) 
-                   t_table{i,'p'} = time_update/0.5;
-               else
-                   t_table{i,'p'} = time_update;
-               end
-           end
+            for i = bayes.Properties.RowNames'
+                time_update = 1;
+                count = 1;
+                for j = bayes.Properties.VariableNames
+                    if count == length(bayes.Properties.VariableNames) && (isnan(bayes{i,j}) || bayes{i,j} == -1)
+                        time_update = bayes{i,j};
+                    end
+                    
+                    if ~isnan(bayes{i,j}) && (bayes{i,j} ~= -1)
+                        time_update = time_update * bayes{i,j};
+                    end
+                    
+                    count = count + 1;
+                end
+                
+                if (isnan(time_update) || time_update == -1)
+                    t_table{i,'p'} = time_update/0.5;
+                else
+                    t_table{i,'p'} = time_update;
+                end
+            end
         end
         
         function generatePlots(obj,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
-            h = figure();
-            hold on
-            title(sprintf('%s %s',label_string,specific_label))
-            xlabel(x_specific)
-            ylabel(y_specific)
-            zlabel(z_specific)
-            axis square
-            grid on
-            surf(people_matrix{:,:})
-            colorbar
-            view(3)
-            hold off
-            saveas(h,sprintf('%s/%s_%s',obj.outputs_directory,label_string,tag),'png')
             
-            view(2)
-            saveas(h,sprintf('%s/%s_%s_flat',obj.outputs_directory,label_string,tag),'png')
-            
-            if obj.make_gifs
-                directory = sprintf('%s/%s_%s/',obj.gif_directory,label_string,tag);
-                [~, ~, ~] = mkdir(directory);
+            if ~isempty(people_matrix)
+                h = figure();
+                hold on
+                title(sprintf('%s %s',label_string,specific_label))
+                xlabel(x_specific)
+                ylabel(y_specific)
+                zlabel(z_specific)
+                axis square
+                grid on
+                surf(people_matrix{:,:})
+                colorbar
+                view(3)
+                hold off
+                saveas(h,sprintf('%s/%s_%s',obj.outputs_directory,label_string,tag),'png')
                 
-                for i = 0:4:360
-                    view(i,48)
-                    saveas(h,sprintf('%s/%03i',directory,i),'png')
+                view(2)
+                saveas(h,sprintf('%s/%s_%s_flat',obj.outputs_directory,label_string,tag),'png')
+                
+                if obj.make_gifs
+                    directory = sprintf('%s/%s_%s/',obj.gif_directory,label_string,tag);
+                    [~, ~, ~] = mkdir(directory);
+                    
+                    for i = 0:4:360
+                        view(i,48)
+                        saveas(h,sprintf('%s/%03i',directory,i),'png')
+                    end
+                    
+                    obj.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
                 end
                 
-                obj.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
-            end
-            
-            if obj.make_histograms
-                directory = sprintf(obj.histogram_directory);
-                [~, ~, ~] = mkdir(directory);
-                obj.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
+                if obj.make_histograms
+                    directory = sprintf(obj.histogram_directory);
+                    [~, ~, ~] = mkdir(directory);
+                    obj.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
+                end
             end
         end
         
@@ -931,7 +945,7 @@ classdef forge < handle
             % loop over the available files
             for i = 1:length(list)
                 % if the file fits the format we're looking for
-                if ~isempty(regexp(list(i).name,'(\d+)-(\d+)_Regular_Session','once'))
+                if ~isempty(regexp(list(i).name,'(\d+)-(\d+)_*','once'))
                     if istable(output) % if the output file exists, append
                         output = [output;readtable(sprintf('%s/%s/csv/%s.csv',directory,list(i).name,type))]; %#ok<AGROW>
                     else % if it doesn't exist, create it
@@ -1060,27 +1074,31 @@ classdef forge < handle
             
             main_plot = reshape(people_matrix{:,:},[numel(people_matrix{:,:}),1]);
             
-            h = figure();
-            hold on
-            title(sprintf('%s %s histogram with non-matching legislators',label_string,specific_label))
-            xlabel('Agreement')
-            ylabel('Frequency')
-            grid on
-            histfit(main_plot)
-            axis([0 1 0 inf])
-            hold off
-            saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,label_string,tag),'png')
+            if ~isempty(main_plot)
+                h = figure();
+                hold on
+                title(sprintf('%s %s histogram with non-matching legislators',label_string,specific_label))
+                xlabel('Agreement')
+                ylabel('Frequency')
+                grid on
+                histfit(main_plot)
+                axis([0 1 0 inf])
+                hold off
+                saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,label_string,tag),'png')
+            end
             
-            h = figure();
-            hold on
-            title(sprintf('%s %s histogram with matching legislators',label_string,specific_label))
-            xlabel('Agreement')
-            ylabel('Frequency')
-            grid on
-            histfit(secondary_plot)
-            axis([0 1 0 inf])
-            hold off
-            saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,label_string,tag),'png')
+            if ~isempty(secondary_plot)
+                h = figure();
+                hold on
+                title(sprintf('%s %s histogram with matching legislators',label_string,specific_label))
+                xlabel('Agreement')
+                ylabel('Frequency')
+                grid on
+                histfit(secondary_plot)
+                axis([0 1 0 inf])
+                hold off
+                saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,label_string,tag),'png')
+            end
         end
         
         function [people_matrix] = normalizeVotes(people_matrix,vote_matrix)
