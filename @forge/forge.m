@@ -884,8 +884,6 @@ classdef forge < handle
                 accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 
                 writetable(t_set,'t_set_test.xlsx','WriteRowNames',true)
-                
-                keyboard
             else
                 
                 % Final check (as implemented right now, t2
