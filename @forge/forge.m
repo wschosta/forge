@@ -218,7 +218,7 @@ classdef forge < handle
                 [house_sponsor_chamber_matrix]   = obj.normalizeVotes(house_sponsor_chamber_matrix, house_sponsor_chamber_votes);
                 [house_committee_matrix]         = obj.normalizeVotes(house_committee_matrix,house_committee_votes);
                 [house_sponsor_committee_matrix] = obj.normalizeVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes);
-
+                
                 house_consistency_matrix.percentage = house_consistency_matrix.consistency ./ house_consistency_matrix.opportunity;
                 
                 % Create Republican and Democrat Lists (makes accounting easier)
@@ -346,7 +346,7 @@ classdef forge < handle
             
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
-                       
+            
             accuracy_list = zeros(1,length(bill_ids));
             sponsor_list = zeros(1,length(bill_ids));
             committee_list = zeros(1,length(bill_ids));
@@ -421,7 +421,7 @@ classdef forge < handle
                 end
                 writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
             end
-        
+            
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
             for i = 1:length(var_list)
@@ -679,12 +679,12 @@ classdef forge < handle
                     sponsor_effect_positive = -1;
                     sponsor_effect_negative = -1;
                 else
-                    for j = 1:length(sponsor_ids)
-                        if ~ismember(sponsor_ids{j},house_sponsor_committe_matrix.Properties.VariableNames)
+                    for k = 1:length(sponsor_ids)
+                        if ~ismember(sponsor_ids{k},house_sponsor_committe_matrix.Properties.VariableNames)
                             continue
                         end
                         
-                        sponsor_specific_effect = house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{j}};
+                        sponsor_specific_effect = house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{k}};
                         
                         switch sponsor_specific_effect % this is because 1 or 0 will squash out the results
                             case 0
@@ -692,7 +692,6 @@ classdef forge < handle
                             case 1
                                 sponsor_specific_effect = 0.99;
                         end
-                        
                         
                         sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
                         sponsor_effect_negative = sponsor_effect_negative*(1-sponsor_specific_effect);
@@ -774,9 +773,9 @@ classdef forge < handle
             
             for i = preference_unknown
                 combined_impact = [];
-                for j = preference_known
+                for k = preference_known
                     
-                    specific_impact = house_chamber_matrix{i,j};
+                    specific_impact = house_chamber_matrix{i,k};
                     
                     switch specific_impact % this is because 1 or 0 will squash out the results
                         case 0
@@ -805,40 +804,98 @@ classdef forge < handle
             % we'll know the id of the person we're updating so we just
             % need the ids of the people we are not updating. We should
             % also be able to do this in a loop? yeah?
-            
-            %             t_set.t3 = NaN(length(ids),1);
-            %
-            % not super sure how to do this, mock data will help
-            % also want to tag by date (metadata? separate list?)
-            
-            %             preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
-            %             preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
-            %
-            %             for i = preference_unknown
-            %
-            %                 specific_impact = house_chamber_matrix{i,preference_known};
-            %
-            %                 switch specific_impact % this is because 1 or 0 will squash out the results
-            %                     case 0
-            %                         specific_impact = 0.01;
-            %                     case 1
-            %                         specific_impact = 0.99;
-            %                 end
-            %
-            %
-            %                 t_set{i,'t3'} = (specific_impact*bayes{i,'p_yes'})/(specific_impact*bayes{i,'p_yes'} + (1-specific_impact)*(1-bayes{i,'p_yes'}));
-            %             end
-            
-            
-            
-            % Final check (as implemented right now, t2
-            t_set.t2_check = round(t_set.t2) == t_set.final;
-            
-            incorrect = sum(t_set.t2_check == false);
-            are_nan = sum(isnan(t_set{t_set.t2_check == false,'final'}));
-            
-            accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
-            
+            if bill_id == 590034
+                
+                revealed_preferences = readtable('data/IN/undergrad/590034 - Schostak history.xlsx');
+                revealed_preferences = sortrows(revealed_preferences,'date');
+                
+                t_count = 2;
+                for i = 1:size(revealed_preferences,1)
+                    
+                    revealed_id = sprintf('id%i',revealed_preferences{i,'legislator_id'});
+                    revealed_preference = revealed_preferences{i,'direction'};
+                    
+                    if ismember(revealed_id,house_chamber_matrix.Properties.RowNames)
+                        
+                        t_count = t_count + 1;
+                        t_current = sprintf('t%i',t_count);
+                        t_previous = sprintf('t%i',t_count-1);
+                        t_set.(t_current) = NaN(length(ids),1);
+                        
+                        expressed_preference{:,'expressed'} = 0;
+                        expressed_preference{revealed_id,'expressed'} = 1;
+                        
+                        preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
+                        preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+                        
+                        for j = preference_unknown
+                            combined_impact = [];
+                            for k = preference_known
+                                
+                                specific_impact = house_chamber_matrix{j,k};
+                                
+                                switch revealed_preference
+                                    case 0 % preference revealed to be no
+                                        switch specific_impact
+                                            case 0
+                                                specific_impact = 0.99; % voted no, low consistency
+                                            case 1
+                                                specific_impact = 0.01; % voted no, high consistency
+                                            otherwise
+                                                specific_impact = 1 - specific_impact;
+                                        end
+                                    case 1
+                                        switch specific_impact
+                                            case 0
+                                                specific_impact = 0.01; % voted yes, low consistency
+                                            case 1
+                                                specific_impact = 0.99; % voted yes, high consistency
+                                            otherwise
+                                                specific_impact = specific_impact; %#ok<ASGSL>
+                                        end
+                                        
+                                end
+                                
+                                combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
+                            end
+                            
+                            if isnan(specific_impact) || isnan(combined_impact)
+                                t_set{j,t_current} = t_set{j,t_previous};
+                            else
+                                t_set{j,t_current} = (prod(combined_impact)*t_set{j,t_previous})/(prod(combined_impact)*t_set{j,t_previous} + prod(1-combined_impact)*(1-t_set{j,t_previous}));
+                            end
+                        end
+                        
+                        switch revealed_preference
+                            case 0
+                                t_set{k,t_current} = 0.01;
+                            case 1
+                                t_set{k,t_current} = 0.99;
+                        end
+                    end
+                    
+                end
+                
+                t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
+                
+                incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
+                are_nan = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
+                
+                accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
+                
+                writetable(t_set,'t_set_test.xlsx','WriteRowNames',true)
+                
+                keyboard
+            else
+                
+                % Final check (as implemented right now, t2
+                t_set.t2_check = round(t_set.t2) == t_set.final;
+                
+                incorrect = sum(t_set.t2_check == false);
+                are_nan = sum(isnan(t_set{t_set.t2_check == false,'final'}));
+                
+                accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
+            end
         end
         
         % in the future this is most likely abstractable, for now I'll do
