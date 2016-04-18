@@ -712,6 +712,9 @@ classdef forge < handle
                 end
             end
             
+            % plot t1
+            %             obj.plotTSet(t_set(:,'t1'),'t_1 - Predicting the Committee Vote')
+
             t_set.committee_vote = NaN(length(t_set.Properties.RowNames),1);
             t_set{committee_ids_yes,'committee_vote'} = 1;
             t_set{committee_ids_no,'committee_vote'} = 0;
@@ -794,6 +797,10 @@ classdef forge < handle
                 t_set{i,'t2'} = t_set{i,'p_yes_rev_cs'};
             end
             
+            %plot t2
+            %             obj.plotTSet(t_set(:,'t2'),'t_2 - Predicting chamber vote with committee and sponsor vote')
+
+            
             % here is where the updating comes in, need to mock up some
             % data whereby people declare preferences. However, things are
             % pretty damn solid at this point
@@ -805,6 +812,16 @@ classdef forge < handle
             % need the ids of the people we are not updating. We should
             % also be able to do this in a loop? yeah?
             if bill_id == 590034
+                
+                save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
+                
+                [~,~,~] = mkdir(save_directory);
+                
+                obj.plotTSet(t_set(:,'t1'),'t_1 - Predicting the Committee Vote')
+                saveas(gcf,sprintf('%s/t1',save_directory),'png');
+                
+                obj.plotTSet(t_set(:,'t2'),'t_2 - Predicting chamber vote with committee and sponsor vote')
+                saveas(gcf,sprintf('%s/t2',save_directory),'png');
                 
                 revealed_preferences = readtable('data/IN/undergrad/590034 - Schostak history.xlsx');
                 revealed_preferences = sortrows(revealed_preferences,'date');
@@ -872,8 +889,10 @@ classdef forge < handle
                             case 1
                                 t_set{k,t_current} = 0.99;
                         end
+                        
+                        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s',t_current,obj.getSponsorName({revealed_id})));
+                        saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                     end
-                    
                 end
                 
                 t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
@@ -883,7 +902,7 @@ classdef forge < handle
                 
                 accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 
-                writetable(t_set,'t_set_test.xlsx','WriteRowNames',true)
+                writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
             else
                 
                 % Final check (as implemented right now, t2
@@ -987,8 +1006,78 @@ classdef forge < handle
         end
         
         function sponsor_name = getSponsorName(obj,id_code)
-            sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
-            sponsor_name = sponsor_name{1};
+            if iscell(id_code)
+                if length(id_code) == 1
+                    id_code = str2double(regexprep(id_code,'id',''));
+                    sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
+                    sponsor_name = sponsor_name{1};
+                else
+                    sponsor_name = {};
+                    for i = 1:length(id_code)
+                        specific_id = str2double(regexprep(id_code{i},'id',''));
+                        specific_name = obj.people{specific_id == obj.people.sponsor_id,'name'};
+                        sponsor_name = [sponsor_name specific_name{1}]; %#ok<AGROW>
+                    end
+                end
+            else
+                if length(id_code) == 1
+                    sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
+                    sponsor_name = sponsor_name{1};
+                else
+                    sponsor_name = {};
+                    for i = 1:length(id_code)
+                        specific_name = obj.people{id_code{i} == obj.people.sponsor_id,'name'};
+                        sponsor_name = [sponsor_name specific_name{1}]; %#ok<AGROW>
+                    end
+                end
+            end
+        end
+        
+        function plotTSet(obj,t_set_values,title_text)
+            label_text = t_set_values.Properties.RowNames(~isnan(t_set_values{:,:}));
+            plot_values = round(t_set_values{:,:}(~isnan(t_set_values{:,:}))*5)/5;
+            for i = 1:length(plot_values)
+                if plot_values(i) < 0.2
+                    plot_values(i) = 0.05;
+                elseif plot_values(i) <0.4
+                    plot_values(i) = 1.05;
+                elseif plot_values(i) < 0.6
+                    plot_values(i) = 2.05;
+                elseif plot_values(i) < 0.8
+                    plot_values(i) = 3.05;
+                elseif plot_values(i) <= 1
+                    plot_values(i) = 4.05;
+                end
+            end
+            
+            label_text = obj.getSponsorName(label_text);
+            
+            [plot_values, index] = sort(plot_values);
+            label_text = label_text(index);
+            
+            unique_values = unique(plot_values);
+            
+            height = [];
+            for i = 1:length(unique_values)
+                height = [height linspace(0.02,0.98,sum(plot_values == unique_values(i)))]; %#ok<AGROW>
+            end
+                    
+            figure('units','normalized','outerposition',[0 0 1 1])
+            hold on;
+            title(title_text)
+            patch([0 1 1 0],[0 0 1 1],'b')
+            patch([1 2 2 1],[0 0 1 1],'c')
+            patch([2 3 3 2],[0 0 1 1],'g')
+            patch([3 4 4 3],[0 0 1 1],'y')
+            patch([4 5 5 4],[0 0 1 1],'r')
+            alpha(0.3)
+            text(plot_values,height,label_text)
+            axis([0,5,0,1])
+            ax = gca;
+            set(ax,'XTick',[0.5 1.5 2.5 3.5 4.5]);
+            set(ax,'XTickLabel',{'Strong No','Leaning No','Neutral','Leaning Yes','Strong Yes'});
+            set(ax,'YTick',[]);
+            hold off
         end
         
         function output = readAllFilesOfSubject(obj,type)
