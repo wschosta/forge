@@ -224,7 +224,6 @@ classdef forge < handle
                 % Create Republican and Democrat Lists (makes accounting easier)
                 [republican_ids, democrat_ids] = obj.processParties(house_people);
                 
-                
                 house_republicans_chamber_votes = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
                 house_democrats_chamber_votes   = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
                 
@@ -237,6 +236,7 @@ classdef forge < handle
                 house_republicans_committee_sponsor = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
                 house_democrats_committee_sponsor   = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
                 
+                house_seat_matrix = obj.processSeatProximity(house_people);
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
@@ -267,6 +267,8 @@ classdef forge < handle
                     writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
                     
                     writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                    
+                    writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
                     
                     [~,~,~] = rmdir(obj.gif_directory,'s');
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
@@ -662,6 +664,8 @@ classdef forge < handle
             % large step, new time t for every update
             bayes = array2table(0.5*ones(length(ids),1),'VariableNames',{'p_yes'},'RowNames',ids);
             t_set = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
+            accuracy_table = array2table(NaN(1,6),'VariableNames',{'final','name','t1','committee_vote','committee_consistency','p_yes_rev_cs'},'RowNames',{'accuracy'});
+            t_set.name = obj.getSponsorName(ids)';
             t_set.t1 = NaN(length(ids),1);
             t_set{bill_yes_ids,'final'} = 1;
             t_set{bill_no_ids,'final'} = 0;
@@ -797,6 +801,13 @@ classdef forge < handle
                 t_set{i,'t2'} = t_set{i,'p_yes_rev_cs'};
             end
             
+            t2_check = round(t_set.t2) == t_set.final;
+            
+            incorrect = sum(t2_check == false);
+            are_nan = sum(isnan(t_set{t2_check == false,'final'}));
+            
+            accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
+            
             %plot t2
             %             obj.plotTSet(t_set(:,'t2'),'t_2 - Predicting chamber vote with committee and sponsor vote')
 
@@ -890,6 +901,13 @@ classdef forge < handle
                                 t_set{k,t_current} = 0.99;
                         end
                         
+                        t_check = round(t_set.(t_current)) == t_set.final;
+                        
+                        incorrect = sum(t_check == false);
+                        are_nan = sum(isnan(t_set{t_check == false,'final'}));
+                        
+                       accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
+                        
                         obj.plotTSet(t_set(:,t_current),sprintf('%s - %s',t_current,obj.getSponsorName({revealed_id})));
                         saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                     end
@@ -897,10 +915,16 @@ classdef forge < handle
                 
                 t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
                 
+                
+                
                 incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
                 are_nan = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
                 
                 accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
+                
+                accuracy_table.(sprintf('%s_check',t_current)) = accuracy;
+                
+                t_set = [t_set ; accuracy_table];
                 
                 writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
             else
@@ -1155,6 +1179,18 @@ classdef forge < handle
                 chamber_data.final_yes_percentage = -1;
             end
         end
+        
+        function proximity_matrix = processSeatProximity(obj,people)
+            % Create the string array list (which allows for referencing variable names
+            ids = arrayfun(@(x) ['id' num2str(x)], people{:,'sponsor_id'}, 'Uniform', 0);
+            
+            x = people{:,'SEATROW'};
+            y = people{:,'SEATCOLUMN'};
+            dist = sqrt(bsxfun(@minus,x,x').^2 + bsxfun(@minus,y,y').^2);
+            
+            proximity_matrix = array2table(dist,'RowNames',ids,'VariableNames',ids);
+            proximity_matrix.name = obj.getSponsorName(ids)';
+        end
     end
     
     methods (Static)
@@ -1191,18 +1227,7 @@ classdef forge < handle
                 fprintf('WARNING: INCORRECT PARTY ID FOR %s\n',bad_ids{i});
             end
         end
-        
-        function proximity_matrix = processSeatProximity(people)
-            % Create the string array list (which allows for referencing variable names
-            ids = arrayfun(@(x) ['id' num2str(x)], people{:,'sponsor_id'}, 'Uniform', 0);
-            
-            x = people{:,'SEATROW'};
-            y = people{:,'SEATCOLUMN'};
-            dist = sqrt(bsxfun(@minus,x,x').^2 + bsxfun(@minus,y,y').^2);
-            
-            proximity_matrix = array2table(dist,'RowNames',ids,'VariableNames',ids);
-        end
-        
+                
         function generateHistograms(people_matrix,save_directory,label_string,specific_label,tag)
             
             rows = people_matrix.Properties.RowNames;
