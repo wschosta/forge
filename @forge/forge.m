@@ -782,11 +782,28 @@ classdef forge < handle
             
             % at this point, for t3, we do basically the same thing as t2
             % but we just update everything
-            
-            % we'll know the id of the person we're updating so we just
-            % need the ids of the people we are not updating. We should
-            % also be able to do this in a loop? yeah?
-            if bill_id == 590034
+            if any(bill_id == [590034 587734 590009])
+                
+                switch bill_id
+                    case 590034
+                        revealed_preferences = readtable('data/IN/undergrad/590034 - Schostak history.xlsx');
+                        revealed_preferences = sortrows(revealed_preferences,'date');
+                    otherwise
+                        number_of_legislators = 8;
+                        
+                        legislator_list = [bill_yes_ids ; bill_no_ids];
+                        legislator_list = legislator_list(randperm(length(legislator_list)));
+                        
+                        legislator_list = obj.createIDcodes(legislator_list);
+                        
+                        legislator_id = NaN(number_of_legislators,1);
+                        direction = NaN(number_of_legislators,1);
+                        for i = 1:number_of_legislators % because we just want a limited number of revealed votes
+                            legislator_id(i) = legislator_list(i);
+                            direction(i) = any(legislator_id(i) == bill_yes);
+                        end
+                        revealed_preferences = table(legislator_id,direction);
+                end
                 
                 save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
                 
@@ -797,9 +814,6 @@ classdef forge < handle
                 
                 obj.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
                 saveas(gcf,sprintf('%s/t2',save_directory),'png');
-                
-                revealed_preferences = readtable('data/IN/undergrad/590034 - Schostak history.xlsx');
-                revealed_preferences = sortrows(revealed_preferences,'date');
                 
                 t_count = 2;
                 for i = 1:size(revealed_preferences,1)
@@ -839,8 +853,10 @@ classdef forge < handle
                         switch revealed_preference
                             case 0
                                 t_set{k,t_current} = 0.01;
+                                vote_direction = 'nay';
                             case 1
                                 t_set{k,t_current} = 0.99;
+                                vote_direction = 'yea';
                             otherwise
                                 error('Functionality for non-binary revealed preferences not currently supported')
                         end
@@ -851,8 +867,8 @@ classdef forge < handle
                         are_nan = sum(isnan(t_set{t_check == false,'final'}));
                         
                         accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
-                        
-                        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s',t_current,obj.getSponsorName({revealed_id})));
+            
+                        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName({revealed_id}),vote_direction));
                         saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                     end
                 end
@@ -1142,6 +1158,11 @@ classdef forge < handle
     methods (Static)
         function ids = createIDstrings(sponsor_codes)
             ids = arrayfun(@(x) ['id' num2str(x)], sponsor_codes, 'Uniform', 0);
+        end
+        
+        function id_codes = createIDcodes(sponsor_ids)
+             id_codes = cellfun(@(x) str2double(regexprep(x,'id','')),sponsor_ids,'Uniform',0);
+             id_codes = [id_codes{:}]';
         end
         
         function specific_impact = getSpecificImpact(revealed_preference,specific_impact)
