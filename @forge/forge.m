@@ -782,7 +782,7 @@ classdef forge < handle
             
             % at this point, for t3, we do basically the same thing as t2
             % but we just update everything
-            if any(bill_id == [590034 587734 590009])
+            if bill_id == any(bill_id == [590034 583138 587734 590009])
                 
                 switch bill_id
                     case 590034
