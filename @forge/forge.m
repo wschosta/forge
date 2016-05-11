@@ -66,38 +66,40 @@ classdef forge < handle
         %       HALF DONE - accomplished by text searching for "THIRD
         %       READING" which works decently well
         % - generate committee membership lists
-        function obj = forge(varargin)
-            in = inputParser;
-            addOptional(in,'recompute',0,@islogical);
-            addOptional(in,'reprocess',0,@islogical);
-            addOptional(in,'state','IN',@(x) ischar(x) && length(x) == 2);
-            addOptional(in,'generateOutputs',0,@islogical);
-            parse(in,varargin{:});
-            
-            obj.recompute = in.Results.recompute;
-            obj.reprocess = in.Results.reprocess;
-            obj.state     = in.Results.state;
-            obj.generate_outputs = in.Results.generateOutputs;
-            
-            obj.data_directory = 'data';
-            
-            obj.outputs_directory = sprintf('%s/%s/outputs',obj.data_directory,obj.state);
-            obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
-            obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
-            
-            obj.learning_algorithm_data = la.loadLearnedMaterials();
-            switch obj.state
-                case 'IN'
-                    obj.senate_size = 50;
-                    obj.house_size = 100;
-                case 'OH'
-                    obj.senate_size = 33;
-                    obj.house_size = 99;
-                otherwise
-                    obj.senate_size = 50;
-                    obj.house_size = 100;
-            end
-            
+        %         function obj = forge(varargin)
+        %             in = inputParser;
+        %             addOptional(in,'recompute',0,@islogical);
+        %             addOptional(in,'reprocess',0,@islogical);
+        %             addOptional(in,'state','IN',@(x) ischar(x) && length(x) == 2);
+        %             addOptional(in,'generateOutputs',0,@islogical);
+        %             parse(in,varargin{:});
+        %
+        %             obj.recompute = in.Results.recompute;
+        %             obj.reprocess = in.Results.reprocess;
+        %             obj.state     = in.Results.state;
+        %             obj.generate_outputs = in.Results.generateOutputs;
+        %
+        %             obj.data_directory = 'data';
+        %
+        %             obj.outputs_directory = sprintf('%s/%s/outputs',obj.data_directory,obj.state);
+        %             obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
+        %             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
+        %
+        %             obj.learning_algorithm_data = la.loadLearnedMaterials();
+        %             switch obj.state
+        %                 case 'IN'
+        %                     obj.senate_size = 50;
+        %                     obj.house_size = 100;
+        %                 case 'OH'
+        %                     obj.senate_size = 33;
+        %                     obj.house_size = 99;
+        %                 otherwise
+        %                     obj.senate_size = 50;
+        %                     obj.house_size = 100;
+        %             end
+        %         end
+        
+        function init(obj)
             if obj.reprocess || exist(sprintf('%s_processed_data.mat',obj.state),'file') ~= 2
                 
                 bills_create     = obj.readAllFilesOfSubject('bills');
@@ -197,240 +199,7 @@ classdef forge < handle
             
             obj.bill_set = bill_set_create;
         end
-        
-        function run(obj)
-            
-            if exist(sprintf('%s_saved_data.mat',obj.state),'file') ~= 2 || obj.recompute
-                
-                % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
-                % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
-                % CHAMBER DESCRIPTIONS
-                
-                % Read in the specific 2013-2014 Indiana List
-                house_people = readtable(sprintf('%s/%s/people_2013-2014.xlsx',obj.data_directory,obj.state));
-                
-                [house_chamber_matrix,house_chamber_votes,...
-                    house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
-                    house_committee_matrix,house_committee_votes,...
-                    house_sponsor_committee_matrix,house_sponsor_committee_votes,...
-                    house_consistency_matrix,bill_ids]  = obj.processHouseVotes(house_people);
-                [house_chamber_matrix]           = obj.normalizeVotes(house_chamber_matrix, house_chamber_votes);
-                [house_sponsor_chamber_matrix]   = obj.normalizeVotes(house_sponsor_chamber_matrix, house_sponsor_chamber_votes);
-                [house_committee_matrix]         = obj.normalizeVotes(house_committee_matrix,house_committee_votes);
-                [house_sponsor_committee_matrix] = obj.normalizeVotes(house_sponsor_committee_matrix,house_sponsor_committee_votes);
-                
-                house_consistency_matrix.percentage = house_consistency_matrix.consistency ./ house_consistency_matrix.opportunity;
-                
-                % Create Republican and Democrat Lists (makes accounting easier)
-                [republican_ids, democrat_ids] = obj.processParties(house_people);
-                
-                house_republicans_chamber_votes = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
-                house_democrats_chamber_votes   = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
-                
-                house_republicans_chamber_sponsor = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
-                house_democrats_chamber_sponsor   = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
-                
-                house_republicans_committee_votes = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,republican_ids),ismember(house_committee_matrix.Properties.VariableNames,republican_ids));
-                house_democrats_committee_votes   = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_committee_matrix.Properties.VariableNames,democrat_ids));
-                
-                house_republicans_committee_sponsor = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
-                house_democrats_committee_sponsor   = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
-                
-                house_seat_matrix = obj.processSeatProximity(house_people);
-                
-                var_list = who;
-                var_list = var_list(~ismember(var_list,'obj'));
-                save(sprintf('%s_saved_data',obj.state),var_list{:})
-                
-                if obj.generate_outputs
-                    
-                    delete(sprintf('%s/house_*.xlsx',obj.outputs_directory));
-                    
-                    writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                    
-                    [~,~,~] = rmdir(obj.gif_directory,'s');
-                    [~,~,~] = rmdir(obj.histogram_directory,'s');
-                    obj.make_gifs = true;
-                    obj.make_histograms = true;
-                end
-            else
-                load(sprintf('%s_saved_data.mat',obj.state));
-            end
-            
-            if obj.generate_outputs
-                
-                % PLOTTING
-                % Chamber Vote Data
-                tic
-                obj.generatePlots(house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
-                obj.generatePlots(house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-                obj.generatePlots(house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
-                toc
-                
-                % Chamber Sponsorship Data
-                tic
-                obj.generatePlots(house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-                obj.generatePlots(house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-                obj.generatePlots(house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
-                toc
-                
-                % Committee Vote Data
-                tic
-                obj.generatePlots(house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
-                obj.generatePlots(house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-                obj.generatePlots(house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
-                toc
-                
-                % Committee Sponsorship Data
-                tic
-                obj.generatePlots(house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-                obj.generatePlots(house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-                obj.generatePlots(house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
-                toc
-                
-                % Chamber-Committee Consistency
-                if any(~isnan(house_consistency_matrix.percentage))
-                    h = figure();
-                    hold on
-                    title('Chamber-Committee Consistency')
-                    xlabel('Agreement')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(house_consistency_matrix.percentage)
-                    axis([0 1 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/histogram_chamber_committee_consistency',obj.outputs_directory),'png')
-                end
-            end
-            % each entry will be a structure that contains the important
-            % information about the bill and its passage through both the
-            % senate and the house
-            % this might be an opportunity to bring in the as-yet
-            % unused "history" sheet - from which it should be possible
-            % to mine primary vs secondary sponsors
-            
-            % build in a key for each coded variable on both a bill and
-            % person basis: {bill : issue, committee of origin } {person :
-            % party, chamber leadership, committee leadership}
-            
-            % the result will be a system in which the bills are stored in
-            % a struct that can be drilled to get specific information and
-            % people will continue to be stored in a table
-            
-            % district information, which will be included soon, will also
-            % be stored in table format
-            
-            % makes sense for the relational things (seat proximity, vote
-            % similarity, sponsorship) to be stored in a table as well -
-            % they can be referenced directly by the legislator ID
-            
-            % ID should probably be stored as a string throughout, that way
-            % it can be used in variable names more easily
-            
-            accuracy_list = zeros(1,length(bill_ids));
-            sponsor_list = zeros(1,length(bill_ids));
-            committee_list = zeros(1,length(bill_ids));
-            for i = 1:length(bill_ids)
-                [accuracy, sponsor, committee] = obj.predictOutcomes(bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix);
-                accuracy_list(i) = accuracy;
-                sponsor_list(i) = sponsor;
-                committee_list(i) = committee;
-            end
-            
-            if ~isempty(accuracy_list)
-                h = figure();
-                hold on
-                title('Predictive Model Accuracy at t2')
-                xlabel('Accuracy')
-                ylabel('Frequency')
-                grid on
-                histfit(accuracy_list,20)
-                axis([0 100 0 inf])
-                hold off
-                saveas(h,sprintf('%s/accuracy_histogram_t2',obj.outputs_directory),'png')
-            end
-            
-            if ~isempty(sponsor_list)
-                h = figure();
-                hold on
-                title('Sponsor Count')
-                xlabel('Number of Sponsors')
-                ylabel('Frequency')
-                grid on
-                histfit(sponsor_list,10)
-                axis([0 max(sponsor_list) 0 inf])
-                hold off
-                saveas(h,sprintf('%s/sponsor_histogram',obj.outputs_directory),'png')
-            end
-            
-            if ~isempty(committee_list)
-                h = figure();
-                hold on
-                title('Committee Member Count')
-                xlabel('Number of Committee Members')
-                ylabel('Frequency')
-                grid on
-                histfit(committee_list,10)
-                axis([0 max(committee_list) 0 inf])
-                hold off
-                saveas(h,sprintf('%s/committee_histogram',obj.outputs_directory),'png')
-            end
-            
-            if ~isempty(bill_ids)
-                competitive_bills = cell2table(cell(length(bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
-                for i = 1:length(bill_ids)
-                    competitive_bills{i,'bill_id'} = {obj.bill_set(bill_ids(i)).bill_id};
-                    competitive_bills{i,'bill_number'} = obj.bill_set(bill_ids(i)).bill_number;
-                    competitive_bills{i,'title'} = obj.bill_set(bill_ids(i)).title;
-                    competitive_bills{i,'introduced'} = obj.bill_set(bill_ids(i)).date_introduced;
-                    competitive_bills{i,'last_action'} = obj.bill_set(bill_ids(i)).date_last_action;
-                    competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(bill_ids(i)).issue_category)};
-                    
-                    sponsors_names = obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(1));
-                    for j = 2:length(obj.bill_set(bill_ids(i)).sponsors)
-                        sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(bill_ids(i)).sponsors(j))]; %#ok<AGROW>
-                    end
-                    competitive_bills{i,'sponsors'} = {sponsors_names};
-                    
-                    comittee_ids = [obj.bill_set(bill_ids(i)).house_data.committee_votes(end).yes_list ; obj.bill_set(bill_ids(i)).house_data.committee_votes(end).no_list];
-                    committee_names = obj.getSponsorName(comittee_ids(1));
-                    for j = 2:length(comittee_ids)
-                        committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
-                    end
-                    competitive_bills{i,'committee_members'} = {committee_names};
-                end
-                writetable(competitive_bills,sprintf('%s/competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
-            end
-            
-            var_list = who;
-            var_list = var_list(~ismember(var_list,'obj'));
-            for i = 1:length(var_list)
-                assignin('base',var_list{i},eval(var_list{i}));
-            end
-        end
-        
+       
         % There is probably a better, abstractable way to do this but it's a
         % good rough cut way. There may not actually be a better way to do
         % this in MATLAB...
@@ -440,26 +209,26 @@ classdef forge < handle
                 house_sponsor_committee_matrix,house_sponsor_committee_votes,...
                 house_consistency_matrix,bill_ids] = processHouseVotes(obj,house_people)
             
-            ids = obj.createIDstrings(house_people{:,'sponsor_id'});
+            ids = util.createIDstrings(house_people{:,'sponsor_id'});
             
             % Initialize the people_matrix and possible_votes matrix
-            house_chamber_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
-            house_chamber_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_chamber_matrix = util.createTable(unique(ids),unique(ids),'NaN');
+            house_chamber_votes  = util.createTable(unique(ids),unique(ids),'NaN');
             
-            house_committee_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
-            house_committee_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_committee_matrix = util.createTable(unique(ids),unique(ids),'NaN');
+            house_committee_votes  = util.createTable(unique(ids),unique(ids),'NaN');
             
-            house_sponsor_chamber_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
-            house_sponsor_chamber_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
+            house_sponsor_chamber_matrix = util.createTable(unique(ids),unique(ids),'NaN');
+            house_sponsor_chamber_votes  = util.createTable(unique(ids),unique(ids),'NaN');
             
-            house_sponsor_committee_matrix = obj.createTable(unique(ids),unique(ids),'NaN');
-            house_sponsor_committee_votes  = obj.createTable(unique(ids),unique(ids),'NaN');
-            
-            % Create a table to keep track of the unique sponsorships
-            sponsorship_counts = obj.createTable(unique(ids),{'count'},'zero');
+            house_sponsor_committee_matrix = util.createTable(unique(ids),unique(ids),'NaN');
+            house_sponsor_committee_votes  = util.createTable(unique(ids),unique(ids),'NaN');
             
             % Create a table to keep track of the unique sponsorships
-            house_consistency_matrix = obj.createTable(unique(ids),{'consistency' 'opportunity'},'zero');
+            sponsorship_counts = util.createTable(unique(ids),{'count'},'zero');
+            
+            % Create a table to keep track of the unique sponsorships
+            house_consistency_matrix = util.createTable(unique(ids),{'consistency' 'opportunity'},'zero');
             
             bill_ids = [];
             
@@ -482,7 +251,7 @@ classdef forge < handle
                 if obj.bill_set(i).passed_house >= 0 && obj.bill_set(i).house_data.final_yes_percentage < agreement_threshold && obj.bill_set(i).house_data.final_yes_percentage >= 0
                     
                     % Sponsor information
-                    sponsor_ids = obj.createIDstrings(obj.bill_set(i).sponsors);
+                    sponsor_ids = util.createIDstrings(obj.bill_set(i).sponsors);
                     sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));
                     
                     % Increase the sponsorship count by one
@@ -502,10 +271,10 @@ classdef forge < handle
                         committee_count = committee_count + 1;
                         
                         % Yes/No votes
-                        committee_yes_ids = obj.createIDstrings(obj.bill_set(i).house_data.committee_votes(j).yes_list);
+                        committee_yes_ids = util.createIDstrings(obj.bill_set(i).house_data.committee_votes(j).yes_list);
                         committee_yes_ids = committee_yes_ids(ismember(committee_yes_ids,ids));
                         
-                        committee_no_ids = obj.createIDstrings(obj.bill_set(i).house_data.committee_votes(j).no_list);
+                        committee_no_ids = util.createIDstrings(obj.bill_set(i).house_data.committee_votes(j).no_list);
                         committee_no_ids = committee_no_ids(ismember(committee_no_ids,ids));
                         
                         % STRAIGHT VOTES
@@ -544,10 +313,10 @@ classdef forge < handle
                         end
                         
                         % Yes/No votes
-                        yes_ids = obj.createIDstrings(obj.bill_set(i).house_data.chamber_votes(j).yes_list);
+                        yes_ids = util.createIDstrings(obj.bill_set(i).house_data.chamber_votes(j).yes_list);
                         yes_ids = yes_ids(ismember(yes_ids,ids));
                         
-                        no_ids = obj.createIDstrings(obj.bill_set(i).house_data.chamber_votes(j).no_list);
+                        no_ids = util.createIDstrings(obj.bill_set(i).house_data.chamber_votes(j).no_list);
                         no_ids = no_ids(ismember(no_ids,ids));
                         
                         % STRAIGHT VOTES
@@ -611,8 +380,8 @@ classdef forge < handle
             
             bill_information = obj.bill_set(bill_id);
             
-            ids = obj.createIDstrings(house_people{:,'sponsor_id'});
-            sponsor_ids = obj.createIDstrings(bill_information.sponsors);
+            ids = util.createIDstrings(house_people{:,'sponsor_id'});
+            sponsor_ids = util.createIDstrings(bill_information.sponsors);
             sponsor_ids = sponsor_ids(ismember(sponsor_ids,ids));
             number_sponsors  = size(sponsor_ids,1);
             
@@ -627,9 +396,9 @@ classdef forge < handle
             committee_yes     = bill_information.house_data.committee_votes.yes_list;
             committee_no      = bill_information.house_data.committee_votes.no_list;
             committee_members = [committee_yes ; committee_no];
-            committee_ids     = obj.createIDstrings(committee_members);
-            committee_ids_yes = obj.createIDstrings(committee_yes);
-            committee_ids_no  = obj.createIDstrings(committee_no);
+            committee_ids     = util.createIDstrings(committee_members);
+            committee_ids_yes = util.createIDstrings(committee_yes);
+            committee_ids_no  = util.createIDstrings(committee_no);
             committee_ids     = committee_ids(ismember(committee_ids,ids));
             committee_ids_yes = committee_ids_yes(ismember(committee_ids_yes,ids));
             committee_ids_no  = committee_ids_no(ismember(committee_ids_no,ids));
@@ -650,8 +419,8 @@ classdef forge < handle
                 return
             end
             
-            bill_yes_ids = obj.createIDstrings(bill_yes);
-            bill_no_ids  = obj.createIDstrings(bill_no);
+            bill_yes_ids = util.createIDstrings(bill_yes);
+            bill_no_ids  = util.createIDstrings(bill_no);
             bill_yes_ids = bill_yes_ids(ismember(bill_yes_ids,ids));
             bill_no_ids  = bill_no_ids(ismember(bill_no_ids,ids));
             
@@ -693,7 +462,7 @@ classdef forge < handle
                         if ~ismember(sponsor_ids{k},house_sponsor_committe_matrix.Properties.VariableNames)
                             continue
                         end
-
+                        
                         sponsor_specific_effect = obj.getSpecificImpact(1,house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{k}});
                         
                         sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
@@ -716,9 +485,6 @@ classdef forge < handle
                 end
             end
             
-            % plot t1
-            %             obj.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
-
             t_set.committee_vote = NaN(length(t_set.Properties.RowNames),1);
             t_set{committee_ids_yes,'committee_vote'} = 1;
             t_set{committee_ids_no,'committee_vote'} = 0;
@@ -773,102 +539,95 @@ classdef forge < handle
             are_nan   = sum(isnan(t_set{t2_check == false,'final'}));
             accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
             
-            %plot t2
-            %             obj.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
-
             % here is where the updating comes in, need to mock up some
             % data whereby people declare preferences. However, things are
             % pretty damn solid at this point
             
             % at this point, for t3, we do basically the same thing as t2
             % but we just update everything
+            
+            number_of_legislators = 8;
+            
+            legislator_list = [bill_yes_ids ; bill_no_ids];
+            legislator_list = legislator_list(randperm(length(legislator_list)));
+            
+            legislator_list = obj.createIDcodes(legislator_list);
+            
+            legislator_id = NaN(number_of_legislators,1);
+            direction = NaN(number_of_legislators,1);
+            for i = 1:number_of_legislators % because we just want a limited number of revealed votes
+                legislator_id(i) = legislator_list(i);
+                direction(i) = any(legislator_id(i) == bill_yes);
+            end
+            revealed_preferences = table(legislator_id,direction);
+            
+            save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
+            
+            [~,~,~] = mkdir(save_directory);
+            
             if bill_id == any(bill_id == [590034 583138 587734 590009])
-                
-                switch bill_id
-                    case 590034
-                        revealed_preferences = readtable('data/IN/undergrad/590034 - Schostak history.xlsx');
-                        revealed_preferences = sortrows(revealed_preferences,'date');
-                    otherwise
-                        number_of_legislators = 8;
-                        
-                        legislator_list = [bill_yes_ids ; bill_no_ids];
-                        legislator_list = legislator_list(randperm(length(legislator_list)));
-                        
-                        legislator_list = obj.createIDcodes(legislator_list);
-                        
-                        legislator_id = NaN(number_of_legislators,1);
-                        direction = NaN(number_of_legislators,1);
-                        for i = 1:number_of_legislators % because we just want a limited number of revealed votes
-                            legislator_id(i) = legislator_list(i);
-                            direction(i) = any(legislator_id(i) == bill_yes);
-                        end
-                        revealed_preferences = table(legislator_id,direction);
-                end
-                
-                save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
-                
-                [~,~,~] = mkdir(save_directory);
-                
-                obj.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
+                predict.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
                 saveas(gcf,sprintf('%s/t1',save_directory),'png');
                 
-                obj.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
+                predict.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
                 saveas(gcf,sprintf('%s/t2',save_directory),'png');
-                
-                t_count = 2;
-                for i = 1:size(revealed_preferences,1)
-                    
-                    revealed_id = sprintf('id%i',revealed_preferences{i,'legislator_id'});
-                    revealed_preference = revealed_preferences{i,'direction'};
-                    
-                    if ismember(revealed_id,house_chamber_matrix.Properties.RowNames)
-                        
-                        t_count           = t_count + 1;
-                        t_current         = sprintf('t%i',t_count);
-                        t_previous        = sprintf('t%i',t_count-1);
-                        t_set.(t_current) = NaN(length(ids),1);
-                        
-                        expressed_preference{:,'expressed'}           = 0;
-                        expressed_preference{revealed_id,'expressed'} = 1;
-                        
-                        preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
-                        preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
-                        
-                        for j = preference_unknown
-                            combined_impact = [];
-                            for k = preference_known
-                                                        
-                                specific_impact = obj.getSpecificImpact(revealed_preference,house_chamber_matrix{j,k});
-                                
-                                combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
-                            end
-                            
-                            if isnan(specific_impact) || isnan(combined_impact)
-                                t_set{j,t_current} = t_set{j,t_previous};
-                            else
-                                t_set{j,t_current} = (prod(combined_impact)*t_set{j,t_previous})/(prod(combined_impact)*t_set{j,t_previous} + prod(1-combined_impact)*(1-t_set{j,t_previous}));
-                            end
-                        end
-                        
-                        switch revealed_preference
-                            case 0
-                                t_set{k,t_current} = 0.01;
-                                vote_direction = 'nay';
-                            case 1
-                                t_set{k,t_current} = 0.99;
-                                vote_direction = 'yea';
-                            otherwise
-                                error('Functionality for non-binary revealed preferences not currently supported')
-                        end
-                        
-                        t_check = round(t_set.(t_current)) == t_set.final;
-                        
-                        incorrect = sum(t_check == false);
-                        are_nan = sum(isnan(t_set{t_check == false,'final'}));
-                        
-                        accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
+            end
             
-                        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName({revealed_id}),vote_direction));
+            t_count = 2;
+            for i = 1:size(revealed_preferences,1)
+                
+                revealed_id = sprintf('id%i',revealed_preferences{i,'legislator_id'});
+                revealed_preference = revealed_preferences{i,'direction'};
+                
+                if ismember(revealed_id,house_chamber_matrix.Properties.RowNames)
+                    
+                    t_count           = t_count + 1;
+                    t_current         = sprintf('t%i',t_count);
+                    t_previous        = sprintf('t%i',t_count-1);
+                    t_set.(t_current) = NaN(length(ids),1);
+                    
+                    expressed_preference{:,'expressed'}           = 0;
+                    expressed_preference{revealed_id,'expressed'} = 1;
+                    
+                    preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
+                    preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+                    
+                    for j = preference_unknown
+                        combined_impact = [];
+                        for k = preference_known
+                            
+                            specific_impact = obj.getSpecificImpact(revealed_preference,house_chamber_matrix{j,k});
+                            
+                            combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
+                        end
+                        
+                        if isnan(specific_impact) || isnan(combined_impact)
+                            t_set{j,t_current} = t_set{j,t_previous};
+                        else
+                            t_set{j,t_current} = (prod(combined_impact)*t_set{j,t_previous})/(prod(combined_impact)*t_set{j,t_previous} + prod(1-combined_impact)*(1-t_set{j,t_previous}));
+                        end
+                    end
+                    
+                    switch revealed_preference
+                        case 0
+                            t_set{k,t_current} = 0.01;
+                            vote_direction = 'nay';
+                        case 1
+                            t_set{k,t_current} = 0.99;
+                            vote_direction = 'yea';
+                        otherwise
+                            error('Functionality for non-binary revealed preferences not currently supported')
+                    end
+                    
+                    t_check = round(t_set.(t_current)) == t_set.final;
+                    
+                    incorrect = sum(t_check == false);
+                    are_nan = sum(isnan(t_set{t_check == false,'final'}));
+                    
+                    accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
+                    
+                    if bill_id == any(bill_id == [590034 583138 587734 590009])
+                        predict.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName({revealed_id}),vote_direction));
                         saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                     end
                 end
@@ -879,51 +638,50 @@ classdef forge < handle
                 are_nan = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
                 
                 accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
-                
+            end
+            
+            if bill_id == any(bill_id == [590034 583138 587734 590009])
                 accuracy_table.(sprintf('%s_check',t_current)) = accuracy;
-                
                 t_set = [t_set ; accuracy_table];
                 
                 writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
-            else
-                
-                % Final check (as implemented right now, t2
-                t_set.t2_check = round(t_set.t2) == t_set.final;
-                
-                incorrect = sum(t_set.t2_check == false);
-                are_nan = sum(isnan(t_set{t_set.t2_check == false,'final'}));
-                
-                accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
             end
         end
         
-        % in the future this is most likely abstractable, for now I'll do
-        % it manually and not use this function
-        function t_table = updateBayes(obj,bayes) %#ok<INUSL>
+        function plotTSet(obj,t_set_values,title_text)
             
-            t_table = array2table(NaN(length(bayes.Properties.RowNames),1),'VariableNames',{'p'},'RowNames',bayes.Properties.RowNames);
+            label_text = t_set_values.Properties.RowNames(~isnan(t_set_values{:,:}));
+            plot_values = ceil(t_set_values{:,:}(~isnan(t_set_values{:,:}))*5) - 1 + 0.05;
             
-            for i = bayes.Properties.RowNames'
-                time_update = 1;
-                count = 1;
-                for j = bayes.Properties.VariableNames
-                    if count == length(bayes.Properties.VariableNames) && (isnan(bayes{i,j}) || bayes{i,j} == -1)
-                        time_update = bayes{i,j};
-                    end
-                    
-                    if ~isnan(bayes{i,j}) && (bayes{i,j} ~= -1)
-                        time_update = time_update * bayes{i,j};
-                    end
-                    
-                    count = count + 1;
-                end
-                
-                if (isnan(time_update) || time_update == -1)
-                    t_table{i,'p'} = time_update/0.5;
-                else
-                    t_table{i,'p'} = time_update;
-                end
+            label_text = obj.getSponsorName(label_text);
+            
+            [plot_values, index] = sort(plot_values);
+            label_text = label_text(index);
+            
+            unique_values = unique(plot_values);
+            
+            height = [];
+            for i = 1:length(unique_values)
+                height = [height linspace(0.02,0.98,sum(plot_values == unique_values(i)))]; %#ok<AGROW>
             end
+            
+            figure('units','normalized','outerposition',[0 0 1 1])
+            hold on;
+            title(title_text)
+            patch([0 1 1 0],[0 0 1 1],[256/256  51/256  51/256]) % No - Red
+            patch([1 2 2 1],[0 0 1 1],[256/256 153/256  51/256])
+            patch([2 3 3 2],[0 0 1 1],[256/256 256/256  51/256]) % Swing - Yellow
+            patch([3 4 4 3],[0 0 1 1],[153/256 256/256  51/256])
+            patch([4 5 5 4],[0 0 1 1],[ 51/256 256/256  51/256]) % Yes - Green
+            alpha(0.4)
+            text(plot_values,height,label_text)
+            axis([0,5,0,1])
+            ax = gca;
+            set(ax,'XTick',[0.5 1.5 2.5 3.5 4.5]);
+            set(ax,'XTickLabel',{'Strong No','Leaning No','Neutral','Leaning Yes','Strong Yes'});
+            set(ax,'YTick',[]);
+            hold off
+            
         end
         
         % probably can be moved to a plotting file
@@ -956,13 +714,13 @@ classdef forge < handle
                         saveas(h,sprintf('%s/%03i',directory,i),'png')
                     end
                     
-                    obj.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
+                    plot.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
                 end
                 
                 if obj.make_histograms
                     directory = sprintf(obj.histogram_directory);
                     [~, ~, ~] = mkdir(directory);
-                    obj.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
+                    plot.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
                 end
             end
         end
@@ -1014,42 +772,6 @@ classdef forge < handle
                     end
                 end
             end
-        end
-        
-        % probably can be moved to a separate prediction file
-        function plotTSet(obj,t_set_values,title_text)
-            
-            label_text = t_set_values.Properties.RowNames(~isnan(t_set_values{:,:}));
-            plot_values = ceil(t_set_values{:,:}(~isnan(t_set_values{:,:}))*5) - 1 + 0.05;
-            
-            label_text = obj.getSponsorName(label_text);
-            
-            [plot_values, index] = sort(plot_values);
-            label_text = label_text(index);
-            
-            unique_values = unique(plot_values);
-            
-            height = [];
-            for i = 1:length(unique_values)
-                height = [height linspace(0.02,0.98,sum(plot_values == unique_values(i)))]; %#ok<AGROW>
-            end
-
-            figure('units','normalized','outerposition',[0 0 1 1])
-            hold on;
-            title(title_text)
-            patch([0 1 1 0],[0 0 1 1],[256/256  51/256  51/256]) % No - Red
-            patch([1 2 2 1],[0 0 1 1],[256/256 153/256  51/256])
-            patch([2 3 3 2],[0 0 1 1],[256/256 256/256  51/256]) % Swing - Yellow
-            patch([3 4 4 3],[0 0 1 1],[153/256 256/256  51/256])
-            patch([4 5 5 4],[0 0 1 1],[ 51/256 256/256  51/256]) % Yes - Green
-            alpha(0.4)
-            text(plot_values,height,label_text)
-            axis([0,5,0,1])
-            ax = gca;
-            set(ax,'XTick',[0.5 1.5 2.5 3.5 4.5]);
-            set(ax,'XTickLabel',{'Strong No','Leaning No','Neutral','Leaning Yes','Strong Yes'});
-            set(ax,'YTick',[]);
-            hold off
         end
         
         function output = readAllFilesOfSubject(obj,type)
@@ -1130,7 +852,7 @@ classdef forge < handle
         
         function proximity_matrix = processSeatProximity(obj,people)
             % Create the string array list (which allows for referencing variable names
-            ids = obj.createIDstrings(people{:,'sponsor_id'});
+            ids = util.createIDstrings(people{:,'sponsor_id'});
             
             x = people{:,'SEATROW'};
             y = people{:,'SEATCOLUMN'};
@@ -1139,30 +861,26 @@ classdef forge < handle
             proximity_matrix = array2table(dist,'RowNames',ids,'VariableNames',ids);
             proximity_matrix.name = obj.getSponsorName(ids)';
         end
-        
-        function [republican_ids, democrat_ids] = processParties(obj,people)
+    end
+    
+    methods (Static)
+        function [republican_ids, democrat_ids] = processParties(people)
             % Create republican ids
-            republican_ids = obj.createIDstrings(people{people.party == 1,'sponsor_id'});
+            republican_ids = util.createIDstrings(people{people.party == 1,'sponsor_id'});
             
             % Create democrat ids
-            democrat_ids   = obj.createIDstrings(people{people.party == 0,'sponsor_id'});
+            democrat_ids   = util.createIDstrings(people{people.party == 0,'sponsor_id'});
             
             % Check for bad party IDs
-            bad_ids = obj.createIDstrings(people{~ismember(people.party,[0 1]),'sponsor_id'});
+            bad_ids = util.createIDstrings(people{~ismember(people.party,[0 1]),'sponsor_id'});
             for i = 1:length(bad_ids)
                 fprintf('WARNING: INCORRECT PARTY ID FOR %s\n',bad_ids{i});
             end
         end
-    end
-    
-    methods (Static)
-        function ids = createIDstrings(sponsor_codes)
-            ids = arrayfun(@(x) ['id' num2str(x)], sponsor_codes, 'Uniform', 0);
-        end
         
         function id_codes = createIDcodes(sponsor_ids)
-             id_codes = cellfun(@(x) str2double(regexprep(x,'id','')),sponsor_ids,'Uniform',0);
-             id_codes = [id_codes{:}]';
+            id_codes = cellfun(@(x) str2double(regexprep(x,'id','')),sponsor_ids,'Uniform',0);
+            id_codes = [id_codes{:}]';
         end
         
         function specific_impact = getSpecificImpact(revealed_preference,specific_impact)
@@ -1209,7 +927,7 @@ classdef forge < handle
                 end
             end
         end
-
+        
         function vote_matrix = addVotes(vote_matrix,row,column,varargin)
             in = inputParser;
             addOptional(in,'value',1,@isnumeric);
@@ -1236,85 +954,6 @@ classdef forge < handle
             % Element-wise divide. This will take divide each value by the
             % possible value (person-vote total)/(possible vote total)
             people_matrix{:,:} = people_matrix{:,:} ./ vote_matrix{:,:};
-        end
-        
-        % these two can probably be moved to a plotting file
-        function makeGif(file_path,save_name,save_path)
-            
-            results   = dir(sprintf('%s/*.png',file_path));
-            file_name = {results(:).name}';
-            save_path = [save_path, '\'];
-            loops = 65535;
-            delay = 0.2;
-            
-            h = waitbar(0,'0% done','name','Progress') ;
-            for i = 1:length(file_name)
-                
-                a = imread([file_path,file_name{i}]);
-                [M,c_map] = rgb2ind(a,256);
-                if i == 1
-                    imwrite(M,c_map,[save_path,save_name],'gif','LoopCount',loops,'DelayTime',delay)
-                else
-                    imwrite(M,c_map,[save_path,save_name],'gif','WriteMode','append','DelayTime',delay)
-                end
-                waitbar(i/length(file_name),h,[num2str(round(100*i/length(file_name))),'% done']) ;
-            end
-            close(h);
-        end
-             
-        function generateHistograms(people_matrix,save_directory,label_string,specific_label,tag)
-            
-            rows = people_matrix.Properties.RowNames;
-            columns = people_matrix.Properties.VariableNames;
-            [~,match_index] = ismember(rows,columns);
-            match_index = match_index(match_index > 0);
-            
-            secondary_plot = nan(1,length(match_index));
-            for i = 1:length(match_index)
-                secondary_plot(i) = people_matrix{columns{match_index(i)},columns{match_index(i)}};
-                people_matrix{columns{match_index(i)},columns{match_index(i)}} = NaN;
-            end
-            
-            main_plot = reshape(people_matrix{:,:},[numel(people_matrix{:,:}),1]);
-            
-            if ~isempty(main_plot)
-                h = figure();
-                hold on
-                title(sprintf('%s %s histogram with non-matching legislators',label_string,specific_label))
-                xlabel('Agreement')
-                ylabel('Frequency')
-                grid on
-                histfit(main_plot)
-                axis([0 1 0 inf])
-                hold off
-                saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,label_string,tag),'png')
-            end
-            
-            if ~isempty(secondary_plot)
-                h = figure();
-                hold on
-                title(sprintf('%s %s histogram with matching legislators',label_string,specific_label))
-                xlabel('Agreement')
-                ylabel('Frequency')
-                grid on
-                histfit(secondary_plot)
-                axis([0 1 0 inf])
-                hold off
-                saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,label_string,tag),'png')
-            end
-        end
-        
-        % probably can be moved to util
-        function return_table = createTable(rows,columns,type)
-            % Switch by type of table being created
-            switch type
-                case 'NaN'  % initalized with NaNs
-                    return_table = array2table(NaN(length(rows),length(columns)),'RowNames',rows,'VariableNames',columns);
-                case 'zero' % initialied with zeros
-                    return_table = array2table(zeros(length(rows),length(columns)),'RowNames',rows,'VariableNames',columns);
-                otherwise   % throw an error
-                    error('TABLE TYPE NOT FOUND');
-            end
         end
         
         % these three probably can be moved to a separate "templates" function?
