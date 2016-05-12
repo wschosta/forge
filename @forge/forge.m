@@ -16,8 +16,7 @@ classdef forge < handle
         sponsor_filter
         
         state
-        data_directory
-        
+                
         make_gifs
         make_histograms
         
@@ -66,41 +65,9 @@ classdef forge < handle
         %       HALF DONE - accomplished by text searching for "THIRD
         %       READING" which works decently well
         % - generate committee membership lists
-        %         function obj = forge(varargin)
-        %             in = inputParser;
-        %             addOptional(in,'recompute',0,@islogical);
-        %             addOptional(in,'reprocess',0,@islogical);
-        %             addOptional(in,'state','IN',@(x) ischar(x) && length(x) == 2);
-        %             addOptional(in,'generateOutputs',0,@islogical);
-        %             parse(in,varargin{:});
-        %
-        %             obj.recompute = in.Results.recompute;
-        %             obj.reprocess = in.Results.reprocess;
-        %             obj.state     = in.Results.state;
-        %             obj.generate_outputs = in.Results.generateOutputs;
-        %
-        %             obj.data_directory = 'data';
-        %
-        %             obj.outputs_directory = sprintf('%s/%s/outputs',obj.data_directory,obj.state);
-        %             obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
-        %             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
-        %
-        %             obj.learning_algorithm_data = la.loadLearnedMaterials();
-        %             switch obj.state
-        %                 case 'IN'
-        %                     obj.senate_size = 50;
-        %                     obj.house_size = 100;
-        %                 case 'OH'
-        %                     obj.senate_size = 33;
-        %                     obj.house_size = 99;
-        %                 otherwise
-        %                     obj.senate_size = 50;
-        %                     obj.house_size = 100;
-        %             end
-        %         end
         
         function init(obj)
-            if obj.reprocess || exist(sprintf('%s_processed_data.mat',obj.state),'file') ~= 2
+            if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state),'file') ~= 2
                 
                 bills_create     = obj.readAllFilesOfSubject('bills');
                 people_create    = obj.readAllFilesOfSubject('people');
@@ -185,9 +152,9 @@ classdef forge < handle
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
-                save(sprintf('%s_processed_data',obj.state),var_list{:})
+                save(sprintf('data/%s/processed_data.mat',obj.state),var_list{:})
             else
-                load(sprintf('%s_processed_data',obj.state)) %
+                load(sprintf('data/%s/processed_data',obj.state))
             end
             
             obj.bills     = bills_create;
@@ -463,7 +430,7 @@ classdef forge < handle
                             continue
                         end
                         
-                        sponsor_specific_effect = obj.getSpecificImpact(1,house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{k}});
+                        sponsor_specific_effect = predict.getSpecificImpact(1,house_sponsor_committe_matrix{committee_ids{i},sponsor_ids{k}});
                         
                         sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
                         sponsor_effect_negative = sponsor_effect_negative*(1-sponsor_specific_effect);
@@ -497,13 +464,13 @@ classdef forge < handle
             
             for i = t_set.Properties.RowNames'
                 if ~isnan(t_set{i,'committee_vote'})
-                    t_set{i,'p_yes_rev_cs'} = obj.getSpecificImpact(t_set{i,'committee_vote'},t_set{i,'committee_consistency'});
+                    t_set{i,'p_yes_rev_cs'} = predict.getSpecificImpact(t_set{i,'committee_vote'},t_set{i,'committee_consistency'});
                 end
             end
             
             for i = sponsor_ids'
                 if ismember(i,house_sponsor_chamber_matrix.Properties.RowNames) && ismember(i,house_sponsor_chamber_matrix.Properties.VariableNames)
-                    t_set{i,'p_yes_rev_cs'} = obj.getSpecificImpact(1,house_sponsor_chamber_matrix{i,i});
+                    t_set{i,'p_yes_rev_cs'} = predict.getSpecificImpact(1,house_sponsor_chamber_matrix{i,i});
                 else
                     t_set{i,'p_yes_rev_cs'} = 0.5;
                 end
@@ -521,7 +488,7 @@ classdef forge < handle
                 combined_impact = [];
                 for k = preference_known
                     
-                    specific_impact = obj.getSpecificImpact(1,house_chamber_matrix{i,k});
+                    specific_impact = predict.getSpecificImpact(1,house_chamber_matrix{i,k});
                     
                     combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
                 end
@@ -561,15 +528,14 @@ classdef forge < handle
             end
             revealed_preferences = table(legislator_id,direction);
             
-            save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
-            
-            [~,~,~] = mkdir(save_directory);
-            
-            if bill_id == any(bill_id == [590034 583138 587734 590009])
-                predict.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
+            if any(bill_id == [590034 583138 587734 590009])
+                save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
+                [~,~,~] = mkdir(save_directory);
+                
+                obj.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
                 saveas(gcf,sprintf('%s/t1',save_directory),'png');
                 
-                predict.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
+                obj.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
                 saveas(gcf,sprintf('%s/t2',save_directory),'png');
             end
             
@@ -596,7 +562,7 @@ classdef forge < handle
                         combined_impact = [];
                         for k = preference_known
                             
-                            specific_impact = obj.getSpecificImpact(revealed_preference,house_chamber_matrix{j,k});
+                            specific_impact = predict.getSpecificImpact(revealed_preference,house_chamber_matrix{j,k});
                             
                             combined_impact = [combined_impact specific_impact]; %#ok<AGROW>
                         end
@@ -626,21 +592,21 @@ classdef forge < handle
                     
                     accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
                     
-                    if bill_id == any(bill_id == [590034 583138 587734 590009])
-                        predict.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName({revealed_id}),vote_direction));
+                    if any(bill_id == [590034 583138 587734 590009])
+                        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName({revealed_id}),vote_direction));
                         saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                     end
                 end
-                
-                t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
-                
-                incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
-                are_nan = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
-                
-                accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
             end
             
-            if bill_id == any(bill_id == [590034 583138 587734 590009])
+            t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
+                
+            incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
+            are_nan = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
+            
+            accuracy = 100*(1-(incorrect-are_nan)/(100-are_nan));
+            
+            if any(bill_id == [590034 583138 587734 590009])
                 accuracy_table.(sprintf('%s_check',t_current)) = accuracy;
                 t_set = [t_set ; accuracy_table];
                 
@@ -684,7 +650,7 @@ classdef forge < handle
             
         end
         
-        % probably can be moved to a plotting file
+        % probably can be moved to a plotting file?
         function generatePlots(obj,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
             
             if ~isempty(people_matrix)
@@ -705,17 +671,17 @@ classdef forge < handle
                 view(2)
                 saveas(h,sprintf('%s/%s_%s_flat',obj.outputs_directory,label_string,tag),'png')
                 
-                if obj.make_gifs
-                    directory = sprintf('%s/%s_%s/',obj.gif_directory,label_string,tag);
-                    [~, ~, ~] = mkdir(directory);
-                    
-                    for i = 0:4:360
-                        view(i,48)
-                        saveas(h,sprintf('%s/%03i',directory,i),'png')
-                    end
-                    
-                    plot.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
-                end
+%                 if obj.make_gifs
+%                     directory = sprintf('%s/%s_%s/',obj.gif_directory,label_string,tag);
+%                     [~, ~, ~] = mkdir(directory);
+%                     
+%                     for i = 0:4:360
+%                         view(i,48)
+%                         saveas(h,sprintf('%s/%03i',directory,i),'png')
+%                     end
+%                     
+%                     plot.makeGif(directory,sprintf('%s_%s.gif',label_string,tag),obj.outputs_directory);
+%                 end
                 
                 if obj.make_histograms
                     directory = sprintf(obj.histogram_directory);
@@ -776,7 +742,7 @@ classdef forge < handle
         
         function output = readAllFilesOfSubject(obj,type)
             % initialize the full file list and output matrix
-            directory = sprintf('%s/%s/legiscan',obj.data_directory,obj.state);
+            directory = sprintf('data/%s/legiscan',obj.state);
             list   = dir(directory);
             output = [];
             
@@ -881,31 +847,6 @@ classdef forge < handle
         function id_codes = createIDcodes(sponsor_ids)
             id_codes = cellfun(@(x) str2double(regexprep(x,'id','')),sponsor_ids,'Uniform',0);
             id_codes = [id_codes{:}]';
-        end
-        
-        function specific_impact = getSpecificImpact(revealed_preference,specific_impact)
-            switch revealed_preference
-                case 0 % preference revealed to be no
-                    switch specific_impact
-                        case 0
-                            specific_impact = 0.99; % voted no, low consistency
-                        case 1
-                            specific_impact = 0.01; % voted no, high consistency
-                        otherwise
-                            specific_impact = 1 - specific_impact;
-                    end
-                case 1
-                    switch specific_impact
-                        case 0
-                            specific_impact = 0.01; % voted yes, low consistency
-                        case 1
-                            specific_impact = 0.99; % voted yes, high consistency
-                        otherwise
-                            specific_impact = specific_impact; %#ok<ASGSL>
-                    end
-                otherwise
-                    error('Functionality for non-binary revealed preferences not currently supported')
-            end
         end
         
         function [people_matrix,possible_votes] = cleanVotes(people_matrix,possible_votes)

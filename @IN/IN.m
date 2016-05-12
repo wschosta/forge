@@ -19,27 +19,27 @@ classdef IN < forge
            obj.reprocess = in.Results.reprocess;
            obj.generate_outputs = in.Results.generateOutputs;
            
-           obj.data_directory = 'data';
-           
-           obj.outputs_directory = sprintf('%s/%s/outputs',obj.data_directory,obj.state);
+           obj.outputs_directory = sprintf('data/%s/outputs',obj.state);
            obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
            obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
            
-           obj.learning_algorithm_data = la.loadLearnedMaterials();
+           obj.learning_algorithm_data = la.loadLearnedMaterials(obj.state);
            
-           obj.init();
+           obj.init(); % forge init
        end
           
         function run(obj)
             
-            if exist(sprintf('%s_saved_data.mat',obj.state),'file') ~= 2 || obj.recompute
+            if exist(sprintf('data/%s/saved_data.mat',obj.state,obj.state),'file') ~= 2 || obj.recompute
                 
                 % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
                 % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
                 % CHAMBER DESCRIPTIONS
                 
                 % Read in the specific 2013-2014 Indiana List
-                house_people = readtable(sprintf('%s/%s/people_2013-2014.xlsx',obj.data_directory,obj.state));
+                
+                % TODO 2015 people list might have all the information we need?
+                house_people = readtable(sprintf('data/%s/people_2013-2014.xlsx',obj.state));
                 
                 [house_chamber_matrix,house_chamber_votes,...
                     house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
@@ -72,7 +72,7 @@ classdef IN < forge
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
-                save(sprintf('%s_saved_data',obj.state),var_list{:})
+                save(sprintf('data/%s/saved_data.mat',obj.state),var_list{:})
                 
                 if obj.generate_outputs
                     
@@ -108,7 +108,7 @@ classdef IN < forge
                     obj.make_histograms = true;
                 end
             else
-                load(sprintf('%s_saved_data.mat',obj.state));
+                load(sprintf('data/%s/saved_data.mat',obj.state));
             end
             
             if obj.generate_outputs
