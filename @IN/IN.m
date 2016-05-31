@@ -1,6 +1,5 @@
 classdef IN < forge
-    properties
-        
+    properties  
     end
     
     methods
@@ -29,6 +28,8 @@ classdef IN < forge
         end
         
         function run(obj)
+            predict_montecarlo = true;
+            predict_outcomes = false;
             
             if exist(sprintf('data/%s/saved_data.mat',obj.state),'file') ~= 2 || obj.recompute
                 
@@ -36,21 +37,16 @@ classdef IN < forge
                 % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
                 % CHAMBER DESCRIPTIONS
                 
-                % Read in the specific 2013-2014 Indiana List
-                
                 override = true;
                 
                 directory = sprintf('data/%s',obj.state);
-                list   = dir(directory);
-                hit_list = zeros(1,length(list));
-                for i = 1:length(list)
-                    hit_list(i) = ~isempty(regexp(list(i).name,'people_(\d+).*','once'));
-                end
+                list      = dir(directory);
+                hit_list = regexp({list.name},'people_(\d+).*','once');
                 
-                house_people  = [];
+                house_people  = []; %#ok<NASGU>
                 senate_people = [];
                 
-                if ~any(hit_list) || override
+                if ~any([hit_list{:}]) || override
                     % Takes from the maximum year, could also be set to do
                     % a specific year
                     year_select = max(unique(obj.people.year));
@@ -209,7 +205,6 @@ classdef IN < forge
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
                     obj.make_gifs = true;
                     obj.make_histograms = true;
-
                 end
             else
                 load(sprintf('data/%s/saved_data.mat',obj.state));
@@ -221,30 +216,30 @@ classdef IN < forge
                     % PLOTTING
                     % Chamber Vote Data
                     tic
-                    obj.generatePlots(house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
-                    obj.generatePlots(house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-                    obj.generatePlots(house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
                     toc
                     
                     % Chamber Sponsorship Data
                     tic
-                    obj.generatePlots(house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-                    obj.generatePlots(house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-                    obj.generatePlots(house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
                     toc
                     
                     % Committee Vote Data
                     tic
-                    obj.generatePlots(house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
-                    obj.generatePlots(house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-                    obj.generatePlots(house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
                     toc
                     
                     % Committee Sponsorship Data
                     tic
-                    obj.generatePlots(house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-                    obj.generatePlots(house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-                    obj.generatePlots(house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
                     toc
                     
                     % Chamber-Committee Consistency
@@ -266,30 +261,30 @@ classdef IN < forge
                     % PLOTTING
                     % Chamber Vote Data
                     tic
-                    obj.generatePlots(senate_chamber_matrix,'Senate','','Legislators','Legislators','Agreement Score','chamber_all')
-                    obj.generatePlots(senate_republicans_chamber_votes,'Senate','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-                    obj.generatePlots(senate_democrats_chamber_votes,'Senate','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_chamber_matrix,'Senate','','Legislators','Legislators','Agreement Score','chamber_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_chamber_votes,'Senate','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_chamber_votes,'Senate','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
                     toc
                     
                     % Chamber Sponsorship Data
                     tic
-                    obj.generatePlots(senate_sponsor_chamber_matrix,'Senate','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-                    obj.generatePlots(senate_republicans_chamber_sponsor,'Senate','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-                    obj.generatePlots(senate_democrats_chamber_sponsor,'Senate','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_sponsor_chamber_matrix,'Senate','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_chamber_sponsor,'Senate','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_chamber_sponsor,'Senate','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
                     toc
                     
                     % Committee Vote Data
                     tic
-                    obj.generatePlots(senate_committee_matrix,'Senate Committee','','Legislators','Legislators','Agreement Score','committee_all')
-                    obj.generatePlots(senate_republicans_committee_votes,'Senate Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-                    obj.generatePlots(senate_democrats_committee_votes,'Senate Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_committee_matrix,'Senate Committee','','Legislators','Legislators','Agreement Score','committee_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_committee_votes,'Senate Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_committee_votes,'Senate Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
                     toc
                     
                     % Committee Sponsorship Data
                     tic
-                    obj.generatePlots(senate_sponsor_committee_matrix,'Senate Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-                    obj.generatePlots(senate_republicans_committee_sponsor,'Senate Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-                    obj.generatePlots(senate_democrats_committee_sponsor,'Senate Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_sponsor_committee_matrix,'Senate Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_committee_sponsor,'Senate Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
+                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_committee_sponsor,'Senate Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
                     toc
                     
                     % Chamber-Committee Consistency
@@ -337,7 +332,7 @@ classdef IN < forge
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
             
-            if ~isempty(house_people)
+            if ~isempty(house_people) && predict_outcomes
                 accuracy_list = zeros(1,length(house_bill_ids));
                 sponsor_list = zeros(1,length(house_bill_ids));
                 committee_list = zeros(1,length(house_bill_ids));
@@ -411,10 +406,10 @@ classdef IN < forge
                         competitive_bills{i,'committee_members'} = {committee_names};
                     end
                     writetable(competitive_bills,sprintf('%s/house_competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
-                end
+                end 
             end
             
-            if ~isempty(senate_people)
+            if ~isempty(senate_people) && predict_outcomes
                 accuracy_list = zeros(1,length(senate_bill_ids));
                 sponsor_list = zeros(1,length(senate_bill_ids));
                 committee_list = zeros(1,length(senate_bill_ids));
@@ -490,6 +485,100 @@ classdef IN < forge
                     writetable(competitive_bills,sprintf('%s/senate_competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
                 end
             end
+            
+            tic
+            monte_carlo_number = 100;
+            bill_target = 10; %length(house_bill_ids)
+            if ~isempty(house_people) && predict_montecarlo
+                
+                accuracy_list = zeros(bill_target,monte_carlo_number);
+                legislators_list = cell(bill_target,monte_carlo_number);
+                bill_ids = zeros(1,bill_target);
+                
+                bill_hit = 1;
+                i = 0;
+                while bill_hit <= bill_target
+                    i = i + 1;
+                    successful = 1;
+                    for j = 1:monte_carlo_number
+                        rng(j);
+                        [accuracy,~,~,legislators] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'house');
+                        
+                        if ~isempty(legislators)
+                            accuracy_list(bill_hit,j) = accuracy;
+                            legislators_list{bill_hit,j} = legislators;
+                        else
+                            successful = 0;
+                            break
+                        end
+                        fprintf('%i %i\n',bill_hit,j)
+                    end
+                    
+                    if successful
+                        bill_ids(bill_hit) = house_bill_ids(i);
+                        bill_hit = bill_hit + 1;
+                    end
+                end
+                
+                h = figure();
+                hold on
+                title('House Prediction Histogram')
+                boxplot(accuracy_list',bill_ids)
+                xlabel('Bills')
+                ylabel('Accuracy')
+                hold off
+                saveas(h,sprintf('%s/house_prediction_histogram',obj.outputs_directory),'png')
+                
+                save(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list');
+            end
+            toc
+            
+            tic
+            monte_carlo_number = 100;
+            bill_target = 10; %length(senate_bill_ids)
+            if ~isempty(senate_people) && predict_montecarlo
+                
+                accuracy_list = zeros(bill_target,monte_carlo_number);
+                legislators_list = cell(bill_target,monte_carlo_number);
+                bill_ids = zeros(1,bill_target);
+                
+                bill_hit = 1;
+                i = 0;
+                while bill_hit <= bill_target
+                    i = i + 1;
+                    successful = 1;
+                    for j = 1:monte_carlo_number
+                        rng(j);
+                        [accuracy,~,~,legislators] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'senate');
+                        
+                        if ~isempty(legislators)
+                            accuracy_list(bill_hit,j) = accuracy;
+                            legislators_list{bill_hit,j} = legislators;
+                        else
+                            successful = 0;
+                            break
+                        end
+                        fprintf('%i %i\n',bill_hit,j)
+                    end
+                    
+                    if successful
+                        bill_ids(bill_hit) = senate_bill_ids(i);
+                        bill_hit = bill_hit + 1;
+                    end
+                end
+                
+                h = figure();
+                hold on
+                title('Senate Prediction Histogram')
+                boxplot(accuracy_list',bill_ids)
+                xlabel('Bills')
+                ylabel('Accuracy')
+                hold off
+                saveas(h,sprintf('%s/senate_prediction_histogram',obj.outputs_directory),'png')
+                
+                save(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list')
+            end
+            toc
             
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));

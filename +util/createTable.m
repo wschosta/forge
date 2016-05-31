@@ -1,4 +1,4 @@
-function return_table = createTable(rows,columns,type)
+function [varargout] = createTable(rows,columns,type)
 % Switch by type of table being created
 switch type
     case 'NaN'  % initalized with NaNs
@@ -8,4 +8,9 @@ switch type
     otherwise   % throw an error
         error('TABLE TYPE NOT FOUND');
 end
+
+for i = 1:max(nargout,1)
+    varargout{i} = return_table; %#ok<AGROW>
+end
+
 end
