@@ -491,9 +491,10 @@ classdef IN < forge
             bill_target = 10; %length(house_bill_ids)
             if ~isempty(house_people) && predict_montecarlo
                 
-                accuracy_list = zeros(bill_target,monte_carlo_number);
+                accuracy_list    = zeros(bill_target,monte_carlo_number);
+                accuracy_delta   = zeros(bill_target,monte_carlo_number);
                 legislators_list = cell(bill_target,monte_carlo_number);
-                bill_ids = zeros(1,bill_target);
+                bill_ids         = zeros(1,bill_target);
                 
                 bill_hit = 1;
                 i = 0;
@@ -505,7 +506,8 @@ classdef IN < forge
                         [accuracy,~,~,legislators] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'house');
                         
                         if ~isempty(legislators)
-                            accuracy_list(bill_hit,j) = accuracy;
+                            accuracy_list(bill_hit,j)    = accuracy(1);
+                            accuracy_delta(bill_hit,j)   = accuracy(2);
                             legislators_list{bill_hit,j} = legislators;
                         else
                             successful = 0;
@@ -528,7 +530,16 @@ classdef IN < forge
                 ylabel('Accuracy')
                 hold off
                 saveas(h,sprintf('%s/house_prediction_histogram',obj.outputs_directory),'png')
-                
+               
+                h = figure();
+                hold on
+                title('house Prediction Histogram - Delta')
+                boxplot(accuracy_delta',bill_ids)
+                xlabel('Bills')
+                ylabel('Change in Accuracy')
+                hold off
+                saveas(h,sprintf('%s/house_prediction_delta_histogram',obj.outputs_directory),'png')
+
                 save(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list');
             end
             toc
@@ -538,9 +549,10 @@ classdef IN < forge
             bill_target = 10; %length(senate_bill_ids)
             if ~isempty(senate_people) && predict_montecarlo
                 
-                accuracy_list = zeros(bill_target,monte_carlo_number);
+                accuracy_list    = zeros(bill_target,monte_carlo_number);
+                accuracy_delta   = zeros(bill_target,monte_carlo_number);
                 legislators_list = cell(bill_target,monte_carlo_number);
-                bill_ids = zeros(1,bill_target);
+                bill_ids         = zeros(1,bill_target);
                 
                 bill_hit = 1;
                 i = 0;
@@ -552,7 +564,8 @@ classdef IN < forge
                         [accuracy,~,~,legislators] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'senate');
                         
                         if ~isempty(legislators)
-                            accuracy_list(bill_hit,j) = accuracy;
+                            accuracy_list(bill_hit,j)    = accuracy(1);
+                            accuracy_delta(bill_hit,j)   = accuracy(2);
                             legislators_list{bill_hit,j} = legislators;
                         else
                             successful = 0;
@@ -575,8 +588,17 @@ classdef IN < forge
                 ylabel('Accuracy')
                 hold off
                 saveas(h,sprintf('%s/senate_prediction_histogram',obj.outputs_directory),'png')
+
+                h = figure();
+                hold on
+                title('Senate Prediction Histogram - Delta')
+                boxplot(accuracy_delta',bill_ids)
+                xlabel('Bills')
+                ylabel('Change in Accuracy')
+                hold off
+                saveas(h,sprintf('%s/senate_prediction_delta_histogram',obj.outputs_directory),'png')
                 
-                save(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list')
+                save(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'accuracy_list','accuracy_delta','legislators_list')
             end
             toc
             

@@ -349,6 +349,7 @@ classdef forge < handle
             % number of legislators to randomly pick to do out-step
             % predictions
             number_of_legislators = 8;
+            varargout{1} = [];
             
             chamber_data = sprintf('%s_data',chamber);
             
@@ -557,7 +558,10 @@ classdef forge < handle
                 writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
             end
             
-            varargout{1} = legislator_id;
+            if nargout == 4
+                varargout{1} = legislator_id;
+                accuracy = [accuracy (accuracy - accuracy_table.t2)];
+            end
         end
         
         function plotTSet(obj,t_set_values,title_text)
