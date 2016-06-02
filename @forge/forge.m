@@ -354,7 +354,7 @@ classdef forge < handle
             chamber_data = sprintf('%s_data',chamber);
             
             bill_information = obj.bill_set(bill_id);
-            ids              = util.createIDstrings(chamber_people{:,'sponsor_id'});
+            ids              = util.createIDstrings(chamber_people.sponsor_id);%{:,'sponsor_id'});
             sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
             number_sponsors  = size(sponsor_ids,1);
             
@@ -417,7 +417,7 @@ classdef forge < handle
             t_set{bill_yes_ids,'final'} = 1;
             t_set{bill_no_ids,'final'}  = 0;
             
-            expressed_preference = array2table(zeros(length(ids),2),'VariableNames',{'expressed','locked'},'RowNames',ids);
+%             expressed_preference = array2table(zeros(length(ids),2),'VariableNames',{'expressed','locked'},'RowNames',ids);
             
             % --------- COMMITTEE EFFECT ---------
             % Calculate sponsor effect and set t1
@@ -455,26 +455,30 @@ classdef forge < handle
             t_set.p_yes_rev_cs = NaN(length(t_set.Properties.RowNames),1); % probability of yes, revised, for the committee and sponsor
             
             for i = t_set.Properties.RowNames'
-                if ~isnan(t_set{i,'committee_vote'})
-                    t_set{i,'p_yes_rev_cs'} = predict.getSpecificImpact(t_set{i,'committee_vote'},t_set{i,'committee_consistency'});
+%                 if strcmp(i,'id5492')
+%                     keyboard
+%                 end
+                
+                if ~isnan(t_set.committee_vote(i))
+                    t_set.p_yes_rev_cs(i) = predict.getSpecificImpact(t_set.committee_vote(i),t_set.committee_consistency(i));
                 elseif ismember(i,chamber_sponsor_matrix.Properties.RowNames) && ismember(i,chamber_sponsor_matrix.Properties.VariableNames)
-                    t_set{i,'p_yes_rev_cs'} = predict.getSpecificImpact(1,chamber_sponsor_matrix{i,i});
+                    t_set.p_yes_rev_cs(i) = predict.getSpecificImpact(1,chamber_sponsor_matrix{i,i});
                 else
-                    t_set{i,'p_yes_rev_cs'} = 0.5;
+                    t_set.p_yes_rev_cs(i) = 0.5;
                 end
             end
-            expressed_preference{[sponsor_ids; committee_ids],'expressed'} = 1;
-            
+            preference_known = [sponsor_ids; committee_ids];
+            preference_unknown = ids(~ismember(ids,preference_known));
             % So now we only update based on expressed preference for t2
             % calculate t2
             t_set.t2 = NaN(length(ids),1);
             
-            preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
-            preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+%             preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
+%             preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
             
-            for i = preference_unknown
+            for i = preference_unknown'
                 combined_impact = 1;
-                for k = preference_known
+                for k = preference_known'
                     combined_impact = combined_impact*predict.getSpecificImpact(1,chamber_matrix{i,k});
                 end
                 
