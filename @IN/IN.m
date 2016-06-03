@@ -485,42 +485,42 @@ classdef IN < forge
                     writetable(competitive_bills,sprintf('%s/senate_competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
                 end
             end
-            
-            tic
-            monte_carlo_number = 100;
-            bill_target = 10; %length(house_bill_ids)
+                        
             if ~isempty(house_people) && predict_montecarlo
+                 tic
+                 monte_carlo_number = 100;
+                 bill_target = 10; %length(house_bill_ids)
+                
+                delete_str = '';
                 
                 accuracy_list    = zeros(bill_target,monte_carlo_number);
                 accuracy_delta   = zeros(bill_target,monte_carlo_number);
-                legislators_list = cell(bill_target,monte_carlo_number);
+                legislators_list = cell(bill_target);
                 bill_ids         = zeros(1,bill_target);
                 
                 bill_hit = 1;
                 i = 0;
-                while bill_hit <= bill_target
+                while bill_hit <= bill_target && i <= length(house_bill_ids)
                     i = i + 1;
-                    successful = 1;
-                    for j = 1:monte_carlo_number
-                        rng(j);
-                        [accuracy,~,~,legislators] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'house');
-                        
-                        if ~isempty(legislators)
-                            accuracy_list(bill_hit,j)    = accuracy(1);
-                            accuracy_delta(bill_hit,j)   = accuracy(2);
-                            legislators_list{bill_hit,j} = legislators;
-                        else
-                            successful = 0;
-                            break
-                        end
-                        fprintf('%i %i\n',bill_hit,j)
+                    
+                    [accuracy,~,~,legislators] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'house',monte_carlo_number);
+                    
+                    if ~isempty(legislators)
+                        accuracy_list(bill_hit,:)  = accuracy(1,:);
+                        accuracy_delta(bill_hit,:) = accuracy(2,:);
+                        legislators_list{bill_hit} = legislators;
+                    else
+                        continue
                     end
                     
-                    if successful
-                        bill_ids(bill_hit) = house_bill_ids(i);
-                        bill_hit = bill_hit + 1;
-                    end
+                    print_str = sprintf('%i %i',bill_hit,house_bill_ids(i));
+                    fprintf([delete_str,print_str]);
+                    delete_str = repmat(sprintf('\b'),1,length(print_str));
+                    
+                    bill_ids(bill_hit) = house_bill_ids(i);
+                    bill_hit = bill_hit + 1;
                 end
+                bill_hit = bill_hit - 1;
                 
                 h = figure();
                 hold on
@@ -533,7 +533,7 @@ classdef IN < forge
                
                 h = figure();
                 hold on
-                title('house Prediction Histogram - Delta')
+                title('House Prediction Histogram - Delta')
                 boxplot(accuracy_delta',bill_ids)
                 xlabel('Bills')
                 ylabel('Change in Accuracy')
@@ -541,13 +541,20 @@ classdef IN < forge
                 saveas(h,sprintf('%s/house_prediction_delta_histogram',obj.outputs_directory),'png')
 
                 save(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list');
+                
+                timed = toc;
+                
+                print_str = sprintf('House Done - %i bills! %0.3f\n',bill_hit,timed);
+                fprintf([delete_str,print_str]);
             end
-            toc
             
-            tic
-            monte_carlo_number = 100;
-            bill_target = 10; %length(senate_bill_ids)
+            
             if ~isempty(senate_people) && predict_montecarlo
+                tic
+                monte_carlo_number = 100;
+                bill_target = 10; %length(senate_bill_ids)
+                
+                delete_str = '';
                 
                 accuracy_list    = zeros(bill_target,monte_carlo_number);
                 accuracy_delta   = zeros(bill_target,monte_carlo_number);
@@ -556,29 +563,27 @@ classdef IN < forge
                 
                 bill_hit = 1;
                 i = 0;
-                while bill_hit <= bill_target
+                while bill_hit <= bill_target && i <= length(senate_bill_ids)
                     i = i + 1;
-                    successful = 1;
-                    for j = 1:monte_carlo_number
-                        rng(j);
-                        [accuracy,~,~,legislators] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'senate');
-                        
-                        if ~isempty(legislators)
-                            accuracy_list(bill_hit,j)    = accuracy(1);
-                            accuracy_delta(bill_hit,j)   = accuracy(2);
-                            legislators_list{bill_hit,j} = legislators;
-                        else
-                            successful = 0;
-                            break
-                        end
-                        fprintf('%i %i\n',bill_hit,j)
+                    
+                    [accuracy,~,~,legislators] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'senate',monte_carlo_number);
+                    
+                    if ~isempty(legislators)
+                        accuracy_list(bill_hit,:)  = accuracy(1,:);
+                        accuracy_delta(bill_hit,:) = accuracy(2,:);
+                        legislators_list{bill_hit} = legislators;
+                    else
+                        continue
                     end
                     
-                    if successful
-                        bill_ids(bill_hit) = senate_bill_ids(i);
-                        bill_hit = bill_hit + 1;
-                    end
+                    print_str = sprintf('%i %i',bill_hit,senate_bill_ids(i));
+                    fprintf([delete_str,print_str]);
+                    delete_str = repmat(sprintf('\b'),1,length(print_str));
+                    
+                    bill_ids(bill_hit) = senate_bill_ids(i);
+                    bill_hit = bill_hit + 1;
                 end
+                bill_hit = bill_hit - 1;
                 
                 h = figure();
                 hold on
@@ -599,8 +604,13 @@ classdef IN < forge
                 saveas(h,sprintf('%s/senate_prediction_delta_histogram',obj.outputs_directory),'png')
                 
                 save(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'accuracy_list','accuracy_delta','legislators_list')
+                
+                timed = toc;
+                
+                print_str = sprintf('Senate Done - %i bills! %0.3f\n',bill_hit,timed);
+                fprintf([delete_str,print_str]);
             end
-            toc
+
             
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));

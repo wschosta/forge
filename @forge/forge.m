@@ -341,10 +341,15 @@ classdef forge < handle
             [committee_sponsor_matrix] = obj.normalizeVotes(committee_sponsor_matrix,committee_sponsor_votes);
         end
         
-        function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber)
+        function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber,varargin)
             % at some point it would probably be a good idea to spin this
             % out into its own file structure, just like the learning
             % algorithm
+            
+            monte_carlo_number = 1;
+            if length(varargin) == 1
+                monte_carlo_number = varargin{1};
+            end
             
             % number of legislators to randomly pick to do out-step
             % predictions
@@ -367,7 +372,6 @@ classdef forge < handle
                 number_sponsors  = NaN;
                 number_committee = NaN;
                 varargout{1}     = {};
-                fprintf('No Committee Votes Found!\n');
                 return
             end
             
@@ -389,12 +393,11 @@ classdef forge < handle
                 end
             end
             
-            if ~found_it
+            if ~found_it % no third reading vote found
                 accuracy         = NaN;
                 number_sponsors  = NaN;
                 number_committee = NaN;
                 varargout{1}     = {};
-                fprintf('No Third Reading Vote Found!\n')
                 return
             end
             
@@ -408,41 +411,35 @@ classdef forge < handle
             % so we make a table for the bayes, we'll keep track of effects
             % here and then update at each time t. New column for every
             % update, new time t for every update
-            bayes = array2table(0.5*ones(length(ids),1),'VariableNames',{'p_yes'},'RowNames',ids);
+            bayes_initial = 0.5; 
             t_set = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
-            accuracy_table = array2table(NaN(1,6),'VariableNames',{'final','name','t1','committee_vote','committee_consistency','p_yes_rev_cs'},'RowNames',{'accuracy'});
-            
-            t_set.name = obj.getSponsorName(ids)';
+            accuracy_table = array2table(NaN(1,5),'VariableNames',{'final','name','t1','committee_vote','committee_consistency'},'RowNames',{'accuracy'});
+
+            t_set.name = obj.getSponsorName(ids);
             t_set.t1   = NaN(length(ids),1);
             t_set{bill_yes_ids,'final'} = 1;
             t_set{bill_no_ids,'final'}  = 0;
             
-%             expressed_preference = array2table(zeros(length(ids),2),'VariableNames',{'expressed','locked'},'RowNames',ids);
-            
             % --------- COMMITTEE EFFECT ---------
             % Calculate sponsor effect and set t1
+            committee_specific = NaN(length(committee_ids),1);
+            committee_sponsor_match = sponsor_ids(ismember(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
             for i = 1:length(committee_ids)
 
                 if ismember(committee_ids{i},committee_sponsor_matrix.Properties.RowNames)
-                    sponsor_effect_positive = 1;
-                    sponsor_effect_negative = 1;
+                    sponsor_specific_effect = 1;
                     
-                    for k = 1:length(sponsor_ids)
-                        if ~ismember(sponsor_ids{k},committee_sponsor_matrix.Properties.VariableNames)
-                            continue
-                        end
-                        
-                        sponsor_specific_effect = predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},sponsor_ids{k}});
-                        
-                        sponsor_effect_positive = sponsor_effect_positive*sponsor_specific_effect;
-                        sponsor_effect_negative = sponsor_effect_negative*(1-sponsor_specific_effect);
+                    for k = 1:length(committee_sponsor_match)
+                        sponsor_specific_effect = sponsor_specific_effect*predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},committee_sponsor_match{k}});
                     end
                     
-                    t_set{committee_ids{i},'t1'} = sponsor_effect_positive*bayes{i,'p_yes'} / (sponsor_effect_positive*bayes{i,'p_yes'} + sponsor_effect_negative*(1-bayes{i,'p_yes'}));
+                    committee_specific(i) = sponsor_specific_effect*bayes_initial / (sponsor_specific_effect*bayes_initial + (1-sponsor_specific_effect)*(1-bayes_initial));
                 else
-                    t_set{committee_ids{i},'t1'} = bayes{committee_ids{i},'p_yes'};
+                    committee_specific(i) = bayes_initial;
                 end
             end
+            t_set{committee_ids,'t1'} = committee_specific;
+            
             
             t_set.committee_vote = NaN(length(t_set.Properties.RowNames),1);
             t_set{committee_ids_yes,'committee_vote'} = 1;
@@ -452,40 +449,34 @@ classdef forge < handle
             t_set{committee_ids_yes,'committee_consistency'} = chamber_consistency_matrix{committee_ids_yes,'percentage'};
             t_set{committee_ids_no,'committee_consistency'}  = chamber_consistency_matrix{committee_ids_no,'percentage'};
             
-            t_set.p_yes_rev_cs = NaN(length(t_set.Properties.RowNames),1); % probability of yes, revised, for the committee and sponsor
-            
-            for i = t_set.Properties.RowNames'
-%                 if strcmp(i,'id5492')
-%                     keyboard
-%                 end
-                
-                if ~isnan(t_set.committee_vote(i))
-                    t_set.p_yes_rev_cs(i) = predict.getSpecificImpact(t_set.committee_vote(i),t_set.committee_consistency(i));
-                elseif ismember(i,chamber_sponsor_matrix.Properties.RowNames) && ismember(i,chamber_sponsor_matrix.Properties.VariableNames)
-                    t_set.p_yes_rev_cs(i) = predict.getSpecificImpact(1,chamber_sponsor_matrix{i,i});
-                else
-                    t_set.p_yes_rev_cs(i) = 0.5;
-                end
-            end
-            preference_known = [sponsor_ids; committee_ids];
-            preference_unknown = ids(~ismember(ids,preference_known));
             % So now we only update based on expressed preference for t2
             % calculate t2
-            t_set.t2 = NaN(length(ids),1);
+            t_set_current_value  = NaN(length(ids),1);
             
-%             preference_unknown = expressed_preference(~expressed_preference.expressed,:).Properties.RowNames';
-%             preference_known   = expressed_preference(~~expressed_preference.expressed,:).Properties.RowNames'; % dumb but effective
+            matched_ids = find(ismember(ids,[sponsor_ids;committee_ids]));
+            chamber_specifics = chamber_matrix{:,:};
             
-            for i = preference_unknown'
-                combined_impact = 1;
-                for k = preference_known'
-                    combined_impact = combined_impact*predict.getSpecificImpact(1,chamber_matrix{i,k});
+            for j = 1:length(ids)
+                if ~any(j == matched_ids)
+                    combined_impact = 1;
+                    
+                    for k = 1:length(matched_ids)
+                        combined_impact = combined_impact*predict.getSpecificImpact(1,chamber_specifics(j,k));
+                    end
+                        
+                    t_set_current_value(j) = (combined_impact*bayes_initial)/(combined_impact*bayes_initial + (1-combined_impact)*(1-bayes_initial));
+                else
+                    if ~isnan(t_set.committee_vote(j))
+                        t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
+                    elseif ismember(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames)
+                        t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
+                    else
+                        t_set_current_value(j) = 0.5;
+                    end
                 end
-                
-                t_set{i,'t2'} = (combined_impact*bayes{i,'p_yes'})/(combined_impact*bayes{i,'p_yes'} + (1-combined_impact)*(1-bayes{i,'p_yes'}));
             end
-
-            t_set{preference_known,'t2'} = t_set{preference_known,'p_yes_rev_cs'};
+            
+            t_set.t2 = t_set_current_value;
             t2_check = (round(t_set.t2) == t_set.final);
             
             incorrect = sum(t2_check == false);
@@ -499,46 +490,43 @@ classdef forge < handle
             % at this point, for t3, we do basically the same thing as t2
             % but we just update everything            
             legislator_list = [bill_yes_ids ; bill_no_ids];
-            legislator_list = obj.createIDcodes(legislator_list(randperm(length(legislator_list))));
             
-            legislator_id = legislator_list(1:number_of_legislators);
-            direction     = ismember(legislator_id,bill_yes);
-            revealed_preferences = table(legislator_id,direction);
-                       
-            t_count = 2;
-            vote_direction_list = cell(1,size(revealed_preferences,1));
-            revealed_id_list    = cell(1,size(revealed_preferences,1));
+            if length(varargin) == 1
+                accuracy_list = zeros(2,monte_carlo_number);
+                legislators_list = cell(monte_carlo_number,1);
+            end
             
-            for i = 1:size(revealed_preferences,1)
+            for j = 1:monte_carlo_number
+                rng(j)
                 
-                revealed_id = sprintf('id%i',revealed_preferences{i,'legislator_id'});
+                legislator_list = legislator_list(randperm(length(legislator_list)));
                 
-                if ismember(revealed_id,chamber_matrix.Properties.RowNames)
+                legislator_id = legislator_list(1:number_of_legislators);
+                direction     = ismember(legislator_id,bill_yes_ids);
+                
+                t_count = 2;
+                
+                for i = 1:length(legislator_id)
                     
-                    [t_set,t_count,t_current] = predict.updateBayes(revealed_id,revealed_preferences{i,'direction'},t_set,chamber_matrix,t_count,ids);
-                    
-                    switch revealed_preferences{i,'direction'}
-                        case 0
-                            t_set{k,t_current} = 0.01;
-                            vote_direction_list{t_count - 2} = 'nay';
-                        case 1
-                            t_set{k,t_current} = 0.99;
-                            vote_direction_list{t_count - 2} = 'yea';
-                        otherwise
-                            error('Functionality for non-binary revealed preferences not currently supported')
-                    end
+                    [t_set,t_count,t_current] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids);
                     
                     t_check   = round(t_set.(t_current)) == t_set.final;
                     incorrect = sum(t_check == false);
                     are_nan   = sum(isnan(t_set{t_check == false,'final'}));
                     accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 end
+                
+                t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
+                incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
+                are_nan   = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
+                accuracy  = 100*(1-(incorrect-are_nan)/(100-are_nan));
+                
+                if length(varargin) == 1
+                    accuracy_list(1,j)       = accuracy;
+                    accuracy_list(2,j)       = (accuracy - accuracy_table.t2);
+                    legislators_list{j} = legislator_id;
+                end
             end
-            
-            t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final; 
-            incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);
-            are_nan   = sum(isnan(t_set{t_set.(sprintf('%s_check',t_current)) == false,'final'}));
-            accuracy  = 100*(1-(incorrect-are_nan)/(100-are_nan));
             
             if any(bill_id == [590034 583138 587734 590009]) && generate_outputs
                 save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
@@ -552,7 +540,7 @@ classdef forge < handle
                 
                 for i = 3:t_count;
                     t_current = sprintf('t%i',i);
-                    obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName(revealed_id_list{i-2}),vote_direction_list{i-2}));
+                    obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName(legislator_id{i-2}),direction(i-2)));
                     saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                 end
                 
@@ -563,8 +551,8 @@ classdef forge < handle
             end
             
             if nargout == 4
-                varargout{1} = legislator_id;
-                accuracy = [accuracy (accuracy - accuracy_table.t2)];
+                accuracy     = accuracy_list;
+                varargout{1} = legislators_list;
             end
         end
         
@@ -627,29 +615,10 @@ classdef forge < handle
         
         function sponsor_name = getSponsorName(obj,id_code)
             if iscell(id_code)
-                if length(id_code) == 1
-                    id_code = str2double(regexprep(id_code,'id',''));
-                    sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
-                    sponsor_name = sponsor_name{1};
-                else
-                    sponsor_name = {};
-                    for i = 1:length(id_code)
-                        specific_id = str2double(regexprep(id_code{i},'id',''));
-                        specific_name = obj.people{specific_id == obj.people.sponsor_id,'name'};
-                        sponsor_name = [sponsor_name specific_name{1}]; %#ok<AGROW>
-                    end
-                end
+                specific_id = cellfun(@str2double,regexprep(id_code,'id',''));
+                sponsor_name = obj.people.name(arrayfun(@(x)find(obj.people.sponsor_id==x,1),specific_id));
             else
-                if length(id_code) == 1
-                    sponsor_name = obj.people{id_code == obj.people.sponsor_id,'name'};
-                    sponsor_name = sponsor_name{1};
-                else
-                    sponsor_name = {};
-                    for i = 1:length(id_code)
-                        specific_name = obj.people{id_code{i} == obj.people.sponsor_id,'name'};
-                        sponsor_name = [sponsor_name specific_name{1}]; %#ok<AGROW>
-                    end
-                end
+                sponsor_name = obj.people.name(arrayfun(@(x)find(obj.people.sponsor_id==x,1),id_code));
             end
         end
         
