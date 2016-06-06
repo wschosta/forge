@@ -13,10 +13,10 @@ if ~isempty(people_matrix)
     colorbar
     view(3)
     hold off
-    saveas(h,sprintf('%s/%s_%s',outputs_directory,label_string,tag),'png')
+    saveas(h,sprintf('%s/%s_%s',outputs_directory,lower(label_string),tag),'png')
     
     view(2)
-    saveas(h,sprintf('%s/%s_%s_flat',outputs_directory,label_string,tag),'png')
+    saveas(h,sprintf('%s/%s_%s_flat',outputs_directory,lower(label_string),tag),'png')
     
     if ~isempty(histogram_directory)
         directory = sprintf(histogram_directory);

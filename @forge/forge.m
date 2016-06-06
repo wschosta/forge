@@ -341,7 +341,7 @@ classdef forge < handle
             [committee_sponsor_matrix] = obj.normalizeVotes(committee_sponsor_matrix,committee_sponsor_votes);
         end
         
-        function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber,varargin)
+        function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,generate_outputs,chamber,varargin)
             % at some point it would probably be a good idea to spin this
             % out into its own file structure, just like the learning
             % algorithm
@@ -359,7 +359,6 @@ classdef forge < handle
             chamber_data = sprintf('%s_data',chamber);
             
             bill_information = obj.bill_set(bill_id);
-            ids              = util.createIDstrings(chamber_people.sponsor_id);%{:,'sponsor_id'});
             sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
             number_sponsors  = size(sponsor_ids,1);
             
@@ -454,7 +453,6 @@ classdef forge < handle
             t_set_current_value  = NaN(length(ids),1);
             
             matched_ids = find(ismember(ids,[sponsor_ids;committee_ids]));
-            chamber_specifics = chamber_matrix{:,:};
             
             for j = 1:length(ids)
                 if ~any(j == matched_ids)
@@ -510,10 +508,10 @@ classdef forge < handle
                     
                     [t_set,t_count,t_current] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids);
                     
-                    t_check   = round(t_set.(t_current)) == t_set.final;
-                    incorrect = sum(t_check == false);
-                    are_nan   = sum(isnan(t_set{t_check == false,'final'}));
-                    accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
+%                     t_check   = round(t_set.(t_current)) == t_set.final;
+%                     incorrect = sum(t_check == false);
+%                     are_nan   = sum(isnan(t_set.final(t_check == false)));
+%                     accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 end
                 
                 t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
@@ -544,15 +542,164 @@ classdef forge < handle
                     saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
                 end
                 
-                accuracy_table.(sprintf('%s_check',t_current)) = accuracy;
-                t_set = [t_set ; accuracy_table];
-                
                 writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
             end
             
             if nargout == 4
                 accuracy     = accuracy_list;
                 varargout{1} = legislators_list;
+            end
+        end
+        
+        function [accuracy_list, accuracy_delta, legislators_list] = runMonteCarlo(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber,monte_carlo_number)
+            
+            tic
+            bill_target = length(chamber_bill_ids);
+            
+            delete_str = '';
+            
+            accuracy_list    = zeros(bill_target,monte_carlo_number);
+            accuracy_delta   = zeros(bill_target,monte_carlo_number);
+            legislators_list = cell(bill_target,monte_carlo_number);
+            bill_ids         = zeros(1,bill_target);
+            
+            % These will reduce the runtime in the the predictOutcomes
+            % function
+            ids               = util.createIDstrings(chamber_people.sponsor_id);
+            chamber_specifics = chamber_matrix{:,:};
+            
+            bill_hit = 1;
+            i = 1;
+            while bill_hit <= bill_target && i <= length(chamber_bill_ids)
+                
+                [accuracy,~,~,legislators] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,generate_outputs,lower(chamber),monte_carlo_number);
+                
+                if ~isempty(legislators)
+                    accuracy_list(bill_hit,:)    = accuracy(1,:);
+                    accuracy_delta(bill_hit,:)   = accuracy(2,:);
+                    legislators_list(bill_hit,:) = legislators;
+                else
+                    i = i + 1;
+                    continue
+                end
+                
+                print_str = sprintf('%i %i',bill_hit,chamber_bill_ids(i));
+                fprintf([delete_str,print_str]);
+                delete_str = repmat(sprintf('\b'),1,length(print_str));
+                
+                bill_ids(bill_hit) = chamber_bill_ids(i);
+                bill_hit = bill_hit + 1;
+                i = i + 1;
+            end
+            bill_hit = bill_hit - 1;
+            
+            h = figure();
+            hold on
+            title(sprintf('%s Prediction Histogram',chamber))
+            boxplot(accuracy_list',bill_ids)
+            xlabel('Bills')
+            ylabel('Accuracy')
+            hold off
+            saveas(h,sprintf('%s/%s_prediction_histogram',obj.outputs_directory,lower(chamber)),'png')
+            
+            h = figure();
+            hold on
+            title(sprintf('%s Prediction Histogram - Delta',chamber))
+            boxplot(accuracy_delta',bill_ids)
+            xlabel('Bills')
+            ylabel('Change in Accuracy')
+            hold off
+            saveas(h,sprintf('%s/%s_prediction_delta_histogram',obj.outputs_directory,lower(chamber)),'png')
+            
+            save(sprintf('%s/%s_predictive_model.mat',obj.outputs_directory,lower(chamber)),'accuracy_list','accuracy_delta','legislators_list')
+            
+            timed = toc;
+            
+            print_str = sprintf('%s Done - %i bills! %0.3f\n',chamber,bill_hit,timed);
+            fprintf([delete_str,print_str]);
+        end
+        
+        function stepwisePrediction(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,chamber)
+            
+            accuracy_list = zeros(1,length(senate_bill_ids));
+            sponsor_list = zeros(1,length(senate_bill_ids));
+            committee_list = zeros(1,length(senate_bill_ids));
+            
+            chamber_data = sprintf('%s_data',chamber);
+            
+            ids               = util.createIDstrings(chamber_people.sponsor_id);
+            chamber_specifics = chamber_matrix{:,:};
+            competitive_bills = cell2table(cell(length(senate_bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
+            
+            for i = 1:length(chamber_bill_ids)
+                competitive_bills{i,'bill_id'}     = {obj.bill_set(chamber_bill_ids(i)).bill_id};
+                competitive_bills{i,'bill_number'} = obj.bill_set(chamber_bill_ids(i)).bill_number;
+                competitive_bills{i,'title'}       = obj.bill_set(chamber_bill_ids(i)).title;
+                competitive_bills{i,'introduced'}  = obj.bill_set(chamber_bill_ids(i)).date_introduced;
+                competitive_bills{i,'last_action'} = obj.bill_set(chamber_bill_ids(i)).date_last_action;
+                competitive_bills{i,'issue_id'}    = {obj.ISSUE_KEY(obj.bill_set(chamber_bill_ids(i)).issue_category)};
+                
+                sponsors_names = obj.getSponsorName(obj.bill_set(chamber_bill_ids(i)).sponsors(1));
+                for j = 2:length(obj.bill_set(chamber_bill_ids(i)).sponsors)
+                    sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(chamber_bill_ids(i)).sponsors(j))]; %#ok<AGROW>
+                end
+                competitive_bills{i,'sponsors'} = {sponsors_names};
+                
+                comittee_ids = [obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).yes_list ; obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).no_list];
+                committee_names = obj.getSponsorName(comittee_ids(1));
+                for j = 2:length(comittee_ids)
+                    committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
+                end
+                competitive_bills{i,'committee_members'} = {committee_names};
+                
+                
+                [accuracy, sponsor, committee] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,obj.generate_outputs,chamber);
+                accuracy_list(i) = accuracy;
+                sponsor_list(i) = sponsor;
+                committee_list(i) = committee;
+            end
+            
+            if obj.generate_outputs
+                writetable(competitive_bills,sprintf('%s/%s_competitive_bills.xlsx',obj.outputs_directory,chamber),'WriteRowNames',false);
+            end
+            
+            if ~isempty(accuracy_list) && obj.generate_outputs
+                h = figure();
+                hold on
+                title(sprintf('%s Predictive Model Accuracy at t2',chamber))
+                xlabel('Accuracy')
+                ylabel('Frequency')
+                grid on
+                histfit(accuracy_list,20)
+                axis([0 100 0 inf])
+                hold off
+                saveas(h,sprintf('%s/%s_accuracy_histogram_t2',obj.outputs_directory,chamber),'png')
+            end
+            
+            if ~isempty(sponsor_list) && obj.generate_outputs
+                h = figure();
+                hold on
+                title(sprintf('%s Sponsor Count',chamber))
+                xlabel('Number of Sponsors')
+                ylabel('Frequency')
+                grid on
+                histfit(sponsor_list,10)
+                axis([0 max(sponsor_list) 0 inf])
+                hold off
+                saveas(h,sprintf('%s/%s_sponsor_histogram',obj.outputs_directory,chamber),'png')
+            end
+            
+            if ~isempty(committee_list) && obj.generate_outputs
+                h = figure();
+                hold on
+                title(sprintf('%s Committee Member Count',chamber))
+                xlabel('Number of Committee Members')
+                ylabel('Frequency')
+                grid on
+                histfit(committee_list,10)
+                axis([0 max(committee_list) 0 inf])
+                hold off
+                saveas(h,sprintf('%s/%s_committee_histogram',obj.outputs_directory,chamber),'png')
             end
         end
         

@@ -1,5 +1,6 @@
 classdef IN < forge
-    properties  
+    properties
+        monte_carlo_number = 100;
     end
     
     methods
@@ -71,7 +72,7 @@ classdef IN < forge
                 
                 % ---------------------- House Data -----------------------
                 if ~isempty(house_people)
-
+                    
                     [house_chamber_matrix,house_chamber_votes,...
                         house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
                         house_committee_matrix,house_committee_votes,...
@@ -104,7 +105,7 @@ classdef IN < forge
                 
                 % --------------------- Senate Data -----------------------
                 if ~isempty(senate_people)
-
+                    
                     [senate_chamber_matrix,senate_chamber_votes,...
                         senate_sponsor_chamber_matrix,senate_sponsor_chamber_votes,...
                         senate_committee_matrix,senate_committee_votes,...
@@ -201,7 +202,6 @@ classdef IN < forge
                         end
                     end
                     
-                    [~,~,~] = rmdir(obj.gif_directory,'s');
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
                     obj.make_gifs = true;
                     obj.make_histograms = true;
@@ -211,99 +211,12 @@ classdef IN < forge
             end
             
             if obj.generate_outputs
-                
                 if ~isempty(house_people)
-                    % PLOTTING
-                    % Chamber Vote Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_chamber_matrix,'House','','Legislators','Legislators','Agreement Score','chamber_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_chamber_votes,'House','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_chamber_votes,'House','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
-                    toc
-                    
-                    % Chamber Sponsorship Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_sponsor_chamber_matrix,'House','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_chamber_sponsor,'House','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_chamber_sponsor,'House','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
-                    toc
-                    
-                    % Committee Vote Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_committee_matrix,'House Committee','','Legislators','Legislators','Agreement Score','committee_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_committee_votes,'House Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_committee_votes,'House Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
-                    toc
-                    
-                    % Committee Sponsorship Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_sponsor_committee_matrix,'House Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_republicans_committee_sponsor,'House Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,house_democrats_committee_sponsor,'House Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
-                    toc
-                    
-                    % Chamber-Committee Consistency
-                    if any(~isnan(house_consistency_matrix.percentage))
-                        h = figure();
-                        hold on
-                        title('Chamber-Committee Consistency')
-                        xlabel('Agreement')
-                        ylabel('Frequency')
-                        grid on
-                        histfit(house_consistency_matrix.percentage)
-                        axis([0 1 0 inf])
-                        hold off
-                        saveas(h,sprintf('%s/histogram_house_committee_consistency',obj.outputs_directory),'png')
-                    end
+                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'House',house_chamber_matrix,house_republicans_chamber_votes,house_democrats_chamber_votes,house_sponsor_chamber_matrix,house_democrats_chamber_sponsor,house_committee_matrix,house_republicans_committee_votes,house_democrats_committee_votes,house_sponsor_committee_matrix,house_republicans_committee_sponsor,house_democrats_committee_sponsor,house_consistency_matrix)
                 end
                 
                 if ~isempty(senate_people)
-                    % PLOTTING
-                    % Chamber Vote Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_chamber_matrix,'Senate','','Legislators','Legislators','Agreement Score','chamber_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_chamber_votes,'Senate','Republicans','Legislators','Legislators','Agreement Score','chamber_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_chamber_votes,'Senate','Democrats','Legislators','Legislators','Agreement Score','chamber_D')
-                    toc
-                    
-                    % Chamber Sponsorship Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_sponsor_chamber_matrix,'Senate','Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_chamber_sponsor,'Senate','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_chamber_sponsor,'Senate','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','chamber_sponsor_D')
-                    toc
-                    
-                    % Committee Vote Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_committee_matrix,'Senate Committee','','Legislators','Legislators','Agreement Score','committee_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_committee_votes,'Senate Committee','Republicans','Legislators','Legislators','Agreement Score','committee_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_committee_votes,'Senate Committee','Democrats','Legislators','Legislators','Agreement Score','committee_D')
-                    toc
-                    
-                    % Committee Sponsorship Data
-                    tic
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_sponsor_committee_matrix,'Senate Committee','Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_republicans_committee_sponsor,'Senate Committee','Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-                    plot.generatePlots(obj.outputs_directory,obj.histogram_directory,senate_democrats_committee_sponsor,'Senate Committee','Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
-                    toc
-                    
-                    % Chamber-Committee Consistency
-                    if any(~isnan(senate_consistency_matrix.percentage))
-                        h = figure();
-                        hold on
-                        title('Chamber-Committee Consistency')
-                        xlabel('Agreement')
-                        ylabel('Frequency')
-                        grid on
-                        histfit(senate_consistency_matrix.percentage)
-                        axis([0 1 0 inf])
-                        hold off
-                        saveas(h,sprintf('%s/histogram_senate_committee_consistency',obj.outputs_directory),'png')
-                    end
-                end
-                
-                if obj.make_gifs
-                    [~,~,~] = rmdir(obj.gif_directory,'s');
+                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'Senate',senate_chamber_matrix,senate_republicans_chamber_votes,senate_democrats_chamber_votes,senate_sponsor_chamber_matrix,senate_democrats_chamber_sponsor,senate_committee_matrix,senate_republicans_committee_votes,senate_democrats_committee_votes,senate_sponsor_committee_matrix,senate_republicans_committee_sponsor,senate_democrats_committee_sponsor,senate_consistency_matrix)
                 end
             end
             
@@ -333,284 +246,20 @@ classdef IN < forge
             % it can be used in variable names more easily
             
             if ~isempty(house_people) && predict_outcomes
-                accuracy_list = zeros(1,length(house_bill_ids));
-                sponsor_list = zeros(1,length(house_bill_ids));
-                committee_list = zeros(1,length(house_bill_ids));
-                for i = 1:length(house_bill_ids)
-                    [accuracy, sponsor, committee] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,obj.generate_outputs,'house');
-                    accuracy_list(i) = accuracy;
-                    sponsor_list(i) = sponsor;
-                    committee_list(i) = committee;
-                end
-                
-                if ~isempty(accuracy_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('House Predictive Model Accuracy at t2')
-                    xlabel('Accuracy')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(accuracy_list,20)
-                    axis([0 100 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/house_accuracy_histogram_t2',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(sponsor_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('House Sponsor Count')
-                    xlabel('Number of Sponsors')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(sponsor_list,10)
-                    axis([0 max(sponsor_list) 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/house_sponsor_histogram',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(committee_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('House Committee Member Count')
-                    xlabel('Number of Committee Members')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(committee_list,10)
-                    axis([0 max(committee_list) 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/house_committee_histogram',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(house_bill_ids)
-                    competitive_bills = cell2table(cell(length(house_bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
-                    for i = 1:length(house_bill_ids)
-                        competitive_bills{i,'bill_id'} = {obj.bill_set(house_bill_ids(i)).bill_id};
-                        competitive_bills{i,'bill_number'} = obj.bill_set(house_bill_ids(i)).bill_number;
-                        competitive_bills{i,'title'} = obj.bill_set(house_bill_ids(i)).title;
-                        competitive_bills{i,'introduced'} = obj.bill_set(house_bill_ids(i)).date_introduced;
-                        competitive_bills{i,'last_action'} = obj.bill_set(house_bill_ids(i)).date_last_action;
-                        competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(house_bill_ids(i)).issue_category)};
-                        
-                        sponsors_names = obj.getSponsorName(obj.bill_set(house_bill_ids(i)).sponsors(1));
-                        for j = 2:length(obj.bill_set(house_bill_ids(i)).sponsors)
-                            sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(house_bill_ids(i)).sponsors(j))]; %#ok<AGROW>
-                        end
-                        competitive_bills{i,'sponsors'} = {sponsors_names};
-                        
-                        comittee_ids = [obj.bill_set(house_bill_ids(i)).house_data.committee_votes(end).yes_list ; obj.bill_set(house_bill_ids(i)).house_data.committee_votes(end).no_list];
-                        committee_names = obj.getSponsorName(comittee_ids(1));
-                        for j = 2:length(comittee_ids)
-                            committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
-                        end
-                        competitive_bills{i,'committee_members'} = {committee_names};
-                    end
-                    writetable(competitive_bills,sprintf('%s/house_competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
-                end 
+                obj.stepwisePrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House');
             end
             
             if ~isempty(senate_people) && predict_outcomes
-                accuracy_list = zeros(1,length(senate_bill_ids));
-                sponsor_list = zeros(1,length(senate_bill_ids));
-                committee_list = zeros(1,length(senate_bill_ids));
-                for i = 1:length(senate_bill_ids)
-                    [accuracy, sponsor, committee] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,obj.generate_outputs,'senate');
-                    accuracy_list(i) = accuracy;
-                    sponsor_list(i) = sponsor;
-                    committee_list(i) = committee;
-                end
-                
-                if ~isempty(accuracy_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('Senate Predictive Model Accuracy at t2')
-                    xlabel('Accuracy')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(accuracy_list,20)
-                    axis([0 100 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/senate_accuracy_histogram_t2',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(sponsor_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('Senate Sponsor Count')
-                    xlabel('Number of Sponsors')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(sponsor_list,10)
-                    axis([0 max(sponsor_list) 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/senate_sponsor_histogram',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(committee_list) && obj.generate_outputs
-                    h = figure();
-                    hold on
-                    title('Senate Committee Member Count')
-                    xlabel('Number of Committee Members')
-                    ylabel('Frequency')
-                    grid on
-                    histfit(committee_list,10)
-                    axis([0 max(committee_list) 0 inf])
-                    hold off
-                    saveas(h,sprintf('%s/senate_committee_histogram',obj.outputs_directory),'png')
-                end
-                
-                if ~isempty(senate_bill_ids)
-                    competitive_bills = cell2table(cell(length(senate_bill_ids),8),'VariableNames',{'bill_id' 'bill_number' 'title' 'introduced' 'last_action' 'issue_id','sponsors','committee_members'});
-                    for i = 1:length(senate_bill_ids)
-                        competitive_bills{i,'bill_id'} = {obj.bill_set(senate_bill_ids(i)).bill_id};
-                        competitive_bills{i,'bill_number'} = obj.bill_set(senate_bill_ids(i)).bill_number;
-                        competitive_bills{i,'title'} = obj.bill_set(senate_bill_ids(i)).title;
-                        competitive_bills{i,'introduced'} = obj.bill_set(senate_bill_ids(i)).date_introduced;
-                        competitive_bills{i,'last_action'} = obj.bill_set(senate_bill_ids(i)).date_last_action;
-                        competitive_bills{i,'issue_id'} = {obj.ISSUE_KEY(obj.bill_set(senate_bill_ids(i)).issue_category)};
-                        
-                        sponsors_names = obj.getSponsorName(obj.bill_set(senate_bill_ids(i)).sponsors(1));
-                        for j = 2:length(obj.bill_set(senate_bill_ids(i)).sponsors)
-                            sponsors_names = [sponsors_names ',' obj.getSponsorName(obj.bill_set(senate_bill_ids(i)).sponsors(j))]; %#ok<AGROW>
-                        end
-                        competitive_bills{i,'sponsors'} = {sponsors_names};
-                        
-                        comittee_ids = [obj.bill_set(senate_bill_ids(i)).senate_data.committee_votes(end).yes_list ; obj.bill_set(senate_bill_ids(i)).senate_data.committee_votes(end).no_list];
-                        committee_names = obj.getSponsorName(comittee_ids(1));
-                        for j = 2:length(comittee_ids)
-                            committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
-                        end
-                        competitive_bills{i,'committee_members'} = {committee_names};
-                    end
-                    writetable(competitive_bills,sprintf('%s/senate_competitive_bills.xlsx',obj.outputs_directory),'WriteRowNames',false);
-                end
-            end
-                        
-            if ~isempty(house_people) && predict_montecarlo
-                 tic
-                 monte_carlo_number = 100;
-                 bill_target = 10; %length(house_bill_ids)
-                
-                delete_str = '';
-                
-                accuracy_list    = zeros(bill_target,monte_carlo_number);
-                accuracy_delta   = zeros(bill_target,monte_carlo_number);
-                legislators_list = cell(bill_target);
-                bill_ids         = zeros(1,bill_target);
-                
-                bill_hit = 1;
-                i = 0;
-                while bill_hit <= bill_target && i <= length(house_bill_ids)
-                    i = i + 1;
-                    
-                    [accuracy,~,~,legislators] = obj.predictOutcomes(house_bill_ids(i),house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'house',monte_carlo_number);
-                    
-                    if ~isempty(legislators)
-                        accuracy_list(bill_hit,:)  = accuracy(1,:);
-                        accuracy_delta(bill_hit,:) = accuracy(2,:);
-                        legislators_list{bill_hit} = legislators;
-                    else
-                        continue
-                    end
-                    
-                    print_str = sprintf('%i %i',bill_hit,house_bill_ids(i));
-                    fprintf([delete_str,print_str]);
-                    delete_str = repmat(sprintf('\b'),1,length(print_str));
-                    
-                    bill_ids(bill_hit) = house_bill_ids(i);
-                    bill_hit = bill_hit + 1;
-                end
-                bill_hit = bill_hit - 1;
-                
-                h = figure();
-                hold on
-                title('House Prediction Histogram')
-                boxplot(accuracy_list',bill_ids)
-                xlabel('Bills')
-                ylabel('Accuracy')
-                hold off
-                saveas(h,sprintf('%s/house_prediction_histogram',obj.outputs_directory),'png')
-               
-                h = figure();
-                hold on
-                title('House Prediction Histogram - Delta')
-                boxplot(accuracy_delta',bill_ids)
-                xlabel('Bills')
-                ylabel('Change in Accuracy')
-                hold off
-                saveas(h,sprintf('%s/house_prediction_delta_histogram',obj.outputs_directory),'png')
-
-                save(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'accuracy_list','legislators_list');
-                
-                timed = toc;
-                
-                print_str = sprintf('House Done - %i bills! %0.3f\n',bill_hit,timed);
-                fprintf([delete_str,print_str]);
+                obj.stepwisePrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,house_chamber_matrix,'Senate');
             end
             
+            if ~isempty(house_people) && predict_montecarlo
+                [house_accuracy_list, house_accuracy_delta, house_legislators_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number);
+            end
             
             if ~isempty(senate_people) && predict_montecarlo
-                tic
-                monte_carlo_number = 100;
-                bill_target = 10; %length(senate_bill_ids)
-                
-                delete_str = '';
-                
-                accuracy_list    = zeros(bill_target,monte_carlo_number);
-                accuracy_delta   = zeros(bill_target,monte_carlo_number);
-                legislators_list = cell(bill_target,monte_carlo_number);
-                bill_ids         = zeros(1,bill_target);
-                
-                bill_hit = 1;
-                i = 0;
-                while bill_hit <= bill_target && i <= length(senate_bill_ids)
-                    i = i + 1;
-                    
-                    [accuracy,~,~,legislators] = obj.predictOutcomes(senate_bill_ids(i),senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'senate',monte_carlo_number);
-                    
-                    if ~isempty(legislators)
-                        accuracy_list(bill_hit,:)  = accuracy(1,:);
-                        accuracy_delta(bill_hit,:) = accuracy(2,:);
-                        legislators_list{bill_hit} = legislators;
-                    else
-                        continue
-                    end
-                    
-                    print_str = sprintf('%i %i',bill_hit,senate_bill_ids(i));
-                    fprintf([delete_str,print_str]);
-                    delete_str = repmat(sprintf('\b'),1,length(print_str));
-                    
-                    bill_ids(bill_hit) = senate_bill_ids(i);
-                    bill_hit = bill_hit + 1;
-                end
-                bill_hit = bill_hit - 1;
-                
-                h = figure();
-                hold on
-                title('Senate Prediction Histogram')
-                boxplot(accuracy_list',bill_ids)
-                xlabel('Bills')
-                ylabel('Accuracy')
-                hold off
-                saveas(h,sprintf('%s/senate_prediction_histogram',obj.outputs_directory),'png')
-
-                h = figure();
-                hold on
-                title('Senate Prediction Histogram - Delta')
-                boxplot(accuracy_delta',bill_ids)
-                xlabel('Bills')
-                ylabel('Change in Accuracy')
-                hold off
-                saveas(h,sprintf('%s/senate_prediction_delta_histogram',obj.outputs_directory),'png')
-                
-                save(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'accuracy_list','accuracy_delta','legislators_list')
-                
-                timed = toc;
-                
-                print_str = sprintf('Senate Done - %i bills! %0.3f\n',bill_hit,timed);
-                fprintf([delete_str,print_str]);
+                [senate_accuracy_list, senate_accuracy_delta, senate_legislators_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);
             end
-
             
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
