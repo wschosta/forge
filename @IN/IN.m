@@ -46,7 +46,8 @@ classdef IN < forge
                 house_people  = []; %#ok<NASGU>
                 senate_people = [];
                 
-                if ~any([list{:}])
+                override = true;
+                if ~any([list{:}]) || override
                     % Takes from the maximum year, could also be set to do
                     % a specific year
                     year_select = max(unique(obj.people.year));
@@ -70,7 +71,7 @@ classdef IN < forge
                     % That we don't use...
                     house_people = readtable(sprintf('%s/people_2013-2014.csv',obj.data_directory));
                 end
-                clear list
+                clear list override
                 
                 % ---------------------- House Data -----------------------
                 if ~isempty(house_people)
