@@ -20,6 +20,7 @@ classdef forge < handle
         make_gifs
         make_histograms
         
+        data_directory
         gif_directory
         histogram_directory
         outputs_directory
@@ -355,6 +356,7 @@ classdef forge < handle
             % predictions
             number_of_legislators = 8;
             varargout{1} = [];
+            varargout{2} = [];
             
             chamber_data = sprintf('%s_data',chamber);
             
@@ -492,26 +494,25 @@ classdef forge < handle
             if length(varargin) == 1
                 accuracy_list = zeros(2,monte_carlo_number);
                 legislators_list = cell(monte_carlo_number,1);
+                accuracy_steps_list = cell(monte_carlo_number,1);
             end
+            
+            t_final_results = t_set.final;
             
             for j = 1:monte_carlo_number
                 rng(j)
                 
-                legislator_list = legislator_list(randperm(length(legislator_list)));
-                
-                legislator_id = legislator_list(1:number_of_legislators);
-                direction     = ismember(legislator_id,bill_yes_ids);
+                legislator_id  = legislator_list(randperm(length(legislator_list),number_of_legislators));
+                direction      = ismember(legislator_id,bill_yes_ids);
+                accuracy_steps = zeros(1,length(legislator_id)+1);
+                accuracy_steps(1) = accuracy_table.t2;
                 
                 t_count = 2;
                 
                 for i = 1:length(legislator_id)
                     
-                    [t_set,t_count,t_current] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids);
+                    [t_set,t_count,t_current,accuracy_steps(i+1)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
                     
-%                     t_check   = round(t_set.(t_current)) == t_set.final;
-%                     incorrect = sum(t_check == false);
-%                     are_nan   = sum(isnan(t_set.final(t_check == false)));
-%                     accuracy_table.(t_current) = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 end
                 
                 t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
@@ -520,9 +521,16 @@ classdef forge < handle
                 accuracy  = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 
                 if length(varargin) == 1
-                    accuracy_list(1,j)       = accuracy;
-                    accuracy_list(2,j)       = (accuracy - accuracy_table.t2);
-                    legislators_list{j} = legislator_id;
+                    accuracy_list(1,j)     = accuracy;
+                    accuracy_list(2,j)     = (accuracy - accuracy_table.t2);
+                    legislators_list{j}    = legislator_id;
+                    
+                    accuracy_steps_delta = zeros(1,length(legislator_id));
+                    for i = 1:length(accuracy_steps)-1
+                        accuracy_steps_delta(i) = accuracy_steps(i+1) - accuracy_steps(i);
+                    end
+                    
+                    accuracy_steps_list{j} = accuracy_steps_delta;
                 end
             end
             
@@ -545,22 +553,24 @@ classdef forge < handle
                 writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
             end
             
-            if nargout == 4
+            if nargout > 3
                 accuracy     = accuracy_list;
                 varargout{1} = legislators_list;
+                varargout{2} = accuracy_steps_list;
             end
         end
         
-        function [accuracy_list, accuracy_delta, legislators_list] = runMonteCarlo(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber,monte_carlo_number)
+        function [accuracy_list, accuracy_delta, legislators_list, accuracy_steps_list] = runMonteCarlo(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,generate_outputs,chamber,monte_carlo_number)
             
             tic
             bill_target = length(chamber_bill_ids);
             
             delete_str = '';
             
-            accuracy_list    = zeros(bill_target,monte_carlo_number);
-            accuracy_delta   = zeros(bill_target,monte_carlo_number);
-            legislators_list = cell(bill_target,monte_carlo_number);
+            accuracy_list       = zeros(bill_target,monte_carlo_number);
+            accuracy_delta      = zeros(bill_target,monte_carlo_number);
+            legislators_list    = cell(bill_target,monte_carlo_number);
+            accuracy_steps_list = cell(bill_target,monte_carlo_number);
             bill_ids         = zeros(1,bill_target);
             
             % These will reduce the runtime in the the predictOutcomes
@@ -572,12 +582,13 @@ classdef forge < handle
             i = 1;
             while bill_hit <= bill_target && i <= length(chamber_bill_ids)
                 
-                [accuracy,~,~,legislators] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,generate_outputs,lower(chamber),monte_carlo_number);
+                [accuracy,~,~,legislators,accuracy_steps] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,generate_outputs,lower(chamber),monte_carlo_number);
                 
                 if ~isempty(legislators)
-                    accuracy_list(bill_hit,:)    = accuracy(1,:);
-                    accuracy_delta(bill_hit,:)   = accuracy(2,:);
-                    legislators_list(bill_hit,:) = legislators;
+                    accuracy_list(bill_hit,:)       = accuracy(1,:);
+                    accuracy_delta(bill_hit,:)      = accuracy(2,:);
+                    accuracy_steps_list(bill_hit,:) = accuracy_steps;
+                    legislators_list(bill_hit,:)    = legislators;
                 else
                     i = i + 1;
                     continue
@@ -593,25 +604,49 @@ classdef forge < handle
             end
             bill_hit = bill_hit - 1;
             
+            accuracy_list       = accuracy_list(1:bill_hit,1:monte_carlo_number);
+            accuracy_delta      = accuracy_delta(1:bill_hit,1:monte_carlo_number);
+            legislators_list    = legislators_list(1:bill_hit,1:monte_carlo_number);
+            accuracy_steps_list = accuracy_steps_list(1:bill_hit,1:monte_carlo_number);
+            bill_ids = bill_ids(1:bill_hit);
+            
             h = figure();
             hold on
-            title(sprintf('%s Prediction Histogram',chamber))
+            title(sprintf('%s Prediction Boxplot',chamber))
             boxplot(accuracy_list',bill_ids)
             xlabel('Bills')
             ylabel('Accuracy')
             hold off
-            saveas(h,sprintf('%s/%s_prediction_histogram',obj.outputs_directory,lower(chamber)),'png')
+            saveas(h,sprintf('%s/%s_prediction_boxplot',obj.outputs_directory,lower(chamber)),'png')
             
             h = figure();
             hold on
-            title(sprintf('%s Prediction Histogram - Delta',chamber))
+            title(sprintf('%s Prediction Boxplot - Delta',chamber))
             boxplot(accuracy_delta',bill_ids)
             xlabel('Bills')
             ylabel('Change in Accuracy')
             hold off
-            saveas(h,sprintf('%s/%s_prediction_delta_histogram',obj.outputs_directory,lower(chamber)),'png')
+            saveas(h,sprintf('%s/%s_prediction_delta_boxplot',obj.outputs_directory,lower(chamber)),'png')
+                  
+            h = figure();
+            hold on
+            title(sprintf('%s Total Prediction Boxplot',chamber))
+            boxplot(accuracy_list(1:numel(accuracy_list)))
+            xlabel('All Bills')
+            ylabel('Accuracy')
+            hold off
+            saveas(h,sprintf('%s/%s_total_prediction_boxplot',obj.outputs_directory,lower(chamber)),'png')
             
-            save(sprintf('%s/%s_predictive_model.mat',obj.outputs_directory,lower(chamber)),'accuracy_list','accuracy_delta','legislators_list')
+            h = figure();
+            hold on
+            title(sprintf('%s Total Prediction Boxplot - Delta',chamber))
+            boxplot(accuracy_delta(1:numel(accuracy_delta)))
+            xlabel('All Bills')
+            ylabel('Change in Accuracy')
+            hold off
+            saveas(h,sprintf('%s/%s_total_prediction_delta_boxplot',obj.outputs_directory,lower(chamber)),'png')
+            
+            save(sprintf('%s/%s_predictive_model.mat',obj.outputs_directory,lower(chamber)),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list')
             
             timed = toc;
             

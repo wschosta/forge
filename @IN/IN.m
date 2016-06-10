@@ -19,7 +19,9 @@ classdef IN < forge
             obj.reprocess = in.Results.reprocess;
             obj.generate_outputs = in.Results.generateOutputs;
             
-            obj.outputs_directory = sprintf('data/%s/outputs',obj.state);
+            
+            obj.data_directory = sprintf('data/%s',obj.state);
+            obj.outputs_directory = sprintf('%s/outputs',obj.data_directory);
             obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
             
@@ -32,22 +34,19 @@ classdef IN < forge
             predict_montecarlo = true;
             predict_outcomes = false;
             
-            if exist(sprintf('data/%s/saved_data.mat',obj.state),'file') ~= 2 || obj.recompute
+            if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
                 
                 % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
                 % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
                 % CHAMBER DESCRIPTIONS
-                
-                override = true;
-                
-                directory = sprintf('data/%s',obj.state);
-                list      = dir(directory);
-                hit_list = regexp({list.name},'people_(\d+).*','once');
+
+                list      = dir(obj.data_directory);
+                list      = regexp({list.name},'people_(\d+).*','once');
                 
                 house_people  = []; %#ok<NASGU>
                 senate_people = [];
                 
-                if ~any([hit_list{:}]) || override
+                if ~any([list{:}])
                     % Takes from the maximum year, could also be set to do
                     % a specific year
                     year_select = max(unique(obj.people.year));
@@ -62,13 +61,16 @@ classdef IN < forge
                         
                         % If we can't find anything, do a hardcode read
                         % (just so there's something here)
-                        house_people = readtable(sprintf('data/%s/people_2013-2014.csv',obj.state));
+                        house_people = readtable(sprintf('%s/people_2013-2014.csv',obj.data_directory));
                     end
+                    
+                    clear year_select select_people
                 else
                     % Hardcode read that has a bunch of great extra stuff.
                     % That we don't use...
-                    house_people = readtable(sprintf('data/%s/people_2013-2014.csv',obj.state));
+                    house_people = readtable(sprintf('%s/people_2013-2014.csv',obj.data_directory));
                 end
+                clear list
                 
                 % ---------------------- House Data -----------------------
                 if ~isempty(house_people)
@@ -136,10 +138,6 @@ classdef IN < forge
                     end
                 end
                 
-                var_list = who;
-                var_list = var_list(~ismember(var_list,'obj'));
-                save(sprintf('data/%s/saved_data.mat',obj.state),var_list{:})
-                
                 if obj.generate_outputs
                     
                     if ~isempty(house_people)
@@ -206,6 +204,13 @@ classdef IN < forge
                     obj.make_gifs = true;
                     obj.make_histograms = true;
                 end
+                
+                clear senate_seat_flag house_seat_flag
+                
+                var_list = who;
+                var_list = var_list(~ismember(var_list,'obj'));
+                save(sprintf('data/%s/saved_data.mat',obj.state),var_list{:})
+                
             else
                 load(sprintf('data/%s/saved_data.mat',obj.state));
             end
@@ -254,11 +259,11 @@ classdef IN < forge
             end
             
             if ~isempty(house_people) && predict_montecarlo
-                [house_accuracy_list, house_accuracy_delta, house_legislators_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number);
+                [house_accuracy_list, house_accuracy_delta, house_legislators_list, house_accuracy_steps_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
             end
             
             if ~isempty(senate_people) && predict_montecarlo
-                [senate_accuracy_list, senate_accuracy_delta, senate_legislators_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);
+                [senate_accuracy_list, senate_accuracy_delta, senate_legislators_list, senate_accuracy_steps_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
             end
             
             var_list = who;
