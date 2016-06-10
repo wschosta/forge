@@ -62,12 +62,12 @@ classdef IN < forge
                         
                         % If we can't find anything, do a hardcode read
                         % (just so there's something here)
-                        house_people = readtable(sprintf('data/%s/people_2013-2014.xlsx',obj.state));
+                        house_people = readtable(sprintf('data/%s/people_2013-2014.csv',obj.state));
                     end
                 else
                     % Hardcode read that has a bunch of great extra stuff.
                     % That we don't use...
-                    house_people = readtable(sprintf('data/%s/people_2013-2014.xlsx',obj.state));
+                    house_people = readtable(sprintf('data/%s/people_2013-2014.csv',obj.state));
                 end
                 
                 % ---------------------- House Data -----------------------
@@ -143,62 +143,62 @@ classdef IN < forge
                 if obj.generate_outputs
                     
                     if ~isempty(house_people)
-                        delete(sprintf('%s/house_*.xlsx',obj.outputs_directory));
+                        delete(sprintf('%s/house_*.csv',obj.outputs_directory));
                         
-                        writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
                         
                         if house_seat_flag
-                            writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                            writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
                         end
                     end
                     
                     if ~isempty(senate_people)
-                        delete(sprintf('%s/senate_*.xlsx',obj.outputs_directory));
+                        delete(sprintf('%s/senate_*.csv',obj.outputs_directory));
                         
-                        writetable(senate_chamber_matrix,sprintf('%s/senate_all_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_chamber_votes,sprintf('%s/senate_all_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_chamber_votes,sprintf('%s/senate_republicans_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_chamber_votes,sprintf('%s/senate_democrats_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_chamber_matrix,sprintf('%s/senate_all_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_chamber_votes,sprintf('%s/senate_all_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_republicans_chamber_votes,sprintf('%s/senate_republicans_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_democrats_chamber_votes,sprintf('%s/senate_democrats_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(senate_sponsor_chamber_matrix,sprintf('%s/senate_all_sponsor_chamber_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_sponsor_chamber_votes,sprintf('%s/senate_all_sponsor_chamber_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_chamber_sponsor,sprintf('%s/senate_republicans_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_chamber_sponsor,sprintf('%s/senate_democrats_chamber_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_sponsor_chamber_matrix,sprintf('%s/senate_all_sponsor_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_sponsor_chamber_votes,sprintf('%s/senate_all_sponsor_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_republicans_chamber_sponsor,sprintf('%s/senate_republicans_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_democrats_chamber_sponsor,sprintf('%s/senate_democrats_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(senate_committee_matrix,sprintf('%s/senate_all_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_committee_votes,sprintf('%s/senate_all_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_committee_votes,sprintf('%s/senate_republicans_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_committee_votes,sprintf('%s/senate_democrats_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_committee_matrix,sprintf('%s/senate_all_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_committee_votes,sprintf('%s/senate_all_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_republicans_committee_votes,sprintf('%s/senate_republicans_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_democrats_committee_votes,sprintf('%s/senate_democrats_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(senate_sponsor_committee_matrix,sprintf('%s/senate_all_sponsor_committee_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_sponsor_committee_votes,sprintf('%s/senate_all_sponsor_committee_votes.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_committee_sponsor,sprintf('%s/senate_republicans_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_committee_sponsor,sprintf('%s/senate_democrats_committee_sponsor.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_sponsor_committee_matrix,sprintf('%s/senate_all_sponsor_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_sponsor_committee_votes,sprintf('%s/senate_all_sponsor_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_republicans_committee_sponsor,sprintf('%s/senate_republicans_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_democrats_committee_sponsor,sprintf('%s/senate_democrats_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
                         
-                        writetable(senate_consistency_matrix,sprintf('%s/senate_consistency_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                        writetable(senate_consistency_matrix,sprintf('%s/senate_consistency_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
                         
                         if senate_seat_flag
-                            writetable(senate_seat_matrix,sprintf('%s/senate_seat_matrix.xlsx',obj.outputs_directory),'WriteRowNames',true);
+                            writetable(senate_seat_matrix,sprintf('%s/senate_seat_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
                         end
                     end
                     
@@ -212,11 +212,11 @@ classdef IN < forge
             
             if obj.generate_outputs
                 if ~isempty(house_people)
-                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'House',house_chamber_matrix,house_republicans_chamber_votes,house_democrats_chamber_votes,house_sponsor_chamber_matrix,house_democrats_chamber_sponsor,house_committee_matrix,house_republicans_committee_votes,house_democrats_committee_votes,house_sponsor_committee_matrix,house_republicans_committee_sponsor,house_democrats_committee_sponsor,house_consistency_matrix)
+                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'House',house_chamber_matrix,house_republicans_chamber_votes,house_democrats_chamber_votes,house_sponsor_chamber_matrix,house_republicans_chamber_sponsor,house_democrats_chamber_sponsor,house_committee_matrix,house_republicans_committee_votes,house_democrats_committee_votes,house_sponsor_committee_matrix,house_republicans_committee_sponsor,house_democrats_committee_sponsor,house_consistency_matrix)
                 end
                 
                 if ~isempty(senate_people)
-                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'Senate',senate_chamber_matrix,senate_republicans_chamber_votes,senate_democrats_chamber_votes,senate_sponsor_chamber_matrix,senate_democrats_chamber_sponsor,senate_committee_matrix,senate_republicans_committee_votes,senate_democrats_committee_votes,senate_sponsor_committee_matrix,senate_republicans_committee_sponsor,senate_democrats_committee_sponsor,senate_consistency_matrix)
+                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,'Senate',senate_chamber_matrix,senate_republicans_chamber_votes,senate_democrats_chamber_votes,senate_sponsor_chamber_matrix,senate_republicans_chamber_sponsor,senate_democrats_chamber_sponsor,senate_committee_matrix,senate_republicans_committee_votes,senate_democrats_committee_votes,senate_sponsor_committee_matrix,senate_republicans_committee_sponsor,senate_democrats_committee_sponsor,senate_consistency_matrix)
                 end
             end
             
