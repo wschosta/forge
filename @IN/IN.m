@@ -31,8 +31,9 @@ classdef IN < forge
         end
         
         function run(obj)
-            predict_montecarlo = true;
-            predict_outcomes = false;
+            predict_montecarlo   = true;
+            recompute_montecarlo = true;
+            predict_outcomes     = false;
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
                 
@@ -260,11 +261,35 @@ classdef IN < forge
             end
             
             if ~isempty(house_people) && predict_montecarlo
-                [house_accuracy_list, house_accuracy_delta, house_legislators_list, house_accuracy_steps_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
+                if exist(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
+                    [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
+                else
+                    data = load(sprintf('%s/house_predictive_model.mat',obj.outputs_directory));
+                    house_accuracy_list       = data.accuracy_list;
+                    house_accuracy_delta      = data.accuracy_delta;
+                    house_legislators_list    = data.legislators_list;
+                    house_accuracy_steps_list = data.accuracy_steps_list;
+                    house_bill_list           = data.bill_ids;
+                end
+                house_results_table = obj.processLegislatorImpacts(house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,'house');
+
+                writetable(house_results_table,sprintf('%s/house_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
             end
             
             if ~isempty(senate_people) && predict_montecarlo
-                [senate_accuracy_list, senate_accuracy_delta, senate_legislators_list, senate_accuracy_steps_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
+                if exist(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
+                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
+                else
+                    data = load(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory));
+                    senate_accuracy_list       = data.accuracy_list;
+                    senate_accuracy_delta      = data.accuracy_delta;
+                    senate_legislators_list    = data.legislators_list;
+                    senate_accuracy_steps_list = data.accuracy_steps_list;
+                    senate_bill_list           = data.bill_ids;
+                end
+                senate_results_table = obj.processLegislatorImpacts(senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,'senate');
+            
+                writetable(senate_results_table,sprintf('%s/senate_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
             end
             
             var_list = who;
