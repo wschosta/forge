@@ -1,6 +1,6 @@
 classdef IN < forge
     properties
-        monte_carlo_number = 100;
+        monte_carlo_number = 10000;
     end
     
     methods
@@ -11,18 +11,18 @@ classdef IN < forge
             addOptional(in,'generateOutputs',0,@islogical);
             parse(in,varargin{:});
             
-            obj.state = 'IN';
+            obj.state       = 'IN';
             obj.senate_size = 50;
-            obj.house_size = 100;
+            obj.house_size  = 100;
             
-            obj.recompute = in.Results.recompute;
-            obj.reprocess = in.Results.reprocess;
+            obj.recompute        = in.Results.recompute;
+            obj.reprocess        = in.Results.reprocess;
             obj.generate_outputs = in.Results.generateOutputs;
             
             
-            obj.data_directory = sprintf('data/%s',obj.state);
-            obj.outputs_directory = sprintf('%s/outputs',obj.data_directory);
-            obj.gif_directory = sprintf('%s/gif',obj.outputs_directory);
+            obj.data_directory      = sprintf('data/%s',obj.state);
+            obj.outputs_directory   = sprintf('%s/outputs',obj.data_directory);
+            obj.gif_directory       = sprintf('%s/gif',obj.outputs_directory);
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
             
             obj.learning_algorithm_data = la.loadLearnedMaterials(obj.state);
@@ -41,8 +41,8 @@ classdef IN < forge
                 % ABSTRACTABLE TO OTHER STATES, WE JUST NEED TO ADJUST THE
                 % CHAMBER DESCRIPTIONS
 
-                list      = dir(obj.data_directory);
-                list      = regexp({list.name},'people_(\d+).*','once');
+                list = dir(obj.data_directory);
+                list = regexp({list.name},'people_(\d+).*','once');
                 
                 house_people  = []; %#ok<NASGU>
                 senate_people = [];
@@ -55,9 +55,9 @@ classdef IN < forge
                     
                     if all(ismember({'year','role_id','party_id'},obj.people.Properties.VariableNames))
                         obj.people.party_id = obj.people.party_id - 1;
-                        select_people = obj.people(obj.people.year == year_select,:);
-                        house_people  = select_people(select_people.role_id == 1,:);
-                        senate_people = select_people(select_people.role_id == 2,:);
+                        select_people       = obj.people(obj.people.year == year_select,:);
+                        house_people        = select_people(select_people.role_id == 1,:);
+                        senate_people       = select_people(select_people.role_id == 2,:);
                     else
                         fprintf('Not able to read people from legiscan data, searching for local data...\n')
                         
@@ -88,21 +88,21 @@ classdef IN < forge
                     % Create Republican and Democrat Lists (makes accounting easier)
                     [republican_ids, democrat_ids] = obj.processParties(house_people);
                     
-                    house_republicans_chamber_votes = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_chamber_votes   = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
+                    house_republicans_chamber_votes     = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
+                    house_democrats_chamber_votes       = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
                     
-                    house_republicans_chamber_sponsor = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_chamber_sponsor   = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
+                    house_republicans_chamber_sponsor   = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
+                    house_democrats_chamber_sponsor     = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
                     
-                    house_republicans_committee_votes = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,republican_ids),ismember(house_committee_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_committee_votes   = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_committee_matrix.Properties.VariableNames,democrat_ids));
+                    house_republicans_committee_votes   = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,republican_ids),ismember(house_committee_matrix.Properties.VariableNames,republican_ids));
+                    house_democrats_committee_votes     = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_committee_matrix.Properties.VariableNames,democrat_ids));
                     
                     house_republicans_committee_sponsor = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
                     house_democrats_committee_sponsor   = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
                     
                     house_seat_flag = 0;
                     if all(ismember({'SEATROW','SEATCOLUMN'},house_people.Properties.VariableNames))
-                        house_seat_flag = 1;
+                        house_seat_flag   = 1;
                         house_seat_matrix = obj.processSeatProximity(house_people);
                     end
                 end
@@ -121,21 +121,21 @@ classdef IN < forge
                     % Create Republican and Democrat Lists (makes accounting easier)
                     [republican_ids, democrat_ids] = obj.processParties(senate_people);
                     
-                    senate_republicans_chamber_votes = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_chamber_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_chamber_votes   = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_chamber_matrix.Properties.VariableNames,democrat_ids));
+                    senate_republicans_chamber_votes     = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_chamber_matrix.Properties.VariableNames,republican_ids));
+                    senate_democrats_chamber_votes       = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_chamber_matrix.Properties.VariableNames,democrat_ids));
                     
-                    senate_republicans_chamber_sponsor = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_chamber_sponsor   = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
+                    senate_republicans_chamber_sponsor   = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
+                    senate_democrats_chamber_sponsor     = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
                     
-                    senate_republicans_committee_votes = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,republican_ids),ismember(senate_committee_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_committee_votes   = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,democrat_ids),ismember(senate_committee_matrix.Properties.VariableNames,democrat_ids));
+                    senate_republicans_committee_votes   = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,republican_ids),ismember(senate_committee_matrix.Properties.VariableNames,republican_ids));
+                    senate_democrats_committee_votes     = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,democrat_ids),ismember(senate_committee_matrix.Properties.VariableNames,democrat_ids));
                     
                     senate_republicans_committee_sponsor = senate_sponsor_committee_matrix(ismember(senate_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(senate_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
                     senate_democrats_committee_sponsor   = senate_sponsor_committee_matrix(ismember(senate_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(senate_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
                     
                     senate_seat_flag = 0;
                     if all(ismember({'SEATROW','SEATCOLUMN'},senate_people.Properties.VariableNames))
-                        senate_seat_flag = 1;
+                        senate_seat_flag   = 1;
                         senate_seat_matrix = obj.processSeatProximity(senate_people);
                     end
                 end
@@ -203,7 +203,7 @@ classdef IN < forge
                     end
                     
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
-                    obj.make_gifs = true;
+                    obj.make_gifs       = true;
                     obj.make_histograms = true;
                 end
                 
@@ -262,7 +262,7 @@ classdef IN < forge
             
             if ~isempty(house_people) && predict_montecarlo
                 if exist(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
-                    [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
+                    [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); 
                 else
                     data = load(sprintf('%s/house_predictive_model.mat',obj.outputs_directory));
                     house_accuracy_list       = data.accuracy_list;
@@ -278,8 +278,7 @@ classdef IN < forge
             
             if ~isempty(senate_people) && predict_montecarlo
                 if exist(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
-                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number); %#ok<NASGU,ASGLU>
-                else
+                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);                else
                     data = load(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory));
                     senate_accuracy_list       = data.accuracy_list;
                     senate_accuracy_delta      = data.accuracy_delta;

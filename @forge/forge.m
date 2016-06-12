@@ -16,7 +16,7 @@ classdef forge < handle
         sponsor_filter
         
         state
-                
+        
         make_gifs
         make_histograms
         
@@ -156,7 +156,7 @@ classdef forge < handle
                 end
                 print_str = sprintf('Done! %i bills\n',i);
                 fprintf([delete_str,print_str]);
-            
+                
                 clear print_str complete chamber_votes committee_votes bill_history bill_rollcalls i j house_data house_rollcalls senate_data senate_rollcalls template
                 
                 var_list = who;
@@ -175,7 +175,7 @@ classdef forge < handle
             
             obj.bill_set = bill_set_create;
         end
-       
+        
         % There is probably a better, abstractable way to do this but it's a
         % good rough cut way. There may not actually be a better way to do
         % this in MATLAB...
@@ -194,7 +194,7 @@ classdef forge < handle
             [committee_matrix, committee_votes]                 = util.createTable(unique(ids),unique(ids),'NaN');
             [chamber_sponsor_matrix, chamber_sponsor_votes]     = util.createTable(unique(ids),unique(ids),'NaN');
             [committee_sponsor_matrix, committee_sponsor_votes] = util.createTable(unique(ids),unique(ids),'NaN');
-
+            
             % Create a table to keep track of the unique sponsorships
             sponsorship_counts = util.createTable(unique(ids),{'count'},'zero');
             
@@ -243,7 +243,7 @@ classdef forge < handle
                         % Yes/No votes
                         committee_yes_ids = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).yes_list,ids);
                         committee_no_ids  = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).no_list,ids);
-
+                        
                         % STRAIGHT VOTES
                         committee_matrix = obj.addVotes(committee_matrix,committee_yes_ids,committee_yes_ids);
                         committee_matrix = obj.addVotes(committee_matrix,committee_no_ids,committee_no_ids);
@@ -403,7 +403,7 @@ classdef forge < handle
             end
             
             bill_yes_ids = util.createIDstrings(bill_yes,ids);
-            bill_no_ids  = util.createIDstrings(bill_no,ids);           
+            bill_no_ids  = util.createIDstrings(bill_no,ids);
             
             % initial assumption, eveyone is equally likely to vote yes as
             % to vote no. This is probably not true, I'll have to figure
@@ -412,10 +412,10 @@ classdef forge < handle
             % so we make a table for the bayes, we'll keep track of effects
             % here and then update at each time t. New column for every
             % update, new time t for every update
-            bayes_initial = 0.5; 
-            t_set = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
+            bayes_initial  = 0.5;
+            t_set          = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
             accuracy_table = array2table(NaN(1,5),'VariableNames',{'final','name','t1','committee_vote','committee_consistency'},'RowNames',{'accuracy'});
-
+            
             t_set.name = obj.getSponsorName(ids);
             t_set.t1   = NaN(length(ids),1);
             t_set{bill_yes_ids,'final'} = 1;
@@ -426,7 +426,7 @@ classdef forge < handle
             committee_specific = NaN(length(committee_ids),1);
             committee_sponsor_match = sponsor_ids(ismember(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
             for i = 1:length(committee_ids)
-
+                
                 if ismember(committee_ids{i},committee_sponsor_matrix.Properties.RowNames)
                     sponsor_specific_effect = 1;
                     
@@ -463,7 +463,7 @@ classdef forge < handle
                     for k = 1:length(matched_ids)
                         combined_impact = combined_impact*predict.getSpecificImpact(1,chamber_specifics(j,k));
                     end
-                        
+                    
                     t_set_current_value(j) = (combined_impact*bayes_initial)/(combined_impact*bayes_initial + (1-combined_impact)*(1-bayes_initial));
                 else
                     if ~isnan(t_set.committee_vote(j))
@@ -476,11 +476,10 @@ classdef forge < handle
                 end
             end
             
-            t_set.t2 = t_set_current_value;
-            t2_check = (round(t_set.t2) == t_set.final);
-            
-            incorrect = sum(t2_check == false);
-            are_nan   = sum(isnan(t_set{t2_check == false,'final'}));
+            t_set.t2          = t_set_current_value;
+            t2_check          = (round(t_set.t2) == t_set.final);
+            incorrect         = sum(t2_check == false);
+            are_nan           = sum(isnan(t_set{t2_check == false,'final'}));
             accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
             
             % here is where the updating comes in, need to mock up some
@@ -488,12 +487,12 @@ classdef forge < handle
             % pretty damn solid at this point
             
             % at this point, for t3, we do basically the same thing as t2
-            % but we just update everything            
+            % but we just update everything
             legislator_list = [bill_yes_ids ; bill_no_ids];
             
             if length(varargin) == 1
-                accuracy_list = zeros(2,monte_carlo_number);
-                legislators_list = cell(monte_carlo_number,1);
+                accuracy_list       = zeros(2,monte_carlo_number);
+                legislators_list    = cell(monte_carlo_number,1);
                 accuracy_steps_list = cell(monte_carlo_number,1);
             end
             
@@ -502,17 +501,14 @@ classdef forge < handle
             for j = 1:monte_carlo_number
                 rng(j)
                 
-                legislator_id  = legislator_list(randperm(length(legislator_list),number_of_legislators));
-                direction      = ismember(legislator_id,bill_yes_ids);
-                accuracy_steps = zeros(1,length(legislator_id)+1);
+                legislator_id     = legislator_list(randperm(length(legislator_list),number_of_legislators));
+                direction         = ismember(legislator_id,bill_yes_ids);
+                accuracy_steps    = zeros(1,length(legislator_id)+1);
                 accuracy_steps(1) = accuracy_table.t2;
                 
                 t_count = 2;
-                
                 for i = 1:length(legislator_id)
-                    
                     [t_set,t_count,t_current,accuracy_steps(i+1)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
-                    
                 end
                 
                 t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
@@ -521,9 +517,9 @@ classdef forge < handle
                 accuracy  = 100*(1-(incorrect-are_nan)/(100-are_nan));
                 
                 if length(varargin) == 1
-                    accuracy_list(1,j)     = accuracy;
-                    accuracy_list(2,j)     = (accuracy - accuracy_table.t2);
-                    legislators_list{j}    = legislator_id;
+                    accuracy_list(1,j)   = accuracy;
+                    accuracy_list(2,j)   = (accuracy - accuracy_table.t2);
+                    legislators_list{j}  = legislator_id;
                     
                     accuracy_steps_delta = zeros(1,length(legislator_id));
                     for i = 1:length(accuracy_steps)-1
@@ -608,7 +604,7 @@ classdef forge < handle
             accuracy_delta      = accuracy_delta(1:bill_hit,1:monte_carlo_number);
             legislators_list    = legislators_list(1:bill_hit,1:monte_carlo_number);
             accuracy_steps_list = accuracy_steps_list(1:bill_hit,1:monte_carlo_number);
-            bill_ids = bill_ids(1:bill_hit);
+            bill_ids            = bill_ids(1:bill_hit);
             
             h = figure();
             hold on
@@ -627,7 +623,7 @@ classdef forge < handle
             ylabel('Change in Accuracy')
             hold off
             saveas(h,sprintf('%s/%s_prediction_delta_boxplot',obj.outputs_directory,lower(chamber)),'png')
-                  
+            
             h = figure();
             hold on
             title(sprintf('%s Total Prediction Boxplot',chamber))
@@ -681,7 +677,7 @@ classdef forge < handle
                 
                 %                 figure()
                 %                 hold on ; grid on ;
-                %                 title('Accuracy Over Predictive Set')               
+                %                 title('Accuracy Over Predictive Set')
                 %                 plot(specific_accuracy_list)
                 %                 xlabel('Revealed preference points')
                 %                 ylabel('Accuracy')
@@ -695,7 +691,7 @@ classdef forge < handle
                 %                 ylabel('Change in Accuracy')
                 %                 hold off
                 
-                % I need to come up with some equation to relate initial 
+                % I need to come up with some equation to relate initial
                 % accuracy revealed, preference posiition (1-8), change in
                 % accuracy as a result of their revealed preference...
                 % maybe others? average agreement score with other
@@ -707,13 +703,12 @@ classdef forge < handle
                 legislator_score   = cell(length(unique_legislators),1);
                 placement_points   = linspace(size(specific_legislators,1),1,size(specific_legislators,1))';
                 for j = 1:length(unique_legislators)
-                    impact_score{j} = specific_delta_list(ismember(specific_legislators,unique_legislators(j)));
-                    placement{j}    = sum(ismember(specific_legislators,unique_legislators(j)),2);
-                    
+                    impact_score{j}    = specific_delta_list(ismember(specific_legislators,unique_legislators(j)));
+                    placement{j}       = sum(ismember(specific_legislators,unique_legislators(j)),2);
                     legislator_score{j} = mean(impact_score{j})/specific_accuracy_list(1,1)*mean(placement{j}.*placement_points);
                 end
                 
-                master_list = [master_list ; unique_legislators legislator_score];
+                master_list = [master_list ; unique_legislators legislator_score]; %#ok<AGROW>
             end
             
             master_unique_legislators = unique(master_list(:,1));
@@ -722,7 +717,7 @@ classdef forge < handle
             for i = 1:length(master_unique_legislators)
                 index = ismember(master_list(:,1),master_unique_legislators{i});
                 coverage(i) = sum(index);
-                results(i) = mean([master_list{index,2}]);
+                results(i)  = mean([master_list{index,2}]);
             end
             coverage = coverage / length(bill_list);
             
@@ -732,8 +727,8 @@ classdef forge < handle
         
         function stepwisePrediction(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,chamber)
             
-            accuracy_list = zeros(1,length(senate_bill_ids));
-            sponsor_list = zeros(1,length(senate_bill_ids));
+            accuracy_list  = zeros(1,length(senate_bill_ids));
+            sponsor_list   = zeros(1,length(senate_bill_ids));
             committee_list = zeros(1,length(senate_bill_ids));
             
             chamber_data = sprintf('%s_data',chamber);
@@ -756,17 +751,16 @@ classdef forge < handle
                 end
                 competitive_bills{i,'sponsors'} = {sponsors_names};
                 
-                comittee_ids = [obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).yes_list ; obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).no_list];
+                comittee_ids    = [obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).yes_list ; obj.bill_set(chamber_bill_ids(i)).(chamber_data).committee_votes(end).no_list];
                 committee_names = obj.getSponsorName(comittee_ids(1));
                 for j = 2:length(comittee_ids)
                     committee_names = [committee_names ',' obj.getSponsorName(comittee_ids(j))]; %#ok<AGROW>
                 end
                 competitive_bills{i,'committee_members'} = {committee_names};
                 
-                
                 [accuracy, sponsor, committee] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,obj.generate_outputs,chamber);
-                accuracy_list(i) = accuracy;
-                sponsor_list(i) = sponsor;
+                accuracy_list(i)  = accuracy;
+                sponsor_list(i)   = sponsor;
                 committee_list(i) = committee;
             end
             
@@ -815,7 +809,6 @@ classdef forge < handle
         end
         
         function plotTSet(obj,t_set_values,title_text)
-            
             label_text  = t_set_values.Properties.RowNames(~isnan(t_set_values{:,:}));
             plot_values = ceil(t_set_values{:,:}(~isnan(t_set_values{:,:}))*5) - 1 + 0.05;
             
@@ -847,9 +840,8 @@ classdef forge < handle
             set(ax,'XTickLabel',{'Strong No','Leaning No','Neutral','Leaning Yes','Strong Yes'});
             set(ax,'YTick',[]);
             hold off
-            
         end
-
+        
         function [people_matrix,possible_votes] = cleanSponsorVotes(obj,people_matrix,possible_votes,sponsorship_counts)
             
             [people_matrix,possible_votes] = obj.cleanVotes(people_matrix,possible_votes);
@@ -873,7 +865,7 @@ classdef forge < handle
         
         function sponsor_name = getSponsorName(obj,id_code)
             if iscell(id_code)
-                specific_id = cellfun(@str2double,regexprep(id_code,'id',''));
+                specific_id  = cellfun(@str2double,regexprep(id_code,'id',''));
                 sponsor_name = obj.people.name(arrayfun(@(x)find(obj.people.sponsor_id==x,1),specific_id));
             else
                 sponsor_name = obj.people.name(arrayfun(@(x)find(obj.people.sponsor_id==x,1),id_code));
@@ -917,10 +909,10 @@ classdef forge < handle
                 specific_votes = votes_create(votes_create.roll_call_id == chamber_rollcalls{j,'roll_call_id'},:);
                 
                 if chamber_rollcalls{j,'total_vote'} < committee_threshold; %#ok<BDSCA>
-                    committee_vote_count = committee_vote_count + 1;
+                    committee_vote_count                  = committee_vote_count + 1;
                     committee_votes(committee_vote_count) = obj.addRollcallVotes(chamber_rollcalls(j,:),specific_votes);
                 else % full chamber
-                    chamber_vote_count = chamber_vote_count +1;
+                    chamber_vote_count                = chamber_vote_count +1;
                     chamber_votes(chamber_vote_count) = obj.addRollcallVotes(chamber_rollcalls(j,:),specific_votes);
                 end
             end
@@ -928,9 +920,9 @@ classdef forge < handle
             chamber_data(end+1).committee_votes = committee_votes;
             chamber_data.chamber_votes = chamber_votes;
             if ~isempty(chamber_votes)
-                chamber_data.final_yea = chamber_votes(end).yea;
-                chamber_data.final_nay = chamber_votes(end).nay;
-                chamber_data.final_nv  = chamber_votes(end).nv;
+                chamber_data.final_yea            = chamber_votes(end).yea;
+                chamber_data.final_nay            = chamber_votes(end).nay;
+                chamber_data.final_nv             = chamber_votes(end).nv;
                 chamber_data.final_total_vote     = chamber_votes(end).total_vote;
                 chamber_data.final_yes_percentage = chamber_votes(end).yes_percent;
             else
@@ -942,11 +934,11 @@ classdef forge < handle
             % Create the string array list (which allows for referencing variable names
             ids = util.createIDstrings(people{:,'sponsor_id'});
             
-            x = people{:,'SEATROW'};
-            y = people{:,'SEATCOLUMN'};
+            x    = people{:,'SEATROW'};
+            y    = people{:,'SEATCOLUMN'};
             dist = sqrt(bsxfun(@minus,x,x').^2 + bsxfun(@minus,y,y').^2);
             
-            proximity_matrix = array2table(dist,'RowNames',ids,'VariableNames',ids);
+            proximity_matrix      = array2table(dist,'RowNames',ids,'VariableNames',ids);
             proximity_matrix.name = obj.getSponsorName(ids)';
         end
     end
