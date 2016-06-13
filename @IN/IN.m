@@ -32,7 +32,7 @@ classdef IN < forge
         
         function run(obj)
             predict_montecarlo   = true;
-            recompute_montecarlo = true;
+            recompute_montecarlo = false;
             predict_outcomes     = false;
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
@@ -261,32 +261,49 @@ classdef IN < forge
             end
             
             if ~isempty(house_people) && predict_montecarlo
-                if exist(sprintf('%s/house_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
+                
+                files = dir(sprintf('%s/house_predictive_model_m*.mat',obj.outputs_directory));
+                if isempty(files) || recompute_montecarlo
                     [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); 
                 else
-                    data = load(sprintf('%s/house_predictive_model.mat',obj.outputs_directory));
+                    specific_index = zeros(length(files),1);
+                    for i = 1:length(files)
+                        specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,'house_predictive_model_m(\d+).mat','tokens'),'UniformOutput',false));
+                    end
+                    specific_index = max(specific_index);
+                    
+                    data = load(sprintf('%s/house_predictive_model_m%i.mat',obj.outputs_directory,specific_index));
                     house_accuracy_list       = data.accuracy_list;
                     house_accuracy_delta      = data.accuracy_delta;
                     house_legislators_list    = data.legislators_list;
                     house_accuracy_steps_list = data.accuracy_steps_list;
                     house_bill_list           = data.bill_ids;
                 end
-                house_results_table = obj.processLegislatorImpacts(house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,'house');
+                house_results_table = obj.processLegislatorImpacts(house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list);
 
                 writetable(house_results_table,sprintf('%s/house_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
             end
             
             if ~isempty(senate_people) && predict_montecarlo
-                if exist(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory),'file') ~= 2 || recompute_montecarlo
-                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);                else
-                    data = load(sprintf('%s/senate_predictive_model.mat',obj.outputs_directory));
+                
+                files = dir(sprintf('%s/senate_predictive_model_m*.mat',obj.outputs_directory));
+                if isempty(files) || recompute_montecarlo
+                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);
+                else
+                    specific_index = zeros(length(files),1);
+                    for i = 1:length(files)
+                        specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,'senate_predictive_model_m(\d+).mat','tokens'),'UniformOutput',false));
+                    end
+                    specific_index = max(specific_index);
+                    
+                    data = load(sprintf('%s/senate_predictive_model_m%i.mat',obj.outputs_directory,specific_index));
                     senate_accuracy_list       = data.accuracy_list;
                     senate_accuracy_delta      = data.accuracy_delta;
                     senate_legislators_list    = data.legislators_list;
                     senate_accuracy_steps_list = data.accuracy_steps_list;
                     senate_bill_list           = data.bill_ids;
                 end
-                senate_results_table = obj.processLegislatorImpacts(senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,'senate');
+                senate_results_table = obj.processLegislatorImpacts(senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list);
             
                 writetable(senate_results_table,sprintf('%s/senate_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
             end

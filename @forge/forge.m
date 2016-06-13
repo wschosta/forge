@@ -551,7 +551,7 @@ classdef forge < handle
             
             if nargout > 3
                 accuracy     = accuracy_list;
-                varargout{1} = legislators_list;
+                varargout{1} = obj.createIDcodes(legislators_list);
                 varargout{2} = accuracy_steps_list;
             end
         end
@@ -565,7 +565,7 @@ classdef forge < handle
             
             accuracy_list       = zeros(bill_target,monte_carlo_number);
             accuracy_delta      = zeros(bill_target,monte_carlo_number);
-            legislators_list    = cell(bill_target,monte_carlo_number);
+            legislators_list    = cell(bill_target,1);
             accuracy_steps_list = cell(bill_target,monte_carlo_number);
             bill_ids            = zeros(1,bill_target);
             
@@ -584,7 +584,7 @@ classdef forge < handle
                     accuracy_list(bill_hit,:)       = accuracy(1,:);
                     accuracy_delta(bill_hit,:)      = accuracy(2,:);
                     accuracy_steps_list(bill_hit,:) = accuracy_steps;
-                    legislators_list(bill_hit,:)    = legislators;
+                    legislators_list{bill_hit}    = legislators;
                 else
                     i = i + 1;
                     continue
@@ -602,7 +602,7 @@ classdef forge < handle
             
             accuracy_list       = accuracy_list(1:bill_hit,1:monte_carlo_number);
             accuracy_delta      = accuracy_delta(1:bill_hit,1:monte_carlo_number);
-            legislators_list    = legislators_list(1:bill_hit,1:monte_carlo_number);
+            legislators_list    = legislators_list(1:bill_hit);
             accuracy_steps_list = accuracy_steps_list(1:bill_hit,1:monte_carlo_number);
             bill_ids            = bill_ids(1:bill_hit);
             
@@ -642,7 +642,7 @@ classdef forge < handle
             hold off
             saveas(h,sprintf('%s/%s_total_prediction_delta_boxplot',obj.outputs_directory,lower(chamber)),'png')
             
-            save(sprintf('%s/%s_predictive_model.mat',obj.outputs_directory,lower(chamber)),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list','bill_ids')
+            save(sprintf('%s/%s_predictive_model_m%i.mat',obj.outputs_directory,lower(chamber),monte_carlo_number),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list','bill_ids')
             
             timed = toc;
             
@@ -650,25 +650,22 @@ classdef forge < handle
             fprintf([delete_str,print_str]);
         end
         
-        function results_table = processLegislatorImpacts(obj,accuracy_list,accuracy_list_delta,legislators_list,accuracy_steps_list,bill_list,chamber)
-            
+        function results_table = processLegislatorImpacts(obj,accuracy_list,accuracy_list_delta,legislators_list,accuracy_steps_list,bill_list)
+             
             master_list = [];
             
             for i = 1:size(legislators_list,1)
                 
-                specific_legislators   = cell(size(legislators_list{i,1},1),size(legislators_list,2));
-                specific_accuracy_list = zeros(size(legislators_list{i,1},1)+1,size(legislators_list,2));
-                specific_delta_list    = zeros(size(legislators_list{i,1},1),size(legislators_list,2));
+                specific_accuracy_list = zeros(size(legislators_list{i,1},1)+1,8);
+                specific_delta_list    = zeros(size(legislators_list{i,1},1),8);
                 
-                for j = 1:size(legislators_list,2)
+                for j = 1:size(accuracy_list,2)
                     
-                    specific_accuracy_list(1,j) = accuracy_list(i,j) - accuracy_list_delta(i,j);
+                    specific_accuracy_list(j,1) = accuracy_list(i,j) - accuracy_list_delta(i,j);
                     for k = 1:length(accuracy_steps_list{i,j})
-                        specific_accuracy_list(k+1,j) = specific_accuracy_list(k) + accuracy_steps_list{i,j}(k);
-                        specific_delta_list(k,j)      = accuracy_steps_list{i,j}(k);
+                        specific_accuracy_list(j,k+1) = specific_accuracy_list(k) + accuracy_steps_list{i,j}(k);
+                        specific_delta_list(j,k)      = accuracy_steps_list{i,j}(k);
                     end
-                    specific_legislators(:,j) = legislators_list{i,j};
-                    
                 end
                 
                 % A neat way to generate the monte carlo spread for a single
@@ -697,15 +694,15 @@ classdef forge < handle
                 % maybe others? average agreement score with other
                 % legislators?
                 
-                unique_legislators = unique(specific_legislators);
+                unique_legislators = unique(legislators_list{i});
                 impact_score       = cell(1,length(unique_legislators));
                 placement          = cell(1,length(unique_legislators));
-                legislator_score   = cell(length(unique_legislators),1);
-                placement_points   = linspace(size(specific_legislators,1),1,size(specific_legislators,1))';
+                legislator_score   = zeros(length(unique_legislators),1);
+                placement_points   = linspace(length(legislators_list{i}),1,length(legislators_list{i}))';
                 for j = 1:length(unique_legislators)
-                    impact_score{j}    = specific_delta_list(ismember(specific_legislators,unique_legislators(j)));
-                    placement{j}       = sum(ismember(specific_legislators,unique_legislators(j)),2);
-                    legislator_score{j} = mean(impact_score{j})/specific_accuracy_list(1,1)*mean(placement{j}.*placement_points);
+                    impact_score{j}     = specific_delta_list(ismember(legislators_list{i},unique_legislators(j)));
+                    placement{j}        = sum(ismember(legislators_list{i},unique_legislators(j)),2);
+                    legislator_score(j) = mean(impact_score{j})/(specific_accuracy_list(1,1)*mean(placement{j}.*placement_points));
                 end
                 
                 master_list = [master_list ; unique_legislators legislator_score]; %#ok<AGROW>
@@ -715,9 +712,9 @@ classdef forge < handle
             coverage = NaN(length(master_unique_legislators),1);
             results  = NaN(length(master_unique_legislators),1);
             for i = 1:length(master_unique_legislators)
-                index = ismember(master_list(:,1),master_unique_legislators{i});
+                index = ismember(master_list(:,1),master_unique_legislators(i));
                 coverage(i) = sum(index);
-                results(i)  = mean([master_list{index,2}]);
+                results(i)  = mean(master_list(index,2));
             end
             coverage = coverage / length(bill_list);
             
