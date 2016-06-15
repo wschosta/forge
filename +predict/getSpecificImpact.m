@@ -1,4 +1,8 @@
 function specific_impact = getSpecificImpact(revealed_preference,specific_impact)
+% GETSPECIFICIMPACT
+% Turns the outer bounds of the specific_impact value to be non-zero and
+% non-one. Also will flip the value if it's necessary based on the
+% direcitonality of the revealed_preference
 
 if revealed_preference == 1
     if specific_impact == 1

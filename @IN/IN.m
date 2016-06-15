@@ -1,39 +1,75 @@
 classdef IN < forge
-    properties
-        monte_carlo_number = 10000;
+    properties (Constant)
+        % Indiana Specific issue key
+        ISSUE_KEY = containers.Map([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],{...
+            'Agriculture',...
+            'Commerce, Business, Economic Development',...
+            'Courts & Judicial',...
+            'Education',...
+            'Elections & Apportionment',...
+            'Employment & Labor',...
+            'Environment & Natural Resources',...
+            'Family, Children, Human Affairs & Public Health',...
+            'Banks & Financial Institutions',...
+            'Insurance',...
+            'Government & Regulatory Reform',...
+            'Local Government',...
+            'Roads & Transportation',...
+            'Utilities, Energy & Telecommunications',...
+            'Ways & Means, Appropriations',...
+            'Other'});
     end
     
     methods
         function obj = IN(varargin)
             in = inputParser;
-            addOptional(in,'recompute',0,@islogical);
             addOptional(in,'reprocess',0,@islogical);
+            addOptional(in,'recompute',0,@islogical);
             addOptional(in,'generateOutputs',0,@islogical);
+            addOptional(in,'predict_montecarlo',1,@islogical);
+            addOptional(in,'recompute_montecarlo',0,@islogical);
+            addOptional(in,'predict_stepwise_outputs',0,@islogical);
             parse(in,varargin{:});
             
-            obj.state       = 'IN';
-            obj.senate_size = 50;
-            obj.house_size  = 100;
-            
-            obj.recompute        = in.Results.recompute;
+            % Flag to launch the base forge process to read in the data
             obj.reprocess        = in.Results.reprocess;
+            
+            % Flag to launch the state-specific process to generate the
+            % matricies
+            obj.recompute        = in.Results.recompute;
+            
+            % Flag to generate all of the charts and outputs (note: there
+            % are outputs that this does not prevent
             obj.generate_outputs = in.Results.generateOutputs;
             
+            obj.predict_montecarlo       = in.Results.predict_montecarlo;
+            obj.recompute_montecarlo     = in.Results.recompute_montecarlo;
+            obj.predict_stepwise_outputs = in.Results.predict_stepwise_outputs;
             
+            obj.state       = 'IN'; % state
+            obj.senate_size = 50;   % number of seats in the Senate (upper chamber)
+            obj.house_size  = 100;  % number of seats in the House (lower chamber)
+            
+            obj.monte_carlo_number = 10000; % number of monte carlo iterations
+            
+            % Storage directroies
             obj.data_directory      = sprintf('data/%s',obj.state);
             obj.outputs_directory   = sprintf('%s/outputs',obj.data_directory);
-            obj.gif_directory       = sprintf('%s/gif',obj.outputs_directory);
+            obj.gif_directory       = sprintf('%s/gif',obj.outputs_directory); 
+            % not used because gifs are unnecessary (though functionality is generaly preserved)
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
             
+            % Load the learning algorithm data based on the state specific
+            % information
             obj.learning_algorithm_data = la.loadLearnedMaterials(obj.state);
+            
+            obj.committee_threshold   = 0.75; % threshold for a vote being a committee vote, 75%
+            obj.competitive_threshold = 0.85; % threshold for a bill being competitive, 85%
             
             obj.init(); % forge init
         end
         
         function run(obj)
-            predict_montecarlo   = true;
-            recompute_montecarlo = false;
-            predict_outcomes     = false;
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
                 
@@ -81,133 +117,57 @@ classdef IN < forge
                         house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
                         house_committee_matrix,house_committee_votes,...
                         house_sponsor_committee_matrix,house_sponsor_committee_votes,...
-                        house_consistency_matrix,house_bill_ids]  = obj.processChamberVotes(house_people,'house');
+                        house_consistency_matrix,house_bill_ids,house_republicans_chamber_votes,...
+                        house_democrats_chamber_votes,house_republicans_chamber_sponsor,...
+                        house_democrats_chamber_sponsor,house_republicans_committee_votes,...
+                        house_democrats_committee_votes,house_democrats_committee_sponsor,...
+                        house_republicans_committee_sponsor,house_seat_matrix] = obj.processChamberVotes(house_people,'house');
                     
-                    house_consistency_matrix.percentage = house_consistency_matrix.consistency ./ house_consistency_matrix.opportunity;
-                    
-                    % Create Republican and Democrat Lists (makes accounting easier)
-                    [republican_ids, democrat_ids] = obj.processParties(house_people);
-                    
-                    house_republicans_chamber_votes     = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_chamber_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_chamber_votes       = house_chamber_matrix(ismember(house_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_chamber_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    house_republicans_chamber_sponsor   = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_chamber_sponsor     = house_sponsor_chamber_matrix(ismember(house_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    house_republicans_committee_votes   = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,republican_ids),ismember(house_committee_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_committee_votes     = house_committee_matrix(ismember(house_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_committee_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    house_republicans_committee_sponsor = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
-                    house_democrats_committee_sponsor   = house_sponsor_committee_matrix(ismember(house_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(house_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    house_seat_flag = 0;
-                    if all(ismember({'SEATROW','SEATCOLUMN'},house_people.Properties.VariableNames))
-                        house_seat_flag   = 1;
-                        house_seat_matrix = obj.processSeatProximity(house_people);
-                    end
                 end
                 
                 % --------------------- Senate Data -----------------------
                 if ~isempty(senate_people)
-                    
                     [senate_chamber_matrix,senate_chamber_votes,...
                         senate_sponsor_chamber_matrix,senate_sponsor_chamber_votes,...
                         senate_committee_matrix,senate_committee_votes,...
                         senate_sponsor_committee_matrix,senate_sponsor_committee_votes,...
-                        senate_consistency_matrix,senate_bill_ids]  = obj.processChamberVotes(senate_people,'senate');
-                    
-                    senate_consistency_matrix.percentage = senate_consistency_matrix.consistency ./ senate_consistency_matrix.opportunity;
-                    
-                    % Create Republican and Democrat Lists (makes accounting easier)
-                    [republican_ids, democrat_ids] = obj.processParties(senate_people);
-                    
-                    senate_republicans_chamber_votes     = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_chamber_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_chamber_votes       = senate_chamber_matrix(ismember(senate_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_chamber_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    senate_republicans_chamber_sponsor   = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,republican_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_chamber_sponsor     = senate_sponsor_chamber_matrix(ismember(senate_sponsor_chamber_matrix.Properties.RowNames,democrat_ids),ismember(senate_sponsor_chamber_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    senate_republicans_committee_votes   = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,republican_ids),ismember(senate_committee_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_committee_votes     = senate_committee_matrix(ismember(senate_committee_matrix.Properties.RowNames,democrat_ids),ismember(senate_committee_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    senate_republicans_committee_sponsor = senate_sponsor_committee_matrix(ismember(senate_sponsor_committee_matrix.Properties.RowNames,republican_ids),ismember(senate_sponsor_committee_matrix.Properties.VariableNames,republican_ids));
-                    senate_democrats_committee_sponsor   = senate_sponsor_committee_matrix(ismember(senate_sponsor_committee_matrix.Properties.RowNames,democrat_ids),ismember(senate_sponsor_committee_matrix.Properties.VariableNames,democrat_ids));
-                    
-                    senate_seat_flag = 0;
-                    if all(ismember({'SEATROW','SEATCOLUMN'},senate_people.Properties.VariableNames))
-                        senate_seat_flag   = 1;
-                        senate_seat_matrix = obj.processSeatProximity(senate_people);
-                    end
+                        senate_consistency_matrix,senate_bill_ids,senate_republicans_chamber_votes,...
+                        senate_democrats_chamber_votes,senate_republicans_chamber_sponsor,...
+                        senate_democrats_chamber_sponsor,senate_republicans_committee_votes,...
+                        senate_democrats_committee_votes,senate_democrats_committee_sponsor,...
+                        senate_republicans_committee_sponsor,senate_seat_matrix] = obj.processChamberVotes(senate_people,'senate');
                 end
                 
                 if obj.generate_outputs
                     
                     if ~isempty(house_people)
-                        delete(sprintf('%s/house_*.csv',obj.outputs_directory));
-                        
-                        writetable(house_chamber_matrix,sprintf('%s/house_all_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_chamber_votes,sprintf('%s/house_all_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_chamber_votes,sprintf('%s/house_republicans_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_chamber_votes,sprintf('%s/house_democrats_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(house_sponsor_chamber_matrix,sprintf('%s/house_all_sponsor_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_sponsor_chamber_votes,sprintf('%s/house_all_sponsor_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_chamber_sponsor,sprintf('%s/house_republicans_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_chamber_sponsor,sprintf('%s/house_democrats_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(house_committee_matrix,sprintf('%s/house_all_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_committee_votes,sprintf('%s/house_all_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_committee_votes,sprintf('%s/house_republicans_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_committee_votes,sprintf('%s/house_democrats_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(house_sponsor_committee_matrix,sprintf('%s/house_all_sponsor_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_sponsor_committee_votes,sprintf('%s/house_all_sponsor_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_republicans_committee_sponsor,sprintf('%s/house_republicans_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(house_democrats_committee_sponsor,sprintf('%s/house_democrats_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(house_consistency_matrix,sprintf('%s/house_consistency_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        if house_seat_flag
-                            writetable(house_seat_matrix,sprintf('%s/house_seat_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        end
+                        obj.writeTables(house_chamber_matrix,house_chamber_votes,...
+                            house_republicans_chamber_votes,house_democrats_chamber_votes,...
+                            house_sponsor_chamber_matrix,house_sponsor_chamber_votes,...
+                            house_republicans_chamber_sponsor,house_democrats_chamber_sponsor,...
+                            house_committee_matrix,house_committee_votes,house_republicans_committee_votes,...
+                            house_democrats_committee_votes,house_sponsor_committee_matrix,...
+                            house_sponsor_committee_votes,house_republicans_committee_sponsor,...
+                            house_democrats_committee_sponsor,house_consistency_matrix,...
+                            house_seat_matrix,'house'); 
                     end
                     
                     if ~isempty(senate_people)
-                        delete(sprintf('%s/senate_*.csv',obj.outputs_directory));
-                        
-                        writetable(senate_chamber_matrix,sprintf('%s/senate_all_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_chamber_votes,sprintf('%s/senate_all_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_chamber_votes,sprintf('%s/senate_republicans_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_chamber_votes,sprintf('%s/senate_democrats_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(senate_sponsor_chamber_matrix,sprintf('%s/senate_all_sponsor_chamber_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_sponsor_chamber_votes,sprintf('%s/senate_all_sponsor_chamber_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_chamber_sponsor,sprintf('%s/senate_republicans_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_chamber_sponsor,sprintf('%s/senate_democrats_chamber_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(senate_committee_matrix,sprintf('%s/senate_all_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_committee_votes,sprintf('%s/senate_all_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_committee_votes,sprintf('%s/senate_republicans_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_committee_votes,sprintf('%s/senate_democrats_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(senate_sponsor_committee_matrix,sprintf('%s/senate_all_sponsor_committee_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_sponsor_committee_votes,sprintf('%s/senate_all_sponsor_committee_votes.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_republicans_committee_sponsor,sprintf('%s/senate_republicans_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        writetable(senate_democrats_committee_sponsor,sprintf('%s/senate_democrats_committee_sponsor.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        writetable(senate_consistency_matrix,sprintf('%s/senate_consistency_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        
-                        if senate_seat_flag
-                            writetable(senate_seat_matrix,sprintf('%s/senate_seat_matrix.csv',obj.outputs_directory),'WriteRowNames',true);
-                        end
+                        obj.writeTables(senate_chamber_matrix,senate_chamber_votes,...
+                            senate_republicans_chamber_votes,senate_democrats_chamber_votes,...
+                            senate_sponsor_chamber_matrix,senate_sponsor_chamber_votes,...
+                            senate_republicans_chamber_sponsor,senate_democrats_chamber_sponsor,...
+                            senate_committee_matrix,senate_committee_votes,senate_republicans_committee_votes,...
+                            senate_democrats_committee_votes,senate_sponsor_committee_matrix,...
+                            senate_sponsor_committee_votes,senate_republicans_committee_sponsor,...
+                            senate_democrats_committee_sponsor,senate_consistency_matrix,...
+                            senate_seat_matrix,'senate');
                     end
                     
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
                     obj.make_gifs       = true;
                     obj.make_histograms = true;
                 end
-                
-                clear senate_seat_flag house_seat_flag
                 
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
@@ -252,60 +212,20 @@ classdef IN < forge
             % ID should probably be stored as a string throughout, that way
             % it can be used in variable names more easily
             
-            if ~isempty(house_people) && predict_outcomes
+            if ~isempty(house_people) && obj.predict_stepwise_outputs
                 obj.stepwisePrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House');
             end
             
-            if ~isempty(senate_people) && predict_outcomes
+            if ~isempty(senate_people) && obj.predict_stepwise_outputs
                 obj.stepwisePrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,house_chamber_matrix,'Senate');
             end
             
-            if ~isempty(house_people) && predict_montecarlo
-                
-                files = dir(sprintf('%s/house_predictive_model_m*.mat',obj.outputs_directory));
-                if isempty(files) || recompute_montecarlo
-                    [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list] = obj.runMonteCarlo(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,0,'House',obj.monte_carlo_number); 
-                else
-                    specific_index = zeros(length(files),1);
-                    for i = 1:length(files)
-                        specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,'house_predictive_model_m(\d+).mat','tokens'),'UniformOutput',false));
-                    end
-                    specific_index = max(specific_index);
-                    
-                    data = load(sprintf('%s/house_predictive_model_m%i.mat',obj.outputs_directory,specific_index));
-                    house_accuracy_list       = data.accuracy_list;
-                    house_accuracy_delta      = data.accuracy_delta;
-                    house_legislators_list    = data.legislators_list;
-                    house_accuracy_steps_list = data.accuracy_steps_list;
-                    house_bill_list           = data.bill_ids;
-                end
-                house_results_table = obj.processLegislatorImpacts(house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list);
-
-                writetable(house_results_table,sprintf('%s/house_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
+            if ~isempty(house_people) && obj.predict_montecarlo
+                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<NASGU,ASGLU>
             end
             
-            if ~isempty(senate_people) && predict_montecarlo
-                
-                files = dir(sprintf('%s/senate_predictive_model_m*.mat',obj.outputs_directory));
-                if isempty(files) || recompute_montecarlo
-                    [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list] = obj.runMonteCarlo(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,0,'Senate',obj.monte_carlo_number);
-                else
-                    specific_index = zeros(length(files),1);
-                    for i = 1:length(files)
-                        specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,'senate_predictive_model_m(\d+).mat','tokens'),'UniformOutput',false));
-                    end
-                    specific_index = max(specific_index);
-                    
-                    data = load(sprintf('%s/senate_predictive_model_m%i.mat',obj.outputs_directory,specific_index));
-                    senate_accuracy_list       = data.accuracy_list;
-                    senate_accuracy_delta      = data.accuracy_delta;
-                    senate_legislators_list    = data.legislators_list;
-                    senate_accuracy_steps_list = data.accuracy_steps_list;
-                    senate_bill_list           = data.bill_ids;
-                end
-                senate_results_table = obj.processLegislatorImpacts(senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list);
-            
-                writetable(senate_results_table,sprintf('%s/senate_results_table.csv',obj.outputs_directory),'WriteRowNames',true);
+            if ~isempty(senate_people) && obj.predict_montecarlo
+                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU,ASGLU>
             end
             
             var_list = who;
