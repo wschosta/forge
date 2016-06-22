@@ -1,23 +1,43 @@
 function [learning_coded, matches] = classifyBill(bill_title,data_storage)
+% CLASSIFYBILL
+% Classify the bill based on the bill title
 
-    bill_title = regexp(bill_title,'\W|\s+','split');
-    bill_title = bill_title{:};
-    bill_title = bill_title(~cellfun(@isempty,bill_title));
-    bill_title = upper(bill_title(~ismember(upper(bill_title),upper(data_storage.common_words))));
+% Split the bill title into individual words
+bill_title = regexp(bill_title,'\W|\s+','split');
+
+% Get it out of the cell array
+bill_title = bill_title{:};
+
+% Eliminate the empty cells
+bill_title = bill_title(~cellfun(@isempty,bill_title));
+
+% Turn all the words into uppercase and eliminate any common words
+bill_title = upper(bill_title(~ismember(upper(bill_title),upper(data_storage.common_words))));
+
+% Get the issue codes
+issue_codes = cell2mat(data_storage.master_issue_codes.keys);
+
+% Set up the matches list
+matches = zeros(1,length(issue_codes));
+
+% Iterate over the different issue codes
+for j = 1:length(issue_codes)
+    % Pull toether all the relevant words
+    description_text = [data_storage.unique_text_store{j} data_storage.issue_text_store{j} data_storage.additional_issue_text_store{j}];
     
-    issue_codes = cell2mat(data_storage.master_issue_codes.keys);
-    matches = zeros(1,length(issue_codes));
-    for j = 1:length(issue_codes)
-        
-        description_text = [data_storage.unique_text_store{j} data_storage.issue_text_store{j} data_storage.additional_issue_text_store{j}];
-        weights = [data_storage.weights_store{j};data_storage.issue_text_weight_store{j}*data_storage.iwv;data_storage.additional_issue_text_weight_store{j}*data_storage.awv];
-        
-        in_description = ismember(description_text,bill_title);
-        
-        if any(in_description)
-            matches(j) = matches(j) + sum(weights(in_description > 0));
-        end
+    % Pull together the matching weights
+    weights = [data_storage.weights_store{j};data_storage.issue_text_weight_store{j}*data_storage.iwv;data_storage.additional_issue_text_weight_store{j}*data_storage.awv];
+    
+    % Check for words in the description text and bill title
+    in_description = ismember(description_text,bill_title);
+    
+    if any(in_description) % if there are mayches
+        % Pull together the weights
+        matches(j) = matches(j) + sum(weights(in_description > 0));
     end
-    
-    [~,learning_coded] = max(matches); % this will just take the highest match, do i need bounds as well?
+end
+
+% Take the highest match
+[~,learning_coded] = max(matches); % TODO this will just take the highest match, do i need bounds as well?
+
 end

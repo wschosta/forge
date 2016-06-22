@@ -1,4 +1,6 @@
 function [learning_table,data_storage] = generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes)
+% GENERATELEARNINGTABLE
+% TODO comments
 
 issue_codes = unique(learning_materials.issue_codes);
 description_text = cell(1,length(issue_codes))';

@@ -1,4 +1,6 @@
 function [accuracy, awv, iwv] = optimizeFrontier(location,robust,max_grid_size,iterations,learning_materials,learning_table,data_storage)
+% OPTIMIZEFRONTIER
+% TODO comments
 
 for j = 1:robust
     for k = 1:max_grid_size

@@ -31,6 +31,8 @@ if ~isempty(people_matrix)
         [~, ~, ~] = mkdir(directory);
         plot.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
     end
+else
+    warning('Empty Matrix')
 end
 
 end

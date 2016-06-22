@@ -1,4 +1,7 @@
 function output = processAlgorithm(x,learning_materials,learning_table,data_storage,output_flag)
+% PROCESSALGORITHM
+% TODO comments
+
 awv = x(1);
 iwv = x(2);
 

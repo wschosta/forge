@@ -1,4 +1,6 @@
 function main()
+% MAIN
+% TODO comments
 
 optimize_frontier = 0;
 process_algorithm = 1;

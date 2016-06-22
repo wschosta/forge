@@ -1,4 +1,6 @@
 function chamber_template = getChamberTemplate()
+% GETCHAMBERTEMPLATE
+% Template for a specific chamber
 
 chamber_template = struct(...
     'committee_id',{},... % make sure multiple comittees are possible

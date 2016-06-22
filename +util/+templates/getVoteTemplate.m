@@ -1,4 +1,6 @@
 function vote_template = getVoteTemplate()
+% GETVOTETEMPLATE
+% Template for specific votes
 
 vote_template = struct('rollcall_id',{},...
     'description',{},...

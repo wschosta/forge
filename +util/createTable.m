@@ -1,4 +1,7 @@
 function [varargout] = createTable(rows,columns,type)
+% CREATETABLE
+% Create a table based on the type of tables needed
+
 % Switch by type of table being created
 switch type
     case 'NaN'  % initalized with NaNs
@@ -9,6 +12,7 @@ switch type
         error('TABLE TYPE NOT FOUND');
 end
 
+% Give the option to return a multiple tables of the same type
 for i = 1:max(nargout,1)
     varargout{i} = return_table; %#ok<AGROW>
 end

@@ -1,4 +1,5 @@
 function generateHistograms(people_matrix,save_directory,label_string,specific_label,tag)
+% TODO comments
 
 rows = people_matrix.Properties.RowNames;
 columns = people_matrix.Properties.VariableNames;
