@@ -10,7 +10,7 @@ if isempty(files) || obj.recompute_montecarlo
     % Run the monte carlo analysis
     [accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list] = obj.runMonteCarlo(bill_ids,people,sponsor_chamber_matrix,consistency_matrix,sponsor_committee_matrix,chamber_matrix,0,chamber,obj.monte_carlo_number);
 else
-    % Iffiles oft he right pattern do exist, search for the largest value
+    % If files of the right pattern do exist, search for the largest value
     % to use in the analysis
     specific_index = zeros(length(files),1);
     pattern = strcat(lower(chamber),'_predictive_model_m(\d+).mat');
@@ -18,6 +18,8 @@ else
         specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,pattern,'tokens'),'UniformOutput',false));
     end
     specific_index = max(specific_index);
+    
+    specific_index = 100;
     
     % Read in the file with the largest monte carlo number
     data = load(sprintf('%s/%s_predictive_model_m%i.mat',obj.outputs_directory,lower(chamber),specific_index));

@@ -155,6 +155,15 @@ accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
 % but we just update everything
 legislator_list = [bill_yes_ids ; bill_no_ids];
 
+if length(legislator_list) < number_of_legislators
+    fprintf('Not enough legislators for %i\n',bill_id)
+    accuracy         = NaN;
+    number_sponsors  = NaN;
+    number_committee = NaN;
+    varargout{1}     = {};
+    return
+end
+
 % TODO Finish comments
 if monte_carlo_run
     accuracy_list       = zeros(2,monte_carlo);
@@ -165,7 +174,7 @@ end
 t_final_results = t_set.final;
 
 for j = 1:monte_carlo
-    obj.setRandomSeed(j);
+    util.setRandomSeed(j);
     
     legislator_id     = legislator_list(randperm(length(legislator_list),number_of_legislators));
     direction         = ismember(legislator_id,bill_yes_ids);

@@ -1,20 +1,26 @@
 function generateHistograms(people_matrix,save_directory,label_string,specific_label,tag)
-% TODO comments
+% GENERATEHISTOGRAMS
+% Create histograms for a given people matrix
 
-rows = people_matrix.Properties.RowNames;
-columns = people_matrix.Properties.VariableNames;
+% Find matching rows and columns
+rows            = people_matrix.Properties.RowNames;
+columns         = people_matrix.Properties.VariableNames;
 [~,match_index] = ismember(rows,columns);
-match_index = match_index(match_index > 0);
+match_index     = match_index(match_index > 0);
 
+% Do some vodo magic to find matching legislators and eliminate them from
+% the main set
 secondary_plot = nan(1,length(match_index));
 for i = 1:length(match_index)
     secondary_plot(i) = people_matrix{columns{match_index(i)},columns{match_index(i)}};
     people_matrix{columns{match_index(i)},columns{match_index(i)}} = NaN;
 end
 
+% Reshape the main plot values
 main_plot = reshape(people_matrix{:,:},[numel(people_matrix{:,:}),1]);
 
-if ~isempty(main_plot)
+% histogram for non-matchin legislators
+if ~isempty(main_plot) && sum(~isnan(main_plot)) > 1
     h = figure();
     hold on
     title(sprintf('%s %s histogram with non-matching legislators',label_string,specific_label))
@@ -27,7 +33,8 @@ if ~isempty(main_plot)
     saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,label_string,tag),'png')
 end
 
-if ~isempty(secondary_plot)
+% histogram for matching legislators (allows us to see self-consistency)
+if ~isempty(secondary_plot) && sum(~isnan(secondary_plot)) > 1
     h = figure();
     hold on
     title(sprintf('%s %s histogram with matching legislators',label_string,specific_label))

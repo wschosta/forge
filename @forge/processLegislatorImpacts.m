@@ -1,18 +1,26 @@
 function results_table = processLegislatorImpacts(obj,accuracy_list,accuracy_list_delta,legislators_list,accuracy_steps_list,bill_list)
+% PROCESSLEGISLATORIMPACTS
+% find the impacts of all legislators across the all bills in the monte
+% carlo prediction
 % TODO comments
 
+% Initialize the list
 master_list = [];
 
+% Iterate over the legislator list 
 for i = 1:size(legislators_list,1)
     
-    specific_accuracy_list = zeros(size(legislators_list{i,1},1)+1,8);
+    specific_accuracy_list = zeros(size(legislators_list{i,1},1)+1,8); %TODO remove hardcoded 8, this is the number of predicted legislators
     specific_delta_list    = zeros(size(legislators_list{i,1},1),8);
     
+    % Iterate over the number of predictions
     for j = 1:size(accuracy_list,2)
         
-        specific_accuracy_list(j,1) = accuracy_list(i,j) - accuracy_list_delta(i,j);
+        specific_accuracy_list(j,1) = accuracy_list(i,j) - accuracy_list_delta(i,j); % find the starting accuracy
+        
+        
         for k = 1:length(accuracy_steps_list{i,j})
-            specific_accuracy_list(j,k+1) = specific_accuracy_list(k) + accuracy_steps_list{i,j}(k);
+            specific_accuracy_list(j,k+1) = specific_accuracy_list(k) + accuracy_steps_list{i,j}(k); 
             specific_delta_list(j,k)      = accuracy_steps_list{i,j}(k);
         end
     end
@@ -21,21 +29,21 @@ for i = 1:size(legislators_list,1)
     % bill, not sure it's super useful for the massive number of
     % bills but neat on a single bill basis
     
-    %                 figure()
-    %                 hold on ; grid on ;
-    %                 title('Accuracy Over Predictive Set')
-    %                 plot(specific_accuracy_list)
-    %                 xlabel('Revealed preference points')
-    %                 ylabel('Accuracy')
-    %                 hold off
-    
-    %                 figure()
-    %                 title('Delta Accuracy Over Predictive Set')
-    %                 hold on ; grid on ;
-    %                 plot(specific_delta_list)
-    %                 xlabel('Revealed preference points')
-    %                 ylabel('Change in Accuracy')
-    %                 hold off
+    %     figure()
+    %     hold on ; grid on ;
+    %     title('Accuracy Over Predictive Set')
+    %     plot(specific_accuracy_list')
+    %     xlabel('Revealed preference points')
+    %     ylabel('Accuracy')
+    %     hold off
+    %
+    %     figure()
+    %     title('Delta Accuracy Over Predictive Set')
+    %     hold on ; grid on ;
+    %     plot(specific_delta_list')
+    %     xlabel('Revealed preference points')
+    %     ylabel('Change in Accuracy')
+    %     hold off
     
     % I need to come up with some equation to relate initial
     % accuracy revealed, preference posiition (1-8), change in
@@ -66,6 +74,7 @@ for i = 1:length(master_unique_legislators)
     results(i)  = mean(master_list(index,2));
 end
 coverage = coverage / length(bill_list);
+results  = results / max(results);
 
 sponsor_names = obj.getSponsorName(master_unique_legislators);
 results_table = table(master_unique_legislators,sponsor_names,coverage,results);

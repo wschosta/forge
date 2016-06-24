@@ -22,7 +22,7 @@ plot.generatePlots(outputs_directory,histogram_directory,democrats_committee_vot
 % Committee Sponsorship Data
 plot.generatePlots(outputs_directory,histogram_directory,sponsor_committee_matrix,chamber,'Committee Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_all')
 plot.generatePlots(outputs_directory,histogram_directory,republicans_committee_sponsor,chamber,'Committee Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_R')
-plot.generatePlots(outputs_directory,histogram_directory,democrats_committee_sponsor,chamber,'Committee Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
+% plot.generatePlots(outputs_directory,histogram_directory,democrats_committee_sponsor,chamber,'Committee Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','committee_sponsor_D')
 
 % Chamber-Committee Consistency
 if any(~isnan(consistency_matrix.percentage))

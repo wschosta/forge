@@ -30,7 +30,7 @@ for j = 1:size(rollcalls,1);
     % Pull out the votes for that rollcall
     specific_votes = votes_create(votes_create.roll_call_id == rollcalls{j,'roll_call_id'},:);
     
-    if rollcalls(j).total_vote < committee_size % committee
+    if rollcalls{j,'total_vote'} < committee_size %#ok<BDSCA> % committee
         % iterate the committee vote count
         committee_vote_count                  = committee_vote_count + 1;
         

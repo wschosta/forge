@@ -1,12 +1,12 @@
-classdef IN < forge
-    % IN
-    % Subclass Indiana of the Superclass Forge
+classdef CA < forge
+    % CA
+    % Subclass California of the Superclass Forge
     % Used to generate the prediction algorithms and data repositiories
-    % for the state of Indana. Driven by Legiscan data.
+    % for the state of California. Driven by Legiscan data.
     %
     % SYNTAX:
     % ---------------------------------------------------------------------
-    % IN_obj = IN(varargin)
+    % CA_obj = CA(varargin)
     %
     % AVAILABLE PARAMETERS:
     % ---------------------------------------------------------------------
@@ -41,7 +41,7 @@ classdef IN < forge
     % See forge
     
     properties (Constant)
-        % Indiana Specific issue key
+        % California Specific issue key
         ISSUE_KEY = containers.Map([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],{...
             'Agriculture',...
             'Commerce, Business, Economic Development',...
@@ -62,12 +62,12 @@ classdef IN < forge
     end
     
     methods
-        function obj = IN(varargin)
+        function obj = CA(varargin)
             in = inputParser;
             addOptional(in,'reprocess',0,@islogical);
             addOptional(in,'recompute',0,@islogical);
             addOptional(in,'generateOutputs',0,@islogical);
-            addOptional(in,'predict_montecarlo',1,@islogical);
+            addOptional(in,'predict_montecarlo',0,@islogical);
             addOptional(in,'recompute_montecarlo',0,@islogical);
             parse(in,varargin{:});
             
@@ -77,9 +77,9 @@ classdef IN < forge
             obj.predict_montecarlo     = in.Results.predict_montecarlo;
             obj.recompute_montecarlo   = in.Results.recompute_montecarlo;
             
-            obj.state       = 'IN'; % state
-            obj.senate_size = 50;   % number of seats in the Senate (upper chamber)
-            obj.house_size  = 100;  % number of seats in the House (lower chamber)
+            obj.state       = 'CA'; % state
+            obj.senate_size = 40;   % number of seats in the Senate (upper chamber)
+            obj.house_size  = 88;   % number of seats in the House (lower chamber)
             
             obj.monte_carlo_number = 100; % number of monte carlo iterations
             
@@ -93,7 +93,10 @@ classdef IN < forge
             
             % Load the learning algorithm data based on the state specific
             % information TODO does this have to be state specific? Why?
-            obj.learning_algorithm_data = la.loadLearnedMaterials(obj.data_directory);
+            obj.learning_algorithm_exist = false;
+            if obj.learning_algorithm_exist
+                obj.learning_algorithm_data = la.loadLearnedMaterials(obj.data_directory);
+            end
             
             obj.committee_threshold   = 0.75; % threshold for a vote being a committee vote, 75%
             obj.competitive_threshold = 0.85; % threshold for a bill being competitive, 85%
@@ -105,7 +108,7 @@ classdef IN < forge
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
                 
-                % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
+                % CODED SPECIFICALLY FOR THE CALIFORNIA HOUSE AND SENATE.
                 
                 list = dir(obj.data_directory);
                 list = regexp({list.name},'people_(\d+).*','once');
@@ -205,7 +208,7 @@ classdef IN < forge
                 end
                 
                 % Save out all of the generated data with the exception of
-                % the IN object
+                % the CA object
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
                 save(sprintf('data/%s/saved_data.mat',obj.state),var_list{:})
@@ -251,7 +254,7 @@ classdef IN < forge
             end
             
             % Save out all of the generated data, with the exception of
-            % the IN object to the workspace,
+            % the CA object to the workspace,
             var_list = who;
             var_list = var_list(~ismember(var_list,'obj'));
             for i = 1:length(var_list)

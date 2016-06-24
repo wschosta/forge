@@ -2,17 +2,8 @@ function [learning_coded, matches] = classifyBill(bill_title,data_storage)
 % CLASSIFYBILL
 % Classify the bill based on the bill title
 
-% Split the bill title into individual words
-bill_title = regexp(bill_title,'\W|\s+','split');
-
-% Get it out of the cell array
-bill_title = bill_title{:};
-
-% Eliminate the empty cells
-bill_title = bill_title(~cellfun(@isempty,bill_title));
-
-% Turn all the words into uppercase and eliminate any common words
-bill_title = upper(bill_title(~ismember(upper(bill_title),upper(data_storage.common_words))));
+% Cleanup the bill title and eliminate common words
+[bill_title,~] = la.cleanupText(bill_title,data_storage.common_words);
 
 % Get the issue codes
 issue_codes = cell2mat(data_storage.master_issue_codes.keys);

@@ -51,6 +51,7 @@ for i = bill_keys
         
         %%% COMMITTEE INFORMATION - TODO probably can collapse this into a common function with the chamber data
         is_committee_votes = 0;
+        
         for j = 1:length(obj.bill_set(i).(chamber_data).committee_votes)
             
             % so it's sort of pointless to do the loop and then
@@ -84,11 +85,11 @@ for i = bill_keys
         
         if is_committee_votes % could also do a ~isempty(j)
             % SPONSORS - take the last *committee* vote - TODO is this really what we want to do here?
-            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,yes_ids);
-            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,no_ids,'value',0);
+            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_yes_ids);
+            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_no_ids,'value',0);
             
             % Place that information into possible votes matrix
-            committee_sponsor_votes  = obj.addVotes(committee_sponsor_votes,sponsor_ids,[yes_ids ; no_ids]);
+            committee_sponsor_votes  = obj.addVotes(committee_sponsor_votes,sponsor_ids,[committee_yes_ids ; committee_no_ids]);
         end
         
         %%% CHAMBER INFORMATION
@@ -97,7 +98,7 @@ for i = bill_keys
             % so it's sort of pointless to do the loop and then
             % only process the last bill but I want to preserve
             % the functionality
-            if isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(j).description{:}),'THIRD','once'))
+            if isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(j).description{:}),'(THIRD|3RD)','once'))
                 continue
             end
             

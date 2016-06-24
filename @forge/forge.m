@@ -1,5 +1,10 @@
 classdef forge < handle
-    % TODO comments
+    % FORGE
+    % Driving superclass for the Forge Project
+    % 
+    % Developed by Walter Schostak and Eric Waltenburg
+    %
+    % See also IN
     
     properties
         % the five core types of data to read in
@@ -33,15 +38,14 @@ classdef forge < handle
         senate_size % upper
         house_size  % lower
         
-        learning_algorithm_data % storage for the learning algorithm data
-        
+        learning_algorithm_data  % storage for the learning algorithm data
+        learning_algorithm_exist = true; % flag to look for existing learning algorithm data, default to true
         % all of the input flags
         generate_outputs
         recompute
         reprocess
         predict_montecarlo
         recompute_montecarlo
-        predict_stepwise_outputs
         
         monte_carlo_number    % the number of monte carlo iterations
         committee_threshold   % threshold of members to differentiate between committees and the main chamber
@@ -100,7 +104,9 @@ classdef forge < handle
                     template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
                     template.bill_number    = bills_create{i,'bill_number'};
                     template.title          = bills_create{i,'title'};
-                    template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
+                    if obj.learning_algorithm_exist
+                        template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
+                    end
                     template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
                     template.history  = sortrows(history_create(bills_create{i,'bill_id'} == history_create.bill_id,:),'date');
                     if ~isempty(template.history)
@@ -255,11 +261,6 @@ classdef forge < handle
             % Element-wise divide. This will take divide each value by the
             % possible value (person-vote total)/(possible vote total)
             people_matrix{:,:} = people_matrix{:,:} ./ vote_matrix{:,:};
-        end
-        
-        function setRandomSeed(rng_seed)
-           s = RandStream.create('mt19937ar','seed',rng_seed);
-           RandStream.setGlobalStream(s);
         end
     end
 end
