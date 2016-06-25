@@ -45,14 +45,14 @@ classdef CA < state
             in = inputParser;
             addOptional(in,'reprocess',0,@islogical);
             addOptional(in,'recompute',0,@islogical);
-            addOptional(in,'generateOutputs',0,@islogical);
+            addOptional(in,'generate_outputs',0,@islogical);
             addOptional(in,'predict_montecarlo',0,@islogical);
             addOptional(in,'recompute_montecarlo',0,@islogical);
             parse(in,varargin{:});
             
-            obj.reprocess              = in.Results.reprocess;       % Flag to launch the base forge process to read in the data
-            obj.recompute              = in.Results.recompute;       % Flag to launch the state-specific process to generate the matricies
-            obj.generate_outputs       = in.Results.generateOutputs; % Flag to generate all of the charts and outputs (note: there are outputs that this does not prevent)
+            obj.reprocess              = in.Results.reprocess;        % Flag to launch the base forge process to read in the data
+            obj.recompute              = in.Results.recompute;        % Flag to launch the state-specific process to generate the matricies
+            obj.generate_outputs       = in.Results.generate_outputs; % Flag to generate all of the charts and outputs (note: there are outputs that this does not prevent)
             obj.predict_montecarlo     = in.Results.predict_montecarlo;
             obj.recompute_montecarlo   = in.Results.recompute_montecarlo;
             
@@ -79,8 +79,6 @@ classdef CA < state
             
             obj.committee_threshold   = 0.75; % threshold for a vote being a committee vote, 75%
             obj.competitive_threshold = 0.85; % threshold for a bill being competitive, 85%
-            
-            obj.init(); % forge init
         end
     end
 end

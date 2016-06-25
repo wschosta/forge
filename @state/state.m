@@ -24,7 +24,8 @@ classdef state < forge
         function obj=state()
         end
         
-        function run(obj)
+        function run(obj)  
+            obj.init(); % forge init
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
                 
