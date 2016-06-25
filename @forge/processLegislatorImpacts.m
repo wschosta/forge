@@ -10,7 +10,7 @@ master_list = [];
 % Iterate over the legislator list 
 for i = 1:size(legislators_list,1)
     
-    specific_accuracy_list = zeros(size(legislators_list{i,1},1)+1,8); %TODO remove hardcoded 8, this is the number of predicted legislators
+    specific_accuracy_list = zeros(size(legislators_list{i,1},1),8+1); %TODO remove hardcoded 8, this is the number of predicted legislators
     specific_delta_list    = zeros(size(legislators_list{i,1},1),8);
     
     % Iterate over the number of predictions
@@ -20,7 +20,7 @@ for i = 1:size(legislators_list,1)
         
         
         for k = 1:length(accuracy_steps_list{i,j})
-            specific_accuracy_list(j,k+1) = specific_accuracy_list(k) + accuracy_steps_list{i,j}(k); 
+            specific_accuracy_list(j,k+1) = specific_accuracy_list(j,k) + accuracy_steps_list{i,j}(k); 
             specific_delta_list(j,k)      = accuracy_steps_list{i,j}(k);
         end
     end
@@ -29,21 +29,21 @@ for i = 1:size(legislators_list,1)
     % bill, not sure it's super useful for the massive number of
     % bills but neat on a single bill basis
     
-    %     figure()
-    %     hold on ; grid on ;
-    %     title('Accuracy Over Predictive Set')
-    %     plot(specific_accuracy_list')
-    %     xlabel('Revealed preference points')
-    %     ylabel('Accuracy')
-    %     hold off
+    %         figure()
+    %         hold on ; grid on ;
+    %         title('Accuracy Over Predictive Set')
+    %         plot(specific_accuracy_list')
+    %         xlabel('Revealed preference points')
+    %         ylabel('Accuracy')
+    %         hold off
     %
-    %     figure()
-    %     title('Delta Accuracy Over Predictive Set')
-    %     hold on ; grid on ;
-    %     plot(specific_delta_list')
-    %     xlabel('Revealed preference points')
-    %     ylabel('Change in Accuracy')
-    %     hold off
+    %         figure()
+    %         title('Delta Accuracy Over Predictive Set')
+    %         hold on ; grid on ;
+    %         plot(specific_delta_list')
+    %         xlabel('Revealed preference points')
+    %         ylabel('Change in Accuracy')
+    %         hold off
     
     % I need to come up with some equation to relate initial
     % accuracy revealed, preference posiition (1-8), change in

@@ -17,9 +17,7 @@ else
     for i = 1:length(files)
         specific_index(i) = str2double(cellfun(@(x) x{:},regexp(files(i).name,pattern,'tokens'),'UniformOutput',false));
     end
-    specific_index = max(specific_index);
-    
-    specific_index = 100;
+    specific_index = max(specific_index); % TODO build in an override to allow the plotting of specific bill tracing
     
     % Read in the file with the largest monte carlo number
     data = load(sprintf('%s/%s_predictive_model_m%i.mat',obj.outputs_directory,lower(chamber),specific_index));
