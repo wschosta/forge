@@ -7,11 +7,16 @@ function results_table = processLegislatorImpacts(obj,accuracy_list,accuracy_lis
 % Initialize the list
 master_list = [];
 
+if isempty(legislators_list) || isempty(accuracy_list) || isempty(accuracy_steps_list)
+    results_table = [];
+    return
+end
+
 % Iterate over the legislator list 
 for i = 1:size(legislators_list,1)
     
-    specific_accuracy_list = zeros(size(legislators_list{i,1},1),8+1); %TODO remove hardcoded 8, this is the number of predicted legislators
-    specific_delta_list    = zeros(size(legislators_list{i,1},1),8);
+    specific_accuracy_list = zeros(size(legislators_list{i,1},1),size(accuracy_steps_list{i,1}(1),1)+1);
+    specific_delta_list    = zeros(size(legislators_list{i,1},1),size(accuracy_steps_list{i,1}(1),1));
     
     % Iterate over the number of predictions
     for j = 1:size(accuracy_list,2)

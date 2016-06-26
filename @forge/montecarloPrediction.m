@@ -33,7 +33,9 @@ end
 % Process the impacts
 results_table = obj.processLegislatorImpacts(accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list);
 
-% Write the results to a table
-writetable(results_table,sprintf('%s/%s_results_table.csv',obj.outputs_directory,lower(chamber)),'WriteRowNames',true)
+if ~isempty(results_table)
+    % Write the results to a table
+    writetable(results_table,sprintf('%s/%s_results_table.csv',obj.outputs_directory,lower(chamber)),'WriteRowNames',true)
+end
 
 end
