@@ -12,9 +12,7 @@ if length(varargin) == 1
     monte_carlo_run = 1;
 end
 
-% number of legislators to randomly pick to do out-step
-% predictions, also initialize the variable outputs
-number_of_legislators = 8; % TODO should this be a property?
+% initialize the variable outputs
 varargout{1} = [];
 varargout{2} = [];
 
@@ -30,7 +28,7 @@ sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
 % Set the number of sponsors
 number_sponsors  = size(sponsor_ids,1);
 
-% if no comittee information is available
+% if no committee information is available
 if isempty(bill_information.(chamber_data).committee_votes)
     % TODO read in the chamber data
     accuracy         = NaN;
@@ -89,20 +87,18 @@ t_set{bill_no_ids,'final'}  = 0;
 
 % --------- COMMITTEE EFFECT ---------
 % Calculate sponsor effect and set t1
-committee_specific = NaN(length(committee_ids),1);
+committee_specific = ones(length(committee_ids),1)*bayes_initial;
 committee_sponsor_match = sponsor_ids(ismember(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
 for i = 1:length(committee_ids)
     
     if ismember(committee_ids{i},committee_sponsor_matrix.Properties.RowNames)
-        sponsor_specific_effect = 1;
+        sponsor_specific_effect = zeros(1,length(committee_sponsor_match));
         
         for k = 1:length(committee_sponsor_match)
-            sponsor_specific_effect = sponsor_specific_effect*predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},committee_sponsor_match{k}});
+            sponsor_specific_effect(k) = predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},committee_sponsor_match{k}});
         end
         
-        committee_specific(i) = sponsor_specific_effect*bayes_initial / (sponsor_specific_effect*bayes_initial + (1-sponsor_specific_effect)*(1-bayes_initial));
-    else
-        committee_specific(i) = bayes_initial;
+        committee_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
     end
 end
 t_set{committee_ids,'t1'} = committee_specific;
@@ -117,26 +113,24 @@ t_set{committee_ids_no,'committee_consistency'}  = chamber_consistency_matrix{co
 
 % So now we only update based on expressed preference for t2
 % calculate t2
-t_set_current_value  = NaN(length(ids),1);
+t_set_current_value  = ones(length(ids),1)*0.5;
 
 matched_ids = find(ismember(ids,[sponsor_ids;committee_ids]));
 
 for j = 1:length(ids)
     if ~any(j == matched_ids)
-        combined_impact = 1;
+        combined_impact = zeros(length(matched_ids),1);
         
         for k = 1:length(matched_ids)
-            combined_impact = combined_impact*predict.getSpecificImpact(1,chamber_specifics(j,k));
+            combined_impact(k) = predict.getSpecificImpact(1,chamber_specifics(j,k));
         end
         
-        t_set_current_value(j) = (combined_impact*bayes_initial)/(combined_impact*bayes_initial + (1-combined_impact)*(1-bayes_initial));
+        t_set_current_value(j) = (prod(combined_impact)*bayes_initial)/(prod(combined_impact)*bayes_initial + prod(1-combined_impact)*(1-bayes_initial));
     else
         if ~isnan(t_set.committee_vote(j))
             t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
         elseif ismember(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames)
             t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
-        else
-            t_set_current_value(j) = 0.5;
         end
     end
 end
@@ -155,7 +149,7 @@ accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
 % but we just update everything
 legislator_list = [bill_yes_ids ; bill_no_ids];
 
-if length(legislator_list) < number_of_legislators
+if length(legislator_list) < obj.NUMBER_OF_LEGISLATORS
     fprintf('Not enough legislators for %i\n',bill_id)
     accuracy         = NaN;
     number_sponsors  = NaN;
@@ -176,7 +170,7 @@ t_final_results = t_set.final;
 for j = 1:monte_carlo
     util.setRandomSeed(j);
     
-    legislator_id     = legislator_list(randperm(length(legislator_list),number_of_legislators));
+    legislator_id     = legislator_list(randperm(length(legislator_list),obj.NUMBER_OF_LEGISLATORS));
     direction         = ismember(legislator_id,bill_yes_ids);
     accuracy_steps    = zeros(1,length(legislator_id)+1);
     accuracy_steps(1) = accuracy_table.t2;
@@ -206,6 +200,7 @@ for j = 1:monte_carlo
 end
 
 if any(bill_id == [590034 583138 587734 590009]) && generate_outputs
+    
     save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
     [~,~,~] = mkdir(save_directory);
     

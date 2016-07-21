@@ -4,16 +4,15 @@ function results_table = processLegislatorImpacts(obj,accuracy_list,accuracy_lis
 % carlo prediction
 % TODO comments
 
-% Initialize the list
-master_list = [];
-
 if isempty(legislators_list) || isempty(accuracy_list) || isempty(accuracy_steps_list)
     results_table = [];
     return
 end
 
-% Iterate over the legislator list 
-for i = 1:size(legislators_list,1)
+% Initialize the list
+master_list = [];
+
+for i = 1:size(legislators_list,1) % per bill
     
     specific_accuracy_list = zeros(size(legislators_list{i,1},1),size(accuracy_steps_list{i,1}(1),1)+1);
     specific_delta_list    = zeros(size(legislators_list{i,1},1),size(accuracy_steps_list{i,1}(1),1));
@@ -57,14 +56,12 @@ for i = 1:size(legislators_list,1)
     % legislators?
     
     unique_legislators = unique(legislators_list{i});
-    impact_score       = cell(1,length(unique_legislators));
-    placement          = cell(1,length(unique_legislators));
     legislator_score   = zeros(length(unique_legislators),1);
-    placement_points   = linspace(length(legislators_list{i}),1,length(legislators_list{i}))';
+    placement_points   = [10 8 6 5 4 3 2 1]; % scoring based on the F1 points system
     for j = 1:length(unique_legislators)
-        impact_score{j}     = specific_delta_list(ismember(legislators_list{i},unique_legislators(j)));
-        placement{j}        = sum(ismember(legislators_list{i},unique_legislators(j)),2);
-        legislator_score(j) = mean(impact_score{j})/(specific_accuracy_list(1,1)*mean(placement{j}.*placement_points));
+        delta_score         = specific_delta_list.*ismember(legislators_list{i},unique_legislators(j));
+        placement           = sum(ismember(legislators_list{i},unique_legislators(j)),1).*placement_points;
+        legislator_score(j) = sum(delta_score*placement')/(1-specific_accuracy_list(1,1));
     end
     
     master_list = [master_list ; unique_legislators legislator_score]; %#ok<AGROW>
@@ -76,7 +73,7 @@ results  = NaN(length(master_unique_legislators),1);
 for i = 1:length(master_unique_legislators)
     index       = ismember(master_list(:,1),master_unique_legislators(i));
     coverage(i) = sum(index);
-    results(i)  = mean(master_list(index,2));
+    results(i)  = sum(master_list(index,2));
 end
 coverage = coverage / length(bill_list);
 results  = results / max(results);

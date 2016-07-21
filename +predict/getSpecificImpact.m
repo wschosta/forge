@@ -22,4 +22,8 @@ else
     error('Functionality for non-binary revealed preferences not currently supported')
 end
 
+if isnan(specific_impact)
+    specific_impact = 0.5;
+end
+
 end

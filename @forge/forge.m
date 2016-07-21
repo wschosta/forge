@@ -40,6 +40,7 @@ classdef forge < handle
         
         learning_algorithm_data  % storage for the learning algorithm data
         learning_algorithm_exist = true; % flag to look for existing learning algorithm data, default to true
+        
         % all of the input flags
         generate_outputs
         recompute
@@ -58,6 +59,8 @@ classdef forge < handle
         
         % Key to filter vote types
         VOTE_KEY  = containers.Map({'1','2','3','4','yea','nay','absent','no vote'},{'yea','nay','absent','no vote',1,2,3,4});
+        
+        NUMBER_OF_LEGISLATORS = 8; % for the monte carlo analysis
     end
     
     methods
