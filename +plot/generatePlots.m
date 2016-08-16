@@ -19,11 +19,11 @@ if ~isempty(people_matrix)
     % At an angle
     view(3)
     hold off
-    saveas(h,sprintf('%s/%s_%s',outputs_directory,lower(label_string),tag),'png')
+    saveas(h,sprintf('%s/%s_%s',outputs_directory,upper(label_string(1)),tag),'png')
     
     % Flat
     view(2)
-    saveas(h,sprintf('%s/%s_%s_flat',outputs_directory,lower(label_string),tag),'png')
+    saveas(h,sprintf('%s/%s_%s_flat',outputs_directory,upper(label_string(1)),tag),'png')
     
     % Generate histograms
     if ~isempty(histogram_directory)

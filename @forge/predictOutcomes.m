@@ -1,4 +1,4 @@
-function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,generate_outputs,chamber,varargin)
+function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,chamber,varargin)
 % PREDICTOUTCOMES
 % Predict outcomes for a specific bill with a randomized set of legislators
 
@@ -149,7 +149,7 @@ accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
 % but we just update everything
 legislator_list = [bill_yes_ids ; bill_no_ids];
 
-if length(legislator_list) < obj.NUMBER_OF_LEGISLATORS
+if length(legislator_list) < obj.(sprintf('%s_size',chamber))*0.5
     fprintf('Not enough legislators for %i\n',bill_id)
     accuracy         = NaN;
     number_sponsors  = NaN;
@@ -170,7 +170,7 @@ t_final_results = t_set.final;
 for j = 1:monte_carlo
     util.setRandomSeed(j);
     
-    legislator_id     = legislator_list(randperm(length(legislator_list),obj.NUMBER_OF_LEGISLATORS));
+    legislator_id     = legislator_list(randperm(length(legislator_list)));
     direction         = ismember(legislator_id,bill_yes_ids);
     accuracy_steps    = zeros(1,length(legislator_id)+1);
     accuracy_steps(1) = accuracy_table.t2;
@@ -197,26 +197,6 @@ for j = 1:monte_carlo
         
         accuracy_steps_list{j} = accuracy_steps_delta;
     end
-end
-
-if any(bill_id == [590034 583138 587734 590009]) && generate_outputs
-    
-    save_directory = sprintf('%s/%i',obj.outputs_directory,bill_id);
-    [~,~,~] = mkdir(save_directory);
-    
-    obj.plotTSet(t_set(:,'t1'),'t1 - Predicting the Committee Vote')
-    saveas(gcf,sprintf('%s/t1',save_directory),'png');
-    
-    obj.plotTSet(t_set(:,'t2'),'t2 - Predicting chamber vote with committee and sponsor vote')
-    saveas(gcf,sprintf('%s/t2',save_directory),'png');
-    
-    for i = 3:t_count;
-        t_current = sprintf('t%i',i);
-        obj.plotTSet(t_set(:,t_current),sprintf('%s - %s, %s',t_current,obj.getSponsorName(legislator_id{i-2}),direction(i-2)));
-        saveas(gcf,sprintf('%s/%s',save_directory,t_current),'png');
-    end
-    
-    writetable(t_set,sprintf('%s/t_set_test.xlsx',save_directory),'WriteRowNames',true)
 end
 
 if monte_carlo_run

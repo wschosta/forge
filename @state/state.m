@@ -28,9 +28,7 @@ classdef state < forge
             obj.init(); % forge init
             
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
-                
-                % CODED SPECIFICALLY FOR THE INDIANA HOUSE AND SENATE.
-                
+
                 list = dir(obj.data_directory);
                 list = regexp({list.name},'people_(\d+).*','once');
                 

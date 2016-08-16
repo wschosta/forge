@@ -30,7 +30,7 @@ if ~isempty(main_plot) && sum(~isnan(main_plot)) > 1
     histfit(main_plot)
     axis([0 1 0 inf])
     hold off
-    saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,label_string,tag),'png')
+    saveas(h,sprintf('%s/%s_%s_histogram_all',save_directory,upper(label_string(1)),tag),'png')
 end
 
 % histogram for matching legislators (allows us to see self-consistency)
@@ -44,6 +44,6 @@ if ~isempty(secondary_plot) && sum(~isnan(secondary_plot)) > 1
     histfit(secondary_plot)
     axis([0 1 0 inf])
     hold off
-    saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,label_string,tag),'png')
+    saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,upper(label_string(1)),tag),'png')
 end
 end

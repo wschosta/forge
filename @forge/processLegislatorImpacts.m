@@ -57,10 +57,13 @@ for i = 1:size(legislators_list,1) % per bill
     
     unique_legislators = unique(legislators_list{i});
     legislator_score   = zeros(length(unique_legislators),1);
-    placement_points   = [10 8 6 5 4 3 2 1]; % scoring based on the F1 points system
+    
+    % TODO: better swap method here
+    %     placement_points   = [10 8 6 5 4 3 2 1]; % scoring based on the F1 points system
+    placement_points = linspace(100,1,size(legislators_list{i},2));
     for j = 1:length(unique_legislators)
         delta_score         = specific_delta_list.*ismember(legislators_list{i},unique_legislators(j));
-        placement           = sum(ismember(legislators_list{i},unique_legislators(j)),1).*placement_points;
+        placement           = sum(ismember(legislators_list{i}(:,1:length(placement_points)),unique_legislators(j)),1).*placement_points;
         legislator_score(j) = sum(delta_score*placement')/(1-specific_accuracy_list(1,1));
     end
     

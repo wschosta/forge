@@ -59,8 +59,6 @@ classdef forge < handle
         
         % Key to filter vote types
         VOTE_KEY  = containers.Map({'1','2','3','4','yea','nay','absent','no vote'},{'yea','nay','absent','no vote',1,2,3,4});
-        
-        NUMBER_OF_LEGISLATORS = 8; % for the monte carlo analysis
     end
     
     methods
