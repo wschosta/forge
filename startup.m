@@ -20,4 +20,6 @@ while(~isempty(dir_list))
 
 end
 
+userpath(pwd);
+
 end

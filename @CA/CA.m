@@ -50,11 +50,11 @@ classdef CA < state
             addOptional(in,'recompute_montecarlo',0,@islogical);
             parse(in,varargin{:});
             
-            obj.reprocess              = in.Results.reprocess;        % Flag to launch the base forge process to read in the data
-            obj.recompute              = in.Results.recompute;        % Flag to launch the state-specific process to generate the matricies
-            obj.generate_outputs       = in.Results.generate_outputs; % Flag to generate all of the charts and outputs (note: there are outputs that this does not prevent)
-            obj.predict_montecarlo     = in.Results.predict_montecarlo;
-            obj.recompute_montecarlo   = in.Results.recompute_montecarlo;
+            obj.reprocess            = in.Results.reprocess;        % Flag to launch the base forge process to read in the data
+            obj.recompute            = in.Results.recompute;        % Flag to launch the state-specific process to generate the matricies
+            obj.generate_outputs     = in.Results.generate_outputs; % Flag to generate all of the charts and outputs (note: there are outputs that this does not prevent)
+            obj.predict_montecarlo   = in.Results.predict_montecarlo;
+            obj.recompute_montecarlo = in.Results.recompute_montecarlo;
             
             obj.state       = 'CA'; % state
             obj.senate_size = 40;   % number of seats in the Senate (upper chamber)
@@ -63,9 +63,10 @@ classdef CA < state
             obj.monte_carlo_number = 100; % number of monte carlo iterations
             
             % Storage directroies
-            obj.data_directory      = sprintf('data/%s',obj.state);
-            obj.outputs_directory   = sprintf('%s/outputs',obj.data_directory);
-            obj.gif_directory       = sprintf('%s/gif',obj.outputs_directory);
+            obj.data_directory       = sprintf('data/%s',obj.state);
+            obj.outputs_directory    = sprintf('%s/outputs',obj.data_directory);
+            obj.prediction_directory = sprintf('%s/prediction_model',obj.data_directory);
+            obj.gif_directory        = sprintf('%s/gif',obj.outputs_directory);
             
             % not used because gifs are unnecessary (though functionality is generaly preserved)
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);

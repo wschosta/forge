@@ -55,7 +55,7 @@ boxplot(accuracy_list',bill_ids)
 xlabel('Bills')
 ylabel('Accuracy')
 hold off
-saveas(h,sprintf('%s/%s_prediction_boxplot',obj.outputs_directory,upper(chamber(1))),'png')
+saveas(h,sprintf('%s/%s_prediction_boxplot_m%i',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'png')
 
 h = figure();
 hold on
@@ -64,7 +64,7 @@ boxplot(accuracy_delta',bill_ids)
 xlabel('Bills')
 ylabel('Change in Accuracy')
 hold off
-saveas(h,sprintf('%s/%s_prediction_delta_boxplot',obj.outputs_directory,upper(chamber(1))),'png')
+saveas(h,sprintf('%s/%s_prediction_delta_boxplot_m%i',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'png')
 
 h = figure();
 hold on
@@ -73,7 +73,7 @@ boxplot(accuracy_list(1:numel(accuracy_list)))
 xlabel('All Bills')
 ylabel('Accuracy')
 hold off
-saveas(h,sprintf('%s/%s_prediction_total_boxplot',obj.outputs_directory,upper(chamber(1))),'png')
+saveas(h,sprintf('%s/%s_prediction_total_boxplot_m%i',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'png')
 
 h = figure();
 hold on
@@ -82,9 +82,9 @@ boxplot(accuracy_delta(1:numel(accuracy_delta)))
 xlabel('All Bills')
 ylabel('Change in Accuracy')
 hold off
-saveas(h,sprintf('%s/%s_prediction_total_delta_boxplot',obj.outputs_directory,upper(chamber(1))),'png')
+saveas(h,sprintf('%s/%s_prediction_total_delta_boxplot_m%i',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'png')
 
-save(sprintf('%s/%s_prediction_model_m%i.mat',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list','bill_ids')
+save(sprintf('%s/%s_prediction_model_m%i.mat',obj.prediction_directory,upper(chamber(1)),monte_carlo_number),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list','bill_ids')
 
 timed = toc;
 

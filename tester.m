@@ -11,7 +11,7 @@ IN_obj = IN();
 CA_obj = CA();
 OH_obj = OH();
 
-states = {IN_obj, CA_obj};
+states = {OH_obj};
 
 errors = {};
 
@@ -23,9 +23,9 @@ for i = 1:length(states)
         
         state = tic;
         fprintf('\n\n**************************************RUN FOR %s**************************************\n',states{i}.state)
-        states{i}.recompute = true;
-        states{i}.reprocess = true;
-        states{i}.generate_outputs = true;
+        states{i}.recompute = false;
+        states{i}.reprocess = false;
+        states{i}.generate_outputs = false;
         states{i}.predict_montecarlo = true;
         states{i}.recompute_montecarlo = true;
         

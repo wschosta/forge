@@ -33,6 +33,7 @@ classdef forge < handle
         gif_directory
         histogram_directory
         outputs_directory
+        prediction_directory
         
         % information about the size of each chamber 
         senate_size % upper

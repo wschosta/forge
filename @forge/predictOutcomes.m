@@ -12,9 +12,12 @@ if length(varargin) == 1
     monte_carlo_run = 1;
 end
 
-% initialize the variable outputs
-varargout{1} = [];
-varargout{2} = [];
+% initialize the outputs
+varargout{1}     = {};
+varargout{2}     = {};
+accuracy         = NaN;
+number_sponsors  = NaN;
+number_committee = NaN;
 
 % Set up the chamber data spring (makes it abstractable)
 chamber_data = sprintf('%s_data',chamber);
@@ -22,21 +25,32 @@ chamber_data = sprintf('%s_data',chamber);
 % Get the specific bill information
 bill_information = obj.bill_set(bill_id);
 
+% if no committee information is available
+if isempty(bill_information.(chamber_data).committee_votes)
+    return
+end
+
+% Check for a third reading vote
+legislator_list = [];
+for i = length(bill_information.(chamber_data).chamber_votes):-1:1
+    if ~isempty(regexp(upper(bill_information.(chamber_data).chamber_votes(i).description{:}),'THIRD READING','once'))
+        bill_yes_ids = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).yes_list,ids);
+        bill_no_ids  = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).no_list,ids);
+        
+        legislator_list = [bill_yes_ids ; bill_no_ids];
+        break
+    end
+end
+
+if isempty(legislator_list) || length(legislator_list) < obj.(sprintf('%s_size',chamber))*0.5
+    return
+end
+
 % Get the sponsor IDs
 sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
 
 % Set the number of sponsors
 number_sponsors  = size(sponsor_ids,1);
-
-% if no committee information is available
-if isempty(bill_information.(chamber_data).committee_votes)
-    % TODO read in the chamber data
-    accuracy         = NaN;
-    number_sponsors  = NaN;
-    number_committee = NaN;
-    varargout{1}     = {};
-    return
-end
 
 % Create the basic information about the committee values
 committee_yes     = bill_information.(chamber_data).committee_votes.yes_list;
@@ -47,28 +61,6 @@ committee_ids_yes = util.createIDstrings(committee_yes,ids);
 committee_ids_no  = util.createIDstrings(committee_no,ids);
 number_committee  = size(committee_ids,1);
 
-% Check for a third reading vote
-found_it = 0;
-for i = length(bill_information.(chamber_data).chamber_votes):-1:1
-    if ~isempty(regexp(upper(bill_information.(chamber_data).chamber_votes(i).description{:}),'THIRD READING','once'))
-        bill_yes = bill_information.(chamber_data).chamber_votes(i).yes_list;
-        bill_no  = bill_information.(chamber_data).chamber_votes(i).no_list;
-        found_it = 1;
-        break
-    end
-end
-
-if ~found_it % no third reading vote found
-    accuracy         = NaN;
-    number_sponsors  = NaN;
-    number_committee = NaN;
-    varargout{1}     = {};
-    return
-end
-
-% create bill yes and no IDs
-bill_yes_ids = util.createIDstrings(bill_yes,ids);
-bill_no_ids  = util.createIDstrings(bill_no,ids);
 
 % initial assumption, eveyone is equally likely to vote yes as
 % to vote no. This is probably not true, I'll have to figure
@@ -147,16 +139,6 @@ accuracy_table.t2 = 100*(1-(incorrect-are_nan)/(100-are_nan));
 
 % at this point, for t3, we do basically the same thing as t2
 % but we just update everything
-legislator_list = [bill_yes_ids ; bill_no_ids];
-
-if length(legislator_list) < obj.(sprintf('%s_size',chamber))*0.5
-    fprintf('Not enough legislators for %i\n',bill_id)
-    accuracy         = NaN;
-    number_sponsors  = NaN;
-    number_committee = NaN;
-    varargout{1}     = {};
-    return
-end
 
 % TODO Finish comments
 if monte_carlo_run

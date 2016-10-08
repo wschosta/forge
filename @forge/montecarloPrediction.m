@@ -3,7 +3,8 @@ function [accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill
 % Predict the monte carlo series for a legislative process
 
 % Get the file list
-files = dir(sprintf('%s/%s_prediction_model_m*.mat',obj.outputs_directory,upper(chamber(1))));
+
+files = dir(sprintf('%s/%s_prediction_model_m*.mat',obj.prediction_directory,upper(chamber(1))));
 
 % if the file doesn't exist or if we're forcing a recompute
 if isempty(files) || obj.recompute_montecarlo
@@ -22,7 +23,7 @@ else
     specific_index = max(specific_index); % TODO build in an override to allow the plotting of specific montecarlo sizes
     
     % Read in the file with the largest monte carlo number
-    data = load(sprintf('%s/%s_predictive_model_m%i.mat',obj.outputs_directory,upper(chamber(1)),specific_index));
+    data = load(sprintf('%s/%s_predictive_model_m%i.mat',obj.prediction_directory,upper(chamber(1)),specific_index));
     
     % Pull out the specifics
     accuracy_list       = data.accuracy_list;
