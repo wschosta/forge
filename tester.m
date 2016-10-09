@@ -11,11 +11,11 @@ IN_obj = IN();
 CA_obj = CA();
 OH_obj = OH();
 
-states = {OH_obj};
+states = {IN_obj};
 
 errors = {};
 
-monte_carlo_number_list = 100;
+monte_carlo_number_list = 10000;
 
 for i = 1:length(states)
     for j = 1:length(monte_carlo_number_list)
