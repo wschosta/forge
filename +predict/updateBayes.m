@@ -29,7 +29,7 @@ combined_impact(id_list) = abs(1 - revealed_preference - chamber_specifics(id_li
 % Process the impacts together for the current t_set value
 % t_set_current_value = (combined_impact.*t_set_previous_value)./(1 + 2*combined_impact.*t_set_previous_value - combined_impact - t_set_previous_value);
 t_set_current_value = (combined_impact.*t_set_previous_value)./(combined_impact.*t_set_previous_value+(1-combined_impact).*(1-t_set_previous_value));
-
+t_set_current_value(isnan(t_set_current_value)) = t_set_previous_value(isnan(t_set_current_value));
 % the denominator above is functionally the same as: (combined_impact*t_set{j,t_previous} + (1-combined_impact)*(1-t_set{j,t_previous})
 % In the active form it reduces the number of references to the table
 % which *should* be faster
@@ -39,7 +39,7 @@ t_set_current_value(t_set_current_value == 0) = 0.001;
 t_set_current_value(t_set_current_value == 1) = 0.999;
 
 % Put the matched IDs in
-t_set_current_value(matched_ids)              = abs(revealed_preference - 0.001);
+t_set_current_value(matched_ids) = abs(revealed_preference - 0.001);
 
 % Process the final checks
 t_check   = round(t_set_current_value) == t_final_results;

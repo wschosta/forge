@@ -151,7 +151,7 @@ t_final_results = t_set.final;
 
 for j = 1:monte_carlo
     util.setRandomSeed(j);
-    
+
     legislator_id     = legislator_list(randperm(length(legislator_list)));
     direction         = ismember(legislator_id,bill_yes_ids);
     accuracy_steps    = zeros(1,length(legislator_id)+1);
