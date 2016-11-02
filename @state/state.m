@@ -27,6 +27,10 @@ classdef state < forge
         function run(obj)  
             obj.init(); % forge init
             
+            obj.predict_ELO = true;
+            obj.recompute_ELO = true;
+            obj.predict_montecarlo = false;
+            
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
 
                 list = dir(obj.data_directory);
@@ -170,6 +174,14 @@ classdef state < forge
             if ~isempty(senate_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the Senate
                 [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU,ASGLU>
+            end
+            
+            if ~isempty(house_people) && obj.predict_ELO
+                house_elo_score = obj.eloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
+            end
+            
+            if ~isempty(senate_people) && obj.predict_ELO
+                senate_elo_score = obj.eloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
             end
             
             % Save out all of the generated data, with the exception of

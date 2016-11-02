@@ -34,6 +34,7 @@ classdef forge < handle
         histogram_directory
         outputs_directory
         prediction_directory
+        elo_directory
         
         % information about the size of each chamber 
         senate_size % upper
@@ -48,6 +49,8 @@ classdef forge < handle
         reprocess
         predict_montecarlo
         recompute_montecarlo
+        predict_ELO
+        recompute_ELO
         
         monte_carlo_number    % the number of monte carlo iterations
         committee_threshold   % threshold of members to differentiate between committees and the main chamber

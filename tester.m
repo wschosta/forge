@@ -2,7 +2,6 @@
 
 % States: IN, CA, OH
 
-
 fclose all; close all; clc; clear all;
 
 master = tic;
@@ -11,14 +10,14 @@ IN_obj = IN();
 CA_obj = CA();
 OH_obj = OH();
 
-states = {IN_obj};
+states = {IN_obj CA_obj OH_obj};
 
 errors = {};
 
-monte_carlo_number_list = 10000;
+monte_carlo_number_list = [10];% 100 1000 10000 50000 100000];
 
-for i = 1:length(states)
-    for j = 1:length(monte_carlo_number_list)
+for j = 1:length(monte_carlo_number_list)
+    for i = 1:length(states)
         close all; fclose all;
         
         state = tic;
@@ -26,8 +25,8 @@ for i = 1:length(states)
         states{i}.recompute = false;
         states{i}.reprocess = false;
         states{i}.generate_outputs = false;
-        states{i}.predict_montecarlo = true;
-        states{i}.recompute_montecarlo = true;
+        states{i}.predict_montecarlo = false;
+        states{i}.recompute_montecarlo = false;
         
         states{i}.monte_carlo_number = monte_carlo_number_list(j);
         

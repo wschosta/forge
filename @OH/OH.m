@@ -67,6 +67,7 @@ classdef OH < state
             obj.outputs_directory    = sprintf('%s/outputs',obj.data_directory);
             obj.prediction_directory = sprintf('%s/prediction_model',obj.data_directory);
             obj.gif_directory        = sprintf('%s/gif',obj.outputs_directory);
+            obj.elo_directory        = sprintf('%s/elo_model',obj.data_directory);
             
             % not used because gifs are unnecessary (though functionality is generaly preserved)
             obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
