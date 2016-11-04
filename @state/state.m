@@ -26,11 +26,7 @@ classdef state < forge
         
         function run(obj)  
             obj.init(); % forge init
-            
-            obj.predict_ELO = true;
-            obj.recompute_ELO = true;
-            obj.predict_montecarlo = false;
-            
+                        
             if exist(sprintf('%s/saved_data.mat',obj.data_directory),'file') ~= 2 || obj.recompute
 
                 list = dir(obj.data_directory);

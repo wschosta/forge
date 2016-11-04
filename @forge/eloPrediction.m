@@ -11,10 +11,11 @@ if isempty(files) || obj.recompute_ELO
     ids = util.createIDstrings(chamber_people.sponsor_id);
     chamber_specifics = chamber_matrix{:,:};
     
-    score = ones(length(ids),1)*1500;
+    score1 = ones(length(ids),1)*1500;
+    score2 = ones(length(ids),1)*1500;
     count = zeros(length(ids),1);
     
-    elo_score = array2table([score count],'VariableNames',{'score' 'count'});
+    elo_score = array2table([score1 score2 count],'VariableNames',{'score_variable_k' 'score_fixed_k' 'count'});
     elo_score.Properties.RowNames = ids;
     
     delete_str = '';
@@ -140,32 +141,49 @@ if isempty(files) || obj.recompute_ELO
             [~,~,~,accuracy(i)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
         end
 
+        
+        % THIS IS WHERE ALL THE ELO SCORE STUFF HAPPENS
+        % everything above this point is a copy paste (ugh, I know) from
+        % the monte carlo prediciton set
+        
+        
         count = elo_score{legislator_id,'count'};
-        score = elo_score{legislator_id,'score'};
+        score1 = elo_score{legislator_id,'score_variable_k'};
+        score2 = elo_score{legislator_id,'score_fixed_k'};
         
         for i = 1:length(legislator_id)
             for j = i+1:length(legislator_id)
                 count(i) = count(i) + 1;
                 count(j) = count(j) + 1;
 
-                Ea = 1/(1+10^((score(j) - score(i))/400));
-                Eb = 1/(1+10^((score(i) - score(j))/400));
+                Wa = 1*(accuracy(i) > accuracy(j)) + 0.5*(accuracy(i) == accuracy(j));
+                Wb = 1 - Wa;
+                
+                % Version 1 - variable k
+                Ea = 1/(1+10^((score1(j) - score1(i))/400));
+                Eb = 1/(1+10^((score1(i) - score1(j))/400));
                 
                 Ka = 8000/(200*(count(i) < 200) + count(i)*(count(i) >= 200 && count(i) <=800) + 800*(count(i) > 80));
                 Kb = 8000/(200*(count(j) < 200) + count(j)*(count(j) >= 200 && count(j) <=800) + 800*(count(j) > 80));
                 
-                if accuracy(i) ~= accuracy(j)
-                    Wa = 1*(accuracy(i) > accuracy(j));
-                    Wb = 1 - Wa;
-                    
-                    score(i) = score(i) + Ka*(Wa - Ea);
-                    score(j) = score(j) + Kb*(Wb - Eb);
-                end
-            end 
+                score1(i) = score1(i) + Ka*(Wa - Ea);
+                score1(j) = score1(j) + Kb*(Wb - Eb);
+                
+                % Version 2 - fixed k
+                Ea = 1/(1+10^((score2(j) - score2(i))/400));
+                Eb = 1/(1+10^((score2(i) - score2(j))/400));
+                
+                Ka = 16;
+                Kb = 16;
+                
+                score2(i) = score2(i) + Ka*(Wa - Ea);
+                score2(j) = score2(j) + Kb*(Wb - Eb);
+            end
         end
         
         elo_score{legislator_id,'count'} = count;
-        elo_score{legislator_id,'score'} = score;
+        elo_score{legislator_id,'score_variable_k'} = score1;
+        elo_score{legislator_id,'score_fixed_k'} = score2;
         
         print_str = sprintf('%i %i',bill_hit,bill_ids(iter));
         fprintf([delete_str,print_str]);
@@ -179,10 +197,12 @@ if isempty(files) || obj.recompute_ELO
     print_str = sprintf('%s Done - %i bills! %0.3f\n',chamber,bill_hit,timed);
     fprintf([delete_str,print_str]);
     
-    elo_score.names = obj.getSponsorName(elo_score.Properties.RowNames);
+    elo_score.difference = elo_score.score_variable_k - elo_score.score_fixed_k;    
+    elo_score.name       = obj.getSponsorName(elo_score.Properties.RowNames);
     
-    elo_score = sortrows(elo_score,'score','descend');
-    
+    elo_score = join(chamber_people,elo_score);
+    elo_score = sortrows(elo_score,'score_variable_k','descend');
+
     save(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))),'elo_score');
 else
     data = load(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))));

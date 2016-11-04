@@ -48,6 +48,8 @@ classdef IN < state
             addOptional(in,'generate_outputs',0,@islogical);
             addOptional(in,'predict_montecarlo',0,@islogical);
             addOptional(in,'recompute_montecarlo',0,@islogical);
+            addOptional(in,'predict_ELO',0,@islogical);
+            addOptional(in,'recompute_ELO',0,@islogical);
             parse(in,varargin{:});
             
             obj.reprocess            = in.Results.reprocess;        % Flag to launch the base forge process to read in the data
@@ -55,6 +57,8 @@ classdef IN < state
             obj.generate_outputs     = in.Results.generate_outputs; % Flag to generate all of the charts and outputs (note: there are outputs that this does not prevent)
             obj.predict_montecarlo   = in.Results.predict_montecarlo;
             obj.recompute_montecarlo = in.Results.recompute_montecarlo;
+            obj.predict_ELO          = in.Results.predict_ELO;
+            obj.recompute_ELO        = in.Results.recompute_ELO;
             
             obj.state       = 'IN'; % state
             obj.senate_size = 50;   % number of seats in the Senate (upper chamber)
