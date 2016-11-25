@@ -23,7 +23,7 @@ classdef forge < handle
         
         sponsor_filter % the minimum bill number for sponsorship
         
-        state % the state of interest
+        state_ID % the state of interest
         
         make_gifs       % flag to generate gifs
         make_histograms % flag to generate histograms
@@ -41,7 +41,7 @@ classdef forge < handle
         house_size  % lower
         
         learning_algorithm_data  % storage for the learning algorithm data
-        learning_algorithm_exist = true; % flag to look for existing learning algorithm data, default to true
+        learning_algorithm_exist % flag to look for existing learning algorithm data, default to true
         
         % all of the input flags
         generate_outputs
@@ -59,7 +59,7 @@ classdef forge < handle
     
     properties (Constant)
         % PARTY_KEY will have issues with non-primary parties
-        PARTY_KEY = containers.Map({'0','1','Democrat','Republican'},{'Democrat','Republican',0,1})
+        PARTY_KEY = containers.Map({'0','1','2','Democrat','Republican','Independent'},{'Democrat','Republican','Independent',0,1,2})
         
         % Key to filter vote types
         VOTE_KEY  = containers.Map({'1','2','3','4','yea','nay','absent','no vote'},{'yea','nay','absent','no vote',1,2,3,4});
@@ -70,28 +70,28 @@ classdef forge < handle
         % - fix dates, Legiscan switches between M/D/YYYY and YYYY-MM-DD.
         %   We want the latter so we can easily sort by date
         % - differentiate between ammendment votes and third reading votes
-        %       HALF DONE - accomplished by text searching for "THIRD
-        %       READING" which works decently well
+        %       HALF DONE - accomplished by text searching for "THIRD" or
+        %       "3RD" or "ON PASSAGE" which works decently well
         % - generate committee membership lists
         
         function init(obj)
             % Process new information
-            if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state),'file') ~= 2
+            if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state_ID),'file') ~= 2
                 
                 % Read-in major information groups from the LegiscanData
-                bills_create     = obj.readAllFilesOfSubject('bills',obj.state);
-                people_create    = obj.readAllFilesOfSubject('people',obj.state);
-                rollcalls_create = obj.readAllFilesOfSubject('rollcalls',obj.state);
+                bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);
+                people_create    = obj.readAllFilesOfSubject('people',obj.state_ID);
+                rollcalls_create = obj.readAllFilesOfSubject('rollcalls',obj.state_ID);
                 
                 % Add some additional information to the rollcall data
-                rollcalls_create.senate      = strncmpi(rollcalls_create{:,'description'},{'S'},1);
                 rollcalls_create.total_vote  = rollcalls_create.yea + rollcalls_create.nay;
                 rollcalls_create.yes_percent = rollcalls_create.yea ./ rollcalls_create.total_vote;
+                rollcalls_create.senate      = rollcalls_create.total_vote <= obj.senate_size; % THIS IS PROBLEMATIC - will bork with committees but it's the only way (that I can think of right now) to do it abstractable
                 
                 % Read-in major information groups from the LegiscanData
-                sponsors_create = obj.readAllFilesOfSubject('sponsors',obj.state);
-                votes_create    = obj.readAllFilesOfSubject('votes',obj.state);
-                history_create  = obj.readAllFilesOfSubject('history',obj.state);
+                sponsors_create = obj.readAllFilesOfSubject('sponsors',obj.state_ID);
+                votes_create    = obj.readAllFilesOfSubject('votes',obj.state_ID);
+                history_create  = obj.readAllFilesOfSubject('history',obj.state_ID);
                 
                 % Create the key map
                 bill_set_create = containers.Map('KeyType','int32','ValueType','any');
@@ -151,9 +151,14 @@ classdef forge < handle
                 print_str = sprintf('Done! %i bills\n',i);
                 fprintf([delete_str,print_str]);
                 
-                save(sprintf('data/%s/processed_data.mat',obj.state),'bills_create','history_create','people_create','rollcalls_create','sponsors_create','votes_create','bill_set_create')
+                if ~isdir(sprintf('data/%s',obj.state_ID'))
+                    mkdir(sprintf('data/%s',obj.state_ID'));
+                    addpath(sprintf('data/%s',obj.state_ID));
+                end
+                
+                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','history_create','people_create','rollcalls_create','sponsors_create','votes_create','bill_set_create')
             else % Load the saved information
-                load(sprintf('data/%s/processed_data',obj.state))
+                load(sprintf('data/%s/processed_data',obj.state_ID))
             end
             
             % Move all of the temporary information into the object
@@ -170,7 +175,7 @@ classdef forge < handle
     methods (Static)
         function output = readAllFilesOfSubject(type,state)
             % initialize the full file list and output matrix
-            directory = sprintf('data/%s/legiscan',state);
+            directory = sprintf('legiscan_data/%s/',state);
             list   = dir(directory);
             output = [];
             

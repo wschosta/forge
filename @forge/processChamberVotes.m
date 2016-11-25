@@ -50,7 +50,7 @@ for i = bill_keys
         sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} = sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} + 1;
         
         %%% COMMITTEE INFORMATION - TODO probably can collapse this into a common function with the chamber data
-        is_committee_votes = 0;
+        is_committee_votes = 0; %TEST
         
         for j = 1:length(obj.bill_set(i).(chamber_data).committee_votes)
             
@@ -91,6 +91,7 @@ for i = bill_keys
             % Place that information into possible votes matrix
             committee_sponsor_votes  = obj.addVotes(committee_sponsor_votes,sponsor_ids,[committee_yes_ids ; committee_no_ids]);
         end
+        is_committee_votes = 1; %TEST
         
         %%% CHAMBER INFORMATION
         is_chamber_votes = 0;
@@ -98,7 +99,7 @@ for i = bill_keys
             % so it's sort of pointless to do the loop and then
             % only process the last bill but I want to preserve
             % the functionality
-            if isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(j).description{:}),'(THIRD|3RD)','once'))
+            if isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(j).description{:}),'(THIRD|3RD|ON PASSAGE)','once'))
                 continue
             end
             
@@ -133,13 +134,13 @@ for i = bill_keys
         
         if is_chamber_votes && is_committee_votes
             % Generate the consistency information
-            joined_set = [committee_yes_ids;committee_no_ids];
-            joined_set = joined_set(ismember(joined_set,[yes_ids;no_ids]));
-            
-            consistency_matrix{joined_set,'opportunity'} = consistency_matrix{joined_set,'opportunity'} + 1;
-            
-            matched_set = [committee_yes_ids(ismember(committee_yes_ids,yes_ids)) ; committee_no_ids(ismember(committee_no_ids,no_ids))];
-            consistency_matrix{matched_set,'consistency'} = consistency_matrix{matched_set,'consistency'} + 1;
+%             joined_set = [committee_yes_ids;committee_no_ids];
+%             joined_set = joined_set(ismember(joined_set,[yes_ids;no_ids]));
+%             
+%             consistency_matrix{joined_set,'opportunity'} = consistency_matrix{joined_set,'opportunity'} + 1;
+%             
+%             matched_set = [committee_yes_ids(ismember(committee_yes_ids,yes_ids)) ; committee_no_ids(ismember(committee_no_ids,no_ids))];
+%             consistency_matrix{matched_set,'consistency'} = consistency_matrix{matched_set,'consistency'} + 1;
             
             bill_count = bill_count + 1;
             bill_ids(bill_count) = i;

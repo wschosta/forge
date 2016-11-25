@@ -33,7 +33,7 @@ end
 % Check for a third reading vote
 legislator_list = [];
 for i = length(bill_information.(chamber_data).chamber_votes):-1:1
-    if ~isempty(regexp(upper(bill_information.(chamber_data).chamber_votes(i).description{:}),'THIRD READING','once'))
+    if ~isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(i).description{:}),'(THIRD|3RD|ON PASSAGE)','once'))
         bill_yes_ids = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).yes_list,ids);
         bill_no_ids  = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).no_list,ids);
         

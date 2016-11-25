@@ -6,11 +6,7 @@ fclose all; close all; clc; clear all;
 
 master = tic;
 
-IN_obj = IN();
-CA_obj = CA();
-OH_obj = OH();
-
-states = {IN_obj CA_obj OH_obj};
+states = {'IN' 'CA' 'OH'};
 
 errors = {};
 
@@ -20,25 +16,28 @@ for j = 1:length(monte_carlo_number_list)
     for i = 1:length(states)
         close all; fclose all;
         
-        state = tic;
-        fprintf('\n\n**************************************RUN FOR %s**************************************\n',states{i}.state)
-        states{i}.recompute = false;
-        states{i}.reprocess = false;
-        states{i}.generate_outputs = false;
-        states{i}.predict_montecarlo = false;
-        states{i}.recompute_montecarlo = false;
+        state_time = tic;
+        fprintf('\n\n**************************************RUN FOR %s**************************************\n',states{i})
         
-        states{i}.monte_carlo_number = monte_carlo_number_list(j);
+        a = state(states{i});
+        
+        a.recompute = false;
+        a.reprocess = false;
+        a.generate_outputs = false;
+        a.predict_montecarlo = false;
+        a.recompute_montecarlo = false;
+        
+        a.monte_carlo_number = monte_carlo_number_list(j);
         
         try
             states{i}.run();
             
-            fprintf('**************************************%s COMPLETE!**************************************\n',states{i}.state)
-            toc(state)
+            fprintf('**************************************%s COMPLETE!**************************************\n',states{i})
+            toc(state_time)
         catch e
             warning('ERROR: %s',e.message)
-            fprintf('**************************************%s FAILED!**************************************\n',states{i}.state)
-            toc(state)
+            fprintf('**************************************%s FAILED!**************************************\n',states{i})
+            toc(state_time)
             errors{end+1} = e; %#ok<SAGROW>
         end
     end
