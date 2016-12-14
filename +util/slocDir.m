@@ -1,121 +1,117 @@
 %SLOCDIR Counts number source lines of code.
-%   LOCSUM = SLOCDIR(VARARGIN) returns the line count for directory tree.
-%   If there are multiple functions in one file, subfunctions are not
-%   counted separately, but rather together.
-%
-%   This function calls SLOC to count lines of code on an individual file.
-%   SLOC was obtained from the File Exchange on MATLAB Central, and it
-%   was written by Raymond Norris of MathWorks Inc.
-%
-%   The following statistics are calculated for a directory tree
-%       - sum of lines of code from all mfiles in the directory tree
-%       - sum of lines of code from all mfiles in parent directory
-%       - sum of lines of code from all mfiles in subdirectories
-%       - lines of code in each mfile in directory tree
-%
-%   The output of this function can either be to a text file or the
-%   MATLAB command prompt or both.
-%
-%   LOCSUM = SLOCDIR(DIRECTORY)
-%   Searches directory tree for and outputs results to command line
-%
-%   LOCSUM = SLOCDIR(DIRECTORY, OUTPUTFILE)
-%   DIRECTORY and it's subfolders are searched.  The results are output
-%   to the text file, OUTPUTFILE, and to the command line.
-%
-%   LOCSUM = SLOCDIR(DIRECTORY, OUTPUTFILE, CMDWINDOW_FLAG)
-%   DIRECTORY and it's subfolders are searched.  The results are output
-%   to the text file, OUTPUTFILE.  If CMDWINDOW_FLAG is true, the
-%   results are also output to the command line.
-%
-%
-%   Examples:
-%   ========
-%       locsum = slocdir(‘c:\work’);
-%       locsum = slocDir('C:\work', 'workspace_SLOC.txt');
-%       locsum = slocDir('C:\work', 'workspace_SLOC.txt', false);
-%
-%
-%   David Roberts
-%   MITRE Corporation/CAAASD 2009
-%   Revision: 1.0 Date: 2009/04/15
-%
-%
-%   Rewritten to eliminate dumb global variables and other stupid coding
-%   practices - Walter Schostak
+function locSum = slocDir(directory)
 
-function locSum = slocDir(varargin)
+locSum = [0 0 0 0];
 
-MAXNUMOFSUBDIRS = 1000;
-
-directoryStr =    varargin{1};
-
-subDirectoryCellArr = cell(1,MAXNUMOFSUBDIRS);
-currCellIndex       = 0;
-
-locSum = slocSubDir(directoryStr);
-
-outputLocStats(directoryStr, locSum);
-
-% fill subDirectoryCellArr with all paths of subdirectories
-currCellIndex = walkIn(subDirectoryCellArr,directoryStr, currCellIndex);
-
-% search subdirectories and count LOC of mfiles
-for ii = 1:currCellIndex
-    loc     = slocSubDir(subDirectoryCellArr{ii});
-    locSum  = loc + locSum;
+if any(strfind(directory(end),'.'))
+    return;
 end
 
-% output total LOC for all mfile contained in directoryStr and its subfolders
-outputLocStats(directoryStr, locSum);
-end
+list = dir(directory);
 
-
-function [subDirectoryCellArr,currCellIndex] = walkIn(subDirectoryCellArr,root, currCellIndex)
-
-if root(end) ~= filesep
-    root(end+1) = filesep;
-end
-
-dirListing  = dir([root '*']);
-
-for ii=1:length(dirListing)
-    if dirListing(ii).isdir
-        if dirListing(ii).name(1) ~= '.'
-            % Add this folder path to listing of subdirectories
-            currCellIndex                       = currCellIndex +1;
-            subDirectoryCellArr{currCellIndex}  = [root dirListing(ii).name];
-            
-            % Look in this folder for more subdirectories
-            [subDirectoryCellArr,currCellIndex] = walkIn(subDirectoryCellArr{currCellIndex}, currCellIndex);
-        end
+for i = 1:length(list)
+    if list(i).isdir
+        locSum = locSum + util.slocDir([directory '\' list(i).name]);
+    elseif any(strfind(list(i).name(end-1:end),'.m'))
+        [s, c, b, t] = sloc([directory '\' list(i).name]);
+        locSum = [locSum(1) + s locSum(2) + c locSum(3) + b locSum(4) + t];
     end
-end
-
-end
-
-
-function loc = slocSubDir(directoryStr)
-
-loc     = 0;
-
-if directoryStr(end) ~= filesep
-    directoryStr(end+1) = filesep;
-end
-
-mfiles  = dir([directoryStr '*.m']);
-for ii = 1:length(mfiles)
-    pathname    = [directoryStr mfiles(ii).name];
-    locFile     = sloc(pathname);
-    loc         = loc + locFile;
     
-    outputLocStats(pathname, locFile);
 end
 
 end
 
-function outputLocStats(pathname, locSum)
+function [sl, cl, bl, tl] = sloc(file)
+%SLOC Counts number source lines of code.
+%   SL = SLOC(FILE) returns the line count for FILE.  If there are multiple
+%   functions in one file, subfunctions are not counted separately, but
+%   rather together.
+%
+%   The following lines are not counted as a line of code:
+%   (1) The "function" line
+%   (2) A line that is continued from the previous line --> ...
+%   (3) A comment line, a line that starts with --> % or a line that is
+%       part of a block comment (   %{...%}   )
+%   (4) A blank line
+%
+%   Note: If more than one statement is on the line, it counts that as one
+%   line of code.  For instance the following:
+%
+%        minx = 32; maxx = 100;
+%
+%   is considered to be one line of code.  Also, if the creation of a
+%   matrix is continued onto several line without the use of '...', SLOC
+%   will deem that as separate lines of code.  Using '...' will "tie" the
+%   lines together.
+%
+%   Example:
+%   ========
+%      sl = sloc('sloc')
+%      sl =
+%                41
 
-fprintf('%s : %d LOC\n',pathname, locSum);
+%   Copyright 2004-2005 MathWorks, Inc.
+%   Raymond S. Norris (rayn@mathworks.com)
+%   $Revision: 1.4 $ $Date: 2006/03/08 19:50:30 $
+
+% Check to see if the ".m" is missing from the M-file name
+fid = fopen(file,'r');
+
+sl = 0;
+cl = 0;
+bl = 0;
+
+previous_line = '-99999';
+inblockcomment = false;
+
+while true
+    
+    % Get the next line
+    m_line = fgetl(fid);
+    
+    % If line is -1, we've reached the end of the file
+    if m_line==-1
+        break
+    end
+    
+    % The Profiler doesn't include the "function" line of a function, so
+    % skip it.  Because nested functions may be indented, trim the front of
+    % the line of code.  Since we are string trimming the line, we may as
+    % well check here if the resulting string it empty.  If any of the above
+    % is true, just continue onto the next line.
+    m_line = strtrim(m_line);
+    if strncmp(m_line,'function ',9) || isempty(m_line)
+        bl = bl + 1;
+        continue
+    end
+    
+    % In R14, block comments where introduced ( %{...%} )
+    if length(m_line)>1 && ...
+            strcmp(m_line(1:2),'%{')
+        inblockcomment = true;
+    elseif length(previous_line)>1 && ...
+            strcmp(previous_line(1:2),'%}')
+        inblockcomment = false;
+    end
+    
+    % Check if comment line or if line continued from previous line
+    if ~strcmp(m_line(1),'%') && ...
+            ~(length(previous_line)>2 && ...
+            strcmp(previous_line(end-2:end),'...') && ...
+            ~strcmp(previous_line(1),'%')) && ...
+            ~inblockcomment
+        sl = sl+1;
+    else
+        cl = cl+1;
+    end
+    
+    % Keep track of current line to see if the next line is a continuation
+    % of the current
+    previous_line = m_line;
+end
+
+tl = sl + cl + bl;
+
+fclose(fid);
 
 end
