@@ -17,7 +17,7 @@ while(~isempty(dir_list))
         % add it to the path
         addpath(a_dir)
     end
-
+    
 end
 
 userpath(pwd);
