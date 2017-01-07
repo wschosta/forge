@@ -1,7 +1,7 @@
 classdef forge < handle
     % FORGE
     % Driving superclass for the Forge Project
-    % 
+    %
     % Developed by Walter Schostak and Eric Waltenburg
     %
     % See also IN
@@ -36,7 +36,7 @@ classdef forge < handle
         prediction_directory
         elo_directory
         
-        % information about the size of each chamber 
+        % information about the size of each chamber
         senate_size % upper
         house_size  % lower
         
@@ -59,7 +59,7 @@ classdef forge < handle
     
     properties (Constant)
         % PARTY_KEY will have issues with non-primary parties
-        PARTY_KEY = containers.Map({'0','1','2','Democrat','Republican','Independent'},{'Democrat','Republican','Independent',0,1,2})
+        PARTY_KEY = containers.Map({'0','1','2','Democrat','Republican','Independent'},{'Democrat','Republican','Independent',0,1,2});
         
         % Key to filter vote types
         VOTE_KEY  = containers.Map({'1','2','3','4','yea','nay','absent','no vote'},{'yea','nay','absent','no vote',1,2,3,4});
@@ -76,99 +76,106 @@ classdef forge < handle
         
         function init(obj)
             % Process new information
+            JSON_Read = false;
             if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state_ID),'file') ~= 2
                 
                 % Read-in major information groups from the LegiscanData
-                bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);
-                people_create    = obj.readAllFilesOfSubject('people',obj.state_ID);
-                rollcalls_create = obj.readAllFilesOfSubject('rollcalls',obj.state_ID);
-                
-                % Add some additional information to the rollcall data
-                rollcalls_create.total_vote  = rollcalls_create.yea + rollcalls_create.nay;
-                rollcalls_create.yes_percent = rollcalls_create.yea ./ rollcalls_create.total_vote;
-                rollcalls_create.senate      = rollcalls_create.total_vote <= obj.senate_size; % THIS IS PROBLEMATIC - will bork with committees but it's the only way (that I can think of right now) to do it abstractable
-                
-                % Read-in major information groups from the LegiscanData
-                sponsors_create = obj.readAllFilesOfSubject('sponsors',obj.state_ID);
-                votes_create    = obj.readAllFilesOfSubject('votes',obj.state_ID);
-                history_create  = obj.readAllFilesOfSubject('history',obj.state_ID);
-                
-                % Create the key map
-                bill_set_create = containers.Map('KeyType','int32','ValueType','any');
-                
-                delete_str = '';
-                for i = 1:length(bills_create.bill_id)
+                if JSON_Read
+                    [bills_create, people_create, votes_create] = obj.readAllInfo(obj.state_ID); %#ok<UNRCH>
+                else
+                    bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);
+                    people_create    = obj.readAllFilesOfSubject('people',obj.state_ID);
+                    rollcalls_create = obj.readAllFilesOfSubject('rollcalls',obj.state_ID);
                     
-                    % Screen updates
-                    print_str = sprintf('%i',i);
+                    % Add some additional information to the rollcall data
+                    rollcalls_create.total_vote  = rollcalls_create.yea + rollcalls_create.nay;
+                    rollcalls_create.yes_percent = rollcalls_create.yea ./ rollcalls_create.total_vote;
+                    rollcalls_create.senate      = rollcalls_create.total_vote <= obj.senate_size; % THIS IS PROBLEMATIC - will bork with committees but it's the only way (that I can think of right now) to do it abstractable
+                    
+                    % Read-in major information groups from the LegiscanData
+                    sponsors_create = obj.readAllFilesOfSubject('sponsors',obj.state_ID);
+                    votes_create    = obj.readAllFilesOfSubject('votes',obj.state_ID);
+                    history_create  = obj.readAllFilesOfSubject('history',obj.state_ID);
+                    
+                    % Create the key map
+                    bill_set_create = containers.Map('KeyType','int32','ValueType','any');
+                    
+                    delete_str = '';
+                    for i = 1:length(bills_create.bill_id)
+                        
+                        % Screen updates
+                        print_str = sprintf('%i',i);
+                        fprintf([delete_str,print_str]);
+                        delete_str = repmat(sprintf('\b'),1,length(print_str));
+                        
+                        % Populate the bill template
+                        template = util.templates.getBillTemplate();
+                        template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
+                        template.bill_number    = bills_create{i,'bill_number'};
+                        template.title          = bills_create{i,'title'};
+                        if obj.learning_algorithm_exist
+                            template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
+                        end
+                        template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
+                        template.history  = sortrows(history_create(bills_create{i,'bill_id'} == history_create.bill_id,:),'date');
+                        if ~isempty(template.history)
+                            template.date_introduced  = template.history{1,'date'};
+                            template.date_last_action = template.history{end,'date'};
+                        end
+                        template.passed_house  = -1;
+                        template.passed_senate = -1;
+                        template.passed_both   = -1;
+                        template.complete      = 0; % Flag to check whether or not the bill information is complete
+                        bill_rollcalls = sortrows(rollcalls_create(rollcalls_create.bill_id == bills_create{i,'bill_id'},:),'date');
+                        
+                        % Process House data
+                        house_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
+                        if ~isempty(house_rollcalls)
+                            template.house_data   = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*obj.committee_threshold);
+                            template.passed_house = (template.house_data.final_yes_percentage > 0.5);
+                        end
+                        
+                        % Process Senate data
+                        senate_rollcalls = bill_rollcalls(bill_rollcalls.senate == 1,:);
+                        if ~isempty(senate_rollcalls)
+                            template.senate_data   = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*obj.committee_threshold);
+                            template.passed_senate = (template.senate_data.final_yes_percentage > 0.5);
+                        end
+                        
+                        % Check to see if the bill passed both the House and
+                        % Senate
+                        if (template.passed_senate ~= -1) && (template.passed_house ~= -1)
+                            template.passed_both = (template.passed_senate && template.passed_house);
+                            template.complete    = 1;
+                        end
+                        
+                        % Store the bill infomration in the containers map
+                        bill_set_create(bills_create{i,'bill_id'}) = template;
+                    end
+                    print_str = sprintf('Done! %i bills\n',i);
                     fprintf([delete_str,print_str]);
-                    delete_str = repmat(sprintf('\b'),1,length(print_str));
-
-                    % Populate the bill template
-                    template = util.templates.getBillTemplate();
-                    template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
-                    template.bill_number    = bills_create{i,'bill_number'};
-                    template.title          = bills_create{i,'title'};
-                    if obj.learning_algorithm_exist
-                        template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
-                    end
-                    template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
-                    template.history  = sortrows(history_create(bills_create{i,'bill_id'} == history_create.bill_id,:),'date');
-                    if ~isempty(template.history)
-                        template.date_introduced  = template.history{1,'date'};
-                        template.date_last_action = template.history{end,'date'};
-                    end
-                    template.passed_house  = -1;
-                    template.passed_senate = -1;
-                    template.passed_both   = -1;
-                    template.complete      = 0; % Flag to check whether or not the bill information is complete
-                    bill_rollcalls = sortrows(rollcalls_create(rollcalls_create.bill_id == bills_create{i,'bill_id'},:),'date');
-                    
-                    % Process House data
-                    house_rollcalls = bill_rollcalls(bill_rollcalls.senate == 0,:);
-                    if ~isempty(house_rollcalls)
-                        template.house_data   = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*obj.committee_threshold);
-                        template.passed_house = (template.house_data.final_yes_percentage > 0.5);
-                    end
-                    
-                    % Process Senate data
-                    senate_rollcalls = bill_rollcalls(bill_rollcalls.senate == 1,:);
-                    if ~isempty(senate_rollcalls)
-                        template.senate_data   = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*obj.committee_threshold);
-                        template.passed_senate = (template.senate_data.final_yes_percentage > 0.5);
-                    end
-                    
-                    % Check to see if the bill passed both the House and
-                    % Senate
-                    if (template.passed_senate ~= -1) && (template.passed_house ~= -1)
-                        template.passed_both = (template.passed_senate && template.passed_house);
-                        template.complete    = 1;
-                    end
-                    
-                    % Store the bill infomration in the containers map
-                    bill_set_create(bills_create{i,'bill_id'}) = template;
                 end
-                print_str = sprintf('Done! %i bills\n',i);
-                fprintf([delete_str,print_str]);
                 
                 if ~isdir(sprintf('data/%s',obj.state_ID'))
                     mkdir(sprintf('data/%s',obj.state_ID'));
                     addpath(sprintf('data/%s',obj.state_ID));
                 end
                 
-                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','history_create','people_create','rollcalls_create','sponsors_create','votes_create','bill_set_create')
+                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create')
             else % Load the saved information
                 load(sprintf('data/%s/processed_data',obj.state_ID))
             end
             
             % Move all of the temporary information into the object
             obj.bills     = bills_create;
-            obj.history   = history_create;
             obj.people    = people_create;
-            obj.rollcalls = rollcalls_create;
-            obj.sponsors  = sponsors_create;
             obj.votes     = votes_create;
-            obj.bill_set  = bill_set_create;
+            if ~JSON_Read
+                obj.history   = history_create;
+                obj.rollcalls = rollcalls_create;
+                obj.sponsors  = sponsors_create;
+                obj.bill_set  = bill_set_create;
+            end
         end
     end
     
@@ -204,6 +211,148 @@ classdef forge < handle
                         output = readtable(sprintf('%s/%s/csv/%s.csv',directory,list(i).name,type));
                         output.year = ones(height(output),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
                     end
+                end
+            end
+        end
+        
+        function [bills, people, votes] = readAllInfo(state)
+            directory = sprintf('legiscan_data/%s/',state);
+            list   = dir(directory);
+            
+            bills  = containers.Map('KeyType','int32','ValueType','any');
+            votes  = containers.Map('KeyType','int32','ValueType','any');
+            people = containers.Map('KeyType','int32','ValueType','any');
+            
+            for i = 1:length(list)
+                if ~isempty(regexp(list(i).name,'(\d+)-(\d+)_.*','once'))
+                    bill_list = dir([directory list(i).name '/bill/']);
+                    vote_list = dir([directory list(i).name '/vote/']);
+                    people_list = dir([directory list(i).name '/people/']);
+                    
+                    delete_str = '';
+                    count = 1;
+                    for j = 1:length(bill_list)
+                        if ~isempty(regexp(bill_list(j).name,'.json','once'))
+                            tmp = util.readJSON([bill_list(j).folder '/' bill_list(j).name]);
+                            
+                            if iscell(tmp.committee)
+                                tmp.committee = [tmp.committee{:}];
+                            end
+                            
+                            tmp.history       = [tmp.history{:}];
+                            tmp.sponsors      = [tmp.sponsors{:}];
+                            tmp.sasts         = [tmp.sasts{:}];
+                            tmp.subjects      = [tmp.subjects{:}];
+                            tmp.texts         = [tmp.texts{:}];
+                            tmp.votes         = [tmp.votes{:}];
+                            tmp.amendments    = [tmp.amendments{:}];
+                            tmp.supplements   = [tmp.supplements{:}];
+                            tmp.calendar      = [tmp.calendar{:}];
+                            tmp.passed_house  = -1;
+                            tmp.passed_senate = -1;
+                            
+                            vote_master = [];
+                            house_data  = [];
+                            senate_data = [];
+                            
+                            for k = 1:length(tmp.votes)
+                                roll_call = tmp.votes(k).roll_call_id;
+                                
+                                vote_tmp = util.readJSON([directory list(i).name '/vote/' sprintf('%i',roll_call) '.json']);
+                                
+                                if ~isempty(vote_tmp.desc)
+                                    switch vote_tmp.desc(1)
+                                        case 'H'
+                                            house_data = [house_data vote_tmp]; %#ok<AGROW>
+                                        case 'S'
+                                            senate_data = [senate_data vote_tmp]; %#ok<AGROW>
+                                    end
+                                    
+                                    if ~isempty(regexp(upper(vote_tmp.desc),'(THIRD|3RD)','once'))
+                                        switch vote_tmp.desc(1)
+                                            case 'H'
+                                                tmp.passed_house  = vote_tmp.passed;
+                                                tmp.house_percent = vote_tmp.yea / (vote_tmp.yea + vote_tmp.nay);
+                                            case 'S'
+                                                tmp.passed_senate  = vote_tmp.passed;
+                                                tmp.senate_percent = vote_tmp.yea / (vote_tmp.yea + vote_tmp.nay);
+                                        end
+                                    end
+                                end
+                                
+                                vote_master = [vote_master vote_tmp]; %#ok<AGROW>
+                            end
+                            tmp.rollcall    = vote_master;
+                            tmp.house_data  = house_data;
+                            tmp.senate_data = senate_data;
+                            
+                            bills(tmp.bill_id) = tmp;
+                            
+                            if (tmp.passed_senate ~= -1) && (tmp.passed_house ~= -1)
+                                tmp.passed_both = (tmp.passed_senate && tmp.passed_house);
+                            end
+                            
+                            tmp.complete = ~isempty(tmp.committee) && ~isempty(tmp.sponsors) && ~isempty(tmp.subjects); % might not be a complete list
+                            
+                            print_str = sprintf('%i',count);
+                            fprintf([delete_str,print_str]);
+                            delete_str = repmat(sprintf('\b'),1,length(print_str));
+                            count = count + 1;
+                        end
+                    end
+                    print_str = sprintf('Done! %i bills\n',count-1);
+                    fprintf([delete_str,print_str]);
+                    
+                    delete_str = '';
+                    count = 1;
+                    for j = 1:length(vote_list)
+                        if ~isempty(regexp(vote_list(j).name,'.json','once'))
+                            tmp = util.readJSON([vote_list(j).folder '/' vote_list(j).name]);
+                            
+                            votes(tmp.roll_call_id) = tmp;
+                            
+                            print_str = sprintf('%i',count);
+                            fprintf([delete_str,print_str]);
+                            delete_str = repmat(sprintf('\b'),1,length(print_str));
+                            count = count + 1;
+                        end
+                    end
+                    print_str = sprintf('Done! %i votes\n',count-1);
+                    fprintf([delete_str,print_str]);
+                    
+                    delete_str = '';
+                    count = 1;
+                    for j = 1:length(people_list)
+                        if ~isempty(regexp(people_list(j).name,'.json','once'))
+                            tmp = util.readJSON([people_list(j).folder '/' people_list(j).name]);
+                            
+                            hit = 1;
+                            keys = 0;
+                            if isempty(people.keys)
+                                hit = 0;
+                            else
+                                keys = people.keys;
+                                keys = keys{:};
+                            end
+                            
+                            if hit && ismember(keys,tmp.people_id)
+                                person = people(tmp.people_id);
+                                person.last_year = str2double(list(i).name(1:4));
+                                people(tmp.people_id) = person;
+                            else
+                                tmp.first_year = str2double(list(i).name(1:4));
+                                tmp.last_year = str2double(list(i).name(1:4));
+                                people(tmp.people_id) = tmp;
+                            end
+                            
+                            print_str = sprintf('%i',count);
+                            fprintf([delete_str,print_str]);
+                            delete_str = repmat(sprintf('\b'),1,length(print_str));
+                            count = count + 1;
+                        end
+                    end
+                    print_str = sprintf('Done! %i people\n',count-1);
+                    fprintf([delete_str,print_str]);
                 end
             end
         end
