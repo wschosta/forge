@@ -192,21 +192,28 @@ classdef forge < handle
                 if ~isempty(regexp(list(i).name,'(\d+)-(\d+)_.*','once'))
                     if istable(output) % if the output file exists, append
                         new_table = readtable(sprintf('%s/%s/csv/%s.csv',directory,list(i).name,type));
-                        new_table.year = ones(height(new_table),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
-                        
-                        field_match = ~ismember(output.Properties.VariableNames,new_table.Properties.VariableNames);
-                        
-                        for j = find(field_match)
-                            if isa(output.(output.Properties.VariableNames{j})(1),'cell')
-                                new_table.(output.Properties.VariableNames{j}) = cell(height(new_table),1);
-                            elseif isa(output.(output.Properties.VariableNames{j})(1),'double')
-                                new_table.(output.Properties.VariableNames{j}) = NaN(height(new_table),1);
-                            else
-                                error('DATA TYPE NOT RECOGNIZED!')
+                        if ~isempty(new_table)
+                            new_table.year = ones(height(new_table),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
+                            
+                            field_match = ~ismember(output.Properties.VariableNames,new_table.Properties.VariableNames);
+                            
+                            for j = find(field_match)
+                                if isa(output.(output.Properties.VariableNames{j})(1),'cell')
+                                    new_table.(output.Properties.VariableNames{j}) = cell(height(new_table),1);
+                                elseif isa(output.(output.Properties.VariableNames{j})(1),'double')
+                                    new_table.(output.Properties.VariableNames{j}) = NaN(height(new_table),1);
+                                else
+                                    error('DATA TYPE NOT RECOGNIZED!')
+                                end
+                            end
+                            
+                            try
+                            output = [output;new_table]; %#ok<AGROW>
+                            catch
+                                keyboard
                             end
                         end
-                        
-                        output = [output;new_table]; %#ok<AGROW>
+                        new_table = []; %#ok<NASGU>
                     else % if it doesn't exist, create it
                         output = readtable(sprintf('%s/%s/csv/%s.csv',directory,list(i).name,type));
                         output.year = ones(height(output),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
@@ -419,7 +426,9 @@ classdef forge < handle
         function [people_matrix] = normalizeVotes(people_matrix,vote_matrix)
             % Element-wise divide. This will take divide each value by the
             % possible value (person-vote total)/(possible vote total)
-            people_matrix{:,:} = people_matrix{:,:} ./ vote_matrix{:,:};
+            if ~isempty(people_matrix) && ~isempty(vote_matrix)
+                people_matrix{:,:} = people_matrix{:,:} ./ vote_matrix{:,:};
+            end
         end
     end
 end

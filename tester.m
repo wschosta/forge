@@ -6,7 +6,7 @@ fclose all; close all; clc; clear all;
 
 master = tic;
 
-states = {'IN' 'CA' 'OH'};
+states = {'WI' 'US' 'CA' 'IN' 'KY' 'ME' 'MT' 'NY' 'OH' 'OR' 'VT'};
 
 errors = {};
 
@@ -21,25 +21,25 @@ for j = 1:length(monte_carlo_number_list)
         
         a = state(states{i});
         
-        a.recompute = false;
-        a.reprocess = false;
-        a.generate_outputs = false;
+        a.recompute = true;
+        a.reprocess = true;
+        a.generate_outputs = true;
         a.predict_montecarlo = false;
         a.recompute_montecarlo = false;
         
         a.monte_carlo_number = monte_carlo_number_list(j);
         
-        try
-            states{i}.run();
+%         try
+            a.run();
             
             fprintf('**************************************%s COMPLETE!**************************************\n',states{i})
             toc(state_time)
-        catch e
-            warning('ERROR: %s',e.message)
-            fprintf('**************************************%s FAILED!**************************************\n',states{i})
-            toc(state_time)
-            errors{end+1} = e; %#ok<SAGROW>
-        end
+%         catch e
+%             warning('ERROR: %s',e.message)
+%             fprintf('**************************************%s FAILED!**************************************\n',states{i})
+%             toc(state_time)
+%             errors{end+1} = e; %#ok<SAGROW>
+%         end
     end
 end
 close all; fclose all;

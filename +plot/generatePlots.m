@@ -4,7 +4,7 @@ function generatePlots(outputs_directory,histogram_directory,people_matrix,label
 % histograms. The arugments essentially make it possible to properly label
 % each axis.
 
-if ~isempty(people_matrix)
+if ~isempty(people_matrix) && size(people_matrix{:,:},1) > 1 && size(people_matrix{:,:},2) > 1
     h = figure();
     hold on
     title(sprintf('%s %s',label_string,specific_label))
@@ -32,7 +32,7 @@ if ~isempty(people_matrix)
         plot.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
     end
 else
-    warning('Empty Matrix')
+    fprintf('WARNING: Empty Matrix %s %s\n',label_string, specific_label)
 end
 
 end

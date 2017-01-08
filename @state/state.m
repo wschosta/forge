@@ -224,7 +224,9 @@ classdef state < forge
                     end
                     
                     % Clean out the histogram directory
+                    warning('off','MATLAB:RMDIR:RemovedFromPath')
                     [~,~,~] = rmdir(obj.histogram_directory,'s');
+                    warning('on','MATLAB:RMDIR:RemovedFromPath')
                     
                     % Set the flag to generate histograms to be true
                     obj.make_histograms = true;
