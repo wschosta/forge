@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HRES</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2014-04-04</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <actionDate>2014-04-01</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <links />
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2014-04-01</actionDate>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <links />
+        <committee />
+        <actionCode>1000</actionCode>
+        <actionDate>2014-04-01</actionDate>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+    </actions>
+    <billNumber>534</billNumber>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2014-04-04</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <latestTitle>A resolution commemorating the 150th anniversary of Mayo Clinic.</latestTitle>
+        <latestAction>
+          <text>Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent.</text>
+          <actionDate>2014-02-10</actionDate>
+        </latestAction>
+        <number>339</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <type>SRES</type>
+        <congress>113</congress>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2014-04-04T18:40:24Z</date>
+                </item>
+              </activities>
+              <systemCode>hsif14</systemCode>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2014-04-01T16:02:25Z</date>
+            </item>
+          </activities>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <identifiers>
+          <lisID>1643</lisID>
+          <gpoId>7876</gpoId>
+          <bioguideId>C001045</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>ANDER</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>R</party>
+        <district>4</district>
+        <fullName>Rep. Crenshaw, Ander [R-FL-4]</fullName>
+        <state>FL</state>
+        <bioguideId>C001045</bioguideId>
+        <lastName>CRENSHAW</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>P000594</bioguideId>
+          <lisID>1930</lisID>
+          <gpoId>8003</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Erik</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Paulsen, Erik [R-MN-3]</fullName>
+        <state>MN</state>
+        <bioguideId>P000594</bioguideId>
+        <lastName>Paulsen</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1733</lisID>
+          <gpoId>8002</gpoId>
+          <bioguideId>K000363</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>John</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>R</party>
+        <district>2</district>
+        <fullName>Rep. Kline, John [R-MN-2]</fullName>
+        <state>MN</state>
+        <bioguideId>K000363</bioguideId>
+        <lastName>Kline</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>P000258</bioguideId>
+          <lisID>910</lisID>
+          <gpoId>8007</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>COLLIN</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>D</party>
+        <district>7</district>
+        <fullName>Rep. Peterson, Collin C. [D-MN-7]</fullName>
+        <state>MN</state>
+        <bioguideId>P000258</bioguideId>
+        <lastName>PETERSON</lastName>
+        <middleName>C.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1857</lisID>
+          <gpoId>8005</gpoId>
+          <bioguideId>E000288</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Keith</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>D</party>
+        <district>5</district>
+        <fullName>Rep. Ellison, Keith [D-MN-5]</fullName>
+        <state>MN</state>
+        <bioguideId>E000288</bioguideId>
+        <lastName>Ellison</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8004</gpoId>
+          <lisID>1653</lisID>
+          <bioguideId>M001143</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>BETTY</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>D</party>
+        <district>4</district>
+        <fullName>Rep. McCollum, Betty [D-MN-4]</fullName>
+        <state>MN</state>
+        <bioguideId>M001143</bioguideId>
+        <lastName>MCCOLLUM</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8006</gpoId>
+          <lisID>1858</lisID>
+          <bioguideId>B001256</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Michele</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Bachmann, Michele [R-MN-6]</fullName>
+        <state>MN</state>
+        <bioguideId>B001256</bioguideId>
+        <lastName>Bachmann</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>867</lisID>
+          <bioguideId>N000127</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>RICHARD</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>D</party>
+        <district>8</district>
+        <fullName>Rep. Nolan, Richard M. [D-MN-8]</fullName>
+        <state>MN</state>
+        <bioguideId>N000127</bioguideId>
+        <lastName>NOLAN</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1994</lisID>
+          <gpoId>7802</gpoId>
+          <bioguideId>S001183</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Schweikert, David [R-AZ-6]</fullName>
+        <state>AZ</state>
+        <bioguideId>S001183</bioguideId>
+        <lastName>Schweikert</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>K000188</bioguideId>
+          <gpoId>8216</gpoId>
+          <lisID>1498</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>RON</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2014-04-01</sponsorshipDate>
+        <party>D</party>
+        <district>3</district>
+        <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
+        <state>WI</state>
+        <bioguideId>K000188</bioguideId>
+        <lastName>KIND</lastName>
+        <middleName />
+      </item>
+    </cosponsors>
+    <createDate>2014-04-02T07:23:20Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Walz, Timothy J. [D-MN-1]</fullName>
+        <firstName>Timothy</firstName>
+        <lastName>Walz</lastName>
+        <state>MN</state>
+        <party>D</party>
+        <district>1</district>
+        <bioguideId>W000799</bioguideId>
+        <identifiers>
+          <lisID>1856</lisID>
+          <gpoId>8001</gpoId>
+          <bioguideId>W000799</bioguideId>
+        </identifiers>
+        <middleName>J.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-10-25T15:55:33Z</updateDate>
+    <introducedDate>2014-04-01</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDate>2014-04-01</actionDate>
+          <updateDate>2014-04-01T04:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2014-04-23T19:01:37Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+          <text><![CDATA[<p> Recognizes the 150th anniversary of Mayo Clinic.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Recognizing the 150th Anniversary of Mayo Clinic.</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Commemorative events and holidays</name>
+          </item>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Health facilities and institutions</name>
+          </item>
+          <item>
+            <name>Minnesota</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>113</congress>
+    <constitutionalAuthorityStatementText />
+    <titles>
+      <item>
+        <title>Recognizing the 150th Anniversary of Mayo Clinic.</title>
+        <chamberCode />
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <title>Recognizing the 150th Anniversary of Mayo Clinic.</title>
+        <chamberCode />
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

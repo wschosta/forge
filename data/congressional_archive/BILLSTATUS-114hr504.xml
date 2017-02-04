@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-01-23</actionDate>
+        <committee>
+          <name>Energy and Power Subcommittee</name>
+          <systemCode>hsif03</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Energy and Power.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+    </actions>
+    <billNumber>504</billNumber>
+    <policyArea>
+      <name>Energy</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-01-23</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Energy and Power.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <type>S</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <number>1038</number>
+        <latestAction>
+          <actionDate>2015-04-30</actionDate>
+          <text>Committee on Energy and Natural Resources. Hearings held.</text>
+        </latestAction>
+        <latestTitle>Energy Star Program Integrity Act</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-01-22T14:04:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsif03</systemCode>
+              <name>Energy and Power Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2015-01-23T18:19:47Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <firstName>Peter</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1879</lisID>
+          <bioguideId>W000800</bioguideId>
+          <gpoId>8204</gpoId>
+        </identifiers>
+        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Welch, Peter [D-VT-At Large]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-01-22</sponsorshipDate>
+        <bioguideId>W000800</bioguideId>
+        <district>0</district>
+        <state>VT</state>
+        <lastName>Welch</lastName>
+      </item>
+      <item>
+        <firstName>Jared</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>P000598</bioguideId>
+          <gpoId>7860</gpoId>
+          <lisID>1910</lisID>
+        </identifiers>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Polis, Jared [D-CO-2]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-03-18</sponsorshipDate>
+        <bioguideId>P000598</bioguideId>
+        <district>2</district>
+        <state>CO</state>
+        <lastName>Polis</lastName>
+      </item>
+      <item>
+        <firstName>Kathy</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1839</lisID>
+          <gpoId>7883</gpoId>
+          <bioguideId>C001066</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Castor, Kathy [D-FL-14]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-04-14</sponsorshipDate>
+        <bioguideId>C001066</bioguideId>
+        <district>14</district>
+        <state>FL</state>
+        <lastName>Castor</lastName>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8222</gpoId>
+          <lisID>2074</lisID>
+          <bioguideId>M001180</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <middleName>B.</middleName>
+        <sponsorshipDate>2015-04-14</sponsorshipDate>
+        <bioguideId>M001180</bioguideId>
+        <district>1</district>
+        <state>WV</state>
+        <lastName>McKinley</lastName>
+      </item>
+      <item>
+        <firstName>Adam</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>K000378</bioguideId>
+          <lisID>2014</lisID>
+          <gpoId>7931</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Kinzinger, Adam [R-IL-16]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-04-14</sponsorshipDate>
+        <bioguideId>K000378</bioguideId>
+        <district>16</district>
+        <state>IL</state>
+        <lastName>Kinzinger</lastName>
+      </item>
+      <item>
+        <firstName>Richard</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2140</lisID>
+          <gpoId />
+          <bioguideId>H001067</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Hudson, Richard [R-NC-8]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-04-29</sponsorshipDate>
+        <bioguideId>H001067</bioguideId>
+        <district>8</district>
+        <state>NC</state>
+        <lastName>Hudson</lastName>
+      </item>
+      <item>
+        <firstName>Charles</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2061</lisID>
+          <bioguideId>F000459</bioguideId>
+          <gpoId>8150</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Fleischmann, Charles J. "Chuck" [R-TN-3]</fullName>
+        <middleName>J. "Chuck"</middleName>
+        <sponsorshipDate>2015-04-29</sponsorshipDate>
+        <bioguideId>F000459</bioguideId>
+        <district>3</district>
+        <state>TN</state>
+        <lastName>Fleischmann</lastName>
+      </item>
+      <item>
+        <firstName>Rod</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId />
+          <lisID>2241</lisID>
+          <bioguideId>B001294</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Blum, Rod [R-IA-1]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-04-29</sponsorshipDate>
+        <bioguideId>B001294</bioguideId>
+        <district>1</district>
+        <state>IA</state>
+        <lastName>Blum</lastName>
+      </item>
+      <item>
+        <firstName>Pete</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8178</gpoId>
+          <lisID>1955</lisID>
+          <bioguideId>O000168</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Olson, Pete [R-TX-22]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-05-12</sponsorshipDate>
+        <bioguideId>O000168</bioguideId>
+        <district>22</district>
+        <state>TX</state>
+        <lastName>Olson</lastName>
+      </item>
+      <item>
+        <firstName>Mike</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1912</lisID>
+          <gpoId>7864</gpoId>
+          <bioguideId>C001077</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-05-12</sponsorshipDate>
+        <bioguideId>C001077</bioguideId>
+        <district>6</district>
+        <state>CO</state>
+        <lastName>Coffman</lastName>
+      </item>
+      <item>
+        <firstName>Renee</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2036</lisID>
+          <bioguideId>E000291</bioguideId>
+          <gpoId>8025</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Ellmers, Renee L. [R-NC-2]</fullName>
+        <middleName>L.</middleName>
+        <sponsorshipDate>2015-05-12</sponsorshipDate>
+        <bioguideId>E000291</bioguideId>
+        <district>2</district>
+        <state>NC</state>
+        <lastName>Ellmers</lastName>
+      </item>
+      <item>
+        <firstName>Bill</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>J000292</bioguideId>
+          <lisID>2046</lisID>
+          <gpoId>8096</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Johnson, Bill [R-OH-6]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-07-13</sponsorshipDate>
+        <bioguideId>J000292</bioguideId>
+        <district>6</district>
+        <state>OH</state>
+        <lastName>Johnson</lastName>
+      </item>
+      <item>
+        <firstName>JAMES</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>231</lisID>
+          <gpoId>8152</gpoId>
+          <bioguideId>C000754</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Cooper, Jim [D-TN-5]</fullName>
+        <middleName>H.</middleName>
+        <sponsorshipDate>2016-05-16</sponsorshipDate>
+        <bioguideId>C000754</bioguideId>
+        <district>5</district>
+        <state>TN</state>
+        <lastName>COOPER</lastName>
+      </item>
+    </cosponsors>
+    <createDate>2015-01-23T04:46:27Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Latta, Robert E. [R-OH-5]</fullName>
+        <firstName>Robert</firstName>
+        <lastName>Latta</lastName>
+        <state>OH</state>
+        <party>R</party>
+        <district>5</district>
+        <bioguideId>L000566</bioguideId>
+        <identifiers>
+          <gpoId>8095</gpoId>
+          <lisID>1885</lisID>
+          <bioguideId>L000566</bioguideId>
+        </identifiers>
+        <middleName>E.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T21:17:52Z</updateDate>
+    <introducedDate>2015-01-22</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2015-01-22</actionDate>
+          <text><![CDATA[<p><b>Energy Star Program Integrity Act </b></p> <p>This bill amends the Energy Policy and Conservation Act to revise the Energy Star program to prohibit a disclosure relating to participation of a product in the program from creating a warranty or giving rise to private claims or rights of action relating to disqualification of the product from Energy Star if: (1) the product has been certified by a certification body recognized by the program, (2) the Environmental Protection Agency (EPA) has approved corrective measures, and (3) the responsible party has fully complied with all such measures.</p> <p>The bill may not be construed to require the EPA to modify any procedure or take any other action. </p>]]></text>
+          <lastSummaryUpdateDate>2015-07-31T21:37:56Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <updateDate>2015-01-22T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Energy Star Program Integrity Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Civil actions and liability</name>
+          </item>
+          <item>
+            <name>Consumer affairs</name>
+          </item>
+          <item>
+            <name>Energy efficiency and conservation</name>
+          </item>
+          <item>
+            <name>Environmental technology</name>
+          </item>
+          <item>
+            <name>Product safety and quality</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Energy</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LATTA:H.R. 504.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, cl. 3The Congress shall have the power . . . to regulatecommerce with foreign nations, and among the states, and withIndian Tribes;[Page H534]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Energy Star Program Integrity Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To clarify that no express or implied warranty is provided by reason of a disclosure relating to voluntary participation in the Energy Star program, and for other purposes.</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Energy Star Program Integrity Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

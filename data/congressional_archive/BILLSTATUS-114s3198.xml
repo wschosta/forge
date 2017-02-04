@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <introducedDate>2016-07-13</introducedDate>
+    <committeeReports />
+    <laws />
+    <createDate>2016-07-14T06:10:26Z</createDate>
+    <actions>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <item>
+        <actionDate>2016-07-13</actionDate>
+        <committee>
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <text>Introduced in Senate</text>
+        <committee />
+        <links />
+        <actionDate>2016-07-13</actionDate>
+        <actionCode>10000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <cboCostEstimates />
+    <relatedBills>
+      <item>
+        <number>2460</number>
+        <type>HR</type>
+        <latestTitle>To amend title 38, United States Code, to improve the provision of adult day health care services for veterans.</latestTitle>
+        <latestAction>
+          <actionDate>2016-05-24</actionDate>
+          <text>Received in the Senate and Read twice and referred to the Committee on Veterans' Affairs.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>114</congress>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <identifiers>
+          <lisID>1844</lisID>
+          <gpoId>7913</gpoId>
+          <bioguideId>H001042</bioguideId>
+        </identifiers>
+        <state>HI</state>
+        <sponsorshipDate>2016-07-13</sponsorshipDate>
+        <bioguideId>H001042</bioguideId>
+        <lastName>Hirono</lastName>
+        <middleName>K.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Hirono, Mazie K. [D-HI]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Mazie</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1036</lisID>
+          <gpoId>8279</gpoId>
+          <bioguideId>S000148</bioguideId>
+        </identifiers>
+        <state>NY</state>
+        <sponsorshipDate>2016-09-06</sponsorshipDate>
+        <bioguideId>S000148</bioguideId>
+        <lastName>SCHUMER</lastName>
+        <middleName>E.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Schumer, Charles E. [D-NY]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>CHARLES</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1837</lisID>
+          <gpoId>7870</gpoId>
+          <bioguideId>M001169</bioguideId>
+        </identifiers>
+        <state>CT</state>
+        <sponsorshipDate>2016-09-12</sponsorshipDate>
+        <bioguideId>M001169</bioguideId>
+        <lastName>Murphy</lastName>
+        <middleName>S.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Murphy, Christopher S. [D-CT]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Christopher</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>M001183</bioguideId>
+          <lisID>1983</lisID>
+          <gpoId>8256</gpoId>
+        </identifiers>
+        <state>WV</state>
+        <sponsorshipDate>2016-09-12</sponsorshipDate>
+        <bioguideId>M001183</bioguideId>
+        <lastName>Manchin</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Manchin, Joe, III [D-WV]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Joe</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1823</lisID>
+          <gpoId>8264</gpoId>
+          <bioguideId>W000802</bioguideId>
+        </identifiers>
+        <state>RI</state>
+        <sponsorshipDate>2016-09-13</sponsorshipDate>
+        <bioguideId>W000802</bioguideId>
+        <lastName>Whitehouse</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Whitehouse, Sheldon [D-RI]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Sheldon</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>C000880</bioguideId>
+          <lisID>250</lisID>
+          <gpoId>8289</gpoId>
+        </identifiers>
+        <state>ID</state>
+        <sponsorshipDate>2016-09-15</sponsorshipDate>
+        <bioguideId>C000880</bioguideId>
+        <lastName>CRAPO</lastName>
+        <middleName>D.</middleName>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Crapo, Mike [R-ID]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>MICHAEL</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>K000383</bioguideId>
+          <gpoId />
+          <lisID>2185</lisID>
+        </identifiers>
+        <state>ME</state>
+        <sponsorshipDate>2016-09-15</sponsorshipDate>
+        <bioguideId>K000383</bioguideId>
+        <lastName>King</lastName>
+        <middleName />
+        <party>I</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. King, Angus S., Jr. [I-ME]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Angus</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>G000555</bioguideId>
+          <gpoId>8336</gpoId>
+          <lisID>1866</lisID>
+        </identifiers>
+        <state>NY</state>
+        <sponsorshipDate>2016-09-19</sponsorshipDate>
+        <bioguideId>G000555</bioguideId>
+        <lastName>Gillibrand</lastName>
+        <middleName>E.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Kirsten</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8249</gpoId>
+          <bioguideId>K000367</bioguideId>
+          <lisID>1826</lisID>
+        </identifiers>
+        <state>MN</state>
+        <sponsorshipDate>2016-09-19</sponsorshipDate>
+        <bioguideId>K000367</bioguideId>
+        <lastName>Klobuchar</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Amy</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8286</gpoId>
+          <bioguideId>B001135</bioguideId>
+          <lisID>153</lisID>
+        </identifiers>
+        <state>NC</state>
+        <sponsorshipDate>2016-09-19</sponsorshipDate>
+        <bioguideId>B001135</bioguideId>
+        <lastName>BURR</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Burr, Richard [R-NC]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>RICHARD</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>583</lisID>
+          <gpoId>8322</gpoId>
+          <bioguideId>I000024</bioguideId>
+        </identifiers>
+        <state>OK</state>
+        <sponsorshipDate>2016-09-20</sponsorshipDate>
+        <bioguideId>I000024</bioguideId>
+        <lastName>INHOFE</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>JIM</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>F000457</bioguideId>
+          <lisID>1969</lisID>
+          <gpoId>8339</gpoId>
+        </identifiers>
+        <state>MN</state>
+        <sponsorshipDate>2016-09-20</sponsorshipDate>
+        <bioguideId>F000457</bioguideId>
+        <lastName>Franken</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Franken, Al [D-MN]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Al</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>B001236</bioguideId>
+          <lisID>1687</lisID>
+          <gpoId>8247</gpoId>
+        </identifiers>
+        <state>AR</state>
+        <sponsorshipDate>2016-09-20</sponsorshipDate>
+        <bioguideId>B001236</bioguideId>
+        <lastName>Boozman</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Boozman, John [R-AR]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>John</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1541</lisID>
+          <gpoId>8291</gpoId>
+          <bioguideId>C001035</bioguideId>
+        </identifiers>
+        <state>ME</state>
+        <sponsorshipDate>2016-09-21</sponsorshipDate>
+        <bioguideId>C001035</bioguideId>
+        <lastName>COLLINS</lastName>
+        <middleName>MARGARET</middleName>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>SUSAN</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8303</gpoId>
+          <bioguideId>L000577</bioguideId>
+          <lisID>2080</lisID>
+        </identifiers>
+        <state>UT</state>
+        <sponsorshipDate>2016-09-21</sponsorshipDate>
+        <bioguideId>L000577</bioguideId>
+        <lastName>Lee</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Lee, Mike [R-UT]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Mike</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>7972</gpoId>
+          <bioguideId>M000133</bioguideId>
+          <lisID>735</lisID>
+        </identifiers>
+        <state>MA</state>
+        <sponsorshipDate>2016-09-21</sponsorshipDate>
+        <bioguideId>M000133</bioguideId>
+        <lastName>MARKEY</lastName>
+        <middleName>J.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>EDWARD</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>M001111</bioguideId>
+          <lisID>1409</lisID>
+          <gpoId>8237</gpoId>
+        </identifiers>
+        <state>WA</state>
+        <sponsorshipDate>2016-09-26</sponsorshipDate>
+        <bioguideId>M001111</bioguideId>
+        <lastName>MURRAY</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Murray, Patty [D-WA]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>PATTY</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1647</lisID>
+          <gpoId>8285</gpoId>
+          <bioguideId>K000360</bioguideId>
+        </identifiers>
+        <state>IL</state>
+        <sponsorshipDate>2016-09-27</sponsorshipDate>
+        <bioguideId>K000360</bioguideId>
+        <lastName>KIRK</lastName>
+        <middleName>STEVEN</middleName>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Kirk, Mark Steven [R-IL]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>MARK</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2173</lisID>
+          <gpoId />
+          <bioguideId>S001194</bioguideId>
+        </identifiers>
+        <state>HI</state>
+        <sponsorshipDate>2016-09-27</sponsorshipDate>
+        <bioguideId>S001194</bioguideId>
+        <lastName>Schatz</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Brian</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+          <bioguideId>H001041</bioguideId>
+        </identifiers>
+        <state>NV</state>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <bioguideId>H001041</bioguideId>
+        <lastName>Heller</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Dean</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>S000033</bioguideId>
+          <lisID>1010</lisID>
+          <gpoId>8270</gpoId>
+        </identifiers>
+        <state>VT</state>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <bioguideId>S000033</bioguideId>
+        <lastName>SANDERS</lastName>
+        <middleName />
+        <party>I</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Sanders, Bernard [I-VT]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>BERNARD</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1383</lisID>
+          <gpoId>8244</gpoId>
+          <bioguideId>L000174</bioguideId>
+        </identifiers>
+        <state>VT</state>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <bioguideId>L000174</bioguideId>
+        <lastName>LEAHY</lastName>
+        <middleName>JOSEPH</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>PATRICK</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1828</lisID>
+          <gpoId>8282</gpoId>
+          <bioguideId>C001070</bioguideId>
+        </identifiers>
+        <state>PA</state>
+        <sponsorshipDate>2016-09-29</sponsorshipDate>
+        <bioguideId>C001070</bioguideId>
+        <lastName>Casey</lastName>
+        <middleName />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Bob</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2075</lisID>
+          <gpoId>8315</gpoId>
+          <bioguideId>A000368</bioguideId>
+        </identifiers>
+        <state>NH</state>
+        <sponsorshipDate>2016-09-29</sponsorshipDate>
+        <bioguideId>A000368</bioguideId>
+        <lastName>Ayotte</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Ayotte, Kelly [R-NH]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Kelly</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>P000612</bioguideId>
+          <lisID>2286</lisID>
+          <gpoId />
+        </identifiers>
+        <state>GA</state>
+        <sponsorshipDate>2016-11-15</sponsorshipDate>
+        <bioguideId>P000612</bioguideId>
+        <lastName>Perdue</lastName>
+        <middleName>Alfred</middleName>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Perdue, David [R-GA]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>David</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>174</lisID>
+          <gpoId>8287</gpoId>
+          <bioguideId>C000141</bioguideId>
+        </identifiers>
+        <state>MD</state>
+        <sponsorshipDate>2016-11-15</sponsorshipDate>
+        <bioguideId>C000141</bioguideId>
+        <lastName>CARDIN</lastName>
+        <middleName>L.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cardin, Benjamin L. [D-MD]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>BENJAMIN</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>7994</gpoId>
+          <bioguideId>P000595</bioguideId>
+          <lisID>1929</lisID>
+        </identifiers>
+        <state>MI</state>
+        <sponsorshipDate>2016-11-15</sponsorshipDate>
+        <bioguideId>P000595</bioguideId>
+        <lastName>Peters</lastName>
+        <middleName>C.</middleName>
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Peters, Gary C. [D-MI]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Gary</firstName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId />
+          <bioguideId>R000605</bioguideId>
+          <lisID>2288</lisID>
+        </identifiers>
+        <state>SD</state>
+        <sponsorshipDate>2016-12-05</sponsorshipDate>
+        <bioguideId>R000605</bioguideId>
+        <lastName>Rounds</lastName>
+        <middleName />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
+        <sponsorshipWithdrawnDate />
+        <firstName>Mike</firstName>
+      </item>
+    </cosponsors>
+    <billNumber>3198</billNumber>
+    <amendments />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Adult day care</name>
+          </item>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Long-term, rehabilitative, and terminal care</name>
+          </item>
+          <item>
+            <name>Veterans' medical care</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>UT</state>
+        <middleName>GRANT</middleName>
+        <bioguideId>H000338</bioguideId>
+        <lastName>HATCH</lastName>
+        <firstName>ORRIN</firstName>
+        <identifiers>
+          <lisID>1351</lisID>
+          <gpoId>8314</gpoId>
+          <bioguideId>H000338</bioguideId>
+        </identifiers>
+        <fullName>Sen. Hatch, Orrin G. [R-UT]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <billType>S</billType>
+    <title>State Veterans Home Adult Day Health Care Improvement Act of 2016</title>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <congress>114</congress>
+    <latestAction>
+      <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
+      <actionDate>2016-07-13</actionDate>
+      <links />
+    </latestAction>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>State Veterans Home Adult Day Health Care Improvement Act of 2016</strong></p> <p>This bill directs the Department of Veterans Affairs (VA) to enter into an agreement or a contract with each state home to pay for medical supervision model adult day health care for a veteran for whom the home is not receiving VA nursing home care payments. </p> <p>The veteran must need such care either specifically for a service-connected disability, or, if not specifically for one, the veteran must have a service-connected disability rated 70% or more. </p> <p>Payment under each agreement or contract between the VA and a state home must equal 65% of the payment that the VA would otherwise pay to the state home if the veteran were receiving nursing home care.</p> <p> &quot;Medical supervision model adult day health care&quot; means adult day health care that includes the coordination of physician services, dental services, the administration of drugs, and such other requirements as the VA may determine.</p> <p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2016-07-13</actionDate>
+          <lastSummaryUpdateDate>2016-11-04T18:33:38Z</lastSummaryUpdateDate>
+          <updateDate>2016-07-13T04:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>Senate</originChamber>
+    <notes />
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <date>2016-07-13T21:25:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <subcommittees />
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <calendarNumbers />
+    <updateDate>2017-01-11T20:18:00Z</updateDate>
+    <titles>
+      <item>
+        <chamberName />
+        <title>State Veterans Home Adult Day Health Care Improvement Act of 2016</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <title>A bill to amend title 38, United States Code, to improve the provision of adult day health care services for veterans.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <title>State Veterans Home Adult Day Health Care Improvement Act of 2016</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+      </item>
+    </titles>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

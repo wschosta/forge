@@ -19,12 +19,12 @@ for j = 1:length(issue_codes)
     % Pull together the matching weights
     weights = [data_storage.weights_store{j};data_storage.issue_text_weight_store{j}*data_storage.iwv;data_storage.additional_issue_text_weight_store{j}*data_storage.awv];
     
-    % Check for words in the description text and bill title
-    in_description = ismember(description_text,bill_title);
+    % Find matches with the title text
+    in_description = util.CStrAinBP(description_text,bill_title);
     
-    if any(in_description) % if there are mayches
-        % Pull together the weights
-        matches(j) = matches(j) + sum(weights(in_description > 0));
+    % If there are matches, add the weights
+    if ~isempty(in_description)
+        matches(j) = matches(j) + sum(weights(in_description));
     end
 end
 

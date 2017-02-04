@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForB>1</placeholderTextForB>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2015-12-04</actionDate>
+        <committee>
+          <name>Energy and Power Subcommittee</name>
+          <systemCode>hsif03</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Energy and Power.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2015-12-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2015-12-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <text>Sponsor introductory remarks on measure. (CR H9002)</text>
+        <type>IntroReferral</type>
+        <links>
+          <link>
+            <name>H9002</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/house-section/page/H9002</url>
+          </link>
+        </links>
+        <actionCode>B00100</actionCode>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2015-12-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2015-12-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>4169</billNumber>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-12-04</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Energy and Power.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-12-03T14:01:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsif03</systemCode>
+              <name>Energy and Power Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2015-12-04T14:16:07Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2074</lisID>
+          <bioguideId>M001180</bioguideId>
+          <gpoId>8222</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <middleName>B.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>M001180</bioguideId>
+        <district>1</district>
+        <state>WV</state>
+        <lastName>McKinley</lastName>
+      </item>
+      <item>
+        <firstName>Andy</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId />
+          <lisID>2131</lisID>
+          <bioguideId>B001282</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Barr, Andy [R-KY-6]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>B001282</bioguideId>
+        <district>6</district>
+        <state>KY</state>
+        <lastName>Barr</lastName>
+      </item>
+      <item>
+        <firstName>Kristi</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>N000184</bioguideId>
+          <gpoId>8147</gpoId>
+          <lisID>2060</lisID>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Noem, Kristi L. [R-SD-At Large]</fullName>
+        <middleName>L.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>N000184</bioguideId>
+        <district>0</district>
+        <state>SD</state>
+        <lastName>Noem</lastName>
+      </item>
+      <item>
+        <firstName>Alexander</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId />
+          <lisID>2277</lisID>
+          <bioguideId>M001195</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Mooney, Alexander X. [R-WV-2]</fullName>
+        <middleName>X.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>M001195</bioguideId>
+        <district>2</district>
+        <state>WV</state>
+        <lastName>Mooney</lastName>
+      </item>
+      <item>
+        <firstName>Ryan</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2254</lisID>
+          <bioguideId>Z000018</bioguideId>
+          <gpoId />
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Zinke, Ryan K. [R-MT-At Large]</fullName>
+        <middleName>K.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>Z000018</bioguideId>
+        <district>0</district>
+        <state>MT</state>
+        <lastName>Zinke</lastName>
+      </item>
+      <item>
+        <firstName>Kevin</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>C001096</bioguideId>
+          <gpoId />
+          <lisID>2144</lisID>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>C001096</bioguideId>
+        <district>0</district>
+        <state>ND</state>
+        <lastName>Cramer</lastName>
+      </item>
+      <item>
+        <firstName>Marlin</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1981</lisID>
+          <bioguideId>S001188</bioguideId>
+          <gpoId>7942</gpoId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Stutzman, Marlin A. [R-IN-3]</fullName>
+        <middleName>A.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>S001188</bioguideId>
+        <district>3</district>
+        <state>IN</state>
+        <lastName>Stutzman</lastName>
+      </item>
+      <item>
+        <firstName>Robert</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>P000606</bioguideId>
+          <lisID>2141</lisID>
+          <gpoId />
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Pittenger, Robert [R-NC-9]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>P000606</bioguideId>
+        <district>9</district>
+        <state>NC</state>
+        <lastName>Pittenger</lastName>
+      </item>
+      <item>
+        <firstName>Randy</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId />
+          <lisID>2161</lisID>
+          <bioguideId>W000814</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
+        <middleName>K.</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>W000814</bioguideId>
+        <district>14</district>
+        <state>TX</state>
+        <lastName>Weber</lastName>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2256</lisID>
+          <gpoId />
+          <bioguideId>R000603</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Rouzer, David [R-NC-7]</fullName>
+        <middleName />
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <bioguideId>R000603</bioguideId>
+        <district>7</district>
+        <state>NC</state>
+        <lastName>Rouzer</lastName>
+      </item>
+      <item>
+        <firstName>Dave</firstName>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>B001290</bioguideId>
+          <gpoId />
+          <lisID>2203</lisID>
+        </identifiers>
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
+        <middleName />
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <bioguideId>B001290</bioguideId>
+        <district>7</district>
+        <state>VA</state>
+        <lastName>Brat</lastName>
+      </item>
+    </cosponsors>
+    <createDate>2015-12-04T10:14:18Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Rothfus, Keith J. [R-PA-12]</fullName>
+        <firstName>Keith</firstName>
+        <lastName>Rothfus</lastName>
+        <state>PA</state>
+        <party>R</party>
+        <district>12</district>
+        <bioguideId>R000598</bioguideId>
+        <identifiers>
+          <bioguideId>R000598</bioguideId>
+          <lisID>2158</lisID>
+          <gpoId />
+        </identifiers>
+        <middleName>J.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:34:36Z</updateDate>
+    <introducedDate>2015-12-03</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2015-12-03</actionDate>
+          <text><![CDATA[<p><b>Ensure Reliable and Affordable American Energy Act of 2015</b></p> <p> This bill amends the Clean Air Act to prohibit a regulation concerning emissions of carbon dioxide from a fossil fuel-fired electric generating unit from taking effect until the Environmental Protection Agency certifies that a sufficient number of countries have adopted climate change regulations for carbon dioxide that are at least as stringent.</p> <p>A &quot;sufficient number&quot; is a number of countries that account for at least 80% of global carbon dioxide emissions in the last year, excluding those in the United States.</p>]]></text>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2016-04-08T13:31:33Z</lastSummaryUpdateDate>
+          <updateDate>2015-12-03T05:00:00Z</updateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Fighting Against Imbalanced Regulatory Burdens Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Climate change and greenhouse gases</name>
+          </item>
+          <item>
+            <name>Coal</name>
+          </item>
+          <item>
+            <name>Electric power generation and transmission</name>
+          </item>
+          <item>
+            <name>Environmental Protection Agency (EPA)</name>
+          </item>
+          <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
+            <name>Oil and gas</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ROTHFUS:H.R. 4169.Congress has the power to enact this legislation pursuantto the following:Article I, Section 1: All legislative Powers herein grantedshall be vested in a Congress of the United States, whichshall consist of a Senate and House of Representatives.Article I, Section 8, Clause 3: The Congress shall have Powerto regulate Commerce with foreign Nations, and among theseveral States, and with the Indian Tribes.[Page H9012]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <chamberCode />
+        <chamberName />
+        <title>Fighting Against Imbalanced Regulatory Burdens Act of 2015</title>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+      </item>
+      <item>
+        <chamberCode />
+        <chamberName />
+        <title>To amend the Clean Air Act to prohibit any regulation under such Act concerning the emissions of carbon dioxide from a fossil fuel-fired electric generating unit from taking effect until the Administrator of the Environmental Protection Agency makes certain certifications, and for other purposes.</title>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+      </item>
+      <item>
+        <chamberCode />
+        <chamberName />
+        <title>Fighting Against Imbalanced Regulatory Burdens Act of 2015</title>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

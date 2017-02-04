@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <item>
+        <actionDate>2015-12-18</actionDate>
+        <committee>
+          <systemCode>hsag03</systemCode>
+          <name>Nutrition Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Nutrition.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionDate>2015-11-19</actionDate>
+        <links />
+        <committee>
+          <systemCode>hsag00</systemCode>
+          <name>Agriculture Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Agriculture.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-11-19</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-11-19</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>4121</billNumber>
+    <policyArea>
+      <name>Agriculture and Food</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-12-18</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Nutrition.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2015-11-19T14:31:50Z</date>
+            </item>
+          </activities>
+          <name>Agriculture Committee</name>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2015-12-18T16:00:12Z</date>
+                </item>
+              </activities>
+              <name>Nutrition Subcommittee</name>
+              <systemCode>hsag03</systemCode>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <systemCode>hsag00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <fullName>Rep. Fattah, Chaka [D-PA-2]</fullName>
+        <lastName>FATTAH</lastName>
+        <state>PA</state>
+        <identifiers>
+          <bioguideId>F000043</bioguideId>
+          <lisID>371</lisID>
+          <gpoId>8120</gpoId>
+        </identifiers>
+        <bioguideId>F000043</bioguideId>
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>CHAKA</firstName>
+        <district>2</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Rep. Grijalva, Raul M. [D-AZ-3]</fullName>
+        <lastName>Grijalva</lastName>
+        <state>AZ</state>
+        <identifiers>
+          <lisID>1708</lisID>
+          <bioguideId>G000551</bioguideId>
+          <gpoId>7804</gpoId>
+        </identifiers>
+        <bioguideId>G000551</bioguideId>
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>Raul</firstName>
+        <district>3</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Rep. Meeks, Gregory W. [D-NY-5]</fullName>
+        <lastName>MEEKS</lastName>
+        <state>NY</state>
+        <identifiers>
+          <lisID>1506</lisID>
+          <gpoId>8067</gpoId>
+          <bioguideId>M001137</bioguideId>
+        </identifiers>
+        <bioguideId>M001137</bioguideId>
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <middleName>W.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>GREGORY</firstName>
+        <district>5</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Rep. Napolitano, Grace F. [D-CA-32]</fullName>
+        <lastName>NAPOLITANO</lastName>
+        <state>CA</state>
+        <identifiers>
+          <lisID>1602</lisID>
+          <bioguideId>N000179</bioguideId>
+          <gpoId>7843</gpoId>
+        </identifiers>
+        <bioguideId>N000179</bioguideId>
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <middleName>F.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>GRACE</firstName>
+        <district>32</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Rep. Velazquez, Nydia M. [D-NY-7]</fullName>
+        <lastName>VELAZQUEZ</lastName>
+        <state>NY</state>
+        <identifiers>
+          <bioguideId>V000081</bioguideId>
+          <gpoId>8073</gpoId>
+          <lisID>1184</lisID>
+        </identifiers>
+        <bioguideId>V000081</bioguideId>
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>NYDIA</firstName>
+        <district>7</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Rep. Rangel, Charles B. [D-NY-13]</fullName>
+        <lastName>RANGEL</lastName>
+        <state>NY</state>
+        <identifiers>
+          <gpoId>8076</gpoId>
+          <lisID>944</lisID>
+          <bioguideId>R000053</bioguideId>
+        </identifiers>
+        <bioguideId>R000053</bioguideId>
+        <sponsorshipDate>2015-12-16</sponsorshipDate>
+        <middleName>B.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <firstName>CHARLES</firstName>
+        <district>13</district>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <createDate>2015-11-20T10:16:07Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
+        <firstName>JOSE</firstName>
+        <lastName>SERRANO</lastName>
+        <state>NY</state>
+        <party>D</party>
+        <district>15</district>
+        <bioguideId>S000248</bioguideId>
+        <identifiers>
+          <bioguideId>S000248</bioguideId>
+          <gpoId>8077</gpoId>
+          <lisID>1042</lisID>
+        </identifiers>
+        <middleName>E.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:34:18Z</updateDate>
+    <introducedDate>2015-11-19</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDate>2015-11-19</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2016-02-19T20:01:18Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2015-11-19T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Anti-hunger Empowerment Act of 2015 </b></p> <p>This bill reduces administrative requirements for the Supplemental Nutrition Assistance Program (SNAP, formerly known as the food stamp program), authorizes funding to increase access to SNAP offices, and authorizes grants for community-based nonprofits to expand anti-hunger activities. </p> <p>The bill amends the Food and Nutrition Act of 2008 to repeal existing provisions regarding administrative costs and authorize the Department of Agriculture (USDA) to pay 75% of the administrative costs for state agencies to increase the operating hours of SNAP offices, reduce wait times, accept online applications, upgrade technology, and provide a checklist of required documents. </p> <p>If a state agency believes that information provided by a SNAP applicant is incorrect or incomplete, the agency must notify the applicant in writing and include instructions for providing the required information. Unless the information is not provided in response to the request or it cannot be verified, a state must not require an applicant to appear in person. State agencies must not require fingerprints for any member of a household to participate in SNAP or receive benefits. </p> <p>USDA must report annually to Congress on the comparative progress of states in improving access to SNAP. </p> <p><i>Beyond the Soup Kitchen Grants Program Act of 2015 </i></p> <p>The Beyond the Soup Kitchen Pilot Program is established to provide grants to community-based nonprofit feeding and anti-hunger groups for programs to reduce hunger, increase the use of nutrition assistance and anti-poverty programs, bolster food security, assist individuals and families to develop assets, promote economic independence, improve nutrition, and reduce obesity. </p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Anti-hunger Empowerment Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Agriculture and Food</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>California</name>
+          </item>
+          <item>
+            <name>Caribbean area</name>
+          </item>
+          <item>
+            <name>Child health</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Connecticut</name>
+          </item>
+          <item>
+            <name>District of Columbia</name>
+          </item>
+          <item>
+            <name>Food assistance and relief</name>
+          </item>
+          <item>
+            <name>Food supply, safety, and labeling</name>
+          </item>
+          <item>
+            <name>Georgia</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Illinois</name>
+          </item>
+          <item>
+            <name>Indiana</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Iowa</name>
+          </item>
+          <item>
+            <name>Kentucky</name>
+          </item>
+          <item>
+            <name>Maryland</name>
+          </item>
+          <item>
+            <name>Missouri</name>
+          </item>
+          <item>
+            <name>New York City</name>
+          </item>
+          <item>
+            <name>New York State</name>
+          </item>
+          <item>
+            <name>Nutrition and diet</name>
+          </item>
+          <item>
+            <name>Ohio</name>
+          </item>
+          <item>
+            <name>Pennsylvania</name>
+          </item>
+          <item>
+            <name>Performance measurement</name>
+          </item>
+          <item>
+            <name>Poverty and welfare assistance</name>
+          </item>
+          <item>
+            <name>Puerto Rico</name>
+          </item>
+          <item>
+            <name>Social work, volunteer service, charitable organizations</name>
+          </item>
+          <item>
+            <name>State and local finance</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+          <item>
+            <name>Texas</name>
+          </item>
+          <item>
+            <name>Virginia</name>
+          </item>
+          <item>
+            <name>West Virginia</name>
+          </item>
+          <item>
+            <name>Wisconsin</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. SERRANO:H.R. 4121.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 3 of the U.S. Constitution TheCongress shall have power to lay and collect taxes, duties,imposts and excises, to pay the debts and provide for thecommon defense and general welfare of the United States; butall duties, imposts and excises shall be uniform throughoutthe United States;[Page H8414]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <parentTitleType />
+        <title>Beyond the Soup Kitchen Grants Program Act of 2015</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <title>Anti-hunger Empowerment Act of 2015</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <title>To amend the Food and Nutrition Act of 2008 to provide greater access to the supplemental nutrition assistance program by reducing duplicative and burdensome administrative requirements, authorize the Secretary of Agriculture to award grants to certain community-based nonprofit feeding and anti-hunger groups for the purpose of establishing and implementing a Beyond the Soup Kitchen Pilot Program for certain socially and economically disadvantaged populations, and for other purposes.</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>Anti-hunger Empowerment Act of 2015</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <placeholderTextForB>1</placeholderTextForB>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-02-13</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionCode>B00100</actionCode>
+        <actionDate>2015-02-12</actionDate>
+        <text>Sponsor introductory remarks on measure. (CR H989)</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links>
+          <link>
+            <name>H989</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/house-section/page/H989</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-02-11</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2015-02-11</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionCode>1000</actionCode>
+        <actionDate>2015-02-11</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+    </actions>
+    <billNumber>903</billNumber>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-02-13</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <date>2015-02-13T14:48:30Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <activities>
+            <item>
+              <date>2015-02-11T15:03:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <identifiers>
+          <lisID>1748</lisID>
+          <bioguideId>B001243</bioguideId>
+          <gpoId>8154</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Marsha</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>7</district>
+        <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
+        <state>TN</state>
+        <bioguideId>B001243</bioguideId>
+        <lastName>Blackburn</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>P000599</bioguideId>
+          <lisID>1915</lisID>
+          <gpoId>7887</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Bill</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>8</district>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <state>FL</state>
+        <bioguideId>P000599</bioguideId>
+        <lastName>Posey</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1797</lisID>
+          <bioguideId>F000451</bioguideId>
+          <gpoId>8126</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Michael</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>8</district>
+        <fullName>Rep. Fitzpatrick, Michael G. [R-PA-8]</fullName>
+        <state>PA</state>
+        <bioguideId>F000451</bioguideId>
+        <lastName>Fitzpatrick</lastName>
+        <middleName>G.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>H001045</bioguideId>
+          <gpoId>8021</gpoId>
+          <lisID>1933</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Gregg</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Harper, Gregg [R-MS-3]</fullName>
+        <state>MS</state>
+        <bioguideId>H001045</bioguideId>
+        <lastName>Harper</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>H001059</bioguideId>
+          <gpoId>7934</gpoId>
+          <lisID>2015</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Randy</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>14</district>
+        <fullName>Rep. Hultgren, Randy [R-IL-14]</fullName>
+        <state>IL</state>
+        <bioguideId>H001059</bioguideId>
+        <lastName>Hultgren</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>B001257</bioguideId>
+          <lisID>1838</lisID>
+          <gpoId>7881</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Gus</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>12</district>
+        <fullName>Rep. Bilirakis, Gus M. [R-FL-12]</fullName>
+        <state>FL</state>
+        <bioguideId>B001257</bioguideId>
+        <lastName>Bilirakis</lastName>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>612</lisID>
+          <bioguideId>J000255</bioguideId>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>WALTER</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <state>NC</state>
+        <bioguideId>J000255</bioguideId>
+        <lastName>JONES</lastName>
+        <middleName>B.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1952</lisID>
+          <gpoId>8123</gpoId>
+          <bioguideId>T000467</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Glenn</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>5</district>
+        <fullName>Rep. Thompson, Glenn [R-PA-5]</fullName>
+        <state>PA</state>
+        <bioguideId>T000467</bioguideId>
+        <lastName>Thompson</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2270</lisID>
+          <gpoId />
+          <bioguideId>B001291</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Brian</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-13</sponsorshipDate>
+        <party>R</party>
+        <district>36</district>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <state>TX</state>
+        <bioguideId>B001291</bioguideId>
+        <lastName>Babin</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>W000806</bioguideId>
+          <lisID>2002</lisID>
+          <gpoId>7880</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Daniel</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-25</sponsorshipDate>
+        <party>R</party>
+        <district>10</district>
+        <fullName>Rep. Webster, Daniel [R-FL-10]</fullName>
+        <state>FL</state>
+        <bioguideId>W000806</bioguideId>
+        <lastName>Webster</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>K000376</bioguideId>
+          <lisID>2051</lisID>
+          <gpoId>8708</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Mike</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-25</sponsorshipDate>
+        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Kelly, Mike [R-PA-3]</fullName>
+        <state>PA</state>
+        <bioguideId>K000376</bioguideId>
+        <lastName>Kelly</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2151</lisID>
+          <bioguideId>C001092</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Chris</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-25</sponsorshipDate>
+        <party>R</party>
+        <district>27</district>
+        <fullName>Rep. Collins, Chris [R-NY-27]</fullName>
+        <state>NY</state>
+        <bioguideId>C001092</bioguideId>
+        <lastName>Collins</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId />
+          <lisID>2105</lisID>
+          <bioguideId>V000129</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-25</sponsorshipDate>
+        <party>R</party>
+        <district>21</district>
+        <fullName>Rep. Valadao, David G. [R-CA-21]</fullName>
+        <state>CA</state>
+        <bioguideId>V000129</bioguideId>
+        <lastName>Valadao</lastName>
+        <middleName>G.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8177</gpoId>
+          <lisID>1075</lisID>
+          <bioguideId>S000583</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>LAMAR</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-02-25</sponsorshipDate>
+        <party>R</party>
+        <district>21</district>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
+        <state>TX</state>
+        <bioguideId>S000583</bioguideId>
+        <lastName>SMITH</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>G000576</bioguideId>
+          <gpoId />
+          <lisID>2276</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Glenn</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-04</sponsorshipDate>
+        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <state>WI</state>
+        <bioguideId>G000576</bioguideId>
+        <lastName>Grothman</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8095</gpoId>
+          <lisID>1885</lisID>
+          <bioguideId>L000566</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Robert</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-04</sponsorshipDate>
+        <party>R</party>
+        <district>5</district>
+        <fullName>Rep. Latta, Robert E. [R-OH-5]</fullName>
+        <state>OH</state>
+        <bioguideId>L000566</bioguideId>
+        <lastName>Latta</lastName>
+        <middleName>E.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2054</lisID>
+          <bioguideId>B001269</bioguideId>
+          <gpoId>8129</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Lou</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-16</sponsorshipDate>
+        <party>R</party>
+        <district>11</district>
+        <fullName>Rep. Barletta, Lou [R-PA-11]</fullName>
+        <state>PA</state>
+        <bioguideId>B001269</bioguideId>
+        <lastName>Barletta</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1793</lisID>
+          <bioguideId>F000449</bioguideId>
+          <gpoId>8038</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jeff</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-16</sponsorshipDate>
+        <party>R</party>
+        <district>1</district>
+        <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
+        <state>NE</state>
+        <bioguideId>F000449</bioguideId>
+        <lastName>Fortenberry</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1954</lisID>
+          <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-16</sponsorshipDate>
+        <party>R</party>
+        <district>1</district>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <state>TN</state>
+        <bioguideId>R000582</bioguideId>
+        <lastName>Roe</lastName>
+        <middleName>P.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>M001190</bioguideId>
+          <gpoId />
+          <lisID>2156</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Markwayne</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-18</sponsorshipDate>
+        <party>R</party>
+        <district>2</district>
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <state>OK</state>
+        <bioguideId>M001190</bioguideId>
+        <lastName>Mullin</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8096</gpoId>
+          <lisID>2046</lisID>
+          <bioguideId>J000292</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Bill</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-26</sponsorshipDate>
+        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Johnson, Bill [R-OH-6]</fullName>
+        <state>OH</state>
+        <bioguideId>J000292</bioguideId>
+        <lastName>Johnson</lastName>
+        <middleName />
+      </item>
+    </cosponsors>
+    <createDate>2015-02-12T05:30:26Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Pitts, Joseph R. [R-PA-16]</fullName>
+        <firstName>JOSEPH</firstName>
+        <lastName>PITTS</lastName>
+        <state>PA</state>
+        <party>R</party>
+        <district>16</district>
+        <bioguideId>P000373</bioguideId>
+        <identifiers>
+          <lisID>1514</lisID>
+          <gpoId>8134</gpoId>
+          <bioguideId>P000373</bioguideId>
+        </identifiers>
+        <middleName>R.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T21:25:53Z</updateDate>
+    <introducedDate>2015-02-11</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2015-02-11</actionDate>
+          <text><![CDATA[<p><b>Health Exchange Security and Transparency Act of 2015</b></p> <p>Requires the Department of Health and Human Services to notify an individual within two business days after discovery of any breach of security of any system maintained by a health care exchange established under the Patient Protection and Affordable Care Act which is known to have resulted in the theft or unlawful access of the individual's personally identifiable information.</p>]]></text>
+          <lastSummaryUpdateDate>2015-03-13T16:38:19Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <updateDate>2015-02-11T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Health Exchange Security and Transparency Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Comprehensive health care</name>
+          </item>
+          <item>
+            <name>Computer security and identity theft</name>
+          </item>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Right of privacy</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Pages H983-H984]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. PITTS:H.R. 903.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3, which states that Congressshall have the power ``to regulate commerce with foreignnations, and among the several states . . .''[[Page H984]]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Health Exchange Security and Transparency Act of 2015</title>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>To require notification of individuals of breaches of personally identifiable information through Exchanges under the Patient Protection and Affordable Care Act, and for other purposes.</title>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Health Exchange Security and Transparency Act of 2015</title>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

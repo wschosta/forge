@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HRES</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2014-04-04</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2014-04-03</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2014-04-03</actionDate>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2014-04-03</actionDate>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>538</billNumber>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2014-04-04</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <date>2014-04-04T18:41:37Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <activities>
+            <item>
+              <date>2014-04-03T14:01:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <state>MI</state>
+        <fullName>Rep. Rogers, Mike J. [R-MI-8]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <lisID>1651</lisID>
+          <gpoId>7993</gpoId>
+          <bioguideId>R000572</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Rogers</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Mike</firstName>
+        <district>8</district>
+        <party>R</party>
+        <bioguideId>R000572</bioguideId>
+      </item>
+      <item>
+        <state>TN</state>
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <bioguideId>C001068</bioguideId>
+          <lisID>1878</lisID>
+          <gpoId>8156</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Cohen</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Steve</firstName>
+        <district>9</district>
+        <party>D</party>
+        <bioguideId>C001068</bioguideId>
+      </item>
+      <item>
+        <state>DC</state>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <lisID>868</lisID>
+          <gpoId>7871</gpoId>
+          <bioguideId>N000147</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>HOLMES</middleName>
+        <lastName>NORTON</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>ELEANOR</firstName>
+        <district>0</district>
+        <party>D</party>
+        <bioguideId>N000147</bioguideId>
+      </item>
+      <item>
+        <state>VA</state>
+        <fullName>Rep. Connolly, Gerald E. [D-VA-11]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <gpoId>8202</gpoId>
+          <lisID>1959</lisID>
+          <bioguideId>C001078</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>E.</middleName>
+        <lastName>Connolly</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Gerald</firstName>
+        <district>11</district>
+        <party>D</party>
+        <bioguideId>C001078</bioguideId>
+      </item>
+      <item>
+        <state>AL</state>
+        <fullName>Rep. Aderholt, Robert B. [R-AL-4]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <lisID>1460</lisID>
+          <gpoId>7789</gpoId>
+          <bioguideId>A000055</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>B.</middleName>
+        <lastName>ADERHOLT</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>ROBERT</firstName>
+        <district>4</district>
+        <party>R</party>
+        <bioguideId>A000055</bioguideId>
+      </item>
+      <item>
+        <state>MA</state>
+        <fullName>Rep. McGovern, James P. [D-MA-2]</fullName>
+        <sponsorshipDate>2014-04-03</sponsorshipDate>
+        <identifiers>
+          <lisID>1504</lisID>
+          <gpoId>7968</gpoId>
+          <bioguideId>M000312</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>P.</middleName>
+        <lastName>MCGOVERN</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>JAMES</firstName>
+        <district>2</district>
+        <party>D</party>
+        <bioguideId>M000312</bioguideId>
+      </item>
+      <item>
+        <state>NY</state>
+        <fullName>Rep. Rangel, Charles B. [D-NY-13]</fullName>
+        <sponsorshipDate>2014-04-28</sponsorshipDate>
+        <identifiers>
+          <gpoId>8076</gpoId>
+          <lisID>944</lisID>
+          <bioguideId>R000053</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>B.</middleName>
+        <lastName>RANGEL</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>CHARLES</firstName>
+        <district>13</district>
+        <party>D</party>
+        <bioguideId>R000053</bioguideId>
+      </item>
+      <item>
+        <state>FL</state>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <sponsorshipDate>2014-05-01</sponsorshipDate>
+        <identifiers>
+          <gpoId>7887</gpoId>
+          <lisID>1915</lisID>
+          <bioguideId>P000599</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Posey</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Bill</firstName>
+        <district>8</district>
+        <party>R</party>
+        <bioguideId>P000599</bioguideId>
+      </item>
+      <item>
+        <state>VA</state>
+        <fullName>Rep. Wolf, Frank R. [R-VA-10]</fullName>
+        <sponsorshipDate>2014-05-01</sponsorshipDate>
+        <identifiers>
+          <lisID>1238</lisID>
+          <bioguideId>W000672</bioguideId>
+          <gpoId>8201</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>R.</middleName>
+        <lastName>WOLF</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>FRANK</firstName>
+        <district>10</district>
+        <party>R</party>
+        <bioguideId>W000672</bioguideId>
+      </item>
+      <item>
+        <state>NY</state>
+        <fullName>Rep. Hanna, Richard L. [R-NY-22]</fullName>
+        <sponsorshipDate>2014-05-07</sponsorshipDate>
+        <identifiers>
+          <lisID>2044</lisID>
+          <gpoId>8085</gpoId>
+          <bioguideId>H001051</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>L.</middleName>
+        <lastName>Hanna</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Richard</firstName>
+        <district>22</district>
+        <party>R</party>
+        <bioguideId>H001051</bioguideId>
+      </item>
+      <item>
+        <state>MD</state>
+        <fullName>Rep. Van Hollen, Chris [D-MD-8]</fullName>
+        <sponsorshipDate>2014-05-22</sponsorshipDate>
+        <identifiers>
+          <bioguideId>V000128</bioguideId>
+          <lisID>1729</lisID>
+          <gpoId>7983</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Van Hollen</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Chris</firstName>
+        <district>8</district>
+        <party>D</party>
+        <bioguideId>V000128</bioguideId>
+      </item>
+      <item>
+        <state>NC</state>
+        <fullName>Rep. Butterfield, G. K. [D-NC-1]</fullName>
+        <sponsorshipDate>2014-05-22</sponsorshipDate>
+        <identifiers>
+          <gpoId>8024</gpoId>
+          <lisID>1761</lisID>
+          <bioguideId>B001251</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Butterfield</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>G. K.</firstName>
+        <district>1</district>
+        <party>D</party>
+        <bioguideId>B001251</bioguideId>
+      </item>
+      <item>
+        <state>PA</state>
+        <fullName>Rep. Dent, Charles W. [R-PA-15]</fullName>
+        <sponsorshipDate>2014-05-22</sponsorshipDate>
+        <identifiers>
+          <gpoId>8133</gpoId>
+          <lisID>1799</lisID>
+          <bioguideId>D000604</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>W.</middleName>
+        <lastName>Dent</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Charles</firstName>
+        <district>15</district>
+        <party>R</party>
+        <bioguideId>D000604</bioguideId>
+      </item>
+      <item>
+        <state>NY</state>
+        <fullName>Rep. McCarthy, Carolyn [D-NY-4]</fullName>
+        <sponsorshipDate>2014-05-28</sponsorshipDate>
+        <identifiers>
+          <bioguideId>M000309</bioguideId>
+          <gpoId>8065</gpoId>
+          <lisID>1503</lisID>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>MCCARTHY</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>CAROLYN</firstName>
+        <district>4</district>
+        <party>D</party>
+        <bioguideId>M000309</bioguideId>
+      </item>
+      <item>
+        <state>MD</state>
+        <fullName>Rep. Ruppersberger, C. A. Dutch [D-MD-2]</fullName>
+        <sponsorshipDate>2014-05-28</sponsorshipDate>
+        <identifiers>
+          <gpoId>7977</gpoId>
+          <lisID>1728</lisID>
+          <bioguideId>R000576</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>Dutch</middleName>
+        <lastName>Ruppersberger</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>C. A.</firstName>
+        <district>2</district>
+        <party>D</party>
+        <bioguideId>R000576</bioguideId>
+      </item>
+      <item>
+        <state>MA</state>
+        <fullName>Rep. Lynch, Stephen F. [D-MA-8]</fullName>
+        <sponsorshipDate>2014-05-30</sponsorshipDate>
+        <identifiers>
+          <gpoId>7974</gpoId>
+          <lisID>1686</lisID>
+          <bioguideId>L000562</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>F.</middleName>
+        <lastName>Lynch</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Stephen</firstName>
+        <district>8</district>
+        <party>D</party>
+        <bioguideId>L000562</bioguideId>
+      </item>
+      <item>
+        <state>NJ</state>
+        <fullName>Rep. Lance, Leonard [R-NJ-7]</fullName>
+        <sponsorshipDate>2014-06-11</sponsorshipDate>
+        <identifiers>
+          <bioguideId>L000567</bioguideId>
+          <lisID>1936</lisID>
+          <gpoId>8049</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Lance</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Leonard</firstName>
+        <district>7</district>
+        <party>R</party>
+        <bioguideId>L000567</bioguideId>
+      </item>
+      <item>
+        <state>VA</state>
+        <fullName>Rep. Moran, James P. [D-VA-8]</fullName>
+        <sponsorshipDate>2014-06-19</sponsorshipDate>
+        <identifiers>
+          <gpoId>8199</gpoId>
+          <lisID>832</lisID>
+          <bioguideId>M000933</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>P.</middleName>
+        <lastName>MORAN</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>JAMES</firstName>
+        <district>8</district>
+        <party>D</party>
+        <bioguideId>M000933</bioguideId>
+      </item>
+      <item>
+        <state>CA</state>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <sponsorshipDate>2014-06-20</sponsorshipDate>
+        <identifiers>
+          <gpoId>7821</gpoId>
+          <lisID>701</lisID>
+          <bioguideId>L000397</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>LOFGREN</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>ZOE</firstName>
+        <district>19</district>
+        <party>D</party>
+        <bioguideId>L000397</bioguideId>
+      </item>
+    </cosponsors>
+    <createDate>2014-04-04T07:12:51Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Cartwright, Matt [D-PA-17]</fullName>
+        <firstName>Matt</firstName>
+        <lastName>Cartwright</lastName>
+        <state>PA</state>
+        <party>D</party>
+        <district>17</district>
+        <bioguideId>C001090</bioguideId>
+        <identifiers>
+          <lisID>2159</lisID>
+          <gpoId />
+          <bioguideId>C001090</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-10-25T15:55:34Z</updateDate>
+    <introducedDate>2014-04-03</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2014-04-03</actionDate>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2014-04-18T19:16:10Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Supports the designation, and the goals and ideals, of National Bladder Cancer Awareness Month.</p>  <p>Calls on the people of the United States, interested groups, and affected persons to: (1) promote awareness of bladder cancer and to foster understanding of the impact of the disease on patients and their families and caregivers, and (2) take an active role in the fight to end bladder cancer. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2014-04-03T04:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Expressing support for designation of May as "National Bladder Cancer Awareness Month".</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Cancer</name>
+          </item>
+          <item>
+            <name>Commemorative events and holidays</name>
+          </item>
+          <item>
+            <name>Digestive and metabolic diseases</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>113</congress>
+    <constitutionalAuthorityStatementText />
+    <titles>
+      <item>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <title>Expressing support for designation of May as "National Bladder Cancer Awareness Month".</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>Expressing support for designation of May as "National Bladder Cancer Awareness Month".</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <item>
+        <actionDate>2015-02-02</actionDate>
+        <committee>
+          <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionDate>2015-01-09</actionDate>
+        <links />
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-01-09</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-01-09</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>236</billNumber>
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-02-02</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2015-01-09T14:01:20Z</date>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsju08</systemCode>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2015-02-02T14:21:03Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <state>CA</state>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <district>19</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <identifiers>
+          <lisID>701</lisID>
+          <gpoId>7821</gpoId>
+          <bioguideId>L000397</bioguideId>
+        </identifiers>
+        <middleName />
+        <bioguideId>L000397</bioguideId>
+        <firstName>ZOE</firstName>
+        <lastName>LOFGREN</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+      </item>
+      <item>
+        <state>TX</state>
+        <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
+        <district>27</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <identifiers>
+          <bioguideId>F000460</bioguideId>
+          <lisID>2067</lisID>
+          <gpoId>8183</gpoId>
+        </identifiers>
+        <middleName />
+        <bioguideId>F000460</bioguideId>
+        <firstName>Blake</firstName>
+        <lastName>Farenthold</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+      </item>
+      <item>
+        <state>OH</state>
+        <fullName>Rep. Chabot, Steve [R-OH-1]</fullName>
+        <district>1</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <identifiers>
+          <bioguideId>C000266</bioguideId>
+          <lisID>186</lisID>
+          <gpoId>8091</gpoId>
+        </identifiers>
+        <middleName />
+        <bioguideId>C000266</bioguideId>
+        <firstName>STEVE</firstName>
+        <lastName>CHABOT</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+      </item>
+    </cosponsors>
+    <createDate>2015-01-10T04:46:22Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
+        <firstName>Ted</firstName>
+        <lastName>Poe</lastName>
+        <state>TX</state>
+        <party>R</party>
+        <district>2</district>
+        <bioguideId>P000592</bioguideId>
+        <identifiers>
+          <lisID>1802</lisID>
+          <gpoId>8158</gpoId>
+          <bioguideId>P000592</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T21:16:09Z</updateDate>
+    <introducedDate>2015-01-09</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2015-01-20T22:56:58Z</lastSummaryUpdateDate>
+          <actionDate>2015-01-09</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2015-01-09T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Foreign Counterfeit Merchandise Prevention Act</b></p> <p>Amends the federal criminal code to provide that it shall not be a violation of the prohibition against a federal employee disclosing trade secrets or other confidential or proprietary information for an officer or employee of U.S. Customs and Border Protection (CBP): (1) upon detention and thereafter, to provide the owner of a copyright or a registered mark or any person who may be injured by a circumvention of copyright protection systems with any information appearing on the merchandise, including its retail packaging, or a sample or image of such merchandise and its retail packaging, for the purposes of determining whether the merchandise or its packaging infringes the copyright, bears or consists of a counterfeit mark of the registered mark, or is a violation of copyright protection systems; or (2) after seizing merchandise determined to be in violation of copyright protection systems, to provide certain information to persons injured by such violation, including the date of importation, the port of entry, a description of the merchandise, the country of origin of the merchandise, the names and addresses of the foreign manufacturer, the exporter, and the importer, and a photographic or digital image of the merchandise.</p> <p>Applies such exemption only with respect to tangible goods presented to the CBP for importation into, or exportation from, the United States.</p> <p>Amends the Lanham Act to direct the Department of Homeland Security (DHS) to record and transmit to customs officers any contact information, documentation of the locality in which goods were manufactured, and copies of trademark registrations furnished by domestic or eligible foreign manufacturers or traders for the purpose of aiding the enforcement of a prohibition on the importation of goods bearing infringing marks or names. (Currently, such activities are performed by the Department of the Treasury.) </p> <p>Requires DHS, if the CBP detains critical merchandise bearing a DHS-recorded registered trademark, to provide the trademark owner any information on such critical merchandise and its packaging and labels, including, without redaction, photographs or digital images, packaging, and labels. Permits the Secretary, subject to any bonding and return requirements, to provide the owner samples of the critical merchandise without redaction. </p> <p>Defines &quot;critical merchandise&quot; to include: (1) aircraft engines, appliances, propellers, and spare parts; (2) motor vehicle equipment; (3) semiconductors; and (4) any other article of manufacture that the Secretary determines could, if permitted entry into the United States in violation of the U.S. laws, pose a danger to the health, safety, or welfare of consumers, or to the national security of the United States. </p> <p>Applies such Lanham Act amendments only with respect to tangible goods presented to the CBP for importation into the United States.</p>]]></text>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Foreign Counterfeit Merchandise Prevention Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Crimes against property</name>
+          </item>
+          <item>
+            <name>Criminal justice information and records</name>
+          </item>
+          <item>
+            <name>Customs enforcement</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Intellectual property</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. POE of Texas:H.R. 236.Congress has the power to enact this legislation pursuantto the following:Article 1 Section 8 Clause 3[Page H189]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <title>Foreign Counterfeit Merchandise Prevention Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <title>To provide for the exchange of information related to trade enforcement, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>Foreign Counterfeit Merchandise Prevention Act</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

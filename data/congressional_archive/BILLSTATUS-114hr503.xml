@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>2</billReferrals>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <placeholderTextForH>2</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-02-19</actionDate>
+        <committee>
+          <name>Immigration and Border Security Subcommittee</name>
+          <systemCode>hsju01</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2015-02-11</actionDate>
+        <committee>
+          <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+          <systemCode>hsfa18</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Terrorism, Nonproliferation, and Trade.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to House Foreign Affairs</text>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100-A</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Referred to House Judiciary</text>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <actionDate>2015-01-22</actionDate>
+      </item>
+    </actions>
+    <billNumber>503</billNumber>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-02-19</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <type>S</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+        <number>247</number>
+        <latestAction>
+          <actionDate>2015-01-22</actionDate>
+          <text>Read twice and referred to the Committee on the Judiciary.</text>
+        </latestAction>
+        <latestTitle>Expatriate Terrorist Act</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <activities>
+                <item>
+                  <date>2015-02-19T14:17:07Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Immigration and Border Security Subcommittee</name>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
+          <activities>
+            <item>
+              <date>2015-01-22T14:07:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+        </item>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsfa18</systemCode>
+              <activities>
+                <item>
+                  <date>2015-02-11T22:27:53Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <systemCode>hsfa00</systemCode>
+          <activities>
+            <item>
+              <date>2015-01-22T14:07:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <name>Foreign Affairs Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <identifiers>
+          <lisID>2022</lisID>
+          <gpoId>7952</gpoId>
+          <bioguideId>P000602</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Mike</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-01-30</sponsorshipDate>
+        <party>R</party>
+        <district>4</district>
+        <fullName>Rep. Pompeo, Mike [R-KS-4]</fullName>
+        <state>KS</state>
+        <bioguideId>P000602</bioguideId>
+        <lastName>Pompeo</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>322</lisID>
+          <bioguideId>D000533</bioguideId>
+          <gpoId>8149</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>JOHN</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-01</sponsorshipDate>
+        <party>R</party>
+        <district>2</district>
+        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
+        <state>TN</state>
+        <bioguideId>D000533</bioguideId>
+        <lastName>DUNCAN</lastName>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId />
+          <lisID>2270</lisID>
+          <bioguideId>B001291</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Brian</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-15</sponsorshipDate>
+        <party>R</party>
+        <district>36</district>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <state>TX</state>
+        <bioguideId>B001291</bioguideId>
+        <lastName>Babin</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1955</lisID>
+          <bioguideId>O000168</bioguideId>
+          <gpoId>8178</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Pete</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-15</sponsorshipDate>
+        <party>R</party>
+        <district>22</district>
+        <fullName>Rep. Olson, Pete [R-TX-22]</fullName>
+        <state>TX</state>
+        <bioguideId>O000168</bioguideId>
+        <lastName>Olson</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>B001290</bioguideId>
+          <gpoId />
+          <lisID>2203</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Dave</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-11-16</sponsorshipDate>
+        <party>R</party>
+        <district>7</district>
+        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
+        <state>VA</state>
+        <bioguideId>B001290</bioguideId>
+        <lastName>Brat</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>J000174</bioguideId>
+          <gpoId>8159</gpoId>
+          <lisID>603</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>SAM</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-12-01</sponsorshipDate>
+        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Johnson, Sam [R-TX-3]</fullName>
+        <state>TX</state>
+        <bioguideId>J000174</bioguideId>
+        <lastName>JOHNSON</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>H001071</bioguideId>
+          <gpoId />
+          <lisID>2237</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jody</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-04-11</sponsorshipDate>
+        <party>R</party>
+        <district>10</district>
+        <fullName>Rep. Hice, Jody B. [R-GA-10]</fullName>
+        <state>GA</state>
+        <bioguideId>H001071</bioguideId>
+        <lastName>Hice</lastName>
+        <middleName>B.</middleName>
+      </item>
+    </cosponsors>
+    <createDate>2015-01-23T04:46:27Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <firstName>Steve</firstName>
+        <lastName>King</lastName>
+        <state>IA</state>
+        <party>R</party>
+        <district>4</district>
+        <bioguideId>K000362</bioguideId>
+        <identifiers>
+          <gpoId>7918</gpoId>
+          <lisID>1724</lisID>
+          <bioguideId>K000362</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T21:17:51Z</updateDate>
+    <introducedDate>2015-01-22</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDate>2015-01-22</actionDate>
+          <updateDate>2015-01-22T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2015-02-04T17:28:21Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+          <text><![CDATA[<p> <strong>Expatriate Terrorist Act</strong></p> <p>This bill amends the Immigration and Nationality Act to include among the grounds for loss of U.S. nationality by a native-born or naturalized citizen: </p> <ul> <li>taking an oath or making a declaration of allegiance to a foreign terrorist organization after attaining the age of 18; </li> <li>entering, or serving in, a foreign terrorist organization; </li> <li>becoming a member of or providing training or material assistance to a foreign terrorist organization; and </li> <li> accepting, serving in, or performing the duties of any office, post, or employment under the government of a foreign state, a political subdivision, or a foreign terrorist organization if the person knowingly has or acquires the nationality of that foreign state, or an oath, affirmation, or declaration of allegiance to the foreign state, political subdivision, or designated foreign terrorist organization is required for the office, post, or employment. </li> </ul> <p> The Passport Act of 1926 is amended to: </p> <ul> <li>prohibit the Secretary of State from issuing a passport or passport card to an individual who is a member, or attempting to become a member, of a foreign terrorist organization; and </li> <li>direct the Secretary to revoke a passport or passport card previously issued to any such individual. </li> </ul> <p> A person who is denied issuance of a passport or passport card or whose passport or passport card is revoked or otherwise restricted may request a due process hearing not later than 60 days after receiving notice of the nonissuance, revocation, or restriction.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Expatriate Terrorist Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Immigration</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative remedies</name>
+          </item>
+          <item>
+            <name>Citizenship and naturalization</name>
+          </item>
+          <item>
+            <name>Due process and equal protection</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+          <item>
+            <name>Visas and passports</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KING of Iowa:H.R. 503.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 4 which states: ``The Congressshall have the Power To . . . establish an uniform Rule ofNaturalization . . .''[Page H534]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <title>Expatriate Terrorist Act</title>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <title>To amend section 349 of the Immigration and Nationality Act to deem specified activities in support of terrorism as renunciation of United States nationality, and for other purposes.</title>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <title>Expatriate Terrorist Act</title>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

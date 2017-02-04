@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <item>
+        <actionDate>2015-07-17</actionDate>
+        <committee>
+          <systemCode>hswm02</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionDate>2015-07-13</actionDate>
+        <links />
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-07-13</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-07-13</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>3037</billNumber>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-07-17</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-07-13T16:01:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hswm02</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2015-07-17T18:39:17Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hswm00</systemCode>
+          <type>Standing</type>
+          <name>Ways and Means Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <identifiers>
+          <bioguideId>T000460</bioguideId>
+          <gpoId>7806</gpoId>
+          <lisID>1593</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>MIKE</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-13</sponsorshipDate>
+        <party>D</party>
+        <district>5</district>
+        <fullName>Rep. Thompson, Mike [D-CA-5]</fullName>
+        <state>CA</state>
+        <bioguideId>T000460</bioguideId>
+        <lastName>THOMPSON</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8126</gpoId>
+          <lisID>1797</lisID>
+          <bioguideId>F000451</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Michael</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-15</sponsorshipDate>
+        <party>R</party>
+        <district>8</district>
+        <fullName>Rep. Fitzpatrick, Michael G. [R-PA-8]</fullName>
+        <state>PA</state>
+        <bioguideId>F000451</bioguideId>
+        <lastName>Fitzpatrick</lastName>
+        <middleName>G.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>7895</gpoId>
+          <lisID>511</lisID>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>ALCEE</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-15</sponsorshipDate>
+        <party>D</party>
+        <district>20</district>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <state>FL</state>
+        <bioguideId>H000324</bioguideId>
+        <lastName>HASTINGS</lastName>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1907</lisID>
+          <bioguideId>K000368</bioguideId>
+          <gpoId>7220</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Ann</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-16</sponsorshipDate>
+        <party>D</party>
+        <district>1</district>
+        <fullName>Rep. Kirkpatrick, Ann [D-AZ-1]</fullName>
+        <state>AZ</state>
+        <bioguideId>K000368</bioguideId>
+        <lastName>Kirkpatrick</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>7982</gpoId>
+          <lisID>256</lisID>
+          <bioguideId>C000984</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>ELIJAH</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-21</sponsorshipDate>
+        <party>D</party>
+        <district>7</district>
+        <fullName>Rep. Cummings, Elijah E. [D-MD-7]</fullName>
+        <state>MD</state>
+        <bioguideId>C000984</bioguideId>
+        <lastName>CUMMINGS</lastName>
+        <middleName>E.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>B001282</bioguideId>
+          <lisID>2131</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Andy</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-21</sponsorshipDate>
+        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Barr, Andy [R-KY-6]</fullName>
+        <state>KY</state>
+        <bioguideId>B001282</bioguideId>
+        <lastName>Barr</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2264</lisID>
+          <gpoId />
+          <bioguideId>K000386</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>John</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-22</sponsorshipDate>
+        <party>R</party>
+        <district>24</district>
+        <fullName>Rep. Katko, John [R-NY-24]</fullName>
+        <state>NY</state>
+        <bioguideId>K000386</bioguideId>
+        <lastName>Katko</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>S001196</bioguideId>
+          <lisID>2263</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Elise</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-28</sponsorshipDate>
+        <party>R</party>
+        <district>21</district>
+        <fullName>Rep. Stefanik, Elise M. [R-NY-21]</fullName>
+        <state>NY</state>
+        <bioguideId>S001196</bioguideId>
+        <lastName>Stefanik</lastName>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId />
+          <lisID>2199</lisID>
+          <bioguideId>J000296</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-28</sponsorshipDate>
+        <party>R</party>
+        <district>13</district>
+        <fullName>Rep. Jolly, David [R-FL-13]</fullName>
+        <state>FL</state>
+        <bioguideId>J000296</bioguideId>
+        <lastName>Jolly</lastName>
+        <middleName>W.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <gpoId>8038</gpoId>
+          <lisID>1793</lisID>
+          <bioguideId>F000449</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jeff</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-29</sponsorshipDate>
+        <party>R</party>
+        <district>1</district>
+        <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
+        <state>NE</state>
+        <bioguideId>F000449</bioguideId>
+        <lastName>Fortenberry</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>R000395</bioguideId>
+          <gpoId>7957</gpoId>
+          <lisID>977</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>HAROLD</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-29</sponsorshipDate>
+        <party>R</party>
+        <district>5</district>
+        <fullName>Rep. Rogers, Harold [R-KY-5]</fullName>
+        <state>KY</state>
+        <bioguideId>R000395</bioguideId>
+        <lastName>ROGERS</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2128</lisID>
+          <bioguideId>W000813</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jackie</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-29</sponsorshipDate>
+        <party>R</party>
+        <district>2</district>
+        <fullName>Rep. Walorski, Jackie [R-IN-2]</fullName>
+        <state>IN</state>
+        <bioguideId>W000813</bioguideId>
+        <lastName>Walorski</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2070</lisID>
+          <bioguideId>G000568</bioguideId>
+          <gpoId>8200</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>H.</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-29</sponsorshipDate>
+        <party>R</party>
+        <district>9</district>
+        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
+        <state>VA</state>
+        <bioguideId>G000568</bioguideId>
+        <lastName>Griffith</lastName>
+        <middleName>Morgan</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2146</lisID>
+          <gpoId />
+          <bioguideId>L000580</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Michelle</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-31</sponsorshipDate>
+        <party>D</party>
+        <district>1</district>
+        <fullName>Rep. Lujan Grisham, Michelle [D-NM-1]</fullName>
+        <state>NM</state>
+        <bioguideId>L000580</bioguideId>
+        <lastName>Lujan Grisham</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>1710</lisID>
+          <bioguideId>N000181</bioguideId>
+          <gpoId>7826</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Devin</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-31</sponsorshipDate>
+        <party>R</party>
+        <district>22</district>
+        <fullName>Rep. Nunes, Devin [R-CA-22]</fullName>
+        <state>CA</state>
+        <bioguideId>N000181</bioguideId>
+        <lastName>Nunes</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>355</lisID>
+          <bioguideId>E000215</bioguideId>
+          <gpoId>7819</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>ANNA</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-09-08</sponsorshipDate>
+        <party>D</party>
+        <district>18</district>
+        <fullName>Rep. Eshoo, Anna G. [D-CA-18]</fullName>
+        <state>CA</state>
+        <bioguideId>E000215</bioguideId>
+        <lastName>ESHOO</lastName>
+        <middleName>G.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <bioguideId>B001290</bioguideId>
+          <lisID>2203</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Dave</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-09-08</sponsorshipDate>
+        <party>R</party>
+        <district>7</district>
+        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
+        <state>VA</state>
+        <bioguideId>B001290</bioguideId>
+        <lastName>Brat</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <gpoId />
+          <lisID>2156</lisID>
+          <bioguideId>M001190</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Markwayne</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-09-11</sponsorshipDate>
+        <party>R</party>
+        <district>2</district>
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <state>OK</state>
+        <bioguideId>M001190</bioguideId>
+        <lastName>Mullin</lastName>
+        <middleName />
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2074</lisID>
+          <bioguideId>M001180</bioguideId>
+          <gpoId>8222</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-09-11</sponsorshipDate>
+        <party>R</party>
+        <district>1</district>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <state>WV</state>
+        <bioguideId>M001180</bioguideId>
+        <lastName>McKinley</lastName>
+        <middleName>B.</middleName>
+      </item>
+      <item>
+        <identifiers>
+          <lisID>2101</lisID>
+          <gpoId />
+          <bioguideId>H001068</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jared</firstName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-09-11</sponsorshipDate>
+        <party>D</party>
+        <district>2</district>
+        <fullName>Rep. Huffman, Jared [D-CA-2]</fullName>
+        <state>CA</state>
+        <bioguideId>H001068</bioguideId>
+        <lastName>Huffman</lastName>
+        <middleName />
+      </item>
+    </cosponsors>
+    <createDate>2015-07-14T09:26:45Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Reed, Tom [R-NY-23]</fullName>
+        <firstName>Tom</firstName>
+        <lastName>Reed</lastName>
+        <state>NY</state>
+        <party>R</party>
+        <district>23</district>
+        <bioguideId>R000585</bioguideId>
+        <identifiers>
+          <bioguideId>R000585</bioguideId>
+          <lisID>1982</lisID>
+          <gpoId>8090</gpoId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:26:17Z</updateDate>
+    <introducedDate>2015-07-13</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2015-07-13</actionDate>
+          <text><![CDATA[<p><b>Hospice Care Access Improvement Act of 2015</b></p> <p>This bill directs the Department of Health and Human Services (HHS) to select one Medicare administrative contractor to conduct a one-year demonstration program during FY2016 in all hospice programs under the contractor's jurisdiction to test revisions to the methodology for determining hospice payment rates under title XVIII (Medicare) of the Social Security Act contained in the &quot;Fiscal Year 2016 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Requirements,&quot; published on May 5, 2015, by the Centers for Medicare &amp; Medicaid Services.</p> <p>No revisions to the hospice payment methodology may be made for FY2016-FY2017, except for demonstration program purposes. HHS shall implement the proposed hospice payment methodology revisions beginning with FY2018 after:</p> <ul> <li>taking into account an evaluation of the demonstration program, and</li> <li>making any necessary changes to the revisions. </li> </ul> <p>HHS shall implement a process for the medical review of hospice care furnished by a hospice program identified according to certain multiple factors, such as the percentage of patients discharged after receiving hospice care for between 120 and 180 days and who were alive upon discharge.</p> <p>HHS shall also develop and publish guidance for hospice programs to develop interventions to reduce hospital admissions and visits to hospital emergency departments by hospice patients.</p> <p>Medicare shall cover pre-hospice evaluation and counseling services performed by a registered nurse employed by a hospice program.</p> <p>A skilled nursing facility (SNF) shall make a good faith effort to contract with more than one hospice program participating in the Medicare program that provides services in the area served by the SNF, if more than one hospice program is available to serve SNF residents.</p> <p>SNF residents shall have the right to be fully informed of any financial interest the SNF has in any hospice program to which a resident is referred.</p> <p>Any hospital discharge planning evaluation must evaluate, for an individual likely to need hospice care, the availability of such care through hospice programs that:</p> <ul> <li>participate in the Medicare program and serve the area in which the patient resides, and</li> <li>request to be listed by the hospital as available.</li> </ul>]]></text>
+          <lastSummaryUpdateDate>2015-12-21T18:56:35Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <updateDate>2015-07-13T04:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Hospice Care Access Improvement Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Department of Health and Human Services</name>
+          </item>
+          <item>
+            <name>Health facilities and institutions</name>
+          </item>
+          <item>
+            <name>Long-term, rehabilitative, and terminal care</name>
+          </item>
+          <item>
+            <name>Medical ethics</name>
+          </item>
+          <item>
+            <name>Medical tests and diagnostic methods</name>
+          </item>
+          <item>
+            <name>Medicare</name>
+          </item>
+          <item>
+            <name>Nursing</name>
+          </item>
+          <item>
+            <name>Public contracts and procurement</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. REED:H.R. 3037.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8[Page H5117]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Hospice Care Access Improvement Act of 2015</title>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>To amend title XVIII of the Social Security Act to improve access to hospice care under the Medicare program, and for other purposes.</title>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Hospice Care Access Improvement Act of 2015</title>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

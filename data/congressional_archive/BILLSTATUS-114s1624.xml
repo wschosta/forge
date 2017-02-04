@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>S</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-06-18</actionDate>
+        <committee>
+          <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Finance.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionCode>10000</actionCode>
+        <actionDate>2015-06-18</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+    </actions>
+    <billNumber>1624</billNumber>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-06-18</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Finance.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <type>HR</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+        <number>1549</number>
+        <latestAction>
+          <actionDate>2015-03-23</actionDate>
+          <text>Referred to the House Committee on Ways and Means.</text>
+        </latestAction>
+        <latestTitle>Motorsports Fairness and Permanency Act</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-06-18T20:07:29Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssfi00</systemCode>
+          <type>Standing</type>
+          <name>Finance Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <firstName>RICHARD</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Burr, Richard [R-NC]</fullName>
+        <identifiers>
+          <bioguideId>B001135</bioguideId>
+          <lisID>153</lisID>
+          <gpoId>8286</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>B001135</bioguideId>
+        <state>NC</state>
+        <lastName>BURR</lastName>
+      </item>
+      <item>
+        <firstName>Jeanne</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Shaheen, Jeanne [D-NH]</fullName>
+        <identifiers>
+          <bioguideId>S001181</bioguideId>
+          <gpoId>8276</gpoId>
+          <lisID>1901</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>D</party>
+        <bioguideId>S001181</bioguideId>
+        <state>NH</state>
+        <lastName>Shaheen</lastName>
+      </item>
+      <item>
+        <firstName>Kelly</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Ayotte, Kelly [R-NH]</fullName>
+        <identifiers>
+          <bioguideId>A000368</bioguideId>
+          <lisID>2075</lisID>
+          <gpoId>8315</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>A000368</bioguideId>
+        <state>NH</state>
+        <lastName>Ayotte</lastName>
+      </item>
+      <item>
+        <firstName>Gary</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Peters, Gary C. [D-MI]</fullName>
+        <identifiers>
+          <bioguideId>P000595</bioguideId>
+          <gpoId>7994</gpoId>
+          <lisID>1929</lisID>
+        </identifiers>
+        <middleName>C.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>D</party>
+        <bioguideId>P000595</bioguideId>
+        <state>MI</state>
+        <lastName>Peters</lastName>
+      </item>
+      <item>
+        <firstName>ROGER</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <identifiers>
+          <lisID>1226</lisID>
+          <gpoId>8263</gpoId>
+          <bioguideId>W000437</bioguideId>
+        </identifiers>
+        <middleName>F.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>W000437</bioguideId>
+        <state>MS</state>
+        <lastName>WICKER</lastName>
+      </item>
+      <item>
+        <firstName>CLARENCE</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <identifiers>
+          <bioguideId>N000032</bioguideId>
+          <gpoId>8236</gpoId>
+          <lisID>859</lisID>
+        </identifiers>
+        <middleName>WILLIAM</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>D</party>
+        <bioguideId>N000032</bioguideId>
+        <state>FL</state>
+        <lastName>NELSON</lastName>
+      </item>
+      <item>
+        <firstName>Thad</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Cochran, Thad [R-MS]</fullName>
+        <identifiers>
+          <bioguideId>C000567</bioguideId>
+          <gpoId>8292</gpoId>
+          <lisID>213</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C000567</bioguideId>
+        <state>MS</state>
+        <lastName>Cochran</lastName>
+      </item>
+      <item>
+        <firstName>Mark</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Warner, Mark R. [D-VA]</fullName>
+        <identifiers>
+          <gpoId>8269</gpoId>
+          <lisID>1897</lisID>
+          <bioguideId>W000805</bioguideId>
+        </identifiers>
+        <middleName>R.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>D</party>
+        <bioguideId>W000805</bioguideId>
+        <state>VA</state>
+        <lastName>Warner</lastName>
+      </item>
+      <item>
+        <firstName>JERRY</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
+        <identifiers>
+          <gpoId>8307</gpoId>
+          <lisID>1507</lisID>
+          <bioguideId>M000934</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-18</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>M000934</bioguideId>
+        <state>KS</state>
+        <lastName>MORAN</lastName>
+      </item>
+      <item>
+        <firstName>CHARLES</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
+        <identifiers>
+          <lisID>457</lisID>
+          <gpoId>8316</gpoId>
+          <bioguideId>G000386</bioguideId>
+        </identifiers>
+        <middleName>ERNEST</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-10-20</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>G000386</bioguideId>
+        <state>IA</state>
+        <lastName>GRASSLEY</lastName>
+      </item>
+      <item>
+        <firstName>LINDSEY</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Graham, Lindsey [R-SC]</fullName>
+        <identifiers>
+          <bioguideId>G000359</bioguideId>
+          <gpoId>8335</gpoId>
+          <lisID>452</lisID>
+        </identifiers>
+        <middleName>O.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-02-11</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>G000359</bioguideId>
+        <state>SC</state>
+        <lastName>GRAHAM</lastName>
+      </item>
+    </cosponsors>
+    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Sen. Stabenow, Debbie [D-MI]</fullName>
+        <firstName>DEBORAH</firstName>
+        <lastName>STABENOW</lastName>
+        <state>MI</state>
+        <party>D</party>
+        <bioguideId>S000770</bioguideId>
+        <identifiers>
+          <bioguideId>S000770</bioguideId>
+          <lisID>1531</lisID>
+          <gpoId>8261</gpoId>
+        </identifiers>
+        <middleName>ANN</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <createDate>2015-06-19T09:13:39Z</createDate>
+    <updateDate>2016-11-02T23:30:54Z</updateDate>
+    <introducedDate>2015-06-18</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDate>2015-06-18</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2015-07-21T20:17:03Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2015-06-18T04:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><strong>Motorsports Fairness and Permanency Act</strong></p> <p>Amends the Internal Revenue Code to make permanent the classification, for depreciation purposes, of any motorsports entertainment complex as seven-year property.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Motorsports Fairness and Permanency Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Business investment and capital</name>
+          </item>
+          <item>
+            <name>Income tax deductions</name>
+          </item>
+          <item>
+            <name>Motor vehicles</name>
+          </item>
+          <item>
+            <name>Sports and recreation facilities</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Motorsports Fairness and Permanency Act</title>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>A bill to provide predictability and certainty in the tax law, create jobs, and encourage investment.</title>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Motorsports Fairness and Permanency Act</title>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

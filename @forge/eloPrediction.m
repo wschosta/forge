@@ -81,10 +81,10 @@ if isempty(files) || obj.recompute_ELO
         % --------- COMMITTEE EFFECT ---------
         % Calculate sponsor effect and set t1
         committee_specific = ones(length(committee_ids),1)*bayes_initial;
-        committee_sponsor_match = sponsor_ids(ismember(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
+        committee_sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
         for i = 1:length(committee_ids)
             
-            if ismember(committee_ids{i},committee_sponsor_matrix.Properties.RowNames)
+            if ~isempty(util.CStrAinBP(committee_ids{i},committee_sponsor_matrix.Properties.RowNames))
                 sponsor_specific_effect = zeros(1,length(committee_sponsor_match));
                 
                 for k = 1:length(committee_sponsor_match)
@@ -108,7 +108,7 @@ if isempty(files) || obj.recompute_ELO
         % calculate t2
         t_set_current_value  = ones(length(ids),1)*0.5;
         
-        matched_ids = find(ismember(ids,[sponsor_ids;committee_ids]));
+        matched_ids = util.CStrAinBP(ids,[sponsor_ids;committee_ids]));
         
         for j = 1:length(ids)
             if ~any(j == matched_ids)
@@ -122,7 +122,7 @@ if isempty(files) || obj.recompute_ELO
             else
                 if ~isnan(t_set.committee_vote(j))
                     t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
-                elseif ismember(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames)
+                elseif ~isempty(util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames))
                     t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
                 end
             end

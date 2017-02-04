@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-05-15</actionDate>
+        <committee>
+          <name>Environment and the Economy Subcommittee</name>
+          <systemCode>hsif18</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment and the Economy.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-05-14</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2015-05-14</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <actionDate>2015-05-14</actionDate>
+      </item>
+    </actions>
+    <billNumber>2328</billNumber>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-05-15</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Environment and the Economy.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <type>S</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <number>1987</number>
+        <latestAction>
+          <actionDate>2015-08-05</actionDate>
+          <text>Read twice and referred to the Committee on Environment and Public Works.</text>
+        </latestAction>
+        <latestTitle>Lead Exposure Reduction Amendments Act of 2015</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-05-14T14:03:15Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsif18</systemCode>
+              <name>Environment and the Economy Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2015-05-15T19:40:50Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <fullName>Rep. Westmoreland, Lynn A. [R-GA-3]</fullName>
+        <firstName>Lynn</firstName>
+        <lastName>Westmoreland</lastName>
+        <identifiers>
+          <bioguideId>W000796</bioguideId>
+          <gpoId>7900</gpoId>
+          <lisID>1779</lisID>
+        </identifiers>
+        <state>GA</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>W000796</bioguideId>
+        <district>3</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
+        <firstName>PETE</firstName>
+        <lastName>SESSIONS</lastName>
+        <identifiers>
+          <bioguideId>S000250</bioguideId>
+          <lisID>1525</lisID>
+          <gpoId>8188</gpoId>
+        </identifiers>
+        <state>TX</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>S000250</bioguideId>
+        <district>32</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Fleischmann, Charles J. "Chuck" [R-TN-3]</fullName>
+        <firstName>Charles</firstName>
+        <lastName>Fleischmann</lastName>
+        <identifiers>
+          <lisID>2061</lisID>
+          <gpoId>8150</gpoId>
+          <bioguideId>F000459</bioguideId>
+        </identifiers>
+        <state>TN</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>F000459</bioguideId>
+        <district>3</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>J. "Chuck"</middleName>
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Blum, Rod [R-IA-1]</fullName>
+        <firstName>Rod</firstName>
+        <lastName>Blum</lastName>
+        <identifiers>
+          <lisID>2241</lisID>
+          <gpoId />
+          <bioguideId>B001294</bioguideId>
+        </identifiers>
+        <state>IA</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>B001294</bioguideId>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Stivers, Steve [R-OH-15]</fullName>
+        <firstName>Steve</firstName>
+        <lastName>Stivers</lastName>
+        <identifiers>
+          <lisID>2047</lisID>
+          <gpoId>8105</gpoId>
+          <bioguideId>S001187</bioguideId>
+        </identifiers>
+        <state>OH</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>S001187</bioguideId>
+        <district>15</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Murphy, Tim [R-PA-18]</fullName>
+        <firstName>Tim</firstName>
+        <lastName>Murphy</lastName>
+        <identifiers>
+          <lisID>1744</lisID>
+          <bioguideId>M001151</bioguideId>
+          <gpoId>8723</gpoId>
+        </identifiers>
+        <state>PA</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>M001151</bioguideId>
+        <district>18</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Peterson, Collin C. [D-MN-7]</fullName>
+        <firstName>COLLIN</firstName>
+        <lastName>PETERSON</lastName>
+        <identifiers>
+          <lisID>910</lisID>
+          <gpoId>8007</gpoId>
+          <bioguideId>P000258</bioguideId>
+        </identifiers>
+        <state>MN</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>P000258</bioguideId>
+        <district>7</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>C.</middleName>
+        <party>D</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Collins, Chris [R-NY-27]</fullName>
+        <firstName>Chris</firstName>
+        <lastName>Collins</lastName>
+        <identifiers>
+          <gpoId />
+          <lisID>2151</lisID>
+          <bioguideId>C001092</bioguideId>
+        </identifiers>
+        <state>NY</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>C001092</bioguideId>
+        <district>27</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Barr, Andy [R-KY-6]</fullName>
+        <firstName>Andy</firstName>
+        <lastName>Barr</lastName>
+        <identifiers>
+          <lisID>2131</lisID>
+          <bioguideId>B001282</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>KY</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>B001282</bioguideId>
+        <district>6</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-21</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
+        <firstName>Blake</firstName>
+        <lastName>Farenthold</lastName>
+        <identifiers>
+          <lisID>2067</lisID>
+          <gpoId>8183</gpoId>
+          <bioguideId>F000460</bioguideId>
+        </identifiers>
+        <state>TX</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>F000460</bioguideId>
+        <district>27</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-05-21</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Kline, John [R-MN-2]</fullName>
+        <firstName>John</firstName>
+        <lastName>Kline</lastName>
+        <identifiers>
+          <lisID>1733</lisID>
+          <bioguideId>K000363</bioguideId>
+          <gpoId>8002</gpoId>
+        </identifiers>
+        <state>MN</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>K000363</bioguideId>
+        <district>2</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-06-09</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Walberg, Tim [R-MI-7]</fullName>
+        <firstName>Tim</firstName>
+        <lastName>Walberg</lastName>
+        <identifiers>
+          <bioguideId>W000798</bioguideId>
+          <gpoId>7992</gpoId>
+          <lisID>1855</lisID>
+        </identifiers>
+        <state>MI</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>W000798</bioguideId>
+        <district>7</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-07-27</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Hudson, Richard [R-NC-8]</fullName>
+        <firstName>Richard</firstName>
+        <lastName>Hudson</lastName>
+        <identifiers>
+          <gpoId />
+          <lisID>2140</lisID>
+          <bioguideId>H001067</bioguideId>
+        </identifiers>
+        <state>NC</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>H001067</bioguideId>
+        <district>8</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2015-09-24</sponsorshipDate>
+      </item>
+      <item>
+        <fullName>Rep. Emmer, Tom [R-MN-6]</fullName>
+        <firstName>Tom</firstName>
+        <lastName>Emmer</lastName>
+        <identifiers>
+          <bioguideId>E000294</bioguideId>
+          <gpoId />
+          <lisID>2253</lisID>
+        </identifiers>
+        <state>MN</state>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>E000294</bioguideId>
+        <district>6</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <party>R</party>
+        <sponsorshipDate>2016-01-05</sponsorshipDate>
+      </item>
+    </cosponsors>
+    <createDate>2015-05-15T12:51:45Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
+        <firstName>Kevin</firstName>
+        <lastName>Cramer</lastName>
+        <state>ND</state>
+        <party>R</party>
+        <district>0</district>
+        <bioguideId>C001096</bioguideId>
+        <identifiers>
+          <lisID>2144</lisID>
+          <gpoId />
+          <bioguideId>C001096</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:07:16Z</updateDate>
+    <introducedDate>2015-05-14</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2015-05-14T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <text><![CDATA[<p><b>Lead Exposure Reduction Amendments Act of 2015</b></p> <p>This bill amends the Toxic Substances Control Act (TSCA) to exclude from the definition of "abatement" any activity: (1) the primary purpose of which is to repair, restore, or remodel target housing, public buildings constructed before 1978, or commercial buildings; and (2) that incidentally results in a reduction or elimination of lead-based paint hazards.</p> <p>The Environmental Protection Agency (EPA), no later than one year prior to proposing any renovation and remodeling regulation, must study the extent to which persons engaged in such activities: (1) are exposed to lead, and (2) disturb lead and create a lead-based paint hazard. The bill exempts from such a regulation an emergency renovation carried out in response to an event that is an act of God as defined by the Comprehensive Environmental Response, Compensation, and Liability Act of 1980, that presents a risk to the public health or safety, or that threatens to cause significant damage to equipment or property if not attended to immediately. A regulation may not require post-abatement clearance testing. </p> <p> The EPA must promulgate regulations to permit a resident owner of a dwelling that is target housing to authorize a contractor to forego compliance with such a regulation if the owner certifies that: (1) the renovation or remodeling project is to be carried out at such dwelling, (2) no pregnant woman or child under the age of six resides or will reside in such housing, and (3) the owner acknowledges that the contractor will be exempt from the requirements of such regulation. The EPA may not hold a contractor responsible for a misrepresentation made by the owner of such dwelling unless the contractor has actual knowledge of such a misrepresentation. </p> <p>The EPA must: (1) recognize a qualifying test kit for use under TSCA, and (2) suspend enforcement of any regulation relating to renovation and remodeling of target housing and commercial buildings constructed after January 1, 1960, and public buildings constructed between January 1, 1960, and January 1, 1978, until a specified period after the EPA recognizes such a test kit.</p>]]></text>
+          <lastSummaryUpdateDate>2016-07-20T21:44:50Z</lastSummaryUpdateDate>
+          <actionDate>2015-05-14</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Lead Exposure Reduction Amendments Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Building construction</name>
+          </item>
+          <item>
+            <name>Environmental Protection Agency (EPA)</name>
+          </item>
+          <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Hazardous wastes and toxic substances</name>
+          </item>
+          <item>
+            <name>Residential rehabilitation and home repair</name>
+          </item>
+          <item>
+            <name>Worker safety and health</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CRAMER:H.R. 2328.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the United StatesConstitution.[Page H3213]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <title>Lead Exposure Reduction Amendments Act of 2015</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <title>To amend the Toxic Substances Control Act relating to lead-based paint renovation and remodeling activities.</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>Lead Exposure Reduction Amendments Act of 2015</title>
+        <chamberName />
+        <chamberCode />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

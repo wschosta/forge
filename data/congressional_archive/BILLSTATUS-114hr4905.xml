@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <originChamber>House</originChamber>
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2016-04-28</actionDate>
+        <committee>
+          <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionDate>2016-04-12</actionDate>
+      </item>
+      <item>
+        <links />
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2016-04-12</actionDate>
+      </item>
+      <item>
+        <links />
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>1000</actionCode>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2016-04-12</actionDate>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <laws />
+    <amendments />
+    <updateDate>2016-12-15T16:31:12Z</updateDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2016-04-12T18:03:15Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2016-04-28T21:55:49Z</date>
+                </item>
+              </activities>
+              <systemCode>hsju08</systemCode>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Engel, Eliot L. [D-NY-16]</fullName>
+        <firstName>ELIOT</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>E000179</bioguideId>
+        <district>16</district>
+        <lastName>ENGEL</lastName>
+        <middleName>L.</middleName>
+        <identifiers>
+          <lisID>344</lisID>
+          <bioguideId>E000179</bioguideId>
+          <gpoId>8078</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>NY</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Vargas, Juan [D-CA-51]</fullName>
+        <firstName>Juan</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>V000130</bioguideId>
+        <district>51</district>
+        <lastName>Vargas</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>2112</lisID>
+          <bioguideId>V000130</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>CA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <firstName>ELEANOR</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>N000147</bioguideId>
+        <district>0</district>
+        <lastName>NORTON</lastName>
+        <middleName>HOLMES</middleName>
+        <identifiers>
+          <gpoId>7871</gpoId>
+          <bioguideId>N000147</bioguideId>
+          <lisID>868</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>DC</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Watson Coleman, Bonnie [D-NJ-12]</fullName>
+        <firstName>Bonnie</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>W000822</bioguideId>
+        <district>12</district>
+        <lastName>Watson Coleman</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>2259</lisID>
+          <bioguideId>W000822</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>NJ</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Quigley, Mike [D-IL-5]</fullName>
+        <firstName>Mike</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>Q000023</bioguideId>
+        <district>5</district>
+        <lastName>Quigley</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>1967</lisID>
+          <bioguideId>Q000023</bioguideId>
+          <gpoId>7925</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>IL</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Blumenauer, Earl [D-OR-3]</fullName>
+        <firstName>EARL</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>B000574</bioguideId>
+        <district>3</district>
+        <lastName>BLUMENAUER</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>99</lisID>
+          <bioguideId>B000574</bioguideId>
+          <gpoId>8116</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>OR</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Meeks, Gregory W. [D-NY-5]</fullName>
+        <firstName>GREGORY</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>M001137</bioguideId>
+        <district>5</district>
+        <lastName>MEEKS</lastName>
+        <middleName>W.</middleName>
+        <identifiers>
+          <lisID>1506</lisID>
+          <bioguideId>M001137</bioguideId>
+          <gpoId>8067</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>NY</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Gutierrez, Luis V. [D-IL-4]</fullName>
+        <firstName>LUIS</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>G000535</bioguideId>
+        <district>4</district>
+        <lastName>GUTIERREZ</lastName>
+        <middleName>V.</middleName>
+        <identifiers>
+          <lisID>478</lisID>
+          <bioguideId>G000535</bioguideId>
+          <gpoId>7924</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>IL</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-12</sponsorshipDate>
+        <fullName>Rep. Connolly, Gerald E. [D-VA-11]</fullName>
+        <firstName>Gerald</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>C001078</bioguideId>
+        <district>11</district>
+        <lastName>Connolly</lastName>
+        <middleName>E.</middleName>
+        <identifiers>
+          <lisID>1959</lisID>
+          <bioguideId>C001078</bioguideId>
+          <gpoId>8202</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <state>VA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-14</sponsorshipDate>
+        <fullName>Rep. Honda, Michael M. [D-CA-17]</fullName>
+        <firstName>MICHAEL</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>H001034</bioguideId>
+        <district>17</district>
+        <lastName>HONDA</lastName>
+        <middleName>M.</middleName>
+        <identifiers>
+          <bioguideId>H001034</bioguideId>
+          <lisID>1634</lisID>
+          <gpoId>7820</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <state>CA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-14</sponsorshipDate>
+        <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
+        <firstName>JOSE</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>S000248</bioguideId>
+        <district>15</district>
+        <lastName>SERRANO</lastName>
+        <middleName>E.</middleName>
+        <identifiers>
+          <gpoId>8077</gpoId>
+          <bioguideId>S000248</bioguideId>
+          <lisID>1042</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <state>NY</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-19</sponsorshipDate>
+        <fullName>Rep. Schakowsky, Janice D. [D-IL-9]</fullName>
+        <firstName>JANICE</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>S001145</bioguideId>
+        <district>9</district>
+        <lastName>SCHAKOWSKY</lastName>
+        <middleName>D.</middleName>
+        <identifiers>
+          <lisID>1588</lisID>
+          <bioguideId>S001145</bioguideId>
+          <gpoId>7929</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <state>IL</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-04-20</sponsorshipDate>
+        <fullName>Rep. Takano, Mark [D-CA-41]</fullName>
+        <firstName>Mark</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>T000472</bioguideId>
+        <district>41</district>
+        <lastName>Takano</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>2110</lisID>
+          <bioguideId>T000472</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <state>CA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2016-05-11</sponsorshipDate>
+        <fullName>Rep. DeSaulnier, Mark [D-CA-11]</fullName>
+        <firstName>Mark</firstName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>D000623</bioguideId>
+        <district>11</district>
+        <lastName>DeSaulnier</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>2227</lisID>
+          <bioguideId>D000623</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <state>CA</state>
+      </item>
+    </cosponsors>
+    <congress>114</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>ATF Enforcement Act</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>To restore the ability of law enforcement authorities to enforce gun safety laws, and for other purposes.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>ATF Enforcement Act</title>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <parentTitleType />
+      </item>
+    </titles>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Appropriations</name>
+          </item>
+          <item>
+            <name>Business records</name>
+          </item>
+          <item>
+            <name>Criminal justice information and records</name>
+          </item>
+          <item>
+            <name>Department of Justice</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>Firearms and explosives</name>
+          </item>
+          <item>
+            <name>Freedom of information</name>
+          </item>
+          <item>
+            <name>Historical and cultural resources</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Retail and wholesale trades</name>
+          </item>
+          <item>
+            <name>Trade restrictions</name>
+          </item>
+          <item>
+            <name>Violent crime</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2016-04-12T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <text><![CDATA[<p><b>ATF Enforcement Act</b></p> <p>This bill amends the federal judicial code to require the Director of the Bureau of Alcohol, Tobacco, Firearms, and Explosives (ATF) to be appointed by the Attorney General. Currently, the Director is appointed by the President and confirmed by the Senate.</p> <p> Additionally, it amends several appropriations laws to remove limitations on the ATF's authority to conduct activities related to the administration of federal firearms laws.</p> <p>The amended appropriations laws include: </p> <ul> <li>the Consolidated Appropriations Act, 2016; </li> <li> the Consolidated and Further Continuing Appropriations Act, 2013;</li> <li>the Consolidated and Further Continuing Appropriations Act, 2012;</li> <li>the Consolidated Appropriations Act, 2010;</li> <li>the Omnibus Appropriations Act, 2009;</li> <li> the Consolidated Appropriations Act, 2008;</li> <li>the Science, State, Justice, Commerce, and Related Agencies Appropriations Act, 2006;</li> <li>the Consolidated Appropriations Act, 2005; and</li> <li>the Consolidated Appropriations Resolution, 2003.</li> </ul> <p>The bill removes provisions from these laws that:</p> <ul> <li>prohibit the consolidation or centralization within the Department of Justice of firearm transfer records maintained by federal firearms licensees; </li> <li>prohibit the imposition of a requirement that firearms dealers conduct a physical inventory;</li> <li>require instant background check records to be destroyed within 24 hours;</li> <li>limit the use of firearms tracing data;</li> <li>limit the processing of Freedom of Information Act requests in connection with arson or explosive incidents or firearm traces;</li> <li>limit denials of applications to import &quot;curios or relics&quot; firearms, parts, or ammunition; </li> <li>prohibit denials of federal firearms licenses due to lack of business activity;</li> <li>prohibit the transfer of functions, missions, or activities to other agencies or departments; </li> <li>prohibit the search of electronic firearm transfer records of federally licensed gun dealers who go out of business; and </li> <li>prohibit denials of applications to import certain non-sporting shotguns. </li> </ul>]]></text>
+          <lastSummaryUpdateDate>2016-12-15T16:15:43Z</lastSummaryUpdateDate>
+          <actionDate>2016-04-12</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <number>2939</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+          <actionDate>2015-07-09</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <latestTitle>Enforce Existing Gun Laws Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <cboCostEstimates />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BEYER:H.R. 4905.Congress has the power to enact this legislation pursuantto the following:Clause 3 of Section 8 of Article I of the U.S. Constitution[Page H1635]</pre>]]></constitutionalAuthorityStatementText>
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+      <actionDate>2016-04-28</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <introducedDate>2016-04-12</introducedDate>
+    <notes />
+    <createDate>2016-04-13T05:07:17Z</createDate>
+    <title>ATF Enforcement Act</title>
+    <calendarNumbers />
+    <sponsors>
+      <item>
+        <middleName>S.</middleName>
+        <lastName>Beyer</lastName>
+        <firstName>Donald</firstName>
+        <bioguideId>B001292</bioguideId>
+        <fullName>Rep. Beyer, Donald S., Jr. [D-VA-8]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <state>VA</state>
+        <district>8</district>
+        <identifiers>
+          <bioguideId>B001292</bioguideId>
+          <lisID>2272</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+    </sponsors>
+    <billNumber>4905</billNumber>
+    <recordedVotes />
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2015-05-13</actionDate>
+        <committee>
+          <name>Health Subcommittee</name>
+          <systemCode>hsvr03</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2015-05-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <committee>
+          <name>Veterans' Affairs Committee</name>
+          <systemCode>hsvr00</systemCode>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2015-05-12</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2015-05-12</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <billNumber>2257</billNumber>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-05-13</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2015-05-12T16:04:05Z</date>
+            </item>
+          </activities>
+          <name>Veterans' Affairs Committee</name>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2015-05-13T19:39:27Z</date>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+              <systemCode>hsvr03</systemCode>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <systemCode>hsvr00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Meehan, Patrick [R-PA-7]</fullName>
+        <firstName>Patrick</firstName>
+        <identifiers>
+          <bioguideId>M001181</bioguideId>
+          <gpoId>8125</gpoId>
+          <lisID>2052</lisID>
+        </identifiers>
+        <state>PA</state>
+        <middleName />
+        <lastName>Meehan</lastName>
+        <bioguideId>M001181</bioguideId>
+        <sponsorshipDate>2015-05-14</sponsorshipDate>
+        <district>7</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Delaney, John K. [D-MD-6]</fullName>
+        <firstName>John</firstName>
+        <identifiers>
+          <lisID>2133</lisID>
+          <bioguideId>D000620</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>MD</state>
+        <middleName>K.</middleName>
+        <lastName>Delaney</lastName>
+        <bioguideId>D000620</bioguideId>
+        <sponsorshipDate>2015-07-07</sponsorshipDate>
+        <district>6</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Nolan, Richard M. [D-MN-8]</fullName>
+        <firstName>RICHARD</firstName>
+        <identifiers>
+          <lisID>867</lisID>
+          <bioguideId>N000127</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>MN</state>
+        <middleName />
+        <lastName>NOLAN</lastName>
+        <bioguideId>N000127</bioguideId>
+        <sponsorshipDate>2015-07-15</sponsorshipDate>
+        <district>8</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <firstName>ZOE</firstName>
+        <identifiers>
+          <lisID>701</lisID>
+          <bioguideId>L000397</bioguideId>
+          <gpoId>7821</gpoId>
+        </identifiers>
+        <state>CA</state>
+        <middleName />
+        <lastName>LOFGREN</lastName>
+        <bioguideId>L000397</bioguideId>
+        <sponsorshipDate>2015-09-08</sponsorshipDate>
+        <district>19</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Bishop, Rob [R-UT-1]</fullName>
+        <firstName>Rob</firstName>
+        <identifiers>
+          <bioguideId>B001250</bioguideId>
+          <lisID>1753</lisID>
+          <gpoId>8189</gpoId>
+        </identifiers>
+        <state>UT</state>
+        <middleName />
+        <lastName>Bishop</lastName>
+        <bioguideId>B001250</bioguideId>
+        <sponsorshipDate>2015-09-22</sponsorshipDate>
+        <district>1</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Young, David [R-IA-3]</fullName>
+        <firstName>David</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2242</lisID>
+          <bioguideId>Y000066</bioguideId>
+        </identifiers>
+        <state>IA</state>
+        <middleName />
+        <lastName>Young</lastName>
+        <bioguideId>Y000066</bioguideId>
+        <sponsorshipDate>2015-09-29</sponsorshipDate>
+        <district>3</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
+        <firstName>Scott</firstName>
+        <identifiers>
+          <bioguideId>P000608</bioguideId>
+          <lisID>2113</lisID>
+          <gpoId />
+        </identifiers>
+        <state>CA</state>
+        <middleName>H.</middleName>
+        <lastName>Peters</lastName>
+        <bioguideId>P000608</bioguideId>
+        <sponsorshipDate>2015-09-30</sponsorshipDate>
+        <district>52</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Buck, Ken [R-CO-4]</fullName>
+        <firstName>Ken</firstName>
+        <identifiers>
+          <bioguideId>B001297</bioguideId>
+          <gpoId />
+          <lisID>2233</lisID>
+        </identifiers>
+        <state>CO</state>
+        <middleName />
+        <lastName>Buck</lastName>
+        <bioguideId>B001297</bioguideId>
+        <sponsorshipDate>2015-10-21</sponsorshipDate>
+        <district>4</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Napolitano, Grace F. [D-CA-32]</fullName>
+        <firstName>GRACE</firstName>
+        <identifiers>
+          <lisID>1602</lisID>
+          <gpoId>7843</gpoId>
+          <bioguideId>N000179</bioguideId>
+        </identifiers>
+        <state>CA</state>
+        <middleName>F.</middleName>
+        <lastName>NAPOLITANO</lastName>
+        <bioguideId>N000179</bioguideId>
+        <sponsorshipDate>2015-12-15</sponsorshipDate>
+        <district>32</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Loebsack, David [D-IA-2]</fullName>
+        <firstName>David</firstName>
+        <identifiers>
+          <gpoId>7915</gpoId>
+          <lisID>1846</lisID>
+          <bioguideId>L000565</bioguideId>
+        </identifiers>
+        <state>IA</state>
+        <middleName />
+        <lastName>Loebsack</lastName>
+        <bioguideId>L000565</bioguideId>
+        <sponsorshipDate>2015-12-16</sponsorshipDate>
+        <district>2</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Kennedy, Joseph P., III [D-MA-4]</fullName>
+        <firstName>Joseph</firstName>
+        <identifiers>
+          <lisID>2172</lisID>
+          <bioguideId>K000379</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>MA</state>
+        <middleName>P.</middleName>
+        <lastName>Kennedy</lastName>
+        <bioguideId>K000379</bioguideId>
+        <sponsorshipDate>2015-12-16</sponsorshipDate>
+        <district>4</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Beyer, Donald S., Jr. [D-VA-8]</fullName>
+        <firstName>Donald</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2272</lisID>
+          <bioguideId>B001292</bioguideId>
+        </identifiers>
+        <state>VA</state>
+        <middleName>S.</middleName>
+        <lastName>Beyer</lastName>
+        <bioguideId>B001292</bioguideId>
+        <sponsorshipDate>2015-12-18</sponsorshipDate>
+        <district>8</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Moulton, Seth [D-MA-6]</fullName>
+        <firstName>Seth</firstName>
+        <identifiers>
+          <lisID>2246</lisID>
+          <gpoId />
+          <bioguideId>M001196</bioguideId>
+        </identifiers>
+        <state>MA</state>
+        <middleName />
+        <lastName>Moulton</lastName>
+        <bioguideId>M001196</bioguideId>
+        <sponsorshipDate>2016-01-07</sponsorshipDate>
+        <district>6</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
+        <firstName>Mike</firstName>
+        <identifiers>
+          <lisID>1912</lisID>
+          <bioguideId>C001077</bioguideId>
+          <gpoId>7864</gpoId>
+        </identifiers>
+        <state>CO</state>
+        <middleName />
+        <lastName>Coffman</lastName>
+        <bioguideId>C001077</bioguideId>
+        <sponsorshipDate>2016-02-01</sponsorshipDate>
+        <district>6</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Clark, Katherine M. [D-MA-5]</fullName>
+        <firstName>Katherine</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2196</lisID>
+          <bioguideId>C001101</bioguideId>
+        </identifiers>
+        <state>MA</state>
+        <middleName>M.</middleName>
+        <lastName>Clark</lastName>
+        <bioguideId>C001101</bioguideId>
+        <sponsorshipDate>2016-02-23</sponsorshipDate>
+        <district>5</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Collins, Chris [R-NY-27]</fullName>
+        <firstName>Chris</firstName>
+        <identifiers>
+          <lisID>2151</lisID>
+          <bioguideId>C001092</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>NY</state>
+        <middleName />
+        <lastName>Collins</lastName>
+        <bioguideId>C001092</bioguideId>
+        <sponsorshipDate>2016-02-23</sponsorshipDate>
+        <district>27</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Zinke, Ryan K. [R-MT-At Large]</fullName>
+        <firstName>Ryan</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2254</lisID>
+          <bioguideId>Z000018</bioguideId>
+        </identifiers>
+        <state>MT</state>
+        <middleName>K.</middleName>
+        <lastName>Zinke</lastName>
+        <bioguideId>Z000018</bioguideId>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <district>0</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Gibson, Christopher P. [R-NY-19]</fullName>
+        <firstName>Christopher</firstName>
+        <identifiers>
+          <lisID>2043</lisID>
+          <bioguideId>G000564</bioguideId>
+          <gpoId>8081</gpoId>
+        </identifiers>
+        <state>NY</state>
+        <middleName>P.</middleName>
+        <lastName>Gibson</lastName>
+        <bioguideId>G000564</bioguideId>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <district>19</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Tonko, Paul [D-NY-20]</fullName>
+        <firstName>Paul</firstName>
+        <identifiers>
+          <bioguideId>T000469</bioguideId>
+          <lisID>1942</lisID>
+          <gpoId>8082</gpoId>
+        </identifiers>
+        <state>NY</state>
+        <middleName />
+        <lastName>Tonko</lastName>
+        <bioguideId>T000469</bioguideId>
+        <sponsorshipDate>2016-03-01</sponsorshipDate>
+        <district>20</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Frankel, Lois [D-FL-22]</fullName>
+        <firstName>Lois</firstName>
+        <identifiers>
+          <lisID>2119</lisID>
+          <bioguideId>F000462</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>FL</state>
+        <middleName />
+        <lastName>Frankel</lastName>
+        <bioguideId>F000462</bioguideId>
+        <sponsorshipDate>2016-03-07</sponsorshipDate>
+        <district>22</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <firstName>WALTER</firstName>
+        <identifiers>
+          <lisID>612</lisID>
+          <gpoId>8026</gpoId>
+          <bioguideId>J000255</bioguideId>
+        </identifiers>
+        <state>NC</state>
+        <middleName>B.</middleName>
+        <lastName>JONES</lastName>
+        <bioguideId>J000255</bioguideId>
+        <sponsorshipDate>2016-03-14</sponsorshipDate>
+        <district>3</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Capuano, Michael E. [D-MA-7]</fullName>
+        <firstName>MICHAEL</firstName>
+        <identifiers>
+          <bioguideId>C001037</bioguideId>
+          <gpoId>7973</gpoId>
+          <lisID>1564</lisID>
+        </identifiers>
+        <state>MA</state>
+        <middleName>E.</middleName>
+        <lastName>CAPUANO</lastName>
+        <bioguideId>C001037</bioguideId>
+        <sponsorshipDate>2016-04-18</sponsorshipDate>
+        <district>7</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Sanchez, Loretta [D-CA-46]</fullName>
+        <firstName>LORETTA</firstName>
+        <identifiers>
+          <gpoId>7852</gpoId>
+          <lisID>1522</lisID>
+          <bioguideId>S000030</bioguideId>
+        </identifiers>
+        <state>CA</state>
+        <middleName />
+        <lastName>SANCHEZ</lastName>
+        <bioguideId>S000030</bioguideId>
+        <sponsorshipDate>2016-04-26</sponsorshipDate>
+        <district>46</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Eshoo, Anna G. [D-CA-18]</fullName>
+        <firstName>ANNA</firstName>
+        <identifiers>
+          <bioguideId>E000215</bioguideId>
+          <gpoId>7819</gpoId>
+          <lisID>355</lisID>
+        </identifiers>
+        <state>CA</state>
+        <middleName>G.</middleName>
+        <lastName>ESHOO</lastName>
+        <bioguideId>E000215</bioguideId>
+        <sponsorshipDate>2016-06-07</sponsorshipDate>
+        <district>18</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
+        <firstName>Tom</firstName>
+        <identifiers>
+          <bioguideId>C001053</bioguideId>
+          <gpoId>8112</gpoId>
+          <lisID>1742</lisID>
+        </identifiers>
+        <state>OK</state>
+        <middleName />
+        <lastName>Cole</lastName>
+        <bioguideId>C001053</bioguideId>
+        <sponsorshipDate>2016-06-07</sponsorshipDate>
+        <district>4</district>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Maloney, Sean Patrick [D-NY-18]</fullName>
+        <firstName>Sean</firstName>
+        <identifiers>
+          <bioguideId>M001185</bioguideId>
+          <gpoId />
+          <lisID>2150</lisID>
+        </identifiers>
+        <state>NY</state>
+        <middleName>Patrick</middleName>
+        <lastName>Maloney</lastName>
+        <bioguideId>M001185</bioguideId>
+        <sponsorshipDate>2016-06-09</sponsorshipDate>
+        <district>18</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
+        <firstName>BOBBY</firstName>
+        <identifiers>
+          <lisID>1003</lisID>
+          <gpoId>7921</gpoId>
+          <bioguideId>R000515</bioguideId>
+        </identifiers>
+        <state>IL</state>
+        <middleName>L.</middleName>
+        <lastName>RUSH</lastName>
+        <bioguideId>R000515</bioguideId>
+        <sponsorshipDate>2016-06-13</sponsorshipDate>
+        <district>1</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <createDate>2015-05-13T08:46:05Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Miller, Jeff [R-FL-1]</fullName>
+        <firstName>Jeff</firstName>
+        <lastName>Miller</lastName>
+        <state>FL</state>
+        <party>R</party>
+        <district>1</district>
+        <bioguideId>M001144</bioguideId>
+        <identifiers>
+          <gpoId>7873</gpoId>
+          <lisID>1685</lisID>
+          <bioguideId>M001144</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:06:42Z</updateDate>
+    <introducedDate>2015-05-12</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2015-05-12T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <text><![CDATA[<p>Directs the Department of Veterans Affairs (VA) to furnish to a covered individual, in addition to any fertility treatment otherwise provided, assisted reproductive technology.</p> <p>Defines: (1) "covered individual" to mean a veteran, regardless of sex, who is enrolled in the VA health care system, who has a service-connected disability, and whose disability includes an injury to the reproductive organs or the spinal cord that directly results in the veteran being unable to procreate without assisted reproductive technology and such veteran's spouse; and (2) "assisted reproductive technology" to include in vitro fertilization or any other specific technology used to assist reproduction that the VA deems appropriate.</p> <p>Authorizes the VA to provide not more than three in vitro fertilization cycles that result in a total of not more than six implantation attempts.</p> <p>Provides that the VA: (1) may provide for cryogenic storage of genetic material of a covered individual for not more than three years, after which the individual shall be responsible for the storage costs; (2) may not possess, or make any determination regarding the disposition of, genetic material of a covered individual; and (3) shall carry out any activities relating to the custody or disposition of such genetic material in accordance with the laws of the state in which the genetic material is located.</p> <p>Prohibits the VA from providing any benefits relating to surrogacy or assisting with obtaining a third-party genetic material donation.</p>]]></text>
+          <lastSummaryUpdateDate>2015-07-22T15:28:19Z</lastSummaryUpdateDate>
+          <actionDate>2015-05-12</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>To amend title 38, United States Code, to improve the reproductive treatment provided to certain disabled veterans.</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Genetics</name>
+          </item>
+          <item>
+            <name>Sex and reproductive health</name>
+          </item>
+          <item>
+            <name>Veterans' medical care</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MILLER of Florida:H.R. 2257.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8 of the United States Constitution.[Page H2878]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend title 38, United States Code, to improve the reproductive treatment provided to certain disabled veterans.</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>To amend title 38, United States Code, to improve the reproductive treatment provided to certain disabled veterans.</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

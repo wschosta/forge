@@ -195,9 +195,9 @@ classdef forge < handle
                         if ~isempty(new_table)
                             new_table.year = ones(height(new_table),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
                             
-                            field_match = ~ismember(output.Properties.VariableNames,new_table.Properties.VariableNames);
+                            field_match(util.CStrAinBP(output.Properties.VariableNames,new_table.Properties.VariableNames)) = [];
                             
-                            for j = find(field_match)
+                            for j = field_match
                                 if isa(output.(output.Properties.VariableNames{j})(1),'cell')
                                     new_table.(output.Properties.VariableNames{j}) = cell(height(new_table),1);
                                 elseif isa(output.(output.Properties.VariableNames{j})(1),'double')
@@ -342,7 +342,7 @@ classdef forge < handle
                                 keys = keys{:};
                             end
                             
-                            if hit && ismember(keys,tmp.people_id)
+                            if hit && ~isempty(util.CStrAinBP(keys,tmp.people_id))
                                 person = people(tmp.people_id);
                                 person.last_year = str2double(list(i).name(1:4));
                                 people(tmp.people_id) = person;

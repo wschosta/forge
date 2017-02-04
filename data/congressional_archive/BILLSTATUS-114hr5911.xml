@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <originChamber>House</originChamber>
+    <actions>
+      <actionTypeCounts>
+        <placeholderTextForH>2</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>2</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2016-08-19</actionDate>
+        <committee>
+          <systemCode>hshm05</systemCode>
+          <name>Counterterrorism and Intelligence Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Counterterrorism and Intelligence.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2016-08-10</actionDate>
+        <committee>
+          <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <text>Referred to House Judiciary</text>
+        <type>IntroReferral</type>
+        <actionDate>2016-07-14</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <text>Referred to the Committee on Homeland Security, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionDate>2016-07-14</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <committee />
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <text>Referred to House Homeland Security</text>
+        <type>IntroReferral</type>
+        <actionDate>2016-07-14</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hshm00</systemCode>
+          <name>Homeland Security Committee</name>
+        </committee>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionDate>2016-07-14</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionDate>2016-07-14</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <links />
+      </item>
+    </actions>
+    <laws />
+    <amendments />
+    <updateDate>2016-12-13T22:31:16Z</updateDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <name>Homeland Security Committee</name>
+          <subcommittees>
+            <item>
+              <name>Counterterrorism and Intelligence Subcommittee</name>
+              <systemCode>hshm05</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2016-08-19T15:47:35Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hshm00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2016-07-14T13:01:45Z</date>
+            </item>
+          </activities>
+          <type>Standing</type>
+        </item>
+        <item>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+              <systemCode>hsju08</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2016-08-10T17:00:19Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2016-07-14T13:01:50Z</date>
+            </item>
+          </activities>
+          <type>Standing</type>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cosponsors>
+      <item>
+        <lastName>Delaney</lastName>
+        <sponsorshipWithdrawnDate />
+        <state>MD</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2133</lisID>
+          <bioguideId>D000620</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <middleName>K.</middleName>
+        <district>6</district>
+        <firstName>John</firstName>
+        <bioguideId>D000620</bioguideId>
+        <fullName>Rep. Delaney, John K. [D-MD-6]</fullName>
+        <party>D</party>
+      </item>
+      <item>
+        <lastName>Heck</lastName>
+        <sponsorshipWithdrawnDate />
+        <state>NV</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>8061</gpoId>
+          <lisID>2040</lisID>
+          <bioguideId>H001055</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <middleName>J.</middleName>
+        <district>3</district>
+        <firstName>Joseph</firstName>
+        <bioguideId>H001055</bioguideId>
+        <fullName>Rep. Heck, Joseph J. [R-NV-3]</fullName>
+        <party>R</party>
+      </item>
+      <item>
+        <lastName>Boustany</lastName>
+        <sponsorshipWithdrawnDate />
+        <state>LA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>7965</gpoId>
+          <lisID>1787</lisID>
+          <bioguideId>B001255</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2016-09-14</sponsorshipDate>
+        <middleName>W.</middleName>
+        <district>3</district>
+        <firstName>Charles</firstName>
+        <bioguideId>B001255</bioguideId>
+        <fullName>Rep. Boustany, Charles W., Jr. [R-LA-3]</fullName>
+        <party>R</party>
+      </item>
+    </cosponsors>
+    <congress>114</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <title>Countering Violent Extremism Task Force Oversight Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <title>To require the Secretary of Homeland Security and Attorney General to submit a report on the Countering Violent Extremism Task Force, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>Countering Violent Extremism Task Force Oversight Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Alliances</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Homeland Security</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Political movements and philosophies</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Emergency Management</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2016-07-14T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <text><![CDATA[<p><strong>Countering Violent Extremism Task Force Oversight Act</strong></p> <p>This bill requires the Department of Homeland Security and the Department of Justice to jointly submit to Congress an annual report on the Countering Violent Extremism Task Force.</p> <p>Each report shall include an examination of how the task force:</p> <ul> <li>plans and coordinates countering violent extremism programs of the federal government;</li> <li>evaluates the effectiveness of such programs;</li> <li>plans and coordinates such programs that specifically address and counter the threat of radicalization of U.S. citizens or lawful permanent residents by foreign terrorists or foreign terrorist organizations through the Internet, social media, or other platforms; and</li> <li>plans and coordinates such programs that specifically address and counter the threat of lone wolf acts of terrorism conducted by U.S. citizens or lawful permanent residents who have been radicalized. </li> </ul> <p>Each such report also shall examine:</p> <ul> <li>the levels of funding, personnel, and agency resources that are devoted to the task force;</li> <li>problems and difficulties associated with the development, implementation, and coordination of such programs;</li> <li>a comparison of the task force with similar organizations and programs employed by U.S. allies and partners; and </li> <li>proposed policy recommendations for developing coordinated, coherent, cohesive whole-government countering violent extremism programs.</li> </ul>]]></text>
+          <lastSummaryUpdateDate>2016-11-08T19:14:08Z</lastSummaryUpdateDate>
+          <actionDate>2016-07-14</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <cboCostEstimates />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Indiana:H.R. 5911.Congress has the power to enact this legislation pursuantto the following:Clause 18 of section 8 of article 1 of the Constitution.[Page H5015]</pre>]]></constitutionalAuthorityStatementText>
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Counterterrorism and Intelligence.</text>
+      <actionDate>2016-08-19</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Emergency Management</name>
+    </policyArea>
+    <introducedDate>2016-07-14</introducedDate>
+    <notes />
+    <createDate>2016-07-15T07:14:38Z</createDate>
+    <title>Countering Violent Extremism Task Force Oversight Act</title>
+    <calendarNumbers />
+    <sponsors>
+      <item>
+        <middleName>C.</middleName>
+        <lastName>Young</lastName>
+        <firstName>Todd</firstName>
+        <bioguideId>Y000064</bioguideId>
+        <fullName>Rep. Young, Todd C. [R-IN-9]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <state>IN</state>
+        <district>9</district>
+        <identifiers>
+          <gpoId>7948</gpoId>
+          <lisID>2019</lisID>
+          <bioguideId>Y000064</bioguideId>
+        </identifiers>
+      </item>
+    </sponsors>
+    <billNumber>5911</billNumber>
+    <recordedVotes />
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

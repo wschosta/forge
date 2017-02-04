@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <amendments />
+    <actions>
+      <item>
+        <actionDate>2015-04-17</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <links />
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <actionDate>2015-04-15</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+      </item>
+      <item>
+        <committee />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2015-04-15</actionDate>
+        <text>Introduced in House</text>
+      </item>
+      <item>
+        <committee />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <actionDate>2015-04-15</actionDate>
+        <text>Introduced in House</text>
+      </item>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-04-15T14:03:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2015-04-17T21:08:07Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <billNumber>1807</billNumber>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Blood and blood diseases</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Health information and medical records</name>
+          </item>
+          <item>
+            <name>Health programs administration and funding</name>
+          </item>
+          <item>
+            <name>Health promotion and preventive care</name>
+          </item>
+          <item>
+            <name>Medical research</name>
+          </item>
+          <item>
+            <name>Medical tests and diagnostic methods</name>
+          </item>
+          <item>
+            <name>Minority health</name>
+          </item>
+          <item>
+            <name>Research administration and funding</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <relatedBills />
+    <updateDate>2017-01-21T12:33:47Z</updateDate>
+    <laws />
+    <createDate>2015-04-16T09:11:18Z</createDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. DANNY K. DAVIS of Illinois:H.R. 1807.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I of the United States Constitutionand its subsequent amendments, and further clarified andinterpreted by the Supreme Court of the United States[Page H2269]</pre>]]></constitutionalAuthorityStatementText>
+    <introducedDate>2015-04-15</introducedDate>
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2015-04-15</sponsorshipDate>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>C.</middleName>
+        <lastName>Burgess</lastName>
+        <identifiers>
+          <lisID>1751</lisID>
+          <bioguideId>B001248</bioguideId>
+          <gpoId>8182</gpoId>
+        </identifiers>
+        <party>R</party>
+        <bioguideId>B001248</bioguideId>
+        <firstName>Michael</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
+        <district>26</district>
+        <state>TX</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-16</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <lastName>BRADY</lastName>
+        <identifiers>
+          <gpoId>8119</gpoId>
+          <lisID>1469</lisID>
+          <bioguideId>B001227</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>B001227</bioguideId>
+        <firstName>ROBERT</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Brady, Robert A. [D-PA-1]</fullName>
+        <district>1</district>
+        <state>PA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-16</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <lastName>JACKSON LEE</lastName>
+        <identifiers>
+          <gpoId>8174</gpoId>
+          <bioguideId>J000032</bioguideId>
+          <lisID>588</lisID>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>J000032</bioguideId>
+        <firstName>SHEILA</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <district>18</district>
+        <state>TX</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-16</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <lastName>FATTAH</lastName>
+        <identifiers>
+          <lisID>371</lisID>
+          <bioguideId>F000043</bioguideId>
+          <gpoId>8120</gpoId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>F000043</bioguideId>
+        <firstName>CHAKA</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Fattah, Chaka [D-PA-2]</fullName>
+        <district>2</district>
+        <state>PA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-16</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <lastName>CONYERS</lastName>
+        <identifiers>
+          <gpoId>7999</gpoId>
+          <lisID>229</lisID>
+          <bioguideId>C000714</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>C000714</bioguideId>
+        <firstName>JOHN</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Conyers, John, Jr. [D-MI-13]</fullName>
+        <district>13</district>
+        <state>MI</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-22</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <lastName>Scott</lastName>
+        <identifiers>
+          <lisID>1722</lisID>
+          <bioguideId>S001157</bioguideId>
+          <gpoId>7910</gpoId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>S001157</bioguideId>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Scott, David [D-GA-13]</fullName>
+        <district>13</district>
+        <state>GA</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-22</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>B.</middleName>
+        <lastName>RANGEL</lastName>
+        <identifiers>
+          <bioguideId>R000053</bioguideId>
+          <gpoId>8076</gpoId>
+          <lisID>944</lisID>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>R000053</bioguideId>
+        <firstName>CHARLES</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Rangel, Charles B. [D-NY-13]</fullName>
+        <district>13</district>
+        <state>NY</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-04-22</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>C.</middleName>
+        <lastName>Young</lastName>
+        <identifiers>
+          <gpoId>7948</gpoId>
+          <lisID>2019</lisID>
+          <bioguideId>Y000064</bioguideId>
+        </identifiers>
+        <party>R</party>
+        <bioguideId>Y000064</bioguideId>
+        <firstName>Todd</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Young, Todd C. [R-IN-9]</fullName>
+        <district>9</district>
+        <state>IN</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-05-13</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <lastName>Wilson</lastName>
+        <identifiers>
+          <gpoId>7889</gpoId>
+          <lisID>2004</lisID>
+          <bioguideId>W000808</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>W000808</bioguideId>
+        <firstName>Frederica</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
+        <district>24</district>
+        <state>FL</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-05-13</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <lastName>Adams</lastName>
+        <identifiers>
+          <bioguideId>A000370</bioguideId>
+          <gpoId />
+          <lisID>2201</lisID>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>A000370</bioguideId>
+        <firstName>Alma</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Adams, Alma S. [D-NC-12]</fullName>
+        <district>12</district>
+        <state>NC</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-05-13</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <lastName>Yarmuth</lastName>
+        <identifiers>
+          <gpoId>7955</gpoId>
+          <lisID>1853</lisID>
+          <bioguideId>Y000062</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>Y000062</bioguideId>
+        <firstName>John</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Yarmuth, John A. [D-KY-3]</fullName>
+        <district>3</district>
+        <state>KY</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-05-13</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <lastName>HASTINGS</lastName>
+        <identifiers>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>H000324</bioguideId>
+        <firstName>ALCEE</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <district>20</district>
+        <state>FL</state>
+      </item>
+      <item>
+        <sponsorshipDate>2015-05-13</sponsorshipDate>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <lastName>LEE</lastName>
+        <identifiers>
+          <lisID>1501</lisID>
+          <bioguideId>L000551</bioguideId>
+          <gpoId>7814</gpoId>
+        </identifiers>
+        <party>D</party>
+        <bioguideId>L000551</bioguideId>
+        <firstName>BARBARA</firstName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
+        <district>13</district>
+        <state>CA</state>
+      </item>
+    </cosponsors>
+    <sponsors>
+      <item>
+        <party>D</party>
+        <lastName>DAVIS</lastName>
+        <fullName>Rep. Davis, Danny K. [D-IL-7]</fullName>
+        <bioguideId>D000096</bioguideId>
+        <middleName>K.</middleName>
+        <district>7</district>
+        <byRequestType />
+        <identifiers>
+          <gpoId>7927</gpoId>
+          <bioguideId>D000096</bioguideId>
+          <lisID>1477</lisID>
+        </identifiers>
+        <state>IL</state>
+        <firstName>DANNY</firstName>
+      </item>
+    </sponsors>
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <recordedVotes />
+    <notes />
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDate>2015-04-15</actionDate>
+          <lastSummaryUpdateDate>2015-07-02T19:39:01Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Sickle Cell Disease Research, Surveillance, Prevention, and Treatment Act of 2015</b></p> <p>This bill amends the Public Health Service Act to require the Department of Health and Human Services to make grants to states to: (1) collect data on the prevalence and distribution of sickle cell disease, (2) conduct sickle cell disease public health initiatives to improve access to care and health outcomes, and (3) identify and evaluate strategies for prevention and treatment of sickle cell disease complications.</p> The sickle cell disease demonstration program is revised, reauthorized through FY2021, and moved from the American Jobs Creation Act of 2004 to the Public Health Service Act.]]></text>
+          <updateDate>2015-04-15T04:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+      <actionDate>2015-04-17</actionDate>
+    </latestAction>
+    <titles>
+      <item>
+        <parentTitleType />
+        <title>Sickle Cell Disease Research, Surveillance, Prevention, and Treatment Act of 2015</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <title>To amend the Public Health Service Act to reauthorize a sickle cell disease prevention and treatment demonstration program and to provide for sickle cell disease research, surveillance, prevention, and treatment.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <title>Sickle Cell Disease Research, Surveillance, Prevention, and Treatment Act of 2015</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+      </item>
+    </titles>
+    <title>Sickle Cell Disease Research, Surveillance, Prevention, and Treatment Act of 2015</title>
+    <calendarNumbers />
+    <committeeReports />
+    <congress>114</congress>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

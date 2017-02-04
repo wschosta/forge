@@ -14,9 +14,21 @@ issue          = cell(1,length(learning_materials.issue_codes))';
 data_storage.awv = awv;
 data_storage.iwv = iwv;
 
+delete_str = '';
+
+issue_codes = unique(learning_table.issue_codes);
+description_text = cell(length(issue_codes),1);
+weights          = cell(length(issue_codes),1);
+
+for j = 1:lenth(issue_codes)
+    % Find all of the description text and all of the associated weights
+    description_text{j} = [data_storage.unique_text_store{j} data_storage.issue_text_store{j} data_storage.additional_issue_text_store{j}];
+    weights{j}          = [data_storage.weights_store{j};data_storage.issue_text_weight_store{j}*iwv;data_storage.additional_issue_text_weight_store{j}*awv];
+end
+
 for i = 1:length(learning_materials.issue_codes)
     
-    bill_title = learning_materials{i,'title'};
+    bill_title = learning_materials{i,'unified_text'};
     
     [learning_coded(i), issue{i}] = la.classifyBill(bill_title,data_storage);
     
@@ -24,23 +36,22 @@ for i = 1:length(learning_materials.issue_codes)
     [bill_title,~] = la.cleanupText(bill_title,data_storage.common_words);
     
     % Find the issue codes and create matched values array
-    issue_codes = unique(learning_table.issue_codes);
     matches     = zeros(1,length(issue_codes));
     
     % Iterate over issue codes
     for j = 1:length(issue_codes)
         
-        % Find all of the description text and all of the associated
-        % weights
-        description_text = [data_storage.unique_text_store{j} data_storage.issue_text_store{j} data_storage.additional_issue_text_store{j}];
-        weights          = [data_storage.weights_store{j};data_storage.issue_text_weight_store{j}*iwv;data_storage.additional_issue_text_weight_store{j}*awv];
+        print_str = sprintf('%i %i',i,j);
+        fprintf([delete_str,print_str]);
+        delete_str = repmat(sprintf('\b'),1,length(print_str));
         
+
         % Find matches with the title text
-        in_description = ismember(description_text,bill_title);
+        in_description = util.CStrAinBP(description_text{j},bill_title);
         
         % If there are matches, add the weights
-        if any(in_description)
-            matches(j) = matches(j) + sum(weights(in_description > 0));
+        if ~isempty(in_description)
+            matches(j) = sum(weights{j}(in_description));
         end
     end
     
@@ -50,6 +61,9 @@ for i = 1:length(learning_materials.issue_codes)
     % Store the issue weights
     issue{i} = matches;
 end
+
+print_str = sprintf('Done!'); %i bills checked, %i new or updated bills found\n',length(new_bill_list),sum(update_list));
+fprintf([delete_str,print_str]);
 
 % create the learned table
 learned_table = table(learning_coded,issue);

@@ -3,10 +3,9 @@ function generateHistograms(people_matrix,save_directory,label_string,specific_l
 % Create histograms for a given people matrix
 
 % Find matching rows and columns
-rows            = people_matrix.Properties.RowNames;
-columns         = people_matrix.Properties.VariableNames;
-[~,match_index] = ismember(rows,columns);
-match_index     = match_index(match_index > 0);
+rows        = people_matrix.Properties.RowNames;
+columns     = people_matrix.Properties.VariableNames;
+match_index = util.CStrAinBP(rows,columns);
 
 % Do some vodo magic to find matching legislators and eliminate them from
 % the main set

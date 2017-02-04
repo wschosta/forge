@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <item>
+        <actionDate>2016-10-19</actionDate>
+        <committee>
+          <systemCode>hsag03</systemCode>
+          <name>Nutrition Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Nutrition.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Agriculture.</text>
+        <committee>
+          <systemCode>hsag00</systemCode>
+          <name>Agriculture Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2016-09-26</actionDate>
+        <links />
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2016-09-26</actionDate>
+        <links />
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2016-09-26</actionDate>
+        <links />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <billNumber>6171</billNumber>
+    <policyArea>
+      <name>Agriculture and Food</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2016-10-19</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Nutrition.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2016-09-26T16:01:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsag03</systemCode>
+              <name>Nutrition Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2016-10-19T17:48:13Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsag00</systemCode>
+          <type>Standing</type>
+          <name>Agriculture Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <state>NM</state>
+        <fullName>Rep. Pearce, Stevan [R-NM-2]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <bioguideId>P000588</bioguideId>
+          <lisID>1738</lisID>
+          <gpoId>8057</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Pearce</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Stevan</firstName>
+        <district>2</district>
+        <party>R</party>
+        <bioguideId>P000588</bioguideId>
+      </item>
+      <item>
+        <state>FL</state>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2115</lisID>
+          <gpoId />
+          <bioguideId>Y000065</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>S.</middleName>
+        <lastName>Yoho</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Ted</firstName>
+        <district>3</district>
+        <party>R</party>
+        <bioguideId>Y000065</bioguideId>
+      </item>
+      <item>
+        <state>MD</state>
+        <fullName>Rep. Harris, Andy [R-MD-1]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <bioguideId>H001052</bioguideId>
+          <lisID>2026</lisID>
+          <gpoId>7976</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Harris</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Andy</firstName>
+        <district>1</district>
+        <party>R</party>
+        <bioguideId>H001052</bioguideId>
+      </item>
+      <item>
+        <state>TX</state>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <gpoId />
+          <lisID>2161</lisID>
+          <bioguideId>W000814</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>K.</middleName>
+        <lastName>Weber</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Randy</firstName>
+        <district>14</district>
+        <party>R</party>
+        <bioguideId>W000814</bioguideId>
+      </item>
+      <item>
+        <state>CA</state>
+        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2100</lisID>
+          <gpoId />
+          <bioguideId>L000578</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>LaMalfa</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Doug</firstName>
+        <district>1</district>
+        <party>R</party>
+        <bioguideId>L000578</bioguideId>
+      </item>
+      <item>
+        <state>NC</state>
+        <fullName>Rep. Rouzer, David [R-NC-7]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <gpoId />
+          <lisID>2256</lisID>
+          <bioguideId>R000603</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Rouzer</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <district>7</district>
+        <party>R</party>
+        <bioguideId>R000603</bioguideId>
+      </item>
+      <item>
+        <state>UT</state>
+        <fullName>Rep. Stewart, Chris [R-UT-2]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2168</lisID>
+          <gpoId />
+          <bioguideId>S001192</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Stewart</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Chris</firstName>
+        <district>2</district>
+        <party>R</party>
+        <bioguideId>S001192</bioguideId>
+      </item>
+      <item>
+        <state>SC</state>
+        <fullName>Rep. Rice, Tom [R-SC-7]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2160</lisID>
+          <gpoId />
+          <bioguideId>R000597</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Rice</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Tom</firstName>
+        <district>7</district>
+        <party>R</party>
+        <bioguideId>R000597</bioguideId>
+      </item>
+      <item>
+        <state>IN</state>
+        <fullName>Rep. Rokita, Todd [R-IN-4]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <gpoId>7943</gpoId>
+          <lisID>2017</lisID>
+          <bioguideId>R000592</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Rokita</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Todd</firstName>
+        <district>4</district>
+        <party>R</party>
+        <bioguideId>R000592</bioguideId>
+      </item>
+      <item>
+        <state>AR</state>
+        <fullName>Rep. Westerman, Bruce [R-AR-4]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2224</lisID>
+          <gpoId />
+          <bioguideId>W000821</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Westerman</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Bruce</firstName>
+        <district>4</district>
+        <party>R</party>
+        <bioguideId>W000821</bioguideId>
+      </item>
+      <item>
+        <state>TX</state>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <bioguideId>B001291</bioguideId>
+          <gpoId />
+          <lisID>2270</lisID>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>Babin</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Brian</firstName>
+        <district>36</district>
+        <party>R</party>
+        <bioguideId>B001291</bioguideId>
+      </item>
+      <item>
+        <state>CA</state>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <bioguideId>R000409</bioguideId>
+          <lisID>979</lisID>
+          <gpoId>7851</gpoId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <lastName>ROHRABACHER</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>DANA</firstName>
+        <district>48</district>
+        <party>R</party>
+        <bioguideId>R000409</bioguideId>
+      </item>
+      <item>
+        <state>WY</state>
+        <fullName>Rep. Lummis, Cynthia M. [R-WY-At Large]</fullName>
+        <sponsorshipDate>2016-09-28</sponsorshipDate>
+        <identifiers>
+          <lisID>1960</lisID>
+          <gpoId>8225</gpoId>
+          <bioguideId>L000571</bioguideId>
+        </identifiers>
+        <sponsorshipWithdrawnDate />
+        <middleName>M.</middleName>
+        <lastName>Lummis</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Cynthia</firstName>
+        <district>0</district>
+        <party>R</party>
+        <bioguideId>L000571</bioguideId>
+      </item>
+    </cosponsors>
+    <createDate>2016-09-27T05:14:25Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <firstName>Glenn</firstName>
+        <lastName>Grothman</lastName>
+        <state>WI</state>
+        <party>R</party>
+        <district>6</district>
+        <bioguideId>G000576</bioguideId>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:55:05Z</updateDate>
+    <introducedDate>2016-09-26</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2016-09-26T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2016-10-03T14:25:53Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <actionDate>2016-09-26</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <text><![CDATA[<p>This bill amends the Food and Nutrition Act of 2008 to eliminate the Secretary of Agriculture's authority to waive Supplemental Nutrition Assistance Program (SNAP, formerly known as the food stamp program) work requirements for individuals who reside in areas with an unemployment rate above 10% or an insufficient number of jobs.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>To amend the Food and Nutrition Act of 2008 to eliminate the authority of the Secretary of Agriculture to grant a waiver from the work requirements for participation in the supplemental nutrition assistance program on account of an area's high unemployment rate or limited employment availability for individuals who reside in the area.</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects />
+        <policyArea>
+          <name>Agriculture and Food</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GROTHMAN:H.R. 6171.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 1: The Congress shall havePower to lay and collect Taxes, Duties, Imposts and Excises,to pay the Debts and provide for the common Defence andgeneral Welfare of the United States; but all Duties, Impostsand Excises shall be uniform throughout the United States.[Page H5913]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <chamberCode />
+        <chamberName />
+        <title>To amend the Food and Nutrition Act of 2008 to eliminate the authority of the Secretary of Agriculture to grant a waiver from the work requirements for participation in the supplemental nutrition assistance program on account of an area's high unemployment rate or limited employment availability for individuals who reside in the area.</title>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+      </item>
+      <item>
+        <chamberCode />
+        <chamberName />
+        <title>To amend the Food and Nutrition Act of 2008 to eliminate the authority of the Secretary of Agriculture to grant a waiver from the work requirements for participation in the supplemental nutrition assistance program on account of an area's high unemployment rate or limited employment availability for individuals who reside in the area.</title>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

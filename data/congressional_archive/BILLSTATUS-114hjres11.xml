@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional elections</name>
+          </item>
+          <item>
+            <name>Constitution and constitutional amendments</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+          <item>
+            <name>Senate</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-01-22</actionDate>
+        <committee>
+          <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <actionDate>2015-01-09</actionDate>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <links />
+      </item>
+      <item>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2015-01-09</actionDate>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+      </item>
+      <item>
+        <committee />
+        <actionCode>1000</actionCode>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2015-01-09</actionDate>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <notes />
+    <createDate>2015-01-10T04:46:21Z</createDate>
+    <title>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</title>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <number>19</number>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</latestTitle>
+        <latestAction>
+          <actionDate>2015-01-22</actionDate>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        </latestAction>
+        <type>HJRES</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Harris</lastName>
+        <state>MD</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2026</lisID>
+          <gpoId>7976</gpoId>
+          <bioguideId>H001052</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>H001052</bioguideId>
+        <firstName>Andy</firstName>
+        <fullName>Rep. Harris, Andy [R-MD-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Scott</lastName>
+        <state>GA</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <gpoId>7905</gpoId>
+          <bioguideId>S001189</bioguideId>
+          <lisID>2009</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>S001189</bioguideId>
+        <firstName>Austin</firstName>
+        <fullName>Rep. Scott, Austin [R-GA-8]</fullName>
+        <district>8</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Roe</lastName>
+        <state>TN</state>
+        <middleName>P.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>1954</lisID>
+          <gpoId>8148</gpoId>
+          <bioguideId>R000582</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>R000582</bioguideId>
+        <firstName>David</firstName>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Rice</lastName>
+        <state>SC</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <gpoId />
+          <bioguideId>R000597</bioguideId>
+          <lisID>2160</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>R000597</bioguideId>
+        <firstName>Tom</firstName>
+        <fullName>Rep. Rice, Tom [R-SC-7]</fullName>
+        <district>7</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Stewart</lastName>
+        <state>UT</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>S001192</bioguideId>
+          <lisID>2168</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>S001192</bioguideId>
+        <firstName>Chris</firstName>
+        <fullName>Rep. Stewart, Chris [R-UT-2]</fullName>
+        <district>2</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Byrne</lastName>
+        <state>AL</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2197</lisID>
+          <gpoId />
+          <bioguideId>B001289</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>B001289</bioguideId>
+        <firstName>Bradley</firstName>
+        <fullName>Rep. Byrne, Bradley [R-AL-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Wittman</lastName>
+        <state>VA</state>
+        <middleName>J.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>W000804</bioguideId>
+          <lisID>1886</lisID>
+          <gpoId>8192</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>W000804</bioguideId>
+        <firstName>Robert</firstName>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Weber</lastName>
+        <state>TX</state>
+        <middleName>K.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>W000814</bioguideId>
+          <lisID>2161</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>W000814</bioguideId>
+        <firstName>Randy</firstName>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
+        <district>14</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Massie</lastName>
+        <state>KY</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2094</lisID>
+          <gpoId>8371</gpoId>
+          <bioguideId>M001184</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>M001184</bioguideId>
+        <firstName>Thomas</firstName>
+        <fullName>Rep. Massie, Thomas [R-KY-4]</fullName>
+        <district>4</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Walker</lastName>
+        <state>NC</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2255</lisID>
+          <gpoId />
+          <bioguideId>W000819</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>W000819</bioguideId>
+        <firstName>Mark</firstName>
+        <fullName>Rep. Walker, Mark [R-NC-6]</fullName>
+        <district>6</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>McKinley</lastName>
+        <state>WV</state>
+        <middleName>B.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2074</lisID>
+          <gpoId>8222</gpoId>
+          <bioguideId>M001180</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>M001180</bioguideId>
+        <firstName>David</firstName>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Walorski</lastName>
+        <state>IN</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2128</lisID>
+          <gpoId />
+          <bioguideId>W000813</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>W000813</bioguideId>
+        <firstName>Jackie</firstName>
+        <fullName>Rep. Walorski, Jackie [R-IN-2]</fullName>
+        <district>2</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Rothfus</lastName>
+        <state>PA</state>
+        <middleName>J.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <lisID>2158</lisID>
+          <gpoId />
+          <bioguideId>R000598</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>R000598</bioguideId>
+        <firstName>Keith</firstName>
+        <fullName>Rep. Rothfus, Keith J. [R-PA-12]</fullName>
+        <district>12</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Guinta</lastName>
+        <state>NH</state>
+        <middleName>C.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>G000570</bioguideId>
+          <gpoId>8041</gpoId>
+          <lisID>2038</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>G000570</bioguideId>
+        <firstName>Frank</firstName>
+        <fullName>Rep. Guinta, Frank C. [R-NH-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Duncan</lastName>
+        <state>SC</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>D000615</bioguideId>
+          <lisID>2057</lisID>
+          <gpoId>8143</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>D000615</bioguideId>
+        <firstName>Jeff</firstName>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
+        <district>3</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Allen</lastName>
+        <state>GA</state>
+        <middleName>W.</middleName>
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <bioguideId>A000372</bioguideId>
+          <lisID>2239</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>A000372</bioguideId>
+        <firstName>Rick</firstName>
+        <fullName>Rep. Allen, Rick W. [R-GA-12]</fullName>
+        <district>12</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Clawson</lastName>
+        <state>FL</state>
+        <middleName />
+        <sponsorshipDate>2015-01-09</sponsorshipDate>
+        <identifiers>
+          <gpoId />
+          <bioguideId>C001102</bioguideId>
+          <lisID>2200</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>C001102</bioguideId>
+        <firstName>Curt</firstName>
+        <fullName>Rep. Clawson, Curt [R-FL-19]</fullName>
+        <district>19</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Brooks</lastName>
+        <state>IN</state>
+        <middleName>W.</middleName>
+        <sponsorshipDate>2015-01-26</sponsorshipDate>
+        <identifiers>
+          <bioguideId>B001284</bioguideId>
+          <lisID>2129</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>B001284</bioguideId>
+        <firstName>Susan</firstName>
+        <fullName>Rep. Brooks, Susan W. [R-IN-5]</fullName>
+        <district>5</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Coffman</lastName>
+        <state>CO</state>
+        <middleName />
+        <sponsorshipDate>2015-01-28</sponsorshipDate>
+        <identifiers>
+          <gpoId>7864</gpoId>
+          <bioguideId>C001077</bioguideId>
+          <lisID>1912</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>C001077</bioguideId>
+        <firstName>Mike</firstName>
+        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
+        <district>6</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Zeldin</lastName>
+        <state>NY</state>
+        <middleName>M.</middleName>
+        <sponsorshipDate>2015-07-13</sponsorshipDate>
+        <identifiers>
+          <bioguideId>Z000017</bioguideId>
+          <gpoId />
+          <lisID>2261</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>Z000017</bioguideId>
+        <firstName>Lee</firstName>
+        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Sanford</lastName>
+        <state>SC</state>
+        <middleName />
+        <sponsorshipDate>2015-09-17</sponsorshipDate>
+        <identifiers>
+          <bioguideId>S000051</bioguideId>
+          <lisID>1012</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>S000051</bioguideId>
+        <firstName>Mark</firstName>
+        <fullName>Rep. Sanford, Mark [R-SC-1]</fullName>
+        <district>1</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Abraham</lastName>
+        <state>LA</state>
+        <middleName>Lee</middleName>
+        <sponsorshipDate>2015-12-03</sponsorshipDate>
+        <identifiers>
+          <bioguideId>A000374</bioguideId>
+          <gpoId />
+          <lisID>2244</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>A000374</bioguideId>
+        <firstName>Ralph</firstName>
+        <fullName>Rep. Abraham, Ralph Lee [R-LA-5]</fullName>
+        <district>5</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Black</lastName>
+        <state>TN</state>
+        <middleName />
+        <sponsorshipDate>2016-04-14</sponsorshipDate>
+        <identifiers>
+          <lisID>2063</lisID>
+          <gpoId>8153</gpoId>
+          <bioguideId>B001273</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>B001273</bioguideId>
+        <firstName>Diane</firstName>
+        <fullName>Rep. Black, Diane [R-TN-6]</fullName>
+        <district>6</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>LaHood</lastName>
+        <state>IL</state>
+        <middleName />
+        <sponsorshipDate>2016-04-28</sponsorshipDate>
+        <identifiers>
+          <lisID>2295</lisID>
+          <gpoId />
+          <bioguideId>L000585</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>L000585</bioguideId>
+        <firstName>Darin</firstName>
+        <fullName>Rep. LaHood, Darin [R-IL-18]</fullName>
+        <district>18</district>
+      </item>
+      <item>
+        <sponsorshipWithdrawnDate />
+        <lastName>Posey</lastName>
+        <state>FL</state>
+        <middleName />
+        <sponsorshipDate>2016-09-26</sponsorshipDate>
+        <identifiers>
+          <bioguideId>P000599</bioguideId>
+          <lisID>1915</lisID>
+          <gpoId>7887</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <bioguideId>P000599</bioguideId>
+        <firstName>Bill</firstName>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <district>8</district>
+      </item>
+    </cosponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BARR:H.J. Res. 11.Congress has the power to enact this legislation pursuantto the following:The constitutional authority for this bill is stated inArticle V of the U.S. Constitution, which establishes themethod for enacting amendments to the Constitution.[Page H190]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <updateDate>2017-01-11T14:35:42Z</updateDate>
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <text><![CDATA[<p><b>Constitutional Amendment</b></p> <p> Prohibits a person from serving more than two consecutive terms as a Senator or six consecutive terms as a Representative. </p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2015-01-21T16:43:49Z</lastSummaryUpdateDate>
+          <updateDate>2015-01-09T05:00:00Z</updateDate>
+          <actionDate>2015-01-09</actionDate>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <latestAction>
+      <links />
+      <actionDate>2015-01-22</actionDate>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+    </latestAction>
+    <originChamber>House</originChamber>
+    <introducedDate>2015-01-09</introducedDate>
+    <billNumber>11</billNumber>
+    <amendments />
+    <billType>HJRES</billType>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2015-01-22T22:27:07Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2015-01-09T14:00:27Z</date>
+            </item>
+          </activities>
+          <systemCode>hsju00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <calendarNumbers />
+    <congress>114</congress>
+    <committeeReports />
+    <recordedVotes />
+    <sponsors>
+      <item>
+        <lastName>Barr</lastName>
+        <state>KY</state>
+        <byRequestType />
+        <firstName>Andy</firstName>
+        <bioguideId>B001282</bioguideId>
+        <fullName>Rep. Barr, Andy [R-KY-6]</fullName>
+        <identifiers>
+          <lisID>2131</lisID>
+          <gpoId />
+          <bioguideId>B001282</bioguideId>
+        </identifiers>
+        <middleName />
+        <district>6</district>
+        <party>R</party>
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</title>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</title>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberName />
+      </item>
+    </titles>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

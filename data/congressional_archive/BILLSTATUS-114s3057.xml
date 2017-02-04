@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>S</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <item>
+        <actionDate>2016-06-14</actionDate>
+        <committee>
+          <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Finance.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionCode>10000</actionCode>
+        <actionDate>2016-06-14</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+    </actions>
+    <billNumber>3057</billNumber>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2016-06-14</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Finance.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <number>5053</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>114</congress>
+        <latestAction>
+          <text>Received in the Senate and Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2016-06-15</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <latestTitle>Preventing IRS Abuse and Protecting Free Speech Act</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2016-06-14T21:58:05Z</date>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <firstName>JIM</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <identifiers>
+          <bioguideId>I000024</bioguideId>
+          <gpoId>8322</gpoId>
+          <lisID>583</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-06</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>I000024</bioguideId>
+        <state>OK</state>
+        <lastName>INHOFE</lastName>
+      </item>
+      <item>
+        <firstName>Ted</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cruz, Ted [R-TX]</fullName>
+        <identifiers>
+          <bioguideId>C001098</bioguideId>
+          <lisID>2175</lisID>
+          <gpoId />
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-06</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C001098</bioguideId>
+        <state>TX</state>
+        <lastName>Cruz</lastName>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <identifiers>
+          <lisID>1692</lisID>
+          <gpoId>8295</gpoId>
+          <bioguideId>C001056</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C001056</bioguideId>
+        <state>TX</state>
+        <lastName>Cornyn</lastName>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Barrasso, John [R-WY]</fullName>
+        <identifiers>
+          <bioguideId>B001261</bioguideId>
+          <gpoId>8300</gpoId>
+          <lisID>1881</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>B001261</bioguideId>
+        <state>WY</state>
+        <lastName>Barrasso</lastName>
+      </item>
+      <item>
+        <firstName>James</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Risch, James E. [R-ID]</fullName>
+        <identifiers>
+          <lisID>1896</lisID>
+          <bioguideId>R000584</bioguideId>
+          <gpoId>8274</gpoId>
+        </identifiers>
+        <middleName>E.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>R000584</bioguideId>
+        <state>ID</state>
+        <lastName>Risch</lastName>
+      </item>
+      <item>
+        <firstName>MITCH</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
+        <identifiers>
+          <bioguideId>M000355</bioguideId>
+          <gpoId>8254</gpoId>
+          <lisID>1395</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>M000355</bioguideId>
+        <state>KY</state>
+        <lastName>MCCONNELL</lastName>
+      </item>
+      <item>
+        <firstName>RICHARD</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Shelby, Richard C. [R-AL]</fullName>
+        <identifiers>
+          <gpoId>8277</gpoId>
+          <lisID>1049</lisID>
+          <bioguideId>S000320</bioguideId>
+        </identifiers>
+        <middleName>CRAIG</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>S000320</bioguideId>
+        <state>AL</state>
+        <lastName>SHELBY</lastName>
+      </item>
+      <item>
+        <firstName>Jeff</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Sessions, Jeff [R-AL]</fullName>
+        <identifiers>
+          <bioguideId>S001141</bioguideId>
+          <gpoId>8281</gpoId>
+          <lisID>1548</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>S001141</bioguideId>
+        <state>AL</state>
+        <lastName>Sessions</lastName>
+      </item>
+      <item>
+        <firstName>PAT</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Roberts, Pat [R-KS]</fullName>
+        <identifiers>
+          <bioguideId>R000307</bioguideId>
+          <lisID>968</lisID>
+          <gpoId>8275</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>R000307</bioguideId>
+        <state>KS</state>
+        <lastName>ROBERTS</lastName>
+      </item>
+      <item>
+        <firstName>ORRIN</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Hatch, Orrin G. [R-UT]</fullName>
+        <identifiers>
+          <gpoId>8314</gpoId>
+          <lisID>1351</lisID>
+          <bioguideId>H000338</bioguideId>
+        </identifiers>
+        <middleName>GRANT</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>H000338</bioguideId>
+        <state>UT</state>
+        <lastName>HATCH</lastName>
+      </item>
+      <item>
+        <firstName>MICHAEL</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Crapo, Mike [R-ID]</fullName>
+        <identifiers>
+          <lisID>250</lisID>
+          <bioguideId>C000880</bioguideId>
+          <gpoId>8289</gpoId>
+        </identifiers>
+        <middleName>D.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C000880</bioguideId>
+        <state>ID</state>
+        <lastName>CRAPO</lastName>
+      </item>
+      <item>
+        <firstName>Marco</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <identifiers>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+          <bioguideId>R000595</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>R000595</bioguideId>
+        <state>FL</state>
+        <lastName>Rubio</lastName>
+      </item>
+      <item>
+        <firstName>DANIEL</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Coats, Daniel [R-IN]</fullName>
+        <identifiers>
+          <bioguideId>C000542</bioguideId>
+          <gpoId>8299</gpoId>
+          <lisID>209</lisID>
+        </identifiers>
+        <middleName>RAY</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C000542</bioguideId>
+        <state>IN</state>
+        <lastName>COATS</lastName>
+      </item>
+      <item>
+        <firstName>ROGER</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <identifiers>
+          <lisID>1226</lisID>
+          <bioguideId>W000437</bioguideId>
+          <gpoId>8263</gpoId>
+        </identifiers>
+        <middleName>F.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>W000437</bioguideId>
+        <state>MS</state>
+        <lastName>WICKER</lastName>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Perdue, David [R-GA]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2286</lisID>
+          <bioguideId>P000612</bioguideId>
+        </identifiers>
+        <middleName>Alfred</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>P000612</bioguideId>
+        <state>GA</state>
+        <lastName>Perdue</lastName>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Boozman, John [R-AR]</fullName>
+        <identifiers>
+          <lisID>1687</lisID>
+          <gpoId>8247</gpoId>
+          <bioguideId>B001236</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>B001236</bioguideId>
+        <state>AR</state>
+        <lastName>Boozman</lastName>
+      </item>
+    </cosponsors>
+    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Sen. Scott, Tim [R-SC]</fullName>
+        <firstName>Tim</firstName>
+        <lastName>Scott</lastName>
+        <state>SC</state>
+        <party>R</party>
+        <bioguideId>S001184</bioguideId>
+        <identifiers>
+          <lisID>2056</lisID>
+          <bioguideId>S001184</bioguideId>
+          <gpoId>8141</gpoId>
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <createDate>2016-06-15T05:49:25Z</createDate>
+    <updateDate>2016-11-03T00:00:40Z</updateDate>
+    <introducedDate>2016-06-14</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2016-06-14</actionDate>
+          <text><![CDATA[<p><b>Preventing IRS Abuse and Protecting Free Speech Act </b></p> <p>This bill amends the Internal Revenue Code to prohibit the Internal Revenue Service from requiring a tax-exempt organization to include in annual returns the name, address, or other identifying information of any contributor. </p> <p>The bill includes exceptions for: (1) required disclosures regarding prohibited tax shelter transactions; and (2) contributions by the organization's officers, directors, or five highest compensated employees (including compensation paid by related organizations). </p>]]></text>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2016-06-17T13:41:01Z</lastSummaryUpdateDate>
+          <updateDate>2016-06-14T04:00:00Z</updateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Preventing IRS Abuse and Protecting Free Speech Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Charitable contributions</name>
+          </item>
+          <item>
+            <name>Tax administration and collection, taxpayers</name>
+          </item>
+          <item>
+            <name>Tax-exempt organizations</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Preventing IRS Abuse and Protecting Free Speech Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend the Internal Revenue Code of 1986 to prohibit the Secretary of the Treasury from requiring that the identity of contributors to 501(c) organizations be included in annual returns.</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Preventing IRS Abuse and Protecting Free Speech Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

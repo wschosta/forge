@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>S</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <hearingsHeld>1</hearingsHeld>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
+      <actionByCounts>
+        <senate>3</senate>
+      </actionByCounts>
+      <item>
+        <actionDate>2016-03-15</actionDate>
+        <committee>
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Committee on Veterans' Affairs. Hearings held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2016-01-28</actionDate>
+        <committee>
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionCode>10000</actionCode>
+        <actionDate>2016-01-28</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+    </actions>
+    <billNumber>2473</billNumber>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2016-03-15</actionDate>
+      <links />
+      <text>Committee on Veterans' Affairs. Hearings held.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <number>2921</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>114</congress>
+        <latestAction>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 467.</text>
+          <actionDate>2016-05-16</actionDate>
+        </latestAction>
+        <type>S</type>
+        <latestTitle>Veterans First Act</latestTitle>
+      </item>
+      <item>
+        <number>677</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>114</congress>
+        <latestAction>
+          <text>Received in the Senate and Read twice and referred to the Committee on Veterans' Affairs.</text>
+          <actionDate>2016-02-10</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <latestTitle>American Heroes COLA Act of 2015</latestTitle>
+      </item>
+      <item>
+        <number>800</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>114</congress>
+        <latestAction>
+          <text>Forwarded by Subcommittee to Full Committee in the Nature of a Substitute (Amended) by Voice Vote .</text>
+          <actionDate>2015-07-09</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <latestTitle>Express Appeals Act</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Hearings by</name>
+              <date>2016-03-15T18:15:00Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2016-01-28T23:00:56Z</date>
+            </item>
+          </activities>
+          <name>Veterans' Affairs Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+          <type>Standing</type>
+          <systemCode>ssva00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <state>PA</state>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <sponsorshipDate>2016-01-28</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <lisID>1828</lisID>
+          <bioguideId>C001070</bioguideId>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <firstName>Bob</firstName>
+        <lastName>Casey</lastName>
+        <bioguideId>C001070</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <state>NV</state>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <sponsorshipDate>2016-01-28</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <gpoId>8060</gpoId>
+          <lisID>1863</lisID>
+        </identifiers>
+        <firstName>Dean</firstName>
+        <lastName>Heller</lastName>
+        <bioguideId>H001041</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <state>MT</state>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <sponsorshipDate>2016-01-28</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <firstName>Jon</firstName>
+        <lastName>Tester</lastName>
+        <bioguideId>T000464</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <state>MT</state>
+        <fullName>Sen. Daines, Steve [R-MT]</fullName>
+        <sponsorshipDate>2016-02-03</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <bioguideId>D000618</bioguideId>
+          <lisID>2138</lisID>
+          <gpoId />
+        </identifiers>
+        <firstName>Steve</firstName>
+        <lastName>Daines</lastName>
+        <bioguideId>D000618</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <state>KS</state>
+        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
+        <sponsorshipDate>2016-02-09</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <bioguideId>M000934</bioguideId>
+          <lisID>1507</lisID>
+          <gpoId>8307</gpoId>
+        </identifiers>
+        <firstName>JERRY</firstName>
+        <lastName>MORAN</lastName>
+        <bioguideId>M000934</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <state>DE</state>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <sponsorshipDate>2016-03-07</sponsorshipDate>
+        <middleName>A.</middleName>
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <gpoId>8297</gpoId>
+          <lisID>1984</lisID>
+        </identifiers>
+        <firstName>Christopher</firstName>
+        <lastName>Coons</lastName>
+        <bioguideId>C001088</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <state>IA</state>
+        <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
+        <sponsorshipDate>2016-03-09</sponsorshipDate>
+        <middleName>ERNEST</middleName>
+        <identifiers>
+          <bioguideId>G000386</bioguideId>
+          <lisID>457</lisID>
+          <gpoId>8316</gpoId>
+        </identifiers>
+        <firstName>CHARLES</firstName>
+        <lastName>GRASSLEY</lastName>
+        <bioguideId>G000386</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+      <item>
+        <state>WI</state>
+        <fullName>Sen. Baldwin, Tammy [D-WI]</fullName>
+        <sponsorshipDate>2016-04-05</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <lisID>1558</lisID>
+          <bioguideId>B001230</bioguideId>
+          <gpoId>8215</gpoId>
+        </identifiers>
+        <firstName>TAMMY</firstName>
+        <lastName>BALDWIN</lastName>
+        <bioguideId>B001230</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <state>SD</state>
+        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
+        <sponsorshipDate>2016-04-18</sponsorshipDate>
+        <middleName />
+        <identifiers>
+          <lisID>2288</lisID>
+          <bioguideId>R000605</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Mike</firstName>
+        <lastName>Rounds</lastName>
+        <bioguideId>R000605</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+      </item>
+    </cosponsors>
+    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
+        <firstName>Dan</firstName>
+        <lastName>Sullivan</lastName>
+        <state>AK</state>
+        <party>R</party>
+        <bioguideId>S001198</bioguideId>
+        <identifiers>
+          <bioguideId>S001198</bioguideId>
+          <lisID>2290</lisID>
+          <gpoId />
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <createDate>2016-01-29T04:58:47Z</createDate>
+    <updateDate>2016-11-02T23:45:10Z</updateDate>
+    <introducedDate>2016-01-28</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2016-01-28</actionDate>
+          <text><![CDATA[<p><strong>Express Appeals Act</strong> <strong>of 2016</strong></p> <p>This bill directs the Department of Veterans Affairs (VA) to: (1) carry out a five-year pilot program to provide the option of an alternative appeals process to determine appeals of claims for disability compensation more quickly, and (2) inform claimants about such program.</p> <p>Appeals filed under the pilot program are described as &quot;fully developed appeals.&quot;</p> <p>A claimant may elect to file a fully developed appeal by filing with the VA: (1) a notice of disagreement along with the claimant's written election to have the appeal determined under the pilot program, (2) all evidence that the claimant believes is needed for the appeal, and (3) a statement of the argument in support of the claim. </p> <p> A claimant who elects the pilot program may elect to revert to the standard appeals process at any time. Such reversion, however, shall be final.</p> <p> Such a claimant or an electing claimant who is later determined to be ineligible for the pilot program shall revert to the standard appeals process without any penalty other than the loss of docket number. </p> <p>The VA shall transfer jurisdiction over a fully developed appeal directly to the Board of Veterans' Appeals.</p> <p>The Board shall: </p> <ul> <li>maintain fully developed appeals on a separate docket; </li> <li>hear fully developed appeals in the order received; </li> <li>decide not more than one fully developed appeal for each four traditional appeals decided, though this ratio may be adjusted for fairness purposes beginning one year after the pilot program begins; and </li> <li>decide each fully developed appeal within one year of a claimant's filing the notice of disagreement.</li> </ul> <p>A claimant may not submit or identify to the Board any new evidence relating to a fully developed appeal after filing such appeal unless the claimant reverts to the standard appeals process. </p> <p>The Board shall establish an office to develop necessary federal records, independent medical opinions, and new medical exams. </p> <p>The Board may not provide hearings for fully developed appeals.</p>]]></text>
+          <lastSummaryUpdateDate>2016-02-05T16:25:08Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <updateDate>2016-01-28T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Express Appeals Act of 2016</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative remedies</name>
+          </item>
+          <item>
+            <name>Department of Veterans Affairs</name>
+          </item>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Evidence and witnesses</name>
+          </item>
+          <item>
+            <name>Medical tests and diagnostic methods</name>
+          </item>
+          <item>
+            <name>Veterans' pensions and compensation</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Express Appeals Act of 2016</title>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>A bill to direct the Secretary of Veterans Affairs to carry out a pilot program to provide veterans the option of using an alternative appeals process to more quickly determine claims for disability compensation, and for other purposes.</title>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Express Appeals Act of 2016</title>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

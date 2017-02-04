@@ -1,4 +1,4 @@
-function main(data_location,state)
+function main()
 % MAIN
 % The driver file for the leargning algorithm functions
 %
@@ -12,36 +12,49 @@ process_algorithm = true;
 awv = 0.3870; % set by analysis
 iwv = 1.0262; % set by analysis
 
+% if ~exist(learning_materials whatever-we-call-it) || recompute
+
+[title,policy_area,text,subject_area,complete_array,bill_list] = la.xmlparse(); % eventually need to add the recompute flag & check updates
+
+% Eliminate incomplete bills
+complete_array = logical(complete_array);
+title          = title(complete_array);
+policy_area    = policy_area(complete_array);
+text           = text(complete_array);
+subject_area   = subject_area(complete_array);
+bill_list      = bill_list(complete_array);
+complete_array = complete_array(complete_array); % silly but might as well be consistent
+
+master_issue_codes   = containers.Map(1:length(unique(policy_area)),unique(policy_area));
+generate_issue_codes = containers.Map(unique(policy_area),1:length(unique(policy_area)));
+
+issue_codes  = cellfun(@(x) generate_issue_codes(x),policy_area);
+unified_text = cellfun(@(a,b) [a ' ' b],title,text,'UniformOutput',false);
+
+learning_materials = table(unified_text,issue_codes);
+
 % read in processed text data
 
-learning_materials = readtable(sprintf('%s/%s/learning_algorithm/description_learning_materials.xlsx',data_location,state));
+% learning_materials = readtable(sprintf('%s/%s/learning_algorithm/description_learning_materials.xlsx',data_location,state));
 
 % Set list of common words to ignore
-common_words = {'and' 'of' 'a' 'an' 'the' 'is' 'or' 'on' 'by' 'for' 'in' 'to' 'bill' 'resolution' 'with' 'various' 'matters' 'program' 'public'};
+common_words = la.getCommonWordsList();
+common_words = [common_words {'bill','ammendment'}];
+% % Create map of issue codes and subjects
+% master_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
+%     {'Agriculture','Commerce, Business, Economic Development',...
+%     'Courts & Judicial','Education','Elections & Apportionment',...
+%     'Employment & Labor','Environment & Natural Resources',...
+%     'Family, Children, Human Affairs & Public Health',...
+%     'Banks & Financial Institutions','Insurance',...
+%     'Government & Regulatory Reform','Local Government',...
+%     'Roads & Transportation','Utilities, Energy & Telecommunications',...
+%     'Ways & Means, Appropriations','Other'});
+% 
+% % Create map of additional words, hand chosen to increase accuracy
+additional_issue_codes = containers.Map(1:length(unique(policy_area)),cell(1,length(unique(policy_area)))); % just for now
 
-% Create map of issue codes and subjects
-master_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
-    {'Agriculture','Commerce, Business, Economic Development',...
-    'Courts & Judicial','Education','Elections & Apportionment',...
-    'Employment & Labor','Environment & Natural Resources',...
-    'Family, Children, Human Affairs & Public Health',...
-    'Banks & Financial Institutions','Insurance',...
-    'Government & Regulatory Reform','Local Government',...
-    'Roads & Transportation','Utilities, Energy & Telecommunications',...
-    'Ways & Means, Appropriations','Other'});
-
-% Create map of additional words, hand chosen to increase accuracy
-additional_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
-    {'','firearm',...
-    '','Schools student','Advocacy',...
-    'Unemployment wage','',...
-    'Child immigration',...
-    '','',...
-    'Access','Records',...
-    '','',...
-    'Taxation Taxes Tax',''});
-
-% Generate the learning table with the taugh instructions and the
+% Generate the learning table with the taught instructions and the
 % additional common word, issue, and additional issue codes
 [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes);
 
@@ -103,22 +116,22 @@ if process_algorithm
     xlabel('Issue Codes')
     ylabel('Frequency')
     title('Distribution of Categorized Bills')
-    saveas(gcf,sprintf('%s/%s/learning_algorithm/Archive/learning_algorithm_historgram_%s',data_location,state,date),'png')
+    saveas(gcf,sprintf('learning_algorithm_historgram_%s',date),'png')
     % --- end histogram
     
     
     % Write the learning table to a file
-    writetable(processed,sprintf('%s/%s/learning_algorithm/Archive/learning_algorithm_results_%s.csv',data_location,state,date))
+    writetable(processed,sprintf('learning_algorithm_results_%s.csv',date))
     
     % Structure the data for output
     data_storage.awv = awv;
     data_storage.iwv = iwv;
     
     % Create a checkpoint for the learning algorithm data based on the data
-    save(sprintf('%s/%s/learning_algorithm/Archive/learning_algorithm_data_%s',data_location,state,date),'learning_table','data_storage');
+    save(sprintf('learning_algorithm_data_%s',date),'learning_table','data_storage');
     
     % Save it in its normal file location
-    save(sprintf('%s/%s/learning_algorithm/learning_algorithm_data',data_location,state),'learning_table','data_storage'); 
+    save('learning_algorithm_data','learning_table','data_storage'); 
 end
 
 end

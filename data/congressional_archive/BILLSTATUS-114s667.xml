@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>S</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <item>
+        <actionDate>2015-03-04</actionDate>
+        <committee>
+          <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Finance.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionDate>2015-03-04</actionDate>
+        <links />
+        <committee />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+    </actions>
+    <billNumber>667</billNumber>
+    <policyArea>
+      <name>Social Welfare</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2015-03-04</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Finance.</text>
+    </latestAction>
+    <relatedBills>
+      <item>
+        <congress>114</congress>
+        <type>HR</type>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+        <number>1299</number>
+        <latestAction>
+          <actionDate>2015-03-19</actionDate>
+          <text>Referred to the Subcommittee on Human Resources.</text>
+        </latestAction>
+        <latestTitle>Child Welfare Provider Inclusion Act of 2015</latestTitle>
+      </item>
+    </relatedBills>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2015-03-04T21:24:37Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssfi00</systemCode>
+          <type>Standing</type>
+          <name>Finance Committee</name>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <firstName>JIM</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <identifiers>
+          <lisID>583</lisID>
+          <bioguideId>I000024</bioguideId>
+          <gpoId>8322</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-04</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>I000024</bioguideId>
+        <state>OK</state>
+        <lastName>INHOFE</lastName>
+      </item>
+      <item>
+        <firstName>Mike</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Lee, Mike [R-UT]</fullName>
+        <identifiers>
+          <gpoId>8303</gpoId>
+          <lisID>2080</lisID>
+          <bioguideId>L000577</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-04</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>L000577</bioguideId>
+        <state>UT</state>
+        <lastName>Lee</lastName>
+      </item>
+      <item>
+        <firstName>Marco</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-04</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>R000595</bioguideId>
+        <state>FL</state>
+        <lastName>Rubio</lastName>
+      </item>
+      <item>
+        <firstName>Jeff</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Sessions, Jeff [R-AL]</fullName>
+        <identifiers>
+          <bioguideId>S001141</bioguideId>
+          <gpoId>8281</gpoId>
+          <lisID>1548</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-11</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>S001141</bioguideId>
+        <state>AL</state>
+        <lastName>Sessions</lastName>
+      </item>
+      <item>
+        <firstName>DANIEL</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Coats, Daniel [R-IN]</fullName>
+        <identifiers>
+          <bioguideId>C000542</bioguideId>
+          <lisID>209</lisID>
+          <gpoId>8299</gpoId>
+        </identifiers>
+        <middleName>RAY</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-11</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C000542</bioguideId>
+        <state>IN</state>
+        <lastName>COATS</lastName>
+      </item>
+      <item>
+        <firstName>Thad</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cochran, Thad [R-MS]</fullName>
+        <identifiers>
+          <lisID>213</lisID>
+          <bioguideId>C000567</bioguideId>
+          <gpoId>8292</gpoId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-03-17</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C000567</bioguideId>
+        <state>MS</state>
+        <lastName>Cochran</lastName>
+      </item>
+      <item>
+        <firstName>James</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Risch, James E. [R-ID]</fullName>
+        <identifiers>
+          <bioguideId>R000584</bioguideId>
+          <gpoId>8274</gpoId>
+          <lisID>1896</lisID>
+        </identifiers>
+        <middleName>E.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-04-21</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>R000584</bioguideId>
+        <state>ID</state>
+        <lastName>Risch</lastName>
+      </item>
+      <item>
+        <firstName>Tom</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cotton, Tom [R-AR]</fullName>
+        <identifiers>
+          <lisID>2098</lisID>
+          <gpoId />
+          <bioguideId>C001095</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-15</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C001095</bioguideId>
+        <state>AR</state>
+        <lastName>Cotton</lastName>
+      </item>
+      <item>
+        <firstName>ROGER</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <identifiers>
+          <bioguideId>W000437</bioguideId>
+          <gpoId>8263</gpoId>
+          <lisID>1226</lisID>
+        </identifiers>
+        <middleName>F.</middleName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-06-24</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>W000437</bioguideId>
+        <state>MS</state>
+        <lastName>WICKER</lastName>
+      </item>
+      <item>
+        <firstName>James</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Lankford, James [R-OK]</fullName>
+        <identifiers>
+          <lisID>2050</lisID>
+          <gpoId>8113</gpoId>
+          <bioguideId>L000575</bioguideId>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-07-14</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>L000575</bioguideId>
+        <state>OK</state>
+        <lastName>Lankford</lastName>
+      </item>
+      <item>
+        <firstName>Ben</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Sasse, Ben  [R-NE]</fullName>
+        <identifiers>
+          <lisID>2289</lisID>
+          <bioguideId>S001197</bioguideId>
+          <gpoId />
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2015-11-19</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>S001197</bioguideId>
+        <state>NE</state>
+        <lastName>Sasse</lastName>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <identifiers>
+          <bioguideId>C001056</bioguideId>
+          <gpoId>8295</gpoId>
+          <lisID>1692</lisID>
+        </identifiers>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2016-04-21</sponsorshipDate>
+        <party>R</party>
+        <bioguideId>C001056</bioguideId>
+        <state>TX</state>
+        <lastName>Cornyn</lastName>
+      </item>
+    </cosponsors>
+    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Sen. Enzi, Michael B. [R-WY]</fullName>
+        <firstName>MICHAEL</firstName>
+        <lastName>ENZI</lastName>
+        <state>WY</state>
+        <party>R</party>
+        <bioguideId>E000285</bioguideId>
+        <identifiers>
+          <lisID>1542</lisID>
+          <bioguideId>E000285</bioguideId>
+          <gpoId>8328</gpoId>
+        </identifiers>
+        <middleName>B.</middleName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <createDate>2015-03-05T05:59:26Z</createDate>
+    <updateDate>2016-11-02T23:22:44Z</updateDate>
+    <introducedDate>2015-03-04</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2015-03-04</actionDate>
+          <text><![CDATA[<p><b>Child Welfare Provider Inclusion Act of 2015</b></p> <p>Prohibits the federal government, and any state that receives federal funding for any program that provides child welfare services under part B (Child and Family Services) or part E (Foster Care and Adoption Assistance) of title IV of the Social Security Act (SSAct), from discriminating or taking an adverse action against a child welfare service provider that declines to provide, facilitate, or refer for a child welfare service that conflicts with the provider's sincerely held religious beliefs or moral convictions.</p> <p>Bars such prohibition from applying to SSAct requirements that forbid state entities from denying or delaying adoption or foster care placements on the basis of an adoptive parent's or a child's race, color, or national origin. </p> <p>Requires the Department of Health and Human Services to withhold 15% of the federal funds that a state receives for such programs if the state violates this Act. </p> <p>Allows an aggrieved child welfare service provider to assert such an adverse action violation as a claim or defense in a judicial proceeding and to obtain all appropriate relief (including declaratory relief, injunctive relief, compensatory damages, and reasonable attorney's fees and costs).</p>]]></text>
+          <lastSummaryUpdateDate>2015-03-18T18:30:25Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <updateDate>2015-03-04T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Child Welfare Provider Inclusion Act of 2015</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Social Welfare</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative remedies</name>
+          </item>
+          <item>
+            <name>Adoption and foster care</name>
+          </item>
+          <item>
+            <name>Child safety and welfare</name>
+          </item>
+          <item>
+            <name>Civil actions and liability</name>
+          </item>
+          <item>
+            <name>Poverty and welfare assistance</name>
+          </item>
+          <item>
+            <name>Religion</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <title>Child Welfare Provider Inclusion Act of 2015</title>
+        <chamberName />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>A bill to ensure that organizations with religious or moral convictions are allowed to continue to provide services for children.</title>
+        <chamberName />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <title>Child Welfare Provider Inclusion Act of 2015</title>
+        <chamberName />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>14</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <houseCommitteeDischarged>1</houseCommitteeDischarged>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <committeeDischarged>1</committeeDischarged>
+        <actionStageOverride>1</actionStageOverride>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <reportedToHouse>1</reportedToHouse>
+        <billReferrals>2</billReferrals>
+        <placeholderTextForH>3</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Calendars</type>
+        <actionDate>2014-12-15</actionDate>
+        <text>Placed on the Union Calendar, Calendar No. 507.</text>
+        <committee />
+        <actionCode>H12410</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Discharge</type>
+        <actionDate>2014-12-15</actionDate>
+        <text>Committee on Education and the Workforce discharged.</text>
+        <committee>
+          <name>Education and the Workforce Committee</name>
+          <systemCode>hsed00</systemCode>
+        </committee>
+        <actionCode>H12300</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>Committee</type>
+        <actionDate>2014-12-15</actionDate>
+        <text>Committee on Education and the Workforce discharged.</text>
+        <committee>
+          <name>Education and the Workforce Committee</name>
+          <systemCode>hsed00</systemCode>
+        </committee>
+        <actionCode>5500</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Committee</type>
+        <actionDate>2014-12-15</actionDate>
+        <text>Reported (Amended) by the Committee on Judiciary. H. Rept. 113-676, Part I.</text>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <actionCode>H12200</actionCode>
+        <links>
+          <link>
+            <name>H. Rept. 113-676</name>
+            <url>/congressional-report/113th-congress/house-report/676</url>
+          </link>
+        </links>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>Committee</type>
+        <actionDate>2014-12-15</actionDate>
+        <text>Reported (Amended) by the Committee on Judiciary. H. Rept. 113-676, Part I.</text>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <actionCode>5000</actionCode>
+        <links>
+          <link>
+            <name>H. Rept. 113-676</name>
+            <url>/congressional-report/113th-congress/house-report/676</url>
+          </link>
+        </links>
+      </item>
+      <item>
+        <actionDate>2013-06-27</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported (Amended) by the Yeas and Nays: 20 - 14.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2013-06-27</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2013-06-25</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Immigration and Border Security Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2013-06-14</actionDate>
+        <committee>
+          <name>Immigration and Border Security Subcommittee</name>
+          <systemCode>hsju01</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2013-05-23</actionDate>
+        <text>Referred to House Education and the Workforce</text>
+        <committee>
+          <name>Education and the Workforce Committee</name>
+          <systemCode>hsed00</systemCode>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2013-05-23</actionDate>
+        <text>Referred to House Judiciary</text>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <actionCode>H11100</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2013-05-23</actionDate>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee />
+        <actionCode>H11100-A</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2013-05-23</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <links />
+      </item>
+      <item>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>IntroReferral</type>
+        <actionDate>2013-05-23</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <actionCode>1000</actionCode>
+        <links />
+      </item>
+    </actions>
+    <title>SKILLS Visa Act</title>
+    <cosponsors>
+      <item>
+        <lastName>GOODLATTE</lastName>
+        <fullName>Rep. Goodlatte, Bob [R-VA-6]</fullName>
+        <bioguideId>G000289</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8197</gpoId>
+          <lisID>446</lisID>
+          <bioguideId>G000289</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>ROBERT</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName>W.</middleName>
+      </item>
+      <item>
+        <lastName>SMITH</lastName>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
+        <bioguideId>S000583</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>S000583</bioguideId>
+          <lisID>1075</lisID>
+          <gpoId>8177</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>LAMAR</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>COBLE</lastName>
+        <fullName>Rep. Coble, Howard [R-NC-6]</fullName>
+        <bioguideId>C000556</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>211</lisID>
+          <gpoId>8029</gpoId>
+          <bioguideId>C000556</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>HOWARD</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Rokita</lastName>
+        <fullName>Rep. Rokita, Todd [R-IN-4]</fullName>
+        <bioguideId>R000592</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>R000592</bioguideId>
+          <lisID>2017</lisID>
+          <gpoId>7943</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Todd</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Poe</lastName>
+        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
+        <bioguideId>P000592</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1802</lisID>
+          <gpoId>8158</gpoId>
+          <bioguideId>P000592</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Ted</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Farenthold</lastName>
+        <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
+        <bioguideId>F000460</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8183</gpoId>
+          <bioguideId>F000460</bioguideId>
+          <lisID>2067</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Blake</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Holding</lastName>
+        <fullName>Rep. Holding, George [R-NC-13]</fullName>
+        <bioguideId>H001065</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId />
+          <lisID>2143</lisID>
+          <bioguideId>H001065</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>George</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>SENSENBRENNER</lastName>
+        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
+        <bioguideId>S000244</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8218</gpoId>
+          <bioguideId>S000244</bioguideId>
+          <lisID>1041</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>F.</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName>JAMES</middleName>
+      </item>
+      <item>
+        <lastName>Thompson</lastName>
+        <fullName>Rep. Thompson, Glenn [R-PA-5]</fullName>
+        <bioguideId>T000467</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8123</gpoId>
+          <bioguideId>T000467</bioguideId>
+          <lisID>1952</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Glenn</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Campbell</lastName>
+        <fullName>Rep. Campbell, John [R-CA-45]</fullName>
+        <bioguideId>C001064</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>C001064</bioguideId>
+          <lisID>1816</lisID>
+          <gpoId>7853</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>John</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>CHABOT</lastName>
+        <fullName>Rep. Chabot, Steve [R-OH-1]</fullName>
+        <bioguideId>C000266</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>186</lisID>
+          <gpoId>8091</gpoId>
+          <bioguideId>C000266</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>STEVE</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>BACHUS</lastName>
+        <fullName>Rep. Bachus, Spencer [R-AL-6]</fullName>
+        <bioguideId>B000013</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7791</gpoId>
+          <bioguideId>B000013</bioguideId>
+          <lisID>38</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>SPENCER</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Hanna</lastName>
+        <fullName>Rep. Hanna, Richard L. [R-NY-22]</fullName>
+        <bioguideId>H001051</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>H001051</bioguideId>
+          <lisID>2044</lisID>
+          <gpoId>8085</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Richard</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <lastName>CALVERT</lastName>
+        <fullName>Rep. Calvert, Ken [R-CA-42]</fullName>
+        <bioguideId>C000059</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7849</gpoId>
+          <lisID>165</lisID>
+          <bioguideId>C000059</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>KEN</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Franks</lastName>
+        <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
+        <bioguideId>F000448</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7799</gpoId>
+          <bioguideId>F000448</bioguideId>
+          <lisID>1707</lisID>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Trent</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>TERRY</lastName>
+        <fullName>Rep. Terry, Lee [R-NE-2]</fullName>
+        <bioguideId>T000459</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>T000459</bioguideId>
+          <lisID>1566</lisID>
+          <gpoId>8039</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>LEE</firstName>
+        <sponsorshipDate>2013-05-23</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Kinzinger</lastName>
+        <fullName>Rep. Kinzinger, Adam [R-IL-16]</fullName>
+        <bioguideId>K000378</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>K000378</bioguideId>
+          <lisID>2014</lisID>
+          <gpoId>7931</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Adam</firstName>
+        <sponsorshipDate>2013-06-03</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Westmoreland</lastName>
+        <fullName>Rep. Westmoreland, Lynn A. [R-GA-3]</fullName>
+        <bioguideId>W000796</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1779</lisID>
+          <bioguideId>W000796</bioguideId>
+          <gpoId>7900</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Lynn</firstName>
+        <sponsorshipDate>2013-06-03</sponsorshipDate>
+        <middleName>A.</middleName>
+      </item>
+      <item>
+        <lastName>Rooney</lastName>
+        <fullName>Rep. Rooney, Thomas J. [R-FL-17]</fullName>
+        <bioguideId>R000583</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7888</gpoId>
+          <lisID>1916</lisID>
+          <bioguideId>R000583</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Thomas</firstName>
+        <sponsorshipDate>2013-07-11</sponsorshipDate>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <lastName>Hultgren</lastName>
+        <fullName>Rep. Hultgren, Randy [R-IL-14]</fullName>
+        <bioguideId>H001059</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>H001059</bioguideId>
+          <lisID>2015</lisID>
+          <gpoId>7934</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Randy</firstName>
+        <sponsorshipDate>2013-08-01</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Cook</lastName>
+        <fullName>Rep. Cook, Paul [R-CA-8]</fullName>
+        <bioguideId>C001094</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>C001094</bioguideId>
+          <lisID>2103</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Paul</firstName>
+        <sponsorshipDate>2013-09-20</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Wittman</lastName>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <bioguideId>W000804</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>W000804</bioguideId>
+          <lisID>1886</lisID>
+          <gpoId>8192</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Robert</firstName>
+        <sponsorshipDate>2014-04-08</sponsorshipDate>
+        <middleName>J.</middleName>
+      </item>
+    </cosponsors>
+    <sponsors>
+      <item>
+        <middleName>E.</middleName>
+        <firstName>DARRELL</firstName>
+        <byRequestType />
+        <bioguideId>I000056</bioguideId>
+        <fullName>Rep. Issa, Darrell E. [R-CA-49]</fullName>
+        <lastName>ISSA</lastName>
+        <identifiers>
+          <gpoId>7854</gpoId>
+          <lisID>1640</lisID>
+          <bioguideId>I000056</bioguideId>
+        </identifiers>
+      </item>
+    </sponsors>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Administrative remedies</name>
+          </item>
+          <item>
+            <name>Area studies and international education</name>
+          </item>
+          <item>
+            <name>Business investment and capital</name>
+          </item>
+          <item>
+            <name>Canada</name>
+          </item>
+          <item>
+            <name>Computers and information technology</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Homeland Security</name>
+          </item>
+          <item>
+            <name>Department of Labor</name>
+          </item>
+          <item>
+            <name>Education programs funding</name>
+          </item>
+          <item>
+            <name>Elementary and secondary education</name>
+          </item>
+          <item>
+            <name>Employee hiring</name>
+          </item>
+          <item>
+            <name>Family relationships</name>
+          </item>
+          <item>
+            <name>Foreign labor</name>
+          </item>
+          <item>
+            <name>Fraud offenses and financial crimes</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Government trust funds</name>
+          </item>
+          <item>
+            <name>Health personnel</name>
+          </item>
+          <item>
+            <name>Higher education</name>
+          </item>
+          <item>
+            <name>Immigration status and procedures</name>
+          </item>
+          <item>
+            <name>Inflation and prices</name>
+          </item>
+          <item>
+            <name>Latin America</name>
+          </item>
+          <item>
+            <name>Mexico</name>
+          </item>
+          <item>
+            <name>Performance measurement</name>
+          </item>
+          <item>
+            <name>Science and engineering education</name>
+          </item>
+          <item>
+            <name>Small business</name>
+          </item>
+          <item>
+            <name>Teaching, teachers, curricula</name>
+          </item>
+          <item>
+            <name>Television and film</name>
+          </item>
+          <item>
+            <name>Temporary and part-time employment</name>
+          </item>
+          <item>
+            <name>U.S. and foreign investments</name>
+          </item>
+          <item>
+            <name>Visas and passports</name>
+          </item>
+          <item>
+            <name>Wages and earnings</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Immigration</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <updateDate>2016-10-25T16:03:56Z</updateDate>
+    <originChamber>House</originChamber>
+    <billNumber>2131</billNumber>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>SKILLS Visa Act</title>
+        <chamberCode />
+        <chamberName />
+        <parentTitleType />
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Supplying Knowledge-based Immigrants and Lifting Levels of STEM Visas Act</title>
+        <chamberCode />
+        <chamberName />
+        <parentTitleType />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Immigration and Nationality Act to enhance American competitiveness through the encouragement of high-skilled immigration, and for other purposes.</title>
+        <chamberCode />
+        <chamberName />
+        <parentTitleType />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>SKILLS Visa Act</title>
+        <chamberCode />
+        <chamberName />
+        <parentTitleType />
+      </item>
+    </titles>
+    <createDate>2013-05-24T07:01:35Z</createDate>
+    <congress>113</congress>
+    <introducedDate>2013-05-23</introducedDate>
+    <latestAction>
+      <links />
+      <actionDate>2014-12-15</actionDate>
+      <text>Placed on the Union Calendar, Calendar No. 507.</text>
+    </latestAction>
+    <laws />
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+          <actionDate>2014-07-21</actionDate>
+        </latestAction>
+        <latestTitle>Doctors Helping Heroes Act of 2014</latestTitle>
+        <congress>113</congress>
+        <number>4951</number>
+        <type>HR</type>
+      </item>
+    </relatedBills>
+    <notes />
+    <recordedVotes />
+    <cboCostEstimates>
+      <item>
+        <title>H.R. 2131, Supplying Knowledge-based Immigrants and Lifting Levels of STEM Visas Act (SKILLS Visa Act)</title>
+        <pubDate>2014-03-12T14:27:00Z</pubDate>
+        <url>http://www.cbo.gov/publication/45179</url>
+      </item>
+      <item>
+        <title>H.R. 2131, Supplying Knowledge-based Immigrants and Lifting Levels of STEM Visas Act (SKILLS Visa Act)</title>
+        <pubDate>2014-03-12T14:27:00Z</pubDate>
+        <url>https://www.cbo.gov/publication/45179</url>
+      </item>
+    </cboCostEstimates>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>By Mr. ISSA:H.R. 2131.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 4, which states that Congresshas the power to establish a uniform Rule of Naturalization.[Page H2956]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsed00</systemCode>
+          <subcommittees />
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <name>Education and the Workforce Committee</name>
+          <activities>
+            <item>
+              <name>Discharged from</name>
+              <date>2014-12-15T18:16:37Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2013-05-23T13:06:40Z</date>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <name>Immigration and Border Security Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Discharged from</name>
+                  <date>2013-06-25T13:05:39Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2013-06-14T17:25:39Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2014-12-15T18:16:18Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2013-06-27T13:10:24Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2013-05-23T13:06:35Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <actionDate>2013-05-23</actionDate>
+          <updateDate>2013-05-23T04:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2013-08-28T15:27:25Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Supplying Knowledge-based Immigrants and Lifting Levels of STEM Visas Act or SKILLS Visa Act - Amends the Immigration and Nationality Act to set worldwide employment-based immigration levels at: (1) 140,000 through FY2013, and (2) 235,000 beginning in FY 2014 reduced by the number of returned visas resulting from the elimination of the diversity immigrant program. </p> <p>Makes up to 55,000 (EB-6) visas, reduced by the number of returned visas resulting from the elimination of the diversity immigrant lottery, available in FY2014 and subsequent fiscal years to qualified immigrants who: (1) have a doctorate degree in a field of science, technology, engineering, or mathematics (STEM degree) from a U.S. doctoral institution of higher education, or have completed a dental, medical, or veterinary residency program, have received a medical degree, a dentistry degree, a veterinary degree, or an osteopathic medicine/osteopathy degree; and (2) have taken all required courses, including courses taken by correspondence or by distance education, while physically present in the United States. </p> <p>Makes unused EB-1 (priority worker) and EB-6 visas available to (EB-7 visa) aliens who: (1) hold a master's degree in a STEM field from a U.S. doctoral institution of higher education that was either part of a master's program that required at least two years of enrollment or part of a five-year combined baccalaureate-master's degree program in such field; (2) have taken all master's degree courses in a STEM field, including all courses taken by correspondence or by distance education, while physically present in the United States; and (3) hold a baccalaureate degree in a STEM field. </p> <p>Prohibits the Secretary of Homeland Security (DHS) (Secretary) from approving an employer petition for an EB-6 or EB-7 alien unless the Secretary receives a Department of Labor determination that there are not sufficient American workers available for the job. </p> <p>Establishes: (1) an EB-8-1 immigrant visa for qualifying venture capital-backed start-up entrepreneurs and for self-sponsored start-up entrepreneurs who intend to engage in, or have engaged in, new commercial enterprises in the United States; and (2) an EB-8-2 immigrant visa for treaty trader nonimmigrants who have maintained such status for at least 10 years, have benefitted the U.S. economy, and have created full-time employment for at least 5 U.S. workers for at least 10 years. </p> <p>Grants such alien entrepreneur (and spouse and children) conditional permanent resident status. Requires termination of such status if the Secretary determines: (1) that the qualifying employment was intended as a means to evade U.S. immigration laws, or (2) other specified requirements were not met.</p> <p>Sets forth the conditions for an alien to petition for permanent resident status.</p> <p>Revises worldwide levels of employment- and family-based based immigrants. </p> <p>Makes the the EB-5 regional center program permanent.</p> <p>Eliminates: (1) the diversity immigrant program as of October 1, 2013, (2) the provision requiring the reduction of annual People's Republic of China immigrant visas to offset status adjustments under the Chinese Student Protection Act of 1992, and (3) the per-country limit for employment-based immigrants. Increases, however, the per-country limit for family-based immigrants. </p> <p>Makes the J-1 visa waiver (Conrad state 30/medical services in underserved areas) program permanent. </p> <p>Increases the number of alien physicians that a state may be allocated from 30 to 35 per fiscal year.</p> <p>Provides up to three visa waivers per fiscal year per state for physicians in academic medical centers. </p> <p>Extends dual intent to aliens coming to the United States to receive graduate medical education or training, or to take examinations required for such education or training.</p> <p>Sets forth specified employment protections and contract requirements for alien physicians working in underserved areas. </p> <p>Excludes from numerical immigration limitations alien physicians who have completed national interest waiver requirements by working in a health care shortage area. </p> <p>Increases the H-1B (specialty occupation) nonimmigrant visa limitation to 155,000 per fiscal year beginning in FY2014.</p> <p>Replaces the current higher education degree exemption from H-1B limitations with an exemption for up to 40,000 aliens with a STEM master's or doctorate degree (EB-6 and EB-7 aliens).</p> <p>Directs the Secretary to verify the authenticity of foreign educational degrees. Authorizes a related employer fee.</p> <p>Establishes in the Treasury the H-1B Educational Credential Verification Account.</p> <p>Authorizes the Secretary of Labor to issue subpoenas to employers of H-1B, H-1B1(specialty workers pursuant to agreements with Chile or Singapore), and E-3 (specialty worker pursuant to a treaty of commerce) nonimmigrants.</p> <p>Sets forth wage and working condition requirements for employers of: (1) Mexican or Canadian professionals, and (2) specialized knowledge L-visa aliens (intracompany transferees) who will be employed for more than six months over a three-year period. </p> <p>Provides portability for O-1 visa nonimmigrants (extraordinary ability in the sciences, education, business, athletics, or the arts or films or television).</p> <p>Extends dual intent to foreign students who: (1) are coming to the United States to pursue STEM field degrees at institutions of higher education that have agreed to report the attendance of each nonimmigrant student to DHS, or (2) are engaged in temporary post graduation employment for optional practical training related to such study.</p> <p>Permits specified nonimmigrant aliens granted employment authorization to continue employment with the same employer for up to 240 days while an application for extension of stay is adjudicated.</p> <p>Increases H-1B employer fees. Obligates a part of such fees for STEM education and training.</p> <p>Establishes a fee for employment-based immigrant I-140 visa petitions. Obligates such fees for STEM education and training.</p> <p>Establishes the Promoting American Ingenuity Account to strengthen STEM education. Sets forth assistance allocation and state fund use provisions.</p> <p>Directs the Secretary of Labor to provide employers with a survey to determine the prevailing wage for each occupational classification. Establishes three wage levels commensurate with experience, education, and level of supervision.</p> <p>Directs the Secretary to establish a streamlined pre-certification procedure for employers who file multiple petitions for specified categories of immigrant workers.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers>
+      <item>
+        <calendar>U00507</calendar>
+        <number />
+      </item>
+    </calendarNumbers>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 113-676</citation>
+      </committeeReport>
+    </committeeReports>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

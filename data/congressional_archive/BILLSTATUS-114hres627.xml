@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <introducedDate>2016-02-29</introducedDate>
+    <committeeReports />
+    <laws />
+    <createDate>2016-03-01T05:15:55Z</createDate>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2016-03-04</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <links />
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionDate>2016-02-29</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+        <committee />
+        <actionDate>2016-02-29</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+        <committee />
+        <actionDate>2016-02-29</actionDate>
+      </item>
+    </actions>
+    <recordedVotes />
+    <relatedBills>
+      <item>
+        <type>SRES</type>
+        <congress>114</congress>
+        <number>380</number>
+        <latestTitle>A resolution designating February 29, 2016 as "Rare Disease Day".</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <actionDate>2016-03-01</actionDate>
+          <text>Resolution agreed to in Senate without amendment and with a preamble by Voice Vote.</text>
+        </latestAction>
+      </item>
+      <item>
+        <type>HRES</type>
+        <congress>114</congress>
+        <number>109</number>
+        <latestTitle>Expressing support for the designation of February 28, 2015, as "Rare Disease Day".</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <actionDate>2015-02-13</actionDate>
+          <text>Referred to the Subcommittee on Health.</text>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <bioguideId>M001150</bioguideId>
+        <firstName>Candice</firstName>
+        <party>R</party>
+        <lastName>Miller</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>S.</middleName>
+        <state>MI</state>
+        <district>10</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1731</lisID>
+          <gpoId>8589</gpoId>
+          <bioguideId>M001150</bioguideId>
+        </identifiers>
+        <fullName>Rep. Miller, Candice S. [R-MI-10]</fullName>
+      </item>
+      <item>
+        <bioguideId>B001245</bioguideId>
+        <firstName>Madeleine</firstName>
+        <party>D</party>
+        <lastName>Bordallo</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>Z.</middleName>
+        <state>GU</state>
+        <district>0</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1723</lisID>
+          <gpoId>7911</gpoId>
+          <bioguideId>B001245</bioguideId>
+        </identifiers>
+        <fullName>Rep. Bordallo, Madeleine Z. [D-GU-At Large]</fullName>
+      </item>
+      <item>
+        <bioguideId>B001251</bioguideId>
+        <firstName>G. K.</firstName>
+        <party>D</party>
+        <lastName>Butterfield</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>NC</state>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8024</gpoId>
+          <bioguideId>B001251</bioguideId>
+          <lisID>1761</lisID>
+        </identifiers>
+        <fullName>Rep. Butterfield, G. K. [D-NC-1]</fullName>
+      </item>
+      <item>
+        <bioguideId>C001097</bioguideId>
+        <firstName>Tony</firstName>
+        <party>D</party>
+        <lastName>Cardenas</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>CA</state>
+        <district>29</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2107</lisID>
+          <gpoId />
+          <bioguideId>C001097</bioguideId>
+        </identifiers>
+        <fullName>Rep. Cardenas, Tony [D-CA-29]</fullName>
+      </item>
+      <item>
+        <bioguideId>C001067</bioguideId>
+        <firstName>Yvette</firstName>
+        <party>D</party>
+        <lastName>Clarke</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>D.</middleName>
+        <state>NY</state>
+        <district>9</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8072</gpoId>
+          <bioguideId>C001067</bioguideId>
+          <lisID>1864</lisID>
+        </identifiers>
+        <fullName>Rep. Clarke, Yvette D. [D-NY-9]</fullName>
+      </item>
+      <item>
+        <bioguideId>C001038</bioguideId>
+        <firstName>JOSEPH</firstName>
+        <party>D</party>
+        <lastName>CROWLEY</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>NY</state>
+        <district>14</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8068</gpoId>
+          <bioguideId>C001038</bioguideId>
+          <lisID>1604</lisID>
+        </identifiers>
+        <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
+      </item>
+      <item>
+        <bioguideId>G000551</bioguideId>
+        <firstName>Raul</firstName>
+        <party>D</party>
+        <lastName>Grijalva</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>M.</middleName>
+        <state>AZ</state>
+        <district>3</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1708</lisID>
+          <gpoId>7804</gpoId>
+          <bioguideId>G000551</bioguideId>
+        </identifiers>
+        <fullName>Rep. Grijalva, Raul M. [D-AZ-3]</fullName>
+      </item>
+      <item>
+        <bioguideId>J000126</bioguideId>
+        <firstName>EDDIE</firstName>
+        <party>D</party>
+        <lastName>JOHNSON</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>BERNICE</middleName>
+        <state>TX</state>
+        <district>30</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8186</gpoId>
+          <bioguideId>J000126</bioguideId>
+          <lisID>599</lisID>
+        </identifiers>
+        <fullName>Rep. Johnson, Eddie Bernice [D-TX-30]</fullName>
+      </item>
+      <item>
+        <bioguideId>M001179</bioguideId>
+        <firstName>Tom</firstName>
+        <party>R</party>
+        <lastName>Marino</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>PA</state>
+        <district>10</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2053</lisID>
+          <gpoId>8128</gpoId>
+          <bioguideId>M001179</bioguideId>
+        </identifiers>
+        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
+      </item>
+      <item>
+        <bioguideId>M001157</bioguideId>
+        <firstName>Michael</firstName>
+        <party>R</party>
+        <lastName>McCaul</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>T.</middleName>
+        <state>TX</state>
+        <district>10</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1804</lisID>
+          <gpoId>8166</gpoId>
+          <bioguideId>M001157</bioguideId>
+        </identifiers>
+        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
+      </item>
+      <item>
+        <bioguideId>P000604</bioguideId>
+        <firstName>Donald</firstName>
+        <party>D</party>
+        <lastName>Payne</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>M.</middleName>
+        <state>NJ</state>
+        <district>10</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2097</lisID>
+          <gpoId>8373</gpoId>
+          <bioguideId>P000604</bioguideId>
+        </identifiers>
+        <fullName>Rep. Payne, Donald M., Jr. [D-NJ-10]</fullName>
+      </item>
+      <item>
+        <bioguideId>P000608</bioguideId>
+        <firstName>Scott</firstName>
+        <party>D</party>
+        <lastName>Peters</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>H.</middleName>
+        <state>CA</state>
+        <district>52</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2113</lisID>
+          <gpoId />
+          <bioguideId>P000608</bioguideId>
+        </identifiers>
+        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
+      </item>
+      <item>
+        <bioguideId>R000053</bioguideId>
+        <firstName>CHARLES</firstName>
+        <party>D</party>
+        <lastName>RANGEL</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName>B.</middleName>
+        <state>NY</state>
+        <district>13</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>944</lisID>
+          <gpoId>8076</gpoId>
+          <bioguideId>R000053</bioguideId>
+        </identifiers>
+        <fullName>Rep. Rangel, Charles B. [D-NY-13]</fullName>
+      </item>
+      <item>
+        <bioguideId>R000435</bioguideId>
+        <firstName>ILEANA</firstName>
+        <party>R</party>
+        <lastName>ROS-LEHTINEN</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>FL</state>
+        <district>27</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7890</gpoId>
+          <bioguideId>R000435</bioguideId>
+          <lisID>985</lisID>
+        </identifiers>
+        <fullName>Rep. Ros-Lehtinen, Ileana [R-FL-27]</fullName>
+      </item>
+      <item>
+        <bioguideId>V000128</bioguideId>
+        <firstName>Chris</firstName>
+        <party>D</party>
+        <lastName>Van Hollen</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>MD</state>
+        <district>8</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>V000128</bioguideId>
+          <lisID>1729</lisID>
+          <gpoId>7983</gpoId>
+        </identifiers>
+        <fullName>Rep. Van Hollen, Chris [D-MD-8]</fullName>
+      </item>
+      <item>
+        <bioguideId>V000130</bioguideId>
+        <firstName>Juan</firstName>
+        <party>D</party>
+        <lastName>Vargas</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>CA</state>
+        <district>51</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>V000130</bioguideId>
+          <lisID>2112</lisID>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Vargas, Juan [D-CA-51]</fullName>
+      </item>
+      <item>
+        <bioguideId>Y000063</bioguideId>
+        <firstName>Kevin</firstName>
+        <party>R</party>
+        <lastName>Yoder</lastName>
+        <sponsorshipDate>2016-02-29</sponsorshipDate>
+        <middleName />
+        <state>KS</state>
+        <district>3</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>7951</gpoId>
+          <bioguideId>Y000063</bioguideId>
+          <lisID>2021</lisID>
+        </identifiers>
+        <fullName>Rep. Yoder, Kevin [R-KS-3]</fullName>
+      </item>
+    </cosponsors>
+    <billNumber>627</billNumber>
+    <amendments />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Commemorative events and holidays</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Health promotion and preventive care</name>
+          </item>
+          <item>
+            <name>Hereditary and development disorders</name>
+          </item>
+          <item>
+            <name>Medical research</name>
+          </item>
+          <item>
+            <name>Medical tests and diagnostic methods</name>
+          </item>
+          <item>
+            <name>World health</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <sponsors>
+      <item>
+        <party>D</party>
+        <state>IN</state>
+        <middleName />
+        <bioguideId>C001072</bioguideId>
+        <lastName>Carson</lastName>
+        <firstName>Andre</firstName>
+        <identifiers>
+          <lisID>1889</lisID>
+          <gpoId>7946</gpoId>
+          <bioguideId>C001072</bioguideId>
+        </identifiers>
+        <fullName>Rep. Carson, Andre [D-IN-7]</fullName>
+        <district>7</district>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Expresses support for: (1) the designation of Rare Disease Day; and (2) a national and global commitment to developing new treatments, diagnostics, and cures for rare diseases and disorders. </p>]]></text>
+          <lastSummaryUpdateDate>2016-03-23T18:11:02Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <updateDate>2016-02-29T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <actionDate>2016-02-29</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <constitutionalAuthorityStatementText />
+    <billType>HRES</billType>
+    <title>Expressing support for the designation of February 29, 2016, as "Rare Disease Day".</title>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <congress>114</congress>
+    <latestAction>
+      <text>Referred to the Subcommittee on Health.</text>
+      <actionDate>2016-03-04</actionDate>
+      <links />
+    </latestAction>
+    <cboCostEstimates />
+    <originChamber>House</originChamber>
+    <notes />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2016-03-04T14:51:36Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+            </item>
+          </subcommittees>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2016-02-29T17:01:45Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <calendarNumbers />
+    <updateDate>2017-01-11T14:32:31Z</updateDate>
+    <titles>
+      <item>
+        <chamberName />
+        <title>Expressing support for the designation of February 29, 2016, as "Rare Disease Day".</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <title>Expressing support for the designation of February 29, 2016, as "Rare Disease Day".</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

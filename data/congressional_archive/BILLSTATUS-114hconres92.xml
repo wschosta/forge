@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional operations and organization</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <actions>
+      <actionByCounts>
+        <senate>3</senate>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2015-11-06</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2015-11-05</actionDate>
+        <committee />
+        <links>
+          <link>
+            <name>S7843-7844</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/senate-section/page/S7843-7844</url>
+          </link>
+          <link>
+            <name>S7844</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/senate-section/page/S7844</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Received in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S7843-7844; text as passed Senate: CR S7844)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <committee />
+        <actionCode>17000</actionCode>
+        <type>Floor</type>
+        <text>Passed/agreed to in Senate: Received in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S7843-7844; text as passed Senate: CR S7844)</text>
+        <actionDate>2015-11-05</actionDate>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>S7843-7844</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/senate-section/page/S7843-7844</url>
+          </link>
+          <link>
+            <name>S7844</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/senate-section/page/S7844</url>
+          </link>
+        </links>
+      </item>
+      <item>
+        <committee />
+        <actionCode>H38310</actionCode>
+        <type>Floor</type>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionDate>2015-11-05</actionDate>
+        <actionTime>13:28:15</actionTime>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <actionCode>H37100</actionCode>
+        <type>Floor</type>
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H8145)</text>
+        <actionDate>2015-11-05</actionDate>
+        <actionTime>13:28:09</actionTime>
+        <links>
+          <link>
+            <name>H8145</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/house-section/page/H8145</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <actionCode>8000</actionCode>
+        <type>Floor</type>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H8145)</text>
+        <actionDate>2015-11-05</actionDate>
+        <actionTime>13:28:09</actionTime>
+        <links>
+          <link>
+            <name>H8145</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/house-section/page/H8145</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+        <text>Considered as privileged matter. (consideration: CR H8145)</text>
+        <actionDate>2015-11-05</actionDate>
+        <actionTime>13:26:28</actionTime>
+        <links>
+          <link>
+            <name>H8145</name>
+            <url>https://www.congress.gov/congressional-record/volume-161/house-section/page/H8145</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2015-11-05</actionDate>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+      </item>
+      <item>
+        <committee />
+        <actionCode>1000</actionCode>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2015-11-05</actionDate>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <links />
+      </item>
+      <actionTypeCounts>
+        <sentToHouse>1</sentToHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <considerationByHouse>1</considerationByHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <notes />
+    <createDate>2015-11-06T10:19:22Z</createDate>
+    <title>Providing for a conditional adjournment of the House of Representatives and a conditional recess or adjournment of the Senate.</title>
+    <relatedBills />
+    <cosponsors />
+    <constitutionalAuthorityStatementText />
+    <cboCostEstimates />
+    <updateDate>2017-01-11T14:29:08Z</updateDate>
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Declares that when the House adjourns on any legislative day from Thursday, November 5, 2015, through Thursday, November 12, 2015, it stand adjourned until 2:00 p.m. on Monday, November 16, 2015.</p> <p>Declares that when the Senate recesses or adjourns on any day from Tuesday, November 10, 2015, through Friday, November 13, 2015, it stand recessed or adjourned until noon on Monday, November 16, 2015.</p>]]></text>
+          <lastSummaryUpdateDate>2015-11-06T21:30:13Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <updateDate>2015-11-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <actionDate>2015-11-05</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Declares that when the House adjourns on any legislative day from Thursday, November 5, 2015, through Thursday, November 12, 2015, it stand adjourned until 2:00 p.m. on Monday, November 16, 2015.</p> <p>Declares that when the Senate recesses or adjourns on any day from Tuesday, November 10, 2015, through Friday, November 13, 2015, it stand recessed or adjourned until noon on Monday, November 16, 2015.</p>]]></text>
+          <lastSummaryUpdateDate>2015-11-09T16:03:35Z</lastSummaryUpdateDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <versionCode>82</versionCode>
+          <updateDate>2015-11-05T13:17:35Z</updateDate>
+          <name>Passed Senate without amendment</name>
+          <actionDate>2015-11-05</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Declares that when the House adjourns on any legislative day from Thursday, November 5, 2015, through Thursday, November 12, 2015, it stand adjourned until 2:00 p.m. on Monday, November 16, 2015.</p> <p>Declares that when the Senate recesses or adjourns on any day from Tuesday, November 10, 2015, through Friday, November 13, 2015, it stand recessed or adjourned until noon on Monday, November 16, 2015.</p>]]></text>
+          <lastSummaryUpdateDate>2015-11-06T21:30:22Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <versionCode>81</versionCode>
+          <updateDate>2015-11-05T13:22:52Z</updateDate>
+          <name>Passed House without amendment</name>
+          <actionDate>2015-11-05</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <latestAction>
+      <links />
+      <actionDate>2015-11-06</actionDate>
+      <text>Message on Senate action sent to the House.</text>
+    </latestAction>
+    <originChamber>House</originChamber>
+    <introducedDate>2015-11-05</introducedDate>
+    <billNumber>92</billNumber>
+    <amendments />
+    <billType>HCONRES</billType>
+    <committees>
+      <billCommittees />
+    </committees>
+    <calendarNumbers />
+    <congress>114</congress>
+    <committeeReports />
+    <recordedVotes />
+    <sponsors>
+      <item>
+        <lastName>Woodall</lastName>
+        <state>GA</state>
+        <byRequestType />
+        <firstName>Rob</firstName>
+        <bioguideId>W000810</bioguideId>
+        <fullName>Rep. Woodall, Rob [R-GA-7]</fullName>
+        <identifiers>
+          <lisID>2008</lisID>
+          <gpoId>7904</gpoId>
+          <bioguideId>W000810</bioguideId>
+        </identifiers>
+        <middleName />
+        <district>7</district>
+        <party>R</party>
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <chamberName />
+        <title>Providing for a conditional adjournment of the House of Representatives and a conditional recess or adjournment of the Senate.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <title>Providing for a conditional adjournment of the House of Representatives and a conditional recess or adjournment of the Senate.</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+      </item>
+    </titles>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <billType>HR</billType>
+    <laws />
+    <recordedVotes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2016-05-17</actionDate>
+        <committee>
+          <name>Immigration and Border Security Subcommittee</name>
+          <systemCode>hsju01</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>H11100</actionCode>
+        <actionDate>2016-04-20</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2016-04-20</actionDate>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <type>IntroReferral</type>
+        <links />
+        <actionCode>1000</actionCode>
+        <actionDate>2016-04-20</actionDate>
+      </item>
+    </actions>
+    <billNumber>5012</billNumber>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <notes />
+    <latestAction>
+      <actionDate>2016-05-17</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+    </latestAction>
+    <relatedBills />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2016-04-20T14:02:20Z</date>
+            </item>
+          </activities>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2016-05-17T13:32:11Z</date>
+                </item>
+              </activities>
+              <name>Immigration and Border Security Subcommittee</name>
+              <systemCode>hsju01</systemCode>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <systemCode>hsju00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <cosponsors>
+      <item>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Lieu, Ted [D-CA-33]</fullName>
+        <firstName>Ted</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2230</lisID>
+          <bioguideId>L000582</bioguideId>
+        </identifiers>
+        <state>CA</state>
+        <middleName />
+        <lastName>Lieu</lastName>
+        <bioguideId>L000582</bioguideId>
+        <sponsorshipDate>2016-04-20</sponsorshipDate>
+        <district>33</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
+        <firstName>JOSE</firstName>
+        <identifiers>
+          <bioguideId>S000248</bioguideId>
+          <lisID>1042</lisID>
+          <gpoId>8077</gpoId>
+        </identifiers>
+        <state>NY</state>
+        <middleName>E.</middleName>
+        <lastName>SERRANO</lastName>
+        <bioguideId>S000248</bioguideId>
+        <sponsorshipDate>2016-04-20</sponsorshipDate>
+        <district>15</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Rangel, Charles B. [D-NY-13]</fullName>
+        <firstName>CHARLES</firstName>
+        <identifiers>
+          <lisID>944</lisID>
+          <gpoId>8076</gpoId>
+          <bioguideId>R000053</bioguideId>
+        </identifiers>
+        <state>NY</state>
+        <middleName>B.</middleName>
+        <lastName>RANGEL</lastName>
+        <bioguideId>R000053</bioguideId>
+        <sponsorshipDate>2016-04-20</sponsorshipDate>
+        <district>13</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Vargas, Juan [D-CA-51]</fullName>
+        <firstName>Juan</firstName>
+        <identifiers>
+          <bioguideId>V000130</bioguideId>
+          <gpoId />
+          <lisID>2112</lisID>
+        </identifiers>
+        <state>CA</state>
+        <middleName />
+        <lastName>Vargas</lastName>
+        <bioguideId>V000130</bioguideId>
+        <sponsorshipDate>2016-04-26</sponsorshipDate>
+        <district>51</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+      <item>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Aguilar, Pete [D-CA-31]</fullName>
+        <firstName>Pete</firstName>
+        <identifiers>
+          <lisID>2229</lisID>
+          <bioguideId>A000371</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>CA</state>
+        <middleName />
+        <lastName>Aguilar</lastName>
+        <bioguideId>A000371</bioguideId>
+        <sponsorshipDate>2016-06-13</sponsorshipDate>
+        <district>31</district>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <createDate>2016-04-21T05:26:35Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Rep. Gallego, Ruben [D-AZ-7]</fullName>
+        <firstName>Ruben</firstName>
+        <lastName>Gallego</lastName>
+        <state>AZ</state>
+        <party>D</party>
+        <district>7</district>
+        <bioguideId>G000574</bioguideId>
+        <identifiers>
+          <lisID>2226</lisID>
+          <bioguideId>G000574</bioguideId>
+          <gpoId />
+        </identifiers>
+        <middleName />
+        <byRequestType />
+      </item>
+    </sponsors>
+    <committeeReports />
+    <updateDate>2016-11-02T22:41:58Z</updateDate>
+    <introducedDate>2016-04-20</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2016-04-20T04:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <text><![CDATA[<p><strong>Restoring Respect for Immigrant Service in Uniform Act</strong></p> <p>This bill expresses the sense of Congress that the Department of Homeland Security should exercise its discretion (including through the use of exceptions to inadmissibility based upon family reunification, humanitarian, or public benefit grounds, temporary waiver of inadmissibility, or consent to reapply for admission) to admit to the United States an alien who is inadmissible, was previously subject to an order of removal or has been removed, is outside of the United States, and is seeking U.S. admission, if such alien: </p> <ul> <li>has been a member of the Armed Forces for at least 180 days and has not received an other-than honorable discharge; </li> <li>has not been convicted of a felony, a significant misdemeanor, or three or more misdemeanors that are not significant misdemeanors and that each occurred on a different date and arose out of separate conduct; and </li> <li>is not otherwise a threat to national security or public safety. </li> </ul> <p>The Immigration and Nationality Act is amended to exempt from deportation an alien who has been a member of the Armed Forces for at least 180 days and has not received an other-than honorable discharge, except in the case of an alien who: </p> <ul> <li>has been convicted of a felony, a significant misdemeanor, or three or more misdemeanors that are not significant misdemeanors and that each occurred on a different date and arose out of separate conduct; and </li> <li>is otherwise a threat to national security or public safety.</li> </ul> <p>&quot;Significant misdemeanor&quot; means a misdemeanor: (1) that is a crime of domestic violence, (2) that is a sexual assault, (3) that involved the unlawful possession of a firearm, or (4) for which the alien was sentenced to prison for more than 90 days. </p>]]></text>
+          <lastSummaryUpdateDate>2016-06-21T21:51:23Z</lastSummaryUpdateDate>
+          <actionDate>2016-04-20</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Restoring Respect for Immigrant Service in Uniform Act</title>
+    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Border security and unlawful immigration</name>
+          </item>
+          <item>
+            <name>Immigration status and procedures</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Immigration</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <calendarNumbers />
+    <congress>114</congress>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GALLEGO:H.R. 5012.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 18[Page H1897]</pre>]]></constitutionalAuthorityStatementText>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Restoring Respect for Immigrant Service in Uniform Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Immigration and Nationality Act to limit the grounds of deportability for certain alien members of the United States Armed Forces, and for other purposes.</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Restoring Respect for Immigrant Service in Uniform Act</title>
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

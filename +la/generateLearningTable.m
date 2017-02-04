@@ -1,6 +1,6 @@
 function [learning_table,data_storage] = generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes)
 % GENERATELEARNINGTABLE
-% Function to "teach" the learning algorithm based on a manually coded set 
+% Function to "teach" the learning algorithm based on a manually coded set
 % of bill titles.
 %
 % Developed by Walter Schostak and Eric Waltenburg
@@ -9,28 +9,29 @@ function [learning_table,data_storage] = generateLearningTable(learning_material
 
 % Initialuze appropraite arrays
 issue_codes      = unique(learning_materials.issue_codes);
-description_text = cell(1,length(issue_codes))';
-weights          = cell(1,length(issue_codes))';
+description_text = cell(length(issue_codes),1);
+weights          = cell(length(issue_codes),1);
 
 % Create the table
 learning_table = table(issue_codes,description_text,weights);
 
 % Initialize the data storage structure
 data_storage = struct();
-data_storage.common_words = common_words;
-data_storage.master_issue_codes = master_issue_codes;
-data_storage.additional_issue_codes = additional_issue_codes;
-data_storage.unique_text_store = cell(1,length(issue_codes));
-data_storage.issue_text_store = cell(1,length(issue_codes));
-data_storage.additional_issue_text_store = cell(1,length(issue_codes));
-data_storage.weights_store = cell(1,length(issue_codes));
-data_storage.issue_text_weight_store = cell(1,length(issue_codes));
+data_storage.common_words                       = common_words;
+data_storage.master_issue_codes                 = master_issue_codes;
+data_storage.additional_issue_codes             = additional_issue_codes;
+data_storage.unique_text_store                  = cell(1,length(issue_codes));
+data_storage.issue_text_store                   = cell(1,length(issue_codes));
+data_storage.additional_issue_text_store        = cell(1,length(issue_codes));
+data_storage.weights_store                      = cell(1,length(issue_codes));
+data_storage.issue_text_weight_store            = cell(1,length(issue_codes));
 data_storage.additional_issue_text_weight_store = cell(1,length(issue_codes));
 
-% Iterate over hte issue codes
+% Iterate over the issue codes
 for i = 1:length(issue_codes)
+    
     % Look for title matches for a given issue code
-    title_text = learning_materials{learning_materials.issue_codes == issue_codes(i),'title'};
+    title_text = learning_materials{learning_materials.issue_codes == issue_codes(i),'unified_text'};
     
     % Find matching issue text
     issue_text = master_issue_codes(issue_codes(i));
@@ -43,20 +44,10 @@ for i = 1:length(issue_codes)
     [additional_issue_text,additional_issue_text_weight] = la.cleanupText(additional_issue_text,common_words);
     
     % Merge all of the title text words
-    merge_text = '';
-    for j = 1:length(title_text)
-        merge_text = strcat(merge_text,title_text{j});
-    end
+    merge_text = strjoin(title_text);
     
     % Cleanup the merged text
     [merge_text,~] = la.cleanupText(merge_text,[common_words issue_text additional_issue_text]);
-    
-    % Legacy process, marked for deletion
-    %     merge_text = regexp(merge_text,'\W|\s+','split');
-    %     merge_text = upper(merge_text(~ismember(upper(merge_text),upper(common_words))));
-    %     merge_text = merge_text(~ismember(merge_text,issue_text));
-    %     merge_text = merge_text(~ismember(merge_text,additional_issue_text));
-    %     merge_text = merge_text(~cellfun(@isempty,merge_text));
     
     % Find all of the unique words and the count for each
     [unique_text,~,c] = unique(merge_text);
