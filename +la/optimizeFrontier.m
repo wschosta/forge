@@ -1,4 +1,4 @@
-function [accuracy, awv, iwv] = optimizeFrontier(location,robust,max_grid_size,iterations,learning_materials,learning_table,data_storage,data_location,state)
+function [accuracy, awv, iwv] = optimizeFrontier(robust,max_grid_size,iterations,learning_materials,learning_table,data_storage,flag)
 % OPTIMIZEFRONTIER
 % Funciton to do optimziation the tradeoffs between the issue word value
 % (iwv) and additonal word value (awv)
@@ -12,7 +12,7 @@ for j = 1:robust % multiplicative factor for all grid points
     for k = 1:max_grid_size % awv grid points
         for l = 1:max_grid_size % iwv grid points
             
-            % Initialize arrays 
+            % Initialize arrays
             awv_list      = zeros(iterations,1);
             iwv_list      = zeros(iterations,1);
             accuracy_list = zeros(iterations,1);
@@ -27,7 +27,7 @@ for j = 1:robust % multiplicative factor for all grid points
             % Iterate over that grid square (sampling)
             for i = 1:iterations
                 % Set a new random seed
-                util.setRandSeed((j-1)*robust*max_grid_size*max_grid_size*iterations+(k-1)*max_grid_size*max_grid_size*iterations+(l-1)*max_grid_size*iterations+i+random_salt)
+                util.setRandomSeed((j-1)*robust*max_grid_size*max_grid_size*iterations+(k-1)*max_grid_size*max_grid_size*iterations+(l-1)*max_grid_size*iterations+i+random_salt)
                 
                 % Create the function handle
                 f           = @(x)la.processAlgorithm(x,learning_materials,learning_table,data_storage,1);
@@ -51,11 +51,12 @@ for j = 1:robust % multiplicative factor for all grid points
             end
             
             % Save the iterated set to a file - allows for checkpointing
-            save(sprintf('%s\%s\learning_algorithm\tmp\learning_algorithm_outputs_%s_%i%i%i',data_location,state,location,j,k,l),'awv_list','iwv_list','accuracy_list')
+            save(sprintf('temp/learning_algorithm_outputs_%i%i%i',j,k,l),'awv_list','iwv_list','accuracy_list')
             
         end
     end
 end
+
 
 % Initialize the master arrays
 master_awv      = [];
@@ -63,7 +64,7 @@ master_iwv      = [];
 master_accuracy = [];
 
 % Search for output files
-files = dir(sprintf('%s\%s\learning_algorithm\tmp\learning_algorithm_outputs_*_*.mat',data_location,state));
+files = dir('temp/learning_algorithm_outputs_*.mat');
 
 if isempty(files)
     % Print a warning message
@@ -112,14 +113,13 @@ else
     grid off; hold off;
     
     % Save the results
-    saveas(gcf,sprintf('%s\%s\learning_algorithm\paraeto_surface_maximized',data_location,state),'png')
-    saveas(gcf,sprintf('%s\%s\learning_algorithm\paraeto_surface_maximized',data_location,state),'fig')
+    saveas(gcf,'paraeto_surface_maximized','png')
     
     % Save the data into a master .mat file
     awv_list      = master_awv;
     iwv_list      = master_iwv;
     accuracy_list = master_accuracy;
-    save(sprintf('%s\%s\learning_algorithm\learning_algorithm_results_%s',data_location,state,date),'awv_list','iwv_list','accuracy_list','learning_materials','data_storage');
+    save(sprintf('learning_algorithm_optimization_results_%s',date),'awv_list','iwv_list','accuracy_list','learning_materials','data_storage');
     
     % Find the maximum accuracy
     accuracy = max(accuracy_list);

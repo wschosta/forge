@@ -6,72 +6,136 @@ function main()
 %
 % See also forge
 
-optimize_frontier = false;
-process_algorithm = true;
+optimize_frontier = true;
+process_algorithm = false;
+% optimize_simple   = false;
+relearn_materials = true;
 
 awv = 0.3870; % set by analysis
 iwv = 1.0262; % set by analysis
 
-% if ~exist(learning_materials whatever-we-call-it) || recompute
+if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materials
+    
+    [title,policy_area,text,~,complete_array,~] = la.xmlparse(); % eventually need to add the recompute flag & check updates
+    
+    % Eliminate incomplete bills
+    complete_array = logical(complete_array);
+    title          = title(complete_array);
+    policy_area    = policy_area(complete_array);
+    text           = text(complete_array);
+    
+    master_issue_codes   = containers.Map(1:length(unique(policy_area)),unique(policy_area));
+    
+    % % Create map of issue codes and subjects
+    % master_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
+    %     {'Agriculture','Commerce, Business, Economic Development',...
+    %     'Courts & Judicial','Education','Elections & Apportionment',...
+    %     'Employment & Labor','Environment & Natural Resources',...
+    %     'Family, Children, Human Affairs & Public Health',...
+    %     'Banks & Financial Institutions','Insurance',...
+    %     'Government & Regulatory Reform','Local Government',...
+    %     'Roads & Transportation','Utilities, Energy & Telecommunications',...
+    %     'Ways & Means, Appropriations','Other'});
+    %
+    % % Create map of additional words, hand chosen to increase accuracy
+    additional_issue_codes = containers.Map(1:length(unique(policy_area)),{'Tomato corn',...
+        'Cat dog',...
+        'Military troops',...
+        'Movie award',...
+        'black white',...
+        'trade rights',...
+        'government representative',...
+        'police riot',...
+        'econometrics financing',...
+        'school academy',...
+        'fema hurricane',...
+        'power electricity',...
+        'pristine clean',...
+        'children babies',...
+        'feduciary stock',...
+        'world global',...
+        'politics republic',...
+        'medicine hospital',...
+        'neighborhood village',...
+        'migrant visa',...
+        'realism liberalism',...
+        'work jobs',...
+        'tort reform',...
+        'indian born',...
+        'park mine',...
+        'tech',...
+        'historical anthropology',...
+        'benefits handouts',...
+        'fun football',...
+        'taxes tax',...
+        'roads highways',...
+        'river lake'});
+    
+    optimize_simple = true;
+    
+    % Set list of common words to ignore
+    common_words = la.getCommonWordsList();
+    common_words = [common_words {'bill','ammendment'}];
+    
+    generate_issue_codes = containers.Map(unique(policy_area),1:length(unique(policy_area)));
+    
+    issue_codes  = cellfun(@(x) generate_issue_codes(x),policy_area);
+    unified_text = cellfun(@(a,b) [a ' ' b],title,text,'UniformOutput',false);
+    
+    delete_str = '';
+    
+    parsed_title = cell(length(title),1);
+    parsed_text = cell(length(unified_text),1);
+    for i = 1:length(unified_text)
+        parsed_text{i} = la.cleanupText(unified_text{i},common_words);
+        parsed_title{i} = la.cleanupText(title{i},common_words);
+        
+        print_str = sprintf('%i',i);
+        fprintf([delete_str,print_str]);
+        delete_str = repmat(sprintf('\b'),1,length(print_str));
+    end
+    print_str = sprintf('Finished Text and Title Parsing!\n');
+    fprintf([delete_str,print_str]);
+    
+    learning_materials = table(title,unified_text,issue_codes,parsed_text,parsed_title);
 
-[title,policy_area,text,subject_area,complete_array,bill_list] = la.xmlparse(); % eventually need to add the recompute flag & check updates
+    % Generate the learning table with the taught instructions and the
+    % additional common word, issue, and additional issue codes
+    [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes);
+    
+    save('+la\description_learning_materials.mat','learning_materials','optimize_simple','learning_table','data_storage','master_issue_codes','additional_issue_codes','title','policy_area','text','common_words');
+    
+else
+    load('+la\description_learning_materials.mat')
+end
 
-% Eliminate incomplete bills
-complete_array = logical(complete_array);
-title          = title(complete_array);
-policy_area    = policy_area(complete_array);
-text           = text(complete_array);
-subject_area   = subject_area(complete_array);
-bill_list      = bill_list(complete_array);
-complete_array = complete_array(complete_array); % silly but might as well be consistent
-
-master_issue_codes   = containers.Map(1:length(unique(policy_area)),unique(policy_area));
-generate_issue_codes = containers.Map(unique(policy_area),1:length(unique(policy_area)));
-
-issue_codes  = cellfun(@(x) generate_issue_codes(x),policy_area);
-unified_text = cellfun(@(a,b) [a ' ' b],title,text,'UniformOutput',false);
-
-learning_materials = table(unified_text,issue_codes);
-
-% read in processed text data
-
-% learning_materials = readtable(sprintf('%s/%s/learning_algorithm/description_learning_materials.xlsx',data_location,state));
-
-% Set list of common words to ignore
-common_words = la.getCommonWordsList();
-common_words = [common_words {'bill','ammendment'}];
-% % Create map of issue codes and subjects
-% master_issue_codes = containers.Map([1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16],...
-%     {'Agriculture','Commerce, Business, Economic Development',...
-%     'Courts & Judicial','Education','Elections & Apportionment',...
-%     'Employment & Labor','Environment & Natural Resources',...
-%     'Family, Children, Human Affairs & Public Health',...
-%     'Banks & Financial Institutions','Insurance',...
-%     'Government & Regulatory Reform','Local Government',...
-%     'Roads & Transportation','Utilities, Energy & Telecommunications',...
-%     'Ways & Means, Appropriations','Other'});
-% 
-% % Create map of additional words, hand chosen to increase accuracy
-additional_issue_codes = containers.Map(1:length(unique(policy_area)),cell(1,length(unique(policy_area)))); % just for now
-
-% Generate the learning table with the taught instructions and the
-% additional common word, issue, and additional issue codes
-[learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes);
 
 if optimize_frontier
-    % Run the frontier optimization to find the optimal value for the issue
-    % word value (iwv) and the additional word value (awv)
     
-    location      = 'H'; % string to identify the location of the run for distributed computing
-    robust        = 10;  % number of times to rerun a grid square
-    max_grid_size = 3;   % max number for the awv and iwv coefficient
-    iterations    = 100; % number of points to select within the one by one grid
-    
-    % Run the optimization
-    [accuracy, awv, iwv] = la.optimizeFrontier(location,robust,max_grid_size,iterations,learning_materials,learning_table,data_storage,data_location,state);
-    
-    % Print the results
-    fprintf('Max Accuracy %8.3f%% || a %10.2f | i %10.2f \n',accuracy,awv,iwv);
+    if optimize_simple
+        
+        % Organized = [title additional];
+        min_value = [0 0];
+        max_value = [10 10];
+        step_size = [1 1];
+        
+        [accuracy,max_title,max_additional] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage);
+
+        keyboard
+    else
+        % Run the frontier optimization to find the optimal value for the issue
+        % word value (iwv) and the additional word value (awv)
+        
+        robust        = 2;  % number of times to rerun a grid square
+        max_grid_size = 3;   % max number for the awv and iwv coefficient
+        iterations    = 2; % number of points to select within the one by one grid
+        
+        % Run the optimization
+        [accuracy, awv, iwv] = la.optimizeFrontier(robust,max_grid_size,iterations,learning_materials,learning_table,data_storage);
+        
+        % Print the results
+        fprintf('Max Accuracy %8.3f%% || a %10.2f | i %10.2f \n',accuracy,awv,iwv);
+    end
 end
 
 if process_algorithm
@@ -80,7 +144,7 @@ if process_algorithm
     x(1) = awv;
     x(2) = iwv;
     
-    % Process the results 
+    % Process the results
     outputs = la.processAlgorithm(x,learning_materials,learning_table,data_storage,0);
     
     % Check the stats
@@ -108,11 +172,11 @@ if process_algorithm
         peak = max([peak, sum(processed.issue_codes == keys{i})]);
     end
     
-    axis([0.5,16.5,0,peak])
+    axis([0.5,length(issuce_codes)+0.5,0,peak])
     ax = gca;
     set(ax,'XTick',[keys{:}])
     set(ax,'XTickLabel',tick_values)
-
+    
     xlabel('Issue Codes')
     ylabel('Frequency')
     title('Distribution of Categorized Bills')
@@ -121,17 +185,17 @@ if process_algorithm
     
     
     % Write the learning table to a file
-    writetable(processed,sprintf('learning_algorithm_results_%s.csv',date))
+    save(sprintf('temp\learning_algorithm_results_%s',date),'processed');
     
     % Structure the data for output
     data_storage.awv = awv;
     data_storage.iwv = iwv;
     
     % Create a checkpoint for the learning algorithm data based on the data
-    save(sprintf('learning_algorithm_data_%s',date),'learning_table','data_storage');
+    save(sprintf('temp\learning_algorithm_data_%s',date),'learning_table','data_storage');
     
     % Save it in its normal file location
-    save('learning_algorithm_data','learning_table','data_storage'); 
+    save('learning_algorithm_data','learning_table','data_storage');
 end
 
 end
