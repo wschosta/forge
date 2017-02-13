@@ -9,7 +9,7 @@ function main()
 optimize_frontier = true;
 process_algorithm = false;
 % optimize_simple   = false;
-relearn_materials = true;
+relearn_materials = false;
 
 awv = 0.3870; % set by analysis
 iwv = 1.0262; % set by analysis
@@ -116,8 +116,8 @@ if optimize_frontier
         
         % Organized = [title additional];
         min_value = [0 0];
-        max_value = [10 10];
-        step_size = [1 1];
+        max_value = [3 3];
+        step_size = [0.1 0.1];
         
         [accuracy,max_title,max_additional] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage);
 

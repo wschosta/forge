@@ -3,8 +3,6 @@ function [accuracy,max_title,max_additional] = optimizeFrontierSimple(min_value,
 % Funciton to find the optimal issue word value (iwv) independent from the
 % additonal word value (awv)
 
-keyboard
-
 title_array = min_value(1):step_size(1):max_value(1);
 additional_array = min_value(2):step_size(2):max_value(2);
 
@@ -35,8 +33,11 @@ while any(floor(log10(step_size)) ~= -5)
     
     accuracy_list = zeros(length(title_array),length(additional_array));
     
+    iter = 1;
     for i = 1:length(title_array)
         for j = 1:length(additional_array)
+            
+            tic;
             
             fprintf('%0.4f %0.4f ',title_array(i),additional_array(j));
             x = [title_array(i),additional_array(j)];
@@ -64,7 +65,13 @@ while any(floor(log10(step_size)) ~= -5)
             
             accuracy_list(i,j) = la.processAlgorithm(learning_materials,data_storage,1,'parsed_text');
             
-            fprintf(' %0.4f\n',-accuracy_list(i,j))
+            fprintf(' %0.4f%% ',-accuracy_list(i,j))
+            
+            toc;
+            iter = iter + 1;
+            if mod(iter,100) == 0
+                save(sprintf('temp/learning_algorithm_simple_outputs_%i_%s.mat',count,date),'accuracy_list','title_array','additional_array','step_size')
+            end
         end
     end
     
@@ -93,9 +100,10 @@ if isempty(files)
     warning('ERROR: FILES NOT FOUND')
     
     % Set the outputs to empty
-    accuracy_title = [];
-    accuracy_text  = [];
-    iwv            = [];
+    accuracy = [];
+    max_title = [];
+    max_additional = [];
+    return
 else
     
     master_title_array      = [];
@@ -103,6 +111,7 @@ else
     master_accuracy_list    = [];
     
     % Iterate over all the files
+    hit_list = zeros(1,length(files));
     for i = 1:length(files)
         
         % Load the file
@@ -110,29 +119,35 @@ else
         
         % If it does not contain the field "learning_materials" it's the
         % processed data and what we're looking for
-        if ~isfield(output,'learning_materials')
-            
-            % Add the outputs to the master lists
-            
-            title_temp = zeros(length(output.title_array)*length(output.additional_array),1);
-            additional_temp = zeros(length(output.title_array)*length(output.additional_array),1);
-            accuracy_temp = zeros(length(output.title_array)*length(output.additional_array),1);
-            
-            count = 1;
-            for j = 1:length(output.title_array)
-                for k = 1:length(output.additional_array)
-                    title_temp(count) = output.title_array(j);
-                    additional_temp(count) = output.additional_array(k);
-                    accuracy_temp(count) = output.accuracy_list(j,k);
-                    count = count + 1;
+        if ~isfield(output,'learning_materials') 
+            hit_list(i) = 1;
+            if isfield(output,'flag')
+                master_title_array      = [master_title_array ; output.title_array]; %#ok<AGROW>
+                master_additional_array = [master_additional_array ; output.additional_array]; %#ok<AGROW>
+                master_accuracy_list    = [master_accuracy_list ; output.accuracy_list]; %#ok<AGROW>
+            else
+                % Add the outputs to the master lists
+                
+                title_temp = zeros(length(output.title_array)*length(output.additional_array),1);
+                additional_temp = zeros(length(output.title_array)*length(output.additional_array),1);
+                accuracy_temp = zeros(length(output.title_array)*length(output.additional_array),1);
+                
+                count = 1;
+                for j = 1:length(output.title_array)
+                    for k = 1:length(output.additional_array)
+                        title_temp(count) = output.title_array(j);
+                        additional_temp(count) = output.additional_array(k);
+                        accuracy_temp(count) = output.accuracy_list(j,k);
+                        count = count + 1;
+                    end
                 end
+                
+                master_title_array      = [master_title_array ; title_temp]; %#ok<AGROW>
+                master_additional_array = [master_additional_array ; additional_temp]; %#ok<AGROW>
+                master_accuracy_list    = [master_accuracy_list ; -accuracy_temp]; %#ok<AGROW>
+                % Deletion of constituent files under evaluation
+                %             delete(files(i).name);
             end
-            
-            master_title_array      = [master_title_array ; title_temp]; %#ok<AGROW>
-            master_additional_array = [master_additional_array ; additional_temp]; %#ok<AGROW>
-            master_accuracy_list    = [master_accuracy_list ; accuracy_temp]; %#ok<AGROW>
-            % Deletion of constituent files under evaluation
-            %             delete(files(i).name);
         else
             continue
         end
@@ -143,7 +158,7 @@ else
     % Geneare the figure
     figure()
     hold on; grid on;
-    fill3(master_title_array(t)',master_additional_array(t)',-master_accuracy_list(t)',-master_accuracy_list(t)')
+    fill3(master_title_array(t)',master_additional_array(t)',master_accuracy_list(t)',master_accuracy_list(t)')
     title('Paraeto surface for learning algorithm weighting')
     xlabel('Additional Word Weights')
     ylabel('Issue Word Weights')
@@ -155,15 +170,23 @@ else
     % Save the data into a master .mat file
     title_array      = master_title_array;
     additional_array = master_additional_array;
-    accuracy_list    = -master_accuracy_list;
-    save(sprintf('learning_algorithm_simple_optimization_results_%s',date),'title_array','additional_array','accuracy_list','learning_materials','data_storage');
+    accuracy_list    = master_accuracy_list;
+    save(sprintf('temp/learning_algorithm_simple_output_results_%s',date),'title_array','additional_array','accuracy_list','learning_materials','data_storage');
     
     % Find the maximum accuracy
     [accuracy,index] = max(accuracy_list);
     
+    for i = 1:length(hit_list)
+        if hit_list(i) == 1
+            delete([files(i).folder '\' files(i).name]);
+        end
+    end
+
+    flag = 1;
+    save(sprintf('temp/learning_algorithm_simple_outputs_00000000000_%s.mat',date),'accuracy_list','title_array','additional_array','flag');
     
     max_title = title_array(index);
-    max_additional = additional_array(index_text);
+    max_additional = additional_array(index);
 end
 
 end
