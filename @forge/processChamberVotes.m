@@ -39,58 +39,63 @@ for i = bill_keys
     % LIMITING CONDITIONS
     % yes percentage less than 85%
     % full chamber (greater than 60 votes)
-    if obj.bill_set(i).(sprintf('passed_%s',chamber)) >= 0 && ... % passed in the chamber
-            obj.bill_set(i).(chamber_data).final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
-            obj.bill_set(i).(chamber_data).final_yes_percentage > (1 - obj.competitive_threshold)  % no vote is under the threshold
-        
+    if obj.bill_set(i).(sprintf('passed_%s',chamber)) >= 0 && obj.bill_set(i).(chamber_data).competitive
+        %final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
+        %   obj.bill_set(i).(chamber_data).final_yes_percentage > (1 - obj.competitive_threshold)  % no vote is under the threshold
+       
         % Sponsor information
         sponsor_ids = util.createIDstrings(obj.bill_set(i).sponsors,ids);
         
         % Increase the sponsorship count by one
-        sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} = sponsorship_counts{ismember(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} + 1;
+        sponsorship_counts{util.CStrAinBP(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} = sponsorship_counts{util.CStrAinBP(sponsorship_counts.Properties.RowNames,sponsor_ids),'count'} + 1;
         
         %%% COMMITTEE INFORMATION - TODO probably can collapse this into a common function with the chamber data
-        is_committee_votes = 0; %TEST
+        %         is_committee_votes = 0; %TEST
+        %
+        %         for j = 1:length(obj.bill_set(i).(chamber_data).committee_votes)
+        %
+        %             % so it's sort of pointless to do the loop and then
+        %             % only process the last bill but I want to preserve
+        %             % the functionality
+        %             if j < length(obj.bill_set(i).(chamber_data).committee_votes)
+        %                 continue
+        %             end
+        %
+        %             committee_count = committee_count + 1;
+        %
+        %             % Yes/No votes
+        %             committee_yes_ids = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).yes_list,ids);
+        %             committee_no_ids  = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).no_list,ids);
+        %
+        %             % STRAIGHT VOTES
+        %             committee_matrix = obj.addVotes(committee_matrix,committee_yes_ids,committee_yes_ids);
+        %             committee_matrix = obj.addVotes(committee_matrix,committee_no_ids,committee_no_ids);
+        %             committee_matrix = obj.addVotes(committee_matrix,committee_yes_ids,committee_no_ids,'value',0);
+        %             committee_matrix = obj.addVotes(committee_matrix,committee_no_ids,committee_yes_ids,'value',0);
+        %
+        %             % Place that information into possible votes matrix
+        %             committee_votes = obj.addVotes(committee_votes,[committee_yes_ids ; committee_no_ids],[committee_yes_ids ; committee_no_ids]);
+        %
+        %             print_str = sprintf('%i %i',i,j);
+        %             fprintf([delete_str,print_str]);
+        %             delete_str = repmat(sprintf('\b'),1,length(print_str));
+        %
+        %             is_committee_votes = 1;
+        %         end
+        %
+        %         if is_committee_votes % could also do a ~isempty(j)
+        %             % SPONSORS - take the last *committee* vote - TODO is this really what we want to do here?
+        %             committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_yes_ids);
+        %             committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_no_ids,'value',0);
+        %
+        %             % Place that information into possible votes matrix
+        %             committee_sponsor_votes  = obj.addVotes(committee_sponsor_votes,sponsor_ids,[committee_yes_ids ; committee_no_ids]);
+        %         end
+        committee_votes          = [];
+        committee_matrix         = [];
+        committee_sponsor_matrix = [];
+        committee_sponsor_votes  = [];
         
-        for j = 1:length(obj.bill_set(i).(chamber_data).committee_votes)
-            
-            % so it's sort of pointless to do the loop and then
-            % only process the last bill but I want to preserve
-            % the functionality
-            if j < length(obj.bill_set(i).(chamber_data).committee_votes)
-                continue
-            end
-            
-            committee_count = committee_count + 1;
-            
-            % Yes/No votes
-            committee_yes_ids = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).yes_list,ids);
-            committee_no_ids  = util.createIDstrings(obj.bill_set(i).(chamber_data).committee_votes(j).no_list,ids);
-            
-            % STRAIGHT VOTES
-            committee_matrix = obj.addVotes(committee_matrix,committee_yes_ids,committee_yes_ids);
-            committee_matrix = obj.addVotes(committee_matrix,committee_no_ids,committee_no_ids);
-            committee_matrix = obj.addVotes(committee_matrix,committee_yes_ids,committee_no_ids,'value',0);
-            committee_matrix = obj.addVotes(committee_matrix,committee_no_ids,committee_yes_ids,'value',0);
-            
-            % Place that information into possible votes matrix
-            committee_votes = obj.addVotes(committee_votes,[committee_yes_ids ; committee_no_ids],[committee_yes_ids ; committee_no_ids]);
-            
-            print_str = sprintf('%i %i',i,j);
-            fprintf([delete_str,print_str]);
-            delete_str = repmat(sprintf('\b'),1,length(print_str));
-            
-            is_committee_votes = 1;
-        end
-        
-        if is_committee_votes % could also do a ~isempty(j)
-            % SPONSORS - take the last *committee* vote - TODO is this really what we want to do here?
-            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_yes_ids);
-            committee_sponsor_matrix = obj.addVotes(committee_sponsor_matrix,sponsor_ids,committee_no_ids,'value',0);
-            
-            % Place that information into possible votes matrix
-            committee_sponsor_votes  = obj.addVotes(committee_sponsor_votes,sponsor_ids,[committee_yes_ids ; committee_no_ids]);
-        end
         is_committee_votes = 1; %TEST
         
         %%% CHAMBER INFORMATION
@@ -173,20 +178,20 @@ consistency_matrix.percentage = consistency_matrix.consistency ./ consistency_ma
 [republican_ids, democrat_ids] = obj.processParties(people);
 
 % Process party chamber and committee votes
-republicans_chamber_votes     = chamber_matrix(ismember(chamber_matrix.Properties.RowNames,republican_ids),ismember(chamber_matrix.Properties.VariableNames,republican_ids));
-democrats_chamber_votes       = chamber_matrix(ismember(chamber_matrix.Properties.RowNames,democrat_ids),ismember(chamber_matrix.Properties.VariableNames,democrat_ids));
-republicans_committee_votes   = committee_matrix(ismember(committee_matrix.Properties.RowNames,republican_ids),ismember(committee_matrix.Properties.VariableNames,republican_ids));
-democrats_committee_votes     = committee_matrix(ismember(committee_matrix.Properties.RowNames,democrat_ids),ismember(committee_matrix.Properties.VariableNames,democrat_ids));
+republicans_chamber_votes     = chamber_matrix(util.CStrAinBP(chamber_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(chamber_matrix.Properties.VariableNames,republican_ids));
+democrats_chamber_votes       = chamber_matrix(util.CStrAinBP(chamber_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(chamber_matrix.Properties.VariableNames,democrat_ids));
+republicans_committee_votes   = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,republican_ids));
+democrats_committee_votes     = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,democrat_ids));
 
 % Process party chamber and committee sponsor votes
-republicans_chamber_sponsor   = chamber_sponsor_matrix(ismember(chamber_sponsor_matrix.Properties.RowNames,republican_ids),ismember(chamber_sponsor_matrix.Properties.VariableNames,republican_ids));
-democrats_chamber_sponsor     = chamber_sponsor_matrix(ismember(chamber_sponsor_matrix.Properties.RowNames,democrat_ids),ismember(chamber_sponsor_matrix.Properties.VariableNames,democrat_ids));
-republicans_committee_sponsor = committee_sponsor_matrix(ismember(committee_sponsor_matrix.Properties.RowNames,republican_ids),ismember(committee_sponsor_matrix.Properties.VariableNames,republican_ids));
-democrats_committee_sponsor   = committee_sponsor_matrix(ismember(committee_sponsor_matrix.Properties.RowNames,democrat_ids),ismember(committee_sponsor_matrix.Properties.VariableNames,democrat_ids));
+republicans_chamber_sponsor   = chamber_sponsor_matrix(util.CStrAinBP(chamber_sponsor_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(chamber_sponsor_matrix.Properties.VariableNames,republican_ids));
+democrats_chamber_sponsor     = chamber_sponsor_matrix(util.CStrAinBP(chamber_sponsor_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(chamber_sponsor_matrix.Properties.VariableNames,democrat_ids));
+republicans_committee_sponsor = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,republican_ids));
+democrats_committee_sponsor   = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,democrat_ids));
 
 % if seat information exists generate the seat proximity matrix
 seat_matrix = [];
-if all(ismember({'SEATROW','SEATCOLUMN'},people.Properties.VariableNames))
+if length(util.CStrAinBP({'SEATROW','SEATCOLUMN'},people.Properties.VariableNames)) == 2
     seat_matrix = obj.processSeatProximity(people);
 end
 

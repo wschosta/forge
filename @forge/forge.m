@@ -84,6 +84,7 @@ classdef forge < handle
                     [bills_create, people_create, votes_create] = obj.readAllInfo(obj.state_ID); %#ok<UNRCH>
                 else
                     bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);
+                    bills_create.issue_category = NaN(length(bills_create.bill_id),1);
                     people_create    = obj.readAllFilesOfSubject('people',obj.state_ID);
                     rollcalls_create = obj.readAllFilesOfSubject('rollcalls',obj.state_ID);
                     
@@ -100,6 +101,8 @@ classdef forge < handle
                     % Create the key map
                     bill_set_create = containers.Map('KeyType','int32','ValueType','any');
                     
+                    competitive_bills = zeros(length(bills_create.bill_id),1);
+                    
                     delete_str = '';
                     for i = 1:length(bills_create.bill_id)
                         
@@ -108,6 +111,8 @@ classdef forge < handle
                         fprintf([delete_str,print_str]);
                         delete_str = repmat(sprintf('\b'),1,length(print_str));
                         
+                        competitive = 0;
+                        
                         % Populate the bill template
                         template = util.templates.getBillTemplate();
                         template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
@@ -115,6 +120,7 @@ classdef forge < handle
                         template.title          = bills_create{i,'title'};
                         if obj.learning_algorithm_exist
                             template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
+                            bills_create.issue_category(i) = template.issue_category;
                         end
                         template.sponsors = sponsors_create{sponsors_create.bill_id == bills_create{i,'bill_id'},'sponsor_id'};
                         template.history  = sortrows(history_create(bills_create{i,'bill_id'} == history_create.bill_id,:),'date');
@@ -133,6 +139,14 @@ classdef forge < handle
                         if ~isempty(house_rollcalls)
                             template.house_data   = obj.processChamberRollcalls(house_rollcalls,votes_create,obj.house_size*obj.committee_threshold);
                             template.passed_house = (template.house_data.final_yes_percentage > 0.5);
+                            
+                            template.house_data.competitive = 0;
+                            if template.house_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
+                                    template.house_data.final_yes_percentage > (1 - obj.competitive_threshold)
+                            
+                                template.house_data.compeitive = 1;
+                                competitive = 1;
+                            end
                         end
                         
                         % Process Senate data
@@ -140,6 +154,13 @@ classdef forge < handle
                         if ~isempty(senate_rollcalls)
                             template.senate_data   = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*obj.committee_threshold);
                             template.passed_senate = (template.senate_data.final_yes_percentage > 0.5);
+                            
+                            if template.senate_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
+                                    template.senate_data.final_yes_percentage > (1 - obj.competitive_threshold)
+                            
+                                template.senate_data.compeitive = 1;
+                                competitive = 1;
+                            end
                         end
                         
                         % Check to see if the bill passed both the House and
@@ -148,6 +169,9 @@ classdef forge < handle
                             template.passed_both = (template.passed_senate && template.passed_house);
                             template.complete    = 1;
                         end
+                        
+                        competitive_bills(i) = competitive;
+                        template.competitive = competitive;
                         
                         % Store the bill infomration in the containers map
                         bill_set_create(bills_create{i,'bill_id'}) = template;
@@ -160,6 +184,31 @@ classdef forge < handle
                     mkdir(sprintf('data/%s',obj.state_ID'));
                     addpath(sprintf('data/%s',obj.state_ID));
                 end
+                
+                figure()
+                hold on;
+                grid on;
+                title('Issue Category Frequency - Total')
+                histogram(bills_create.issue_category);
+                histogram(bills_create.issue_category(logical(competitive_bills)));
+                legend({'All Bills','Competitive Bills'})
+                xlabel('Issue Code')
+                ylabel('Frequency')
+                axis tight
+                hold off;
+                saveas(gcf,sprintf('data/%s/issue_category_frequency_total',obj.state_ID),'png')
+                
+                figure()
+                hold on;
+                grid on;
+                title('Issue Category Frequency - Competitive Bills')
+                histogram(bills_create.issue_category(logical(competitive_bills)));
+                legend({'Competitive Bills'})
+                xlabel('Issue Code')
+                ylabel('Frequency')
+                axis tight
+                hold off;
+                saveas(gcf,sprintf('data/%s/issue_category_frequency_competitive',obj.state_ID),'png')
                 
                 save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create')
             else % Load the saved information
@@ -195,6 +244,7 @@ classdef forge < handle
                         if ~isempty(new_table)
                             new_table.year = ones(height(new_table),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
                             
+                            field_match = 1:length(output.Properties.VariableNames);
                             field_match(util.CStrAinBP(output.Properties.VariableNames,new_table.Properties.VariableNames)) = [];
                             
                             for j = field_match
@@ -208,9 +258,9 @@ classdef forge < handle
                             end
                             
                             try
-                            output = [output;new_table]; %#ok<AGROW>
+                                output = [output; new_table]; %#ok<AGROW>
                             catch
-                                keyboard
+                                error('UNABLE TO EXPAND TABLE')
                             end
                         end
                         new_table = []; %#ok<NASGU>

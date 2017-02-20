@@ -7,6 +7,8 @@ function [learning_table,data_storage] = generateLearningTable(learning_material
 %
 % See also la.main
 
+cut_off = 201;
+
 % Initialuze appropraite arrays
 issue_codes       = unique(learning_materials.issue_codes);
 description_text  = cell(length(issue_codes),1);
@@ -69,8 +71,8 @@ for i = 1:length(issue_codes)
     data_storage.unique_text_full_store{i}                  = unique_text;
     data_storage.weights_full_store{i}                      = weights;
     
-    unique_text(201:end) = [];
-    weights(201:end) = [];
+    unique_text(cut_off:end) = [];
+    weights(cut_off:end) = [];
     
     data_storage.unique_text_store{i}                  = unique_text;
     data_storage.issue_text_store{i}                   = issue_text;
@@ -79,19 +81,6 @@ for i = 1:length(issue_codes)
     data_storage.issue_text_weight_store{i}            = issue_text_weight;
     data_storage.additional_issue_text_weight_store{i} = additional_issue_text_weight;
     
-% end
-% 
-% [text,~,count] = unique([data_storage.unique_text_store{:}]);
-% hit_list = hist(count,length(text));
-% kill_text = text(hit_list > 1);
-% 
-% for i = 1:length(data_storage.unique_text_store)
-%     index = util.CStrAinBP(data_storage.unique_text_store{i},kill_text);
-%     
-%     data_storage.unique_text_store{i}(index) = [];
-%     data_storage.weights_store{i}(index) = [];
-%     
-
     % Store the information in the learning table
     learning_table{learning_table.issue_codes == issue_codes(i),'description_text'} = {data_storage.unique_text_store{i}}; 
     learning_table{learning_table.issue_codes == issue_codes(i),'weights'} = {data_storage.weights_store{i}}; 
@@ -112,6 +101,7 @@ ylabel('Frequency')
 title('Learning Material Issue Code Frequency')
 axis tight
 hold off
-saveas(gcf,sprintf('learning_algorithm_issue_frequency_%s',date),'png')
+saveas(gcf,sprintf('+la\learning_algorithm_issue_frequency_%s',date),'png')
+close(gcf);
 
 end

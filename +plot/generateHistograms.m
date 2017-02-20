@@ -5,14 +5,14 @@ function generateHistograms(people_matrix,save_directory,label_string,specific_l
 % Find matching rows and columns
 rows        = people_matrix.Properties.RowNames;
 columns     = people_matrix.Properties.VariableNames;
-match_index = util.CStrAinBP(rows,columns);
+[r_i,c_i] = util.CStrAinBP(rows,columns);
 
 % Do some vodo magic to find matching legislators and eliminate them from
 % the main set
-secondary_plot = nan(1,length(match_index));
-for i = 1:length(match_index)
-    secondary_plot(i) = people_matrix{columns{match_index(i)},columns{match_index(i)}};
-    people_matrix{columns{match_index(i)},columns{match_index(i)}} = NaN;
+secondary_plot = nan(1,length(r_i));
+for i = 1:length(r_i)
+    secondary_plot(i) = people_matrix{rows{r_i(i)},columns{c_i(i)}};
+    people_matrix{rows{r_i(i)},columns{c_i(i)}} = NaN;
 end
 
 % Reshape the main plot values
@@ -45,4 +45,5 @@ if ~isempty(secondary_plot) && sum(~isnan(secondary_plot)) > 1
     hold off
     saveas(h,sprintf('%s/%s_%s_histogram_match',save_directory,upper(label_string(1)),tag),'png')
 end
+
 end

@@ -122,7 +122,7 @@ if isempty(files) || obj.recompute_ELO
             else
                 if ~isnan(t_set.committee_vote(j))
                     t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
-                elseif ~isempty(util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames))
+                elseif ~isempty(util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.RowNames) && util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.VariableNames))
                     t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
                 end
             end
@@ -132,7 +132,8 @@ if isempty(files) || obj.recompute_ELO
         t_final_results = t_set.final;
         
         legislator_id     = legislator_list(randperm(length(legislator_list)));
-        direction         = ismember(legislator_id,bill_yes_ids);
+        direction         = zeros(length(legislator_id),1);
+        direction(util.CStrAinBP(legislator_id,bill_yes_ids)) = 1;
         
         accuracy = zeros(1,length(legislator_id));
         

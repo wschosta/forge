@@ -1,11 +1,13 @@
-function data_storage = loadLearnedMaterials(data_directory)
+function [data_storage,la_exist] = loadLearnedMaterials()
 % LOADLEARNEDMATERIALS
 % Load the learned materials for a specific state
 
 % Read in the .mat file
-data_storage = load(sprintf('%s/learning_algorithm/learning_algorithm_data',data_directory));
+la_exist = (exist('+la\learning_algorithm_data.mat','file') == 2);
+data_storage = [];
 
-% Because of the way in which it was stored...
-data_storage = data_storage.data_storage; % it's not pretty but it works
+if la_exist
+    load('+la\learning_algorithm_data');
+end
 
 end

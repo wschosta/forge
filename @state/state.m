@@ -122,12 +122,8 @@ classdef state < forge
             end
             addpath(genpath(obj.data_directory));
             
-            % Load the learning algorithm data based on the state specific
-            % information TODO does this have to be state specific? Why?
-            obj.learning_algorithm_exist = false;
-            if obj.learning_algorithm_exist
-                obj.learning_algorithm_data = la.loadLearnedMaterials(obj.data_directory);
-            end
+            % Load the learning algorithm data
+            [obj.learning_algorithm_data, obj.learning_algorithm_exist] = la.loadLearnedMaterials();
             
             obj.committee_threshold   = 0.75; % threshold for a vote being a committee vote, 75%
             obj.competitive_threshold = 0.85; % threshold for a bill being competitive, 85%
@@ -149,7 +145,7 @@ classdef state < forge
                     % a specific year
                     year_select = max(unique(obj.people.year));
                     
-                    if all(ismember({'year','role_id','party_id'},obj.people.Properties.VariableNames))
+                    if length(util.CStrAinBP({'year','role_id','party_id'},obj.people.Properties.VariableNames)) == 3
                         obj.people.party_id = obj.people.party_id - 1;
                         select_people       = obj.people(obj.people.year == year_select,:);
                         house_people        = select_people(select_people.role_id == 1,:);
