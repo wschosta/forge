@@ -38,7 +38,7 @@ for i = bill_keys
     
     % LIMITING CONDITIONS
     % yes percentage less than 85%
-    % full chamber (greater than 60 votes)
+    % full chamber
     if obj.bill_set(i).(sprintf('passed_%s',chamber)) >= 0 && obj.bill_set(i).(chamber_data).competitive
         %final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
         %   obj.bill_set(i).(chamber_data).final_yes_percentage > (1 - obj.competitive_threshold)  % no vote is under the threshold
@@ -180,15 +180,26 @@ consistency_matrix.percentage = consistency_matrix.consistency ./ consistency_ma
 % Process party chamber and committee votes
 republicans_chamber_votes     = chamber_matrix(util.CStrAinBP(chamber_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(chamber_matrix.Properties.VariableNames,republican_ids));
 democrats_chamber_votes       = chamber_matrix(util.CStrAinBP(chamber_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(chamber_matrix.Properties.VariableNames,democrat_ids));
-republicans_committee_votes   = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,republican_ids));
-democrats_committee_votes     = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,democrat_ids));
+
+if ~isempty(committee_matrix)
+    republicans_committee_votes   = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,republican_ids));
+    democrats_committee_votes     = committee_matrix(util.CStrAinBP(committee_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_matrix.Properties.VariableNames,democrat_ids));
+else
+    republicans_committee_votes = [];
+    democrats_committee_votes   = [];
+end
 
 % Process party chamber and committee sponsor votes
 republicans_chamber_sponsor   = chamber_sponsor_matrix(util.CStrAinBP(chamber_sponsor_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(chamber_sponsor_matrix.Properties.VariableNames,republican_ids));
 democrats_chamber_sponsor     = chamber_sponsor_matrix(util.CStrAinBP(chamber_sponsor_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(chamber_sponsor_matrix.Properties.VariableNames,democrat_ids));
-republicans_committee_sponsor = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,republican_ids));
-democrats_committee_sponsor   = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,democrat_ids));
 
+if ~isempty(committee_sponsor_matrix)
+    republicans_committee_sponsor = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,republican_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,republican_ids));
+    democrats_committee_sponsor   = committee_sponsor_matrix(util.CStrAinBP(committee_sponsor_matrix.Properties.RowNames,democrat_ids),util.CStrAinBP(committee_sponsor_matrix.Properties.VariableNames,democrat_ids));
+else
+    republicans_committee_sponsor = [];
+    democrats_committee_sponsor   = [];
+end
 % if seat information exists generate the seat proximity matrix
 seat_matrix = [];
 if length(util.CStrAinBP({'SEATROW','SEATCOLUMN'},people.Properties.VariableNames)) == 2

@@ -144,7 +144,7 @@ classdef forge < handle
                             if template.house_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
                                     template.house_data.final_yes_percentage > (1 - obj.competitive_threshold)
                             
-                                template.house_data.compeitive = 1;
+                                template.house_data.competitive = 1;
                                 competitive = 1;
                             end
                         end
@@ -155,10 +155,11 @@ classdef forge < handle
                             template.senate_data   = obj.processChamberRollcalls(senate_rollcalls,votes_create,obj.senate_size*obj.committee_threshold);
                             template.passed_senate = (template.senate_data.final_yes_percentage > 0.5);
                             
+                            template.senate_data.competitive = 0;
                             if template.senate_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
                                     template.senate_data.final_yes_percentage > (1 - obj.competitive_threshold)
                             
-                                template.senate_data.compeitive = 1;
+                                template.senate_data.competitive = 1;
                                 competitive = 1;
                             end
                         end
@@ -189,8 +190,10 @@ classdef forge < handle
                 hold on;
                 grid on;
                 title('Issue Category Frequency - Total')
-                histogram(bills_create.issue_category);
-                histogram(bills_create.issue_category(logical(competitive_bills)));
+                total_histogram = histogram(bills_create.issue_category);
+                competitive_histogram = histogram(bills_create.issue_category(logical(competitive_bills)));
+                % TODO put a line at the minimum competitive bill threshold
+                % for SNEB/ELO analysis
                 legend({'All Bills','Competitive Bills'})
                 xlabel('Issue Code')
                 ylabel('Frequency')
@@ -203,6 +206,8 @@ classdef forge < handle
                 grid on;
                 title('Issue Category Frequency - Competitive Bills')
                 histogram(bills_create.issue_category(logical(competitive_bills)));
+                % TODO put a line at the minimum competitive bill threshold
+                % for SNEB/ELO analysis
                 legend({'Competitive Bills'})
                 xlabel('Issue Code')
                 ylabel('Frequency')
@@ -210,7 +215,7 @@ classdef forge < handle
                 hold off;
                 saveas(gcf,sprintf('data/%s/issue_category_frequency_competitive',obj.state_ID),'png')
                 
-                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create')
+                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create','total_histogram','competitive_histogram')
             else % Load the saved information
                 load(sprintf('data/%s/processed_data',obj.state_ID))
             end
@@ -434,6 +439,7 @@ classdef forge < handle
         function [people_matrix,possible_votes] = cleanVotes(people_matrix,possible_votes)
             % Clear People who didn't have votes
             % Generate the list of row names
+            if ~isempty(people_matrix) && ~isempty(possible_votes)
             row_names = people_matrix.Properties.RowNames;
             
             % Iterate over the row names
@@ -448,6 +454,9 @@ classdef forge < handle
                     
                     fprintf('WARNING: NO VOTES RECORDED FOR %s\n',row_names{i});
                 end
+            end
+            else
+                fprintf('WARNING: EMPTY MATRIX!\n')
             end
         end
         
