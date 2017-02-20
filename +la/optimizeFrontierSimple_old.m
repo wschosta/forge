@@ -27,13 +27,13 @@ while floor(log10(step_size)) ~= -4
         accuracy_list_text(i)  = la.processAlgorithm(x,learning_materials,learning_table,data_storage,1,'parsed_text');
         fprintf(' %0.4f%% %0.4f%%\n',-accuracy_list_title(i),accuracy_list_text(i))
     end
-    save(sprintf('temp/learning_algorithm_simple_outputs_%02d.mat',step_size*1000),'iwv_list','accuracy_list_title','accuracy_list_text','step_size');
+    save(sprintf('+la/temp/learning_algorithm_simple_outputs_%02d.mat',step_size*1000),'iwv_list','accuracy_list_title','accuracy_list_text','step_size');
     
     count = count + 1;
 end
 
 % Search for output files
-files = dir('temp/learning_algorithm_simple_outputs_*.mat');
+files = dir('+la/temp/learning_algorithm_simple_outputs_*.mat');
 
 if isempty(files)
     % Print a warning message
@@ -81,13 +81,13 @@ else
     grid off; hold off;
     
     % Save the results
-    saveas(gcf,'paraeto_surface_maximized','png')
+    saveas(gcf,'+la/paraeto_surface_maximized','png')
     
     % Save the data into a master .mat file
     iwv_list            = master_iwv;
     accuracy_list_title = master_accuracy_title;
     accuracy_list_text  = master_accuracy_text;
-    save(sprintf('learning_algorithm_simple_optimization_results_%s',date),'awv_list','accuracy_list_title','accuracy_list_text','learning_materials','data_storage');
+    save(sprintf('+la/learning_algorithm_simple_optimization_results_%s',date),'awv_list','accuracy_list_title','accuracy_list_text','learning_materials','data_storage');
     
     % Find the maximum accuracy
     [accuracy_title,index_title] = max(accuracy_list_title);

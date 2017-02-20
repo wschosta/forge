@@ -53,7 +53,7 @@ if exist('+la\parsed_xml.mat','file') == 2 && ~force_recompute
         end
         existing_bill_update_array(existing_bill_update_array == -1) = [];
         
-        print_str = sprintf('Done! %i bills checked, %i new or updated bills found\n',length(new_bill_list),sum(update_list));
+        print_str = sprintf('Update Check Complete! %i bills checked, %i new or updated bills found\n',length(new_bill_list),sum(update_list));
         fprintf([delete_str,print_str]);
         
         if sum(update_list) > 0
@@ -156,7 +156,7 @@ end
 
 warning('ON','ALL')
 
-print_str = sprintf('Done! %i bills, %i complete\n',i,sum(complete_array(~isnan(complete_array))));
+print_str = sprintf('XML Parse Complete! %i bills, %i complete\n',i,sum(complete_array(~isnan(complete_array))));
 fprintf([delete_str,print_str]);
 
 toc(start)

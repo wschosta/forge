@@ -25,7 +25,6 @@ consistency_matrix = util.createTable(unique(ids),{'consistency' 'opportunity'},
 bill_keys       = cell2mat(obj.bill_set.keys);
 bill_ids        = zeros(1,length(bill_keys));
 bill_count      = 0;
-committee_count = 0;
 
 % Now we're going to iterate over all the bills
 delete_str = '';
@@ -155,7 +154,7 @@ end
 bill_ids(bill_count+1:end) = [];
 
 % Print out information
-print_str = sprintf('Done! %i bills\n',length(bill_keys));
+print_str = sprintf('Chamber Vote Processing Complete! %i bills\n',length(bill_keys));
 fprintf([delete_str,print_str]);
 fprintf('Complete Bill Count: %i\n',bill_count)
 

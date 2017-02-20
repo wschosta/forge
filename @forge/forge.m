@@ -43,6 +43,8 @@ classdef forge < handle
         learning_algorithm_data  % storage for the learning algorithm data
         learning_algorithm_exist % flag to look for existing learning algorithm data, default to true
         
+        show_warnings
+        
         % all of the input flags
         generate_outputs
         recompute
@@ -55,6 +57,8 @@ classdef forge < handle
         monte_carlo_number    % the number of monte carlo iterations
         committee_threshold   % threshold of members to differentiate between committees and the main chamber
         competitive_threshold % number of votes needed for a bill to considered to be competitive
+        
+        JSON_read = false;
     end
     
     properties (Constant)
@@ -76,12 +80,11 @@ classdef forge < handle
         
         function init(obj)
             % Process new information
-            JSON_Read = false;
             if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state_ID),'file') ~= 2
                 
                 % Read-in major information groups from the LegiscanData
-                if JSON_Read
-                    [bills_create, people_create, votes_create] = obj.readAllInfo(obj.state_ID); %#ok<UNRCH>
+                if obj.JSON_Read
+                    [bills_create, people_create, votes_create] = obj.readAllInfo(obj.state_ID);
                 else
                     bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);
                     bills_create.issue_category = NaN(length(bills_create.bill_id),1);
@@ -143,7 +146,7 @@ classdef forge < handle
                             template.house_data.competitive = 0;
                             if template.house_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
                                     template.house_data.final_yes_percentage > (1 - obj.competitive_threshold)
-                            
+                                
                                 template.house_data.competitive = 1;
                                 competitive = 1;
                             end
@@ -158,7 +161,7 @@ classdef forge < handle
                             template.senate_data.competitive = 0;
                             if template.senate_data.final_yes_percentage < obj.competitive_threshold && ... % yes vote is under the threshold
                                     template.senate_data.final_yes_percentage > (1 - obj.competitive_threshold)
-                            
+                                
                                 template.senate_data.competitive = 1;
                                 competitive = 1;
                             end
@@ -177,7 +180,7 @@ classdef forge < handle
                         % Store the bill infomration in the containers map
                         bill_set_create(bills_create{i,'bill_id'}) = template;
                     end
-                    print_str = sprintf('Done! %i bills\n',i);
+                    print_str = sprintf('Bill process complete! %i bills\n',i);
                     fprintf([delete_str,print_str]);
                 end
                 
@@ -190,8 +193,8 @@ classdef forge < handle
                 hold on;
                 grid on;
                 title('Issue Category Frequency - Total')
-                total_histogram = histogram(bills_create.issue_category);
-                competitive_histogram = histogram(bills_create.issue_category(logical(competitive_bills)));
+                total_histogram       = histogram(bills_create.issue_category); %#ok<NASGU>
+                competitive_histogram = histogram(bills_create.issue_category(logical(competitive_bills))); %#ok<NASGU>
                 % TODO put a line at the minimum competitive bill threshold
                 % for SNEB/ELO analysis
                 legend({'All Bills','Competitive Bills'})
@@ -229,6 +232,46 @@ classdef forge < handle
                 obj.rollcalls = rollcalls_create;
                 obj.sponsors  = sponsors_create;
                 obj.bill_set  = bill_set_create;
+            end
+        end
+        
+        function [republican_ids, democrat_ids] = processParties(obj,people)
+            % Create party ids
+            republican_ids = util.createIDstrings(people{people.party_id == 1,'sponsor_id'});
+            democrat_ids   = util.createIDstrings(people{people.party_id == 0,'sponsor_id'});
+            
+            % Check for bad party IDs
+            bad_ids = util.createIDstrings(people{~ismember(people.party_id,[0 1]),'sponsor_id'});
+            if obj.show_warnings
+                for i = 1:length(bad_ids)
+                    fprintf('WARNING: INCORRECT PARTY ID FOR %s\n',bad_ids{i});
+                end
+            end
+        end
+        
+        function [people_matrix,possible_votes] = cleanVotes(obj,people_matrix,possible_votes)
+            % Clear People who didn't have votes
+            % Generate the list of row names
+            if ~isempty(people_matrix) && ~isempty(possible_votes)
+                row_names = people_matrix.Properties.RowNames;
+                
+                % Iterate over the row names
+                for i = 1:length(people_matrix.Properties.RowNames)
+                    % If there are votes (these two statements should always be equivalent)
+                    if all(isnan(people_matrix{row_names{i},:})) || all(isnan(possible_votes{row_names{i},:}))
+                        people_matrix(row_names{i},:) = []; % Clear the people matrix row
+                        people_matrix.(row_names{i})  = []; % Clear the people matrix column
+                        
+                        possible_votes(row_names{i},:) = []; % Clear the possible votes row
+                        possible_votes.(row_names{i})  = []; % Clear the possible votes column
+                        
+                        if obj.show_warnings
+                            fprintf('WARNING: NO VOTES RECORDED FOR %s\n',row_names{i});
+                        end
+                    end
+                end
+            elseif obj.show_warnings
+                fprintf('WARNING: EMPTY MATRIX!\n')
             end
         end
     end
@@ -362,7 +405,7 @@ classdef forge < handle
                             count = count + 1;
                         end
                     end
-                    print_str = sprintf('Done! %i bills\n',count-1);
+                    print_str = sprintf('JSON Bill Read Complete! %i bills\n',count-1);
                     fprintf([delete_str,print_str]);
                     
                     delete_str = '';
@@ -379,7 +422,7 @@ classdef forge < handle
                             count = count + 1;
                         end
                     end
-                    print_str = sprintf('Done! %i votes\n',count-1);
+                    print_str = sprintf('JSON Vote Read Complete! %i votes\n',count-1);
                     fprintf([delete_str,print_str]);
                     
                     delete_str = '';
@@ -413,51 +456,15 @@ classdef forge < handle
                             count = count + 1;
                         end
                     end
-                    print_str = sprintf('Done! %i people\n',count-1);
+                    print_str = sprintf('JSON People Read Complete! %i people\n',count-1);
                     fprintf([delete_str,print_str]);
                 end
-            end
-        end
-        
-        function [republican_ids, democrat_ids] = processParties(people)
-            % Create party ids
-            republican_ids = util.createIDstrings(people{people.party_id == 1,'sponsor_id'});
-            democrat_ids   = util.createIDstrings(people{people.party_id == 0,'sponsor_id'});
-            
-            % Check for bad party IDs
-            bad_ids = util.createIDstrings(people{~ismember(people.party_id,[0 1]),'sponsor_id'});
-            for i = 1:length(bad_ids)
-                fprintf('WARNING: INCORRECT PARTY ID FOR %s\n',bad_ids{i});
             end
         end
         
         function id_codes = createIDcodes(sponsor_ids)
             id_codes = cellfun(@(x) str2double(regexprep(x,'id','')),sponsor_ids,'Uniform',0);
             id_codes = [id_codes{:}]';
-        end
-        
-        function [people_matrix,possible_votes] = cleanVotes(people_matrix,possible_votes)
-            % Clear People who didn't have votes
-            % Generate the list of row names
-            if ~isempty(people_matrix) && ~isempty(possible_votes)
-            row_names = people_matrix.Properties.RowNames;
-            
-            % Iterate over the row names
-            for i = 1:length(people_matrix.Properties.RowNames)
-                % If there are votes (these two statements should always be equivalent)
-                if all(isnan(people_matrix{row_names{i},:})) || all(isnan(possible_votes{row_names{i},:}))
-                    people_matrix(row_names{i},:) = []; % Clear the people matrix row
-                    people_matrix.(row_names{i})  = []; % Clear the people matrix column
-                    
-                    possible_votes(row_names{i},:) = []; % Clear the possible votes row
-                    possible_votes.(row_names{i})  = []; % Clear the possible votes column
-                    
-                    fprintf('WARNING: NO VOTES RECORDED FOR %s\n',row_names{i});
-                end
-            end
-            else
-                fprintf('WARNING: EMPTY MATRIX!\n')
-            end
         end
         
         function vote_matrix = addVotes(vote_matrix,row,column,varargin)

@@ -121,6 +121,9 @@ if optimize_frontier
         
         [accuracy,max_title,max_additional] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage);
 
+        iwv = max_title;
+        awv = max_additional;
+        
         keyboard
     else
         % Run the frontier optimization to find the optimal value for the issue
@@ -185,17 +188,17 @@ if process_algorithm
     
     
     % Write the learning table to a file
-    save(sprintf('temp\learning_algorithm_results_%s',date),'processed');
+    save(sprintf('+la/temp/learning_algorithm_results_%s',date),'outputs');
     
     % Structure the data for output
     data_storage.awv = awv;
     data_storage.iwv = iwv;
     
     % Create a checkpoint for the learning algorithm data based on the data
-    save(sprintf('temp\learning_algorithm_data_%s',date),'learning_table','data_storage');
+    save(sprintf('+la/temp/learning_algorithm_data_%s',date),'learning_table','data_storage');
     
     % Save it in its normal file location
-    save('learning_algorithm_data','learning_table','data_storage');
+    save('+la/learning_algorithm_data','learning_table','data_storage');
 end
 
 end

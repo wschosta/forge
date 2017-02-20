@@ -80,6 +80,7 @@ classdef state < forge
             addOptional(in,'recompute_montecarlo',0,@islogical);
             addOptional(in,'predict_ELO',0,@islogical);
             addOptional(in,'recompute_ELO',0,@islogical);
+            addOptional(in,'show_warnings',0,@islogical);
             parse(in,varargin{:});
             
             obj.state_ID             = in.Results.state;
@@ -90,6 +91,7 @@ classdef state < forge
             obj.recompute_montecarlo = in.Results.recompute_montecarlo;
             obj.predict_ELO          = in.Results.predict_ELO;
             obj.recompute_ELO        = in.Results.recompute_ELO;
+            obj.show_warnings        = in.Results.show_warnings;
             
             [obj.senate_size, obj.house_size] = obj.state_properties();
             obj.monte_carlo_number = 100; % number of monte carlo iterations
@@ -240,7 +242,7 @@ classdef state < forge
             if obj.generate_outputs
                 % Generate all of the plots for the house
                 if ~isempty(house_people)
-                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,...
+                    plot.plotRunner(obj.show_warnings,obj.outputs_directory,obj.histogram_directory,...
                         'House',house_chamber_matrix,house_republicans_chamber_votes,...
                         house_democrats_chamber_votes,house_sponsor_chamber_matrix,...
                         house_republicans_chamber_sponsor,house_democrats_chamber_sponsor,...
@@ -252,7 +254,7 @@ classdef state < forge
                 
                 % Generate all of the plots for the senate
                 if ~isempty(senate_people)
-                    plot.plotRunner(obj.outputs_directory,obj.histogram_directory,...
+                    plot.plotRunner(obj.show_warnings,obj.outputs_directory,obj.histogram_directory,...
                         'Senate',senate_chamber_matrix,senate_republicans_chamber_votes,...
                         senate_democrats_chamber_votes,senate_sponsor_chamber_matrix,...
                         senate_republicans_chamber_sponsor,senate_democrats_chamber_sponsor,...
@@ -265,12 +267,12 @@ classdef state < forge
             
             if ~isempty(house_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the House
-                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<NASGU,ASGLU>
+                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<ASGLU>
             end
             
             if ~isempty(senate_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the Senate
-                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU,ASGLU>
+                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<ASGLU>
             end
             
             if ~isempty(house_people) && obj.predict_ELO

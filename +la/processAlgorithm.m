@@ -24,7 +24,7 @@ for i = 1:length(analysis_text)
     delete_str = repmat(sprintf('\b'),1,length(print_str));
 end
 
-print_str = sprintf('Done! '); %i bills checked, %i new or updated bills found\n',length(new_bill_list),sum(update_list));
+print_str = sprintf('Algorithm Process Complete! ');
 fprintf([delete_str,print_str]);
 
 % create the learned table

@@ -70,12 +70,12 @@ while any(floor(log10(step_size)) ~= -5)
             toc;
             iter = iter + 1;
             if mod(iter,100) == 0
-                save(sprintf('temp/learning_algorithm_simple_outputs_%i_%s.mat',count,date),'accuracy_list','title_array','additional_array','step_size')
+                save(sprintf('_la/temp/learning_algorithm_simple_outputs_%i_%s.mat',count,date),'accuracy_list','title_array','additional_array','step_size')
             end
         end
     end
     
-    save(sprintf('temp/learning_algorithm_simple_outputs_%i_%s.mat',count,date),'accuracy_list','title_array','additional_array','step_size');
+    save(sprintf('+la/temp/learning_algorithm_simple_outputs_%i_%s.mat',count,date),'accuracy_list','title_array','additional_array','step_size');
         
     count = count + 1;
 end
@@ -93,7 +93,7 @@ end
 
 
 % Search for output files
-files = dir('temp/learning_algorithm_simple_outputs_*_*.mat');
+files = dir('+la/temp/learning_algorithm_simple_outputs_*_*.mat');
 
 if isempty(files)
     % Print a warning message
@@ -165,13 +165,13 @@ else
     zlabel('Accuracy (%)')
     colorbar
     grid off; hold off;
-    saveas(gcf,sprintf('optimized_surface_%s',date),'png')
+    saveas(gcf,sprintf('+la/optimized_surface_%s',date),'png')
     
     % Save the data into a master .mat file
     title_array      = master_title_array;
     additional_array = master_additional_array;
     accuracy_list    = master_accuracy_list;
-    save(sprintf('temp/learning_algorithm_simple_output_results_%s',date),'title_array','additional_array','accuracy_list','learning_materials','data_storage');
+    save(sprintf('+la/temp/learning_algorithm_simple_output_results_%s',date),'title_array','additional_array','accuracy_list','learning_materials','data_storage');
     
     % Find the maximum accuracy
     [accuracy,index] = max(accuracy_list);
@@ -183,7 +183,7 @@ else
     end
 
     flag = 1;
-    save(sprintf('temp/learning_algorithm_simple_outputs_00000000000_%s.mat',date),'accuracy_list','title_array','additional_array','flag');
+    save(sprintf('+la/temp/learning_algorithm_simple_outputs_00000000000_%s.mat',date),'accuracy_list','title_array','additional_array','flag');
     
     max_title = title_array(index);
     max_additional = additional_array(index);

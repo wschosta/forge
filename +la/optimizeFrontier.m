@@ -51,7 +51,7 @@ for j = 1:robust % multiplicative factor for all grid points
             end
             
             % Save the iterated set to a file - allows for checkpointing
-            save(sprintf('temp/learning_algorithm_outputs_%i%i%i',j,k,l),'awv_list','iwv_list','accuracy_list')
+            save(sprintf('+la/temp/learning_algorithm_outputs_%i%i%i',j,k,l),'awv_list','iwv_list','accuracy_list')
             
         end
     end
@@ -64,7 +64,7 @@ master_iwv      = [];
 master_accuracy = [];
 
 % Search for output files
-files = dir('temp/learning_algorithm_outputs_*.mat');
+files = dir('+la/temp/learning_algorithm_outputs_*.mat');
 
 if isempty(files)
     % Print a warning message

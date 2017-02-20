@@ -1,4 +1,4 @@
-function generatePlots(outputs_directory,histogram_directory,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
+function generatePlots(show_warnings,outputs_directory,histogram_directory,people_matrix,label_string,specific_label,x_specific,y_specific,z_specific,tag)
 % GENERATEPLOTS
 % Generate plots for a given matrix. Also includes the option to generate
 % histograms. The arugments essentially make it possible to properly label
@@ -31,7 +31,7 @@ if ~isempty(people_matrix) && size(people_matrix{:,:},1) > 1 && size(people_matr
         [~, ~, ~] = mkdir(directory);
         plot.generateHistograms(people_matrix,directory,label_string,specific_label,tag)
     end
-else
+elseif show_warnings
     fprintf('WARNING: Empty Matrix %s %s\n',label_string, specific_label)
 end
 

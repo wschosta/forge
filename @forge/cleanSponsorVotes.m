@@ -21,12 +21,15 @@ if ~isempty(people_matrix) && ~isempty(possible_votes)
         if sponsorship_counts{row_names{i},'count'} < obj.sponsor_filter
             people_matrix.(row_names{i})  = []; % Clear the people matrix
             possible_votes.(row_names{i}) = []; % Clear the possible vote matrix
-            fprintf('WARNING: %s did not meet the vote threshold with only %i\n',row_names{i},sponsorship_counts{i,'count'});
+            
+            if obj.show_warnings
+                fprintf('WARNING: %s did not meet the vote threshold with only %i\n',row_names{i},sponsorship_counts{i,'count'});
+            end
         end
     end
     
-else
-    fprintf('WARNING: EMPTY MATRIX!\n')
+elseif obj.show_warnings
+    fprintf('WARNING: empty sponsor matrix!\n')
 end
 
 end
