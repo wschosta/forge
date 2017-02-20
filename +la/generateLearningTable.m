@@ -7,7 +7,7 @@ function [learning_table,data_storage] = generateLearningTable(learning_material
 %
 % See also la.main
 
-cut_off = 201;
+cut_off = 501;
 
 % Initialuze appropraite arrays
 issue_codes       = unique(learning_materials.issue_codes);
@@ -22,6 +22,7 @@ learning_table = table(issue_codes,description_text,weights,issue_text,issue_tex
 
 % Initialize the data storage structure
 data_storage = struct();
+data_storage.cut_off                            = cut_off;
 data_storage.common_words                       = common_words;
 data_storage.master_issue_codes                 = master_issue_codes;
 data_storage.additional_issue_codes             = additional_issue_codes;

@@ -3,7 +3,7 @@ function [accuracy,max_title,max_additional] = optimizeFrontierSimple(min_value,
 % Funciton to find the optimal issue word value (iwv) independent from the
 % additonal word value (awv)
 
-title_array = min_value(1):step_size(1):max_value(1);
+title_array      = min_value(1):step_size(1):max_value(1);
 additional_array = min_value(2):step_size(2):max_value(2);
 
 if isempty(additional_array)
@@ -11,7 +11,7 @@ if isempty(additional_array)
 end
 
 count = 0;
-while any(floor(log10(step_size)) ~= -5)
+while any(floor(log10(step_size)) ~= -3)
     
     if count > 0
 
@@ -40,12 +40,11 @@ while any(floor(log10(step_size)) ~= -5)
             tic;
             
             fprintf('%0.4f %0.4f ',title_array(i),additional_array(j));
-            x = [title_array(i),additional_array(j)];
             
-            iwv = x(1);
-            awv = x(2);
+            iwv = title_array(i);
+            awv = additional_array(j);
             
-            % Place the awv and iwv values in the data stoage structure
+            % Place the awv and iwv values in the data storage structure
             data_storage.awv = awv;
             data_storage.iwv = iwv;
 
@@ -80,18 +79,6 @@ while any(floor(log10(step_size)) ~= -5)
     count = count + 1;
 end
     
-%     for i = 1:length(iwv_list)
-%         
-%         fprintf('%0.4f ',iwv_list(i));
-%         
-%         
-%         accuracy_list_title(i) = la.processAlgorithm(x,learning_materials,learning_table,data_storage,1,'parsed_title');
-%         accuracy_list_text(i)  = la.processAlgorithm(x,learning_materials,learning_table,data_storage,1,'parsed_text');
-%         
-%         fprintf(' %0.4f%% %0.4f%%\n',-accuracy_list_title(i),-accuracy_list_text(i))
-%     end
-
-
 % Search for output files
 files = dir('+la/temp/learning_algorithm_simple_outputs_*_*.mat');
 
@@ -115,7 +102,7 @@ else
     for i = 1:length(files)
         
         % Load the file
-        output = load(files(i).name);
+        output = load([files(i).folder '\' files(i).name]);
         
         % If it does not contain the field "learning_materials" it's the
         % processed data and what we're looking for
@@ -163,6 +150,7 @@ else
     xlabel('Additional Word Weights')
     ylabel('Issue Word Weights')
     zlabel('Accuracy (%)')
+    axis([0 3 0 3])
     colorbar
     grid off; hold off;
     saveas(gcf,sprintf('+la/optimized_surface_%s',date),'png')
@@ -171,22 +159,39 @@ else
     title_array      = master_title_array;
     additional_array = master_additional_array;
     accuracy_list    = master_accuracy_list;
-    save(sprintf('+la/temp/learning_algorithm_simple_output_results_%s',date),'title_array','additional_array','accuracy_list','learning_materials','data_storage');
     
     % Find the maximum accuracy
     [accuracy,index] = max(accuracy_list);
+
+    % Place the awv and iwv values in the data stoage structure
+    data_storage.awv = title_array(index);
+    data_storage.iwv = additional_array(index);
+    
+    issue_codes      = length(data_storage.master_issue_codes.keys);
+    description_text = cell(length(issue_codes),1);
+    weights          = cell(length(issue_codes),1);
+    
+    for k = 1:length(issue_codes)
+        % Find all of the description text and all of the associated weights
+        description_text{k} = [data_storage.unique_text_store{k} data_storage.issue_text_store{k} data_storage.additional_issue_text_store{k}];
+        weights{k}          = [data_storage.weights_store{k};data_storage.issue_text_weight_store{k}*data_storage.iwv;data_storage.additional_issue_text_weight_store{k}*data_storage.awv];
+    end
+    
+    data_storage.description_text = description_text;
+    data_storage.weights          = weights;
+    data_storage.issue_code_count = length(issue_codes);
+    
+    flag = 1; %#ok<NASGU>
+    save(sprintf('+la/temp/learning_algorithm_simple_output_results_%s',date),'accuracy','iwv','awv','title_array','additional_array','accuracy_list','learning_materials','data_storage');
+    save(sprintf('+la/learning_algorithm_results'),'accuracy','iwv','awv','title_array','additional_array','accuracy_list','learning_materials','data_storage');
+    
+    save(sprintf('+la/temp/learning_algorithm_simple_outputs_00000000000_%s.mat',date),'accuracy_list','title_array','additional_array','flag');
     
     for i = 1:length(hit_list)
         if hit_list(i) == 1
             delete([files(i).folder '\' files(i).name]);
         end
     end
-
-    flag = 1;
-    save(sprintf('+la/temp/learning_algorithm_simple_outputs_00000000000_%s.mat',date),'accuracy_list','title_array','additional_array','flag');
-    
-    max_title = title_array(index);
-    max_additional = additional_array(index);
 end
 
 end
