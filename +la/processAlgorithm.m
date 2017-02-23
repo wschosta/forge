@@ -42,7 +42,7 @@ total    = length(processed.matched);
 accuracy = correct/total*100;
 
 if output_flag
-    output = -1*accuracy; % annoying feature of this program but so it goes
+    output = accuracy;
 else
     % Generate the output structure
     output = struct();

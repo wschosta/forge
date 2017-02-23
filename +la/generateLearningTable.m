@@ -33,11 +33,20 @@ data_storage.weights_store                      = cell(1,length(issue_codes));
 data_storage.issue_text_weight_store            = cell(1,length(issue_codes));
 data_storage.additional_issue_text_weight_store = cell(1,length(issue_codes));
 
+ delete_str = '';
+
 % Iterate over the issue codes
 for i = 1:length(issue_codes)
     
+    print_str = sprintf('%i %s',i,master_issue_codes(i));
+    fprintf([delete_str,print_str]);
+    delete_str = repmat(sprintf('\b'),1,length(print_str));
+    
+    bill_count = sum(learning_materials.issue_codes == issue_codes(i));
+    
     % Look for title matches for a given issue code
-    title_text = learning_materials{learning_materials.issue_codes == issue_codes(i),'title'};
+    merge_text = learning_materials{learning_materials.issue_codes == issue_codes(i),'parsed_title'};
+    merge_text = [merge_text{:}];
     
     % Find matching issue text
     issue_text = master_issue_codes(issue_codes(i));
@@ -49,38 +58,38 @@ for i = 1:length(issue_codes)
     % Cleanup the additional issue text
     [additional_issue_text,additional_issue_text_weight] = la.cleanupText(additional_issue_text,common_words);
     
-    % Merge all of the title text words
-    merge_text = strjoin(title_text);
-    
-    % Cleanup the merged text
-    [merge_text,~] = la.cleanupText(merge_text,[common_words issue_text additional_issue_text]);
-    
-    % Find all of the unique words and the count for each
+    % Find all of the unique words and the column index for each
     [unique_text,~,c] = unique(merge_text);
     
-    % Generate weights according to that count
-    weights           = hist(c,length(unique_text));
+    % Using the column index and length, generate the count
+    count           = hist(c,length(unique_text));
     
-    [weights,index] = sort(weights,2,'descend');
+    [count,index] = sort(count,2,'descend');
     unique_text = unique_text(index);
     
     % Normalize the weights
-    weights = (weights./max(weights))';
+    weights = (count./bill_count)';
     
     % Enter all of the information into the data storage array
     
-    data_storage.unique_text_full_store{i}                  = unique_text;
-    data_storage.weights_full_store{i}                      = weights;
+    data_storage.unique_text_full_store{i} = unique_text;
+    data_storage.weights_full_store{i}     = weights;
     
     unique_text(cut_off:end) = [];
     weights(cut_off:end) = [];
     
+    % TODO Currently it does the weighting based on the frequency with
+    % which a word shows up in a bill (the number of times it is counted /
+    % number of bills). Should I be weighting it again based on relative
+    % appareance in different issue categories? i.e. everything gets
+    % normalized across bills?
+    
     data_storage.unique_text_store{i}                  = unique_text;
     data_storage.issue_text_store{i}                   = issue_text;
-    data_storage.additional_issue_text_store{i}        = additional_issue_text;
+    data_storage.additional_issue_text_store{i}        = [additional_issue_text unique_text(1:5)];
     data_storage.weights_store{i}                      = weights;
     data_storage.issue_text_weight_store{i}            = issue_text_weight;
-    data_storage.additional_issue_text_weight_store{i} = additional_issue_text_weight;
+    data_storage.additional_issue_text_weight_store{i} = [additional_issue_text_weight ; weights(1:5)];
     
     % Store the information in the learning table
     learning_table{learning_table.issue_codes == issue_codes(i),'description_text'} = {data_storage.unique_text_store{i}}; 
@@ -89,20 +98,22 @@ for i = 1:length(issue_codes)
     learning_table{learning_table.issue_codes == issue_codes(i),'issue_text'} = {data_storage.issue_text_store{i}};
     learning_table{learning_table.issue_codes == issue_codes(i),'issue_text_weight'} = {data_storage.issue_text_weight_store{i}};
     
-    learning_table{learning_table.issue_codes == issue_codes(i),'additional_issue_text'} = {data_storage.additional_issue_text_weight_store{i}};
-    learning_table{learning_table.issue_codes == issue_codes(i),'additional_issue_text_weight'} = {data_storage.additional_issue_text_store{i}};
+    learning_table{learning_table.issue_codes == issue_codes(i),'additional_issue_text'} = {data_storage.additional_issue_text_store{i}};
+    learning_table{learning_table.issue_codes == issue_codes(i),'additional_issue_text_weight'} = {data_storage.additional_issue_text_weight_store{i}};
 end
+print_str = sprintf('Finished Learning Table Generation!\n');
+fprintf([delete_str,print_str]);
 
 figure()
 hold on
 grid on
-hist(learning_materials.issue_codes,32);
+histogram(learning_materials.issue_codes);
 xlabel('Issue Codes')
 ylabel('Frequency')
 title('Learning Material Issue Code Frequency')
 axis tight
 hold off
-saveas(gcf,sprintf('+la\learning_algorithm_issue_frequency_%s',date),'png')
+saveas(gcf,sprintf('+la/learning_algorithm_issue_frequency_%s',date),'png')
 close(gcf);
 
 end
