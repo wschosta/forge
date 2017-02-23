@@ -7,15 +7,16 @@ function main(varargin)
 % See also forge
 
 in = inputParser;
-addOptional(in,'optimize_frontier',0,@islogical);
+addOptional(in,'optimize_frontier',1,@islogical);
 addOptional(in,'process_algorithm',1,@islogical);
 addOptional(in,'relearn_materials',0,@islogical);
+addOptional(in,'generate_concise',1,@islogical);
 parse(in,varargin{:});
 
 optimize_frontier = in.Results.optimize_frontier;
 process_algorithm = in.Results.process_algorithm;
 relearn_materials = in.Results.relearn_materials;
-
+generate_concise  = in.Results.generate_concise;
 % awv = 0.8467; % set by analysis
 % iwv = 0.8645; % set by analysis
 
@@ -28,6 +29,10 @@ if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materi
     bill_title     = bill_title(complete_array);
     policy_area    = policy_area(complete_array);
     text           = text(complete_array);
+    
+    % Set list of common words to ignore
+    common_words = la.getCommonWordsList();
+    common_words = [common_words {'bill','ammendment'}];
     
     % Create map of issue codes and subjects
     master_issue_codes   = containers.Map(1:length(unique(policy_area)),unique(policy_area));
@@ -43,13 +48,41 @@ if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materi
         'park mine','tech','historical anthropology','benefits handouts',...
         'fun football','taxes tax','roads highways','river lake'});
     
-    % Set list of common words to ignore
-    common_words = la.getCommonWordsList();
-    common_words = [common_words {'bill','ammendment'}];
+    % Because things are too difficult with the 32 categories we set some
+    % concise categories to try and make things, well, more concise.
+        
+    % These are set manually
+    concise_recode = {[1 2],[6 9 15 16 30],[25 32 13],[26 27 10],[5 24 28],[7 17 23],[4 29],[14,19],[3,8,11],[20,21],[18,22],[19,12,31]};
+    
+    concise_issue_codes = containers.Map('KeyType','int32','ValueType','char');
+    concise_additional_codes = containers.Map('KeyType','int32','ValueType','char');
+    
+    concise_keys   = zeros(1,length(master_issue_codes.keys));
+    concise_values = zeros(1,length(master_issue_codes.keys));
+    
+    for i = 1:length(concise_recode)
+        
+        temp_issue = cell(length(concise_recode{i}),1);
+        temp_additional = cell(length(concise_recode{i}),1);
+        for j = 1:length(concise_recode{i})
+            temp_issue{j} = master_issue_codes(concise_recode{i}(j)); 
+            temp_additional{j} = additional_issue_codes(concise_recode{i}(j));
+            
+            concise_keys(concise_recode{i}(j)) = concise_recode{i}(j);
+            concise_values(concise_recode{i}(j)) = i;
+        end
+
+        concise_issue_codes(i) = strjoin(temp_issue);
+        concise_additional_codes(i) = strjoin(temp_additional);
+    end
+
     
     generate_issue_codes = containers.Map(unique(policy_area),1:length(unique(policy_area)));
+    generate_concise_codes = containers.Map(concise_keys,concise_values);
+    
     
     issue_codes  = cellfun(@(x) generate_issue_codes(x),policy_area);
+    concise_codes  = arrayfun(@(x) generate_concise_codes(x),issue_codes);
     unified_text = cellfun(@(a,b) [a ' ' b],bill_title,text,'UniformOutput',false);
     
     delete_str = '';
@@ -67,14 +100,20 @@ if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materi
     print_str = sprintf('Finished Text and Title Parsing!\n');
     fprintf([delete_str,print_str]);
     
-    learning_materials = table(bill_title,unified_text,issue_codes,parsed_text,parsed_title);
+    learning_materials = table(bill_title,unified_text,issue_codes,concise_codes,parsed_text,parsed_title);
     
     % Generate the learning table with the taught instructions and the
     % additional common word, issue, and additional issue codes
-    [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes);
     
-    save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','master_issue_codes','additional_issue_codes','bill_title','policy_area','text','common_words');
-    
+    if generate_concise
+        [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,concise_issue_codes,concise_additional_codes,generate_concise);
+        
+        save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','concise_issue_codes','concise_additional_codes','bill_title','policy_area','text','common_words');
+    else
+        [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes,generate_concise);
+        
+        save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','master_issue_codes','additional_issue_codes','bill_title','policy_area','text','common_words');
+    end
 else
     load('+la\description_learning_materials.mat')
 end
@@ -133,6 +172,14 @@ if process_algorithm
     end
     
     xlswrite(sprintf('+la/testdata_%s.xlsx',date),adjacency_matrix);
+    
+    if accuracy < 75
+        fprintf('Accuracy is pretty low, recommend reducing the number of categories\n')
+        
+        
+        % Here is where we run the adjacency code 
+        la.findSimilarCategories(adjacency_matrix)
+    end
     
     % Write the learning table to a file
     save(sprintf('+la/temp/learning_algorithm_results_%s',date),'outputs','real_histogram','coded_histogram');
