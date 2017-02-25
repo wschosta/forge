@@ -18,7 +18,7 @@ t_previous           = sprintf('t%i',t_count-1);
 t_set_previous_value = t_set.(t_previous);
 
 % Come up with the ID list
-matched_ids          = find(ismember(ids,revealed_id));
+matched_ids          = util.CStrAinBP(ids,{revealed_id});
 id_list              = 1:length(ids);
 id_list(matched_ids) = [];
 

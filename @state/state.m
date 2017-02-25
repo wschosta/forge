@@ -224,7 +224,7 @@ classdef state < forge
                 end
                 
                 % Save out all of the generated data with the exception of
-                % the IN object
+                % the state object
                 var_list = who;
                 var_list = var_list(~ismember(var_list,'obj'));
                 save(sprintf('%s/saved_data.mat',obj.data_directory),var_list{:})
