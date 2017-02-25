@@ -121,6 +121,10 @@ classdef forge < handle
                         template(end+1).bill_id = bills_create{i,'bill_id'}; %#ok<AGROW>
                         template.bill_number    = bills_create{i,'bill_number'};
                         template.title          = bills_create{i,'title'};
+                        if iscell(template.title)
+                            template.title = strjoin(template.title);
+                        end
+                        
                         if obj.learning_algorithm_exist
                             template.issue_category = la.classifyBill(template.title,obj.learning_algorithm_data);
                             bills_create.issue_category(i) = template.issue_category;
@@ -174,6 +178,13 @@ classdef forge < handle
                             template.complete    = 1;
                         end
                         
+                        if isnan(template.issue_category)
+                            % TODO Should there be some tracking of bills
+                            % that are not learning-codeable?
+                            competitive = 0;
+                            template.complete = 0;
+                        end
+                        
                         competitive_bills(i) = competitive;
                         template.competitive = competitive;
                         
@@ -189,34 +200,37 @@ classdef forge < handle
                     addpath(sprintf('data/%s',obj.state_ID));
                 end
                 
-                figure()
-                hold on;
-                grid on;
-                title('Issue Category Frequency - Total')
-                total_histogram       = histogram(bills_create.issue_category); %#ok<NASGU>
-                competitive_histogram = histogram(bills_create.issue_category(logical(competitive_bills))); %#ok<NASGU>
-                % TODO put a line at the minimum competitive bill threshold
-                % for SNEB/ELO analysis
-                legend({'All Bills','Competitive Bills'})
-                xlabel('Issue Code')
-                ylabel('Frequency')
-                axis tight
-                hold off;
-                saveas(gcf,sprintf('data/%s/issue_category_frequency_total',obj.state_ID),'png')
-                
-                figure()
-                hold on;
-                grid on;
-                title('Issue Category Frequency - Competitive Bills')
-                histogram(bills_create.issue_category(logical(competitive_bills)));
-                % TODO put a line at the minimum competitive bill threshold
-                % for SNEB/ELO analysis
-                legend({'Competitive Bills'})
-                xlabel('Issue Code')
-                ylabel('Frequency')
-                axis tight
-                hold off;
-                saveas(gcf,sprintf('data/%s/issue_category_frequency_competitive',obj.state_ID),'png')
+                if obj.learning_algorithm_exist
+                    
+                    figure()
+                    hold on;
+                    grid on;
+                    title('Issue Category Frequency - Total')
+                    total_histogram       = histogram(bills_create.issue_category,obj.learning_algorithm_data.issue_code_count); %#ok<NASGU>
+                    competitive_histogram = histogram(bills_create.issue_category(logical(competitive_bills)),obj.learning_algorithm_data.issue_code_count); %#ok<NASGU>
+                    % TODO put a line at the minimum competitive bill threshold
+                    % for SNEB/ELO analysis
+                    legend({'All Bills','Competitive Bills'})
+                    xlabel('Issue Code')
+                    ylabel('Frequency')
+                    axis tight
+                    hold off;
+                    saveas(gcf,sprintf('data/%s/issue_category_frequency_total',obj.state_ID),'png')
+                    
+                    figure()
+                    hold on;
+                    grid on;
+                    title('Issue Category Frequency - Competitive Bills')
+                    histogram(bills_create.issue_category(logical(competitive_bills)));
+                    % TODO put a line at the minimum competitive bill threshold
+                    % for SNEB/ELO analysis
+                    legend({'Competitive Bills'})
+                    xlabel('Issue Code')
+                    ylabel('Frequency')
+                    axis tight
+                    hold off;
+                    saveas(gcf,sprintf('data/%s/issue_category_frequency_competitive',obj.state_ID),'png')
+                end
                 
                 save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create','total_histogram','competitive_histogram')
             else % Load the saved information
@@ -227,7 +241,7 @@ classdef forge < handle
             obj.bills     = bills_create;
             obj.people    = people_create;
             obj.votes     = votes_create;
-            if ~JSON_Read
+            if ~obj.JSON_read
                 obj.history   = history_create;
                 obj.rollcalls = rollcalls_create;
                 obj.sponsors  = sponsors_create;

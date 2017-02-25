@@ -6,7 +6,7 @@ fclose all; close all; clc; clear all;
 
 master = tic;
 
-states = {'OR' 'VT' 'WI' 'IN'};
+states = {'WI' 'IN' 'OR'};
 
 errors = {};
 
