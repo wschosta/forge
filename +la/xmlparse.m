@@ -1,4 +1,4 @@
-function [title,policy_area,text,subject_area,complete_array,bill_list] = xmlparse(varargin)
+function [title,policy_area,text,subject_area,bill_list] = xmlparse(varargin)
 
 in = inputParser;
 addOptional(in,'force_recompute',0)
@@ -18,7 +18,6 @@ if exist('+la\parsed_xml.mat','file') == 2 && ~force_recompute
     policy_area    = existing_bills.policy_area;
     text           = existing_bills.text;
     subject_area   = existing_bills.subject_area;
-    complete_array = existing_bills.complete_array;
     bill_list      = existing_bills.bill_list;
     
     if check_updates
@@ -61,15 +60,15 @@ if exist('+la\parsed_xml.mat','file') == 2 && ~force_recompute
             revised_bill_list = new_bill_list(logical(update_list));
             
             start = tic;
-            [new_title,new_policy_area,new_text,new_subject_area,new_complete_array,new_bill_list] = run_xml(start,revised_bill_list);
+            [new_title,new_policy_area,new_text,new_subject_area,new_bill_list] = run_xml(start,revised_bill_list);
             
             
             title          = [title(existing_bill_update_array) new_title];
             policy_area    = [policy_area(existing_bill_update_array) new_policy_area];
             text           = [text(existing_bill_update_array) new_text];
             subject_area   = [subject_area(existing_bill_update_array) new_subject_area];
-            complete_array = [complete_array(existing_bill_update_array) new_complete_array];
             bill_list      = [bill_list(existing_bill_update_array) new_bill_list];
+            
             
             save('+la\parsed_xml.mat','title','policy_area','text','subject_area','complete_array','bill_list')
         end
@@ -77,14 +76,14 @@ if exist('+la\parsed_xml.mat','file') == 2 && ~force_recompute
 else
     
     start = tic;
-    [title,policy_area,text,subject_area,complete_array,bill_list] = run_xml(start,new_bill_list);
-    
-    save('+la\parsed_xml.mat','title','policy_area','text','subject_area','complete_array','bill_list')
+    [title,policy_area,text,subject_area,bill_list] = run_xml(start,new_bill_list);
+        
+    save('+la\parsed_xml.mat','title','policy_area','text','subject_area','bill_list')
 end
 
 end
 
-function [title,policy_area,text,subject_area,complete_array,bill_list] = run_xml(start,bill_list)
+function [title,policy_area,text,subject_area,bill_list] = run_xml(start,bill_list)
 
 title          = cell(length(bill_list),1);
 policy_area    = cell(length(bill_list),1);
@@ -158,6 +157,14 @@ warning('ON','ALL')
 
 print_str = sprintf('XML Parse Complete! %i bills, %i complete\n',i,sum(complete_array(~isnan(complete_array))));
 fprintf([delete_str,print_str]);
+
+% Eliminate incomplete bills
+complete_array = logical(complete_array);
+title          = title(complete_array);
+policy_area    = policy_area(complete_array);
+text           = text(complete_array);
+subject_area   = subject_area(complete_array);
+bill_list      = bill_list(complete_array);
 
 toc(start)
 

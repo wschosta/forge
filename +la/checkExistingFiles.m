@@ -1,4 +1,13 @@
-function [master_title_array,master_additional_array,master_accuracy_list,hit_list] = checkExistingFiles(files)
+function [master_title_array,master_additional_array,master_accuracy_list,hit_list,files] = checkExistingFiles(file_string,throw_error)
+
+% TODO Somewhere in here it should check for duplicates. If the accuracy is
+% different then throw a warning or error out?
+
+files = dir(file_string);
+
+if isempty(files) && throw_error
+    error('LEARNING ALGORITHM FILES NOT FOUND!')
+end
 
 master_title_array      = [];
 master_additional_array = [];
@@ -16,29 +25,29 @@ for i = 1:length(files)
     if ~isfield(output,'learning_materials')
         hit_list(i) = 1;
         if isfield(output,'flag')
-            master_title_array      = [master_title_array ; output.title_array]; %#ok<AGROW>
+            master_title_array      = [master_title_array      ; output.title_array]; %#ok<AGROW>
             master_additional_array = [master_additional_array ; output.additional_array]; %#ok<AGROW>
-            master_accuracy_list    = [master_accuracy_list ; output.accuracy_list]; %#ok<AGROW>
+            master_accuracy_list    = [master_accuracy_list    ; output.accuracy_list]; %#ok<AGROW>
         else
             % Add the outputs to the master lists
-            
-            title_temp = zeros(length(output.title_array)*length(output.additional_array),1);
+
+            title_temp      = zeros(length(output.title_array)*length(output.additional_array),1);
             additional_temp = zeros(length(output.title_array)*length(output.additional_array),1);
-            accuracy_temp = zeros(length(output.title_array)*length(output.additional_array),1);
+            accuracy_temp   = zeros(length(output.title_array)*length(output.additional_array),1);
             
             count = 1;
             for j = 1:length(output.title_array)
                 for k = 1:length(output.additional_array)
-                    title_temp(count) = output.title_array(j);
+                    title_temp(count)      = output.title_array(j);
                     additional_temp(count) = output.additional_array(k);
-                    accuracy_temp(count) = output.accuracy_list(j,k);
+                    accuracy_temp(count)   = output.accuracy_list(j,k);
                     count = count + 1;
                 end
             end
             
-            master_title_array      = [master_title_array ; title_temp]; %#ok<AGROW>
+            master_title_array      = [master_title_array      ; title_temp]; %#ok<AGROW>
             master_additional_array = [master_additional_array ; additional_temp]; %#ok<AGROW>
-            master_accuracy_list    = [master_accuracy_list ; accuracy_temp]; %#ok<AGROW>
+            master_accuracy_list    = [master_accuracy_list    ; accuracy_temp]; %#ok<AGROW>
         end
     else
         continue
