@@ -83,7 +83,7 @@ classdef forge < handle
             if obj.reprocess || exist(sprintf('data/%s/processed_data.mat',obj.state_ID),'file') ~= 2
                 
                 % Read-in major information groups from the LegiscanData
-                if obj.JSON_Read
+                if obj.JSON_read
                     [bills_create, people_create, votes_create] = obj.readAllInfo(obj.state_ID);
                 else
                     bills_create     = obj.readAllFilesOfSubject('bills',obj.state_ID);

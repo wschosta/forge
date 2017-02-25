@@ -1,4 +1,4 @@
-function output = processAlgorithm(learning_materials,data_storage,output_flag,varargin)
+function output = processAlgorithm(learning_materials,data_storage,output_flag,concise_flag,varargin)
 % PROCESSALGORITHM
 % Process the total bill set based on a given learned set
 
@@ -34,7 +34,11 @@ learned_table = table(learning_coded,issue);
 processed = [learning_materials,learned_table];
 
 % Find how many bills were correctly matched
-processed.matched = (processed.issue_codes == processed.learning_coded);
+if concise_flag
+    processed.matched = (processed.concise_codes == processed.learning_coded);
+else
+    processed.matched = (processed.issue_codes == processed.learning_coded);
+end
 
 % Generate basic stats
 correct  = sum(processed.matched);

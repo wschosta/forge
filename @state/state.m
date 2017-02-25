@@ -102,26 +102,19 @@ classdef state < forge
             obj.prediction_directory = sprintf('%s/prediction_model',obj.data_directory);
             obj.gif_directory        = sprintf('%s/gif',obj.outputs_directory); % not used because gifs are unnecessary (though functionality is generaly preserved)
             obj.elo_directory        = sprintf('%s/elo_model',obj.data_directory);
-            obj.histogram_directory = sprintf('%s/histograms',obj.outputs_directory);
+            obj.histogram_directory  = sprintf('%s/histograms',obj.outputs_directory);
             
-            if ~isdir(obj.data_directory)
-                mkdir(obj.data_directory);
-            end
-            if ~isdir(obj.outputs_directory)
-                mkdir(obj.outputs_directory);
-            end
-            if ~isdir(obj.prediction_directory)
-                mkdir(obj.prediction_directory);
-            end
-            if ~isdir(obj.gif_directory)
-                mkdir(obj.gif_directory);
-            end
-            if ~isdir(obj.elo_directory)
-                mkdir(obj.elo_directory);
-            end
-            if ~isdir(obj.histogram_directory)
-                mkdir(obj.histogram_directory);
-            end
+            warning('OFF','ALL')
+            
+            mkdir(obj.data_directory);
+            mkdir(obj.outputs_directory);
+            mkdir(obj.prediction_directory);
+            mkdir(obj.gif_directory);
+            mkdir(obj.elo_directory);
+            mkdir(obj.histogram_directory);
+                
+            warning('ON','ALL')
+            
             addpath(genpath(obj.data_directory));
             
             % Load the learning algorithm data

@@ -19,8 +19,10 @@ if ~isempty(text)
     % Remove empty cells
     text = upper(text(~cellfun(@isempty,text)));
     
-    % Create the weighting structure
-    weight = ones(length(text),1);
+    [text,~,c] = unique(text);
+    
+    % Using the column index and length, generate the count
+    weight     = hist(c,length(text))';
 elseif iscell(text)
     text = '';
     weight = 0;

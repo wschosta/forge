@@ -11,31 +11,31 @@ addOptional(in,'optimize_frontier',1,@islogical);
 addOptional(in,'process_algorithm',1,@islogical);
 addOptional(in,'relearn_materials',0,@islogical);
 addOptional(in,'generate_concise',1,@islogical);
+addOptional(in,'recompute_XML',0,@islogical);
+addOptional(in,'update_XML',0,@islogical);
 parse(in,varargin{:});
 
 optimize_frontier = in.Results.optimize_frontier;
 process_algorithm = in.Results.process_algorithm;
 relearn_materials = in.Results.relearn_materials;
-generate_concise  = in.Results.generate_concise;
-% awv = 0.8467; % set by analysis
-% iwv = 0.8645; % set by analysis
+concise_flag      = in.Results.generate_concise;
+recompute_XML     = in.Results.recompute_XML;
+update_XML        = in.Results.update_XML;
+
+title_parsed_flag = 'parsed_text'; % Can be parsed_text or parsed_title
+
+awv = 0.0; % set by analysis
+iwv = 0.13; % set by analysis
 
 if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materials
     
-    [bill_title,policy_area,text,~,complete_array,~] = la.xmlparse('force_recompute',false); % TODO eventually need to add the recompute flag & check updates
-    
-    % Eliminate incomplete bills
-    complete_array = logical(complete_array);
-    bill_title     = bill_title(complete_array);
-    policy_area    = policy_area(complete_array);
-    text           = text(complete_array);
+    [bill_title,policy_area,text,~,~] = la.xmlparse('force_recompute',recompute_XML,'check_updates',update_XML);
     
     % Set list of common words to ignore
     common_words = la.getCommonWordsList();
-    common_words = [common_words {'bill','ammendment'}];
     
     % Create map of issue codes and subjects
-    master_issue_codes   = containers.Map(1:length(unique(policy_area)),unique(policy_area));
+    master_issue_codes = containers.Map(1:length(unique(policy_area)),unique(policy_area));
     
     % Create map of additional words, hand chosen to increase accuracy
     additional_issue_codes = containers.Map(1:length(unique(policy_area)),{'Tomato corn',...
@@ -50,40 +50,40 @@ if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materi
     
     % Because things are too difficult with the 32 categories we set some
     % concise categories to try and make things, well, more concise.
-        
-    % These are set manually
-    concise_recode = {[1 2],[6 9 15 16 30],[25 32 13],[26 27 10],[5 24 28],[7 17 23],[4 29],[14,19],[3,8,11],[20,21],[18,22],[19,12,31]};
     
-    concise_issue_codes = containers.Map('KeyType','int32','ValueType','char');
+    % These are set manually
+    concise_recode = {[1 2],[9 15 30],[25 32 13],[26 10],[5 24 28],[7 17],[4 27 29],[19,12,31],[3,6,8,11,23],[16,20,21],[14,18,22]};
+    
+    concise_issue_codes      = containers.Map('KeyType','int32','ValueType','char');
     concise_additional_codes = containers.Map('KeyType','int32','ValueType','char');
     
     concise_keys   = zeros(1,length(master_issue_codes.keys));
-    concise_values = zeros(1,length(master_issue_codes.keys));
+    concise_values = zeros(1,length(additional_issue_codes.keys));
     
     for i = 1:length(concise_recode)
         
-        temp_issue = cell(length(concise_recode{i}),1);
+        temp_issue      = cell(length(concise_recode{i}),1);
         temp_additional = cell(length(concise_recode{i}),1);
+        
         for j = 1:length(concise_recode{i})
-            temp_issue{j} = master_issue_codes(concise_recode{i}(j)); 
+            temp_issue{j}      = master_issue_codes(concise_recode{i}(j));
             temp_additional{j} = additional_issue_codes(concise_recode{i}(j));
             
-            concise_keys(concise_recode{i}(j)) = concise_recode{i}(j);
+            concise_keys(concise_recode{i}(j))   = concise_recode{i}(j);
             concise_values(concise_recode{i}(j)) = i;
         end
-
-        concise_issue_codes(i) = strjoin(temp_issue);
+        
+        concise_issue_codes(i)      = strjoin(temp_issue);
         concise_additional_codes(i) = strjoin(temp_additional);
     end
-
     
     generate_issue_codes = containers.Map(unique(policy_area),1:length(unique(policy_area)));
+    issue_codes          = cellfun(@(x) generate_issue_codes(x),policy_area);
+    
     generate_concise_codes = containers.Map(concise_keys,concise_values);
+    concise_codes          = arrayfun(@(x) generate_concise_codes(x),issue_codes);
     
-    
-    issue_codes  = cellfun(@(x) generate_issue_codes(x),policy_area);
-    concise_codes  = arrayfun(@(x) generate_concise_codes(x),issue_codes);
-    unified_text = cellfun(@(a,b) [a ' ' b],bill_title,text,'UniformOutput',false);
+    unified_text  = cellfun(@(a,b) [a ' ' b],bill_title,text,'UniformOutput',false);
     
     delete_str = '';
     
@@ -105,12 +105,12 @@ if exist('+la\description_learning_materials.mat','file') ~= 2 || relearn_materi
     % Generate the learning table with the taught instructions and the
     % additional common word, issue, and additional issue codes
     
-    if generate_concise
-        [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,concise_issue_codes,concise_additional_codes,generate_concise);
+    if concise_flag
+        [learning_table,data_storage] = la.generateLearningTable(iwv,awv,learning_materials,common_words,concise_issue_codes,concise_additional_codes,concise_flag,title_parsed_flag);
         
         save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','concise_issue_codes','concise_additional_codes','bill_title','policy_area','text','common_words');
     else
-        [learning_table,data_storage] = la.generateLearningTable(learning_materials,common_words,master_issue_codes,additional_issue_codes,generate_concise);
+        [learning_table,data_storage] = la.generateLearningTable(iwv,awv,learning_materials,common_words,master_issue_codes,additional_issue_codes,concise_flag,title_parsed_flag);
         
         save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','master_issue_codes','additional_issue_codes','bill_title','policy_area','text','common_words');
     end
@@ -118,27 +118,39 @@ else
     load('+la\description_learning_materials.mat')
 end
 
-
 if optimize_frontier
-     
-    % Organized = [title additional];
-    min_value = [0   0];
-    max_value = [4   4];
-    step_size = [0.2 0.2];
     
-    estimated_time = length(min_value(1):step_size(1):max_value(1))*length(min_value(2):step_size(2):max_value(2))*180/3600;
+    % Organized = [title additional];
+    min_value = [0    0];
+    max_value = [10   10];
+    step_size = [0.5  0.5];
+    
+    estimated_time = length(min_value(1):step_size(1):max_value(1))*length(min_value(2):step_size(2):max_value(2))*(data_storage.cut_off*0.1+70)/3600;
     fprintf('Estimated time to completion of first round: %0.2f hours\n',estimated_time)
     
-    [accuracy,iwv,awv] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage); 
+    [accuracy,iwv,awv] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage,concise_flag,title_parsed_flag);
     
-    fprintf('Max Accuracy %8.3f%% || a %10.2f | i %10.2f \n',accuracy,awv,iwv);
-else
+    fprintf('Max Accuracy %8.3f%% ||  a %10.5f | i %10.5f \n',accuracy,awv,iwv);
+    
+    data_storage.iwv = iwv;
+    data_storage.awv = awv;
+    
+    
+    if concise_flag
+        save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','concise_issue_codes','concise_additional_codes','bill_title','policy_area','text','common_words');
+    else
+        save('+la\description_learning_materials.mat','learning_materials','learning_table','data_storage','master_issue_codes','additional_issue_codes','bill_title','policy_area','text','common_words');
+    end
+else   
     load('+la\learning_algorithm_results.mat')
+    
+    data_storage.iwv = iwv;
+    data_storage.awv = awv;
 end
 
 if process_algorithm
     % Process the results
-    outputs = la.processAlgorithm(learning_materials,data_storage,0);
+    outputs = la.processAlgorithm(learning_materials,data_storage,0,concise_flag);
     
     % Check the stats
     processed = outputs.processed;
@@ -147,13 +159,17 @@ if process_algorithm
     accuracy  = outputs.accuracy;
     
     % Print the results output
-    fprintf('Results: %i of %i (%0.2f%%) || a %10.2f | i %10.2f \n',correct,total,accuracy,awv,iwv);
+    fprintf('Results: %i of %i (%0.2f%%) || a %10.5f | i %10.5f \n',correct,total,accuracy,awv,iwv);
     
     % Manually make the histogram here so it can reflect all the categories
     % --- begin histogram
     figure()
     hold on; grid on;
-    real_histogram  = histogram(processed.issue_codes); %#ok<NASGU>
+    if concise_flag
+        real_histogram = histogram(processed.concise_codes); %#ok<NASGU>
+    else
+        real_histogram = histogram(processed.issue_codes); %#ok<NASGU>
+    end
     coded_histogram = histogram(processed.learning_coded); %#ok<NASGU>
     legend({'Actual','Learning Coded'})
     axis tight
@@ -161,24 +177,20 @@ if process_algorithm
     ylabel('Frequency')
     title(sprintf('Learning coded bills as compared to their actual categories\nAccuracy: %0.4f%%',accuracy));
     hold off
-    saveas(gcf,sprintf('+la/learning_algorithm_historgram_%s',date),'png')
+    saveas(gcf,sprintf('+la/temp/learning_algorithm_historgram_%s',date),'png')
     % --- end histogram
     
-    % Generate some additional data for the 
-    adjacency_matrix = zeros(length(unique(processed.issue_codes)),length(unique(processed.learning_coded)));
-    
-    for i = 1:length(processed.issue_codes)
-        adjacency_matrix(processed.issue_codes(i),processed.learning_coded(i)) = adjacency_matrix(processed.issue_codes(i),processed.learning_coded(i)) + 1;
+    % Generate some additional data for the adjacency matrix
+    if concise_flag
+        la.generateAdjacencyMatrix(processed,'concise_codes');
     end
     
-    xlswrite(sprintf('+la/testdata_%s.xlsx',date),adjacency_matrix);
+    % In a concise matrix setting this will give data about how the
+    % original issue codes are categorized against the concise codes
+    la.generateAdjacencyMatrix(processed,'issue_codes');
     
     if accuracy < 75
         fprintf('Accuracy is pretty low, recommend reducing the number of categories\n')
-        
-        
-        % Here is where we run the adjacency code 
-        la.findSimilarCategories(adjacency_matrix)
     end
     
     % Write the learning table to a file
