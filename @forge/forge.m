@@ -232,7 +232,10 @@ classdef forge < handle
                     saveas(gcf,sprintf('data/%s/issue_category_frequency_competitive',obj.state_ID),'png')
                 end
                 
-                save(sprintf('data/%s/processed_data.mat',obj.state_ID),'bills_create','people_create','votes_create','total_histogram','competitive_histogram')
+                % Save all variables with the exception of the object
+                var_list = who;
+                var_list = var_list(~ismember(var_list,'obj'));
+                save(sprintf('data/%s/processed_data.mat',obj.state_ID),var_list{:})
             else % Load the saved information
                 load(sprintf('data/%s/processed_data',obj.state_ID))
             end
