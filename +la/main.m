@@ -9,9 +9,9 @@ function main(varargin)
 in = inputParser;
 addOptional(in,'optimize_frontier',1,@islogical);
 addOptional(in,'process_algorithm',1,@islogical);
-addOptional(in,'relearn_materials',0,@islogical);
+addOptional(in,'relearn_materials',1,@islogical);
 addOptional(in,'generate_concise',1,@islogical);
-addOptional(in,'recompute_XML',0,@islogical);
+addOptional(in,'recompute_XML',1,@islogical);
 addOptional(in,'update_XML',0,@islogical);
 parse(in,varargin{:});
 
@@ -121,11 +121,11 @@ end
 if optimize_frontier
     
     % Organized = [title additional];
-    min_value = [0    0];
-    max_value = [10   10];
-    step_size = [0.5  0.5];
+    min_value = [0     0];
+    max_value = [5     5] ;
+    step_size = [0.25  0.25];
     
-    estimated_time = length(min_value(1):step_size(1):max_value(1))*length(min_value(2):step_size(2):max_value(2))*(data_storage.cut_off*0.1+70)/3600;
+    estimated_time = length(min_value(1):step_size(1):max_value(1))*length(min_value(2):step_size(2):max_value(2))*(data_storage.cut_off*0.075+70)/3600;
     fprintf('Estimated time to completion of first round: %0.2f hours\n',estimated_time)
     
     [accuracy,iwv,awv] = la.optimizeFrontierSimple(min_value,max_value,step_size,learning_materials,learning_table,data_storage,concise_flag,title_parsed_flag);
