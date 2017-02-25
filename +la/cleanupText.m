@@ -26,6 +26,8 @@ if ~isempty(text)
 elseif iscell(text)
     text = '';
     weight = 0;
+else
+    weight = 0;
 end
 
 end
