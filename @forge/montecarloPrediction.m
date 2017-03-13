@@ -1,9 +1,8 @@
-function [accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list,results_table] = montecarloPrediction(obj,bill_ids,people,sponsor_chamber_matrix,consistency_matrix,sponsor_committee_matrix,chamber_matrix,chamber)
+function [accuracy_list,accuracy_delta,legislators_list,bill_list,results_table] = montecarloPrediction(obj,bill_ids,people,sponsor_chamber_matrix,consistency_matrix,sponsor_committee_matrix,chamber_matrix,chamber)
 % MONTECARLOPREDICTION
 % Predict the monte carlo series for a legislative process
 
 % Get the file list
-
 files = dir(sprintf('%s/%s_prediction_model_m*.mat',obj.prediction_directory,upper(chamber(1))));
 
 % if the file doesn't exist or if we're forcing a recompute
@@ -12,6 +11,15 @@ if isempty(files) || obj.recompute_montecarlo
     [accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list] = obj.runMonteCarlo(bill_ids,people,sponsor_chamber_matrix,consistency_matrix,sponsor_committee_matrix,chamber_matrix,chamber,obj.monte_carlo_number);
 
     specific_index = obj.monte_carlo_number;
+    
+    % Process the impacts
+    results_table = obj.processLegislatorImpacts(accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list);
+    
+    if ~isempty(results_table)
+        % Write the results to a table
+        writetable(results_table,sprintf('%s/%s_prediction_model_results_m%i.csv',obj.outputs_directory,upper(chamber(1)),specific_index),'WriteRowNames',true)
+        save(sprintf('%s/%s_prediction_model_results_m%i.mat',obj.prediction_directory,upper(chamber(1)),monte_carlo_number),'results_table')
+    end
 else
     % If files of the right pattern do exist, search for the largest value
     % to use in the analysis
@@ -29,16 +37,10 @@ else
     accuracy_list       = data.accuracy_list;
     accuracy_delta      = data.accuracy_delta;
     legislators_list    = data.legislators_list;
-    accuracy_steps_list = data.accuracy_steps_list;
     bill_list           = data.bill_ids;
-end
-
-% Process the impacts
-results_table = obj.processLegislatorImpacts(accuracy_list,accuracy_delta,legislators_list,accuracy_steps_list,bill_list);
-
-if ~isempty(results_table)
-    % Write the results to a table
-    writetable(results_table,sprintf('%s/%s_prediction_model_results_m%i.csv',obj.outputs_directory,upper(chamber(1)),specific_index),'WriteRowNames',true)
+    
+    data = load(sprintf('%s/%s_predictive_model_results_m%i.mat',obj.prediction_directory,upper(chamber(1)),specific_index));
+    results_table = data.results_table;
 end
 
 end

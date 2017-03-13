@@ -22,7 +22,6 @@ for i = 1:size(legislators_list,1) % per bill
         
         specific_accuracy_list(j,1) = accuracy_list(i,j) - accuracy_list_delta(i,j); % find the starting accuracy
         
-        
         for k = 1:length(accuracy_steps_list{i,j})
             specific_accuracy_list(j,k+1) = specific_accuracy_list(j,k) + accuracy_steps_list{i,j}(k); 
             specific_delta_list(j,k)      = accuracy_steps_list{i,j}(k);

@@ -4,30 +4,32 @@
 
 fclose all; close all; clc; clear all;
 
-try
-    fprintf('**************************************LA MASTER ANALYSIS**************************************\n')
-    
-    la_time = tic;
-    
-    la.main()
-    
-    fprintf('**************************************LA COMPLETE!**************************************\n')
-    toc(la_stime)
-catch e
-    warning('ERROR: %s',e.message)
-    fprintf('**************************************LA FAILED!**************************************\n')
-    toc(la_time)
-    la_errors = e;
-end
+dbstop if error
+
+% try
+%     fprintf('**************************************LA MASTER ANALYSIS**************************************\n')
+%     
+%     la_time = tic;
+%     
+%     la.main()
+%     
+%     fprintf('**************************************LA COMPLETE!**************************************\n')
+%     toc(la_stime)
+% catch e
+%     warning('ERROR: %s',e.message)
+%     fprintf('**************************************LA FAILED!**************************************\n')
+%     toc(la_time)
+%     la_errors = e;
+% end
 
 
 master = tic;
 
-states = {'WI' 'IN' 'OR'};
+states = {'OR' 'WI' 'IN' };
 
 errors = {};
 
-monte_carlo_number_list = [10 100 1000 5000 10000 50000 100000];
+monte_carlo_number_list = [5000];
 
 for j = 1:length(monte_carlo_number_list)
     for i = 1:length(states)
@@ -38,25 +40,27 @@ for j = 1:length(monte_carlo_number_list)
         
         a = state(states{i});
         
-        a.recompute = true;
-        a.reprocess = true;
-        a.generate_outputs     = true;
-        a.predict_montecarlo   = true;
-        a.recompute_montecarlo = true;
+        a.recompute = false;
+        a.reprocess = false;
+        a.generate_outputs     = false;
+        a.predict_montecarlo   = false;
+        a.recompute_montecarlo = false;
+        a.predict_ELO          = true;
+        a.recompute_ELO        = true;
         
         a.monte_carlo_number = monte_carlo_number_list(j);
         
-        try
+%         try
             a.run();
             
             fprintf('**************************************%s COMPLETE!**************************************\n',states{i})
             toc(state_time)
-        catch e
-            warning('ERROR: %s',e.message)
-            fprintf('**************************************%s FAILED!**************************************\n',states{i})
-            toc(state_time)
-            errors{end+1} = e; %#ok<SAGROW>
-        end
+%         catch e
+%             warning('ERROR: %s',e.message)
+%             fprintf('**************************************%s FAILED!**************************************\n',states{i})
+%             toc(state_time)
+%             errors{end+1} = e; %#ok<SAGROW>
+%         end
     end
 end
 close all; fclose all;

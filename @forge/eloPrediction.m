@@ -1,4 +1,4 @@
-function elo_score = eloPrediction(obj,bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,chamber)
+function elo_score = eloPrediction(obj,bill_ids,chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber)
 % ELOPREDICTION
 % Execute ELO Prediction
 
@@ -8,12 +8,13 @@ files = dir(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1
 % if the file doesn't exist or if we're forcing a recompute
 if isempty(files) || obj.recompute_ELO
     
-    ids = util.createIDstrings(chamber_people.sponsor_id);
+%     ids = util.createIDstrings(chamber_people.sponsor_id);
+    ids = chamber_matrix.Properties.RowNames;
     chamber_specifics = chamber_matrix{:,:};
     
     score1 = ones(length(ids),1)*1500;
     score2 = ones(length(ids),1)*1500;
-    count = zeros(length(ids),1);
+    count  = zeros(length(ids),1);
     
     elo_score = array2table([score1 score2 count],'VariableNames',{'score_variable_k' 'score_fixed_k' 'count'});
     elo_score.Properties.RowNames = ids;
@@ -26,21 +27,25 @@ if isempty(files) || obj.recompute_ELO
     for iter = 1:length(bill_ids)
         bill_id = bill_ids(iter);
         
-
         chamber_data = sprintf('%s_data',chamber);
         
         % Get the specific bill information
         bill_information = obj.bill_set(bill_id);
         
-        % if no committee information is available
-        if isempty(bill_information.(chamber_data).committee_votes)
-            return
+        % TODO Up in here is where we would do the bill-category specific
+        % filtering
+        
+        % TODO THIS IS ALL COPY+PASTED FROM PREDICTOUTCOMES. SAD!
+        
+        % if the bill is incomplete, skip it
+        if ~bill_information.complete
+            continue
         end
         
         % Check for a third reading vote
         legislator_list = [];
         for i = length(bill_information.(chamber_data).chamber_votes):-1:1
-            if ~isempty(regexp(upper(obj.bill_set(i).(chamber_data).chamber_votes(i).description{:}),'(THIRD|3RD|ON PASSAGE)','once'))
+            if ~isempty(regexp(upper(bill_information.(chamber_data).chamber_votes(i).description{:}),'(THIRD|3RD|ON PASSAGE)','once'))
                 bill_yes_ids = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).yes_list,ids);
                 bill_no_ids  = util.createIDstrings(bill_information.(chamber_data).chamber_votes(i).no_list,ids);
                 
@@ -55,15 +60,10 @@ if isempty(files) || obj.recompute_ELO
         
         % Get the sponsor IDs
         sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
-               
-        % Create the basic information about the committee values
-        committee_yes     = bill_information.(chamber_data).committee_votes.yes_list;
-        committee_no      = bill_information.(chamber_data).committee_votes.no_list;
-        committee_members = [committee_yes ; committee_no];
-        committee_ids     = util.createIDstrings(committee_members,ids);
-        committee_ids_yes = util.createIDstrings(committee_yes,ids);
-        committee_ids_no  = util.createIDstrings(committee_no,ids);       
-       
+
+        % Set the number of sponsors
+        number_sponsors  = size(sponsor_ids,1);
+
         % initial assumption, eveyone is equally likely to vote yes as
         % to vote no. This is probably not true, I'll have to figure
         % out how to figure this out.
@@ -78,66 +78,32 @@ if isempty(files) || obj.recompute_ELO
         t_set{bill_yes_ids,'final'} = 1;
         t_set{bill_no_ids,'final'}  = 0;
         
-        % --------- COMMITTEE EFFECT ---------
+        % --------- SPONSOR EFFECT ---------
         % Calculate sponsor effect and set t1
-        committee_specific = ones(length(committee_ids),1)*bayes_initial;
-        committee_sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
-        for i = 1:length(committee_ids)
+        sponsor_specific = ones(length(sponsor_ids),1)*bayes_initial;
+        sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,chamber_sponsor_matrix.Properties.VariableNames));
+        for i = 1:length(sponsor_ids)
             
-            if ~isempty(util.CStrAinBP(committee_ids{i},committee_sponsor_matrix.Properties.RowNames))
-                sponsor_specific_effect = zeros(1,length(committee_sponsor_match));
+            if ismember(sponsor_ids{i},chamber_sponsor_matrix.Properties.RowNames)
+                sponsor_specific_effect = zeros(1,length(sponsor_match));
                 
-                for k = 1:length(committee_sponsor_match)
-                    sponsor_specific_effect(k) = predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},committee_sponsor_match{k}});
+                for k = 1:length(sponsor_match)
+                    sponsor_specific_effect(k) = predict.getSpecificImpact(1,chamber_sponsor_matrix{sponsor_ids{i},sponsor_match{k}});
                 end
                 
-                committee_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
+                sponsor_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
             end
         end
-        t_set{committee_ids,'t1'} = committee_specific;
-        
-        t_set.committee_vote                      = NaN(length(t_set.Properties.RowNames),1);
-        t_set{committee_ids_yes,'committee_vote'} = 1;
-        t_set{committee_ids_no,'committee_vote'}  = 0;
-        
-        t_set.committee_consistency                      = NaN(length(t_set.Properties.RowNames),1);
-        t_set{committee_ids_yes,'committee_consistency'} = chamber_consistency_matrix{committee_ids_yes,'percentage'};
-        t_set{committee_ids_no,'committee_consistency'}  = chamber_consistency_matrix{committee_ids_no,'percentage'};
-        
-        % So now we only update based on expressed preference for t2
-        % calculate t2
-        t_set_current_value  = ones(length(ids),1)*0.5;
-        
-        matched_ids = util.CStrAinBP(ids,[sponsor_ids;committee_ids]));
-        
-        for j = 1:length(ids)
-            if ~any(j == matched_ids)
-                combined_impact = zeros(length(matched_ids),1);
-                
-                for k = 1:length(matched_ids)
-                    combined_impact(k) = predict.getSpecificImpact(1,chamber_specifics(j,k));
-                end
-                
-                t_set_current_value(j) = (prod(combined_impact)*bayes_initial)/(prod(combined_impact)*bayes_initial + prod(1-combined_impact)*(1-bayes_initial));
-            else
-                if ~isnan(t_set.committee_vote(j))
-                    t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
-                elseif ~isempty(util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.RowNames) && util.CStrAinBP(ids(j),chamber_sponsor_matrix.Properties.VariableNames))
-                    t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
-                end
-            end
-        end
-        
-        t_set.t2          = t_set_current_value;
-        t_final_results = t_set.final;
-        
+        t_set{sponsor_ids,'t1'} = sponsor_specific;
+ 
+        t_final_results   = t_set.final;
         legislator_id     = legislator_list(randperm(length(legislator_list)));
         direction         = zeros(length(legislator_id),1);
         direction(util.CStrAinBP(legislator_id,bill_yes_ids)) = 1;
         
         accuracy = zeros(1,length(legislator_id));
         
-        t_count = 2;
+        t_count = 1;
         for i = 1:length(legislator_id)
             [~,~,~,accuracy(i)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
         end
@@ -145,8 +111,12 @@ if isempty(files) || obj.recompute_ELO
         
         % THIS IS WHERE ALL THE ELO SCORE STUFF HAPPENS
         % everything above this point is a copy paste (ugh, I know) from
-        % the monte carlo prediciton set
+        % predictOutcomes
         
+        % TODO for the bill categories, maybe just some filter here?
+        % different variable names for the different bill categories? the
+        % issue is it has to pull from the existing score which will be
+        % different for each legislator in each category
         
         count = elo_score{legislator_id,'count'};
         score1 = elo_score{legislator_id,'score_variable_k'};
@@ -201,7 +171,7 @@ if isempty(files) || obj.recompute_ELO
     elo_score.difference = elo_score.score_variable_k - elo_score.score_fixed_k;    
     elo_score.name       = obj.getSponsorName(elo_score.Properties.RowNames);
     
-    elo_score = join(chamber_people,elo_score);
+    elo_score = join(elo_score,chamber_people);
     elo_score = sortrows(elo_score,'score_variable_k','descend');
 
     save(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))),'elo_score');
