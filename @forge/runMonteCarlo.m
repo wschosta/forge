@@ -17,10 +17,12 @@ ids               = util.createIDstrings(chamber_people.sponsor_id);
 chamber_specifics = chamber_matrix{:,:};
 
 bill_hit = 1;
-i = 1;
+i = 0;
 while bill_hit <= bill_target && i <= length(chamber_bill_ids)
     
-    [accuracy,~,~,legislators,accuracy_steps] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,lower(chamber),obj.monte_carlo_number);
+    i = i + 1;
+    
+    [accuracy,~,~,legislators,accuracy_steps] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_specifics,lower(chamber),obj.monte_carlo_number);
     
     if ~isempty(legislators)
         accuracy_list(bill_hit,:)       = accuracy(1,:);
@@ -28,7 +30,6 @@ while bill_hit <= bill_target && i <= length(chamber_bill_ids)
         accuracy_steps_list(bill_hit,:) = accuracy_steps;
         legislators_list{bill_hit}      = legislators;
     else
-        i = i + 1;
         continue
     end
     
@@ -38,7 +39,6 @@ while bill_hit <= bill_target && i <= length(chamber_bill_ids)
     
     bill_ids(bill_hit) = chamber_bill_ids(i);
     bill_hit = bill_hit + 1;
-    i = i + 1;
 end
 bill_hit = bill_hit - 1;
 
@@ -84,7 +84,7 @@ ylabel('Change in Accuracy')
 hold off
 saveas(h,sprintf('%s/%s_prediction_total_delta_boxplot_m%i',obj.outputs_directory,upper(chamber(1)),monte_carlo_number),'png')
 
-save(sprintf('%s/%s_prediction_model_m%i.mat',obj.prediction_directory,upper(chamber(1)),monte_carlo_number),'accuracy_list','accuracy_delta','legislators_list','accuracy_steps_list','bill_ids')
+save(sprintf('%s/%s_prediction_model_m%i.mat',obj.prediction_directory,upper(chamber(1)),monte_carlo_number),'accuracy_list','accuracy_delta','legislators_list','bill_ids')
 
 timed = toc;
 

@@ -14,18 +14,18 @@ plot.generatePlots(show_warnings,outputs_directory,histogram_directory,sponsor_c
 plot.generatePlots(show_warnings,outputs_directory,histogram_directory,republicans_chamber_sponsor,chamber,'Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','cha_R_s')
 plot.generatePlots(show_warnings,outputs_directory,histogram_directory,democrats_chamber_sponsor,chamber,'Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','cha_D_s')
 
-% Committee Vote Data
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,committee_matrix,chamber,'Committee','Legislators','Legislators','Agreement Score','com_A')
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,republicans_committee_votes,chamber,'Committee Republicans','Legislators','Legislators','Agreement Score','com_R')
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,democrats_committee_votes,chamber,'Committee Democrats','Legislators','Legislators','Agreement Score','com_D')
-
-% Committee Sponsorship Data
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,sponsor_committee_matrix,chamber,'Committee Sponsorship','Sponsors','Legislators','Sponsorship Score','com_A_s')
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,republicans_committee_sponsor,chamber,'Committee Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','com_R_s')
-plot.generatePlots(show_warnings,outputs_directory,histogram_directory,democrats_committee_sponsor,chamber,'Committee Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','com_D_s')
-
 % Chamber-Committee Consistency
 if any(~isnan(consistency_matrix.percentage))
+    % Committee Vote Data
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,committee_matrix,chamber,'Committee','Legislators','Legislators','Agreement Score','com_A')
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,republicans_committee_votes,chamber,'Committee Republicans','Legislators','Legislators','Agreement Score','com_R')
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,democrats_committee_votes,chamber,'Committee Democrats','Legislators','Legislators','Agreement Score','com_D')
+    
+    % Committee Sponsorship Data
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,sponsor_committee_matrix,chamber,'Committee Sponsorship','Sponsors','Legislators','Sponsorship Score','com_A_s')
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,republicans_committee_sponsor,chamber,'Committee Republican Sponsorship','Sponsors','Legislators','Sponsorship Score','com_R_s')
+    plot.generatePlots(show_warnings,outputs_directory,histogram_directory,democrats_committee_sponsor,chamber,'Committee Democrat Sponsorship','Sponsors','Legislators','Sponsorship Score','com_D_s')
+    
     h = figure();
     hold on
     title('Chamber-Committee Consistency')

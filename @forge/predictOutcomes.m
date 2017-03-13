@@ -1,4 +1,4 @@
-function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,ids,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_specifics,chamber,varargin)
+function [accuracy, number_sponsors, number_committee, varargout] = predictOutcomes(obj,bill_id,ids,chamber_sponsor_matrix,chamber_specifics,chamber,varargin)
 % PREDICTOUTCOMES
 % Predict outcomes for a specific bill with a randomized set of legislators
 
@@ -52,16 +52,6 @@ sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
 % Set the number of sponsors
 number_sponsors  = size(sponsor_ids,1);
 
-% % % % Create the basic information about the committee values
-% % % committee_yes     = bill_information.(chamber_data).committee_votes.yes_list;
-% % % committee_no      = bill_information.(chamber_data).committee_votes.no_list;
-% % % committee_members = [committee_yes ; committee_no];
-% % % committee_ids     = util.createIDstrings(committee_members,ids);
-% % % committee_ids_yes = util.createIDstrings(committee_yes,ids);
-% % % committee_ids_no  = util.createIDstrings(committee_no,ids);
-% % % number_committee  = size(committee_ids,1);
-
-
 % initial assumption, eveyone is equally likely to vote yes as
 % to vote no. TODO This is probably not true, I'll have to figure
 % out how to figure this out.
@@ -77,25 +67,7 @@ t_set.t1   = NaN(length(ids),1);
 t_set{bill_yes_ids,'final'} = 1;
 t_set{bill_no_ids,'final'}  = 0;
 
-% % % % % % --------- COMMITTEE EFFECT ---------
-% % % % % % Calculate sponsor effect and set t1
-% % % % % committee_specific = ones(length(committee_ids),1)*bayes_initial;
-% % % % % committee_sponsor_match = sponsor_ids(ismember(sponsor_ids,committee_sponsor_matrix.Properties.VariableNames));
-% % % % % for i = 1:length(committee_ids)
-% % % % %     
-% % % % %     if ismember(committee_ids{i},committee_sponsor_matrix.Properties.RowNames)
-% % % % %         sponsor_specific_effect = zeros(1,length(committee_sponsor_match));
-% % % % %         
-% % % % %         for k = 1:length(committee_sponsor_match)
-% % % % %             sponsor_specific_effect(k) = predict.getSpecificImpact(1,committee_sponsor_matrix{committee_ids{i},committee_sponsor_match{k}});
-% % % % %         end
-% % % % %         
-% % % % %         committee_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
-% % % % %     end
-% % % % % end
-% % % % % t_set{committee_ids,'t1'} = committee_specific;
-
-% --------- COMMITTEE EFFECT ---------
+% --------- SPONSOR EFFECT ---------
 % Calculate sponsor effect and set t1
 sponsor_specific = ones(length(sponsor_ids),1)*bayes_initial;
 sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,chamber_sponsor_matrix.Properties.VariableNames));
@@ -113,41 +85,6 @@ for i = 1:length(sponsor_ids)
 end
 t_set{sponsor_ids,'t1'} = sponsor_specific;
 
-
-
-% t_set.committee_vote                      = NaN(length(t_set.Properties.RowNames),1);
-% t_set{committee_ids_yes,'committee_vote'} = 1;
-% t_set{committee_ids_no,'committee_vote'}  = 0;
-% 
-% t_set.committee_consistency                      = NaN(length(t_set.Properties.RowNames),1);
-% t_set{committee_ids_yes,'committee_consistency'} = chamber_consistency_matrix{committee_ids_yes,'percentage'};
-% t_set{committee_ids_no,'committee_consistency'}  = chamber_consistency_matrix{committee_ids_no,'percentage'};
-
-% So now we only update based on expressed preference for t2
-% calculate t2
-% t_set_current_value  = ones(length(ids),1)*0.5;
-% 
-% matched_ids = find(ismember(ids,[sponsor_ids;committee_ids]));
-
-% for j = 1:length(ids)
-%     if ~any(j == matched_ids)
-%         combined_impact = zeros(length(matched_ids),1);
-%         
-%         for k = 1:length(matched_ids)
-%             combined_impact(k) = predict.getSpecificImpact(1,chamber_specifics(j,k));
-%         end
-%         
-%         t_set_current_value(j) = (prod(combined_impact)*bayes_initial)/(prod(combined_impact)*bayes_initial + prod(1-combined_impact)*(1-bayes_initial));
-%     else
-%         if ~isnan(t_set.committee_vote(j))
-%             t_set_current_value(j) = predict.getSpecificImpact(t_set.committee_vote(j),t_set.committee_consistency(j));
-%         elseif ismember(ids(j),chamber_sponsor_matrix.Properties.RowNames) && ismember(ids(j),chamber_sponsor_matrix.Properties.VariableNames)
-%             t_set_current_value(j) = predict.getSpecificImpact(1,chamber_specifics(j,j));
-%         end
-%     end
-% end
-% 
-% t_set.t2          = t_set_current_value;
 t1_check          = (round(t_set.t1) == t_set.final);
 incorrect         = sum(t1_check == false);
 are_nan           = sum(isnan(t_set{t1_check == false,'final'}));
@@ -157,7 +94,7 @@ accuracy_table.t1 = 100*(1-(incorrect-are_nan)/(100-are_nan));
 % data whereby people declare preferences. However, things are
 % pretty damn solid at this point
 
-% at this point, for t3, we do basically the same thing as t2
+% at this point, for t2, we do basically the same thing as t1
 % but we just update everything
 
 % TODO Finish comments

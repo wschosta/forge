@@ -94,7 +94,7 @@ classdef state < forge
             obj.show_warnings        = in.Results.show_warnings;
             
             [obj.senate_size, obj.house_size] = obj.state_properties();
-            obj.monte_carlo_number = 100; % number of monte carlo iterations
+            obj.monte_carlo_number = 2500; % number of monte carlo iterations, determined by comparative analysis to be sufficient
             
             % Storage directroies
             obj.data_directory       = sprintf('data/%s',obj.state_ID);
@@ -260,20 +260,20 @@ classdef state < forge
             
             if ~isempty(house_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the House
-                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_accuracy_steps_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<ASGLU>
+                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<ASGLU>
             end
             
             if ~isempty(senate_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the Senate
-                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_accuracy_steps_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<ASGLU>
+                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<ASGLU>
             end
             
             if ~isempty(house_people) && obj.predict_ELO
-                house_elo_score = obj.eloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
+                house_elo_score = obj.eloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
             end
             
             if ~isempty(senate_people) && obj.predict_ELO
-                senate_elo_score = obj.eloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
+                senate_elo_score = obj.eloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
             end
             
             % Save out all of the generated data, with the exception of
