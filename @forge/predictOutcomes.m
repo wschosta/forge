@@ -69,21 +69,26 @@ t_set{bill_no_ids,'final'}  = 0;
 
 % --------- SPONSOR EFFECT ---------
 % Calculate sponsor effect and set t1
-sponsor_specific = ones(length(sponsor_ids),1)*bayes_initial;
-sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,chamber_sponsor_matrix.Properties.VariableNames));
-for i = 1:length(sponsor_ids)
-    
-    if ismember(sponsor_ids{i},chamber_sponsor_matrix.Properties.RowNames)
-        sponsor_specific_effect = zeros(1,length(sponsor_match));
+
+if number_sponsors > 1
+    sponsor_specific = ones(length(sponsor_ids),1)*bayes_initial;
+    sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,chamber_sponsor_matrix.Properties.VariableNames));
+    for i = 1:length(sponsor_ids)
         
-        for k = 1:length(sponsor_match)
-            sponsor_specific_effect(k) = predict.getSpecificImpact(1,chamber_sponsor_matrix{sponsor_ids{i},sponsor_match{k}});
+        if ismember(sponsor_ids{i},chamber_sponsor_matrix.Properties.RowNames)
+            sponsor_specific_effect = zeros(1,length(sponsor_match));
+            
+            for k = 1:length(sponsor_match)
+                sponsor_specific_effect(k) = predict.getSpecificImpact(1,chamber_sponsor_matrix{sponsor_ids{i},sponsor_match{k}});
+            end
+            
+            sponsor_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
         end
-        
-        sponsor_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
     end
+    t_set{sponsor_ids,'t1'} = sponsor_specific;
+else
+    t_set.t1 = ones(length(t_set.t1),1)*0.5;
 end
-t_set{sponsor_ids,'t1'} = sponsor_specific;
 
 t1_check          = (round(t_set.t1) == t_set.final);
 incorrect         = sum(t1_check == false);
