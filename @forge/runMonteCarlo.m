@@ -1,4 +1,4 @@
-function [accuracy_list, accuracy_delta, legislators_list, accuracy_steps_list, bill_ids] = runMonteCarlo(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_consistency_matrix,committee_sponsor_matrix,chamber_matrix,chamber,monte_carlo_number)
+function [accuracy_list, accuracy_delta, legislators_list, accuracy_steps_list, bill_ids] = runMonteCarlo(obj,chamber_bill_ids,chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,monte_carlo_number)
 % TODO comments
 
 tic
@@ -13,14 +13,12 @@ bill_ids            = zeros(1,bill_target);
 
 % These will reduce the runtime in the the predictOutcomes
 % function
-ids               = util.createIDstrings(chamber_people.sponsor_id);
+ids               = chamber_matrix.Properties.RowNames; %util.createIDstrings(chamber_people.sponsor_id);
 chamber_specifics = chamber_matrix{:,:};
 
 bill_hit = 1;
-i = 0;
-while bill_hit <= bill_target && i <= length(chamber_bill_ids)
-    
-    i = i + 1;
+
+for i = 1:length(chamber_bill_ids)
     
     [accuracy,~,~,legislators,accuracy_steps] = obj.predictOutcomes(chamber_bill_ids(i),ids,chamber_sponsor_matrix,chamber_specifics,lower(chamber),obj.monte_carlo_number);
     

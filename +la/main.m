@@ -7,11 +7,11 @@ function main(varargin)
 % See also forge
 
 in = inputParser;
-addOptional(in,'optimize_frontier',1,@islogical);
+addOptional(in,'optimize_frontier',0,@islogical);
 addOptional(in,'process_algorithm',1,@islogical);
-addOptional(in,'relearn_materials',1,@islogical);
+addOptional(in,'relearn_materials',0,@islogical);
 addOptional(in,'generate_concise',1,@islogical);
-addOptional(in,'recompute_XML',1,@islogical);
+addOptional(in,'recompute_XML',0,@islogical);
 addOptional(in,'update_XML',0,@islogical);
 parse(in,varargin{:});
 

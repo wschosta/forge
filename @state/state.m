@@ -260,12 +260,12 @@ classdef state < forge
             
             if ~isempty(house_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the House
-                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_consistency_matrix,house_sponsor_committee_matrix,house_chamber_matrix,'House'); %#ok<ASGLU>
+                [house_accuracy_list,house_accuracy_delta,house_legislators_list,house_bill_list,house_results_table] = obj.montecarloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<ASGLU>
             end
             
             if ~isempty(senate_people) && obj.predict_montecarlo
                 % Run the montecarlo prediction for the Senate
-                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_consistency_matrix,senate_sponsor_committee_matrix,senate_chamber_matrix,'Senate'); %#ok<ASGLU>
+                [senate_accuracy_list,senate_accuracy_delta,senate_legislators_list,senate_bill_list,senate_results_table] = obj.montecarloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<ASGLU>
             end
             
             if ~isempty(house_people) && obj.predict_ELO

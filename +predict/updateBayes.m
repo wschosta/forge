@@ -24,6 +24,7 @@ id_list(matched_ids) = [];
 
 % Pull out the impacts
 combined_impact          = zeros(length(ids),1);
+
 combined_impact(id_list) = abs(1 - revealed_preference - chamber_specifics(id_list,matched_ids));
 
 % Process the impacts together for the current t_set value
