@@ -16,7 +16,7 @@ while(~isempty(dir_list))
     
     % this allows us to ignore the things that don't need to be aded to the
     % path, specifically the svn, git, Archive, and Profiler directories
-    if isempty(regexp(a_dir,'(\svn.|\.git|Archive|Profiler|undergrad|tmp|data|legiscan_data|profile_results|congrssional_archive|webcrawler|reference)','ONCE'))
+    if isempty(regexp(a_dir,'(\svn.|\.svn|\.git|Archive|Profiler|undergrad|tmp|data|legiscan_data|profile_results|congrssional_archive|webcrawler|reference)','ONCE'))
         % add it to the path
         addpath(a_dir)
     end
