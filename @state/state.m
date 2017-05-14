@@ -269,11 +269,29 @@ classdef state < forge
             end
             
             if ~isempty(house_people) && obj.predict_ELO
-                house_elo_score = obj.eloPrediction(house_bill_ids,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
-            end
+                
+                category_flag = -1;
+                obj.elo_monte_carlo_number = 1;
+                    
+                house_elo_score = obj.eloMonteCarlo(house_bill_ids,category_flag,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
+            
+                obj.elo_monte_carlo_number = 1000;
+                    
+                house_elo_score = obj.eloMonteCarlo(house_bill_ids,category_flag,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
+            
+           end
             
             if ~isempty(senate_people) && obj.predict_ELO
-                senate_elo_score = obj.eloPrediction(senate_bill_ids,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
+                
+                category_flag = -1;
+                obj.elo_monte_carlo_number = 1;
+                    
+                senate_elo_score = obj.eloMonteCarlo(senate_bill_ids,category_flag,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
+            
+                obj.elo_monte_carlo_number = 1000;
+                    
+                senate_elo_score = obj.eloMonteCarlo(senate_bill_ids,category_flag,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
+                
             end
             
             % Save out all of the generated data, with the exception of

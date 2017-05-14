@@ -1,9 +1,20 @@
-function elo_score = eloPrediction(obj,bill_ids,chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber)
+function [elo_score,varargout] = eloPrediction(obj,MC_flag,MC_number,category_flag,bill_ids,chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,varargin)
 % ELOPREDICTION
 % Execute ELO Prediction
 
+if length(varargin) == 1
+    delete_str = varargin{1};
+else
+    delete_str = '';
+end
+
+MC_directory = '';
+if MC_flag
+    MC_directory = sprintf('MC/_%i_',MC_number);
+end
+
 chamber = lower(chamber);        
-files = dir(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))));
+files = dir(sprintf('%s/%s%s_elo_prediction_%i.mat',obj.elo_directory,MC_directory,upper(chamber(1)),category_flag));
 
 % if the file doesn't exist or if we're forcing a recompute
 if isempty(files) || obj.recompute_ELO
@@ -19,7 +30,7 @@ if isempty(files) || obj.recompute_ELO
     elo_score = array2table([score1 score2 count],'VariableNames',{'score_variable_k' 'score_fixed_k' 'count'});
     elo_score.Properties.RowNames = ids;
     
-    delete_str = '';
+    
     bill_hit   = 1;
     
     tic
@@ -156,7 +167,7 @@ if isempty(files) || obj.recompute_ELO
         elo_score{legislator_id,'score_variable_k'} = score1;
         elo_score{legislator_id,'score_fixed_k'} = score2;
         
-        print_str = sprintf('%i %i',bill_hit,bill_ids(iter));
+        print_str = sprintf('%i %i %i',MC_number,bill_hit,bill_ids(iter));
         fprintf([delete_str,print_str]);
         delete_str = repmat(sprintf('\b'),1,length(print_str));
         
@@ -165,26 +176,37 @@ if isempty(files) || obj.recompute_ELO
     end
     
     timed = toc;
-    print_str = sprintf('%s Done - %i bills! %0.3f\n',chamber,bill_hit,timed);
+    print_str = sprintf('%i %s Done - %i bills! %0.3f',MC_number,chamber,bill_hit,timed);
     fprintf([delete_str,print_str]);
-    
+    delete_str = repmat(sprintf('\b'),1,length(print_str));
+        
     elo_score.difference = elo_score.score_variable_k - elo_score.score_fixed_k;    
     elo_score.name       = obj.getSponsorName(elo_score.Properties.RowNames);
     
     elo_score = join(elo_score,chamber_people);
-    elo_score = sortrows(elo_score,'score_variable_k','descend');
-
-    save(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))),'elo_score');
+    
+    if ~MC_flag
+        elo_score = sortrows(elo_score,'score_variable_k','descend');
+    else
+        elo_score = sortrows(elo_score,'sponsor_id','descend');
+    end
+    
+    save(sprintf('%s/%s%s_elo_prediction_%i.mat',obj.elo_directory,MC_directory,upper(chamber(1)),category_flag),'elo_score');
+    
 else
-    data = load(sprintf('%s/%s_elo_prediction.mat',obj.elo_directory,upper(chamber(1))));
+    data = load(sprintf('%s/%s%s_elo_prediction_%i.mat',obj.elo_directory,MC_directory,upper(chamber(1)),category_flag));
     
     % Pull out the specifics
     elo_score = data.elo_score;
 end
 
-if ~isempty(elo_score)
+if ~isempty(elo_score) && ~MC_flag
     % Write the results to a table
-    writetable(elo_score,sprintf('%s/%s_elo_score.csv',obj.elo_directory,upper(chamber(1))),'WriteRowNames',true);
+    writetable(elo_score,sprintf('%s/%s%s_elo_score_%i.csv',obj.elo_directory,MC_directory,upper(chamber(1)),category_flag),'WriteRowNames',true);
+end
+
+if nargout == 2
+    varargout{1} = delete_str;
 end
 
 end
