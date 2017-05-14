@@ -123,9 +123,25 @@ for j = 1:monte_carlo
     accuracy_steps(1) = accuracy_table.t1;
     
     t_count = 1;
+    
+    %---------OLD WAY
+    %     for i = 1:length(legislator_id)
+    %         [t_set,t_count,t_current,accuracy_steps(i+1)] = predict.updateBayes_old(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
+    %     end
+    %---------OLD WAY END
+
+    %---------NEW WAY
+    t_current = sprintf('t%i',t_count);
+    
+    % Pull out the values of the previous t_set
+    t_current_value = t_set.(t_current);
     for i = 1:length(legislator_id)
-        [t_set,t_count,t_current,accuracy_steps(i+1)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
+        [t_current_value,t_count,accuracy_steps(i+1)] = predict.updateBayes(legislator_id{i},direction(i),t_current_value,chamber_specifics,t_count,ids,t_final_results);
     end
+    
+    t_current = sprintf('t%i',t_count);
+    t_set.(t_current) = t_current_value;
+    %---------NEW WAY END
     
     t_set.(sprintf('%s_check',t_current)) = round(t_set.(t_current)) == t_set.final;
     incorrect = sum(t_set.(sprintf('%s_check',t_current)) == false);

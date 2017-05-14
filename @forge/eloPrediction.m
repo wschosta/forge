@@ -49,9 +49,9 @@ if isempty(files) || obj.recompute_ELO
         % TODO THIS IS ALL COPY+PASTED FROM PREDICTOUTCOMES. SAD!
         
         % if the bill is incomplete, skip it
-        if ~bill_information.complete
-            continue
-        end
+%         if ~bill_information.complete
+%             continue
+%         end
         
         % Check for a third reading vote
         legislator_list = [];
@@ -65,15 +65,15 @@ if isempty(files) || obj.recompute_ELO
             end
         end
         
-        if isempty(legislator_list) || length(legislator_list) < obj.(sprintf('%s_size',chamber))*0.5
-            continue
-        end
+%         if isempty(legislator_list) || length(legislator_list) < obj.(sprintf('%s_size',chamber))*0.5
+%             continue
+%         end
         
         % Get the sponsor IDs
         sponsor_ids      = util.createIDstrings(bill_information.sponsors,ids);
 
         % Set the number of sponsors
-        number_sponsors  = size(sponsor_ids,1);
+%         number_sponsors  = size(sponsor_ids,1);
 
         % initial assumption, eveyone is equally likely to vote yes as
         % to vote no. This is probably not true, I'll have to figure
@@ -84,7 +84,7 @@ if isempty(files) || obj.recompute_ELO
         bayes_initial  = 0.5;
         t_set          = array2table(NaN(length(ids),1),'VariableNames',{'final'},'RowNames',ids);
 
-        t_set.name = obj.getSponsorName(ids);
+%         t_set.name = obj.getSponsorName(ids);
         t_set.t1   = NaN(length(ids),1);
         t_set{bill_yes_ids,'final'} = 1;
         t_set{bill_no_ids,'final'}  = 0;
@@ -93,19 +93,22 @@ if isempty(files) || obj.recompute_ELO
         % Calculate sponsor effect and set t1
         sponsor_specific = ones(length(sponsor_ids),1)*bayes_initial;
         sponsor_match = sponsor_ids(util.CStrAinBP(sponsor_ids,chamber_sponsor_matrix.Properties.VariableNames));
+        chamber_sponsor_matrix_fast = chamber_sponsor_matrix{sponsor_ids,sponsor_match};
         for i = 1:length(sponsor_ids)
             
-            if ismember(sponsor_ids{i},chamber_sponsor_matrix.Properties.RowNames)
-                sponsor_specific_effect = zeros(1,length(sponsor_match));
-                
-                for k = 1:length(sponsor_match)
-                    sponsor_specific_effect(k) = predict.getSpecificImpact(1,chamber_sponsor_matrix{sponsor_ids{i},sponsor_match{k}});
-                end
-                
-                sponsor_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
+            %             if ismember(sponsor_ids{i},chamber_sponsor_matrix.Properties.RowNames) % this seems to be unnecessary in this case, commenting out to save time.
+            sponsor_specific_effect = zeros(1,length(sponsor_match));
+            
+            for k = 1:length(sponsor_match)
+                sponsor_specific_effect(k) = predict.getSpecificImpact(1,chamber_sponsor_matrix_fast(i,k));
             end
+            
+            sponsor_specific(i) = prod(sponsor_specific_effect)*bayes_initial / (prod(sponsor_specific_effect)*bayes_initial + prod(1-sponsor_specific_effect)*(1-bayes_initial));
+            %             end
         end
+
         t_set{sponsor_ids,'t1'} = sponsor_specific;
+
  
         t_final_results   = t_set.final;
         legislator_id     = legislator_list(randperm(length(legislator_list)));
@@ -115,10 +118,24 @@ if isempty(files) || obj.recompute_ELO
         accuracy = zeros(1,length(legislator_id));
         
         t_count = 1;
+        
+        %---------NEW WAY
+        t_current = sprintf('t%i',t_count);
+        
+        % Pull out the values of the previous t_set
+        t_current_value = t_set.(t_current);
         for i = 1:length(legislator_id)
-            [~,~,~,accuracy(i)] = predict.updateBayes(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
+            [~,~,accuracy(i)] = predict.updateBayes(legislator_id{i},direction(i),t_current_value,chamber_specifics,t_count,ids,t_final_results);
         end
-
+        
+        t_set.(t_current) = t_current_value;
+        %---------NEW WAY END
+        
+        %---------OLD WAY
+        %         for i = 1:length(legislator_id)
+        %             [~,~,~,accuracy(i)] = predict.updateBayes_old(legislator_id{i},direction(i),t_set,chamber_specifics,t_count,ids,t_final_results);
+        %         end
+        %---------OLD WAY END
         
         % THIS IS WHERE ALL THE ELO SCORE STUFF HAPPENS
         % everything above this point is a copy paste (ugh, I know) from

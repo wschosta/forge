@@ -57,7 +57,7 @@ category_flag(empty_categories) = [];
 
 category_lengths = cellfun(@length,category_capture);
 
-fprintf('%s Competitive Bill Impact Analysis - %i MC\n',obj.state_ID,obj.elo_monte_carlo_number)
+fprintf('%s Competitive Bill Impact Analysis - %s - %i MC\n',obj.state_ID,chamber,obj.elo_monte_carlo_number)
 fprintf('Bill Category | Bill_count\n')
 fprintf('-------------------------------\n')
 for i = 1:length(category_flag)
@@ -146,6 +146,6 @@ for i = 1:length(category_flag)
     end
 end
 
-fprintf('Entire Set complete, total time %0.3f\n\n',toc(total_run_time))
+fprintf('Entire %s %s Set complete, total time %0.3f\n\n',obj.state_ID,chamber,toc(total_run_time))
 
 end
