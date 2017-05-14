@@ -54,6 +54,8 @@ classdef forge < handle
         predict_ELO
         recompute_ELO
         
+        
+        elo_monte_carlo_number % the numeber of monte carlo iterations for ELO prediction
         monte_carlo_number    % the number of monte carlo iterations
         committee_threshold   % threshold of members to differentiate between committees and the main chamber
         competitive_threshold % number of votes needed for a bill to considered to be competitive
