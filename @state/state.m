@@ -275,7 +275,7 @@ classdef state < forge
                     
                 house_elo_score = obj.eloMonteCarlo(house_bill_ids,category_flag,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
             
-                obj.elo_monte_carlo_number = 1000;
+                obj.elo_monte_carlo_number = 15000;
                     
                 house_elo_score = obj.eloMonteCarlo(house_bill_ids,category_flag,house_people,house_sponsor_chamber_matrix,house_chamber_matrix,'House'); %#ok<NASGU>
             
@@ -288,7 +288,7 @@ classdef state < forge
                     
                 senate_elo_score = obj.eloMonteCarlo(senate_bill_ids,category_flag,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
             
-                obj.elo_monte_carlo_number = 1000;
+                obj.elo_monte_carlo_number = 15000;
                     
                 senate_elo_score = obj.eloMonteCarlo(senate_bill_ids,category_flag,senate_people,senate_sponsor_chamber_matrix,senate_chamber_matrix,'Senate'); %#ok<NASGU>
                 
