@@ -83,18 +83,44 @@ for i = 1:length(category_flag)
     delete_str = '';
     
     elo_monte_carlo = cell(1,obj.elo_monte_carlo_number);
+        
+    run_time = tic;
+    
+%     variable_k = [];
+%     fixed_k = [];
+%     count = [];
+    
+    % TH
+    parfor j = 1:obj.elo_monte_carlo_number
+        MC_number = j;
+        util.setRandomSeed(j);
+        [elo_monte_carlo{j},~] = obj.eloPrediction(MC_flag,MC_number,category_flag(i),category_capture{i},chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,delete_str);
+        
+%         if isempty(variable_k)
+%             variable_k = elo_monte_carlo{j}.score_variable_k;
+%         else
+%             variable_k = variable_k + elo_monte_carlo{j}.score_variable_k;
+%         end
+%         
+%         if isempty(fixed_k)
+%             fixed_k = elo_monte_carlo{j}.score_fixed_k;
+%         else
+%             fixed_k = fixed_k + elo_monte_carlo{j}.score_fixed_k;
+%         end
+%         
+%         if isempty(count)
+%             count = elo_monte_carlo{j}.count;
+%         else
+%             count = count + elo_monte_carlo{j}.count;
+%         end
+    
+    end
     
     variable_k = [];
     fixed_k = [];
     count = [];
     
-    run_time = tic;
-    
     for j = 1:obj.elo_monte_carlo_number
-        MC_number = j;
-        util.setRandomSeed(j);
-        [elo_monte_carlo{j},delete_str] = obj.eloPrediction(MC_flag,MC_number,category_flag(i),category_capture{i},chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,delete_str);
-        
         if isempty(variable_k)
             variable_k = elo_monte_carlo{j}.score_variable_k;
         else
@@ -114,7 +140,7 @@ for i = 1:length(category_flag)
         end
     end
     
-    print_str = sprintf('%i Monte Carlo Iterations Complete!\n',MC_number);
+    print_str = sprintf('%i Monte Carlo Iterations Complete!\n',obj.elo_monte_carlo_number);
     fprintf([delete_str,print_str]);
     
     fprintf('FINISH ----- Category %i, elapsed time %0.3f\n\n',category_flag(i),toc(run_time))
