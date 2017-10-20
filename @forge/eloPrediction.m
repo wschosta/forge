@@ -162,8 +162,8 @@ if isempty(files) || obj.recompute_ELO
                 Ea = 1/(1+10^((score1(j) - score1(i))/400));
                 Eb = 1/(1+10^((score1(i) - score1(j))/400));
                 
-                Ka = 8000/(200*(count(i) < 200) + count(i)*(count(i) >= 200 && count(i) <=800) + 800*(count(i) > 80));
-                Kb = 8000/(200*(count(j) < 200) + count(j)*(count(j) >= 200 && count(j) <=800) + 800*(count(j) > 80));
+                Ka = 8000/(200*(count(i) < 200) + count(i)*(count(i) >= 200 && count(i) <=800) + 800*(count(i) > 800));
+                Kb = 8000/(200*(count(j) < 200) + count(j)*(count(j) >= 200 && count(j) <=800) + 800*(count(j) > 800));
                 
                 score1(i) = score1(i) + Ka*(Wa - Ea);
                 score1(j) = score1(j) + Kb*(Wb - Eb);
