@@ -152,23 +152,25 @@ for i = 1:length(category_flag)
     
     elo_score.score_fixed_k = fixed_k;
     elo_score.score_variable_k = variable_k;
+    elo_score.difference = elo_score.score_fixed_k - elo_score.score_variable_k;
     elo_score.count = count;
     
     elo_master{i} = elo_score;
     
-    if obj.elo_monte_carlo_number > 1
+    if MC_flag
         
         writetable(elo_score,sprintf('%s/MC/%s_elo_score_total_%i_mc%i.csv',obj.elo_directory,upper(chamber(1)),category_flag(i),obj.elo_monte_carlo_number),'WriteRowNames',true);
+        writetable(elo_score,sprintf('%s/%s_elo_score_total_%i_mc%i.csv',obj.elo_directory,upper(chamber(1)),category_flag(i),obj.elo_monte_carlo_number),'WriteRowNames',true);
         
         delete(sprintf('%s/MC/_*_%s_elo_prediction_%i.mat',obj.elo_directory,upper(chamber(1)),category_flag(i)))
         
         save(sprintf('%s/MC/%s_elo_prediction_total_%i_mc%i.mat',obj.elo_directory,upper(chamber(1)),category_flag(i),obj.elo_monte_carlo_number),'elo_score');
-    else
-        
-        writetable(elo_score,sprintf('%s/%s_elo_score_total_%i.csv',obj.elo_directory,upper(chamber(1)),category_flag(i)),'WriteRowNames',true);
-        
-        save(sprintf('%s/%s_elo_prediction_total_%i.mat',obj.elo_directory,upper(chamber(1)),category_flag(i)),'elo_score');
-        
+%     else % No need for an else because it saves out a file with each run
+%         
+%         writetable(elo_score,sprintf('%s/%s_elo_score_total_%i.csv',obj.elo_directory,upper(chamber(1)),category_flag(i)),'WriteRowNames',true);
+%         
+%         save(sprintf('%s/%s_elo_prediction_total_%i.mat',obj.elo_directory,upper(chamber(1)),category_flag(i)),'elo_score');
+%         
     end
 end
 
