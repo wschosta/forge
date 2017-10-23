@@ -67,12 +67,26 @@ for f = 1:length(file_locations)
         
         total_merge = join(read_file(b,:),merged_data(a,:));
         
+        if strcmp(state,'IN')
+            
+            people_file = readtable('data/IN/undergrad/people_2013-2014.xlsx');
+            people_file.district = [];
+            people_file.party = [];
+            
+            full_name = total_merge.name;
+            
+            a = util.CStrAinBP(people_file.name,full_name);
+            b = util.CStrAinBP(full_name,people_file.name);
+            
+            total_merge = join(total_merge(b,:),people_file(a,:));
+        end
+        
         writetable(total_merge,sprintf('data/%s/merged_data/%s.csv',state,files_to_match(i).name))
     end
     
 end
 
-print_str = sprintf('Finished!');
+print_str = sprintf('COMPLETE ');
 fprintf([delete_str,print_str]);
 
 toc(start_time)
