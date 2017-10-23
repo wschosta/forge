@@ -34,11 +34,11 @@ for i = 1:length(states)
     
     a = state(states{i});
     
-    a.recompute = false;
-    a.reprocess = false;
-    a.generate_outputs     = false;
-    a.predict_montecarlo   = false;
-    a.recompute_montecarlo = false;
+    a.recompute = true;
+    a.reprocess = true;
+    a.generate_outputs     = true;
+    a.predict_montecarlo   = true;
+    a.recompute_montecarlo = true;
     a.predict_ELO          = true;
     a.recompute_ELO        = true;
     

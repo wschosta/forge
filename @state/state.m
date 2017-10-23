@@ -94,7 +94,7 @@ classdef state < forge
             obj.show_warnings        = in.Results.show_warnings;
             
             [obj.senate_size, obj.house_size] = obj.state_properties();
-            obj.monte_carlo_number = 2500; % number of monte carlo iterations, determined by comparative analysis to be sufficient
+            obj.monte_carlo_number = 16000; % number of monte carlo iterations, determined by comparative analysis to be sufficient
             
             % Storage directroies
             obj.data_directory       = sprintf('data/%s',obj.state_ID);
