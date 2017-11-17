@@ -1,11 +1,10 @@
 function mergeData(state)
 
-merged_data = readtable(sprintf('finance_data/%s_merged_data.csv',state));
-merged_data.full_name = merged_data.name;
-merged_data.name = [];
+merged_data = readtable(sprintf('finance_data/%s_merged_data.csv',state),'Delimiter',',');
+merged_data.full_name = merged_data{:,1};
+merged_data(:,1) = [];
 merged_data.year = [];
 merged_data.district = [];
-merged_data.ID = [];
 
 % name_parts = regexp(merged_data.name,'[, ]','split');
 
@@ -81,7 +80,7 @@ for f = 1:length(file_locations)
             total_merge = join(total_merge(b,:),people_file(a,:));
         end
         
-        writetable(total_merge,sprintf('data/%s/merged_data/%s.csv',state,files_to_match(i).name))
+        writetable(total_merge,sprintf('data/%s/merged_data/%s',state,files_to_match(i).name))
     end
     
 end
