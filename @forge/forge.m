@@ -56,9 +56,9 @@ classdef forge < handle
         
         
         elo_monte_carlo_number % the numeber of monte carlo iterations for ELO prediction
-        monte_carlo_number    % the number of monte carlo iterations
-        committee_threshold   % threshold of members to differentiate between committees and the main chamber
-        competitive_threshold % number of votes needed for a bill to considered to be competitive
+        monte_carlo_number     % the number of monte carlo iterations
+        committee_threshold    % threshold of members to differentiate between committees and the main chamber
+        competitive_threshold  % number of votes needed for a bill to considered to be competitive
         
         JSON_read = false;
     end
@@ -97,6 +97,8 @@ classdef forge < handle
                     rollcalls_create.total_vote  = rollcalls_create.yea + rollcalls_create.nay;
                     rollcalls_create.yes_percent = rollcalls_create.yea ./ rollcalls_create.total_vote;
                     rollcalls_create.senate      = rollcalls_create.total_vote <= obj.senate_size; % THIS IS PROBLEMATIC - will bork with committees but it's the only way (that I can think of right now) to do it abstractable
+                    % ^^^^^^ THIS REALLY FUCKS UP COMMITTEES. NOT POSSIBLE
+                    % TO DO COMMITTEE ANALYSIS UNTIL THIS IS FIXED TODO
                     
                     % Read-in major information groups from the LegiscanData
                     sponsors_create = obj.readAllFilesOfSubject('sponsors',obj.state_ID);
@@ -332,7 +334,7 @@ classdef forge < handle
                         end
                         new_table = []; %#ok<NASGU>
                     else % if it doesn't exist, create it
-                        output = readtable(sprintf('%s/%s/csv/%s.csv',directory,list(i).name,type));
+                        output = readtable(sprintf('%s%s/csv/%s.csv',directory,list(i).name,type));
                         output.year = ones(height(output),1)*str2double(regexprep(list(i).name,'-(\d+)_.*',''));
                     end
                 end

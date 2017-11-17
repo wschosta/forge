@@ -91,10 +91,10 @@ for i = 1:length(category_flag)
 %     count = [];
     
     % TH
-    parfor j = 1:obj.elo_monte_carlo_number
+    for j = 1:obj.elo_monte_carlo_number
         MC_number = j;
         util.setRandomSeed(j);
-        [elo_monte_carlo{j},~] = obj.eloPrediction(MC_flag,MC_number,category_flag(i),category_capture{i},chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,delete_str);
+        [elo_monte_carlo{j},delete_str] = obj.eloPrediction(MC_flag,MC_number,category_flag(i),category_capture{i},chamber_people,chamber_sponsor_matrix,chamber_matrix,chamber,delete_str);
         
 %         if isempty(variable_k)
 %             variable_k = elo_monte_carlo{j}.score_variable_k;
