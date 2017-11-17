@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\Walter\Desktop\seniority_data_parse.log
+  log type:  text
+ opened on:  16 Nov 2017, 20:31:35
+
+. 
+. // program: seniority_data_parse.do
+. // task: parse out the seniority data for a given state (IN) from the massive 
+. //               dataset
+. // project: forge
+. // author: Walter Schostak
+. // 2017-11-16
+. 
+. version 13.1
+
+. clear all
+
+. set linesize 80
+
+. macro drop _all
+
+. 
+. // load the dataset
+. use finance_data13.dta
+
+. 
+. // use this to set the state
+. local state = "IN"
+
+. 
+. 
+. drop if won == 0
+(61978 observations deleted)
+
+. keep if election_state == "`state'" 
+(49943 observations deleted)
+
+. 
+. keep chamb thirdparty republican democratic election_year candidate cumulative
+
+. 
+. // drop other chamber (0 is lower chamber, 1 is upper chamber)
+. 
+. drop if chamb == 1
+(200 observations deleted)
+
+. sort election_year
+
+. 
+. // change to be the state
+. save "seniority_data_`state'.dta", replace
+file seniority_data_IN.dta saved
+
+. export delimited seniority_data_`state'.csv, replace
+file seniority_data_IN.csv saved
+
+. 
+end of do-file
+
