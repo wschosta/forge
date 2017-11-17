@@ -38,7 +38,7 @@ for j = 1:size(rollcalls,1)
         committee_votes(committee_vote_count) = obj.addRollcallVotes(rollcalls(j,:),specific_votes);
     else % full chamber
         % iterate the chamber vote count
-        chamber_vote_count                = chamber_vote_count +1;
+        chamber_vote_count                = chamber_vote_count + 1;
         
         % input the chamber vote into the structure
         chamber_votes(chamber_vote_count) = obj.addRollcallVotes(rollcalls(j,:),specific_votes);
