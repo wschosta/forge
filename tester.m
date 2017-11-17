@@ -22,7 +22,7 @@ fclose all; close all; clc; clear all;
 
 master = tic;
 
-states = {'WI' 'OR' 'IN'};
+states = {'IN'};
 
 errors = {};
 
