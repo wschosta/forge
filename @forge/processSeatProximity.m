@@ -18,6 +18,6 @@ dist = sqrt(bsxfun(@minus,x,x').^2 + bsxfun(@minus,y,y').^2);
 proximity_matrix      = array2table(dist,'RowNames',ids,'VariableNames',ids);
 
 % Add in the sponsor names to the table
-proximity_matrix.name = obj.getSponsorName(ids)';
+% proximity_matrix.name = obj.getSponsorName(ids)';
 
 end

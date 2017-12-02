@@ -54,6 +54,7 @@ classdef forge < handle
         predict_ELO
         recompute_ELO
         
+        generate_all_categories
         
         elo_monte_carlo_number % the numeber of monte carlo iterations for ELO prediction
         monte_carlo_number     % the number of monte carlo iterations

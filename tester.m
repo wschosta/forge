@@ -35,24 +35,24 @@ for i = 1:length(states)
     a = state(states{i});
     
     a.recompute = true;
-    a.reprocess = true;
+    a.reprocess = false;
     a.generate_outputs     = true;
-    a.predict_montecarlo   = true;
-    a.recompute_montecarlo = true;
-    a.predict_ELO          = true;
-    a.recompute_ELO        = true;
+    a.predict_montecarlo   = false;
+    a.recompute_montecarlo = false;
+    a.predict_ELO          = false;
+    a.recompute_ELO        = false;
     
-    try
+%     try
         a.run();
         
         fprintf('**************************************%s COMPLETE!**************************************\n',states{i})
         toc(state_time)
-    catch e
-        warning('ERROR: %s',e.message)
-        fprintf('**************************************%s FAILED!**************************************\n',states{i})
-        toc(state_time)
-        errors{end+1} = e; %#ok<SAGROW>
-    end
+%     catch e
+%         warning('ERROR: %s',e.message)
+%         fprintf('**************************************%s FAILED!**************************************\n',states{i})
+%         toc(state_time)
+%         errors{end+1} = e; %#ok<SAGROW>
+%     end
 end
 
 close all; fclose all;

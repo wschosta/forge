@@ -1,4 +1,4 @@
-function [chamber_matrix,chamber_votes,chamber_sponsor_matrix,chamber_sponsor_votes,committee_matrix,committee_votes,committee_sponsor_matrix,committee_sponsor_votes,consistency_matrix,bill_ids,republicans_chamber_votes,democrats_chamber_votes,republicans_chamber_sponsor,democrats_chamber_sponsor,republicans_committee_votes,democrats_committee_votes,democrats_committee_sponsor,republicans_committee_sponsor,seat_matrix] = processChamberVotes(obj,people,chamber)
+function [chamber_matrix,chamber_votes,chamber_sponsor_matrix,chamber_sponsor_votes,committee_matrix,committee_votes,committee_sponsor_matrix,committee_sponsor_votes,consistency_matrix,bill_ids,republicans_chamber_votes,democrats_chamber_votes,republicans_chamber_sponsor,democrats_chamber_sponsor,republicans_committee_votes,democrats_committee_votes,democrats_committee_sponsor,republicans_committee_sponsor,seat_matrix] = processChamberVotes(obj,people,chamber,category)
 % PROCESSCHAMBERVOTES
 % Take in the people matrix and the chamber infomraiton to
 % generate the specific information about the chamber
@@ -6,20 +6,28 @@ function [chamber_matrix,chamber_votes,chamber_sponsor_matrix,chamber_sponsor_vo
 % This allows it to be abstractable to both chambers
 chamber_data = sprintf('%s_data',chamber);
 
+if category == 0
+    category = [1:11];
+end
+
 % create the id strings
 ids = util.createIDstrings(people{:,'sponsor_id'});
 
+if length(unique(ids)) ~= length(ids)
+    error('ERROR: DUPLICATE IDS!')
+end
+
 % Initialize the people_matrix and possible_votes matrix
-[chamber_matrix, chamber_votes]                     = util.createTable(unique(ids),unique(ids),'NaN');
-[committee_matrix, committee_votes]                 = util.createTable(unique(ids),unique(ids),'NaN');
-[chamber_sponsor_matrix, chamber_sponsor_votes]     = util.createTable(unique(ids),unique(ids),'NaN');
-[committee_sponsor_matrix, committee_sponsor_votes] = util.createTable(unique(ids),unique(ids),'NaN');
+[chamber_matrix, chamber_votes]                     = util.createTable(ids,ids,'NaN');
+[committee_matrix, committee_votes]                 = util.createTable(ids,ids,'NaN');
+[chamber_sponsor_matrix, chamber_sponsor_votes]     = util.createTable(ids,ids,'NaN');
+[committee_sponsor_matrix, committee_sponsor_votes] = util.createTable(ids,ids,'NaN');
 
 % Create a table to keep track of the unique sponsorships
-sponsorship_counts = util.createTable(unique(ids),{'count'},'zero');
+sponsorship_counts = util.createTable(ids,{'count'},'zero');
 
 % Create a table to keep track of the unique sponsorships
-consistency_matrix = util.createTable(unique(ids),{'consistency' 'opportunity'},'zero');
+consistency_matrix = util.createTable(ids,{'consistency' 'opportunity'},'zero');
 
 % Set up the basic information to iterate over
 bill_keys       = cell2mat(obj.bill_set.keys);
@@ -34,6 +42,10 @@ for i = bill_keys
     print_str = sprintf('%i',i);
     fprintf([delete_str,print_str]);
     delete_str = repmat(sprintf('\b'),1,length(print_str));
+    
+    if ~any(obj.bill_set(i).issue_category == category)
+        continue
+    end
     
     % LIMITING CONDITIONS
     % yes percentage less than 85%
