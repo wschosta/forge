@@ -5,6 +5,7 @@ function generatePlots(show_warnings,outputs_directory,histogram_directory,peopl
 % each axis.
 
 if ~isempty(people_matrix) && size(people_matrix{:,:},1) > 1 && size(people_matrix{:,:},2) > 1
+    
     h = figure();
     hold on
     title(sprintf('%s %s',label_string,specific_label))
@@ -14,6 +15,8 @@ if ~isempty(people_matrix) && size(people_matrix{:,:},1) > 1 && size(people_matr
     axis square
     grid on
     surf(people_matrix{:,:})
+    colormap jet
+    caxis([0,1])
     colorbar
     
     % At an angle
