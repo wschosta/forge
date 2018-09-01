@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <notes />
+    <title>POWERS Act of 2017</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:18:00Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsju05</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T15:57:36Z</date>
+                </item>
+              </activities>
+              <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
     <laws />
-    <createDate>2017-01-04T07:01:09Z</createDate>
+    <updateDate>2018-08-28T19:57:28Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
@@ -21,57 +47,133 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
         <type>Committee</type>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
         <text>Referred to the House Committee on the Judiciary.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
         <committee>
           <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
         </committee>
         <links />
-        <actionCode>H11100</actionCode>
         <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <links />
         <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
         <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
         <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <committee />
         <links />
-        <actionCode>1000</actionCode>
         <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <identifiers>
+          <lisID>2156</lisID>
+          <gpoId />
+          <bioguideId>M001190</bioguideId>
+        </identifiers>
+        <bioguideId>M001190</bioguideId>
+        <lastName>Mullin</lastName>
+        <firstName>Markwayne</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>OK</state>
+        <district>2</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MULLIN:H.R. 41.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 1 of the U.S. Constitution states: Alllegislative powers herein granted shall be vested in aCongress of the United States, which shall consist of aSenate and House of Representatives.[Page H47]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>41</billNumber>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>POWERS Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Preventing Overreach Within the Executive Rulemaking System Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To amend title 5, United States Code, to require agencies to respond to comments from congressional committees about proposed rulemaking, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>POWERS Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>POWERS Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Preventing Overreach Within the Executive Rulemaking System Act of 2017</title>
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Government Operations and Politics</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Administrative law and regulatory procedures</name>
@@ -80,490 +182,413 @@
             <name>Congressional oversight</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:18:00Z</date>
-            </item>
-          </activities>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-12T15:57:36Z</date>
-                </item>
-              </activities>
-              <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
-              <systemCode>hsju05</systemCode>
-            </item>
-          </subcommittees>
-          <name>Judiciary Committee</name>
-          <type>Standing</type>
-          <systemCode>hsju00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
     <cosponsors>
       <item>
-        <middleName>W.</middleName>
-        <fullName>Rep. Allen, Rick W. [R-GA-12]</fullName>
-        <firstName>Rick</firstName>
-        <state>GA</state>
         <lastName>Allen</lastName>
+        <state>GA</state>
+        <firstName>Rick</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>12</district>
+        <fullName>Rep. Allen, Rick W. [R-GA-12]</fullName>
         <identifiers>
           <lisID>2239</lisID>
           <bioguideId>A000372</bioguideId>
           <gpoId />
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>12</district>
         <bioguideId>A000372</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>W.</middleName>
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Bishop, Rob [R-UT-1]</fullName>
-        <firstName>Rob</firstName>
-        <state>UT</state>
         <lastName>Bishop</lastName>
+        <state>UT</state>
+        <firstName>Rob</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Bishop, Rob [R-UT-1]</fullName>
         <identifiers>
           <bioguideId>B001250</bioguideId>
           <lisID>1753</lisID>
           <gpoId>8189</gpoId>
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>1</district>
         <bioguideId>B001250</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
-        <firstName>Tom</firstName>
-        <state>OK</state>
         <lastName>Cole</lastName>
+        <state>OK</state>
+        <firstName>Tom</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
         <identifiers>
-          <lisID>1742</lisID>
           <bioguideId>C001053</bioguideId>
           <gpoId>8112</gpoId>
+          <lisID>1742</lisID>
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
         <bioguideId>C001053</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
-        <firstName>Trent</firstName>
-        <state>AZ</state>
         <lastName>Franks</lastName>
-        <identifiers>
-          <bioguideId>F000448</bioguideId>
-          <lisID>1707</lisID>
-          <gpoId>7799</gpoId>
-        </identifiers>
+        <state>AZ</state>
+        <firstName>Trent</firstName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>8</district>
+        <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
+        <identifiers>
+          <lisID>1707</lisID>
+          <gpoId>7799</gpoId>
+          <bioguideId>F000448</bioguideId>
+        </identifiers>
         <bioguideId>F000448</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName>A.</middleName>
-        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
-        <firstName>Paul</firstName>
-        <state>AZ</state>
         <lastName>Gosar</lastName>
+        <state>AZ</state>
+        <firstName>Paul</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
         <identifiers>
-          <bioguideId>G000565</bioguideId>
           <lisID>1992</lisID>
           <gpoId>7798</gpoId>
+          <bioguideId>G000565</bioguideId>
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
         <bioguideId>G000565</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>A.</middleName>
       </item>
       <item>
-        <middleName>B.</middleName>
-        <fullName>Rep. Love, Mia B. [R-UT-4]</fullName>
-        <firstName>Mia</firstName>
-        <state>UT</state>
         <lastName>Love</lastName>
+        <state>UT</state>
+        <firstName>Mia</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Love, Mia B. [R-UT-4]</fullName>
         <identifiers>
-          <lisID>2271</lisID>
           <bioguideId>L000584</bioguideId>
+          <lisID>2271</lisID>
           <gpoId />
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
         <bioguideId>L000584</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>B.</middleName>
       </item>
       <item>
-        <middleName>D.</middleName>
-        <fullName>Rep. Lucas, Frank D. [R-OK-3]</fullName>
-        <firstName>FRANK</firstName>
-        <state>OK</state>
         <lastName>LUCAS</lastName>
-        <identifiers>
-          <gpoId>8111</gpoId>
-          <bioguideId>L000491</bioguideId>
-          <lisID>711</lisID>
-        </identifiers>
+        <state>OK</state>
+        <firstName>FRANK</firstName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>3</district>
+        <fullName>Rep. Lucas, Frank D. [R-OK-3]</fullName>
+        <identifiers>
+          <bioguideId>L000491</bioguideId>
+          <lisID>711</lisID>
+          <gpoId>8111</gpoId>
+        </identifiers>
         <bioguideId>L000491</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>D.</middleName>
       </item>
       <item>
-        <middleName>M.</middleName>
-        <fullName>Rep. Palazzo, Steven M. [R-MS-4]</fullName>
-        <firstName>Steven</firstName>
-        <state>MS</state>
         <lastName>Palazzo</lastName>
-        <identifiers>
-          <lisID>2035</lisID>
-          <bioguideId>P000601</bioguideId>
-          <gpoId>8022</gpoId>
-        </identifiers>
+        <state>MS</state>
+        <firstName>Steven</firstName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>4</district>
+        <fullName>Rep. Palazzo, Steven M. [R-MS-4]</fullName>
+        <identifiers>
+          <bioguideId>P000601</bioguideId>
+          <lisID>2035</lisID>
+          <gpoId>8022</gpoId>
+        </identifiers>
         <bioguideId>P000601</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>M.</middleName>
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
-        <firstName>Steve</firstName>
-        <state>OK</state>
         <lastName>Russell</lastName>
-        <identifiers>
-          <gpoId />
-          <lisID>2265</lisID>
-          <bioguideId>R000604</bioguideId>
-        </identifiers>
+        <state>OK</state>
+        <firstName>Steve</firstName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>5</district>
+        <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
+        <identifiers>
+          <lisID>2265</lisID>
+          <bioguideId>R000604</bioguideId>
+          <gpoId />
+        </identifiers>
         <bioguideId>R000604</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Westerman, Bruce [R-AR-4]</fullName>
-        <firstName>Bruce</firstName>
-        <state>AR</state>
         <lastName>Westerman</lastName>
+        <state>AR</state>
+        <firstName>Bruce</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Westerman, Bruce [R-AR-4]</fullName>
         <identifiers>
           <lisID>2224</lisID>
           <bioguideId>W000821</bioguideId>
           <gpoId />
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
         <bioguideId>W000821</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
-        <firstName>Tom</firstName>
-        <state>CA</state>
         <lastName>McClintock</lastName>
+        <state>CA</state>
+        <firstName>Tom</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
         <identifiers>
-          <bioguideId>M001177</bioguideId>
           <lisID>1908</lisID>
+          <bioguideId>M001177</bioguideId>
           <gpoId>7809</gpoId>
         </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
         <bioguideId>M001177</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
-        <firstName>Jason</firstName>
-        <state>UT</state>
         <lastName>Chaffetz</lastName>
-        <identifiers>
-          <gpoId>8191</gpoId>
-          <lisID>1956</lisID>
-          <bioguideId>C001076</bioguideId>
-        </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>3</district>
-        <bioguideId>C001076</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <middleName>S.</middleName>
-        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
-        <firstName>Ted</firstName>
-        <state>FL</state>
-        <lastName>Yoho</lastName>
-        <identifiers>
-          <bioguideId>Y000065</bioguideId>
-          <gpoId />
-          <lisID>2115</lisID>
-        </identifiers>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>3</district>
-        <bioguideId>Y000065</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <middleName />
-        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
+        <state>UT</state>
         <firstName>Jason</firstName>
-        <state>MO</state>
-        <lastName>Smith</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
         <identifiers>
-          <bioguideId>S001195</bioguideId>
-          <gpoId />
-          <lisID>2191</lisID>
+          <bioguideId>C001076</bioguideId>
+          <lisID>1956</lisID>
+          <gpoId>8191</gpoId>
         </identifiers>
+        <bioguideId>C001076</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Yoho</lastName>
+        <state>FL</state>
+        <firstName>Ted</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <identifiers>
+          <lisID>2115</lisID>
+          <gpoId />
+          <bioguideId>Y000065</bioguideId>
+        </identifiers>
+        <bioguideId>Y000065</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>S.</middleName>
+      </item>
+      <item>
+        <lastName>Smith</lastName>
+        <state>MO</state>
+        <firstName>Jason</firstName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>8</district>
+        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2191</lisID>
+          <bioguideId>S001195</bioguideId>
+        </identifiers>
         <bioguideId>S001195</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Loudermilk, Barry [R-GA-11]</fullName>
-        <firstName>Barry</firstName>
-        <state>GA</state>
         <lastName>Loudermilk</lastName>
-        <identifiers>
-          <lisID>2238</lisID>
-          <bioguideId>L000583</bioguideId>
-          <gpoId />
-        </identifiers>
+        <state>GA</state>
+        <firstName>Barry</firstName>
         <sponsorshipDate>2017-01-04</sponsorshipDate>
         <district>11</district>
+        <fullName>Rep. Loudermilk, Barry [R-GA-11]</fullName>
+        <identifiers>
+          <lisID>2238</lisID>
+          <gpoId />
+          <bioguideId>L000583</bioguideId>
+        </identifiers>
         <bioguideId>L000583</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName>JAMES</middleName>
-        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
-        <firstName>F.</firstName>
-        <state>WI</state>
         <lastName>SENSENBRENNER</lastName>
-        <identifiers>
-          <gpoId>8218</gpoId>
-          <bioguideId>S000244</bioguideId>
-          <lisID>1041</lisID>
-        </identifiers>
+        <state>WI</state>
+        <firstName>F.</firstName>
         <sponsorshipDate>2017-01-04</sponsorshipDate>
         <district>5</district>
+        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
+        <identifiers>
+          <lisID>1041</lisID>
+          <bioguideId>S000244</bioguideId>
+          <gpoId>8218</gpoId>
+        </identifiers>
         <bioguideId>S000244</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>JAMES</middleName>
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Harper, Gregg [R-MS-3]</fullName>
-        <firstName>Gregg</firstName>
-        <state>MS</state>
         <lastName>Harper</lastName>
-        <identifiers>
-          <lisID>1933</lisID>
-          <gpoId>8021</gpoId>
-          <bioguideId>H001045</bioguideId>
-        </identifiers>
+        <state>MS</state>
+        <firstName>Gregg</firstName>
         <sponsorshipDate>2017-01-04</sponsorshipDate>
         <district>3</district>
+        <fullName>Rep. Harper, Gregg [R-MS-3]</fullName>
+        <identifiers>
+          <gpoId>8021</gpoId>
+          <lisID>1933</lisID>
+          <bioguideId>H001045</bioguideId>
+        </identifiers>
         <bioguideId>H001045</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName>A.</middleName>
-        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
-        <firstName>Thomas</firstName>
-        <state>VA</state>
         <lastName>Garrett</lastName>
-        <identifiers>
-          <gpoId />
-          <lisID>2353</lisID>
-          <bioguideId>G000580</bioguideId>
-        </identifiers>
+        <state>VA</state>
+        <firstName>Thomas</firstName>
         <sponsorshipDate>2017-01-06</sponsorshipDate>
         <district>5</district>
+        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
+        <identifiers>
+          <lisID>2353</lisID>
+          <gpoId />
+          <bioguideId>G000580</bioguideId>
+        </identifiers>
         <bioguideId>G000580</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Byrne, Bradley [R-AL-1]</fullName>
-        <firstName>Bradley</firstName>
-        <state>AL</state>
         <lastName>Byrne</lastName>
+        <state>AL</state>
+        <firstName>Bradley</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Byrne, Bradley [R-AL-1]</fullName>
         <identifiers>
           <lisID>2197</lisID>
           <bioguideId>B001289</bioguideId>
           <gpoId />
         </identifiers>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <district>1</district>
         <bioguideId>B001289</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Kelly, Trent [R-MS-1]</fullName>
-        <firstName>Trent</firstName>
-        <state>MS</state>
         <lastName>Kelly</lastName>
+        <state>MS</state>
+        <firstName>Trent</firstName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Kelly, Trent [R-MS-1]</fullName>
         <identifiers>
           <bioguideId>K000388</bioguideId>
           <lisID>2294</lisID>
           <gpoId />
         </identifiers>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>1</district>
         <bioguideId>K000388</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <middleName />
-        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
-        <firstName>Glenn</firstName>
-        <state>WI</state>
         <lastName>Grothman</lastName>
-        <identifiers>
-          <gpoId />
-          <lisID>2276</lisID>
-          <bioguideId>G000576</bioguideId>
-        </identifiers>
+        <state>WI</state>
+        <firstName>Glenn</firstName>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <district>6</district>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
         <bioguideId>G000576</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
     </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
+    <calendarNumbers />
     <latestAction>
-      <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
       <actionDate>2017-01-12</actionDate>
       <links />
+      <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
     </latestAction>
-    <title>POWERS Act of 2017</title>
-    <sponsors>
-      <item>
-        <lastName>Mullin</lastName>
-        <bioguideId>M001190</bioguideId>
-        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
-        <byRequestType />
-        <firstName>Markwayne</firstName>
-        <identifiers>
-          <lisID>2156</lisID>
-          <bioguideId>M001190</bioguideId>
-          <gpoId />
-        </identifiers>
-        <party>R</party>
-        <state>OK</state>
-        <middleName />
-        <district>2</district>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>POWERS Act of 2017</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Preventing Overreach Within the Executive Rulemaking System Act of 2017</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title 5, United States Code, to require agencies to respond to comments from congressional committees about proposed rulemaking, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>POWERS Act of 2017</title>
-      </item>
-    </titles>
     <amendments />
-    <cboCostEstimates />
-    <policyArea>
-      <name>Government Operations and Politics</name>
-    </policyArea>
-    <calendarNumbers />
-    <billNumber>41</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <billType>HR</billType>
-    <updateDate>2017-01-17T17:01:14Z</updateDate>
-    <committeeReports />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Preventing Overreach Within the Executive Rulemaking System Act of 2017 or the POWERS Act of</strong> <b>2017</b></p> <p>This bill prohibits publication or service of a rule for 60 days following the date of the publication of the notice of proposed rulemaking for such rule. </p> <p>If, during such period, a House or Senate committee that has jurisdiction over the provision of law authorizing the rule submits written data, views, or arguments to the agency, it shall, within 10 days, publish a response in the Federal Register. (The period beginning on the date of such submission and ending on the date of such publication shall not count as part of the 60-day period during which publication or service of the rule is prohibited.)</p> <p>The 10-day response requirement shall not apply to a subsequent committee submission if the agency: (1) determines that such subsequent submission fails to address the content of such response or raises issues that were not raised in the initial submission or the response, and (2) notifies the committee of such determination.</p>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-24T22:18:18Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:09Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

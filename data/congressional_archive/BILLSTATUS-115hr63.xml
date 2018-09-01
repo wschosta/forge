@@ -1,41 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-17T18:01:22Z</updateDate>
-    <relatedBills />
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:21:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <name>Veterans' Affairs Committee</name>
-          <type>Standing</type>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-19</actionDate>
+      <text>Referred to the Subcommittee on Economic Opportunity.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:10Z</createDate>
+    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr10</systemCode>
+          <name>Economic Opportunity Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Economic Opportunity.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
           <systemCode>hsvr00</systemCode>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:21:05Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <name>Ways and Means Committee</name>
-          <type>Standing</type>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
           <systemCode>hswm00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <amendments />
-    <constitutionalAuthorityStatementText />
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>2</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -57,165 +127,136 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
+    <billNumber>63</billNumber>
+    <title>HERO Transition from Battlespace to Workplace Act of 2017</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JACKSON LEE:H.R. 63.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8, Clauses 1, 3, and 18 ofthe United States Constitution.[Page H48]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsvr00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr10</systemCode>
+              <activities>
+                <item>
+                  <date>2017-01-19T20:11:04Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Economic Opportunity Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:21:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <systemCode>hswm00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:21:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:57:47Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>J000032</bioguideId>
+        <identifiers>
+          <lisID>588</lisID>
+          <bioguideId>J000032</bioguideId>
+          <gpoId>8174</gpoId>
+        </identifiers>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>SHEILA</firstName>
+        <state>TX</state>
+        <lastName>JACKSON LEE</lastName>
+        <district>18</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
     <titles>
       <item>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
         <title>HERO Transition from Battlespace to Workplace Act of 2017</title>
-      </item>
-      <item>
         <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
         <chamberName />
-        <title>Helping to Encourage Real Opportunity for Veterans Transitioning from Battlespace to Workplace Act of 2017</title>
       </item>
       <item>
+        <title>Helping to Encourage Real Opportunity for Veterans Transitioning from Battlespace to Workplace Act of 2017</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>To amend the Internal Revenue Code of 1986 to provide a tax credit to encourage private employers to hire veterans, to amend title 38, United States Code, to clarify the reasonable efforts an employer may make under the Uniformed Services Employment and Reemployment Rights Act with respect to hiring veterans, and for other purposes.</title>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
         <chamberName />
-        <title>To amend the Internal Revenue Code of 1986 to provide a tax credit to encourage private employers to hire veterans, to amend title 38, United States Code, to clarify the reasonable efforts an employer may make under the Uniformed Services Employment and Reemployment Rights Act with respect to hiring veterans, and for other purposes.</title>
       </item>
       <item>
+        <title>HERO Transition from Battlespace to Workplace Act of 2017</title>
         <chamberCode />
         <titleType>Display Title</titleType>
         <parentTitleType />
         <chamberName />
+      </item>
+      <item>
         <title>HERO Transition from Battlespace to Workplace Act of 2017</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Helping to Encourage Real Opportunity for Veterans Transitioning from Battlespace to Workplace Act of 2017</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
       </item>
     </titles>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <lastName>JACKSON LEE</lastName>
-        <firstName>SHEILA</firstName>
-        <state>TX</state>
-        <party>D</party>
-        <bioguideId>J000032</bioguideId>
-        <middleName />
-        <identifiers>
-          <bioguideId>J000032</bioguideId>
-          <lisID>588</lisID>
-          <gpoId>8174</gpoId>
-        </identifiers>
-        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
-        <district>18</district>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <cosponsors />
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <billNumber>63</billNumber>
-    <createDate>2017-01-04T07:01:10Z</createDate>
+    <recordedVotes />
     <summaries>
       <billSummaries>
         <item>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
           <name>Introduced in House</name>
           <text><![CDATA[<p><strong>Helping to Encourage Real Opportunity for Veterans Transitioning from Battlespace to Workplace Act of 2017 or the HERO Transition from Battlespace to Workplace Act of 2017</strong></p> <p> This bill amends the Internal Revenue Code to allow employers a business-related tax credit for $1,000 times the number of veterans (not more than 25 in a taxable year) who begin work resulting from the efforts of a military relations manager.</p> <p>The bill: (1) deems as a reasonable effort of an employer to employ veterans, for purposes of veteran employment and reemployment programs, the designation of an employee as a military relations manager and the use of the military skills translator database (database for assisting veterans in relating military skills, experience, and training to civilian skills, experience, and training); and (2) defines a "military relations manager" as an expert in the process of transitioning from being a member of the Armed Forces to being a civilian and in translating the skills, experience, and training gained in the Armed Forces to skills, experience, and training needed in the private sector. </p> <p>The Department of Veterans Affairs shall: (1) ensure that the military skills translator database may be used by civilian employers, and (2) conduct outreach to inform civilian employers of such database.</p>]]></text>
+          <actionDate>2017-01-03</actionDate>
           <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
           <lastSummaryUpdateDate>2017-01-11T20:56:01Z</lastSummaryUpdateDate>
         </item>
       </billSummaries>
     </summaries>
-    <cboCostEstimates />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to House Veterans' Affairs</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <text>Referred to House Veterans' Affairs</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Veterans' Affairs Committee</name>
-          <systemCode>hsvr00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Referred to House Ways and Means</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <title>HERO Transition from Battlespace to Workplace Act of 2017</title>
-    <notes />
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

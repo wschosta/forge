@@ -1,198 +1,385 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-25</actionDate>
+      <text>Referred to the Subcommittee on Environment.</text>
+      <links />
+    </latestAction>
     <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Transportation and Public Works</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Aquatic ecology</name>
+          </item>
+          <item>
+            <name>Environmental assessment, monitoring, research</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Great Lakes</name>
+          </item>
+          <item>
+            <name>Hazardous wastes and toxic substances</name>
+          </item>
+          <item>
+            <name>Marine pollution</name>
+          </item>
+          <item>
+            <name>Michigan</name>
+          </item>
+          <item>
+            <name>Oil and gas</name>
+          </item>
+          <item>
+            <name>Pipelines</name>
+          </item>
+          <item>
+            <name>Seashores and lakeshores</name>
+          </item>
+          <item>
+            <name>Transportation safety and security</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+          <item>
+            <name>Wildlife conservation and habitat protection</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <laws />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
       <item>
+        <lastName>Trott</lastName>
+        <middleName>A.</middleName>
+        <bioguideId>T000475</bioguideId>
+        <fullName>Rep. Trott, David A. [R-MI-11]</fullName>
+        <identifiers>
+          <lisID>2250</lisID>
+          <bioguideId>T000475</bioguideId>
+          <gpoId />
+        </identifiers>
+        <byRequestType />
+        <state>MI</state>
+        <firstName>David</firstName>
+        <party>R</party>
+        <district>11</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-11</introducedDate>
+    <relatedBills />
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Dingell, Debbie [D-MI-12]</fullName>
+        <identifiers>
+          <bioguideId>D000624</bioguideId>
+          <lisID>2251</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Dingell</lastName>
+        <firstName>Debbie</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MI</state>
+        <district>12</district>
+        <bioguideId>D000624</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Bergman, Jack [R-MI-1]</fullName>
+        <identifiers>
+          <bioguideId>B001301</bioguideId>
+          <gpoId />
+          <lisID>2333</lisID>
+        </identifiers>
+        <lastName>Bergman</lastName>
+        <firstName>Jack</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MI</state>
+        <district>1</district>
+        <bioguideId>B001301</bioguideId>
+      </item>
+    </cosponsors>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>4</placeholderTextForH>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>2</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif18</systemCode>
+          <name>Environment and the Economy Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>hspw02</systemCode>
+          <name>Water Resources and Environment Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Water Resources and Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>hspw14</systemCode>
+          <name>Railroads, Pipelines, and Hazardous Materials Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Railroads, Pipelines, and Hazardous Materials.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>hspw07</systemCode>
+          <name>Coast Guard and Maritime Transportation Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Coast Guard and Maritime Transportation.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>H11100</actionCode>
         <committee>
           <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
         </committee>
-        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
         <type>IntroReferral</type>
-        <text>Referred to House Energy and Commerce</text>
-        <actionDate>2017-01-11</actionDate>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
-        <links />
       </item>
       <item>
-        <committee />
-        <actionCode>H11100-A</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <actionDate>2017-01-11</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <committee />
+        <text>Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
       </item>
       <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>H11100</actionCode>
         <committee>
           <systemCode>hspw00</systemCode>
           <name>Transportation and Infrastructure Committee</name>
         </committee>
-        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Transportation and Infrastructure, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
         <type>IntroReferral</type>
-        <text>Referred to House Transportation and Infrastructure</text>
-        <actionDate>2017-01-11</actionDate>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
-        <links />
       </item>
       <item>
-        <committee />
+        <actionDate>2017-01-11</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
         <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
-        <actionDate>2017-01-11</actionDate>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
-      <actionTypeCounts>
-        <billReferrals>2</billReferrals>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>9</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <relatedBills />
-    <latestAction>
-      <text>Referred to House Energy and Commerce</text>
-      <links />
-      <actionDate>2017-01-11</actionDate>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <title>To require the Secretary of Transportation to conduct a study on the economic and environmental risks to the Great Lakes of spills or leaks of oil, and for other purposes.</title>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To require the Secretary of Transportation to conduct a study on the economic and environmental risks to the Great Lakes of spills or leaks of oil, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To require the Secretary of Transportation to conduct a study on the economic and environmental risks to the Great Lakes of spills or leaks of oil, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-12T09:58:13Z</updateDate>
-    <billType>HR</billType>
-    <recordedVotes />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
           <type>Standing</type>
           <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-11T15:03:15Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <name>Environment and the Economy Subcommittee</name>
+              <systemCode>hsif18</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:39:14Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
         <item>
-          <chamber>House</chamber>
           <type>Standing</type>
           <name>Transportation and Infrastructure Committee</name>
+          <systemCode>hspw00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-11T15:03:10Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hspw00</systemCode>
+          <subcommittees>
+            <item>
+              <name>Water Resources and Environment Subcommittee</name>
+              <systemCode>hspw02</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T14:56:23Z</date>
+                </item>
+              </activities>
+            </item>
+            <item>
+              <name>Railroads, Pipelines, and Hazardous Materials Subcommittee</name>
+              <systemCode>hspw14</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T14:55:18Z</date>
+                </item>
+              </activities>
+            </item>
+            <item>
+              <name>Coast Guard and Maritime Transportation Subcommittee</name>
+              <systemCode>hspw07</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T14:38:59Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
-      <item>
-        <identifiers>
-          <lisID>2250</lisID>
-          <gpoId />
-          <bioguideId>T000475</bioguideId>
-        </identifiers>
-        <state>MI</state>
-        <bioguideId>T000475</bioguideId>
-        <lastName>Trott</lastName>
-        <middleName>A.</middleName>
-        <party>R</party>
-        <district>11</district>
-        <fullName>Rep. Trott, David A. [R-MI-11]</fullName>
-        <byRequestType />
-        <firstName>David</firstName>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-11</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
+    <updateDate>2018-08-28T19:59:26Z</updateDate>
+    <version>1.0.0</version>
+    <title>Preserve Our Lakes and Keep Our Environment Safe Act</title>
     <createDate>2017-01-12T04:45:50Z</createDate>
     <billNumber>458</billNumber>
-    <cosponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. TROTT:H.R. 458.Congress has the power to enactthis legislation pursuantto the following:Article I, Section 8[Page H392]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Transportation and Public Works</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-01-26T14:55:09Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Preserve Our Lakes and Keep Our Environment Safe Act</b></p> <p>This bill directs the Department of Transportation (DOT) to conduct a study to determine the economic and environmental risks of oil or hazardous liquids spills or leaks in the Straits of Mackinac that a failure of onshore, underwater pipeline facilities within the straits would pose to the Great Lakes.</p> <p>In addition, DOT must evaluate the condition and structural integrity of the facilities.</p> <p>DOT shall terminate operations of a facility upon a determination, based on such studies, that risk of hazard to life, property, or the environment warrants termination. </p>]]></text>
+          <actionDate>2017-01-11</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
       <item>
-        <firstName>Debbie</firstName>
-        <middleName />
-        <bioguideId>D000624</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Dingell, Debbie [D-MI-12]</fullName>
-        <identifiers>
-          <lisID>2251</lisID>
-          <gpoId />
-          <bioguideId>D000624</bioguideId>
-        </identifiers>
-        <lastName>Dingell</lastName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>MI</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>12</district>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Preserve Our Lakes and Keep Our Environment Safe Act</title>
+        <parentTitleType />
       </item>
-    </cosponsors>
-    <constitutionalAuthorityStatementText />
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require the Secretary of Transportation to conduct a study on the economic and environmental risks to the Great Lakes of spills or leaks of oil, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Preserve Our Lakes and Keep Our Environment Safe Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Preserve Our Lakes and Keep Our Environment Safe Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-04</introducedDate>
+    <committeeReports />
+    <updateDate>2018-08-28T19:58:39Z</updateDate>
     <laws />
-    <createDate>2017-01-05T04:47:33Z</createDate>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>Student Debt Repayment Fairness Act</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>To amend the Internal Revenue Code of 1986 to allow without penalty any 529 plan distributions used for student loan payments.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>Student Debt Repayment Fairness Act</title>
-      </item>
-    </titles>
+    <billType>HR</billType>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -45,126 +23,156 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <title>Student Debt Repayment Fairness Act</title>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. STEFANIK:H.R. 283.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8[Page H97]</pre>]]></constitutionalAuthorityStatementText>
-    <updateDate>2017-01-23T18:01:16Z</updateDate>
-    <cosponsors />
-    <sponsors>
-      <item>
-        <state>NY</state>
-        <bioguideId>S001196</bioguideId>
-        <party>R</party>
-        <middleName>M.</middleName>
-        <byRequestType />
-        <fullName>Rep. Stefanik, Elise M. [R-NY-21]</fullName>
-        <lastName>Stefanik</lastName>
-        <identifiers>
-          <bioguideId>S001196</bioguideId>
-          <gpoId />
-          <lisID>2263</lisID>
-        </identifiers>
-        <firstName>Elise</firstName>
-        <district>21</district>
-      </item>
-    </sponsors>
-    <congress>115</congress>
-    <notes />
-    <committeeReports />
-    <relatedBills />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>House</originChamber>
     <latestAction>
-      <actionDate>2017-01-04</actionDate>
       <text>Referred to the House Committee on Ways and Means.</text>
       <links />
+      <actionDate>2017-01-04</actionDate>
     </latestAction>
-    <calendarNumbers />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. STEFANIK:H.R. 283.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8[Page H97]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>283</billNumber>
     <committees>
       <billCommittees>
         <item>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
           <chamber>House</chamber>
-          <type>Standing</type>
+          <systemCode>hswm00</systemCode>
           <subcommittees />
+          <type>Standing</type>
+          <name>Ways and Means Committee</name>
           <activities>
             <item>
-              <date>2017-01-04T15:01:50Z</date>
               <name>Referred to</name>
+              <date>2017-01-04T15:01:50Z</date>
             </item>
           </activities>
         </item>
       </billCommittees>
     </committees>
-    <recordedVotes />
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
+    <introducedDate>2017-01-04</introducedDate>
+    <cosponsors />
+    <notes />
+    <relatedBills />
+    <title>Student Debt Repayment Fairness Act</title>
+    <sponsors>
       <item>
-        <actionCode>H11100</actionCode>
+        <district>21</district>
+        <fullName>Rep. Stefanik, Elise M. [R-NY-21]</fullName>
+        <firstName>Elise</firstName>
+        <lastName>Stefanik</lastName>
+        <state>NY</state>
+        <bioguideId>S001196</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <lisID>2263</lisID>
+          <bioguideId>S001196</bioguideId>
+          <gpoId />
+        </identifiers>
+        <byRequestType />
+        <middleName>M.</middleName>
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Student Debt Repayment Fairness Act</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To amend the Internal Revenue Code of 1986 to allow without penalty any 529 plan distributions used for student loan payments.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Student Debt Repayment Fairness Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Student Debt Repayment Fairness Act</title>
+      </item>
+    </titles>
+    <createDate>2017-01-05T04:47:33Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
         <committee>
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
         </committee>
-        <type>IntroReferral</type>
+        <actionDate>2017-01-04</actionDate>
         <links />
-        <text>Referred to the House Committee on Ways and Means.</text>
+        <actionCode>H11100</actionCode>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
       </item>
       <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-04</actionDate>
+        <links />
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <links />
-        <text>Introduced in House</text>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
       </item>
       <item>
-        <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <links />
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
       </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
     </actions>
     <summaries>
       <billSummaries>
         <item>
-          <lastSummaryUpdateDate>2017-01-23T17:31:54Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
           <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
           <text><![CDATA[<p><strong>Student Debt Repayment Fairness Act </strong></p> <p>This bill amends the Internal Revenue Code to allow penalty-free distributions from qualified tuition programs (i.e., 529 plans) to pay student loan indebtedness.</p>]]></text>
           <actionDate>2017-01-04</actionDate>
-          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-23T17:31:54Z</lastSummaryUpdateDate>
         </item>
       </billSummaries>
     </summaries>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <amendments />
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <originChamber>House</originChamber>
-    <billNumber>283</billNumber>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

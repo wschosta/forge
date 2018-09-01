@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <constitutionalAuthorityStatementText />
+    <sponsors>
+      <item>
+        <middleName />
+        <party>R</party>
+        <bioguideId>C001076</bioguideId>
+        <lastName>Chaffetz</lastName>
+        <firstName>Jason</firstName>
+        <state>UT</state>
+        <identifiers>
+          <bioguideId>C001076</bioguideId>
+          <lisID>1956</lisID>
+          <gpoId>8191</gpoId>
+        </identifiers>
+        <district>3</district>
+        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-06T04:57:25Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+      <links />
+      <actionDate>2017-01-05</actionDate>
+    </latestAction>
+    <billNumber>24</billNumber>
+    <notes />
+    <introducedDate>2017-01-05</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsed00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-05T15:01:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Education and the Workforce Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Government employee pay, benefits, personnel management</name>
@@ -17,150 +69,99 @@
             <name>State and local government operations</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Government Operations and Politics</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <actions>
-      <item>
-        <committee>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-        </committee>
-        <actionDate>2017-01-05</actionDate>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-05</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-05</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
     <policyArea>
       <name>Government Operations and Politics</name>
     </policyArea>
-    <notes />
-    <createDate>2017-01-06T04:57:25Z</createDate>
-    <title>Expressing the sense of the House of Representatives that the Federal Government should not bail out State and local government employee pension plans or other plans that provide post-employment benefits to State and local government retirees.</title>
-    <relatedBills />
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-09T14:31:14Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries>
-        <item>
-          <lastSummaryUpdateDate>2017-01-09T14:06:11Z</lastSummaryUpdateDate>
-          <updateDate>2017-01-05T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-05</actionDate>
-          <text><![CDATA[<p>Expresses the sense of the House of Representatives that: (1) the federal government should not bail out state and local government employee pension plans and other post-employment benefit plans; and (2) state and local governments should immediately institute reforms to their employee pension plans, including replacing defined benefit plans with defined contribution plans.</p>]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-05</introducedDate>
-    <billNumber>24</billNumber>
-    <amendments />
-    <billType>HRES</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-05T15:01:05Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <committee>
           <systemCode>hsed00</systemCode>
           <name>Education and the Workforce Committee</name>
-          <subcommittees />
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Chaffetz</lastName>
-        <state>UT</state>
-        <byRequestType />
-        <firstName>Jason</firstName>
-        <bioguideId>C001076</bioguideId>
-        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
-        <identifiers>
-          <lisID>1956</lisID>
-          <gpoId>8191</gpoId>
-          <bioguideId>C001076</bioguideId>
-        </identifiers>
-        <middleName />
-        <district>3</district>
-        <party>R</party>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
-    </sponsors>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <cosponsors />
     <titles>
       <item>
-        <chamberCode />
         <title>Expressing the sense of the House of Representatives that the Federal Government should not bail out State and local government employee pension plans or other plans that provide post-employment benefits to State and local government retirees.</title>
-        <parentTitleType />
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
       <item>
-        <chamberCode />
         <title>Expressing the sense of the House of Representatives that the Federal Government should not bail out State and local government employee pension plans or other plans that provide post-employment benefits to State and local government retirees.</title>
-        <parentTitleType />
+        <chamberCode />
         <titleType>Display Title</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
     </titles>
+    <updateDate>2018-08-28T19:53:45Z</updateDate>
+    <calendarNumbers />
+    <billType>HRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Expresses the sense of the House of Representatives that: (1) the federal government should not bail out state and local government employee pension plans and other post-employment benefit plans; and (2) state and local governments should immediately institute reforms to their employee pension plans, including replacing defined benefit plans with defined contribution plans.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-09T14:06:11Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Expressing the sense of the House of Representatives that the Federal Government should not bail out State and local government employee pension plans or other plans that provide post-employment benefits to State and local government retirees.</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,78 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <calendarNumbers />
+    <amendments />
+    <committeeReports />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>Expresses the sense of the House of Representatives that: (1) Associate Justice Clarence Thomas is a historically significant African-American who has made an important contribution to U.S. jurisprudence, and (2) his life and work should have a prominent place in the National Museum of African American History and Culture.</p> <ul> </ul>]]></text>
+          <lastSummaryUpdateDate>2017-02-02T20:13:31Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <latestTitle>Recognizing the historical importance of Associate Justice Clarence Thomas.</latestTitle>
+        <number>50</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-01-31</actionDate>
+        </latestAction>
+        <type>HRES</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-12</actionDate>
+      <text>Referred to the Committee on the Judiciary.</text>
+    </latestAction>
     <sponsors>
       <item>
+        <party>R</party>
+        <state>TX</state>
+        <bioguideId>C001056</bioguideId>
+        <middleName />
+        <lastName>Cornyn</lastName>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <firstName>John</firstName>
+        <byRequestType />
         <identifiers>
           <lisID>1692</lisID>
           <gpoId>8295</gpoId>
           <bioguideId>C001056</bioguideId>
         </identifiers>
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
-        <lastName>Cornyn</lastName>
-        <middleName />
-        <bioguideId>C001056</bioguideId>
-        <party>R</party>
-        <firstName>John</firstName>
-        <state>TX</state>
-        <byRequestType />
       </item>
     </sponsors>
+    <billNumber>13</billNumber>
+    <updateDate>2018-08-28T20:20:17Z</updateDate>
+    <cboCostEstimates />
+    <notes />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <introducedDate>2017-01-12</introducedDate>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Judges</name>
+          </item>
+          <item>
+            <name>Museums, exhibitions, cultural centers</name>
+          </item>
+          <item>
+            <name>Racial and ethnic relations</name>
+          </item>
+          <item>
+            <name>Supreme Court</name>
+          </item>
+          <item>
+            <name>U.S. history</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
     <billType>SRES</billType>
+    <originChamber>Senate</originChamber>
+    <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
+    <cosponsors>
+      <item>
+        <fullName>Sen. Hatch, Orrin G. [R-UT]</fullName>
+        <identifiers>
+          <lisID>1351</lisID>
+          <gpoId>8314</gpoId>
+          <bioguideId>H000338</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>HATCH</lastName>
+        <firstName>ORRIN</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>UT</state>
+        <party>R</party>
+        <middleName>GRANT</middleName>
+        <bioguideId>H000338</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Lee, Mike [R-UT]</fullName>
+        <identifiers>
+          <gpoId>8303</gpoId>
+          <lisID>2080</lisID>
+          <bioguideId>L000577</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Lee</lastName>
+        <firstName>Mike</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>UT</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>L000577</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Scott, Tim [R-SC]</fullName>
+        <identifiers>
+          <lisID>2056</lisID>
+          <bioguideId>S001184</bioguideId>
+          <gpoId>8141</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Scott</lastName>
+        <firstName>Tim</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>SC</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>S001184</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Cruz, Ted [R-TX]</fullName>
+        <identifiers>
+          <lisID>2175</lisID>
+          <gpoId />
+          <bioguideId>C001098</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Cruz</lastName>
+        <firstName>Ted</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>C001098</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <recordedVotes />
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
     <committees>
       <billCommittees>
         <item>
-          <chamber>Senate</chamber>
-          <name>Judiciary Committee</name>
-          <systemCode>ssju00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
           <activities>
             <item>
-              <date>2017-01-12T19:03:40Z</date>
               <name>Referred to</name>
+              <date>2017-01-12T19:03:40Z</date>
             </item>
           </activities>
+          <name>Judiciary Committee</name>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssju00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <billNumber>13</billNumber>
-    <cboCostEstimates />
-    <title>A resolution recognizing the historical importance of Associate Justice Clarence Thomas.</title>
-    <amendments />
     <actions>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <systemCode>ssju00</systemCode>
           <name>Judiciary Committee</name>
+          <systemCode>ssju00</systemCode>
         </committee>
         <links />
         <sourceSystem>
@@ -84,108 +221,23 @@
       </item>
       <item>
         <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
         <actionDate>2017-01-12</actionDate>
       </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-13T10:07:27Z</updateDate>
-    <createDate>2017-01-13T04:55:34Z</createDate>
-    <recordedVotes />
-    <introducedDate>2017-01-12</introducedDate>
+    <version>1.0.0</version>
     <congress>115</congress>
-    <committeeReports />
-    <laws />
-    <cosponsors>
-      <item>
-        <identifiers>
-          <bioguideId>H000338</bioguideId>
-          <gpoId>8314</gpoId>
-          <lisID>1351</lisID>
-        </identifiers>
-        <state>UT</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <bioguideId>H000338</bioguideId>
-        <lastName>HATCH</lastName>
-        <middleName>GRANT</middleName>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Sen. Hatch, Orrin G. [R-UT]</fullName>
-        <sponsorshipWithdrawnDate />
-        <firstName>ORRIN</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <lisID>2080</lisID>
-          <gpoId>8303</gpoId>
-          <bioguideId>L000577</bioguideId>
-        </identifiers>
-        <state>UT</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <bioguideId>L000577</bioguideId>
-        <lastName>Lee</lastName>
-        <middleName />
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Sen. Lee, Mike [R-UT]</fullName>
-        <sponsorshipWithdrawnDate />
-        <firstName>Mike</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <lisID>2056</lisID>
-          <gpoId>8141</gpoId>
-          <bioguideId>S001184</bioguideId>
-        </identifiers>
-        <state>SC</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <bioguideId>S001184</bioguideId>
-        <lastName>Scott</lastName>
-        <middleName />
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Sen. Scott, Tim [R-SC]</fullName>
-        <sponsorshipWithdrawnDate />
-        <firstName>Tim</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <lisID>2175</lisID>
-          <gpoId />
-          <bioguideId>C001098</bioguideId>
-        </identifiers>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <bioguideId>C001098</bioguideId>
-        <lastName>Cruz</lastName>
-        <middleName />
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Sen. Cruz, Ted [R-TX]</fullName>
-        <sponsorshipWithdrawnDate />
-        <firstName>Ted</firstName>
-      </item>
-    </cosponsors>
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <links />
-      <text>Referred to the Committee on the Judiciary.</text>
-      <actionDate>2017-01-12</actionDate>
-    </latestAction>
-    <policyArea />
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

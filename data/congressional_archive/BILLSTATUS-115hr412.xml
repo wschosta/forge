@@ -1,145 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <titles>
-      <item>
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Enlisted Legal Assistance Act</title>
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title 10, United States Code, to require the provision of legal assistance to junior enlisted personnel of the Armed Forces and their dependents in connection with their personal civil legal affairs.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Enlisted Legal Assistance Act</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <cosponsors />
-    <originChamber>House</originChamber>
-    <billType>HR</billType>
-    <notes />
-    <relatedBills />
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <links />
-        <actionDate>2017-01-10</actionDate>
-        <committee>
-          <systemCode>hsas00</systemCode>
-          <name>Armed Services Committee</name>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <text>Referred to the House Committee on Armed Services.</text>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <title>Enlisted Legal Assistance Act</title>
-    <sponsors>
-      <item>
-        <district>14</district>
-        <firstName>Brenda</firstName>
-        <identifiers>
-          <gpoId />
-          <lisID>2252</lisID>
-          <bioguideId>L000581</bioguideId>
-        </identifiers>
-        <middleName>L.</middleName>
-        <lastName>Lawrence</lastName>
-        <byRequestType />
-        <bioguideId>L000581</bioguideId>
-        <state>MI</state>
-        <party>D</party>
-        <fullName>Rep. Lawrence, Brenda L. [D-MI-14]</fullName>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <committeeReports />
-    <latestAction>
-      <actionDate>2017-01-10</actionDate>
-      <links />
-      <text>Referred to the House Committee on Armed Services.</text>
-    </latestAction>
-    <congress>115</congress>
-    <billNumber>412</billNumber>
-    <updateDate>2017-01-23T15:01:31Z</updateDate>
     <committees>
       <billCommittees>
         <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2017-02-21T19:06:15Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <systemCode>hsas02</systemCode>
+              <name>Military Personnel Subcommittee</name>
+            </item>
+          </subcommittees>
           <systemCode>hsas00</systemCode>
-          <chamber>House</chamber>
-          <type>Standing</type>
+          <name>Armed Services Committee</name>
           <activities>
             <item>
               <date>2017-01-10T15:02:25Z</date>
               <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <name>Armed Services Committee</name>
+          <type>Standing</type>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <laws />
     <recordedVotes />
+    <laws />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Enlisted Legal Assistance Act</strong></p> <p>This bill requires the Secretary of the military department concerned to provide personal civil legal assistance to: </p> <ul> <li>an active duty member of the Armed Forces in pay grades E-1 through E-5 and his or her dependents; and </li> <li>a survivor who was a dependent of the member at the time of the member's death, except that survivor eligibility shall be determined pursuant to regulations prescribed by the Secretary concerned.</li> </ul>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-02-04T17:36:08Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <actionDate>2017-01-10</actionDate>
+        </item>
+      </billSummaries>
     </summaries>
-    <amendments />
-    <policyArea />
-    <constitutionalAuthorityStatementText />
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Enlisted Legal Assistance Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend title 10, United States Code, to require the provision of legal assistance to junior enlisted personnel of the Armed Forces and their dependents in connection with their personal civil legal affairs.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Enlisted Legal Assistance Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Enlisted Legal Assistance Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <district>12</district>
+        <firstName>Bonnie</firstName>
+        <identifiers>
+          <bioguideId>W000822</bioguideId>
+          <lisID>2259</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>W000822</bioguideId>
+        <state>NJ</state>
+        <fullName>Rep. Watson Coleman, Bonnie [D-NJ-12]</fullName>
+        <party>D</party>
+        <lastName>Watson Coleman</lastName>
+        <sponsorshipDate>2017-02-27</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Military Personnel.</text>
+      <links />
+      <actionDate>2017-02-21</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:59:05Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 6 (Tuesday, January 10, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mrs. LAWRENCE:H.R. 412.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, clause 18--To make all Laws whichshall be necessary and proper for carrying into Execution theforegoing Powers, and all other Powers vested by thisConstitution in the Government of the United States, or inany Department or Officer thereof[Page H300]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>412</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Enlisted Legal Assistance Act</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-02-21</actionDate>
+        <committee>
+          <systemCode>hsas02</systemCode>
+          <name>Military Personnel Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Military Personnel.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Armed Services.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-10</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-10</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-10</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Lawyers and legal services</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <committeeReports />
     <introducedDate>2017-01-10</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>L000581</bioguideId>
+        <middleName>L.</middleName>
+        <byRequestType />
+        <fullName>Rep. Lawrence, Brenda L. [D-MI-14]</fullName>
+        <lastName>Lawrence</lastName>
+        <state>MI</state>
+        <district>14</district>
+        <party>D</party>
+        <identifiers>
+          <gpoId />
+          <lisID>2252</lisID>
+          <bioguideId>L000581</bioguideId>
+        </identifiers>
+        <firstName>Brenda</firstName>
+      </item>
+    </sponsors>
+    <notes />
     <createDate>2017-01-11T05:09:43Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,57 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <createDate>2017-01-04T07:01:10Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+    <titles>
       <item>
-        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <title>Veterans Healthcare Improvement Act</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To direct the Comptroller General of the United States to conduct reviews of certain budget requests of the President for the medical care accounts of the Department of Veterans Affairs.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Veterans Healthcare Improvement Act</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Veterans Healthcare Improvement Act</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+      <actionDate>2017-01-19</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. BROWNLEY of California:H.R. 101.Congress has the power to enact this legislation pursuantto the following:Article I, Section VIII of the U.S. Constitution[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsvr00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr03</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-19T20:14:48Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:20:45Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr03</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
         <links />
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
         <committee>
           <systemCode>hsvr00</systemCode>
           <name>Veterans' Affairs Committee</name>
         </committee>
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
       </item>
       <item>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
         <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
       <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
         <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
     </actions>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <party>D</party>
+        <bioguideId>B001285</bioguideId>
+        <identifiers>
+          <bioguideId>B001285</bioguideId>
+          <lisID>2106</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Brownley</lastName>
+        <district>26</district>
+        <middleName />
+        <firstName>Julia</firstName>
+        <byRequestType />
+        <state>CA</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:57:54Z</updateDate>
+    <billNumber>101</billNumber>
+    <title>Veterans Healthcare Improvement Act</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-04T07:01:10Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Veterans Healthcare Improvement Act</strong></p> <p> This bill requires the Comptroller General, for each of FY2018-FY2020, to: (1) review the budget requests for the Department of Veterans Affairs' Medical Services, Medical Support and Compliance, and Medical Facilities accounts contained in the President's budget request for that fiscal year; and (2) report review results to the congressional veterans, appropriations, and budget committees.]]></text>
+          <lastSummaryUpdateDate>2017-01-12T19:06:56Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <bioguideId>K000382</bioguideId>
+        <party>D</party>
+        <firstName>Ann</firstName>
+        <state>NH</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
+        <identifiers>
+          <lisID>2145</lisID>
+          <bioguideId>K000382</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
+        <district>2</district>
+        <lastName>Kuster</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -82,120 +230,6 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <name>Veterans' Affairs Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:20:45Z</date>
-            </item>
-          </activities>
-          <systemCode>hsvr00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>2</district>
-        <bioguideId>K000382</bioguideId>
-        <identifiers>
-          <lisID>2145</lisID>
-          <gpoId />
-          <bioguideId>K000382</bioguideId>
-        </identifiers>
-        <firstName>Ann</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
-        <state>NH</state>
-        <middleName>M.</middleName>
-        <lastName>Kuster</lastName>
-      </item>
-    </cosponsors>
-    <latestAction>
-      <text>Referred to the House Committee on Veterans' Affairs.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
-    <title>Veterans Healthcare Improvement Act</title>
-    <sponsors>
-      <item>
-        <lastName>Brownley</lastName>
-        <bioguideId>B001285</bioguideId>
-        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
-        <byRequestType />
-        <firstName>Julia</firstName>
-        <identifiers>
-          <bioguideId>B001285</bioguideId>
-          <gpoId />
-          <lisID>2106</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>CA</state>
-        <middleName />
-        <district>26</district>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <name>Introduced in House</name>
-          <text><![CDATA[<p><strong>Veterans Healthcare Improvement Act</strong></p> <p> This bill requires the Comptroller General, for each of FY2018-FY2020, to: (1) review the budget requests for the Department of Veterans Affairs' Medical Services, Medical Support and Compliance, and Medical Facilities accounts contained in the President's budget request for that fiscal year; and (2) report review results to the congressional veterans, appropriations, and budget committees.]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-12T19:06:56Z</lastSummaryUpdateDate>
-          <actionDate>2017-01-03</actionDate>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <notes />
-    <recordedVotes />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Veterans Healthcare Improvement Act</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <title>To direct the Comptroller General of the United States to conduct reviews of certain budget requests of the President for the medical care accounts of the Department of Veterans Affairs.</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <title>Veterans Healthcare Improvement Act</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-    </titles>
-    <amendments />
-    <cboCostEstimates />
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <calendarNumbers />
-    <billNumber>101</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <billType>HR</billType>
-    <updateDate>2017-01-17T21:01:30Z</updateDate>
-    <committeeReports />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

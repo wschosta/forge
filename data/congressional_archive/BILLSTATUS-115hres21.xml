@@ -1,100 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <originChamber>House</originChamber>
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links />
-        <committee>
-          <systemCode>hsas00</systemCode>
-          <name>Armed Services Committee</name>
-        </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Armed Services.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-    </actions>
+    <calendarNumbers />
+    <amendments />
+    <committeeReports />
     <constitutionalAuthorityStatementText />
-    <recordedVotes />
+    <laws />
     <summaries>
       <billSummaries>
         <item>
           <lastSummaryUpdateDate>2017-01-07T17:20:29Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <text><![CDATA[<p>Expresses the sense of the House of Representatives that: (1) the Commandant of the U.S. Marine Corps should issue a public document certifying that members of Fox Company of the Marine Special Operations Command were not at fault in the firefight on March 4, 2007, with enemy forces in Bati Kot District, Nangarhar Province, Afghanistan; and (2) Fox Company marines involved in such incident deserve to have their names cleared.</p>]]></text>
-          <actionDesc>Introduced in House</actionDesc>
           <actionDate>2017-01-03</actionDate>
+          <text><![CDATA[<p>Expresses the sense of the House of Representatives that: (1) the Commandant of the U.S. Marine Corps should issue a public document certifying that members of Fox Company of the Marine Special Operations Command were not at fault in the firefight on March 4, 2007, with enemy forces in Bati Kot District, Nangarhar Province, Afghanistan; and (2) Fox Company marines involved in such incident deserve to have their names cleared.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
           <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
         </item>
       </billSummaries>
     </summaries>
-    <billNumber>21</billNumber>
+    <relatedBills />
     <createDate>2017-01-04T07:01:08Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <committeeReports />
-    <calendarNumbers />
-    <laws />
-    <amendments />
-    <billType>HRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-02-21</actionDate>
+      <text>Referred to the Subcommittee on Emerging Threats and Capabilities.</text>
+    </latestAction>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>NC</state>
+        <bioguideId>J000255</bioguideId>
+        <middleName>B.</middleName>
+        <lastName>JONES</lastName>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <firstName>WALTER</firstName>
+        <district>3</district>
+        <byRequestType />
+        <identifiers>
+          <gpoId>8026</gpoId>
+          <lisID>612</lisID>
+          <bioguideId>J000255</bioguideId>
+        </identifiers>
+      </item>
+    </sponsors>
+    <billNumber>21</billNumber>
+    <updateDate>2018-08-28T19:53:45Z</updateDate>
+    <cboCostEstimates />
+    <notes />
     <titles>
       <item>
-        <chamberName />
-        <title>Expressing the sense of the House of Representatives regarding the firefight that occurred on March 4, 2007, between members of the United States Marine Corps and enemy forces in Bati Kot District, Nangarhar Province, Afghanistan.</title>
+        <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
         <chamberCode />
-        <parentTitleType />
+        <title>Expressing the sense of the House of Representatives regarding the firefight that occurred on March 4, 2007, between members of the United States Marine Corps and enemy forces in Bati Kot District, Nangarhar Province, Afghanistan.</title>
+        <chamberName />
       </item>
       <item>
-        <chamberName />
-        <title>Expressing the sense of the House of Representatives regarding the firefight that occurred on March 4, 2007, between members of the United States Marine Corps and enemy forces in Bati Kot District, Nangarhar Province, Afghanistan.</title>
+        <parentTitleType />
         <titleType>Display Title</titleType>
         <chamberCode />
-        <parentTitleType />
+        <title>Expressing the sense of the House of Representatives regarding the firefight that occurred on March 4, 2007, between members of the United States Marine Corps and enemy forces in Bati Kot District, Nangarhar Province, Afghanistan.</title>
+        <chamberName />
       </item>
     </titles>
+    <introducedDate>2017-01-03</introducedDate>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Armed Forces and National Security</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Afghanistan</name>
@@ -112,17 +84,110 @@
             <name>Military personnel and dependents</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <updateDate>2017-01-07T17:31:15Z</updateDate>
+    <billType>HRES</billType>
+    <originChamber>House</originChamber>
     <title>Expressing the sense of the House of Representatives regarding the firefight that occurred on March 4, 2007, between members of the United States Marine Corps and enemy forces in Bati Kot District, Nangarhar Province, Afghanistan.</title>
+    <cosponsors>
+      <item>
+        <firstName>Ruben</firstName>
+        <lastName>Gallego</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <bioguideId>G000574</bioguideId>
+        <district>7</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Gallego, Ruben [D-AZ-7]</fullName>
+        <state>AZ</state>
+        <party>D</party>
+        <identifiers>
+          <bioguideId>G000574</bioguideId>
+          <lisID>2226</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Jeff</firstName>
+        <lastName>Fortenberry</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-05-01</sponsorshipDate>
+        <bioguideId>F000449</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
+        <state>NE</state>
+        <party>R</party>
+        <identifiers>
+          <gpoId>8038</gpoId>
+          <lisID>1793</lisID>
+          <bioguideId>F000449</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Bill</firstName>
+        <lastName>Posey</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-03</sponsorshipDate>
+        <bioguideId>P000599</bioguideId>
+        <district>8</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>P000599</bioguideId>
+          <lisID>1915</lisID>
+          <gpoId>7887</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Scott</firstName>
+        <lastName>Perry</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2018-01-17</sponsorshipDate>
+        <bioguideId>P000605</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
+        <state>PA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2157</lisID>
+          <gpoId />
+          <bioguideId>P000605</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Emanuel</firstName>
+        <lastName>Cleaver</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2018-02-07</sponsorshipDate>
+        <bioguideId>C001061</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Cleaver, Emanuel [D-MO-5]</fullName>
+        <state>MO</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1790</lisID>
+          <bioguideId>C001061</bioguideId>
+          <gpoId>8013</gpoId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <recordedVotes />
     <policyArea>
       <name>Armed Forces and National Security</name>
     </policyArea>
-    <notes />
-    <congress>115</congress>
-    <relatedBills />
-    <cboCostEstimates />
     <committees>
       <billCommittees>
         <item>
@@ -132,38 +197,91 @@
               <date>2017-01-03T17:22:40Z</date>
             </item>
           </activities>
-          <name>Armed Services Committee</name>
           <chamber>House</chamber>
           <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
           <type>Standing</type>
-          <subcommittees />
+          <subcommittees>
+            <item>
+              <systemCode>hsas26</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-21T18:57:34Z</date>
+                </item>
+              </activities>
+              <name>Emerging Threats and Capabilities Subcommittee</name>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
+    <actions>
       <item>
-        <party>R</party>
-        <firstName>WALTER</firstName>
-        <middleName>B.</middleName>
-        <lastName>JONES</lastName>
-        <state>NC</state>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <district>3</district>
-        <byRequestType />
-        <identifiers>
-          <bioguideId>J000255</bioguideId>
-          <gpoId>8026</gpoId>
-          <lisID>612</lisID>
-        </identifiers>
-        <bioguideId>J000255</bioguideId>
+        <actionDate>2017-02-21</actionDate>
+        <committee>
+          <systemCode>hsas26</systemCode>
+          <name>Emerging Threats and Capabilities Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Emerging Threats and Capabilities.</text>
+        <type>Committee</type>
       </item>
-    </sponsors>
-    <latestAction>
-      <text>Referred to the House Committee on Armed Services.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
-    <cosponsors />
+      <item>
+        <text>Referred to the House Committee on Armed Services.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

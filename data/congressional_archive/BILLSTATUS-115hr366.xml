@@ -1,99 +1,535 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <billNumber>366</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>Emergency Management</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links>
+        <link>
+          <name>Public Law No: 115-38</name>
+          <url>https://www.congress.gov/bill/115th-congress/house-bill/366/text/pl</url>
+        </link>
+      </links>
+      <actionDate>2017-06-06</actionDate>
+      <text>Became Public Law No: 115-38.</text>
+    </latestAction>
+    <createDate>2017-01-07T04:48:26Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <becamePublicLaw>2</becamePublicLaw>
+        <resolvingDifferencesHouseActions>1</resolvingDifferencesHouseActions>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <voteOnHouseAgreeingToTheSenateAction>1</voteOnHouseAgreeingToTheSenateAction>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <sentToHouse>1</sentToHouse>
+        <passedSenate>1</passedSenate>
+        <placeholderTextForE>3</placeholderTextForE>
+        <lastSenateActionBeingConsideredByUnanimousConsent>1</lastSenateActionBeingConsideredByUnanimousConsent>
+        <motionToReconsiderResults>2</motionToReconsiderResults>
+        <referredToCommittee>1</referredToCommittee>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <orderedReported>1</orderedReported>
+        <billReferrals>1</billReferrals>
+        <generalDebate>1</generalDebate>
+        <reportedToSenate>2</reportedToSenate>
+        <presentedToPresident>1</presentedToPresident>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
       <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/366/text/pl</url>
+            <name>Public Law No: 115-38</name>
+          </link>
+        </links>
+        <type>President</type>
+        <actionDate>2017-06-06</actionDate>
+        <text>Became Public Law No: 115-38.</text>
+        <committee />
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
+        <actionCode>E40000</actionCode>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/366/text/pl</url>
+            <name>Public Law No: 115-38</name>
+          </link>
+        </links>
+        <type>BecameLaw</type>
+        <actionDate>2017-06-06</actionDate>
+        <text>Became Public Law No: 115-38.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>36000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>President</type>
+        <actionDate>2017-06-06</actionDate>
+        <text>Signed by President.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>E30000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>BecameLaw</type>
+        <actionDate>2017-06-06</actionDate>
+        <text>Signed by President.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>36000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>Floor</type>
+        <actionDate>2017-05-25</actionDate>
+        <text>Presented to President.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>E20000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>President</type>
+        <actionDate>2017-05-25</actionDate>
+        <text>Presented to President.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>28000</actionCode>
+      </item>
+      <item>
+        <links />
+        <actionTime>16:31:21</actionTime>
+        <actionDate>2017-05-23</actionDate>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H41931</actionCode>
+        <type>ResolvingDifferences</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4480</url>
+            <name>H4480</name>
+          </link>
+        </links>
+        <actionTime>16:31:20</actionTime>
+        <actionDate>2017-05-23</actionDate>
+        <text>On motion that the House agree to the Senate amendments Agreed to without objection. (text as House agreed to Senate Amendment: CR H4480)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H41610</actionCode>
+        <type>ResolvingDifferences</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4480</url>
+            <name>H4480</name>
+          </link>
+        </links>
+        <type>NotUsed</type>
+        <actionDate>2017-05-23</actionDate>
+        <text>Resolving differences -- House actions: On motion that the House agree to the Senate amendments Agreed to without objection.(text as House agreed to Senate Amendment: CR H4480)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>19500</actionCode>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4480</url>
+            <name>H4480</name>
+          </link>
+        </links>
+        <actionTime>16:30:51</actionTime>
+        <actionDate>2017-05-23</actionDate>
+        <text>Mr. McCaul asked unanimous consent to take from Speaker's Table and agree to the Senate amendments. (consideration: CR H4480)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H40110</actionCode>
+        <type>ResolvingDifferences</type>
+      </item>
+      <item>
+        <actionDate>2017-05-03</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-05-02</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S2683-2684</url>
+            <name>S2683-2684</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with amendments by Unanimous Consent. (consideration: CR S2683-2684; text: CR S2683-2684)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S2683-2684</url>
+            <name>S2683-2684</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <actionDate>2017-05-02</actionDate>
+        <text>Passed/agreed to in Senate: Passed Senate with amendments by Unanimous Consent.(consideration: CR S2683-2684; text: CR S2683-2684)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>17000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-04-24</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 41.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-04-24</actionDate>
+        <committee>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <systemCode>ssga00</systemCode>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/32</url>
+            <name>report No. 115-32</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Homeland Security and Governmental Affairs. Reported by Senator Johnson with amendments. With written report No. 115-32.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/32</url>
+            <name>report No. 115-32</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <actionDate>2017-04-24</actionDate>
+        <text>Committee on Homeland Security and Governmental Affairs. Reported by Senator Johnson with amendments. With written report No. 115-32.</text>
+        <committee>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <systemCode>ssga00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>14000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-03-15</actionDate>
+        <committee>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <systemCode>ssga00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Homeland Security and Governmental Affairs. Ordered to be reported with amendments favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-01</actionDate>
+        <committee>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <systemCode>ssga00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>15:39:28</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H38310</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H788-789</url>
+            <name>H788-789</name>
+          </link>
+        </links>
+        <actionTime>15:39:26</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H788-789)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H37300</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H788-789</url>
+            <name>H788-789</name>
+          </link>
+        </links>
+        <actionTime>15:39:26</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.(text: CR H788-789)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>8000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/366</url>
+            <name>H.R. 366</name>
+          </link>
+        </links>
+        <actionTime>15:32:41</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 366.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H788-789</url>
+            <name>H788-789</name>
+          </link>
+        </links>
+        <actionTime>15:32:39</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>Considered under suspension of the rules. (consideration: CR H788-789)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>15:32:31</actionTime>
+        <actionDate>2017-01-31</actionDate>
+        <text>Mr. Perry moved to suspend the rules and pass the bill.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30300</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Referred to the House Committee on Homeland Security.</text>
         <committee>
           <name>Homeland Security Committee</name>
           <systemCode>hshm00</systemCode>
         </committee>
-        <text>Referred to the House Committee on Homeland Security.</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <actionCode>H11100</actionCode>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
         <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <actionCode>Intro-H</actionCode>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
         <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <actionCode>1000</actionCode>
       </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>13</houseOfRepresentatives>
+        <senate>8</senate>
       </actionByCounts>
     </actions>
-    <amendments />
-    <cboCostEstimates />
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-07T04:48:26Z</createDate>
-    <latestAction>
-      <actionDate>2017-01-06</actionDate>
-      <text>Referred to the House Committee on Homeland Security.</text>
-      <links />
-    </latestAction>
+    <calendarNumbers>
+      <item>
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0041</number>
+      </item>
+    </calendarNumbers>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Emergency Management</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Computer security and identity theft</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Homeland Security</name>
+          </item>
+          <item>
+            <name>Employee performance</name>
+          </item>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>Government buildings, facilities, and property</name>
+          </item>
+          <item>
+            <name>Government employee pay, benefits, personnel management</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Motor vehicles</name>
+          </item>
+          <item>
+            <name>Public contracts and procurement</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <billNumber>366</billNumber>
     <title>DHS SAVE Act</title>
-    <sponsors>
-      <item>
-        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
-        <byRequestType />
-        <lastName>Perry</lastName>
-        <party>R</party>
-        <bioguideId>P000605</bioguideId>
-        <identifiers>
-          <lisID>2157</lisID>
-          <bioguideId>P000605</bioguideId>
-          <gpoId />
-        </identifiers>
-        <middleName />
-        <district>4</district>
-        <state>PA</state>
-        <firstName>Scott</firstName>
-      </item>
-    </sponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 4 (Friday, January 6, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. PERRY:H.R. 366.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 18--To make all Laws whichshall be necessary and proper for carrying into Execution theforegoing Powers, and all other Powers vested by thisConstitution in the Government of the United States or in anyDepartment of Officer thereof.[Page H195]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-04-24T21:05:02Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-03-15T16:00:34Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-02-01T23:29:36Z</date>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+          <systemCode>ssga00</systemCode>
+          <name>Homeland Security and Governmental Affairs Committee</name>
           <type>Standing</type>
-          <systemCode>hshm00</systemCode>
+          <subcommittees />
+        </item>
+        <item>
           <activities>
             <item>
               <name>Referred to</name>
@@ -101,89 +537,271 @@
             </item>
           </activities>
           <chamber>House</chamber>
+          <systemCode>hshm00</systemCode>
           <name>Homeland Security Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-23T14:01:28Z</updateDate>
-    <notes />
-    <recordedVotes />
-    <billType>HR</billType>
+    <cboCostEstimates>
+      <item>
+        <title>H.R. 366, DHS Stop Asset and Vehicle Excess Act</title>
+        <url>https://www.cbo.gov/publication/52578</url>
+        <pubDate>2017-04-06T15:04:52Z</pubDate>
+      </item>
+    </cboCostEstimates>
+    <version>1.0.0</version>
     <cosponsors>
       <item>
-        <lastName>McCaul</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-06</sponsorshipDate>
-        <bioguideId>M001157</bioguideId>
         <party>R</party>
+        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
         <identifiers>
-          <lisID>1804</lisID>
           <bioguideId>M001157</bioguideId>
+          <lisID>1804</lisID>
           <gpoId>8166</gpoId>
         </identifiers>
-        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
-        <district>10</district>
-        <state>TX</state>
-        <middleName>T.</middleName>
+        <lastName>McCaul</lastName>
         <firstName>Michael</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>T.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>10</district>
+        <bioguideId>M001157</bioguideId>
       </item>
       <item>
-        <lastName>Watson Coleman</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-06</sponsorshipDate>
-        <bioguideId>W000822</bioguideId>
         <party>D</party>
+        <fullName>Rep. Watson Coleman, Bonnie [D-NJ-12]</fullName>
         <identifiers>
-          <lisID>2259</lisID>
           <bioguideId>W000822</bioguideId>
+          <lisID>2259</lisID>
           <gpoId />
         </identifiers>
-        <fullName>Rep. Watson Coleman, Bonnie [D-NJ-12]</fullName>
-        <district>12</district>
-        <state>NJ</state>
-        <middleName />
+        <lastName>Watson Coleman</lastName>
         <firstName>Bonnie</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>NJ</state>
+        <district>12</district>
+        <bioguideId>W000822</bioguideId>
       </item>
     </cosponsors>
-    <relatedBills />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <updateDate>2018-08-28T19:58:57Z</updateDate>
+    <laws>
+      <item>
+        <type>Public Law</type>
+        <number>115-38</number>
+      </item>
+    </laws>
+    <originChamber>House</originChamber>
     <introducedDate>2017-01-06</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>P000605</bioguideId>
+        <identifiers>
+          <lisID>2157</lisID>
+          <bioguideId>P000605</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Scott</firstName>
+        <state>PA</state>
+        <lastName>Perry</lastName>
+        <district>4</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-32</citation>
+      </committeeReport>
+    </committeeReports>
     <titles>
       <item>
-        <title>DHS SAVE Act</title>
+        <parentTitleType>Short Title</parentTitleType>
+        <titleType>Short Titles as Enacted</titleType>
         <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
+        <title>DHS SAVE Act</title>
         <chamberName />
       </item>
       <item>
+        <parentTitleType>Short Title</parentTitleType>
+        <titleType>Short Titles as Enacted</titleType>
+        <chamberCode />
         <title>DHS Stop Asset and Vehicle Excess Act</title>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
         <chamberName />
       </item>
       <item>
-        <title>To amend the Homeland Security Act of 2002 to direct the Under Secretary for Management of the Department of Homeland Security to make certain improvements in managing the Department's vehicle fleet, and for other purposes.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName>Senate</chamberName>
       </item>
       <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
         <title>DHS SAVE Act</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>DHS SAVE Act</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>DHS SAVE Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
         <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>DHS SAVE Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To amend the Homeland Security Act of 2002 to direct the Under Secretary for Management of the Department of Homeland Security to make certain improvements in managing the Department's vehicle fleet, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>DHS SAVE Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>DHS SAVE Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>DHS SAVE Act</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>DHS SAVE Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>DHS Stop Asset and Vehicle Excess Act</title>
         <chamberName />
       </item>
     </titles>
-    <policyArea />
-    <calendarNumbers />
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-02-04T16:20:44Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-06</actionDate>
+          <text><![CDATA[<p><strong>DHS Stop Asset and Vehicle Excess Act or the DHS SAVE Act</strong></p> <p> This bill amends the Homeland Security Act of 2002 to make the Under Secretary for Management of the Department of Homeland Security (DHS) responsible for overseeing and managing vehicle fleets throughout DHS, including:</p> <ul> <li>ensuring that DHS components are in compliance with federal law, executive branch guidance, and DHS policy regarding fleet management and use of vehicles from home to work;</li> <li>developing and distributing a standardized vehicle allocation methodology and fleet management plan;</li> <li>ensuring that components formally document fleet management decisions; and </li> <li>approving component fleet management plans, vehicle leases, and vehicle acquisitions.</li> </ul> <p>The bill lists responsibilities of component heads regarding vehicle fleets, including developing and annually submitting to the Under Secretary a vehicle allocation tool and fleet management plan.</p> <p>The Under Secretary shall:</p> <ul> <li> collect, on a quarterly basis, information regarding component vehicle fleets;</li> <li> seek to achieve a capability to collect automated information regarding component vehicle fleets; </li> <li> track and monitor component information, and review each component's vehicle allocation tool and fleet management plan, to ensure that component vehicle fleets are the optimal size and are cost effective; </li> <li>provide guidance on how component heads may achieve optimal fleet size; and </li> <li>as part of the annual budget process, review and make determinations regarding annual component requests for vehicle fleet funding.</li> </ul> <p>Beginning with FY2019, the Under Secretary and component heads may not approve a vehicle lease, acquisition, or replacement request, no DHS official with vehicle fleet management responsibilities may receive annual performance compensation in pay, and no senior executive service official of DHS whose office has a vehicle fleet may receive access to a car service, if such officials did not comply with vehicle allocation tool and fleet management plan requirements in the prior fiscal year.</p> <p>The Under Secretary may determine the feasibility of operating a vehicle motor pool to permit components to share vehicles to reduce the number of excess DHS vehicles.</p> <p>The Governmental Accountability Office must report on:</p> <ul> <li>efforts to achieve a capability to collect automated information regarding component vehicle fleets, and </li> <li>the extent to which the Under Secretary addresses security concerns and reports on vehicle fleet event data recorder data.</li> </ul> <p>The Inspector General of DHS shall review implementation of vehicle allocation tool and fleet management plan requirements for FY2018 and FY2020 and report on the effectiveness of such requirements with respect to cost avoidance, savings realized, and component operations.</p>]]></text>
+          <updateDate>2017-01-06T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-03-15T20:16:58Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-31</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><strong>DHS Stop Asset and Vehicle Excess Act or the DHS SAVE Act</strong></p> <p> (Sec. 2) This bill amends the Homeland Security Act of 2002 to make the Under Secretary for Management of the Department of Homeland Security (DHS) responsible for overseeing and managing vehicle fleets throughout DHS, including:</p> <ul> <li>ensuring that DHS components are in compliance with federal law, executive branch guidance, and DHS policy regarding fleet management and use of vehicles from home to work;</li> <li>developing and distributing a standardized vehicle allocation methodology and fleet management plan;</li> <li>ensuring that components formally document fleet management decisions; and </li> <li>approving component fleet management plans, vehicle leases, and vehicle acquisitions.</li> </ul> <p>The bill lists responsibilities of component heads regarding vehicle fleets, including developing and annually submitting to the Under Secretary a vehicle allocation tool and fleet management plan.</p> <p>The Under Secretary shall:</p> <ul> <li> collect, on a quarterly basis, information regarding component vehicle fleets;</li> <li> seek to achieve a capability to collect automated information regarding component vehicle fleets; </li> <li> track and monitor component information, and review each component's vehicle allocation tool and fleet management plan, to ensure that component vehicle fleets are the optimal size and are cost effective; </li> <li>provide guidance on how component heads may achieve optimal fleet size; and </li> <li>as part of the annual budget process, review and make determinations regarding annual component requests for vehicle fleet funding.</li> </ul> <p>Beginning with FY2019, the Under Secretary and component heads may not approve a vehicle lease, acquisition, or replacement request, no DHS official with vehicle fleet management responsibilities may receive annual performance compensation in pay, and no senior executive service official of DHS whose office has a vehicle fleet may receive access to a car service, if such officials did not comply with vehicle allocation tool and fleet management plan requirements in the prior fiscal year.</p> <p>The Under Secretary may determine the feasibility of operating a vehicle motor pool to permit components to share vehicles to reduce the number of excess DHS vehicles.</p> <p>(Sec. 3) The Governmental Accountability Office must report on:</p> <ul> <li>efforts to achieve a capability to collect automated information regarding component vehicle fleets, and </li> <li>the extent to which the Under Secretary addresses security concerns and reports on vehicle fleet event data recorder data.</li> </ul> <p>The Inspector General of DHS shall review implementation of vehicle allocation tool and fleet management plan requirements for FY2018 and FY2020 and report on the effectiveness of such requirements with respect to cost avoidance, savings realized, and component operations.</p>]]></text>
+          <updateDate>2017-01-31T13:40:41Z</updateDate>
+          <name>Passed House without amendment</name>
+          <versionCode>81</versionCode>
+          <actionDesc>Passed House without amendment</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-06-23T20:48:32Z</lastSummaryUpdateDate>
+          <actionDate>2017-04-24</actionDate>
+          <text><![CDATA[<p><strong>DHS Stop Asset and Vehicle Excess Act or the DHS SAVE Act</strong></p> <p> (Sec. 2) This bill amends the Homeland Security Act of 2002 to make the Under Secretary for Management of the Department of Homeland Security (DHS) responsible for overseeing and managing vehicle fleets throughout DHS, including:</p> <ul> <li>ensuring that DHS components are in compliance with federal law, executive branch guidance, and DHS policy regarding fleet management and use of vehicles from home to work;</li> <li>developing and distributing a standardized vehicle allocation methodology and fleet management plan;</li> <li>ensuring that components formally document fleet management decisions; and </li> <li>approving component fleet management plans, vehicle leases, and vehicle acquisitions.</li> </ul> <p>The bill lists responsibilities of component heads regarding vehicle fleets, including developing and annually submitting to the Under Secretary a vehicle allocation tool and fleet management plan.</p> <p>The Under Secretary shall:</p> <ul> <li> collect, on a quarterly basis, information regarding component vehicle fleets;</li> <li> seek to achieve a capability to collect automated information regarding component vehicle fleets; </li> <li> track and monitor component information, and review each component's vehicle allocation tool and fleet management plan, to ensure that component vehicle fleets are the optimal size and are cost effective; </li> <li>provide guidance on how component heads may achieve optimal fleet size; and </li> <li>as part of the annual budget process, review and make determinations regarding annual component requests for vehicle fleet funding.</li> </ul> <p>Beginning with FY2019, the Under Secretary and component heads may not approve a vehicle lease, acquisition, or replacement request, no DHS official with vehicle fleet management responsibilities may receive annual performance compensation in pay, and no senior executive service official of DHS whose office has a vehicle fleet may receive access to a car service, if such officials did not comply with vehicle allocation tool and fleet management plan requirements in the prior fiscal year.</p> <p>The Under Secretary may determine the feasibility of operating a vehicle motor pool to permit components to share vehicles to reduce the number of excess DHS vehicles.</p> <p>(Sec. 3) The Inspector General of DHS shall: (1) conduct a review of implementation of vehicle allocation tool and fleet management plan requirements for FY2019, which shall include analysis of the effectiveness of such requirements with respect to cost avoidance, savings realized, and component operations; and (2) upon request, provide to specified congressional committees information regarding such review.</p>]]></text>
+          <updateDate>2017-04-24T13:04:04Z</updateDate>
+          <name>Reported to Senate with amendment(s)</name>
+          <versionCode>01</versionCode>
+          <actionDesc>Reported to Senate with amendment(s)</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-06-23T20:54:47Z</lastSummaryUpdateDate>
+          <actionDate>2017-05-02</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was reported to the Senate on April 24, 2017. The summary of that version is repeated here.)</p> <p><strong>DHS Stop Asset and Vehicle Excess Act or the DHS SAVE Act</strong></p> <p> (Sec. 2) This bill amends the Homeland Security Act of 2002 to make the Under Secretary for Management of the Department of Homeland Security (DHS) responsible for overseeing and managing vehicle fleets throughout DHS, including:</p> <ul> <li>ensuring that DHS components are in compliance with federal law, executive branch guidance, and DHS policy regarding fleet management and use of vehicles from home to work;</li> <li>developing and distributing a standardized vehicle allocation methodology and fleet management plan;</li> <li>ensuring that components formally document fleet management decisions; and </li> <li>approving component fleet management plans, vehicle leases, and vehicle acquisitions.</li> </ul> <p>The bill lists responsibilities of component heads regarding vehicle fleets, including developing and annually submitting to the Under Secretary a vehicle allocation tool and fleet management plan.</p> <p>The Under Secretary shall:</p> <ul> <li> collect, on a quarterly basis, information regarding component vehicle fleets;</li> <li> seek to achieve a capability to collect automated information regarding component vehicle fleets; </li> <li> track and monitor component information, and review each component's vehicle allocation tool and fleet management plan, to ensure that component vehicle fleets are the optimal size and are cost effective; </li> <li>provide guidance on how component heads may achieve optimal fleet size; and </li> <li>as part of the annual budget process, review and make determinations regarding annual component requests for vehicle fleet funding.</li> </ul> <p>Beginning with FY2019, the Under Secretary and component heads may not approve a vehicle lease, acquisition, or replacement request, no DHS official with vehicle fleet management responsibilities may receive annual performance compensation in pay, and no senior executive service official of DHS whose office has a vehicle fleet may receive access to a car service, if such officials did not comply with vehicle allocation tool and fleet management plan requirements in the prior fiscal year.</p> <p>The Under Secretary may determine the feasibility of operating a vehicle motor pool to permit components to share vehicles to reduce the number of excess DHS vehicles.</p> <p>(Sec. 3) The Inspector General of DHS shall: (1) conduct a review of implementation of vehicle allocation tool and fleet management plan requirements for FY2019, which shall include analysis of the effectiveness of such requirements with respect to cost avoidance, savings realized, and component operations; and (2) upon request, provide to specified congressional committees information regarding such review.</p>]]></text>
+          <updateDate>2017-05-02T12:23:41Z</updateDate>
+          <name>Passed Senate amended</name>
+          <versionCode>35</versionCode>
+          <actionDesc>Passed Senate amended</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-06-23T20:55:15Z</lastSummaryUpdateDate>
+          <actionDate>2017-06-06</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was reported to the Senate on April 24, 2017. The summary of that version is repeated here.)</p> <p><strong>DHS Stop Asset and Vehicle Excess Act or the DHS SAVE Act</strong></p> <p> (Sec. 2) This bill amends the Homeland Security Act of 2002 to make the Under Secretary for Management of the Department of Homeland Security (DHS) responsible for overseeing and managing vehicle fleets throughout DHS, including:</p> <ul> <li>ensuring that DHS components are in compliance with federal law, executive branch guidance, and DHS policy regarding fleet management and use of vehicles from home to work;</li> <li>developing and distributing a standardized vehicle allocation methodology and fleet management plan;</li> <li>ensuring that components formally document fleet management decisions; and </li> <li>approving component fleet management plans, vehicle leases, and vehicle acquisitions.</li> </ul> <p>The bill lists responsibilities of component heads regarding vehicle fleets, including developing and annually submitting to the Under Secretary a vehicle allocation tool and fleet management plan.</p> <p>The Under Secretary shall:</p> <ul> <li> collect, on a quarterly basis, information regarding component vehicle fleets;</li> <li> seek to achieve a capability to collect automated information regarding component vehicle fleets; </li> <li> track and monitor component information, and review each component's vehicle allocation tool and fleet management plan, to ensure that component vehicle fleets are the optimal size and are cost effective; </li> <li>provide guidance on how component heads may achieve optimal fleet size; and </li> <li>as part of the annual budget process, review and make determinations regarding annual component requests for vehicle fleet funding.</li> </ul> <p>Beginning with FY2019, the Under Secretary and component heads may not approve a vehicle lease, acquisition, or replacement request, no DHS official with vehicle fleet management responsibilities may receive annual performance compensation in pay, and no senior executive service official of DHS whose office has a vehicle fleet may receive access to a car service, if such officials did not comply with vehicle allocation tool and fleet management plan requirements in the prior fiscal year.</p> <p>The Under Secretary may determine the feasibility of operating a vehicle motor pool to permit components to share vehicles to reduce the number of excess DHS vehicles.</p> <p>(Sec. 3) The Inspector General of DHS shall: (1) conduct a review of implementation of vehicle allocation tool and fleet management plan requirements for FY2019, which shall include analysis of the effectiveness of such requirements with respect to cost avoidance, savings realized, and component operations; and (2) upon request, provide to specified congressional committees information regarding such review.</p>]]></text>
+          <updateDate>2017-06-07T03:59:58Z</updateDate>
+          <name>Public Law</name>
+          <versionCode>49</versionCode>
+          <actionDesc>Public Law</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

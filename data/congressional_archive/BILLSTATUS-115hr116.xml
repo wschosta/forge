@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+      <text>Referred to the House Committee on Ways and Means.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <notes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -16,62 +78,28 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <notes />
-    <createDate>2017-01-04T07:01:11Z</createDate>
+    <billNumber>116</billNumber>
     <title>Main Street Fairness Act</title>
-    <relatedBills />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BUCHANAN:H.R. 116.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8 of the U.S. Constitution.[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:05:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
     <cosponsors>
       <item>
         <middleName>J.</middleName>
@@ -80,107 +108,176 @@
           <lisID>1886</lisID>
           <gpoId>8192</gpoId>
         </identifiers>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
-        <state>VA</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
         <firstName>Robert</firstName>
-        <lastName>Wittman</lastName>
-        <district>1</district>
+        <state>VA</state>
         <bioguideId>W000804</bioguideId>
+        <district>1</district>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Wittman</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>1807</lisID>
+          <bioguideId>C001063</bioguideId>
+          <gpoId>8184</gpoId>
+        </identifiers>
+        <firstName>Henry</firstName>
+        <state>TX</state>
+        <bioguideId>C001063</bioguideId>
+        <district>28</district>
+        <fullName>Rep. Cuellar, Henry [D-TX-28]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Cuellar</lastName>
+        <sponsorshipDate>2017-04-06</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2319</lisID>
+          <bioguideId>S001200</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Darren</firstName>
+        <state>FL</state>
+        <bioguideId>S001200</bioguideId>
+        <district>9</district>
+        <fullName>Rep. Soto, Darren [D-FL-9]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Soto</lastName>
+        <sponsorshipDate>2017-04-25</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>R.</middleName>
+        <identifiers>
+          <bioguideId>T000470</bioguideId>
+          <lisID>1997</lisID>
+          <gpoId>7861</gpoId>
+        </identifiers>
+        <firstName>Scott</firstName>
+        <state>CO</state>
+        <bioguideId>T000470</bioguideId>
+        <district>3</district>
+        <fullName>Rep. Tipton, Scott  R. [R-CO-3]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Tipton</lastName>
+        <sponsorshipDate>2017-05-01</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2141</lisID>
+          <bioguideId>P000606</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Robert</firstName>
+        <state>NC</state>
+        <bioguideId>P000606</bioguideId>
+        <district>9</district>
+        <fullName>Rep. Pittenger, Robert [R-NC-9]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Pittenger</lastName>
+        <sponsorshipDate>2017-11-01</sponsorshipDate>
       </item>
     </cosponsors>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-14T09:56:27Z</updateDate>
+    <updateDate>2018-08-28T19:57:57Z</updateDate>
     <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>B001260</bioguideId>
+        <identifiers>
+          <lisID>1840</lisID>
+          <gpoId>7885</gpoId>
+          <bioguideId>B001260</bioguideId>
+        </identifiers>
+        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Vern</firstName>
+        <state>FL</state>
+        <lastName>Buchanan</lastName>
+        <district>16</district>
+      </item>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2017-03-23</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>707</number>
+        <latestTitle>Main Street Fairness Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <committeeReports />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Main Street Fairness Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Internal Revenue Code of 1986 to ensure that pass-through businesses do not pay tax at a higher rate than corporations.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Main Street Fairness Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Main Street Fairness Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
     <summaries>
       <billSummaries>
         <item>
-          <actionDate>2017-01-03</actionDate>
           <text><![CDATA[<p><b>Main Street Fairness Act </b></p> <p>This bill amends the Internal Revenue Code to prevent qualified business income attributed to individuals from being taxed at a higher rate than corporate income.</p> <p>(Under current law, business income attributed to individuals is taxed using individual income tax rates rather than the corporate tax rate.)</p> <p>Qualified business income is all items of income, deduction, loss, or credit properly attributable to the taxpayer from the active conduct of a trade or business, including:</p> <ul> <li> a partnership in which the taxpayer holds a capital or profits interest; </li> <li> an S corporation in which the taxpayer is a shareholder;</li> <li> a sole proprietorship or an entity otherwise disregarded as separate from its sole owner, in which the taxpayer is the sole owner; and </li> <li> a trust or estate in which the taxpayer is a beneficiary. </li> </ul> <p>Qualified business income does not include any item taken into account in determining net capital gain or the financial services income of partnerships. </p>]]></text>
-          <name>Introduced in House</name>
-          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-10T14:40:33Z</lastSummaryUpdateDate>
           <actionDesc>Introduced in House</actionDesc>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <lastSummaryUpdateDate>2017-01-10T14:40:33Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
         </item>
       </billSummaries>
     </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Ways and Means.</text>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
-    <billNumber>116</billNumber>
     <amendments />
-    <billType>HR</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <systemCode>hswm00</systemCode>
-          <type>Standing</type>
-          <name>Ways and Means Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:05:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Buchanan</lastName>
-        <state>FL</state>
-        <byRequestType />
-        <firstName>Vern</firstName>
-        <bioguideId>B001260</bioguideId>
-        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
-        <identifiers>
-          <gpoId>7885</gpoId>
-          <bioguideId>B001260</bioguideId>
-          <lisID>1840</lisID>
-        </identifiers>
-        <middleName />
-        <district>16</district>
-        <party>R</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <title>Main Street Fairness Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To amend the Internal Revenue Code of 1986 to ensure that pass-through businesses do not pay tax at a higher rate than corporations.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Main Street Fairness Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

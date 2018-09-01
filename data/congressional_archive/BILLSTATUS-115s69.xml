@@ -1,107 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
+    <titles>
       <item>
-        <lastName>Blunt</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>MO</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B000575</bioguideId>
-        <firstName>Roy</firstName>
-        <fullName>Sen. Blunt, Roy [R-MO]</fullName>
-        <identifiers>
-          <lisID>1464</lisID>
-          <gpoId>8313</gpoId>
-          <bioguideId>B000575</bioguideId>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <party>R</party>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Regulatory Responsibility for our Economy Act of 2017</title>
       </item>
       <item>
-        <lastName>FLAKE</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>AZ</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>F000444</bioguideId>
-        <firstName>JEFF</firstName>
-        <fullName>Sen. Flake, Jeff [R-AZ]</fullName>
-        <identifiers>
-          <gpoId>7803</gpoId>
-          <bioguideId>F000444</bioguideId>
-          <lisID>1633</lisID>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <party>R</party>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>A bill to codify and modify regulatory requirements of Federal agencies.</title>
       </item>
       <item>
-        <lastName>CRAPO</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>ID</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C000880</bioguideId>
-        <firstName>MICHAEL</firstName>
-        <fullName>Sen. Crapo, Mike [R-ID]</fullName>
-        <identifiers>
-          <lisID>250</lisID>
-          <gpoId>8289</gpoId>
-          <bioguideId>C000880</bioguideId>
-        </identifiers>
-        <middleName>D.</middleName>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <party>R</party>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Regulatory Responsibility for our Economy Act of 2017</title>
       </item>
       <item>
-        <lastName>WICKER</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>MS</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>W000437</bioguideId>
-        <firstName>ROGER</firstName>
-        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
-        <identifiers>
-          <lisID>1226</lisID>
-          <gpoId>8263</gpoId>
-          <bioguideId>W000437</bioguideId>
-        </identifiers>
-        <middleName>F.</middleName>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <party>R</party>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Regulatory Responsibility for our Economy Act of 2017</title>
       </item>
-      <item>
-        <lastName>Rubio</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <state>FL</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>R000595</bioguideId>
-        <firstName>Marco</firstName>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <identifiers>
-          <lisID>2084</lisID>
-          <gpoId>8242</gpoId>
-          <bioguideId>R000595</bioguideId>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <party>R</party>
-      </item>
-    </cosponsors>
-    <laws />
-    <congress>115</congress>
-    <billNumber>69</billNumber>
-    <billType>S</billType>
-    <cboCostEstimates />
-    <policyArea />
-    <amendments />
+    </titles>
     <notes />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T14:28:18Z</updateDate>
-    <originChamber>Senate</originChamber>
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+      <actionDate>2017-01-09</actionDate>
+    </latestAction>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssga00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-09T22:47:37Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <item>
         <actionDate>2017-01-09</actionDate>
@@ -118,91 +70,185 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <actionDate>2017-01-09</actionDate>
+        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
+        <committee />
         <links />
         <type>IntroReferral</type>
-        <actionCode>10000</actionCode>
-        <committee />
-        <text>Introduced in Senate</text>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-09</actionDate>
       </item>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-10T05:15:46Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to codify and modify regulatory requirements of Federal agencies.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A bill to codify and modify regulatory requirements of Federal agencies.</title>
-        <parentTitleType />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>A bill to codify and modify regulatory requirements of Federal agencies.</title>
-    <introducedDate>2017-01-09</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-09</actionDate>
-      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-      <links />
-    </latestAction>
-    <committeeReports />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>ssga00</systemCode>
-          <subcommittees />
-          <type>Standing</type>
-          <chamber>Senate</chamber>
-          <name>Homeland Security and Governmental Affairs Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-09T22:47:37Z</date>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
     <sponsors>
       <item>
         <fullName>Sen. Roberts, Pat [R-KS]</fullName>
-        <firstName>PAT</firstName>
-        <bioguideId>R000307</bioguideId>
         <party>R</party>
-        <byRequestType />
-        <middleName />
-        <state>KS</state>
-        <lastName>ROBERTS</lastName>
+        <bioguideId>R000307</bioguideId>
         <identifiers>
-          <lisID>968</lisID>
           <gpoId>8275</gpoId>
+          <lisID>968</lisID>
           <bioguideId>R000307</bioguideId>
         </identifiers>
+        <lastName>ROBERTS</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>PAT</firstName>
+        <state>KS</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:22:28Z</updateDate>
+    <billNumber>69</billNumber>
+    <title>Regulatory Responsibility for our Economy Act of 2017</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-10T05:15:46Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-02T19:04:19Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Regulatory Responsibility for our Economy Act of</strong> <b>2017</b></p> <p> This bill sets forth general requirements for the federal regulatory system, including the protection of public health, welfare, safety, and the environment, the promotion of predictability in the regulatory process, and the consideration of benefits and costs of regulations. </p> <p>The bill requires federal agencies to: (1) propose or adopt regulations only upon a reasoned determination that the benefits of such regulations justify their costs; (2) tailor regulations to impose the least burden on society and to maximize economic and other benefits; (3) involve the public and parties affected by regulations in the regulatory process; (4) develop regulatory actions that promote innovation, flexibility, and objectivity; and (5) consider methods to promote retrospective analysis of rules that may be outmoded, ineffective, insufficient, or excessively burdensome, and develop plans for reviewing on a periodic basis significant regulation actions (i.e., those having an annual effect on the economy of $100 million or more or otherwise adversely affecting the economy). </p> <p>The bill provides for judicial review of any agency action required under this bill. </p>]]></text>
+          <actionDate>2017-01-09</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <lastName>Blunt</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Blunt, Roy [R-MO]</fullName>
+        <identifiers>
+          <lisID>1464</lisID>
+          <bioguideId>B000575</bioguideId>
+          <gpoId>8313</gpoId>
+        </identifiers>
+        <firstName>Roy</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MO</state>
+        <middleName />
+        <bioguideId>B000575</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <lastName>FLAKE</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Flake, Jeff [R-AZ]</fullName>
+        <identifiers>
+          <bioguideId>F000444</bioguideId>
+          <lisID>1633</lisID>
+          <gpoId>7803</gpoId>
+        </identifiers>
+        <firstName>JEFF</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>AZ</state>
+        <middleName />
+        <bioguideId>F000444</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <lastName>CRAPO</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Crapo, Mike [R-ID]</fullName>
+        <identifiers>
+          <lisID>250</lisID>
+          <gpoId>8289</gpoId>
+          <bioguideId>C000880</bioguideId>
+        </identifiers>
+        <firstName>MICHAEL</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>ID</state>
+        <middleName>D.</middleName>
+        <bioguideId>C000880</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <lastName>WICKER</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <identifiers>
+          <bioguideId>W000437</bioguideId>
+          <lisID>1226</lisID>
+          <gpoId>8263</gpoId>
+        </identifiers>
+        <firstName>ROGER</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MS</state>
+        <middleName>F.</middleName>
+        <bioguideId>W000437</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <lastName>Rubio</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <firstName>Marco</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <middleName />
+        <bioguideId>R000595</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-09</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Economic performance and conditions</name>
+          </item>
+          <item>
+            <name>Judicial review and appeals</name>
+          </item>
+          <item>
+            <name>Public participation and lobbying</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

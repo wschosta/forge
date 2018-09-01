@@ -1,31 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-23T14:01:28Z</updateDate>
+    <policyArea>
+      <name>Transportation and Public Works</name>
+    </policyArea>
+    <billType>HR</billType>
     <latestAction>
-      <actionDate>2017-01-06</actionDate>
-      <text>Referred to the House Committee on Transportation and Infrastructure.</text>
       <links />
+      <actionDate>2017-01-09</actionDate>
+      <text>Referred to the Subcommittee on Highways and Transit.</text>
     </latestAction>
-    <billNumber>364</billNumber>
+    <createDate>2017-01-07T04:48:26Z</createDate>
     <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <date>2017-01-06T17:02:35Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <name>Transportation and Infrastructure Committee</name>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-09</actionDate>
+        <committee>
+          <systemCode>hspw12</systemCode>
+          <name>Highways and Transit Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Highways and Transit.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
           <systemCode>hspw00</systemCode>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
+          <name>Transportation and Infrastructure Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
+        <actionDate>2017-01-06</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-06</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-06</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -53,119 +105,122 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <originChamber>House</originChamber>
-    <sponsors>
-      <item>
-        <identifiers>
-          <bioguideId>M001190</bioguideId>
-          <gpoId />
-          <lisID>2156</lisID>
-        </identifiers>
-        <middleName />
-        <lastName>Mullin</lastName>
-        <firstName>Markwayne</firstName>
-        <byRequestType />
-        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
-        <district>2</district>
-        <party>R</party>
-        <state>OK</state>
-        <bioguideId>M001190</bioguideId>
-      </item>
-    </sponsors>
-    <congress>115</congress>
-    <policyArea>
-      <name>Transportation and Public Works</name>
-    </policyArea>
-    <introducedDate>2017-01-06</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <billNumber>364</billNumber>
+    <title>Preserving Jobs in the Oilfield Act of 2017</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 4 (Friday, January 6, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MULLIN:H.R. 364.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the U.S. Constitution[Page H195]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hspw00</systemCode>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-09T22:03:10Z</date>
+                </item>
+              </activities>
+              <name>Highways and Transit Subcommittee</name>
+              <systemCode>hspw12</systemCode>
+            </item>
+          </subcommittees>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-06T17:02:35Z</date>
+            </item>
+          </activities>
+          <name>Transportation and Infrastructure Committee</name>
+          <chamber>House</chamber>
+          <type>Standing</type>
+        </item>
+      </billCommittees>
+    </committees>
     <cboCostEstimates />
-    <billType>HR</billType>
-    <relatedBills />
+    <version>1.0.0</version>
     <cosponsors>
       <item>
-        <state>SC</state>
         <party>R</party>
-        <bioguideId>D000615</bioguideId>
-        <firstName>Jeff</firstName>
+        <state>SC</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>3</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>3</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>D000615</bioguideId>
+        <firstName>Jeff</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Duncan</lastName>
         <identifiers>
-          <lisID>2057</lisID>
           <bioguideId>D000615</bioguideId>
+          <lisID>2057</lisID>
           <gpoId>8143</gpoId>
         </identifiers>
       </item>
       <item>
-        <state>TX</state>
         <party>R</party>
-        <bioguideId>F000460</bioguideId>
-        <firstName>Blake</firstName>
+        <state>TX</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>27</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>27</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>F000460</bioguideId>
+        <firstName>Blake</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Farenthold</lastName>
         <identifiers>
           <gpoId>8183</gpoId>
-          <bioguideId>F000460</bioguideId>
           <lisID>2067</lisID>
+          <bioguideId>F000460</bioguideId>
         </identifiers>
       </item>
       <item>
-        <state>WV</state>
         <party>R</party>
-        <bioguideId>M001180</bioguideId>
-        <firstName>David</firstName>
+        <state>WV</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
         <middleName>B.</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>1</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>M001180</bioguideId>
+        <firstName>David</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>McKinley</lastName>
         <identifiers>
-          <gpoId>8222</gpoId>
           <lisID>2074</lisID>
+          <gpoId>8222</gpoId>
           <bioguideId>M001180</bioguideId>
         </identifiers>
       </item>
       <item>
-        <state>UT</state>
         <party>R</party>
-        <bioguideId>B001250</bioguideId>
-        <firstName>Rob</firstName>
+        <state>UT</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Bishop, Rob [R-UT-1]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>1</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>B001250</bioguideId>
+        <firstName>Rob</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Bishop</lastName>
         <identifiers>
-          <gpoId>8189</gpoId>
-          <lisID>1753</lisID>
           <bioguideId>B001250</bioguideId>
+          <lisID>1753</lisID>
+          <gpoId>8189</gpoId>
         </identifiers>
       </item>
       <item>
-        <state>KS</state>
         <party>R</party>
-        <bioguideId>M001198</bioguideId>
-        <firstName>Roger</firstName>
+        <state>KS</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Marshall, Roger W. [R-KS-1]</fullName>
         <middleName>W.</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>1</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>M001198</bioguideId>
+        <firstName>Roger</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Marshall</lastName>
         <identifiers>
@@ -175,159 +230,159 @@
         </identifiers>
       </item>
       <item>
-        <state>OH</state>
         <party>R</party>
-        <bioguideId>J000292</bioguideId>
-        <firstName>Bill</firstName>
+        <state>OH</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>6</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Johnson, Bill [R-OH-6]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>6</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>J000292</bioguideId>
+        <firstName>Bill</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Johnson</lastName>
         <identifiers>
-          <gpoId>8096</gpoId>
           <lisID>2046</lisID>
+          <gpoId>8096</gpoId>
           <bioguideId>J000292</bioguideId>
         </identifiers>
       </item>
       <item>
-        <state>OK</state>
         <party>R</party>
-        <bioguideId>R000604</bioguideId>
-        <firstName>Steve</firstName>
+        <state>OK</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>5</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>5</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>R000604</bioguideId>
+        <firstName>Steve</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Russell</lastName>
         <identifiers>
-          <bioguideId>R000604</bioguideId>
-          <gpoId />
           <lisID>2265</lisID>
+          <gpoId />
+          <bioguideId>R000604</bioguideId>
         </identifiers>
       </item>
       <item>
-        <state>ND</state>
         <party>R</party>
-        <bioguideId>C001096</bioguideId>
-        <firstName>Kevin</firstName>
+        <state>ND</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>0</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>0</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>C001096</bioguideId>
+        <firstName>Kevin</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Cramer</lastName>
         <identifiers>
-          <lisID>2144</lisID>
           <bioguideId>C001096</bioguideId>
+          <lisID>2144</lisID>
           <gpoId />
         </identifiers>
       </item>
       <item>
-        <state>TX</state>
         <party>R</party>
-        <bioguideId>H001036</bioguideId>
-        <firstName>Jeb</firstName>
+        <state>TX</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>5</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Hensarling, Jeb [R-TX-5]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>5</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>H001036</bioguideId>
+        <firstName>Jeb</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Hensarling</lastName>
         <identifiers>
+          <gpoId>8161</gpoId>
           <lisID>1749</lisID>
           <bioguideId>H001036</bioguideId>
-          <gpoId>8161</gpoId>
         </identifiers>
       </item>
       <item>
-        <state>TX</state>
         <party>R</party>
-        <bioguideId>O000168</bioguideId>
-        <firstName>Pete</firstName>
+        <state>TX</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>22</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Olson, Pete [R-TX-22]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>22</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>O000168</bioguideId>
+        <firstName>Pete</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Olson</lastName>
         <identifiers>
-          <gpoId>8178</gpoId>
           <lisID>1955</lisID>
           <bioguideId>O000168</bioguideId>
+          <gpoId>8178</gpoId>
         </identifiers>
       </item>
       <item>
-        <state>TX</state>
         <party>R</party>
-        <bioguideId>C001048</bioguideId>
-        <firstName>JOHN</firstName>
+        <state>TX</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>7</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Culberson, John Abney [R-TX-7]</fullName>
         <middleName>ABNEY</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>7</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>C001048</bioguideId>
+        <firstName>JOHN</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>CULBERSON</lastName>
         <identifiers>
+          <lisID>1670</lisID>
           <gpoId>8163</gpoId>
           <bioguideId>C001048</bioguideId>
-          <lisID>1670</lisID>
         </identifiers>
       </item>
       <item>
-        <state>OK</state>
         <party>R</party>
-        <bioguideId>B001283</bioguideId>
-        <firstName>Jim</firstName>
+        <state>OK</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>1</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Bridenstine, Jim [R-OK-1]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>1</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>B001283</bioguideId>
+        <firstName>Jim</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Bridenstine</lastName>
         <identifiers>
-          <lisID>2155</lisID>
           <bioguideId>B001283</bioguideId>
+          <lisID>2155</lisID>
           <gpoId />
         </identifiers>
       </item>
       <item>
-        <state>OK</state>
         <party>R</party>
-        <bioguideId>C001053</bioguideId>
-        <firstName>Tom</firstName>
+        <state>OK</state>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <district>4</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
         <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>4</district>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>C001053</bioguideId>
+        <firstName>Tom</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Cole</lastName>
         <identifiers>
-          <lisID>1742</lisID>
           <bioguideId>C001053</bioguideId>
+          <lisID>1742</lisID>
           <gpoId>8112</gpoId>
         </identifiers>
       </item>
       <item>
-        <state>TX</state>
         <party>R</party>
-        <bioguideId>B001291</bioguideId>
-        <firstName>Brian</firstName>
+        <state>TX</state>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <district>36</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
         <middleName />
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>36</district>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <bioguideId>B001291</bioguideId>
+        <firstName>Brian</firstName>
         <sponsorshipWithdrawnDate />
         <lastName>Babin</lastName>
         <identifiers>
@@ -336,87 +391,112 @@
           <gpoId />
         </identifiers>
       </item>
+      <item>
+        <party>R</party>
+        <state>OK</state>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <district>3</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Lucas, Frank D. [R-OK-3]</fullName>
+        <middleName>D.</middleName>
+        <bioguideId>L000491</bioguideId>
+        <firstName>FRANK</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>LUCAS</lastName>
+        <identifiers>
+          <lisID>711</lisID>
+          <bioguideId>L000491</bioguideId>
+          <gpoId>8111</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>NM</state>
+        <sponsorshipDate>2018-02-05</sponsorshipDate>
+        <district>2</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Pearce, Stevan [R-NM-2]</fullName>
+        <middleName />
+        <bioguideId>P000588</bioguideId>
+        <firstName>Stevan</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>Pearce</lastName>
+        <identifiers>
+          <lisID>1738</lisID>
+          <bioguideId>P000588</bioguideId>
+          <gpoId>8057</gpoId>
+        </identifiers>
+      </item>
     </cosponsors>
-    <actions>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <committee>
-          <name>Transportation and Infrastructure Committee</name>
-          <systemCode>hspw00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <createDate>2017-01-07T04:48:26Z</createDate>
+    <updateDate>2018-08-28T19:58:57Z</updateDate>
     <laws />
-    <amendments />
-    <recordedVotes />
-    <title>Preserving Jobs in the Oilfield Act of 2017</title>
-    <constitutionalAuthorityStatementText />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-06</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>M001190</bioguideId>
+        <identifiers>
+          <gpoId />
+          <lisID>2156</lisID>
+          <bioguideId>M001190</bioguideId>
+        </identifiers>
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Markwayne</firstName>
+        <state>OK</state>
+        <lastName>Mullin</lastName>
+        <district>2</district>
+      </item>
+    </sponsors>
+    <relatedBills />
     <committeeReports />
-    <calendarNumbers />
     <titles>
       <item>
-        <title>Preserving Jobs in the Oilfield Act of 2017</title>
         <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
         <chamberName />
+        <title>Preserving Jobs in the Oilfield Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
-        <title>To direct the Secretary of Transportation to ensure that on-duty time does not include waiting time at a natural gas or oil well site for certain commercial motor vehicle operators, and for other purposes.</title>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
         <chamberName />
+        <title>To direct the Secretary of Transportation to ensure that on-duty time does not include waiting time at a natural gas or oil well site for certain commercial motor vehicle operators, and for other purposes.</title>
+        <parentTitleType />
       </item>
       <item>
-        <title>Preserving Jobs in the Oilfield Act of 2017</title>
         <chamberCode />
         <titleType>Display Title</titleType>
-        <parentTitleType />
         <chamberName />
+        <title>Preserving Jobs in the Oilfield Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Preserving Jobs in the Oilfield Act of 2017</title>
+        <parentTitleType />
       </item>
     </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-06T05:00:00Z</updateDate>
+          <actionDate>2017-01-06</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Preserving Jobs in the Oilfield Act of 201</b>7</p> <p> This bill directs the Department of Transportation to ensure that, with respect to maximum hours of service for drivers, on-duty time does not include waiting time at a natural gas or oil well site for operators of commercial motor vehicles transporting supplies, equipment, or materials, including sand or water, to or from a natural gas or oil well site.</p> <p>The bill applies this exclusion without regard to whether operators have received special training or operate vehicles specially constructed to service wells.</p>]]></text>
+          <lastSummaryUpdateDate>2017-07-06T14:45:39Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+          <text><![CDATA[Provides for the relief of Corina de Chalup Turcinovic.]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-06T09:02:14Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
     <introducedDate>2017-01-05</introducedDate>
-    <committeeReports />
+    <updateDate>2018-05-31T19:35:34Z</updateDate>
+    <version>1.0.0</version>
+    <amendments />
+    <originChamber>House</originChamber>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <name>Immigration and Border Security Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-11T19:00:23Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-05T15:08:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <titles>
+      <item>
+        <title>For the relief of Corina de Chalup Turcinovic.</title>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+      </item>
+      <item>
+        <title>For the relief of Corina de Chalup Turcinovic.</title>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+      </item>
+    </titles>
+    <congress>115</congress>
+    <relatedBills />
+    <cosponsors />
     <laws />
-    <createDate>2017-01-06T04:57:26Z</createDate>
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <recordedVotes />
     <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-11</actionDate>
         <committee>
@@ -14,161 +88,92 @@
         </committee>
         <links />
         <sourceSystem>
-          <code>1</code>
           <name>House committee actions</name>
+          <code>1</code>
         </sourceSystem>
         <text>Referred to the Subcommittee on Immigration and Border Security.</text>
         <type>Committee</type>
       </item>
       <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <actionDate>2017-01-05</actionDate>
+        <actionCode>H11100</actionCode>
+        <type>IntroReferral</type>
+        <links />
         <committee>
           <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
         </committee>
         <text>Referred to the House Committee on the Judiciary.</text>
-        <actionCode>H11100</actionCode>
-        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <actionDate>2017-01-05</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <type>IntroReferral</type>
-        <actionDate>2017-01-05</actionDate>
+        <links />
         <committee />
         <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <placeholderTextForH>1</placeholderTextForH>
-      </actionTypeCounts>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>349</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
       <item>
-        <party>D</party>
-        <state>IL</state>
-        <middleName>William</middleName>
-        <bioguideId>L000563</bioguideId>
-        <lastName>Lipinski</lastName>
-        <firstName>Daniel</firstName>
-        <identifiers>
-          <lisID>1781</lisID>
-          <gpoId>7923</gpoId>
-          <bioguideId>L000563</bioguideId>
-        </identifiers>
-        <fullName>Rep. Lipinski, Daniel [D-IL-3]</fullName>
-        <district>3</district>
-        <byRequestType />
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>1000</actionCode>
+        <type>IntroReferral</type>
+        <links />
+        <committee />
+        <text>Introduced in House</text>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
-    </sponsors>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDate>2017-01-05</actionDate>
-          <lastSummaryUpdateDate>2017-01-06T09:02:14Z</lastSummaryUpdateDate>
-          <name>Introduced in House</name>
-          <text><![CDATA[Provides for the relief of Corina de Chalup Turcinovic.]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-05T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>For the relief of Corina de Chalup Turcinovic.</title>
-    <policyArea />
-    <congress>115</congress>
+    </actions>
+    <calendarNumbers />
     <latestAction>
       <text>Referred to the Subcommittee on Immigration and Border Security.</text>
       <actionDate>2017-01-11</actionDate>
       <links />
     </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
+    <createDate>2017-01-06T04:57:26Z</createDate>
     <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <date>2017-01-11T19:00:23Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
-              <name>Immigration and Border Security Subcommittee</name>
-              <systemCode>hsju01</systemCode>
-            </item>
-          </subcommittees>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <date>2017-01-05T15:08:00Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-12T09:57:51Z</updateDate>
-    <titles>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LIPINSKI:H.R. 349.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 4 of the Constitution providesthat Congress shall have power to ``establish an uniform Ruleof Naturalization.'' The Supreme Court has long found thatthis provision of the Constitution grants Congress plenarypower over immigration policy. As the Court found in Galvanv. Press, 347 U.S. 522, 531 (1954), ``that the formulation ofpolicies [pertaining to the entry of aliens and their rightto remain here] is entrusted exclusively to Congress hasbecome about as firmly imbedded in the legislative andjudicial tissues of our body politic as any aspect of ourgovernment.'' And, as the Court found in Kleindienst v.Mandel, 408 U.S. 753, 766 (1972) (quoting Boutilier v. INS,387 U.S. 118, 123 (1967)), ``[t]he Court without exceptionhas sustained Congress' `plenary power to make rules for theadmission of aliens and to exclude those who possess thosecharacteristics which Congress has forbidden.'''[Page H184]</pre>]]></constitutionalAuthorityStatementText>
+    <title>For the relief of Corina de Chalup Turcinovic.</title>
+    <sponsors>
       <item>
-        <chamberName />
-        <title>For the relief of Corina de Chalup Turcinovic.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
+        <district>3</district>
+        <lastName>Lipinski</lastName>
+        <state>IL</state>
+        <bioguideId>L000563</bioguideId>
+        <firstName>Daniel</firstName>
+        <byRequestType />
+        <party>D</party>
+        <fullName>Rep. Lipinski, Daniel [D-IL-3]</fullName>
+        <identifiers>
+          <lisID>1781</lisID>
+          <gpoId>7923</gpoId>
+          <bioguideId>L000563</bioguideId>
+        </identifiers>
+        <middleName>William</middleName>
       </item>
-      <item>
-        <chamberName />
-        <title>For the relief of Corina de Chalup Turcinovic.</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-      </item>
-    </titles>
+    </sponsors>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Private Legislation</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <policyArea />
+    <billNumber>349</billNumber>
+    <committeeReports />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

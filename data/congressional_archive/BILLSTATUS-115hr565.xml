@@ -1,288 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>565</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to House Foreign Affairs</text>
-    </latestAction>
-    <introducedDate>2017-01-13</introducedDate>
-    <amendments />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <text>Referred to House Foreign Affairs</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Foreign Affairs Committee</name>
-          <systemCode>hsfa00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Referred to House Judiciary</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Sponsor introductory remarks on measure. (CR H476)</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>B00100</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H476</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H476</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <placeholderTextForB>1</placeholderTextForB>
-      </actionTypeCounts>
-    </actions>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <calendarNumbers />
-    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ROHRABACHER:H.R. 565.Congress has the power to enactthis legislation pursuantto the following:Article I, Section 8, clause 4 of the United StatesConstitution, which givesCongress the power ``To establish anuniform Rule of Naturalization, and uniform Laws on thesubject of Bankruptcies throughoutthe United States.''[Page H548]</pre>]]></constitutionalAuthorityStatementText>
     <sponsors>
       <item>
+        <middleName />
+        <party>R</party>
+        <bioguideId>R000409</bioguideId>
         <lastName>ROHRABACHER</lastName>
         <firstName>DANA</firstName>
-        <party>R</party>
-        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
-        <middleName />
         <state>CA</state>
-        <byRequestType />
-        <bioguideId>R000409</bioguideId>
-        <district>48</district>
         <identifiers>
           <bioguideId>R000409</bioguideId>
           <lisID>979</lisID>
           <gpoId>7851</gpoId>
         </identifiers>
+        <district>48</district>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <byRequestType />
       </item>
     </sponsors>
-    <originChamber>House</originChamber>
-    <recordedVotes />
-    <committeeReports />
-    <policyArea />
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <version>1.0.0</version>
     <createDate>2017-01-14T04:47:33Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <billNumber>565</billNumber>
+    <notes />
+    <introducedDate>2017-01-13</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <name>Foreign Affairs Committee</name>
-          <systemCode>hsfa00</systemCode>
+          <systemCode>hsju00</systemCode>
+          <type>Standing</type>
           <activities>
             <item>
+              <date>2017-01-13T14:05:15Z</date>
               <name>Referred to</name>
-              <date>2017-01-13T14:05:20Z</date>
             </item>
           </activities>
-          <subcommittees />
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <name>Immigration and Border Security Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-13T21:10:34Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <chamber>House</chamber>
-          <type>Standing</type>
         </item>
         <item>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
+          <systemCode>hsfa00</systemCode>
+          <type>Standing</type>
           <activities>
             <item>
+              <date>2017-01-13T14:05:20Z</date>
               <name>Referred to</name>
-              <date>2017-01-13T14:05:15Z</date>
             </item>
           </activities>
+          <name>Foreign Affairs Committee</name>
           <subcommittees />
           <chamber>House</chamber>
-          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
     <relatedBills />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Africa</name>
+          </item>
+          <item>
+            <name>Asia</name>
+          </item>
+          <item>
+            <name>Immigration status and procedures</name>
+          </item>
+          <item>
+            <name>Iran</name>
+          </item>
+          <item>
+            <name>Iraq</name>
+          </item>
+          <item>
+            <name>Libya</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Pakistan</name>
+          </item>
+          <item>
+            <name>Racial and ethnic relations</name>
+          </item>
+          <item>
+            <name>Refugees, asylum, displaced persons</name>
+          </item>
+          <item>
+            <name>Religion</name>
+          </item>
+          <item>
+            <name>Syria</name>
+          </item>
+          <item>
+            <name>Visas and passports</name>
+          </item>
+          <item>
+            <name>War crimes, genocide, crimes against humanity</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Immigration</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <committee>
+          <systemCode>hsju01</systemCode>
+          <name>Immigration and Border Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Foreign Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H476</url>
+            <name>H476</name>
+          </link>
+        </links>
+        <type>IntroReferral</type>
+        <text>Sponsor introductory remarks on measure. (CR H476)</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>B00100</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>2</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForB>1</placeholderTextForB>
+        <billReferralsAggregate>1</billReferralsAggregate>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
     <laws />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To recognize that Christians and Yazidis in Iraq, Syria, Pakistan, Iran, and Libya are targets of genocide, and to provide for the expedited processing of immigrant and refugee visas for such individuals, and for other purposes.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To recognize that Christians and Yazidis in Iraq, Syria, Pakistan, Iran, and Libya are targets of genocide, and to provide for the expedited processing of immigrant and refugee visas for such individuals, and for other purposes.</title>
-      </item>
-    </titles>
     <cosponsors>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>2</district>
+        <party>R</party>
+        <state>TX</state>
         <bioguideId>P000592</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <gpoId>8158</gpoId>
           <lisID>1802</lisID>
           <bioguideId>P000592</bioguideId>
         </identifiers>
-        <firstName>Ted</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
         <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
-        <state>TX</state>
-        <middleName />
         <lastName>Poe</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <firstName>Ted</firstName>
+        <district>2</district>
+        <middleName />
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>4</district>
+        <party>R</party>
+        <state>IA</state>
         <bioguideId>K000362</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>1724</lisID>
-          <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
+          <gpoId>7918</gpoId>
         </identifiers>
-        <firstName>Steve</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
         <fullName>Rep. King, Steve [R-IA-4]</fullName>
-        <state>IA</state>
-        <middleName />
         <lastName>King</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <firstName>Steve</firstName>
+        <district>4</district>
+        <middleName />
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>8</district>
+        <party>R</party>
+        <state>MI</state>
         <bioguideId>B001293</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>2249</lisID>
           <bioguideId>B001293</bioguideId>
           <gpoId />
         </identifiers>
-        <firstName>Mike</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
         <fullName>Rep. Bishop, Mike [R-MI-8]</fullName>
-        <state>MI</state>
-        <middleName />
         <lastName>Bishop</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <firstName>Mike</firstName>
+        <district>8</district>
+        <middleName />
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>11</district>
+        <party>R</party>
+        <state>FL</state>
         <bioguideId>W000806</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <lisID>2002</lisID>
           <bioguideId>W000806</bioguideId>
+          <lisID>2002</lisID>
           <gpoId>7880</gpoId>
         </identifiers>
-        <firstName>Daniel</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
         <fullName>Rep. Webster, Daniel [R-FL-11]</fullName>
-        <state>FL</state>
-        <middleName />
         <lastName>Webster</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <firstName>Daniel</firstName>
+        <district>11</district>
+        <middleName />
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>6</district>
+        <party>R</party>
+        <state>WI</state>
         <bioguideId>G000576</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <gpoId />
           <lisID>2276</lisID>
+          <gpoId />
           <bioguideId>G000576</bioguideId>
         </identifiers>
-        <firstName>Glenn</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
         <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
-        <state>WI</state>
-        <middleName />
         <lastName>Grothman</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <firstName>Glenn</firstName>
+        <district>6</district>
+        <middleName />
+      </item>
+      <item>
+        <party>R</party>
+        <state>MD</state>
+        <bioguideId>H001052</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>H001052</bioguideId>
+          <lisID>2026</lisID>
+          <gpoId>7976</gpoId>
+        </identifiers>
+        <fullName>Rep. Harris, Andy [R-MD-1]</fullName>
+        <lastName>Harris</lastName>
+        <sponsorshipDate>2017-03-16</sponsorshipDate>
+        <firstName>Andy</firstName>
+        <district>1</district>
+        <middleName />
+      </item>
+      <item>
+        <party>R</party>
+        <state>TX</state>
+        <bioguideId>G000552</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1801</lisID>
+          <bioguideId>G000552</bioguideId>
+          <gpoId>8157</gpoId>
+        </identifiers>
+        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
+        <lastName>Gohmert</lastName>
+        <sponsorshipDate>2017-03-28</sponsorshipDate>
+        <firstName>Louie</firstName>
+        <district>1</district>
+        <middleName />
       </item>
     </cosponsors>
-    <updateDate>2017-01-17T15:35:16Z</updateDate>
-    <constitutionalAuthorityStatementText />
-    <title>To recognize that Christians and Yazidis in Iraq, Syria, Pakistan, Iran, and Libya are targets of genocide, and to provide for the expedited processing of immigrant and refugee visas for such individuals, and for other purposes.</title>
-    <congress>115</congress>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Save Christians from Genocide Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To recognize that Christians and Yazidis in Iraq, Syria, Pakistan, Iran, and Libya are targets of genocide, and to provide for the expedited processing of immigrant and refugee visas for such individuals, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Save Christians from Genocide Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Save Christians from Genocide Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:00:00Z</updateDate>
+    <calendarNumbers />
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>Save Christians from Genocide Act</strong></p> <p>This bill recognizes that Christians and Yazidis in Iraq, Syria, Pakistan, Iran, and Libya are targets of genocide. </p> <p>The Department of Homeland Security shall provide for expedited visa processing and shall ensure that such applications receive first priority among refugee and (family- or employment-based) immigrant applications for an alien who: </p> <ul> <li>is a citizen or national of Iraq, Syria, Pakistan, Iran, or Libya, or in the case of an alien having no nationality, whose country of last habitual residence was Iraq, Syria, Pakistan, Iran, or Libya; </li> <li>is a Christian or Yazidi; and </li> <li>is seeking refugee or immigrant admission to the United States.</li></ul>]]></text>
+          <lastSummaryUpdateDate>2017-02-09T20:48:41Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-13</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Save Christians from Genocide Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

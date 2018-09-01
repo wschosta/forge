@@ -1,43 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <updateDate>2017-01-11T10:17:56Z</updateDate>
-    <billType>SRES</billType>
+    <amendments />
+    <billNumber>2</billNumber>
     <laws />
+    <cboCostEstimates />
+    <originChamber>Senate</originChamber>
+    <billType>SRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Informs the House of Representatives that a quorum of the Senate is assembled.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-04T14:03:11Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Informs the House of Representatives that a quorum of the Senate is assembled.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-04T14:03:21Z</lastSummaryUpdateDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <updateDate>2017-01-03T14:31:36Z</updateDate>
+          <name>Passed Senate without amendment</name>
+          <versionCode>82</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-04T04:47:42Z</createDate>
     <sponsors>
       <item>
-        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
-        <identifiers>
-          <gpoId>8254</gpoId>
-          <bioguideId>M000355</bioguideId>
-          <lisID>1395</lisID>
-        </identifiers>
-        <byRequestType />
-        <bioguideId>M000355</bioguideId>
         <lastName>MCCONNELL</lastName>
-        <state>KY</state>
-        <firstName>MITCH</firstName>
         <party>R</party>
         <middleName />
+        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
+        <identifiers>
+          <lisID>1395</lisID>
+          <bioguideId>M000355</bioguideId>
+          <gpoId>8254</gpoId>
+        </identifiers>
+        <state>KY</state>
+        <firstName>MITCH</firstName>
+        <byRequestType />
+        <bioguideId>M000355</bioguideId>
       </item>
     </sponsors>
-    <congress>115</congress>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>A resolution informing the House of Representatives that a quorum of the Senate is assembled.</title>
+    <notes />
+    <updateDate>2018-08-28T20:20:13Z</updateDate>
+    <committeeReports />
     <actions>
-      <actionByCounts>
-        <senate>3</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-03</actionDate>
         <committee />
@@ -55,68 +74,77 @@
         <type>Floor</type>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>Floor</type>
-        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
-        <committee />
         <links>
           <link>
             <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
             <name>S6</name>
           </link>
         </links>
+        <type>Floor</type>
         <actionDate>2017-01-03</actionDate>
-        <actionCode>17000</actionCode>
-      </item>
-      <item>
+        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+        <actionCode>17000</actionCode>
+      </item>
+      <item>
+        <links />
         <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
         <text>Introduced in Senate</text>
         <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <actionCode>10000</actionCode>
       </item>
-      <actionTypeCounts>
-        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
-        <introducedInSenate>1</introducedInSenate>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>3</senate>
+      </actionByCounts>
     </actions>
-    <amendments />
+    <cosponsors />
+    <title>A resolution informing the House of Representatives that a quorum of the Senate is assembled.</title>
     <introducedDate>2017-01-03</introducedDate>
-    <billNumber>2</billNumber>
-    <relatedBills />
+    <recordedVotes />
+    <congress>115</congress>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-03</actionDate>
+      <links />
+      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
+    </latestAction>
     <titles>
       <item>
         <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
         <title>A resolution informing the House of Representatives that a quorum of the Senate is assembled.</title>
+        <chamberName />
       </item>
       <item>
         <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Display Title</titleType>
+        <chamberCode />
         <title>A resolution informing the House of Representatives that a quorum of the Senate is assembled.</title>
+        <chamberName />
       </item>
     </titles>
-    <cosponsors />
-    <committeeReports />
-    <originChamber>Senate</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <committees>
+      <billCommittees />
+    </committees>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional operations and organization</name>
@@ -128,16 +156,8 @@
             <name>Senate</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-04T04:47:42Z</createDate>
-    <notes />
-    <committees>
-      <billCommittees />
-    </committees>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

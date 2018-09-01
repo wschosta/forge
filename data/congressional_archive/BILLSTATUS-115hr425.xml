@@ -1,157 +1,497 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <committee>
-          <name>Foreign Affairs Committee</name>
-          <systemCode>hsfa00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <policyArea />
-    <notes />
-    <createDate>2017-01-11T05:09:43Z</createDate>
-    <title>To authorize the revocation or denial of passports to individuals affiliated with foreign terrorist organizations, and for other purposes.</title>
-    <relatedBills />
-    <cosponsors>
-      <item>
-        <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>9</district>
-        <identifiers>
-          <lisID>2025</lisID>
-          <gpoId>7975</gpoId>
-          <bioguideId>K000375</bioguideId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000375</bioguideId>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <firstName>William</firstName>
-        <middleName>R.</middleName>
-        <state>MA</state>
-        <lastName>Keating</lastName>
-      </item>
-    </cosponsors>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-11T10:17:54Z</updateDate>
+    <calendarNumbers />
+    <amendments />
+    <committeeReports />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 6 (Tuesday, January 10, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. POE of Texas:H.R. 425.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clauses 10, 11, and 15[Page H300]</pre>]]></constitutionalAuthorityStatementText>
     <laws />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-07-11T20:32:33Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>FTO Passport Revocation Act of 2017</strong></p> <p>This bill amends the Passport Act of 1926 to direct the Department of State to refuse to issue a passport to an individual who is a member of or affiliated with, or who has aided or provided material support to, a foreign terrorist organization.</p> <p> The State Department: (1) shall revoke a passport previously issued to any such individual; and (2) may, prior to revocation, issue a limited passport or limit a previously issued passport, but only for return travel to the United States.</p> <p> The State Department may issue or decline to revoke a passport for emergency, humanitarian, or law enforcement purposes. </p> <p> A person whose passport is denied, revoked, or limited may seek State Department review within 60 days of receiving notice of such action.</p> <p> The State Department shall report to Congress within 30 days regarding any such refusal or revocation.</p>]]></text>
+          <actionDate>2017-01-10</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+        <item>
+          <updateDate>2017-11-01T13:44:06Z</updateDate>
+          <lastSummaryUpdateDate>2017-11-02T22:12:31Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>FTO Passport Revocation Act of 2017</strong></p> <p> (Sec. 2) This bill amends the Passport Act of 1926 to authorize the Department of State to: (1) refuse to issue a passport to an individual who has aided, assisted, abetted, or otherwise helped a foreign terrorist organization designated pursuant to the Immigration and Nationality Act; or (2) revoke a passport previously issued to any such individual;</p> <p>A person whose passport is denied or revoked may request a State Department hearing within 60 days of receiving notice of such action. </p> <p> If the State Department refuses to issue or revokes a passport, or if subsequent to a hearing the State Department issues or cancels a revocation of a passport that was the subject of such a hearing, the State Department shall report to Congress within 30 days regarding such action.</p>]]></text>
+          <actionDate>2017-11-01</actionDate>
+          <actionDesc>Passed House amended</actionDesc>
+          <name>Passed House amended</name>
+          <versionCode>36</versionCode>
+        </item>
+      </billSummaries>
     </summaries>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <latestTitle>Building America's Trust Act</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 208.</text>
+          <actionDate>2017-09-05</actionDate>
+        </latestAction>
+        <number>1757</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>House</identifiedBy>
+            <type>Related bill</type>
+          </item>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-11T05:09:43Z</createDate>
     <latestAction>
       <links />
-      <actionDate>2017-01-10</actionDate>
-      <text>Referred to the House Committee on Foreign Affairs.</text>
+      <actionDate>2017-11-02</actionDate>
+      <text>Received in the Senate and Read twice and referred to the Committee on Foreign Relations.</text>
     </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-10</introducedDate>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>TX</state>
+        <bioguideId>P000592</bioguideId>
+        <middleName />
+        <lastName>Poe</lastName>
+        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
+        <firstName>Ted</firstName>
+        <district>2</district>
+        <byRequestType />
+        <identifiers>
+          <lisID>1802</lisID>
+          <bioguideId>P000592</bioguideId>
+          <gpoId>8158</gpoId>
+        </identifiers>
+      </item>
+    </sponsors>
     <billNumber>425</billNumber>
-    <amendments />
+    <updateDate>2018-08-28T19:59:08Z</updateDate>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-10-11T20:00:19Z</pubDate>
+        <title>H.R. 425, FTO Passport Revocation Act of 2017</title>
+        <url>https://www.cbo.gov/publication/53196</url>
+      </item>
+    </cboCostEstimates>
+    <notes />
+    <titles>
+      <item>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>FTO Passport Revocation Act of 2017</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>FTO Passport Revocation Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To authorize the revocation or denial of passports to individuals affiliated with foreign terrorist organizations, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>FTO Passport Revocation Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>FTO Passport Revocation Act of 2017</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>FTO Passport Revocation Act of 2017</title>
+        <chamberName />
+      </item>
+    </titles>
+    <introducedDate>2017-01-10</introducedDate>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Immigration status and procedures</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+          <item>
+            <name>Visas and passports</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
     <billType>HR</billType>
+    <originChamber>House</originChamber>
+    <title>FTO Passport Revocation Act of 2017</title>
+    <cosponsors>
+      <item>
+        <party>D</party>
+        <state>MA</state>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <district>9</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
+        <middleName>R.</middleName>
+        <bioguideId>K000375</bioguideId>
+        <firstName>William</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>Keating</lastName>
+        <identifiers>
+          <lisID>2025</lisID>
+          <bioguideId>K000375</bioguideId>
+          <gpoId>7975</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>SC</state>
+        <sponsorshipDate>2017-07-18</sponsorshipDate>
+        <district>2</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Wilson, Joe [R-SC-2]</fullName>
+        <middleName />
+        <bioguideId>W000795</bioguideId>
+        <firstName>Joe</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>Wilson</lastName>
+        <identifiers>
+          <lisID>1688</lisID>
+          <gpoId>8142</gpoId>
+          <bioguideId>W000795</bioguideId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <recordedVotes />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
+          <type>Standing</type>
+          <name>Foreign Relations Committee</name>
+          <systemCode>ssfr00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-11-02T15:44:05Z</date>
+            </item>
+          </activities>
           <subcommittees />
+        </item>
+        <item>
+          <type>Standing</type>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
           <chamber>House</chamber>
           <activities>
+            <item>
+              <name>Markup by</name>
+              <date>2017-09-28T18:28:20Z</date>
+            </item>
             <item>
               <name>Referred to</name>
               <date>2017-01-10T15:05:00Z</date>
             </item>
           </activities>
-          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+              <systemCode>hsfa18</systemCode>
+              <activities>
+                <item>
+                  <name>Reported by</name>
+                  <date>2017-07-19T21:21:49Z</date>
+                </item>
+                <item>
+                  <name>Markup by</name>
+                  <date>2017-07-19T21:15:44Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-16T22:20:47Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
+    <actions>
+      <item>
+        <actionDate>2017-11-02</actionDate>
+        <committee>
+          <systemCode>ssfr00</systemCode>
+          <name>Foreign Relations Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Foreign Relations.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>H38310</actionCode>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>18:49:08</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>H37300</actionCode>
+        <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H8363)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H8363</url>
+            <name>H8363</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>18:49:07</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>8000</actionCode>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.(text: CR H8363)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H8363</url>
+            <name>H8363</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionTime>18:49:07</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 425.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/425</url>
+            <name>H.R. 425</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>18:28:51</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered under suspension of the rules. (consideration: CR H8363-8365)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H8363-8365</url>
+            <name>H8363-8365</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>18:28:48</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-11-01</actionDate>
+        <actionCode>H30300</actionCode>
+        <text>Mr. Poe (TX) moved to suspend the rules and pass the bill, as amended.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>18:28:47</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-09-28</actionDate>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-09-28</actionDate>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported in the Nature of a Substitute (Amended) by Voice Vote.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-07-19</actionDate>
+        <committee>
+          <systemCode>hsfa18</systemCode>
+          <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Forwarded by Subcommittee to Full Committee in the Nature of a Substitute (Amended) by Voice Vote .</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-07-19</actionDate>
+        <committee>
+          <systemCode>hsfa18</systemCode>
+          <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-16</actionDate>
+        <committee>
+          <systemCode>hsfa18</systemCode>
+          <name>Terrorism,  Nonproliferation, and Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Terrorism, Nonproliferation, and Trade.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <designationOfSpeakerProTempore>1</designationOfSpeakerProTempore>
+        <billReferrals>1</billReferrals>
+        <referredToCommittee>1</referredToCommittee>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>3</placeholderTextForH>
+        <generalDebate>1</generalDebate>
+        <actionStageOverride>1</actionStageOverride>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>14</houseOfRepresentatives>
+        <senate>1</senate>
+      </actionByCounts>
+    </actions>
+    <version>1.0.0</version>
     <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Poe</lastName>
-        <state>TX</state>
-        <byRequestType />
-        <firstName>Ted</firstName>
-        <bioguideId>P000592</bioguideId>
-        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
-        <identifiers>
-          <lisID>1802</lisID>
-          <gpoId>8158</gpoId>
-          <bioguideId>P000592</bioguideId>
-        </identifiers>
-        <middleName />
-        <district>2</district>
-        <party>R</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To authorize the revocation or denial of passports to individuals affiliated with foreign terrorist organizations, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To authorize the revocation or denial of passports to individuals affiliated with foreign terrorist organizations, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

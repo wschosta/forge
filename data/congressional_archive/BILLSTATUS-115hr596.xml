@@ -1,138 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes />
+    <policyArea>
+      <name>Foreign Trade and International Finance</name>
+    </policyArea>
+    <billType>HR</billType>
     <latestAction>
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-20</actionDate>
       <links />
+      <actionDate>2017-02-01</actionDate>
+      <text>Referred to the Subcommittee on Trade.</text>
     </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <createDate>2017-01-21T04:55:45Z</createDate>
+    <notes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-02-01</actionDate>
+        <committee>
+          <systemCode>hswm04</systemCode>
+          <name>Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Trade.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Foreign Trade and International Finance</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Asia</name>
+          </item>
+          <item>
+            <name>Australia</name>
+          </item>
+          <item>
+            <name>Brunei</name>
+          </item>
+          <item>
+            <name>Canada</name>
+          </item>
+          <item>
+            <name>Chile</name>
+          </item>
+          <item>
+            <name>Free trade and trade barriers</name>
+          </item>
+          <item>
+            <name>Japan</name>
+          </item>
+          <item>
+            <name>Latin America</name>
+          </item>
+          <item>
+            <name>Malaysia</name>
+          </item>
+          <item>
+            <name>Mexico</name>
+          </item>
+          <item>
+            <name>New Zealand</name>
+          </item>
+          <item>
+            <name>Oceania</name>
+          </item>
+          <item>
+            <name>Peru</name>
+          </item>
+          <item>
+            <name>Singapore</name>
+          </item>
+          <item>
+            <name>Trade agreements and negotiations</name>
+          </item>
+          <item>
+            <name>Vietnam</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>596</billNumber>
+    <title>TPP Withdrawal Act</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. DeLAURO:H.R. 596.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8[Page H560]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hswm00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hswm04</systemCode>
+              <activities>
+                <item>
+                  <date>2017-02-01T21:56:51Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Trade Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-20T15:00:40Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T20:00:08Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-20</introducedDate>
     <sponsors>
       <item>
-        <party>D</party>
+        <middleName />
+        <bioguideId>D000216</bioguideId>
         <identifiers>
           <lisID>281</lisID>
           <bioguideId>D000216</bioguideId>
           <gpoId>7868</gpoId>
         </identifiers>
-        <bioguideId>D000216</bioguideId>
-        <lastName>DELAURO</lastName>
         <fullName>Rep. DeLauro, Rosa L. [D-CT-3]</fullName>
-        <district>3</district>
-        <middleName />
-        <state>CT</state>
         <byRequestType />
+        <party>D</party>
         <firstName>ROSA</firstName>
+        <state>CT</state>
+        <lastName>DELAURO</lastName>
+        <district>3</district>
       </item>
     </sponsors>
-    <laws />
-    <originChamber>House</originChamber>
-    <cboCostEstimates />
-    <notes />
-    <title>To require the President to withdraw from the Trans-Pacific Partnership Agreement.</title>
-    <relatedBills />
-    <congress>115</congress>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <latestTitle>A bill to require the President to withdraw from the Trans-Pacific Partnership Agreement and to make that Agreement ineligible for expedited consideration by Congress.</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2017-01-17</actionDate>
+        </latestAction>
+        <number>172</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <committeeReports />
     <titles>
       <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>TPP Withdrawal Act</title>
         <parentTitleType />
         <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To require the President to withdraw from the Trans-Pacific Partnership Agreement.</title>
         <chamberName />
       </item>
       <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require the President to withdraw from the Trans-Pacific Partnership Agreement.</title>
         <parentTitleType />
         <chamberCode />
+        <chamberName />
+      </item>
+      <item>
         <titleType>Display Title</titleType>
-        <title>To require the President to withdraw from the Trans-Pacific Partnership Agreement.</title>
+        <title>TPP Withdrawal Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>TPP Withdrawal Act</title>
+        <parentTitleType />
+        <chamberCode />
         <chamberName />
       </item>
     </titles>
-    <introducedDate>2017-01-20</introducedDate>
-    <committeeReports />
-    <billType>HR</billType>
-    <policyArea />
-    <amendments />
-    <committees>
-      <billCommittees>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
         <item>
-          <type>Standing</type>
-          <name>Ways and Means Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-20T15:00:40Z</date>
-            </item>
-          </activities>
-          <systemCode>hswm00</systemCode>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-01T21:28:41Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>TPP Withdrawal Act</b></p> <p>This bill directs the President to provide to the governments of Australia, Brunei, Canada, Chile, Japan, Malaysia, Mexico, New Zealand, Peru, Singapore, and Vietnam written notice of the withdrawal of the United States from the Trans-Pacific Partnership Agreement.</p>]]></text>
+          <actionDate>2017-01-20</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
         </item>
-      </billCommittees>
-    </committees>
-    <actions>
-      <item>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-20</actionDate>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <calendarNumbers />
-    <updateDate>2017-01-21T10:04:04Z</updateDate>
-    <billNumber>596</billNumber>
-    <cosponsors />
-    <createDate>2017-01-21T04:55:45Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <constitutionalAuthorityStatementText />
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

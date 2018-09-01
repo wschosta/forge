@@ -1,124 +1,676 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes>
-      <recordedVote>
-        <congress>115</congress>
-        <date>2017-01-13T20:38:46Z</date>
-        <rollNumber>59</rollNumber>
-        <chamber>House</chamber>
-        <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
-        <fullActionName>Passage of a Measure</fullActionName>
-        <sessionNumber>1</sessionNumber>
-      </recordedVote>
-      <recordedVote>
-        <congress>115</congress>
-        <date>2017-01-12T20:13:34Z</date>
-        <rollNumber>27</rollNumber>
-        <chamber>Senate</chamber>
-        <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?&amp;congress=115&amp;session=1&amp;vote=00027</url>
-        <fullActionName>PASSED SENATE</fullActionName>
-        <sessionNumber>1</sessionNumber>
-      </recordedVote>
-    </recordedVotes>
-    <latestAction>
-      <text>Presented to President.</text>
-      <actionDate>2017-01-20</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries>
-        <item>
-          <updateDate>2017-01-10T05:00:00Z</updateDate>
-          <actionDate>2017-01-10</actionDate>
-          <name>Introduced in Senate</name>
-          <text><![CDATA[<p>This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
-          <actionDesc>Introduced in Senate</actionDesc>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-13T22:19:47Z</lastSummaryUpdateDate>
-        </item>
-        <item>
-          <updateDate>2017-01-12T14:49:07Z</updateDate>
-          <actionDate>2017-01-12</actionDate>
-          <name>Passed Senate without amendment</name>
-          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
-          <actionDesc>Passed Senate without amendment</actionDesc>
-          <versionCode>82</versionCode>
-          <lastSummaryUpdateDate>2017-01-13T22:18:20Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <identifiers>
-          <gpoId>8253</gpoId>
-          <lisID>754</lisID>
-          <bioguideId>M000303</bioguideId>
-        </identifiers>
-        <bioguideId>M000303</bioguideId>
-        <lastName>MCCAIN</lastName>
-        <fullName>Sen. McCain, John [R-AZ]</fullName>
-        <middleName>SIDNEY</middleName>
-        <state>AZ</state>
-        <byRequestType />
-        <firstName>JOHN</firstName>
-      </item>
-    </sponsors>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <cboCostEstimates />
     <notes />
-    <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
     <congress>115</congress>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
-      </item>
-    </titles>
-    <introducedDate>2017-01-10</introducedDate>
-    <committeeReports />
-    <billType>S</billType>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Reported by</name>
-              <date>2017-01-12T17:50:00Z</date>
-            </item>
-            <item>
-              <name>Markup by</name>
-              <date>2017-01-12T14:30:34Z</date>
-            </item>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-10T18:09:31Z</date>
-            </item>
-          </activities>
-          <subcommittees />
           <systemCode>ssas00</systemCode>
           <chamber>Senate</chamber>
+          <type>Standing</type>
+          <subcommittees />
           <name>Armed Services Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T17:50:00Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-01-12T14:30:34Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-10T18:09:31Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
         </item>
       </billCommittees>
     </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
+    <laws>
+      <item>
+        <number>115-2</number>
+        <type>Public Law</type>
+      </item>
+    </laws>
+    <updateDate>2018-08-28T20:22:32Z</updateDate>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>To provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>393</number>
+        <latestAction>
+          <text>Placed on the Union Calendar, Calendar No. 1.</text>
+          <actionDate>2017-02-16</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Procedurally-related</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Providing for consideration of the concurrent resolution (S. Con. Res. 3) setting forth the congressional budget for the United States Government for fiscal year 2017 and setting forth the appropriate budgetary levels for fiscal years 2018 through 2026, and providing for consideration of the bill (S. 84) to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</latestTitle>
+        <type>HRES</type>
+        <congress>115</congress>
+        <number>48</number>
+        <latestAction>
+          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+          <actionDate>2017-01-13</actionDate>
+          <actionTime>10:54:30</actionTime>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
+    <actions>
+      <actionTypeCounts>
+        <heldAtTheDesk>1</heldAtTheDesk>
+        <becamePublicLaw>2</becamePublicLaw>
+        <motionForPreviousQuestion>1</motionForPreviousQuestion>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <measureLaidBeforeSenate>1</measureLaidBeforeSenate>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <sentToHouse>1</sentToHouse>
+        <passedSenate>1</passedSenate>
+        <placeholderTextForE>3</placeholderTextForE>
+        <orderedReported>1</orderedReported>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <generalDebate>3</generalDebate>
+        <referredToCommittee>1</referredToCommittee>
+        <motionToConsider>2</motionToConsider>
+        <introducedInSenate>1</introducedInSenate>
+        <considerationByHouse>2</considerationByHouse>
+        <reportedToSenate>2</reportedToSenate>
+        <presentedToPresident>1</presentedToPresident>
+        <placeholderTextForHL>1</placeholderTextForHL>
+      </actionTypeCounts>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84/text/pl</url>
+            <name>Public Law No: 115-2</name>
+          </link>
+        </links>
+        <type>President</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Became Public Law No: 115-2.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>E40000</actionCode>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84/text/pl</url>
+            <name>Public Law No: 115-2</name>
+          </link>
+        </links>
+        <type>BecameLaw</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Became Public Law No: 115-2.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>36000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>President</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Signed by President.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>E30000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>BecameLaw</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Signed by President.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>36000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>Floor</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Presented to President.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>E20000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>President</type>
+        <actionDate>2017-01-20</actionDate>
+        <text>Presented to President.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>28000</actionCode>
+      </item>
+      <item>
+        <links />
+        <actionTime>15:38:48</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H38310</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H520</url>
+            <name>H520</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
+            <name>Roll no. 59</name>
+          </link>
+        </links>
+        <actionTime>15:38:46</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>On passage Passed by recorded vote: 268 - 151, 1 Present (Roll no. 59). (text: CR H520)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H37100</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H520</url>
+            <name>H520</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
+            <name>Roll no. 59</name>
+          </link>
+        </links>
+        <actionTime>15:38:46</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Passed/agreed to in House: On passage Passed by recorded vote: 268 - 151, 1 Present (Roll no. 59).(text: CR H520)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>8000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H531-532</url>
+            <name>H531-532</name>
+          </link>
+        </links>
+        <actionTime>15:32:19</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Considered as unfinished business. (consideration: CR H531-532)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
+            <name>S. 84</name>
+          </link>
+        </links>
+        <actionTime>15:01:22</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>POSTPONED PROCEEDINGS - At the conclusion of debate on S. 84, the Chair put the question on passge and by voice vote announced that the ayes had prevailed. Mr. Smith (WA) demanded a recorded vote, and the Chair postponed further proceedings on passage of S. 84 until later in the legislative day.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>15:00:48</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>The previous question was ordered pursuant to the rule.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H35000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
+            <name>S. 84</name>
+          </link>
+        </links>
+        <actionTime>13:50:25</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>DEBATE - The House proceeded with 90 minutes of debate on S. 84.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
+            <name>S. 84</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-concurrent-resolution/3</url>
+            <name>S. Con. Res. 3</name>
+          </link>
+        </links>
+        <actionTime>13:50:06</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Rule provides for consideration of S. Con. Res. 3 and S. 84. The resolution provides for two hours of general debate on S. Con. Res. 3 under a structured rule, and ninety minutes of debate on S.84. The resolution also provides for one motion to commit on S. 84.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
+            <name>H. Res. 48</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H520-529</url>
+            <name>H520-529</name>
+          </link>
+        </links>
+        <actionTime>13:50:01</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Considered under the provisions of rule H. Res. 48. (consideration: CR H520-529)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
+            <name>H. Res. 48</name>
+          </link>
+        </links>
+        <actionTime>10:54:29</actionTime>
+        <actionDate>2017-01-13</actionDate>
+        <text>Rule H. Res. 48 passed House.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H1L220</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
+            <name>H. Res. 48</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
+            <name>S. 84</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-concurrent-resolution/3</url>
+            <name>S. Con. Res. 3</name>
+          </link>
+        </links>
+        <actionTime>20:38:54</actionTime>
+        <actionDate>2017-01-12</actionDate>
+        <text>Rules Committee Resolution H. Res. 48 Reported to House. Rule provides for consideration of S. Con. Res. 3 and S. 84. The resolution provides for two hours of general debate on S. Con. Res. 3 under a structured rule, and ninety minutes of debate on S.84. The resolution also provides for one motion to commit on S. 84.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H1L210</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>16:09:09</actionTime>
+        <actionDate>2017-01-12</actionDate>
+        <text>Held at the desk.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H15000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>15:52:21</actionTime>
+        <actionDate>2017-01-12</actionDate>
+        <text>Received in the House.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H14000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/2028</url>
+            <name>H.R. 2028</name>
+          </link>
+          <link>
+            <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&amp;session=1&amp;vote=00027</url>
+            <name>Record Vote Number: 27</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S307</url>
+            <name>S307</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate, having achieved 60 votes in the affirmative (pursuant to H.R. 2028, 114th Congress), without amendment by Yea-Nay Vote. 81 - 17. Record Vote Number: 27. (text: CR S307)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/2028</url>
+            <name>H.R. 2028</name>
+          </link>
+          <link>
+            <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&amp;session=1&amp;vote=00027</url>
+            <name>Record Vote Number: 27</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S307</url>
+            <name>S307</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <actionDate>2017-01-12</actionDate>
+        <text>Passed/agreed to in Senate: Passed Senate, having achieved 60 votes in the affirmative (pursuant to H.R. 2028, 114th Congress), without amendment by Yea-Nay Vote. 81 - 17. Record Vote Number: 27.(text: CR S307)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>17000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S299-307</url>
+            <name>S299-307</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Measure laid before Senate by motion. (consideration: CR S299-307)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Motion to proceed to consideration of measure agreed to in Senate by Voice Vote.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S299</url>
+            <name>S299</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Motion to proceed to consideration of measure made in Senate. (CR S299)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 2.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>ssas00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Armed Services. Reported by Senator McCain without amendment. Without written report.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>Committee</type>
+        <actionDate>2017-01-12</actionDate>
+        <text>Committee on Armed Services. Reported by Senator McCain without amendment. Without written report.</text>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>ssas00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>14000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>ssas00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Armed Services. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>ssas00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Armed Services.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-10</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>10000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>13</houseOfRepresentatives>
+        <senate>12</senate>
+      </actionByCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Sen. McCain, John [R-AZ]</fullName>
+        <identifiers>
+          <lisID>754</lisID>
+          <bioguideId>M000303</bioguideId>
+          <gpoId>8253</gpoId>
+        </identifiers>
+        <bioguideId>M000303</bioguideId>
+        <lastName>MCCAIN</lastName>
+        <firstName>JOHN</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName>SIDNEY</middleName>
+        <state>AZ</state>
+      </item>
+    </sponsors>
+    <billType>S</billType>
     <policyArea>
       <name>Armed Forces and National Security</name>
     </policyArea>
-    <amendments />
+    <recordedVotes>
+      <recordedVote>
+        <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
+        <fullActionName>Passage of a Measure</fullActionName>
+        <rollNumber>59</rollNumber>
+        <sessionNumber>1</sessionNumber>
+        <congress>115</congress>
+        <date>2017-01-13T20:38:46Z</date>
+        <chamber>House</chamber>
+      </recordedVote>
+      <recordedVote>
+        <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?&amp;congress=115&amp;session=1&amp;vote=00027</url>
+        <fullActionName>PASSED SENATE</fullActionName>
+        <rollNumber>27</rollNumber>
+        <sessionNumber>1</sessionNumber>
+        <congress>115</congress>
+        <date>2017-01-12T20:13:34Z</date>
+        <chamber>Senate</chamber>
+      </recordedVote>
+    </recordedVotes>
+    <billNumber>84</billNumber>
+    <titles>
+      <item>
+        <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -143,522 +695,66 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <actions>
-      <actionTypeCounts>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <measureLaidBeforeSenate>1</measureLaidBeforeSenate>
-        <placeholderTextForHL>1</placeholderTextForHL>
-        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
-        <introducedInSenate>1</introducedInSenate>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <receivedInTheHouse>1</receivedInTheHouse>
-        <reportedToSenate>2</reportedToSenate>
-        <placeholderTextForE>1</placeholderTextForE>
-        <considerationByHouse>2</considerationByHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <motionToConsider>2</motionToConsider>
-        <presentedToPresident>1</presentedToPresident>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
-        <motionForPreviousQuestion>1</motionForPreviousQuestion>
-        <orderedReported>1</orderedReported>
-        <sentToHouse>1</sentToHouse>
-        <generalDebate>3</generalDebate>
-        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
-        <passedSenate>1</passedSenate>
-        <referredToCommittee>1</referredToCommittee>
-        <heldAtTheDesk>1</heldAtTheDesk>
-      </actionTypeCounts>
-      <item>
-        <links />
-        <type>Floor</type>
-        <actionDate>2017-01-20</actionDate>
-        <text>Presented to President.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>E20000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>President</type>
-        <actionDate>2017-01-20</actionDate>
-        <text>Presented to President.</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>28000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionTime>15:38:48</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H38310</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H520</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H520</url>
-          </link>
-          <link>
-            <name>Roll no. 59</name>
-            <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>On passage Passed by recorded vote: 268 - 151, 1 Present (Roll no. 59). (text: CR H520)</text>
-        <actionTime>15:38:46</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H37100</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>Roll no. 59</name>
-            <url>http://clerk.house.gov/evs/2017/roll059.xml</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Passed/agreed to in House: On passage Passed by recorded vote: 268 - 151, 1 Present (Roll no. 59).</text>
-        <actionTime>15:38:46</actionTime>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>8000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H531-532</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H531-532</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Considered as unfinished business. (consideration: CR H531-532)</text>
-        <actionTime>15:32:19</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H30000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>S. 84</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>POSTPONED PROCEEDINGS - At the conclusion of debate on S. 84, the Chair put the question on passge and by voice vote announced that the ayes had prevailed. Mr. Smith (WA) demanded a recorded vote, and the Chair postponed further proceedings on passage of S. 84 until later in the legislative day.</text>
-        <actionTime>15:01:22</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H8D000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>The previous question was ordered pursuant to the rule.</text>
-        <actionTime>15:00:48</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H35000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>S. 84</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>DEBATE - The House proceeded with 90 minutes of debate on S. 84.</text>
-        <actionTime>13:50:25</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H8D000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>S. 84</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
-          </link>
-          <link>
-            <name>S. Con. Res. 3</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-concurrent-resolution/3</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Rule provides for consideration of S. Con. Res. 3 and S. 84. The resolution provides for two hours of general debate on S. Con. Res. 3 under a structured rule, and ninety minutes of debate on S.84. The resolution also provides for one motion to commit on S. 84.</text>
-        <actionTime>13:50:06</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H8D000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H. Res. 48</name>
-            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
-          </link>
-          <link>
-            <name>H520-529</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H520-529</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Considered under the provisions of rule H. Res. 48. (consideration: CR H520-529)</text>
-        <actionTime>13:50:01</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H30000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H. Res. 48</name>
-            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-13</actionDate>
-        <text>Rule H. Res. 48 passed House.</text>
-        <actionTime>10:54:29</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H1L220</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H. Res. 48</name>
-            <url>https://www.congress.gov/bill/115th-congress/house-resolution/48</url>
-          </link>
-          <link>
-            <name>S. 84</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-bill/84</url>
-          </link>
-          <link>
-            <name>S. Con. Res. 3</name>
-            <url>https://www.congress.gov/bill/115th-congress/senate-concurrent-resolution/3</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Rules Committee Resolution H. Res. 48 Reported to House. Rule provides for consideration of S. Con. Res. 3 and S. 84. The resolution provides for two hours of general debate on S. Con. Res. 3 under a structured rule, and ninety minutes of debate on S.84. The resolution also provides for one motion to commit on S. 84.</text>
-        <actionTime>20:38:54</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H1L210</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>Floor</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Held at the desk.</text>
-        <actionTime>16:09:09</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H15000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Message on Senate action sent to the House.</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <links />
-        <type>Floor</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Received in the House.</text>
-        <actionTime>15:52:21</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H14000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links>
-          <link>
-            <name>H.R. 2028</name>
-            <url>https://www.congress.gov/bill/115th-congress/house-bill/2028</url>
-          </link>
-          <link>
-            <name>Record Vote Number: 27</name>
-            <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&amp;session=1&amp;vote=00027</url>
-          </link>
-          <link>
-            <name>S307</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S307</url>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Passed Senate, having achieved 60 votes in the affirmative (pursuant to H.R. 2028, 114th Congress), without amendment by Yea-Nay Vote. 81 - 17. Record Vote Number: 27. (text: CR S307)</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H.R. 2028</name>
-            <url>https://www.congress.gov/bill/115th-congress/house-bill/2028</url>
-          </link>
-          <link>
-            <name>Record Vote Number: 27</name>
-            <url>http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&amp;session=1&amp;vote=00027</url>
-          </link>
-          <link>
-            <name>S307</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S307</url>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Passed/agreed to in Senate: Passed Senate, having achieved 60 votes in the affirmative (pursuant to H.R. 2028, 114th Congress), without amendment by Yea-Nay Vote. 81 - 17. Record Vote Number: 27.(text: CR S307)</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>17000</actionCode>
-        <committee />
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links>
-          <link>
-            <name>S299-307</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S299-307</url>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Measure laid before Senate by motion. (consideration: CR S299-307)</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Motion to proceed to consideration of measure agreed to in Senate by Voice Vote.</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links>
-          <link>
-            <name>S299</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S299</url>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Motion to proceed to consideration of measure made in Senate. (CR S299)</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 2.</text>
-        <type>Calendars</type>
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>ssas00</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Committee on Armed Services. Reported by Senator McCain without amendment. Without written report.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <links />
-        <type>Committee</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Committee on Armed Services. Reported by Senator McCain without amendment. Without written report.</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>14000</actionCode>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>ssas00</systemCode>
-        </committee>
-      </item>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>ssas00</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Committee on Armed Services. Ordered to be reported without amendment favorably.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <actionDate>2017-01-10</actionDate>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>ssas00</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on Armed Services.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
-        <committee />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>13</houseOfRepresentatives>
-        <senate>12</senate>
-      </actionByCounts>
-    </actions>
+    <cosponsors />
+    <introducedDate>2017-01-10</introducedDate>
     <calendarNumbers>
       <item>
         <number>0002</number>
         <calendar>Senate Calendar of Business</calendar>
       </item>
     </calendarNumbers>
-    <updateDate>2017-01-21T10:04:58Z</updateDate>
-    <billNumber>84</billNumber>
-    <cosponsors />
-    <createDate>2017-01-11T05:09:45Z</createDate>
-    <relatedBills>
-      <item>
-        <congress>115</congress>
-        <number>393</number>
-        <relationshipDetails>
-          <item>
-            <identifiedBy>CRS</identifiedBy>
-            <type>Identical bill</type>
-          </item>
-        </relationshipDetails>
-        <latestAction>
+    <latestAction>
+      <actionDate>2017-01-20</actionDate>
+      <links>
+        <link>
+          <url>https://www.congress.gov/bill/115th-congress/senate-bill/84/text/pl</url>
+          <name>Public Law No: 115-2</name>
+        </link>
+      </links>
+      <text>Became Public Law No: 115-2.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-01-13T22:19:47Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed Senate without amendment</actionDesc>
           <actionDate>2017-01-12</actionDate>
-          <text>Ordered to be Reported by the Yeas and Nays: 34 - 28.</text>
-        </latestAction>
-        <latestTitle>To provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</latestTitle>
-        <type>HR</type>
-      </item>
-      <item>
-        <congress>115</congress>
-        <number>48</number>
-        <relationshipDetails>
-          <item>
-            <identifiedBy>House</identifiedBy>
-            <type>Procedurally-related</type>
-          </item>
-        </relationshipDetails>
-        <latestAction>
+          <lastSummaryUpdateDate>2017-02-08T21:21:24Z</lastSummaryUpdateDate>
+          <name>Passed Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p> (Sec. 1) This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, not within at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
+          <versionCode>82</versionCode>
+          <updateDate>2017-01-12T14:49:07Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed House without amendment</actionDesc>
           <actionDate>2017-01-13</actionDate>
-          <actionTime>10:54:30</actionTime>
-          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        </latestAction>
-        <latestTitle>Providing for consideration of the concurrent resolution (S. Con. Res. 3) setting forth the congressional budget for the United States Government for fiscal year 2017 and setting forth the appropriate budgetary levels for fiscal years 2018 through 2026, and providing for consideration of the bill (S. 84) to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of relief from active duty as a regular commissioned officer of the Armed Forces.</latestTitle>
-        <type>HRES</type>
-      </item>
-    </relatedBills>
+          <lastSummaryUpdateDate>2017-02-08T21:20:15Z</lastSummaryUpdateDate>
+          <name>Passed House without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p>(Sec. 1) This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, not within at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
+          <versionCode>81</versionCode>
+          <updateDate>2017-01-13T16:12:09Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Public Law</actionDesc>
+          <actionDate>2017-01-20</actionDate>
+          <lastSummaryUpdateDate>2017-02-08T21:18:44Z</lastSummaryUpdateDate>
+          <name>Public Law</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p>(Sec. 1) This bill allows the first person, and only such person, appointed as Secretary of Defense after the enactment of this bill to be a person who is, on the date of appointment, not within at least three years after relief from active duty as a commissioned officer of a regular component of the Armed Forces. (Under current law, an individual may not be appointed as Secretary of Defense within seven years after relief from such active duty.)</p>]]></text>
+          <versionCode>49</versionCode>
+          <updateDate>2017-01-21T04:59:59Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-11T05:09:45Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

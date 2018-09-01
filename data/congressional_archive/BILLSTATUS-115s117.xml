@@ -1,23 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>117</billNumber>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <billType>S</billType>
     <latestAction>
-      <links />
-      <actionDate>2017-01-12</actionDate>
-      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+      <links>
+        <link>
+          <name>Public Law No: 115-122</name>
+          <url>https://www.congress.gov/bill/115th-congress/senate-bill/117/text/pl</url>
+        </link>
+      </links>
+      <actionDate>2018-01-31</actionDate>
+      <text>Became Public Law No: 115-122.</text>
     </latestAction>
-    <introducedDate>2017-01-12</introducedDate>
-    <amendments />
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <notes />
     <actions>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <item>
+        <text>Became Public Law No: 115-122.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-01-31</actionDate>
+        <links>
+          <link>
+            <name>Public Law No: 115-122</name>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/117/text/pl</url>
+          </link>
+        </links>
+        <actionCode>E40000</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Became Public Law No: 115-122.</text>
+        <type>BecameLaw</type>
+        <committee />
+        <actionDate>2018-01-31</actionDate>
+        <links>
+          <link>
+            <name>Public Law No: 115-122</name>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/117/text/pl</url>
+          </link>
+        </links>
+        <actionCode>36000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Signed by President.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-01-31</actionDate>
+        <links />
+        <actionCode>E30000</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Signed by President.</text>
+        <type>BecameLaw</type>
+        <committee />
+        <actionDate>2018-01-31</actionDate>
+        <links />
+        <actionCode>36000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Presented to President.</text>
+        <type>Floor</type>
+        <committee />
+        <actionDate>2018-01-19</actionDate>
+        <links />
+        <actionCode>E20000</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Presented to President.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-01-19</actionDate>
+        <links />
+        <actionCode>28000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionTime>19:04:27</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H38310</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 400 - 3 (Roll no. 19). (text: CR H386)</text>
+        <actionTime>19:04:26</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H386</name>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H386</url>
+          </link>
+          <link>
+            <name>Roll no. 19</name>
+            <url>http://clerk.house.gov/evs/2018/roll019.xml</url>
+          </link>
+        </links>
+        <actionCode>H37300</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 400 - 3 (Roll no. 19).(text: CR H386)</text>
+        <actionTime>19:04:26</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H386</name>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H386</url>
+          </link>
+          <link>
+            <name>Roll no. 19</name>
+            <url>http://clerk.house.gov/evs/2018/roll019.xml</url>
+          </link>
+        </links>
+        <actionCode>8000</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>Considered as unfinished business. (consideration: CR H396)</text>
+        <actionTime>18:54:37</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H396</name>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H396</url>
+          </link>
+        </links>
+        <actionCode>H30000</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>At the conclusion of debate, the Yeas and Nays were demanded and ordered. Pursuant to the provisions of clause 8, rule XX, the Chair announced that further proceedings on the motion would be postponed.</text>
+        <actionTime>17:12:25</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H37220</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>DEBATE - The House proceeded with forty minutes of debate on S. 117.</text>
+        <actionTime>17:07:10</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>S. 117</name>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/117</url>
+          </link>
+        </links>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>Considered under suspension of the rules. (consideration: CR H386-387)</text>
+        <actionTime>17:07:08</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H386-387</name>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H386-387</url>
+          </link>
+        </links>
+        <actionCode>H30000</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>Mr. Gianforte moved to suspend the rules and pass the bill.</text>
+        <actionTime>17:07:00</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H30300</actionCode>
+        <actionDate>2018-01-16</actionDate>
+      </item>
+      <item>
+        <text>Placed on the House Calendar, Calendar No. 117.</text>
+        <type>Calendars</type>
+        <committee />
+        <actionDate>2018-01-16</actionDate>
+        <links />
+        <actionCode>H12420</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-516.</text>
+        <type>Committee</type>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <actionDate>2018-01-16</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-516</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/516</url>
+          </link>
+        </links>
+        <actionCode>H12200</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-516.</text>
+        <type>Committee</type>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <actionDate>2018-01-16</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-516</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/516</url>
+          </link>
+        </links>
+        <actionCode>5000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Federal Lands Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-01-02</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <actionDate>2017-12-21</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Received in the House.</text>
+        <actionTime>12:23:05</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H14000</actionCode>
+        <actionDate>2017-12-21</actionDate>
+      </item>
+      <item>
+        <actionDate>2017-12-21</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-12-20</actionDate>
+        <committee />
+        <links>
+          <link>
+            <name>S8184-8185</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8184-8185</url>
+          </link>
+          <link>
+            <name>S8185</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8185</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with an amendment by Unanimous Consent. (consideration: CR S8184-8185; text as passed Senate: CR S8185)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <text>Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.(consideration: CR S8184-8185; text as passed Senate: CR S8185)</text>
+        <type>Floor</type>
+        <committee />
+        <actionDate>2017-12-20</actionDate>
+        <links>
+          <link>
+            <name>S8184-8185</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8184-8185</url>
+          </link>
+          <link>
+            <name>S8185</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8185</url>
+          </link>
+        </links>
+        <actionCode>17000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-06-08</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 124.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-06-08</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <name>report No. 115-94</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/94</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment. With written report No. 115-94.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment. With written report No. 115-94.</text>
+        <type>Committee</type>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <actionDate>2017-06-08</actionDate>
+        <links>
+          <link>
+            <name>report No. 115-94</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/94</url>
+          </link>
+        </links>
+        <actionCode>14000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-03-30</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Ordered to be reported with an amendment favorably.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
@@ -26,122 +497,371 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <actionDate>2017-01-12</actionDate>
         <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <type>IntroReferral</type>
         <committee />
+        <actionDate>2017-01-12</actionDate>
         <links />
         <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionByCounts>
+        <senate>9</senate>
+        <houseOfRepresentatives>17</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <presentedToPresident>1</presentedToPresident>
+        <considerationByHouse>2</considerationByHouse>
+        <passedSenate>1</passedSenate>
+        <orderedReported>1</orderedReported>
+        <becamePublicLaw>2</becamePublicLaw>
+        <reportedToSenate>2</reportedToSenate>
+        <actionStageOverride>1</actionStageOverride>
+        <houseCalendarAssignment>1</houseCalendarAssignment>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <billReferrals>1</billReferrals>
+        <reportedToHouse>1</reportedToHouse>
+        <placeholderTextForH>4</placeholderTextForH>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <placeholderTextForE>3</placeholderTextForE>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <sentToHouse>1</sentToHouse>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <generalDebate>1</generalDebate>
+      </actionTypeCounts>
     </actions>
-    <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
+    <calendarNumbers>
       <item>
-        <firstName>Steve</firstName>
-        <party>R</party>
-        <fullName>Sen. Daines, Steve [R-MT]</fullName>
-        <middleName />
-        <state>MT</state>
-        <byRequestType />
-        <bioguideId>D000618</bioguideId>
-        <identifiers>
-          <lisID>2138</lisID>
-          <bioguideId>D000618</bioguideId>
-          <gpoId />
-        </identifiers>
-        <lastName>Daines</lastName>
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0124</number>
       </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
-    <recordedVotes />
-    <updateDate>2017-01-19T09:53:56Z</updateDate>
-    <policyArea />
+      <item>
+        <calendar>H00117</calendar>
+        <number />
+      </item>
+    </calendarNumbers>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Montana</name>
+          </item>
+          <item>
+            <name>Wilderness and natural areas, wildlife refuges, wild rivers, habitats</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>117</billNumber>
     <title>Alex Diekmann Peak Designation Act of 2017</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-13T04:55:34Z</createDate>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
+          <systemCode>hsii00</systemCode>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Discharged from</name>
+                  <date>2018-01-10T20:57:14Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2018-01-02T21:36:07Z</date>
+                </item>
+              </activities>
+              <name>Federal Lands Subcommittee</name>
+              <systemCode>hsii10</systemCode>
+            </item>
+          </subcommittees>
           <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2018-01-16T17:20:07Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2018-01-10T20:57:33Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-12-21T19:42:40Z</date>
+            </item>
+          </activities>
+          <name>Natural Resources Committee</name>
+          <chamber>House</chamber>
+          <type>Standing</type>
+        </item>
+        <item>
+          <systemCode>sseg00</systemCode>
+          <subcommittees />
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-06-08T21:42:38Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-03-30T13:30:00Z</date>
+            </item>
             <item>
               <name>Referred to</name>
               <date>2017-01-12T19:00:32Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>sseg00</systemCode>
-          <chamber>Senate</chamber>
           <name>Energy and Natural Resources Committee</name>
+          <chamber>Senate</chamber>
+          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
-    <relatedBills />
-    <laws />
-    <titles>
+    <introducedDate>2017-01-12</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-94</citation>
+      </committeeReport>
+      <committeeReport>
+        <citation>H. Rept. 115-516</citation>
+      </committeeReport>
+    </committeeReports>
+    <updateDate>2018-08-28T20:22:43Z</updateDate>
+    <laws>
       <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <title>Alex Diekmann Peak Designation Act of 2017</title>
-        <parentTitleType />
-        <chamberCode />
+        <type>Public Law</type>
+        <number>115-122</number>
+      </item>
+    </laws>
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates>
+      <item>
+        <title>S. 117, Alex Diekmann Peak Designation Act of 2017</title>
+        <url>https://www.cbo.gov/publication/52649</url>
+        <pubDate>2017-04-20T15:02:54Z</pubDate>
       </item>
       <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to designate a mountain peak in the State of Montana as "Alex Diekmann Peak".</title>
-        <parentTitleType />
-        <chamberCode />
+        <title>S. 117, Alex Diekmann Peak Designation Act of 2017</title>
+        <url>https://www.cbo.gov/publication/53471</url>
+        <pubDate>2018-01-12T16:17:00Z</pubDate>
       </item>
+    </cboCostEstimates>
+    <sponsors>
       <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>Alex Diekmann Peak Designation Act of 2017</title>
-        <parentTitleType />
-        <chamberCode />
+        <middleName />
+        <bioguideId>D000618</bioguideId>
+        <identifiers>
+          <bioguideId>D000618</bioguideId>
+          <gpoId />
+          <lisID>2138</lisID>
+        </identifiers>
+        <fullName>Sen. Daines, Steve [R-MT]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Steve</firstName>
+        <state>MT</state>
+        <lastName>Daines</lastName>
       </item>
-    </titles>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-10-03</actionDate>
+          <text>Referred to the Subcommittee on Federal Lands.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>Alex Diekmann Peak Designation Act of 2017</latestTitle>
+        <number>3873</number>
+      </item>
+    </relatedBills>
     <cosponsors>
       <item>
-        <bioguideId>T000464</bioguideId>
-        <middleName />
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
         <party>D</party>
-        <sponsorshipWithdrawnDate />
+        <bioguideId>T000464</bioguideId>
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
         <lastName>Tester</lastName>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <firstName>Jon</firstName>
-        <identifiers>
-          <gpoId>8258</gpoId>
-          <lisID>1829</lisID>
-          <bioguideId>T000464</bioguideId>
-        </identifiers>
         <state>MT</state>
-        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <congress>115</congress>
+    <titles>
+      <item>
+        <parentTitleType>Short Title</parentTitleType>
+        <titleType>Short Titles as Enacted</titleType>
+        <chamberCode />
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to designate a mountain peak in the State of Montana as "Alex Diekmann Peak".</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <chamberCode>H</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Alex Diekmann Peak Designation Act of 2017</title>
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes>
+      <recordedVote>
+        <date>2018-01-17T00:04:26Z</date>
+        <url>http://clerk.house.gov/evs/2018/roll019.xml</url>
+        <fullActionName>Final Passage Under Suspension of the Rules Results</fullActionName>
+        <rollNumber>19</rollNumber>
+        <congress>115</congress>
+        <chamber>House</chamber>
+        <sessionNumber>2</sessionNumber>
+      </recordedVote>
+    </recordedVotes>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-11-02T20:45:04Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p>This bill designates the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana as &quot;Alex Diekmann Peak.&quot;</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Reported to Senate with amendment(s)</actionDesc>
+          <actionDate>2017-06-08</actionDate>
+          <lastSummaryUpdateDate>2018-06-05T13:28:48Z</lastSummaryUpdateDate>
+          <name>Reported to Senate with amendment(s)</name>
+          <text><![CDATA[<p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p> This bill designates as the &quot;Alex Diekmann Peak&quot; the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana. </p>]]></text>
+          <versionCode>01</versionCode>
+          <updateDate>2017-06-08T14:06:05Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed Senate amended</actionDesc>
+          <actionDate>2017-12-20</actionDate>
+          <lastSummaryUpdateDate>2018-05-17T14:41:23Z</lastSummaryUpdateDate>
+          <name>Passed Senate amended</name>
+          <text><![CDATA[<p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p>(Sec. 2) This bill designates as the &quot;Alex Diekmann Peak&quot; the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana. </p>]]></text>
+          <versionCode>35</versionCode>
+          <updateDate>2017-12-20T12:47:07Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2018-01-16</actionDate>
+          <lastSummaryUpdateDate>2018-04-16T19:52:48Z</lastSummaryUpdateDate>
+          <name>Passed House without amendment</name>
+          <text><![CDATA[<p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p>(Sec. 2) This bill designates as the &quot;Alex Diekmann Peak&quot; the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana. </p>]]></text>
+          <versionCode>81</versionCode>
+          <updateDate>2018-01-16T14:50:21Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Public Law</actionDesc>
+          <actionDate>2018-01-31</actionDate>
+          <lastSummaryUpdateDate>2018-05-31T16:18:37Z</lastSummaryUpdateDate>
+          <name>Public Law</name>
+          <text><![CDATA[<p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p>(Sec. 2) This bill designates as the &quot;Alex Diekmann Peak&quot; the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana. </p>]]></text>
+          <versionCode>49</versionCode>
+          <updateDate>2018-02-01T04:59:58Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

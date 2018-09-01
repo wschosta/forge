@@ -2,168 +2,202 @@
 <billStatus>
   <bill>
     <notes />
-    <billNumber>264</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-04</actionDate>
-      <text>Referred to the House Committee on Foreign Affairs.</text>
-    </latestAction>
-    <introducedDate>2017-01-04</introducedDate>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-04</actionDate>
-        <committee>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-04</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-04</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-    </actions>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>International Affairs</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <calendarNumbers />
-    <billType>HR</billType>
-    <sponsors>
-      <item>
-        <lastName>Lamborn</lastName>
-        <firstName>Doug</firstName>
-        <party>R</party>
-        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
-        <middleName />
-        <state>CO</state>
-        <byRequestType />
-        <bioguideId>L000564</bioguideId>
-        <district>5</district>
-        <identifiers>
-          <gpoId>7863</gpoId>
-          <lisID>1834</lisID>
-          <bioguideId>L000564</bioguideId>
-        </identifiers>
-      </item>
-    </sponsors>
-    <originChamber>House</originChamber>
-    <recordedVotes />
-    <committeeReports />
-    <policyArea>
-      <name>International Affairs</name>
-    </policyArea>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-05T04:47:33Z</createDate>
+    <title>United Nations Review and Accounting Act</title>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-04T15:05:05Z</date>
             </item>
           </activities>
+          <name>Foreign Affairs Committee</name>
+          <type>Standing</type>
           <chamber>House</chamber>
+          <subcommittees />
+          <systemCode>hsfa00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <relatedBills />
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
     <laws />
+    <updateDate>2018-08-28T19:58:35Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
+        <identifiers>
+          <lisID>1834</lisID>
+          <bioguideId>L000564</bioguideId>
+          <gpoId>7863</gpoId>
+        </identifiers>
+        <bioguideId>L000564</bioguideId>
+        <lastName>Lamborn</lastName>
+        <firstName>Doug</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>CO</state>
+        <district>5</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LAMBORN:H.R. 264.Congress has the power to enact this legislation pursuantto the following:Art. I, Sec. 8 ``To regulate Commerce with foreignNations''[Page H97]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>264</billNumber>
     <titles>
       <item>
+        <titleType>Short Titles as Introduced</titleType>
         <chamberName />
         <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
         <title>United Nations Review and Accounting Act</title>
       </item>
       <item>
+        <titleType>Official Title as Introduced</titleType>
         <chamberName />
         <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
         <title>To prohibit the use of funds for assessed or voluntary contributions to the United Nations until the submission of certain reports on such funding, and for other purposes.</title>
       </item>
       <item>
+        <titleType>Display Title</titleType>
         <chamberName />
         <chamberCode />
-        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <title>United Nations Review and Accounting Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
         <parentTitleType />
         <title>United Nations Review and Accounting Act</title>
       </item>
     </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+          <item>
+            <name>Military operations and strategy</name>
+          </item>
+          <item>
+            <name>United Nations</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
     <cosponsors>
       <item>
-        <firstName>Trent</firstName>
-        <district>8</district>
-        <middleName />
-        <state>AZ</state>
-        <bioguideId>F000448</bioguideId>
-        <identifiers>
-          <bioguideId>F000448</bioguideId>
-          <lisID>1707</lisID>
-          <gpoId>7799</gpoId>
-        </identifiers>
-        <lastName>Franks</lastName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
+        <identifiers>
+          <gpoId>7799</gpoId>
+          <lisID>1707</lisID>
+          <bioguideId>F000448</bioguideId>
+        </identifiers>
+        <lastName>Franks</lastName>
+        <firstName>Trent</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
         <sponsorshipWithdrawnDate />
+        <state>AZ</state>
+        <district>8</district>
+        <bioguideId>F000448</bioguideId>
       </item>
     </cosponsors>
-    <updateDate>2017-01-18T21:31:11Z</updateDate>
-    <constitutionalAuthorityStatementText />
-    <title>United Nations Review and Accounting Act</title>
-    <congress>115</congress>
+    <introducedDate>2017-01-04</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-04</actionDate>
+      <links />
+      <text>Referred to the House Committee on Foreign Affairs.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>United Nations Review and Accounting Act</strong></p> <p>This bill prohibits funds from being obligated, expended, or transferred for assessed or voluntary U.N. contributions (or to any fund, program, or entity affiliated with the U.N.) until 180 days after the date on which all of the following reports have been submitted: </p> <ul> <li>the President's report on U.S. contributions to the U.N. relating to peacekeeping operations, </li> <li>the Office of Management and Budget's additional report on other U.S. contributions to the U.N., and </li> <li>the Government Accountability Office's comparative report on peacekeeping operations.</li> </ul>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-06-26T22:02:59Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <actionDate>2017-01-04</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-05T04:47:33Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

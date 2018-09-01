@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-23T17:01:16Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Armed Services.</text>
-      <links />
-    </latestAction>
-    <billNumber>171</billNumber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsas00</systemCode>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:07:15Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <name>Armed Services Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
+    <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:58:08Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. JONES:H.R. 171.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article 1, section 8 of the United StatesConstitution (clauses 12, 13, 14, and 16), which grantsCongress the power to raise and support an Army; to provideand maintain a Navy; to make rules for the government andregulation of the land and naval forces; and to provide fororganizing, arming, and disciplining the militia.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Armed Forces and National Security</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Department of Defense</name>
@@ -42,120 +19,161 @@
             <name>Military command and structure</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <originChamber>House</originChamber>
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>This bill redesignates: (1) the Department of the Navy as the Department of the Navy and Marine Corps, and (2) the Secretary of the Navy as the Secretary of the Navy and Marine Corps. The bill makes similar redesignations with respect to the Department Under Secretary, the Department Assistant Secretaries, and the General Counsel.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-13T16:40:27Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <billType>HR</billType>
+    <latestAction>
+      <text>Referred to the House Committee on Armed Services.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <actionDate>2017-12-12</actionDate>
+          <text>Became Public Law No: 115-91.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>National Defense Authorization Act for Fiscal Year 2018</latestTitle>
+        <type>HR</type>
+        <number>2810</number>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-03</introducedDate>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the House Committee on Armed Services.</text>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>hsas00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>171</billNumber>
+    <cboCostEstimates />
+    <cosponsors />
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsas00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Armed Services Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:07:15Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T07:01:12Z</createDate>
     <sponsors>
       <item>
+        <bioguideId>J000255</bioguideId>
+        <party>R</party>
+        <firstName>WALTER</firstName>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <state>NC</state>
+        <district>3</district>
+        <lastName>JONES</lastName>
+        <middleName>B.</middleName>
         <identifiers>
           <lisID>612</lisID>
           <bioguideId>J000255</bioguideId>
           <gpoId>8026</gpoId>
         </identifiers>
-        <middleName>B.</middleName>
-        <lastName>JONES</lastName>
-        <firstName>WALTER</firstName>
         <byRequestType />
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <district>3</district>
-        <party>R</party>
-        <state>NC</state>
-        <bioguideId>J000255</bioguideId>
       </item>
     </sponsors>
-    <congress>115</congress>
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <name>Introduced in House</name>
-          <text><![CDATA[<p>This bill redesignates: (1) the Department of the Navy as the Department of the Navy and Marine Corps, and (2) the Secretary of the Navy as the Secretary of the Navy and Marine Corps. The bill makes similar redesignations with respect to the Department Under Secretary, the Department Assistant Secretaries, and the General Counsel.</p>]]></text>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-          <actionDate>2017-01-03</actionDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <lastSummaryUpdateDate>2017-01-13T16:40:27Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <cboCostEstimates />
-    <billType>HR</billType>
-    <relatedBills />
-    <cosponsors />
-    <actions>
-      <item>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <links />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>hsas00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Armed Services.</text>
-      </item>
-      <item>
-        <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <links />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <links />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <laws />
-    <amendments />
-    <recordedVotes />
-    <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. JONES:H.R. 171.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article 1, section 8 of the United StatesConstitution (clauses 12, 13, 14, and 16), which grantsCongress the power to raise and support an Army; to provideand maintain a Navy; to make rules for the government andregulation of the land and naval forces; and to provide fororganizing, arming, and disciplining the militia.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
-    <committeeReports />
-    <calendarNumbers />
     <titles>
       <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
-        <chamberCode />
         <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
+        <parentTitleType />
       </item>
       <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
-        <chamberCode />
         <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>To redesignate the Department of the Navy as the Department of the Navy and Marine Corps.</title>
+        <parentTitleType />
       </item>
     </titles>
   </bill>

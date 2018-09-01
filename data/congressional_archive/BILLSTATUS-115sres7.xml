@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>7</billNumber>
-    <billType>SRES</billType>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <amendments />
-    <notes />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T14:28:16Z</updateDate>
-    <originChamber>Senate</originChamber>
+    <committees>
+      <billCommittees />
+    </committees>
     <actions>
-      <actionByCounts>
-        <senate>3</senate>
-      </actionByCounts>
       <item>
         <actionDate>2017-01-05</actionDate>
         <committee />
         <links>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S106</url>
             <name>S106</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S106</url>
           </link>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S117</url>
             <name>S117</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S117</url>
           </link>
         </links>
         <sourceSystem>
@@ -43,50 +26,141 @@
         <type>Floor</type>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>Floor</type>
         <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S106; text as passed Senate: CR S117)</text>
+        <type>Floor</type>
         <committee />
+        <actionDate>2017-01-05</actionDate>
         <links>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S106</url>
             <name>S106</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S106</url>
           </link>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S117</url>
             <name>S117</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S117</url>
           </link>
         </links>
-        <actionDate>2017-01-05</actionDate>
         <actionCode>17000</actionCode>
-      </item>
-      <item>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>10000</actionCode>
       </item>
+      <item>
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <senate>3</senate>
+      </actionByCounts>
       <actionTypeCounts>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
         <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
         <introducedInSenate>1</introducedInSenate>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
       </actionTypeCounts>
     </actions>
-    <createDate>2017-01-06T04:57:27Z</createDate>
+    <recordedVotes />
+    <laws />
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+      </item>
+    </titles>
+    <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S106; text as passed Senate: CR S117)</text>
+      <links />
+      <actionDate>2017-01-05</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T20:20:14Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billType>SRES</billType>
+    <billNumber>7</billNumber>
+    <originChamber>Senate</originChamber>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <actionDate>2017-01-20</actionDate>
+          <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S365; text as passed Senate: CR S362)</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</latestTitle>
+        <type>SRES</type>
+        <number>16</number>
+      </item>
+      <item>
+        <latestAction>
+          <actionDate>2017-01-03</actionDate>
+          <text>Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</latestTitle>
+        <type>SRES</type>
+        <number>4</number>
+      </item>
+    </relatedBills>
+    <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+    <congress>115</congress>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2017-02-17T22:59:43Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Designates the majority party membership on specified Senate committees for the 115th Congress.</p>]]></text>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <versionCode>82</versionCode>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <name>Passed Senate without amendment</name>
+          <lastSummaryUpdateDate>2017-03-16T18:34:30Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the majority party membership on specified Senate committees for the 115th Congress.</p>]]></text>
+          <updateDate>2017-01-05T13:33:24Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional committees</name>
@@ -161,71 +235,33 @@
             <name>Senate Special Committee on Aging</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
-      <item>
-        <chamberName />
-        <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills>
-      <item>
-        <latestTitle>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</latestTitle>
-        <type>SRES</type>
-        <relationshipDetails>
-          <item>
-            <type>Related bill</type>
-            <identifiedBy>CRS</identifiedBy>
-          </item>
-        </relationshipDetails>
-        <number>4</number>
-        <congress>115</congress>
-        <latestAction>
-          <actionDate>2017-01-03</actionDate>
-          <text>Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule.</text>
-        </latestAction>
-      </item>
-    </relatedBills>
-    <calendarNumbers />
-    <title>A resolution to constitute the majority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-    <introducedDate>2017-01-05</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S106; text as passed Senate: CR S117)</text>
-      <links />
-    </latestAction>
     <committeeReports />
-    <committees>
-      <billCommittees />
-    </committees>
+    <introducedDate>2017-01-05</introducedDate>
     <sponsors>
       <item>
-        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
-        <firstName>MITCH</firstName>
         <bioguideId>M000355</bioguideId>
-        <party>R</party>
-        <byRequestType />
         <middleName />
-        <state>KY</state>
+        <byRequestType />
+        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
         <lastName>MCCONNELL</lastName>
+        <state>KY</state>
+        <party>R</party>
         <identifiers>
           <lisID>1395</lisID>
-          <gpoId>8254</gpoId>
           <bioguideId>M000355</bioguideId>
+          <gpoId>8254</gpoId>
         </identifiers>
+        <firstName>MITCH</firstName>
       </item>
     </sponsors>
+    <notes />
+    <createDate>2017-01-06T04:57:27Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

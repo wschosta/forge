@@ -1,265 +1,789 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-12T09:58:09Z</updateDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To deem the Step 2 compliance date for standards of performance for new residential wood heaters, new residential hydronic heaters, and forced-air furnaces to be May 15, 2023.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To deem the Step 2 compliance date for standards of performance for new residential wood heaters, new residential hydronic heaters, and forced-air furnaces to be May 15, 2023.</title>
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-11</introducedDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. PETERSON:H.R. 453.Congress has the power toenact this legislation pursuantto the following:Article 1, Section 8, Clause 3 of the U.S. Constitution.[Page H392]</pre>]]></constitutionalAuthorityStatementText>
     <sponsors>
       <item>
         <middleName>C.</middleName>
-        <firstName>COLLIN</firstName>
+        <party>D</party>
         <bioguideId>P000258</bioguideId>
-        <district>7</district>
-        <byRequestType />
+        <lastName>PETERSON</lastName>
+        <firstName>COLLIN</firstName>
         <state>MN</state>
         <identifiers>
           <lisID>910</lisID>
           <gpoId>8007</gpoId>
           <bioguideId>P000258</bioguideId>
         </identifiers>
-        <party>D</party>
-        <lastName>PETERSON</lastName>
+        <district>7</district>
         <fullName>Rep. Peterson, Collin C. [D-MN-7]</fullName>
+        <byRequestType />
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
+    <version>1.0.0</version>
+    <createDate>2017-01-12T04:45:50Z</createDate>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-508</citation>
+      </committeeReport>
+    </committeeReports>
     <latestAction>
-      <actionDate>2017-01-11</actionDate>
+      <text>Placed on the Union Calendar, Calendar No. 378.</text>
       <links />
-      <text>Referred to the House Committee on Energy and Commerce.</text>
+      <actionDate>2018-01-10</actionDate>
     </latestAction>
+    <billNumber>453</billNumber>
+    <notes />
+    <introducedDate>2017-01-11</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsif18</systemCode>
+              <name>Environment and the Economy Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-11-15T20:30:08Z</date>
+                  <name>Reported by</name>
+                </item>
+                <item>
+                  <date>2017-11-15T20:20:25Z</date>
+                  <name>Markup by</name>
+                </item>
+                <item>
+                  <date>2017-01-25T14:38:25Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+          <activities>
+            <item>
+              <date>2018-01-10T22:39:33Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-12-06T17:25:54Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-11T15:01:45Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills>
+      <item>
+        <latestTitle>A bill to establish a compliance deadline of May 15, 2023, for Step 2 emissions standards for new residential wood heaters, new residential hydronic heaters, and forced-air furnaces.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>1857</number>
+        <latestAction>
+          <actionDate>2017-11-14</actionDate>
+          <text>Committee on Environment and Public Works Senate Subcommittee on Clean Air and Nuclear Safety. Hearings held. With printed Hearing: S.Hrg. 115-127.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+      <item>
+        <latestTitle>Blocking Regulatory Interference from Closing Kilns Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>1917</number>
+        <latestAction>
+          <actionDate>2018-03-08</actionDate>
+          <text>Received in the Senate and Read twice and referred to the Committee on Environment and Public Works.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+    </relatedBills>
     <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Environmental Protection Agency (EPA)</name>
+          </item>
+          <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
+            <name>Lighting and heating</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-12-21T21:27:49Z</pubDate>
+        <title>H.R. 453, Relief from New Source Performance Standards Act of 2017</title>
+        <url>https://www.cbo.gov/publication/53431</url>
+      </item>
+    </cboCostEstimates>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>3</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <actionStageOverride>1</actionStageOverride>
+        <designationOfSpeakerProTempore>1</designationOfSpeakerProTempore>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <reportedToHouse>1</reportedToHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <actionCode>H12410</actionCode>
+        <committee />
+        <text>Placed on the Union Calendar, Calendar No. 378.</text>
+        <links />
+        <type>Calendars</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <actionCode>H12200</actionCode>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-508.</text>
+        <links>
+          <link>
+            <name>H. Rept. 115-508</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/508</url>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-01-10</actionDate>
+        <actionCode>5000</actionCode>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-508.</text>
+        <links>
+          <link>
+            <name>H. Rept. 115-508</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/508</url>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-12-06</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Ordered to be Reported by the Yeas and Nays: 32 - 21.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-12-06</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-11-15</actionDate>
+        <committee>
+          <systemCode>hsif18</systemCode>
+          <name>Environment and the Economy Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Forwarded by Subcommittee to Full Committee by the Yeas and Nays: 12 - 10 .</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-11-15</actionDate>
+        <committee>
+          <systemCode>hsif18</systemCode>
+          <name>Environment and the Economy Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Subcommittee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif18</systemCode>
+          <name>Environment and the Economy Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>11</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
     <cosponsors>
       <item>
-        <bioguideId>G000289</bioguideId>
+        <district>6</district>
         <firstName>ROBERT</firstName>
+        <identifiers>
+          <lisID>446</lisID>
+          <bioguideId>G000289</bioguideId>
+          <gpoId>8197</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>G000289</bioguideId>
+        <state>VA</state>
+        <fullName>Rep. Goodlatte, Bob [R-VA-6]</fullName>
         <party>R</party>
         <lastName>GOODLATTE</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName>W.</middleName>
-        <state>VA</state>
-        <district>6</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>446</lisID>
-          <gpoId>8197</gpoId>
-          <bioguideId>G000289</bioguideId>
-        </identifiers>
-        <fullName>Rep. Goodlatte, Bob [R-VA-6]</fullName>
       </item>
       <item>
-        <bioguideId>S001195</bioguideId>
+        <district>8</district>
         <firstName>Jason</firstName>
+        <identifiers>
+          <lisID>2191</lisID>
+          <gpoId />
+          <bioguideId>S001195</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>S001195</bioguideId>
+        <state>MO</state>
+        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
         <party>R</party>
         <lastName>Smith</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
-        <state>MO</state>
-        <district>8</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>S001195</bioguideId>
-          <lisID>2191</lisID>
-          <gpoId />
-        </identifiers>
-        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
       </item>
       <item>
-        <bioguideId>L000576</bioguideId>
+        <district>7</district>
         <firstName>Billy</firstName>
+        <identifiers>
+          <lisID>2033</lisID>
+          <bioguideId>L000576</bioguideId>
+          <gpoId>8015</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>L000576</bioguideId>
+        <state>MO</state>
+        <fullName>Rep. Long, Billy [R-MO-7]</fullName>
         <party>R</party>
         <lastName>Long</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
-        <state>MO</state>
-        <district>7</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>2033</lisID>
-          <gpoId>8015</gpoId>
-          <bioguideId>L000576</bioguideId>
-        </identifiers>
-        <fullName>Rep. Long, Billy [R-MO-7]</fullName>
       </item>
       <item>
-        <bioguideId>L000587</bioguideId>
+        <district>2</district>
         <firstName>Jason</firstName>
+        <identifiers>
+          <bioguideId>L000587</bioguideId>
+          <lisID>2335</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>L000587</bioguideId>
+        <state>MN</state>
+        <fullName>Rep. Lewis, Jason [R-MN-2]</fullName>
         <party>R</party>
         <lastName>Lewis</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
-        <state>MN</state>
-        <district>2</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>L000587</bioguideId>
-          <gpoId />
-          <lisID>2335</lisID>
-        </identifiers>
-        <fullName>Rep. Lewis, Jason [R-MN-2]</fullName>
       </item>
       <item>
-        <bioguideId>E000294</bioguideId>
+        <district>6</district>
         <firstName>Tom</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2253</lisID>
+          <bioguideId>E000294</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>E000294</bioguideId>
+        <state>MN</state>
+        <fullName>Rep. Emmer, Tom [R-MN-6]</fullName>
         <party>R</party>
         <lastName>Emmer</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
-        <state>MN</state>
-        <district>6</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>E000294</bioguideId>
-          <gpoId />
-          <lisID>2253</lisID>
-        </identifiers>
-        <fullName>Rep. Emmer, Tom [R-MN-6]</fullName>
       </item>
       <item>
-        <bioguideId>S000244</bioguideId>
+        <district>5</district>
         <firstName>F.</firstName>
+        <identifiers>
+          <bioguideId>S000244</bioguideId>
+          <lisID>1041</lisID>
+          <gpoId>8218</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>S000244</bioguideId>
+        <state>WI</state>
+        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
         <party>R</party>
         <lastName>SENSENBRENNER</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName>JAMES</middleName>
-        <state>WI</state>
-        <district>5</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1041</lisID>
-          <gpoId>8218</gpoId>
-          <bioguideId>S000244</bioguideId>
-        </identifiers>
-        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
       </item>
       <item>
-        <bioguideId>K000188</bioguideId>
+        <district>3</district>
         <firstName>RON</firstName>
+        <identifiers>
+          <bioguideId>K000188</bioguideId>
+          <lisID>1498</lisID>
+          <gpoId>8216</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>K000188</bioguideId>
+        <state>WI</state>
+        <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
         <party>D</party>
         <lastName>KIND</lastName>
         <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
-        <state>WI</state>
-        <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>2</district>
+        <firstName>David</firstName>
         <identifiers>
-          <gpoId>8216</gpoId>
-          <bioguideId>K000188</bioguideId>
-          <lisID>1498</lisID>
+          <lisID>1846</lisID>
+          <gpoId>7915</gpoId>
+          <bioguideId>L000565</bioguideId>
         </identifiers>
-        <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>L000565</bioguideId>
+        <state>IA</state>
+        <fullName>Rep. Loebsack, David [D-IA-2]</fullName>
+        <party>D</party>
+        <lastName>Loebsack</lastName>
+        <sponsorshipDate>2017-02-14</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>6</district>
+        <firstName>Glenn</firstName>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>G000576</bioguideId>
+        <state>WI</state>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <party>R</party>
+        <lastName>Grothman</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>3</district>
+        <firstName>Blaine</firstName>
+        <identifiers>
+          <lisID>1931</lisID>
+          <bioguideId>L000569</bioguideId>
+          <gpoId>8017</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>L000569</bioguideId>
+        <state>MO</state>
+        <fullName>Rep. Luetkemeyer, Blaine [R-MO-3]</fullName>
+        <party>R</party>
+        <lastName>Luetkemeyer</lastName>
+        <sponsorshipDate>2017-03-01</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>3</district>
+        <firstName>Erik</firstName>
+        <identifiers>
+          <bioguideId>P000594</bioguideId>
+          <lisID>1930</lisID>
+          <gpoId>8003</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>P000594</bioguideId>
+        <state>MN</state>
+        <fullName>Rep. Paulsen, Erik [R-MN-3]</fullName>
+        <party>R</party>
+        <lastName>Paulsen</lastName>
+        <sponsorshipDate>2017-03-02</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>4</district>
+        <firstName>Scott</firstName>
+        <identifiers>
+          <lisID>2062</lisID>
+          <bioguideId>D000616</bioguideId>
+          <gpoId>8151</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>D000616</bioguideId>
+        <state>TN</state>
+        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
+        <party>R</party>
+        <lastName>DesJarlais</lastName>
+        <sponsorshipDate>2017-03-17</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>8</district>
+        <firstName>Mike</firstName>
+        <identifiers>
+          <bioguideId>B001293</bioguideId>
+          <gpoId />
+          <lisID>2249</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>B001293</bioguideId>
+        <state>MI</state>
+        <fullName>Rep. Bishop, Mike [R-MI-8]</fullName>
+        <party>R</party>
+        <lastName>Bishop</lastName>
+        <sponsorshipDate>2017-03-17</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>8</district>
+        <firstName>Richard</firstName>
+        <identifiers>
+          <lisID>2140</lisID>
+          <gpoId />
+          <bioguideId>H001067</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>H001067</bioguideId>
+        <state>NC</state>
+        <fullName>Rep. Hudson, Richard [R-NC-8]</fullName>
+        <party>R</party>
+        <lastName>Hudson</lastName>
+        <sponsorshipDate>2017-03-29</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>6</district>
+        <firstName>SAM</firstName>
+        <identifiers>
+          <lisID>1656</lisID>
+          <bioguideId>G000546</bioguideId>
+          <gpoId>8014</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>G000546</bioguideId>
+        <state>MO</state>
+        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
+        <party>R</party>
+        <lastName>GRAVES</lastName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>3</district>
+        <firstName>WALTER</firstName>
+        <identifiers>
+          <lisID>612</lisID>
+          <bioguideId>J000255</bioguideId>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>J000255</bioguideId>
+        <state>NC</state>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <party>R</party>
+        <lastName>JONES</lastName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <middleName>B.</middleName>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>1</district>
+        <firstName>Tom</firstName>
+        <identifiers>
+          <lisID>2306</lisID>
+          <bioguideId>O000171</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>O000171</bioguideId>
+        <state>AZ</state>
+        <fullName>Rep. O'Halleran, Tom [D-AZ-1]</fullName>
+        <party>D</party>
+        <lastName>O'Halleran</lastName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>8</district>
+        <firstName>RICHARD</firstName>
+        <identifiers>
+          <lisID>867</lisID>
+          <bioguideId>N000127</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>N000127</bioguideId>
+        <state>MN</state>
+        <fullName>Rep. Nolan, Richard M. [D-MN-8]</fullName>
+        <party>D</party>
+        <lastName>NOLAN</lastName>
+        <sponsorshipDate>2017-05-01</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>3</district>
+        <firstName>Gregg</firstName>
+        <identifiers>
+          <lisID>1933</lisID>
+          <gpoId>8021</gpoId>
+          <bioguideId>H001045</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>H001045</bioguideId>
+        <state>MS</state>
+        <fullName>Rep. Harper, Gregg [R-MS-3]</fullName>
+        <party>R</party>
+        <lastName>Harper</lastName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>15</district>
+        <firstName>Steve</firstName>
+        <identifiers>
+          <lisID>2047</lisID>
+          <gpoId>8105</gpoId>
+          <bioguideId>S001187</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>S001187</bioguideId>
+        <state>OH</state>
+        <fullName>Rep. Stivers, Steve [R-OH-15]</fullName>
+        <party>R</party>
+        <lastName>Stivers</lastName>
+        <sponsorshipDate>2017-07-20</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>0</district>
+        <firstName>Kevin</firstName>
+        <identifiers>
+          <bioguideId>C001096</bioguideId>
+          <lisID>2144</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>C001096</bioguideId>
+        <state>ND</state>
+        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
+        <party>R</party>
+        <lastName>Cramer</lastName>
+        <sponsorshipDate>2017-09-05</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>To deem the Step 2 compliance date for standards of performance for new residential wood heaters, new residential hydronic heaters, and forced-air furnaces to be May 15, 2023.</title>
-    <recordedVotes />
-    <cboCostEstimates />
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Energy and Commerce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-11T15:01:45Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hsif00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <createDate>2017-01-12T04:45:50Z</createDate>
+    <titles>
+      <item>
+        <title>Relief from New Source Performance Standards Act of 2017</title>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Reported to House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <title>Relief from New Source Performance Standards Act of 2017</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>To deem the Step 2 compliance date for standards of performance for new residential wood heaters, new residential hydronic heaters, and forced-air furnaces to be May 15, 2023.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Relief from New Source Performance Standards Act of 2017</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Relief from New Source Performance Standards Act of 2017</title>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <title>Relief from New Source Performance Standards Act of 2017</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T19:59:23Z</updateDate>
+    <calendarNumbers>
+      <item>
+        <number />
+        <calendar>U00378</calendar>
+      </item>
+    </calendarNumbers>
     <billType>HR</billType>
-    <billNumber>453</billNumber>
-    <policyArea />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Relief from New Source Performance Standards Act of 2017</b> </p> <p>This bill delays by three years the date by which manufacturers, owners, and operators of new residential wood heaters, including residential hydronic heaters (wood-fired boilers) and forced-air furnaces, must comply with emission standards promulgated under the Clean Air Act.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-08-09T19:29:21Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <actionDate>2017-01-11</actionDate>
+        </item>
+        <item>
+          <actionDesc>Reported to House without amendment</actionDesc>
+          <name>Reported to House without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Relief from New Source Performance Standards Act of 2017</b> </p> <p>(Sec. 2) This bill delays by three years the date by which manufacturers, owners, and operators of new residential wood heaters, including residential hydronic heaters (wood-fired boilers) and forced-air furnaces, must comply with emission standards promulgated under the Clean Air Act.</p>]]></text>
+          <versionCode>79</versionCode>
+          <lastSummaryUpdateDate>2018-02-15T19:57:17Z</lastSummaryUpdateDate>
+          <updateDate>2018-01-10T14:58:39Z</updateDate>
+          <actionDate>2018-01-10</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Relief from New Source Performance Standards Act of 2017</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

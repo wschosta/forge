@@ -1,95 +1,462 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-05</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-06T04:57:26Z</createDate>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To promote a 21st century energy and manufacturing workforce.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To promote a 21st century energy and manufacturing workforce.</title>
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
+      <actionDate>2017-06-13</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. RUSH:H.R. 338.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8, Clause 3 of the UnitedStates Constitution.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>sseg00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-06-13T16:43:07Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Energy and Natural Resources Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+        <item>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-06-12T19:10:41Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-06-07T13:29:34Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-05T15:05:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Energy and Commerce Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsif03</systemCode>
+              <name>Energy and Power Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-06-07T21:05:25Z</date>
+                  <name>Discharged from</name>
+                </item>
+                <item>
+                  <date>2017-01-25T14:28:02Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <systemCode>hsed00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-05T15:05:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Education and the Workforce Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <item>
+        <actionDate>2017-06-13</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
         <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
         <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionTime>16:44:56</actionTime>
+        <links />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H38310</actionCode>
+      </item>
+      <item>
+        <actionTime>16:44:54</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4831-4832</url>
+            <name>H4831-4832</name>
+          </link>
+        </links>
+        <text>On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H4831-4832)</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H37300</actionCode>
+      </item>
+      <item>
+        <actionTime>16:44:54</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4831-4832</url>
+            <name>H4831-4832</name>
+          </link>
+        </links>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.(text: CR H4831-4832)</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>8000</actionCode>
+      </item>
+      <item>
+        <actionTime>16:26:59</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/338</url>
+            <name>H.R. 338</name>
+          </link>
+        </links>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 338.</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H8D000</actionCode>
+      </item>
+      <item>
+        <actionTime>16:26:58</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4831-4834</url>
+            <name>H4831-4834</name>
+          </link>
+        </links>
+        <text>Considered under suspension of the rules. (consideration: CR H4831-4834)</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H30000</actionCode>
+      </item>
+      <item>
+        <actionTime>16:26:50</actionTime>
+        <links />
+        <text>Mr. Upton moved to suspend the rules and pass the bill.</text>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H30300</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-06-12</actionDate>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/168</url>
+            <name>H. Rept. 115-168</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <committee>
           <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
         </committee>
-        <text>Referred to House Energy and Commerce</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-168, Part I.</text>
+        <type>Committee</type>
+        <actionCode>H12200</actionCode>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-        <text>Referred to the Committee on Education and the Workforce, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionDate>2017-06-12</actionDate>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/168</url>
+            <name>H. Rept. 115-168</name>
+          </link>
+        </links>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-168, Part I.</text>
+        <type>Committee</type>
+        <actionCode>5000</actionCode>
       </item>
       <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
         <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Energy Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif03</systemCode>
+          <name>Energy and Power Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Energy.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the Committee on Education and the Workforce, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Referred to the Committee on Education and the Workforce, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <committee>
           <systemCode>hsed00</systemCode>
           <name>Education and the Workforce Committee</name>
         </committee>
-        <text>Referred to House Education and the Workforce</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
+        <text>Referred to the Committee on Education and the Workforce, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
+        <actionDate>2017-01-05</actionDate>
         <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-      </item>
-      <item>
-        <links />
+        <committee />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
+        <senate>1</senate>
+        <houseOfRepresentatives>17</houseOfRepresentatives>
       </actionByCounts>
       <actionTypeCounts>
-        <billReferrals>2</billReferrals>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
         <introducedInHouse>1</introducedInHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <generalDebate>1</generalDebate>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <placeholderTextForH>3</placeholderTextForH>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <referredToCommittee>1</referredToCommittee>
+        <reportedToHouse>1</reportedToHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <actionStageOverride>1</actionStageOverride>
+        <billReferrals>2</billReferrals>
       </actionTypeCounts>
     </actions>
+    <policyArea>
+      <name>Labor and Employment</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
+        <party>D</party>
+        <bioguideId>R000515</bioguideId>
+        <identifiers>
+          <lisID>1003</lisID>
+          <gpoId>7921</gpoId>
+          <bioguideId>R000515</bioguideId>
+        </identifiers>
+        <lastName>RUSH</lastName>
+        <district>1</district>
+        <middleName>L.</middleName>
+        <firstName>BOBBY</firstName>
+        <byRequestType />
+        <state>IL</state>
+      </item>
+    </sponsors>
     <recordedVotes />
+    <updateDate>2018-08-28T19:58:52Z</updateDate>
+    <billNumber>338</billNumber>
+    <title>To promote a 21st century energy and manufacturing workforce.</title>
     <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates>
+      <item>
+        <title>H.R. 338, a bill to promote a 21st century energy and manufacturing workforce</title>
+        <pubDate>2017-06-13T14:36:56Z</pubDate>
+        <url>https://www.cbo.gov/publication/52802</url>
+      </item>
+    </cboCostEstimates>
+    <billType>HR</billType>
+    <createDate>2017-01-06T04:57:26Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>This bill directs the Department of Energy (DOE), in awarding grants, to prioritize education and training for energy and manufacturing jobs, including by encouraging state and local education agencies to equip students for those jobs and strengthening DOE programs and labs carrying out workforce development initiatives.</p> <p>DOE must prioritize educating and training workers from underrepresented groups such as minorities, women, and veterans.DOE may encourage, but not incentivize or require, any state or school district to adopt a curriculum to equip students with the skills and training necessary to fill employment opportunities in the energy and manufacturing industries.</p> <p>DOE must establish a clearinghouse for information and guidance on job training and other workforce development programs.Additionally, DOE must work with the energy and manufacturing industries, educational institutions, and other governmental agencies to identify areas of workforce need and develop guidelines to implement the best practices for effective job training programs.</p> <p>The bill requires DOE to consider increasing outreach to institutions that serve minority populations.DOE must also give special consideration to dislocated energy and manufacturing workers.</p> <p>The bill does not authorize additional funding to carry out its requirements or authorize the creation of a new workforce development program.</p>]]></text>
+          <lastSummaryUpdateDate>2017-04-03T16:14:40Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p>(Sec. 1) This bill directs the Department of Energy (DOE), in awarding grants, to prioritize education and training for energy and manufacturing jobs, including by encouraging state and local education agencies to equip students for those jobs and strengthening DOE programs and labs carrying out workforce development initiatives. DOE must prioritize educating and training workers from underrepresented groups such as minorities, women, and veterans. DOE may encourage, but not incentivize, require, or coerce any state or school district to adopt a curriculum to equip students with the skills and training necessary to fill employment opportunities in the energy and manufacturing industries.</p> <p>In addition, DOE is directed to:</p> <ul> <li> establish a clearinghouse for information and guidance on job training and other workforce development programs for energy and manufacturing jobs; and</li> <li>work with the energy and manufacturing industries, educational institutions, and other government agencies to identify areas of workforce need and develop guidelines to implement the best practices for effective job training programs.</li> </ul> <p>The bill requires DOE to consider increasing outreach to institutions that serve minority populations. The Minorities in Energy Initiative provides for DOE to:</p> <ul> <li>make existing resources available to minority serving institutions with the objective of increasing the number of minorities and women trained to work in the energy and manufacturing industries;</li> <li>encourage the energy and manufacturing industries to improve the amount of internships and cooperative work study programs available for minority students; and</li> <li>increase underrepresented groups' participation in internships, fellowships, and employment at DOE laboratories.</li> </ul> <p>DOE must give special consideration to dislocated energy and manufacturing workers by:</p> <ul> <li>increasing outreach to employers and job trainers who train unemployed energy and manufacturing workers for re-entry into the job market,</li> <li>making existing resources available to institutions that provide job training to unemployed energy and manufacturing workers,</li> <li>encouraging the energy and manufacturing industries to improve opportunities for energy and manufacturing workers to participate in career pathway programs, and</li> <li>working with the energy and manufacturing industries to identify energy and manufacturing operations scheduled for closure and provide early intervention assistance to affected workers through partnerships with state and local workforce boards.</li> </ul> <p>This bill does not authorize the creation of a new workforce development program.</p> <p>(Sec. 2) DOE is required to submit a report to Congress, within five years, on the national outlook for the energy and manufacturing industries. The report must include a summary of energy and manufacturing jobs that have been created by this bill. In addition, the report must contain the:</p> <ul> <li>number of workforce training program participants served,</li> <li>percentage of workforce training program participants in competitive employment,</li> <li>median income of workforce training program participants, and</li> <li>percentage of workforce training program participants receiving industry-recognized credentials.</li> </ul> <p>(Sec. 3) This bill does not authorize additional funding to carry out its requirements.</p>]]></text>
+          <lastSummaryUpdateDate>2017-08-14T20:24:59Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <updateDate>2017-06-12T18:06:40Z</updateDate>
+          <name>Passed House without amendment</name>
+          <versionCode>81</versionCode>
+          <actionDate>2017-06-12</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-168</citation>
+      </committeeReport>
+    </committeeReports>
+    <calendarNumbers />
     <cosponsors>
       <item>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Hudson, Richard [R-NC-8]</fullName>
-        <sponsorshipWithdrawnDate />
+        <middleName />
         <identifiers>
           <lisID>2140</lisID>
           <gpoId />
@@ -97,17 +464,17 @@
         </identifiers>
         <firstName>Richard</firstName>
         <state>NC</state>
-        <district>8</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>H001067</bioguideId>
+        <district>8</district>
+        <fullName>Rep. Hudson, Richard [R-NC-8]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
         <lastName>Hudson</lastName>
-        <middleName />
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
       </item>
       <item>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <party>D</party>
-        <fullName>Rep. Green, Gene [D-TX-29]</fullName>
-        <sponsorshipWithdrawnDate />
+        <middleName />
         <identifiers>
           <lisID>462</lisID>
           <gpoId>8185</gpoId>
@@ -115,17 +482,77 @@
         </identifiers>
         <firstName>GENE</firstName>
         <state>TX</state>
-        <district>29</district>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
         <bioguideId>G000410</bioguideId>
+        <district>29</district>
+        <fullName>Rep. Green, Gene [D-TX-29]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
         <lastName>GREEN</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>2074</lisID>
+          <gpoId>8222</gpoId>
+          <bioguideId>M001180</bioguideId>
+        </identifiers>
+        <firstName>David</firstName>
+        <state>WV</state>
+        <bioguideId>M001180</bioguideId>
+        <district>1</district>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>McKinley</lastName>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+      </item>
+      <item>
         <middleName />
+        <identifiers>
+          <gpoId>8107</gpoId>
+          <lisID>1756</lisID>
+          <bioguideId>R000577</bioguideId>
+        </identifiers>
+        <firstName>TIM</firstName>
+        <state>OH</state>
+        <bioguideId>R000577</bioguideId>
+        <district>13</district>
+        <fullName>Rep. Ryan, Tim [D-OH-13]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>RYAN</lastName>
+        <sponsorshipDate>2017-05-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>1761</lisID>
+          <gpoId>8024</gpoId>
+          <bioguideId>B001251</bioguideId>
+        </identifiers>
+        <firstName>G. K.</firstName>
+        <state>NC</state>
+        <bioguideId>B001251</bioguideId>
+        <district>1</district>
+        <fullName>Rep. Butterfield, G. K. [D-NC-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Butterfield</lastName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
       </item>
     </cosponsors>
-    <billNumber>338</billNumber>
-    <amendments />
+    <introducedDate>2017-01-05</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Labor and Employment</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Alternative and renewable resources</name>
@@ -173,95 +600,8 @@
             <name>Unemployment</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Labor and Employment</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <state>IL</state>
-        <middleName>L.</middleName>
-        <bioguideId>R000515</bioguideId>
-        <lastName>RUSH</lastName>
-        <firstName>BOBBY</firstName>
-        <identifiers>
-          <lisID>1003</lisID>
-          <gpoId>7921</gpoId>
-          <bioguideId>R000515</bioguideId>
-        </identifiers>
-        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
-        <district>1</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To promote a 21st century energy and manufacturing workforce.</title>
-    <policyArea>
-      <name>Labor and Employment</name>
-    </policyArea>
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to House Energy and Commerce</text>
-      <actionDate>2017-01-05</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Energy and Commerce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-05T15:05:25Z</date>
-            </item>
-          </activities>
-          <systemCode>hsif00</systemCode>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Education and the Workforce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-05T15:05:20Z</date>
-            </item>
-          </activities>
-          <systemCode>hsed00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-12T09:49:56Z</updateDate>
-    <titles>
-      <item>
-        <title>To promote a 21st century energy and manufacturing workforce.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <title>To promote a 21st century energy and manufacturing workforce.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

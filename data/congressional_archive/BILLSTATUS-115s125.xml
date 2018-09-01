@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea />
-    <updateDate>2017-01-13T10:07:36Z</updateDate>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
     <billType>S</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
-        <identifiers>
-          <bioguideId>M001153</bioguideId>
-          <lisID>1694</lisID>
-          <gpoId>8234</gpoId>
-        </identifiers>
-        <byRequestType />
-        <bioguideId>M001153</bioguideId>
-        <lastName>Murkowski</lastName>
-        <state>AK</state>
-        <firstName>Lisa</firstName>
-        <party>R</party>
-        <middleName />
-      </item>
-    </sponsors>
-    <congress>115</congress>
     <latestAction>
+      <links />
       <actionDate>2017-01-12</actionDate>
       <text>Read twice and referred to the Committee on Environment and Public Works.</text>
-      <links />
     </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>A bill to amend the Oil Pollution Act of 1990 to impose penalties and provide for the recovery of removal costs and damages in connection with certain discharges of oil from foreign offshore units, and for other purposes.</title>
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Environment and Public Works Committee</name>
           <systemCode>ssev00</systemCode>
+          <name>Environment and Public Works Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -48,127 +32,219 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-12</actionDate>
-        <text>Introduced in Senate</text>
         <links />
-        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
         <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
       </item>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <amendments />
-    <introducedDate>2017-01-12</introducedDate>
-    <billNumber>125</billNumber>
-    <relatedBills />
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to amend the Oil Pollution Act of 1990 to impose penalties and provide for the recovery of removal costs and damages in connection with certain discharges of oil from foreign offshore units, and for other purposes.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>A bill to amend the Oil Pollution Act of 1990 to impose penalties and provide for the recovery of removal costs and damages in connection with certain discharges of oil from foreign offshore units, and for other purposes.</title>
-      </item>
-    </titles>
-    <cosponsors>
-      <item>
-        <firstName>MARIA</firstName>
-        <state>WA</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>C000127</bioguideId>
-        <lastName>CANTWELL</lastName>
-        <fullName>Sen. Cantwell, Maria [D-WA]</fullName>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <identifiers>
-          <bioguideId>C000127</bioguideId>
-          <lisID>172</lisID>
-          <gpoId>8288</gpoId>
-        </identifiers>
-        <middleName />
-      </item>
-      <item>
-        <firstName>Dan</firstName>
-        <state>AK</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>S001198</bioguideId>
-        <lastName>Sullivan</lastName>
-        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <identifiers>
-          <bioguideId>S001198</bioguideId>
-          <lisID>2290</lisID>
-          <gpoId />
-        </identifiers>
-        <middleName />
-      </item>
-      <item>
-        <firstName>Martin</firstName>
-        <state>NM</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>H001046</bioguideId>
-        <lastName>Heinrich</lastName>
-        <fullName>Sen. Heinrich, Martin [D-NM]</fullName>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <identifiers>
-          <lisID>1937</lisID>
-          <gpoId>8056</gpoId>
-          <bioguideId>H001046</bioguideId>
-        </identifiers>
-        <middleName />
-      </item>
-    </cosponsors>
-    <committeeReports />
-    <originChamber>Senate</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Marine pollution</name>
+          </item>
+          <item>
+            <name>Oil and gas</name>
+          </item>
+          <item>
+            <name>Pollution liability</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-13T04:55:34Z</createDate>
-    <notes />
+    <billNumber>125</billNumber>
+    <title>Foreign Spill Protection Act of 2017</title>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>ssev00</systemCode>
-          <name>Environment and Public Works Committee</name>
-          <subcommittees />
-          <chamber>Senate</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-12T20:01:44Z</date>
             </item>
           </activities>
+          <name>Environment and Public Works Committee</name>
           <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssev00</systemCode>
         </item>
       </billCommittees>
     </committees>
+    <introducedDate>2017-01-12</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:22:45Z</updateDate>
+    <laws />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>M001153</bioguideId>
+        <identifiers>
+          <bioguideId>M001153</bioguideId>
+          <gpoId>8234</gpoId>
+          <lisID>1694</lisID>
+        </identifiers>
+        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Lisa</firstName>
+        <state>AK</state>
+        <lastName>Murkowski</lastName>
+      </item>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <latestTitle>Foreign Spill Protection Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>468</number>
+        <latestAction>
+          <actionDate>2017-01-13</actionDate>
+          <text>Referred to the Subcommittee on Coast Guard and Maritime Transportation.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+      <item>
+        <latestTitle>National Defense Authorization Act for Fiscal Year 2018</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>2810</number>
+        <latestAction>
+          <actionDate>2017-12-12</actionDate>
+          <text>Became Public Law No: 115-91.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <party>D</party>
+        <state>WA</state>
+        <bioguideId>C000127</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>CANTWELL</lastName>
+        <fullName>Sen. Cantwell, Maria [D-WA]</fullName>
+        <firstName>MARIA</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>C000127</bioguideId>
+          <lisID>172</lisID>
+          <gpoId>8288</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>AK</state>
+        <bioguideId>S001198</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Sullivan</lastName>
+        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
+        <firstName>Dan</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>S001198</bioguideId>
+          <gpoId />
+          <lisID>2290</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <party>D</party>
+        <state>NM</state>
+        <bioguideId>H001046</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Heinrich</lastName>
+        <fullName>Sen. Heinrich, Martin [D-NM]</fullName>
+        <firstName>Martin</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>8056</gpoId>
+          <lisID>1937</lisID>
+          <bioguideId>H001046</bioguideId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Foreign Spill Protection Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to amend the Oil Pollution Act of 1990 to impose penalties and provide for the recovery of removal costs and damages in connection with certain discharges of oil from foreign offshore units, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Foreign Spill Protection Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Foreign Spill Protection Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-02-01T20:54:29Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Foreign Spill Protection Act of 2017</b></p> <p>This bill amends the Oil Pollution Act of 1990 to make foreign facilities that are located offshore and outside the exclusive economic zone (EEZ) liable for removal costs and damages that result from oil spills that reach (or threaten to reach) U.S. navigable waters, adjoining shorelines, or the EEZ. Specifically, the following parties may be held liable: (1) the owners or operators of the foreign facilities, including facilities located in, on, or under any land within foreign countries; and (2) the holders of a right of use and easement granted under applicable foreign law for the area in which the facility is located. </p> <p><BR> </p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,112 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea>
-      <name>Agriculture and Food</name>
-    </policyArea>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-13</actionDate>
+      <text>Referred to the Subcommittee on Conservation and Forestry.</text>
+      <links />
+    </latestAction>
     <congress>115</congress>
-    <cosponsors />
-    <relatedBills />
-    <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
-    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
           <name>Agriculture and Food</name>
         </policyArea>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Agricultural equipment and machinery</name>
+          </item>
+          <item>
+            <name>Agricultural prices, subsidies, credit</name>
+          </item>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>Forests, forestry, trees</name>
+          </item>
+          <item>
+            <name>Government buildings, facilities, and property</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
+    <laws />
     <notes />
     <billType>HR</billType>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the Subcommittee on Conservation and Forestry.</text>
-    </latestAction>
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <cboCostEstimates />
-    <recordedVotes />
     <sponsors>
       <item>
-        <state>AK</state>
-        <party>R</party>
-        <district>0</district>
         <lastName>YOUNG</lastName>
         <middleName>E.</middleName>
+        <bioguideId>Y000033</bioguideId>
         <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
         <identifiers>
-          <lisID>1256</lisID>
           <bioguideId>Y000033</bioguideId>
           <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
         </identifiers>
-        <bioguideId>Y000033</bioguideId>
-        <firstName>DON</firstName>
         <byRequestType />
+        <state>AK</state>
+        <firstName>DON</firstName>
+        <party>R</party>
+        <district>0</district>
       </item>
     </sponsors>
-    <calendarNumbers />
-    <updateDate>2017-01-18T10:18:02Z</updateDate>
-    <billNumber>207</billNumber>
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:29:25Z</date>
-            </item>
-          </activities>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-13T14:21:14Z</date>
-                </item>
-              </activities>
-              <name>Conservation and Forestry Subcommittee</name>
-              <systemCode>hsag15</systemCode>
-            </item>
-          </subcommittees>
-          <name>Agriculture Committee</name>
-          <type>Standing</type>
-          <systemCode>hsag00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills />
+    <cosponsors />
     <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
       <item>
         <actionDate>2017-01-13</actionDate>
         <committee>
@@ -115,55 +70,130 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on Conservation and Forestry.</text>
         <type>Committee</type>
       </item>
       <item>
-        <actionDate>2017-01-03</actionDate>
         <text>Referred to the House Committee on Agriculture.</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
         <committee>
           <systemCode>hsag00</systemCode>
           <name>Agriculture Committee</name>
         </committee>
-        <links />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
       </item>
       <item>
-        <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
         <committee />
-        <links />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
       </item>
       <item>
-        <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
         <committee />
-        <links />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
       </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:29:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsag00</systemCode>
+          <name>Agriculture Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsag15</systemCode>
+              <name>Conservation and Forestry Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-13T14:21:14Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <updateDate>2018-08-28T19:58:17Z</updateDate>
+    <version>1.0.0</version>
+    <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <billNumber>207</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 207.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 3``To regulate Commerce with foreign Nations, and among theseveral States, and with the Indian Tribes;''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Agriculture and Food</name>
+    </policyArea>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>The bill vests title to real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program in the grant recipient in accordance with the compensation provisions in this bill. </p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-26T21:32:36Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
     </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>To resolve title issues involving real property and equipment acquired using funds provided under the Alaska Kiln Drying Grant Program.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

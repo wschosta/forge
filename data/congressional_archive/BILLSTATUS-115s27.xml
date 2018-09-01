@@ -1,83 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes />
-    <latestAction>
-      <text>Read twice and referred to the Committee on Rules and Administration.</text>
-      <actionDate>2017-01-04</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <identifiers>
-          <bioguideId>C000141</bioguideId>
-          <gpoId>8287</gpoId>
-          <lisID>174</lisID>
-        </identifiers>
-        <bioguideId>C000141</bioguideId>
-        <lastName>CARDIN</lastName>
-        <fullName>Sen. Cardin, Benjamin L. [D-MD]</fullName>
-        <middleName>L.</middleName>
-        <state>MD</state>
-        <byRequestType />
-        <firstName>BENJAMIN</firstName>
-      </item>
-    </sponsors>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <cboCostEstimates />
-    <notes />
-    <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
-    <congress>115</congress>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <introducedDate>2017-01-04</introducedDate>
-    <committeeReports />
-    <billType>S</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <name>Rules and Administration Committee</name>
-          <systemCode>ssra00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-04T20:15:40Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
     <policyArea>
       <name>Government Operations and Politics</name>
     </policyArea>
-    <amendments />
+    <billType>S</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-04</actionDate>
+      <text>Read twice and referred to the Committee on Rules and Administration.</text>
+    </latestAction>
+    <createDate>2017-01-05T04:47:34Z</createDate>
+    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <systemCode>ssra00</systemCode>
+          <name>Rules and Administration Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Rules and Administration.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Government Operations and Politics</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Advisory bodies</name>
@@ -107,271 +80,564 @@
             <name>Russia</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <actions>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <committee>
-          <systemCode>ssra00</systemCode>
-          <name>Rules and Administration Committee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>0</code>
-          <name>Senate</name>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on Rules and Administration.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>10000</actionCode>
-        <actionDate>2017-01-04</actionDate>
-        <text>Introduced in Senate</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-    </actions>
-    <calendarNumbers />
-    <updateDate>2017-01-19T09:53:55Z</updateDate>
     <billNumber>27</billNumber>
+    <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Rules and Administration Committee</name>
+          <systemCode>ssra00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-04T20:15:40Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <introducedDate>2017-01-04</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:22:18Z</updateDate>
+    <laws />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <sponsors>
+      <item>
+        <middleName>L.</middleName>
+        <bioguideId>C000141</bioguideId>
+        <identifiers>
+          <gpoId>8287</gpoId>
+          <lisID>174</lisID>
+          <bioguideId>C000141</bioguideId>
+        </identifiers>
+        <fullName>Sen. Cardin, Benjamin L. [D-MD]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>BENJAMIN</firstName>
+        <state>MD</state>
+        <lastName>CARDIN</lastName>
+      </item>
+    </sponsors>
+    <relatedBills />
     <cosponsors>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
-        <state>CA</state>
-        <firstName>DIANNE</firstName>
-        <lastName>FEINSTEIN</lastName>
         <bioguideId>F000062</bioguideId>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>1332</lisID>
-          <bioguideId>F000062</bioguideId>
           <gpoId>8338</gpoId>
+          <bioguideId>F000062</bioguideId>
         </identifiers>
+        <state>CA</state>
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>DIANNE</firstName>
+        <lastName>FEINSTEIN</lastName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
       </item>
       <item>
         <middleName>JOSEPH</middleName>
-        <party>D</party>
-        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
+        <bioguideId>L000174</bioguideId>
+        <identifiers>
+          <bioguideId>L000174</bioguideId>
+          <lisID>1383</lisID>
+          <gpoId>8244</gpoId>
+        </identifiers>
         <state>VT</state>
+        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
         <firstName>PATRICK</firstName>
         <lastName>LEAHY</lastName>
-        <bioguideId>L000174</bioguideId>
         <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <gpoId>8244</gpoId>
-          <lisID>1383</lisID>
-          <bioguideId>L000174</bioguideId>
-        </identifiers>
       </item>
       <item>
         <middleName>R.</middleName>
-        <party>D</party>
-        <fullName>Sen. Carper, Thomas R. [D-DE]</fullName>
-        <state>DE</state>
-        <firstName>THOMAS</firstName>
-        <lastName>CARPER</lastName>
         <bioguideId>C000174</bioguideId>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>179</lisID>
-          <bioguideId>C000174</bioguideId>
           <gpoId>8283</gpoId>
+          <bioguideId>C000174</bioguideId>
         </identifiers>
+        <state>DE</state>
+        <fullName>Sen. Carper, Thomas R. [D-DE]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>THOMAS</firstName>
+        <lastName>CARPER</lastName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
-        <state>MN</state>
-        <firstName>Amy</firstName>
-        <lastName>Klobuchar</lastName>
         <bioguideId>K000367</bioguideId>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
+          <gpoId>8249</gpoId>
           <lisID>1826</lisID>
           <bioguideId>K000367</bioguideId>
-          <gpoId>8249</gpoId>
         </identifiers>
+        <state>MN</state>
+        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Amy</firstName>
+        <lastName>Klobuchar</lastName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Heinrich, Martin [D-NM]</fullName>
-        <state>NM</state>
-        <firstName>Martin</firstName>
-        <lastName>Heinrich</lastName>
         <bioguideId>H001046</bioguideId>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <gpoId>8056</gpoId>
           <lisID>1937</lisID>
           <bioguideId>H001046</bioguideId>
         </identifiers>
+        <state>NM</state>
+        <fullName>Sen. Heinrich, Martin [D-NM]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Martin</firstName>
+        <lastName>Heinrich</lastName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
-        <state>CT</state>
-        <firstName>Richard</firstName>
-        <lastName>Blumenthal</lastName>
         <bioguideId>B001277</bioguideId>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>2076</lisID>
-          <bioguideId>B001277</bioguideId>
           <gpoId>8332</gpoId>
+          <bioguideId>B001277</bioguideId>
         </identifiers>
+        <state>CT</state>
+        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Richard</firstName>
+        <lastName>Blumenthal</lastName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Murray, Patty [D-WA]</fullName>
-        <state>WA</state>
-        <firstName>PATTY</firstName>
-        <lastName>MURRAY</lastName>
         <bioguideId>M001111</bioguideId>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
+          <lisID>1409</lisID>
           <gpoId>8237</gpoId>
           <bioguideId>M001111</bioguideId>
-          <lisID>1409</lisID>
         </identifiers>
+        <state>WA</state>
+        <fullName>Sen. Murray, Patty [D-WA]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>PATTY</firstName>
+        <lastName>MURRAY</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
       </item>
       <item>
         <middleName>J.</middleName>
-        <party>D</party>
-        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
-        <state>MA</state>
-        <firstName>EDWARD</firstName>
-        <lastName>MARKEY</lastName>
         <bioguideId>M000133</bioguideId>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>735</lisID>
           <bioguideId>M000133</bioguideId>
           <gpoId>7972</gpoId>
         </identifiers>
+        <state>MA</state>
+        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>EDWARD</firstName>
+        <lastName>MARKEY</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
-        <state>MD</state>
-        <firstName>Chris</firstName>
-        <lastName>Van Hollen</lastName>
         <bioguideId>V000128</bioguideId>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <bioguideId>V000128</bioguideId>
           <lisID>1729</lisID>
           <gpoId>7983</gpoId>
+          <bioguideId>V000128</bioguideId>
         </identifiers>
+        <state>MD</state>
+        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Chris</firstName>
+        <lastName>Van Hollen</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Franken, Al [D-MN]</fullName>
-        <state>MN</state>
-        <firstName>Al</firstName>
-        <lastName>Franken</lastName>
         <bioguideId>F000457</bioguideId>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <bioguideId>F000457</bioguideId>
           <lisID>1969</lisID>
+          <bioguideId>F000457</bioguideId>
           <gpoId>8339</gpoId>
         </identifiers>
+        <state>MN</state>
+        <fullName>Sen. Franken, Al [D-MN]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Al</firstName>
+        <lastName>Franken</lastName>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
       </item>
       <item>
         <middleName />
-        <party>D</party>
-        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
-        <state>OH</state>
-        <firstName>SHERROD</firstName>
-        <lastName>BROWN</lastName>
         <bioguideId>B000944</bioguideId>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <gpoId>8309</gpoId>
           <bioguideId>B000944</bioguideId>
+          <gpoId>8309</gpoId>
           <lisID>136</lisID>
         </identifiers>
+        <state>OH</state>
+        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>SHERROD</firstName>
+        <lastName>BROWN</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
       </item>
       <item>
         <middleName>A.</middleName>
-        <party>D</party>
-        <fullName>Sen. Warren, Elizabeth [D-MA]</fullName>
-        <state>MA</state>
-        <firstName>Elizabeth</firstName>
-        <lastName>Warren</lastName>
         <bioguideId>W000817</bioguideId>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
+          <bioguideId>W000817</bioguideId>
           <lisID>2182</lisID>
           <gpoId />
-          <bioguideId>W000817</bioguideId>
         </identifiers>
+        <state>MA</state>
+        <fullName>Sen. Warren, Elizabeth [D-MA]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Elizabeth</firstName>
+        <lastName>Warren</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
       </item>
       <item>
-        <middleName>S.</middleName>
-        <party>D</party>
-        <fullName>Sen. Murphy, Christopher S. [D-CT]</fullName>
-        <state>CT</state>
-        <firstName>Christopher</firstName>
-        <lastName>Murphy</lastName>
+        <middleName />
         <bioguideId>M001169</bioguideId>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <bioguideId>M001169</bioguideId>
           <gpoId>7870</gpoId>
           <lisID>1837</lisID>
         </identifiers>
+        <state>CT</state>
+        <fullName>Sen. Murphy, Christopher [D-CT]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Christopher</firstName>
+        <lastName>Murphy</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>J.</middleName>
+        <bioguideId>D000563</bioguideId>
+        <identifiers>
+          <gpoId>8326</gpoId>
+          <lisID>326</lisID>
+          <bioguideId>D000563</bioguideId>
+        </identifiers>
+        <state>IL</state>
+        <fullName>Sen. Durbin, Richard J. [D-IL]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>RICHARD</firstName>
+        <lastName>DURBIN</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>C001070</bioguideId>
+        <identifiers>
+          <lisID>1828</lisID>
+          <bioguideId>C001070</bioguideId>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <state>PA</state>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Bob</firstName>
+        <lastName>Casey</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>M001176</bioguideId>
+        <identifiers>
+          <bioguideId>M001176</bioguideId>
+          <lisID>1900</lisID>
+          <gpoId>8238</gpoId>
+        </identifiers>
+        <state>OR</state>
+        <fullName>Sen. Merkley, Jeff [D-OR]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Jeff</firstName>
+        <lastName>Merkley</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>B001230</bioguideId>
+        <identifiers>
+          <lisID>1558</lisID>
+          <bioguideId>B001230</bioguideId>
+          <gpoId>8215</gpoId>
+        </identifiers>
+        <state>WI</state>
+        <fullName>Sen. Baldwin, Tammy [D-WI]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>TAMMY</firstName>
+        <lastName>BALDWIN</lastName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>H001069</bioguideId>
+        <identifiers>
+          <lisID>2174</lisID>
+          <bioguideId>H001069</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>ND</state>
+        <fullName>Sen. Heitkamp, Heidi [D-ND]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Heidi</firstName>
+        <lastName>Heitkamp</lastName>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>A.</middleName>
+        <bioguideId>C001088</bioguideId>
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <lisID>1984</lisID>
+          <gpoId>8297</gpoId>
+        </identifiers>
+        <state>DE</state>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Christopher</firstName>
+        <lastName>Coons</lastName>
+        <sponsorshipDate>2017-02-15</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>U000039</bioguideId>
+        <identifiers>
+          <bioguideId>U000039</bioguideId>
+          <lisID>1567</lisID>
+          <gpoId>8260</gpoId>
+        </identifiers>
+        <state>NM</state>
+        <fullName>Sen. Udall, Tom [D-NM]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>TOM</firstName>
+        <lastName>UDALL</lastName>
+        <sponsorshipDate>2017-02-15</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>F.</middleName>
+        <bioguideId>B001267</bioguideId>
+        <identifiers>
+          <lisID>1965</lisID>
+          <gpoId>8302</gpoId>
+          <bioguideId>B001267</bioguideId>
+        </identifiers>
+        <state>CO</state>
+        <fullName>Sen. Bennet, Michael F. [D-CO]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Michael</firstName>
+        <lastName>Bennet</lastName>
+        <sponsorshipDate>2017-02-16</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>S001181</bioguideId>
+        <identifiers>
+          <lisID>1901</lisID>
+          <gpoId>8276</gpoId>
+          <bioguideId>S001181</bioguideId>
+        </identifiers>
+        <state>NH</state>
+        <fullName>Sen. Shaheen, Jeanne [D-NH]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Jeanne</firstName>
+        <lastName>Shaheen</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>D000622</bioguideId>
+        <identifiers>
+          <bioguideId>D000622</bioguideId>
+          <lisID>2123</lisID>
+          <gpoId />
+        </identifiers>
+        <state>IL</state>
+        <fullName>Sen. Duckworth, Tammy [D-IL]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Tammy</firstName>
+        <lastName>Duckworth</lastName>
+        <sponsorshipDate>2017-03-02</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>WILLIAM</middleName>
+        <bioguideId>N000032</bioguideId>
+        <identifiers>
+          <lisID>859</lisID>
+          <bioguideId>N000032</bioguideId>
+          <gpoId>8236</gpoId>
+        </identifiers>
+        <state>FL</state>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>CLARENCE</firstName>
+        <lastName>NELSON</lastName>
+        <sponsorshipDate>2017-03-06</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>C.</middleName>
+        <bioguideId>P000595</bioguideId>
+        <identifiers>
+          <bioguideId>P000595</bioguideId>
+          <gpoId>7994</gpoId>
+          <lisID>1929</lisID>
+        </identifiers>
+        <state>MI</state>
+        <fullName>Sen. Peters, Gary C. [D-MI]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Gary</firstName>
+        <lastName>Peters</lastName>
+        <sponsorshipDate>2017-03-27</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>E.</middleName>
+        <bioguideId>G000555</bioguideId>
+        <identifiers>
+          <lisID>1866</lisID>
+          <bioguideId>G000555</bioguideId>
+          <gpoId>8336</gpoId>
+        </identifiers>
+        <state>NY</state>
+        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Kirsten</firstName>
+        <lastName>Gillibrand</lastName>
+        <sponsorshipDate>2017-04-04</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>C000127</bioguideId>
+        <identifiers>
+          <bioguideId>C000127</bioguideId>
+          <lisID>172</lisID>
+          <gpoId>8288</gpoId>
+        </identifiers>
+        <state>WA</state>
+        <fullName>Sen. Cantwell, Maria [D-WA]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>MARIA</firstName>
+        <lastName>CANTWELL</lastName>
+        <sponsorshipDate>2017-06-29</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <bioguideId>S001203</bioguideId>
+        <identifiers>
+          <lisID>2365</lisID>
+          <bioguideId>S001203</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>MN</state>
+        <fullName>Sen. Smith, Tina  [D-MN]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <firstName>Tina</firstName>
+        <lastName>Smith</lastName>
+        <sponsorshipDate>2018-04-23</sponsorshipDate>
       </item>
     </cosponsors>
-    <createDate>2017-01-05T04:47:34Z</createDate>
-    <relatedBills />
+    <titles>
+      <item>
+        <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>A bill to establish an independent commission to examine and report on the facts regarding the extent of Russian official and unofficial cyber operations and other attempts to interfere in the 2016 United States national election, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>This bill establishes the Commission to End Russian Interference in United States Elections as an independent commission to examine Russian cyber operations and attempts to interfere in the 2016 U.S. national election. The commission must examine attempts by the Russian government, governments or other entities associated with or collaborating with Russia, or persons or entities in Russia to: </p> <ul> <li>access, alter, or tamper with voting systems, voter roll information, the Donald J. Trump and the Hillary Clinton presidential campaign organizations, and the Democratic and the Republican national committees, congressional campaign committees, and governors associations; </li> <li>promote propaganda relevant to any election for public office held in the United States during 2016; and</li> <li> use electronic means to influence, interfere with, or sow distrust in such elections.</li> </ul> <p>The commission must: (1) report on evidence developed by federal agencies; (2) build upon investigations of executive branch, congressional, or independent entities; and (3) make a full accounting of interference attempts and the U.S. response, and government preparedness, to defend against such interference.</p> <p>The commission may receive classified information and issue subpoenas. </p> <p>The commission must report to the President and Congress with conclusions and recommendations on preventing a reoccurrence of such interference. </p>]]></text>
+          <actionDate>2017-01-04</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2017-02-23T16:06:24Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

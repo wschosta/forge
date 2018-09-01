@@ -1,63 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <committeeReports />
-    <recordedVotes />
-    <originChamber>Senate</originChamber>
-    <congress>115</congress>
-    <createDate>2017-01-18T05:05:00Z</createDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <relatedBills />
-    <introducedDate>2017-01-17</introducedDate>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>HELP for Coal Miners Health Care Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Helping Ensure Long-Term Protection for Coal Miners Health Care Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to amend the Surface Mining Control and Reclamation Act of 1977 to transfer certain funds to the Multiemployer Health Benefit Plan, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>HELP for Coal Miners Health Care Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>HELP for Coal Miners Health Care Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Helping Ensure Long-Term Protection for Coal Miners Health Care Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Finance. (text of measure as introduced: CR S343-344)</text>
+      <actionDate>2017-01-17</actionDate>
+    </latestAction>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <name>Finance Committee</name>
           <activities>
             <item>
-              <date>2017-01-17T23:26:39Z</date>
               <name>Referred to</name>
+              <date>2017-01-17T23:26:39Z</date>
             </item>
           </activities>
-          <type>Standing</type>
+          <chamber>Senate</chamber>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-18T17:33:02Z</updateDate>
-    <title>A bill to amend the Surface Mining Control and Reclamation Act of 1977 to transfer certain funds to the Multiemployer Health Benefit Plan, and for other purposes.</title>
-    <policyArea />
-    <notes />
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to amend the Surface Mining Control and Reclamation Act of 1977 to transfer certain funds to the Multiemployer Health Benefit Plan, and for other purposes.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>A bill to amend the Surface Mining Control and Reclamation Act of 1977 to transfer certain funds to the Multiemployer Health Benefit Plan, and for other purposes.</title>
-        <chamberName />
-      </item>
-    </titles>
-    <amendments />
-    <cboCostEstimates />
-    <billNumber>176</billNumber>
-    <billType>S</billType>
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
@@ -78,50 +92,137 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
-        <text>Introduced in Senate</text>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <actionCode>10000</actionCode>
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
+        <actionDate>2017-01-17</actionDate>
       </item>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
     </actions>
-    <calendarNumbers />
-    <cosponsors />
-    <latestAction>
-      <actionDate>2017-01-17</actionDate>
-      <links />
-      <text>Read twice and referred to the Committee on Finance. (text of measure as introduced: CR S343-344)</text>
-    </latestAction>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <policyArea>
+      <name>Labor and Employment</name>
+    </policyArea>
     <sponsors>
       <item>
-        <bioguideId>M000355</bioguideId>
-        <lastName>MCCONNELL</lastName>
         <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
-        <state>KY</state>
-        <middleName />
-        <byRequestType />
-        <firstName>MITCH</firstName>
         <party>R</party>
+        <bioguideId>M000355</bioguideId>
         <identifiers>
-          <bioguideId>M000355</bioguideId>
           <lisID>1395</lisID>
           <gpoId>8254</gpoId>
+          <bioguideId>M000355</bioguideId>
         </identifiers>
+        <lastName>MCCONNELL</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>MITCH</firstName>
+        <state>KY</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:22:59Z</updateDate>
+    <billNumber>176</billNumber>
+    <title>HELP for Coal Miners Health Care Act of 2017</title>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-03-27</actionDate>
+          <text>Referred to the Subcommittee on Energy and Mineral Resources.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>HELP for Coal Miners Health Care Act of 2017</latestTitle>
+        <number>1613</number>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-18T05:05:00Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-04-18T20:04:46Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-17</actionDate>
+          <text><![CDATA[<p><b>Helping Ensure Long-Term Protection for Coal Miners Health Care Act of 2017 or the HELP for Coal Miners Health Care Act of 2017</b></p> <p>This bill amends the Surface Mining Control and Reclamation Act of 1977 (SMCRA) to transfer certain funds to the Multiemployer Health Benefit Plan to provide health benefits to retired coal miners and their families. </p> <p>The bill expands the group whose retiree health benefits are taken into account in determining the amount that the Department of the Treasury must transfer from the Abandoned Mine Reclamation Fund and the General Fund of the Treasury to the Multiemployer Health Benefit Plan.</p> <p>The Government Accountability Office must study the Multiemployer Health Benefit Plan and submit to Congress reports analyzing whether federal funds are being spent appropriately by the plan. </p> <p>The bill amends the Internal Revenue Code to repeal requirements for current and former signatories to labor agreements with the United Mineworkers of America to pay unassigned beneficiaries premiums or backstop premiums if transfers under SMCRA are less than the amount required to be transferred.</p>]]></text>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <bioguideId>M001153</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
+        <lastName>Murkowski</lastName>
+        <state>AK</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>M001153</bioguideId>
+          <gpoId>8234</gpoId>
+          <lisID>1694</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <firstName>Lisa</firstName>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-17</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Labor and Employment</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Coal</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Employee benefits and pensions</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Mining</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

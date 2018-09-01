@@ -1,345 +1,560 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-04T07:01:08Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Small Business and Entrepreneurship Committee</name>
+          <systemCode>sssb00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Hearings by</name>
+              <date>2017-03-29T18:30:00Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+        <item>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:06:20Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+              <systemCode>hsju05</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T15:56:00Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <type>Standing</type>
+          <name>Small Business Committee</name>
+          <systemCode>hssm00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:06:25Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-09T22:10:32Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Small Business Regulatory Flexibility Improvements Act of</strong> <b>2017</b></p> <p>This bill modifies the rulemaking requirements and procedures of federal agencies (excluding Congress, U.S. courts, U.S. territories and possessions, and the District of Columbia) under the Regulatory Flexibility Act of 1980 (RFA) and the Small Business Regulatory Enforcement Fairness Act of 1996 (SBREFA). The definition of "rule" under the RFA is expanded to include all agency rules, except for: (1) rules that pertain to the protection of the rights of and benefits for veterans or that impose limitations on the cost and terms of consumer credit extended to service members and their dependents, or (2) rules of particular (and not general) applicability relating to rates, wages, and other financial indicators. Under a new definition of "economic impact," agencies are required to consider any direct economic effect of a proposed rule on small entities and any indirect economic effect on small entities that is reasonably foreseeable and that results from such rule. </p> <p>Under the bill, agencies are required to modify their rulemaking procedures to: </p> <ul> <li>include within initial and final regulatory flexibility analyses a detailed statement of information relating to a proposed rule; </li> <li>include in the agency regulatory flexibility agenda a description of the sector of the North American Industrial Classification System that is affected by a proposed agency rule that is likely to have a significant economic impact of a substantial number of small entities; </li> <li>require each initial regulatory flexibility analysis to contain detailed information about a proposed rule, including why agency action is being considered, the objectives and legal basis for the proposed rule, and an estimate of the number and types of small entities to which the proposed rule will apply; </li> <li>eliminate waivers or delays of an initial regulatory flexibility analysis; </li> <li>modify the procedures for participation of small entities in the promulgation of a proposed rule and the review panel advocacy process; and </li> <li>publish a plan for the periodic review of existing rules and new rules that have a significant impact on a substantial number of small entities to determine whether such rules should be continued, changed, or rescinded. </li></ul> <p>Judicial review of an agency final rule for compliance with RFA requirements is allowed after the publication of such rule, instead of after completion of the rulemaking process.</p> <p>The Small Business Act is amended to authorize the Chief Counsel for Advocacy of the Small Business Administration (SBA) to make small business size-standard determinations for all purposes other than for the purposes of such Act or the Small Business Investment Act of 1958.</p> <p>SBREFA is amended to require agencies, in preparing small entity compliance guides, to solicit input from affected small entities or associations of small entities. </p> <p>The Government Accountability Office must complete and publish a study that examines whether the SBA Chief Counsel for Advocacy has the capacity and resources to carry out duties under this bill. </p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend chapter 6 of title 5, United States Code (commonly known as the Regulatory Flexibility Act), to ensure complete analysis of potential impacts on small entities of rules, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
+        <chamberCode />
+      </item>
+    </titles>
     <cosponsors>
       <item>
-        <fullName>Rep. Goodlatte, Bob [R-VA-6]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>6</district>
+        <fullName>Rep. Goodlatte, Bob [R-VA-6]</fullName>
         <identifiers>
           <lisID>446</lisID>
           <gpoId>8197</gpoId>
           <bioguideId>G000289</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>G000289</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>ROBERT</firstName>
-        <middleName>W.</middleName>
-        <state>VA</state>
         <lastName>GOODLATTE</lastName>
-      </item>
-      <item>
-        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
-        <party>R</party>
+        <firstName>ROBERT</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>10</district>
-        <identifiers>
-          <lisID>2053</lisID>
-          <gpoId>8128</gpoId>
-          <bioguideId>M001179</bioguideId>
-        </identifiers>
+        <middleName>W.</middleName>
         <sponsorshipWithdrawnDate />
-        <bioguideId>M001179</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Tom</firstName>
-        <middleName />
-        <state>PA</state>
-        <lastName>Marino</lastName>
+        <state>VA</state>
+        <district>6</district>
+        <bioguideId>G000289</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Radewagen, Aumua Amata Coleman [R-AS-At Large]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
+        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
+        <identifiers>
+          <bioguideId>M001179</bioguideId>
+          <gpoId>8128</gpoId>
+          <lisID>2053</lisID>
+        </identifiers>
+        <lastName>Marino</lastName>
+        <firstName>Tom</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>0</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>PA</state>
+        <district>10</district>
+        <bioguideId>M001179</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Radewagen, Aumua Amata Coleman [R-AS-At Large]</fullName>
         <identifiers>
           <bioguideId>R000600</bioguideId>
           <lisID>2222</lisID>
           <gpoId />
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>R000600</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Aumua Amata</firstName>
-        <middleName>Coleman</middleName>
-        <state>AS</state>
         <lastName>Radewagen</lastName>
+        <firstName>Aumua Amata</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>Coleman</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>AS</state>
+        <district>0</district>
+        <bioguideId>R000600</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>25</district>
+        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
         <identifiers>
-          <gpoId />
           <bioguideId>K000387</bioguideId>
           <lisID>2228</lisID>
+          <gpoId />
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000387</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Stephen</firstName>
-        <middleName />
-        <state>CA</state>
         <lastName>Knight</lastName>
-      </item>
-      <item>
-        <fullName>Rep. Cuellar, Henry [D-TX-28]</fullName>
-        <party>D</party>
+        <firstName>Stephen</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>28</district>
-        <identifiers>
-          <gpoId>8184</gpoId>
-          <bioguideId>C001063</bioguideId>
-          <lisID>1807</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C001063</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Henry</firstName>
         <middleName />
-        <state>TX</state>
-        <lastName>Cuellar</lastName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>25</district>
+        <bioguideId>K000387</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
-        <party>R</party>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Cuellar, Henry [D-TX-28]</fullName>
+        <identifiers>
+          <lisID>1807</lisID>
+          <bioguideId>C001063</bioguideId>
+          <gpoId>8184</gpoId>
+        </identifiers>
+        <lastName>Cuellar</lastName>
+        <firstName>Henry</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>6</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>28</district>
+        <bioguideId>C001063</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
         <identifiers>
           <lisID>1656</lisID>
           <gpoId>8014</gpoId>
           <bioguideId>G000546</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>G000546</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>SAM</firstName>
-        <middleName />
-        <state>MO</state>
         <lastName>GRAVES</lastName>
+        <firstName>SAM</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MO</state>
+        <district>6</district>
+        <bioguideId>G000546</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>32</district>
+        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
         <identifiers>
+          <lisID>1525</lisID>
           <gpoId>8188</gpoId>
           <bioguideId>S000250</bioguideId>
-          <lisID>1525</lisID>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>S000250</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>PETE</firstName>
-        <middleName />
-        <state>TX</state>
         <lastName>SESSIONS</lastName>
+        <firstName>PETE</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>32</district>
+        <bioguideId>S000250</bioguideId>
       </item>
       <item>
-        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>4</district>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
         <identifiers>
           <lisID>1724</lisID>
           <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000362</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Steve</firstName>
-        <middleName />
-        <state>IA</state>
         <lastName>King</lastName>
+        <firstName>Steve</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>IA</state>
+        <district>4</district>
+        <bioguideId>K000362</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Kelly, Trent [R-MS-1]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>1</district>
+        <fullName>Rep. Kelly, Trent [R-MS-1]</fullName>
         <identifiers>
+          <bioguideId>K000388</bioguideId>
           <lisID>2294</lisID>
           <gpoId />
-          <bioguideId>K000388</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000388</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Trent</firstName>
-        <middleName />
-        <state>MS</state>
         <lastName>Kelly</lastName>
+        <firstName>Trent</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MS</state>
+        <district>1</district>
+        <bioguideId>K000388</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Tipton, Scott  R. [R-CO-3]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>3</district>
+        <fullName>Rep. Tipton, Scott  R. [R-CO-3]</fullName>
         <identifiers>
+          <bioguideId>T000470</bioguideId>
           <lisID>1997</lisID>
           <gpoId>7861</gpoId>
-          <bioguideId>T000470</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>T000470</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Scott</firstName>
-        <middleName>R.</middleName>
-        <state>CO</state>
         <lastName>Tipton</lastName>
+        <firstName>Scott</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>R.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CO</state>
+        <district>3</district>
+        <bioguideId>T000470</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Curbelo, Carlos [R-FL-26]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>26</district>
+        <fullName>Rep. Curbelo, Carlos [R-FL-26]</fullName>
         <identifiers>
           <lisID>2235</lisID>
           <gpoId />
           <bioguideId>C001107</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C001107</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Carlos</firstName>
-        <middleName />
-        <state>FL</state>
         <lastName>Curbelo</lastName>
+        <firstName>Carlos</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>26</district>
+        <bioguideId>C001107</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Hultgren, Randy [R-IL-14]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>14</district>
+        <fullName>Rep. Hultgren, Randy [R-IL-14]</fullName>
         <identifiers>
           <lisID>2015</lisID>
           <gpoId>7934</gpoId>
           <bioguideId>H001059</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>H001059</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Randy</firstName>
-        <middleName />
-        <state>IL</state>
         <lastName>Hultgren</lastName>
-      </item>
-      <item>
-        <fullName>Rep. Luetkemeyer, Blaine [R-MO-3]</fullName>
-        <party>R</party>
+        <firstName>Randy</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>3</district>
-        <identifiers>
-          <bioguideId>L000569</bioguideId>
-          <gpoId>8017</gpoId>
-          <lisID>1931</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>L000569</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Blaine</firstName>
         <middleName />
-        <state>MO</state>
-        <lastName>Luetkemeyer</lastName>
+        <sponsorshipWithdrawnDate />
+        <state>IL</state>
+        <district>14</district>
+        <bioguideId>H001059</bioguideId>
       </item>
       <item>
-        <fullName>Rep. Love, Mia B. [R-UT-4]</fullName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
         <party>R</party>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>4</district>
+        <fullName>Rep. Luetkemeyer, Blaine [R-MO-3]</fullName>
         <identifiers>
+          <lisID>1931</lisID>
+          <gpoId>8017</gpoId>
+          <bioguideId>L000569</bioguideId>
+        </identifiers>
+        <lastName>Luetkemeyer</lastName>
+        <firstName>Blaine</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MO</state>
+        <district>3</district>
+        <bioguideId>L000569</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Love, Mia B. [R-UT-4]</fullName>
+        <identifiers>
+          <bioguideId>L000584</bioguideId>
           <lisID>2271</lisID>
           <gpoId />
-          <bioguideId>L000584</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>L000584</bioguideId>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <firstName>Mia</firstName>
-        <middleName>B.</middleName>
-        <state>UT</state>
         <lastName>Love</lastName>
+        <firstName>Mia</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>B.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>UT</state>
+        <district>4</district>
+        <bioguideId>L000584</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-27</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Stivers, Steve [R-OH-15]</fullName>
+        <identifiers>
+          <gpoId>8105</gpoId>
+          <lisID>2047</lisID>
+          <bioguideId>S001187</bioguideId>
+        </identifiers>
+        <lastName>Stivers</lastName>
+        <firstName>Steve</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OH</state>
+        <district>15</district>
+        <bioguideId>S001187</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-07-28</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Smucker, Lloyd [R-PA-16]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2346</lisID>
+          <bioguideId>S001199</bioguideId>
+        </identifiers>
+        <lastName>Smucker</lastName>
+        <firstName>Lloyd</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>PA</state>
+        <district>16</district>
+        <bioguideId>S001199</bioguideId>
       </item>
     </cosponsors>
-    <calendarNumbers />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Committee on Small Business and Entrepreneurship. Hearings held. Hearings printed: S.Hrg. 115-21.</text>
+      <links />
+      <actionDate>2017-03-29</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:57:26Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CHABOT:H.R. 33.Congress has the power to enact this legislation pursuantto the following:Article I, Section 1, Clause 1 of the United StatesConstitution, in that the legislation concerns the exerciseof legislative powers generally granted to Congress by thatsection, including the exercise of those powers whendelegated by Congress to the Executive; Article I, Section 8,Clauses 1 to 17, and Section 9, Clauses 1 to 2, 4, and 7 ofthe United States Constitution, in that the legislationconcerns the exercise of specific legislative powers grantedto Congress by those sections, including the exercise ofthose powers when delegated by Congress to the Executive;Article I, Section 8, Clause 18 of the United StatesConstitution, in that the legislation exercises legislativepower granted to Congress by that clause ``to make all Lawswhich shall be necessary and proper for carrying intoExecution the foregoing Powers, and all other Powers vestedby this Constitution in the Government of the United States,or in any Department or Officer thereof;'' Article III,Section 1, Clause 1, Sentence 1, Section 2, Clause 1, andSection 2, Clause 2, Sentence 2, of the United StatesConstitution, in that the legislation defines or affectsjudicial powers and cases that are subject to legislation byCongress; Article IV, Section 3, Clause 2 of the UnitedStates Constitution, in that the legislation concerns theexercise of power granted to Congress to dispose of and makeall needful Rules and Regulations respecting the Territory orother Property belonging to the United States; and, AmendmentXVI to the United States Constitution, in that thelegislation concerns the exercise of power granted toCongress to lay and collect income taxes.[Page H47]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Government Operations and Politics</name>
     </policyArea>
     <billType>HR</billType>
-    <summaries>
-      <billSummaries>
-        <item>
-          <text><![CDATA[<p><strong>Small Business Regulatory Flexibility Improvements Act of</strong> <b>2017</b></p> <p>This bill modifies the rulemaking requirements and procedures of federal agencies (excluding Congress, U.S. courts, U.S. territories and possessions, and the District of Columbia) under the Regulatory Flexibility Act of 1980 (RFA) and the Small Business Regulatory Enforcement Fairness Act of 1996 (SBREFA). The definition of "rule" under the RFA is expanded to include all agency rules, except for: (1) rules that pertain to the protection of the rights of and benefits for veterans or that impose limitations on the cost and terms of consumer credit extended to service members and their dependents, or (2) rules of particular (and not general) applicability relating to rates, wages, and other financial indicators. Under a new definition of "economic impact," agencies are required to consider any direct economic effect of a proposed rule on small entities and any indirect economic effect on small entities that is reasonably foreseeable and that results from such rule. </p> <p>Under the bill, agencies are required to modify their rulemaking procedures to: </p> <ul> <li>include within initial and final regulatory flexibility analyses a detailed statement of information relating to a proposed rule; </li> <li>include in the agency regulatory flexibility agenda a description of the sector of the North American Industrial Classification System that is affected by a proposed agency rule that is likely to have a significant economic impact of a substantial number of small entities; </li> <li>require each initial regulatory flexibility analysis to contain detailed information about a proposed rule, including why agency action is being considered, the objectives and legal basis for the proposed rule, and an estimate of the number and types of small entities to which the proposed rule will apply; </li> <li>eliminate waivers or delays of an initial regulatory flexibility analysis; </li> <li>modify the procedures for participation of small entities in the promulgation of a proposed rule and the review panel advocacy process; and </li> <li>publish a plan for the periodic review of existing rules and new rules that have a significant impact on a substantial number of small entities to determine whether such rules should be continued, changed, or rescinded. </li></ul> <p>Judicial review of an agency final rule for compliance with RFA requirements is allowed after the publication of such rule, instead of after completion of the rulemaking process.</p> <p>The Small Business Act is amended to authorize the Chief Counsel for Advocacy of the Small Business Administration (SBA) to make small business size-standard determinations for all purposes other than for the purposes of such Act or the Small Business Investment Act of 1958.</p> <p>SBREFA is amended to require agencies, in preparing small entity compliance guides, to solicit input from affected small entities or associations of small entities. </p> <p>The Government Accountability Office must complete and publish a study that examines whether the SBA Chief Counsel for Advocacy has the capacity and resources to carry out duties under this bill. </p>]]></text>
-          <lastSummaryUpdateDate>2017-01-09T22:10:32Z</lastSummaryUpdateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-03</actionDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <notes />
-    <congress>115</congress>
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <party>R</party>
-        <middleName />
-        <lastName>CHABOT</lastName>
-        <fullName>Rep. Chabot, Steve [R-OH-1]</fullName>
-        <bioguideId>C000266</bioguideId>
-        <state>OH</state>
-        <byRequestType />
-        <district>1</district>
-        <identifiers>
-          <lisID>186</lisID>
-          <gpoId>8091</gpoId>
-          <bioguideId>C000266</bioguideId>
-        </identifiers>
-        <firstName>STEVE</firstName>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To amend chapter 6 of title 5, United States Code (commonly known as the Regulatory Flexibility Act), to ensure complete analysis of potential impacts on small entities of rules, and for other purposes.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
-      </item>
-    </titles>
     <billNumber>33</billNumber>
+    <originChamber>House</originChamber>
     <relatedBills>
       <item>
         <congress>115</congress>
-        <type>HR</type>
         <latestAction>
-          <text>Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-          <actionDate>2017-01-12</actionDate>
+          <actionDate>2017-03-29</actionDate>
+          <text>Committee on Small Business and Entrepreneurship. Hearings held. Hearings printed: S.Hrg. 115-21.</text>
         </latestAction>
-        <latestTitle>Regulatory Accountability Act of 2017</latestTitle>
-        <number>5</number>
         <relationshipDetails>
           <item>
             <type>Related bill</type>
             <identifiedBy>CRS</identifiedBy>
           </item>
         </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>Regulatory Accountability Act of 2017</latestTitle>
+        <number>5</number>
+      </item>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-12-14</actionDate>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 284.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Small Business Regulatory Flexibility Improvements Act</latestTitle>
+        <number>584</number>
       </item>
     </relatedBills>
+    <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-03-29</actionDate>
+        <committee>
+          <systemCode>sssb00</systemCode>
+          <name>Small Business and Entrepreneurship Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Small Business and Entrepreneurship. Hearings held. Hearings printed: S.Hrg. 115-21.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>hsju05</systemCode>
+          <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hssm00</systemCode>
+          <name>Small Business Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <hearingsHeld>1</hearingsHeld>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>2</billReferrals>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <senate>1</senate>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Administrative law and regulatory procedures</name>
@@ -399,157 +614,31 @@
             <name>Tax administration and collection, taxpayers</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Government Operations and Politics</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <amendments />
-    <originChamber>House</originChamber>
-    <updateDate>2017-01-14T09:58:13Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-      <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-          <type>Standing</type>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <date>2017-01-12T15:56:00Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
-              <systemCode>hsju05</systemCode>
-              <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
-            </item>
-          </subcommittees>
-          <activities>
-            <item>
-              <date>2017-01-03T17:06:20Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <name>Small Business Committee</name>
-          <systemCode>hssm00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:06:25Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
     <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <actions>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
       <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <systemCode>hsju05</systemCode>
-          <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>1</code>
-          <name>House committee actions</name>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
-        <type>Committee</type>
+        <bioguideId>C000266</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. Chabot, Steve [R-OH-1]</fullName>
+        <lastName>CHABOT</lastName>
+        <state>OH</state>
+        <district>1</district>
+        <party>R</party>
+        <identifiers>
+          <lisID>186</lisID>
+          <gpoId>8091</gpoId>
+          <bioguideId>C000266</bioguideId>
+        </identifiers>
+        <firstName>STEVE</firstName>
       </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hssm00</systemCode>
-          <name>Small Business Committee</name>
-        </committee>
-        <text>Referred to House Small Business</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-        </committee>
-        <text>Referred to House Judiciary</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-      </actionTypeCounts>
-    </actions>
-    <laws />
-    <cboCostEstimates />
-    <title>Small Business Regulatory Flexibility Improvements Act of 2017</title>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-04T07:01:08Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

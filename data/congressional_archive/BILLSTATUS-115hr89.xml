@@ -1,136 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes />
+    <amendments />
     <latestAction>
-      <text>Referred to the House Committee on Transportation and Infrastructure.</text>
-      <actionDate>2017-01-03</actionDate>
+      <actionDate>2017-01-04</actionDate>
+      <text>Referred to the Subcommittee on Economic Development, Public Buildings and Emergency Management.</text>
       <links />
     </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <identifiers>
-          <lisID>1748</lisID>
-          <bioguideId>B001243</bioguideId>
-          <gpoId>8154</gpoId>
-        </identifiers>
-        <bioguideId>B001243</bioguideId>
-        <lastName>Blackburn</lastName>
-        <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
-        <district>7</district>
-        <middleName />
-        <state>TN</state>
-        <byRequestType />
-        <firstName>Marsha</firstName>
-      </item>
-    </sponsors>
-    <laws />
-    <originChamber>House</originChamber>
-    <cboCostEstimates />
-    <notes />
-    <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
-    <relatedBills />
     <congress>115</congress>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
-      </item>
-    </titles>
-    <introducedDate>2017-01-03</introducedDate>
-    <committeeReports />
-    <billType>HR</billType>
-    <policyArea>
-      <name>Housing and Community Development</name>
-    </policyArea>
-    <amendments />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:10:50Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hspw00</systemCode>
-          <chamber>House</chamber>
-          <name>Transportation and Infrastructure Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <name>Transportation and Infrastructure Committee</name>
-          <systemCode>hspw00</systemCode>
-        </committee>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-      </item>
-    </actions>
-    <calendarNumbers />
-    <updateDate>2017-01-17T20:31:24Z</updateDate>
-    <billNumber>89</billNumber>
-    <cosponsors />
-    <createDate>2017-01-04T07:01:10Z</createDate>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Housing and Community Development</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Rural conditions and development</name>
@@ -139,12 +21,167 @@
             <name>Tennessee</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Housing and Community Development</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <constitutionalAuthorityStatementText />
+    <laws />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Blackburn</lastName>
+        <middleName />
+        <bioguideId>B001243</bioguideId>
+        <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
+        <identifiers>
+          <lisID>1748</lisID>
+          <bioguideId>B001243</bioguideId>
+          <gpoId>8154</gpoId>
+        </identifiers>
+        <byRequestType />
+        <state>TN</state>
+        <firstName>Marsha</firstName>
+        <party>R</party>
+        <district>7</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills />
+    <cosponsors />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <name>Economic Development, Public Buildings and Emergency Management Subcommittee</name>
+          <systemCode>hspw13</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Economic Development, Public Buildings and Emergency Management.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
+        <committee>
+          <name>Transportation and Infrastructure Committee</name>
+          <systemCode>hspw00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hspw00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hspw13</systemCode>
+              <name>Economic Development, Public Buildings and Emergency Management Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-04T14:22:05Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Transportation and Infrastructure Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:10:50Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <updateDate>2018-08-28T19:57:52Z</updateDate>
+    <version>1.0.0</version>
+    <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
+    <createDate>2017-01-04T07:01:10Z</createDate>
+    <billNumber>89</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mrs. BLACKBURN:H.R. 89.Congress has the power to enact this legislation pursuantto the following:Article I Section 8, ``necessary and proper'' clause of theConstitution.[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Housing and Community Development</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-24T22:32:56Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This bill adds the Tennessee counties of Hickman, Perry, and Wayne to the definition of &quot;Appalachian region&quot; for purposes of Appalachian regional development efforts.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To amend subtitle IV of title 40, United States Code, regarding county additions to the Appalachian region.</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

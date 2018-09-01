@@ -1,140 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <billNumber>112</billNumber>
-    <cosponsors>
+    <titles>
       <item>
-        <firstName>PATTY</firstName>
-        <state>WA</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>M001111</bioguideId>
-        <lastName>MURRAY</lastName>
-        <fullName>Sen. Murray, Patty [D-WA]</fullName>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <identifiers>
-          <gpoId>8237</gpoId>
-          <bioguideId>M001111</bioguideId>
-          <lisID>1409</lisID>
-        </identifiers>
-        <middleName />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Creating a Reliable Environment for Veterans' Dependents Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
-    </cosponsors>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <relatedBills />
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend title 38, United States Code, to authorize per diem payments under comprehensive service programs for homeless veterans to furnish care to dependents of homeless veterans, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Creating a Reliable Environment for Veterans' Dependents Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Creating a Reliable Environment for Veterans' Dependents Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
     <latestAction>
       <links />
-      <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
-      <actionDate>2017-01-12</actionDate>
+      <text>Committee on Veterans' Affairs. Hearings held.</text>
+      <actionDate>2017-05-17</actionDate>
     </latestAction>
-    <updateDate>2017-01-13T10:07:32Z</updateDate>
-    <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <name>Veterans' Affairs Committee</name>
+    <committees>
+      <billCommittees>
+        <item>
           <systemCode>ssva00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-05-17T18:30:04Z</date>
+              <name>Hearings by</name>
+            </item>
+            <item>
+              <date>2017-01-12T19:10:09Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Veterans' Affairs Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-05-17</actionDate>
+        <committee>
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Veterans' Affairs. Hearings held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
         <type>IntroReferral</type>
       </item>
       <item>
         <actionDate>2017-01-12</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>10000</actionCode>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <committee />
         <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
       </item>
+      <actionByCounts>
+        <senate>3</senate>
+      </actionByCounts>
       <actionTypeCounts>
+        <hearingsHeld>1</hearingsHeld>
         <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
       </actionTypeCounts>
     </actions>
-    <billType>S</billType>
-    <committeeReports />
-    <originChamber>Senate</originChamber>
-    <notes />
-    <policyArea />
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Veterans' Affairs Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T19:10:09Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-          <systemCode>ssva00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <createDate>2017-01-13T04:55:34Z</createDate>
-    <title>A bill to amend title 38, United States Code, to authorize per diem payments under comprehensive service programs for homeless veterans to furnish care to dependents of homeless veterans, and for other purposes.</title>
-    <titles>
-      <item>
-        <chamberName />
-        <title>A bill to amend title 38, United States Code, to authorize per diem payments under comprehensive service programs for homeless veterans to furnish care to dependents of homeless veterans, and for other purposes.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>A bill to amend title 38, United States Code, to authorize per diem payments under comprehensive service programs for homeless veterans to furnish care to dependents of homeless veterans, and for other purposes.</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-      </item>
-    </titles>
-    <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <introducedDate>2017-01-12</introducedDate>
-    <amendments />
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
     <sponsors>
       <item>
-        <lastName>Heller</lastName>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <party>R</party>
+        <bioguideId>H001041</bioguideId>
         <identifiers>
           <bioguideId>H001041</bioguideId>
-          <gpoId>8060</gpoId>
           <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
         </identifiers>
+        <lastName>Heller</lastName>
         <byRequestType />
         <middleName />
-        <state>NV</state>
         <firstName>Dean</firstName>
-        <party>R</party>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <bioguideId>H001041</bioguideId>
+        <state>NV</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:22:41Z</updateDate>
+    <billNumber>112</billNumber>
+    <title>Creating a Reliable Environment for Veterans' Dependents Act</title>
+    <relatedBills>
+      <item>
+        <latestTitle>Homeless Veterans Prevention Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>1072</number>
+        <latestAction>
+          <actionDate>2017-05-09</actionDate>
+          <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2017-09-06T20:43:50Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong></strong><b>Creating a Reliable Environment for Veterans' Dependents Act</b></p> <p> This bill provides that the services for which a recipient of a grant under the Department of Veterans Affairs comprehensive service program for homeless veterans may receive per diem payments may include furnishing care for a dependent under the care of a veteran who is receiving services. </p> <p>]]></text>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <fullName>Sen. Murray, Patty [D-WA]</fullName>
+        <firstName>PATTY</firstName>
+        <lastName>MURRAY</lastName>
+        <identifiers>
+          <lisID>1409</lisID>
+          <gpoId>8237</gpoId>
+          <bioguideId>M001111</bioguideId>
+        </identifiers>
+        <state>WA</state>
+        <bioguideId>M001111</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
+        <firstName>Richard</firstName>
+        <lastName>Blumenthal</lastName>
+        <identifiers>
+          <lisID>2076</lisID>
+          <gpoId>8332</gpoId>
+          <bioguideId>B001277</bioguideId>
+        </identifiers>
+        <state>CT</state>
+        <bioguideId>B001277</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2017-06-08</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <firstName>Jon</firstName>
+        <lastName>Tester</lastName>
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <state>MT</state>
+        <bioguideId>T000464</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2018-04-24</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <fullName>Sen. Bennet, Michael F. [D-CO]</fullName>
+        <firstName>Michael</firstName>
+        <lastName>Bennet</lastName>
+        <identifiers>
+          <lisID>1965</lisID>
+          <gpoId>8302</gpoId>
+          <bioguideId>B001267</bioguideId>
+        </identifiers>
+        <state>CO</state>
+        <bioguideId>B001267</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2018-06-06</sponsorshipDate>
+        <middleName>F.</middleName>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-12</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Social work, volunteer service, charitable organizations</name>
+          </item>
+          <item>
+            <name>Veterans' loans, housing, homeless programs</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,180 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <actions>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billNumber>37</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText />
+    <originChamber>House</originChamber>
+    <billType>HRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:49:03Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Requires the House of Representatives to: (1) proceed to the West Front of the Capitol at 10:30 a.m. on Friday, January 20, 2017, to attend the inaugural ceremonies of the President and Vice President of the United States; and (2) adjourn upon the conclusion of the ceremonies until noon on Monday, January 23, 2017.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+        <item>
+          <updateDate>2017-01-10T14:41:30Z</updateDate>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:47:53Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Requires the House of Representatives to: (1) proceed to the West Front of the Capitol at 10:30 a.m. on Friday, January 20, 2017, to attend the inaugural ceremonies of the President and Vice President of the United States; and (2) adjourn upon the conclusion of the ceremonies until noon on Monday, January 23, 2017.</p>]]></text>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <versionCode>81</versionCode>
+          <name>Passed House without amendment</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-11T05:09:40Z</createDate>
+    <sponsors>
       <item>
-        <links />
-        <type>Floor</type>
-        <actionCode>H38310</actionCode>
+        <lastName>Collins</lastName>
+        <party>R</party>
+        <middleName />
+        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
+        <identifiers>
+          <lisID>2121</lisID>
+          <bioguideId>C001093</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>GA</state>
+        <firstName>Doug</firstName>
+        <byRequestType />
+        <district>9</district>
+        <bioguideId>C001093</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:53:47Z</updateDate>
+    <committeeReports />
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-10</actionDate>
         <actionTime>12:34:10</actionTime>
         <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
-      </item>
-      <item>
-        <links>
-          <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
-            <name>H249</name>
-          </link>
-        </links>
-        <type>Floor</type>
-        <actionCode>H37100</actionCode>
-        <actionTime>12:34:06</actionTime>
-        <committee />
-        <text>On agreeing to the resolution Agreed to without objection. (text: CR H249)</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
-      </item>
-      <item>
         <links />
-        <type>Floor</type>
-        <actionCode>8000</actionCode>
-        <actionTime>12:34:06</actionTime>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.</text>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionCode>H38310</actionCode>
         <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
+          <name>House floor actions</name>
+          <code>2</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <type>Floor</type>
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionTime>12:34:06</actionTime>
+        <committee />
         <links>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
             <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
           </link>
         </links>
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H249)</text>
+        <actionCode>H37100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <type>Floor</type>
-        <actionCode>H30000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionTime>12:34:06</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
+          </link>
+        </links>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H249)</text>
+        <actionCode>8000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
         <actionTime>12:33:46</actionTime>
         <committee />
+        <links>
+          <link>
+            <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
+          </link>
+        </links>
         <text>Considered as privileged matter. (consideration: CR H249)</text>
+        <actionCode>H30000</actionCode>
         <sourceSystem>
-          <code>2</code>
           <name>House floor actions</name>
+          <code>2</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <type>Floor</type>
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
         <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <committee />
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
         <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <committee />
       </item>
       <actionByCounts>
         <houseOfRepresentatives>6</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <considerationByHouse>1</considerationByHouse>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-      </actionTypeCounts>
     </actions>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <notes />
-    <createDate>2017-01-11T05:09:40Z</createDate>
     <title>Providing for the attendance of the House at the Inaugural Ceremonies of the President and Vice President of the United States.</title>
-    <relatedBills />
     <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-13T19:31:21Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-10</actionDate>
-      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-      <actionTime>12:34:10</actionTime>
-    </latestAction>
-    <originChamber>House</originChamber>
     <introducedDate>2017-01-10</introducedDate>
-    <billNumber>37</billNumber>
+    <recordedVotes />
+    <congress>115</congress>
     <amendments />
-    <billType>HRES</billType>
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-10</actionDate>
+      <links />
+      <actionTime>12:34:10</actionTime>
+      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Providing for the attendance of the House at the Inaugural Ceremonies of the President and Vice President of the United States.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Providing for the attendance of the House at the Inaugural Ceremonies of the President and Vice President of the United States.</title>
+      </item>
+    </titles>
+    <cboCostEstimates />
     <committees>
       <billCommittees />
     </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Collins</lastName>
-        <state>GA</state>
-        <byRequestType />
-        <firstName>Doug</firstName>
-        <bioguideId>C001093</bioguideId>
-        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
-        <identifiers>
-          <lisID>2121</lisID>
-          <gpoId />
-          <bioguideId>C001093</bioguideId>
-        </identifiers>
-        <middleName />
-        <district>9</district>
-        <party>R</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>Providing for the attendance of the House at the Inaugural Ceremonies of the President and Vice President of the United States.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>Providing for the attendance of the House at the Inaugural Ceremonies of the President and Vice President of the United States.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional operations and organization</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Presidents and presidential powers, Vice Presidents</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

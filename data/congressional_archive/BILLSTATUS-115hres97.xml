@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billStatus>
+  <bill>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billType>HRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-02-07</actionDate>
+      <text>Referred to the House Committee on House Administration.</text>
+    </latestAction>
+    <createDate>2017-02-08T04:45:55Z</createDate>
+    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-02-07</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsha00</systemCode>
+          <name>House Administration Committee</name>
+        </committee>
+        <text>Referred to the House Committee on House Administration.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-02-07</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-02-07</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>House Committee on Foreign Affairs</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>97</billNumber>
+    <title>Providing amounts for the expenses of the Committee on Foreign Affairs in the One Hundred Fifteenth Congress.</title>
+    <constitutionalAuthorityStatementText />
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsha00</systemCode>
+          <subcommittees />
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-02-07T15:05:15Z</date>
+            </item>
+          </activities>
+          <name>House Administration Committee</name>
+          <chamber>House</chamber>
+          <type>Standing</type>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
+      <item>
+        <party>D</party>
+        <state>NY</state>
+        <sponsorshipDate>2017-02-07</sponsorshipDate>
+        <district>16</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Engel, Eliot L. [D-NY-16]</fullName>
+        <middleName>L.</middleName>
+        <bioguideId>E000179</bioguideId>
+        <firstName>ELIOT</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>ENGEL</lastName>
+        <identifiers>
+          <lisID>344</lisID>
+          <bioguideId>E000179</bioguideId>
+          <gpoId>8078</gpoId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T19:53:58Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-02-07</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>R000487</bioguideId>
+        <identifiers>
+          <lisID>998</lisID>
+          <gpoId>7845</gpoId>
+          <bioguideId>R000487</bioguideId>
+        </identifiers>
+        <fullName>Rep. Royce, Edward R. [R-CA-39]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>ED</firstName>
+        <state>CA</state>
+        <lastName>ROYCE</lastName>
+        <district>39</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Providing amounts for the expenses of the Committee on Foreign Affairs in the One Hundred Fifteenth Congress.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Providing amounts for the expenses of the Committee on Foreign Affairs in the One Hundred Fifteenth Congress.</title>
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-02-07</actionDate>
+          <lastSummaryUpdateDate>2017-03-06T21:28:54Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-02-07T05:00:00Z</updateDate>
+          <text><![CDATA[<p>Provides amounts for the expenses of the House Committee on Foreign Affairs for the 115th Congress.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
+  </bill>
+  <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:format>text/xml</dc:format>
+    <dc:language>EN</dc:language>
+    <dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+    <dc:contributor>Congressional Research Service, Library of Congress</dc:contributor>
+    <dc:description>This file contains bill summaries and statuses for federal legislation. A bill summary describes the most significant provisions of a piece of legislation and details the effects the legislative text may have on current law and federal programs. Bill summaries are authored by the Congressional Research Service (CRS) of the Library of Congress. As stated in Public Law 91-510 (2 USC 166 (d)(6)), one of the duties of CRS is "to prepare summaries and digests of bills and resolutions of a public general nature introduced in the Senate or House of Representatives". For more information, refer to the User Guide that accompanies this file.</dc:description>
+  </dublinCore>
+</billStatus>
+

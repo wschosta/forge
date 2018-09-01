@@ -1,62 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <committee>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <billType>HR</billType>
-    <billNumber>323</billNumber>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <createDate>2017-01-06T04:57:26Z</createDate>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GRIFFITH:H.R. 323.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8 of the United StatesConstitution.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
     <title>To amend the Black Lung Benefits Act to provide equity for certain eligible survivors, and for other purposes.</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:58:49Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GRIFFITH:H.R. 323.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8 of the United StatesConstitution.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -72,173 +21,238 @@
           <item>
             <name>Mining</name>
           </item>
+          <item>
+            <name>Worker safety and health</name>
+          </item>
         </legislativeSubjects>
         <policyArea>
           <name>Labor and Employment</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
+    <version>1.0.0</version>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-09-14T12:14:04Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>This bill amends the Black Lung Benefits Act to preserve specified amendments made by the Patient Protection and Affordable Care Act (PPACA) in the event those amendments are repealed. The amendments expanded the application of certain eligibility requirements for black lung benefits to claims that were pending on or after the enactment of PPACA. Those requirements: (1) established a rebuttable presumption for claims filed by a miner who worked at least 15 years in an underground coal mine that a disabling lung or respiratory condition was due to black lung disease, and (2) entitled the survivors of a miner who, before death, was determined to be eligible for benefits to those benefits without the survivors being required to revalidate the miner's claim. (Previously, survivors were required to prove that the miner's death was caused by black lung disease).</p>]]></text>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
     </summaries>
-    <congress>115</congress>
-    <laws />
-    <updateDate>2017-01-23T17:31:17Z</updateDate>
-    <notes />
+    <billType>HR</billType>
+    <latestAction>
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+      <links />
+      <actionDate>2017-01-05</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Labor and Employment</name>
+    </policyArea>
+    <relatedBills />
     <introducedDate>2017-01-05</introducedDate>
-    <calendarNumbers />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <committee>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>323</billNumber>
+    <cboCostEstimates />
+    <cosponsors>
+      <item>
+        <lastName>Johnson</lastName>
+        <state>OH</state>
+        <firstName>Bill</firstName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Johnson, Bill [R-OH-6]</fullName>
+        <identifiers>
+          <lisID>2046</lisID>
+          <gpoId>8096</gpoId>
+          <bioguideId>J000292</bioguideId>
+        </identifiers>
+        <bioguideId>J000292</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Roe</lastName>
+        <state>TN</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <identifiers>
+          <lisID>1954</lisID>
+          <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+        </identifiers>
+        <bioguideId>R000582</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>P.</middleName>
+      </item>
+      <item>
+        <lastName>Jenkins</lastName>
+        <state>WV</state>
+        <firstName>Evan</firstName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Jenkins, Evan H. [R-WV-3]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2278</lisID>
+          <bioguideId>J000297</bioguideId>
+        </identifiers>
+        <bioguideId>J000297</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>H.</middleName>
+      </item>
+      <item>
+        <lastName>McKinley</lastName>
+        <state>WV</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <identifiers>
+          <lisID>2074</lisID>
+          <gpoId>8222</gpoId>
+          <bioguideId>M001180</bioguideId>
+        </identifiers>
+        <bioguideId>M001180</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>B.</middleName>
+      </item>
+      <item>
+        <lastName>Murphy</lastName>
+        <state>PA</state>
+        <firstName>Tim</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <district>18</district>
+        <fullName>Rep. Murphy, Tim [R-PA-18]</fullName>
+        <identifiers>
+          <lisID>1744</lisID>
+          <bioguideId>M001151</bioguideId>
+          <gpoId>8723</gpoId>
+        </identifiers>
+        <bioguideId>M001151</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+    </cosponsors>
     <committees>
       <billCommittees>
         <item>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-          <chamber>House</chamber>
-          <type>Standing</type>
           <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
           <activities>
             <item>
               <date>2017-01-05T15:03:15Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-      <links />
-    </latestAction>
-    <cosponsors>
-      <item>
-        <lastName>Johnson</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <bioguideId>J000292</bioguideId>
-        <identifiers>
-          <lisID>2046</lisID>
-          <bioguideId>J000292</bioguideId>
-          <gpoId>8096</gpoId>
-        </identifiers>
-        <party>R</party>
-        <state>OH</state>
-        <fullName>Rep. Johnson, Bill [R-OH-6]</fullName>
-        <firstName>Bill</firstName>
-        <middleName />
-        <district>6</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-      </item>
-      <item>
-        <lastName>Roe</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <bioguideId>R000582</bioguideId>
-        <identifiers>
-          <gpoId>8148</gpoId>
-          <lisID>1954</lisID>
-          <bioguideId>R000582</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>TN</state>
-        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
-        <firstName>David</firstName>
-        <middleName>P.</middleName>
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-      </item>
-      <item>
-        <lastName>Jenkins</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <bioguideId>J000297</bioguideId>
-        <identifiers>
-          <gpoId />
-          <lisID>2278</lisID>
-          <bioguideId>J000297</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>WV</state>
-        <fullName>Rep. Jenkins, Evan H. [R-WV-3]</fullName>
-        <firstName>Evan</firstName>
-        <middleName>H.</middleName>
-        <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-      </item>
-      <item>
-        <lastName>McKinley</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <bioguideId>M001180</bioguideId>
-        <identifiers>
-          <gpoId>8222</gpoId>
-          <lisID>2074</lisID>
-          <bioguideId>M001180</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>WV</state>
-        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
-        <firstName>David</firstName>
-        <middleName>B.</middleName>
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-      </item>
-      <item>
-        <lastName>Murphy</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <bioguideId>M001151</bioguideId>
-        <identifiers>
-          <bioguideId>M001151</bioguideId>
-          <gpoId>8723</gpoId>
-          <lisID>1744</lisID>
-        </identifiers>
-        <party>R</party>
-        <state>PA</state>
-        <fullName>Rep. Murphy, Tim [R-PA-18]</fullName>
-        <firstName>Tim</firstName>
-        <middleName />
-        <district>18</district>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-      </item>
-    </cosponsors>
-    <committeeReports />
+    <notes />
     <amendments />
+    <recordedVotes />
+    <createDate>2017-01-06T04:57:26Z</createDate>
     <sponsors>
       <item>
-        <state>VA</state>
-        <middleName>Morgan</middleName>
+        <bioguideId>G000568</bioguideId>
         <party>R</party>
+        <firstName>H.</firstName>
+        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
+        <state>VA</state>
+        <district>9</district>
+        <lastName>Griffith</lastName>
+        <middleName>Morgan</middleName>
         <identifiers>
           <lisID>2070</lisID>
-          <bioguideId>G000568</bioguideId>
           <gpoId>8200</gpoId>
+          <bioguideId>G000568</bioguideId>
         </identifiers>
-        <bioguideId>G000568</bioguideId>
         <byRequestType />
-        <firstName>H.</firstName>
-        <lastName>Griffith</lastName>
-        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
-        <district>9</district>
       </item>
     </sponsors>
-    <recordedVotes />
-    <policyArea>
-      <name>Labor and Employment</name>
-    </policyArea>
     <titles>
       <item>
-        <parentTitleType />
         <title>To amend the Black Lung Benefits Act to provide equity for certain eligible survivors, and for other purposes.</title>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
       <item>
-        <parentTitleType />
         <title>To amend the Black Lung Benefits Act to provide equity for certain eligible survivors, and for other purposes.</title>
         <chamberCode />
         <titleType>Display Title</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
     </titles>

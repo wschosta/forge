@@ -1,259 +1,424 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills />
     <calendarNumbers />
-    <recordedVotes />
-    <cboCostEstimates />
-    <congress>115</congress>
-    <originChamber>Senate</originChamber>
-    <updateDate>2017-01-21T10:04:57Z</updateDate>
-    <laws />
-    <actions>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-20</actionDate>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>ssju00</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>0</code>
-          <name>Senate</name>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on the Judiciary.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in Senate</text>
-      </item>
-    </actions>
-    <createDate>2017-01-21T04:55:45Z</createDate>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <subcommittees />
-          <systemCode>ssju00</systemCode>
-          <name>Judiciary Committee</name>
-          <chamber>Senate</chamber>
-          <activities>
-            <item>
-              <date>2017-01-20T23:29:44Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <billType>SJRES</billType>
     <amendments />
-    <cosponsors>
+    <committeeReports />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <actionDate>2017-01-20</actionDate>
+          <lastSummaryUpdateDate>2017-02-02T16:30:57Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Constitutional Amendment</b></p> <p>This joint resolution proposes a constitutional amendment prohibiting the United States or any state from denying or abridging equal rights under the law on account of sex. </p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
       <item>
-        <lastName>Booker</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Booker, Cory A. [D-NJ]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>B001288</bioguideId>
-        <firstName>Cory</firstName>
-        <identifiers>
-          <lisID>2194</lisID>
-          <bioguideId>B001288</bioguideId>
-          <gpoId />
-        </identifiers>
-        <party>D</party>
-        <state>NJ</state>
-        <middleName>A.</middleName>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</latestTitle>
+        <type>HJRES</type>
+        <congress>115</congress>
+        <number>33</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-02-06</actionDate>
+        </latestAction>
       </item>
-      <item>
-        <lastName>BROWN</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>B000944</bioguideId>
-        <firstName>SHERROD</firstName>
-        <identifiers>
-          <bioguideId>B000944</bioguideId>
-          <lisID>136</lisID>
-          <gpoId>8309</gpoId>
-        </identifiers>
-        <party>D</party>
-        <state>OH</state>
-        <middleName />
-      </item>
-      <item>
-        <lastName>CARDIN</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Cardin, Benjamin L. [D-MD]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>C000141</bioguideId>
-        <firstName>BENJAMIN</firstName>
-        <identifiers>
-          <bioguideId>C000141</bioguideId>
-          <gpoId>8287</gpoId>
-          <lisID>174</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>MD</state>
-        <middleName>L.</middleName>
-      </item>
-      <item>
-        <lastName>Coons</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>C001088</bioguideId>
-        <firstName>Christopher</firstName>
-        <identifiers>
-          <gpoId>8297</gpoId>
-          <bioguideId>C001088</bioguideId>
-          <lisID>1984</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>DE</state>
-        <middleName>A.</middleName>
-      </item>
-      <item>
-        <lastName>FEINSTEIN</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>F000062</bioguideId>
-        <firstName>DIANNE</firstName>
-        <identifiers>
-          <gpoId>8338</gpoId>
-          <bioguideId>F000062</bioguideId>
-          <lisID>1332</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>CA</state>
-        <middleName />
-      </item>
-      <item>
-        <lastName>Gillibrand</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>G000555</bioguideId>
-        <firstName>Kirsten</firstName>
-        <identifiers>
-          <lisID>1866</lisID>
-          <bioguideId>G000555</bioguideId>
-          <gpoId>8336</gpoId>
-        </identifiers>
-        <party>D</party>
-        <state>NY</state>
-        <middleName>E.</middleName>
-      </item>
-      <item>
-        <lastName>MARKEY</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>M000133</bioguideId>
-        <firstName>EDWARD</firstName>
-        <identifiers>
-          <bioguideId>M000133</bioguideId>
-          <gpoId>7972</gpoId>
-          <lisID>735</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>MA</state>
-        <middleName>J.</middleName>
-      </item>
-      <item>
-        <lastName>Warren</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Sen. Warren, Elizabeth [D-MA]</fullName>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>W000817</bioguideId>
-        <firstName>Elizabeth</firstName>
-        <identifiers>
-          <gpoId />
-          <bioguideId>W000817</bioguideId>
-          <lisID>2182</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>MA</state>
-        <middleName>A.</middleName>
-      </item>
-    </cosponsors>
-    <billNumber>6</billNumber>
+    </relatedBills>
+    <createDate>2017-01-21T04:55:45Z</createDate>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-20</actionDate>
+      <text>Read twice and referred to the Committee on the Judiciary.</text>
+    </latestAction>
     <sponsors>
       <item>
-        <middleName />
-        <fullName>Sen. Menendez, Robert [D-NJ]</fullName>
-        <firstName>ROBERT</firstName>
-        <bioguideId>M000639</bioguideId>
-        <lastName>MENENDEZ</lastName>
         <party>D</party>
         <state>NJ</state>
+        <bioguideId>M000639</bioguideId>
+        <middleName />
+        <lastName>MENENDEZ</lastName>
+        <fullName>Sen. Menendez, Robert [D-NJ]</fullName>
+        <firstName>ROBERT</firstName>
+        <byRequestType />
         <identifiers>
           <bioguideId>M000639</bioguideId>
           <lisID>791</lisID>
           <gpoId>8239</gpoId>
         </identifiers>
-        <byRequestType />
       </item>
     </sponsors>
+    <billNumber>6</billNumber>
+    <updateDate>2018-08-28T20:21:58Z</updateDate>
+    <cboCostEstimates />
+    <notes />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
+      </item>
+    </titles>
     <introducedDate>2017-01-20</introducedDate>
-    <committeeReports />
-    <policyArea />
-    <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Constitution and constitutional amendments</name>
+          </item>
+          <item>
+            <name>Due process and equal protection</name>
+          </item>
+          <item>
+            <name>Sex, gender, sexual orientation discrimination</name>
+          </item>
+          <item>
+            <name>Women's rights</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Civil Rights and Liberties, Minority Issues</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on the Judiciary.</text>
-      <actionDate>2017-01-20</actionDate>
-    </latestAction>
+    <billType>SJRES</billType>
+    <originChamber>Senate</originChamber>
+    <title>A joint resolution proposing an amendment to the Constitution of the United States relative to equal rights for men and women.</title>
+    <cosponsors>
+      <item>
+        <fullName>Sen. Booker, Cory A. [D-NJ]</fullName>
+        <party>D</party>
+        <bioguideId>B001288</bioguideId>
+        <identifiers>
+          <bioguideId>B001288</bioguideId>
+          <gpoId />
+          <lisID>2194</lisID>
+        </identifiers>
+        <lastName>Booker</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Cory</firstName>
+        <state>NJ</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
+        <party>D</party>
+        <bioguideId>B000944</bioguideId>
+        <identifiers>
+          <bioguideId>B000944</bioguideId>
+          <gpoId>8309</gpoId>
+          <lisID>136</lisID>
+        </identifiers>
+        <lastName>BROWN</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>SHERROD</firstName>
+        <state>OH</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Cardin, Benjamin L. [D-MD]</fullName>
+        <party>D</party>
+        <bioguideId>C000141</bioguideId>
+        <identifiers>
+          <gpoId>8287</gpoId>
+          <lisID>174</lisID>
+          <bioguideId>C000141</bioguideId>
+        </identifiers>
+        <lastName>CARDIN</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>L.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>BENJAMIN</firstName>
+        <state>MD</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <party>D</party>
+        <bioguideId>C001088</bioguideId>
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <lisID>1984</lisID>
+          <gpoId>8297</gpoId>
+        </identifiers>
+        <lastName>Coons</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Christopher</firstName>
+        <state>DE</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <party>D</party>
+        <bioguideId>F000062</bioguideId>
+        <identifiers>
+          <lisID>1332</lisID>
+          <gpoId>8338</gpoId>
+          <bioguideId>F000062</bioguideId>
+        </identifiers>
+        <lastName>FEINSTEIN</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>DIANNE</firstName>
+        <state>CA</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
+        <party>D</party>
+        <bioguideId>G000555</bioguideId>
+        <identifiers>
+          <lisID>1866</lisID>
+          <bioguideId>G000555</bioguideId>
+          <gpoId>8336</gpoId>
+        </identifiers>
+        <lastName>Gillibrand</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>E.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Kirsten</firstName>
+        <state>NY</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
+        <party>D</party>
+        <bioguideId>M000133</bioguideId>
+        <identifiers>
+          <lisID>735</lisID>
+          <bioguideId>M000133</bioguideId>
+          <gpoId>7972</gpoId>
+        </identifiers>
+        <lastName>MARKEY</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>EDWARD</firstName>
+        <state>MA</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Warren, Elizabeth [D-MA]</fullName>
+        <party>D</party>
+        <bioguideId>W000817</bioguideId>
+        <identifiers>
+          <bioguideId>W000817</bioguideId>
+          <lisID>2182</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Warren</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Elizabeth</firstName>
+        <state>MA</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Murphy, Christopher [D-CT]</fullName>
+        <party>D</party>
+        <bioguideId>M001169</bioguideId>
+        <identifiers>
+          <bioguideId>M001169</bioguideId>
+          <gpoId>7870</gpoId>
+          <lisID>1837</lisID>
+        </identifiers>
+        <lastName>Murphy</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Christopher</firstName>
+        <state>CT</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Durbin, Richard J. [D-IL]</fullName>
+        <party>D</party>
+        <bioguideId>D000563</bioguideId>
+        <identifiers>
+          <gpoId>8326</gpoId>
+          <lisID>326</lisID>
+          <bioguideId>D000563</bioguideId>
+        </identifiers>
+        <lastName>DURBIN</lastName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>RICHARD</firstName>
+        <state>IL</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
+        <party>D</party>
+        <bioguideId>V000128</bioguideId>
+        <identifiers>
+          <lisID>1729</lisID>
+          <gpoId>7983</gpoId>
+          <bioguideId>V000128</bioguideId>
+        </identifiers>
+        <lastName>Van Hollen</lastName>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Chris</firstName>
+        <state>MD</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Carper, Thomas R. [D-DE]</fullName>
+        <party>D</party>
+        <bioguideId>C000174</bioguideId>
+        <identifiers>
+          <lisID>179</lisID>
+          <gpoId>8283</gpoId>
+          <bioguideId>C000174</bioguideId>
+        </identifiers>
+        <lastName>CARPER</lastName>
+        <sponsorshipDate>2017-03-14</sponsorshipDate>
+        <middleName>R.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>THOMAS</firstName>
+        <state>DE</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
+        <party>D</party>
+        <bioguideId>B001277</bioguideId>
+        <identifiers>
+          <lisID>2076</lisID>
+          <gpoId>8332</gpoId>
+          <bioguideId>B001277</bioguideId>
+        </identifiers>
+        <lastName>Blumenthal</lastName>
+        <sponsorshipDate>2017-04-05</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Richard</firstName>
+        <state>CT</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <party>D</party>
+        <bioguideId>S001194</bioguideId>
+        <identifiers>
+          <gpoId />
+          <lisID>2173</lisID>
+          <bioguideId>S001194</bioguideId>
+        </identifiers>
+        <lastName>Schatz</lastName>
+        <sponsorshipDate>2017-06-26</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Brian</firstName>
+        <state>HI</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <fullName>Sen. Smith, Tina  [D-MN]</fullName>
+        <party>D</party>
+        <bioguideId>S001203</bioguideId>
+        <identifiers>
+          <bioguideId>S001203</bioguideId>
+          <lisID>2365</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Smith</lastName>
+        <sponsorshipDate>2018-05-14</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Tina</firstName>
+        <state>MN</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <recordedVotes />
+    <policyArea>
+      <name>Civil Rights and Liberties, Minority Issues</name>
+    </policyArea>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <systemCode>ssju00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-20T23:29:44Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>10000</actionCode>
+        <committee />
+        <text>Introduced in Senate</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+    </actions>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

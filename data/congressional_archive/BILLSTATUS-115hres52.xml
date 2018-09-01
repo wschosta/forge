@@ -1,180 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committeeReports />
-    <sponsors>
+    <titles>
       <item>
-        <middleName />
-        <party>D</party>
-        <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
-        <state>NY</state>
-        <byRequestType />
-        <lastName>CROWLEY</lastName>
-        <district>14</district>
-        <identifiers>
-          <bioguideId>C001038</bioguideId>
-          <gpoId>8068</gpoId>
-          <lisID>1604</lisID>
-        </identifiers>
-        <firstName>JOSEPH</firstName>
-        <bioguideId>C001038</bioguideId>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Electing Members to certain standing committees of the House of Representatives.</title>
       </item>
-    </sponsors>
-    <recordedVotes />
-    <updateDate>2017-01-18T21:01:11Z</updateDate>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Electing Members to certain standing committees of the House of Representatives.</title>
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+      <actionDate>2017-01-13</actionDate>
+      <actionTime>15:41:14</actionTime>
+    </latestAction>
+    <constitutionalAuthorityStatementText />
+    <committees>
+      <billCommittees />
+    </committees>
     <actions>
       <actionByCounts>
         <houseOfRepresentatives>6</houseOfRepresentatives>
       </actionByCounts>
       <item>
+        <committee />
+        <links />
+        <type>Floor</type>
         <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionTime>15:41:14</actionTime>
         <actionDate>2017-01-13</actionDate>
         <actionCode>H38310</actionCode>
-        <committee />
-        <type>Floor</type>
+        <actionTime>15:41:14</actionTime>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
-        <links />
       </item>
       <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H533</url>
+            <name>H533</name>
+          </link>
+        </links>
+        <type>Floor</type>
         <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H533)</text>
-        <actionTime>15:41:06</actionTime>
         <actionDate>2017-01-13</actionDate>
         <actionCode>H37100</actionCode>
-        <committee />
-        <type>Floor</type>
+        <actionTime>15:41:06</actionTime>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
-        <links>
-          <link>
-            <name>H533</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H533</url>
-          </link>
-        </links>
       </item>
       <item>
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.</text>
-        <actionTime>15:41:06</actionTime>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H533</url>
+            <name>H533</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H533)</text>
         <actionDate>2017-01-13</actionDate>
         <actionCode>8000</actionCode>
-        <committee />
-        <type>Floor</type>
+        <actionTime>15:41:06</actionTime>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
       </item>
       <item>
-        <text>Considered as privileged matter. (consideration: CR H533)</text>
-        <actionTime>15:40:43</actionTime>
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>H30000</actionCode>
         <committee />
-        <type>Floor</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
         <links>
           <link>
-            <name>H533</name>
             <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H533</url>
+            <name>H533</name>
           </link>
         </links>
+        <type>Floor</type>
+        <text>Considered as privileged matter. (consideration: CR H533)</text>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H30000</actionCode>
+        <actionTime>15:40:43</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
         <actionDate>2017-01-13</actionDate>
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
       </item>
       <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
         <actionDate>2017-01-13</actionDate>
         <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
       </item>
       <actionTypeCounts>
         <introducedInHouse>1</introducedInHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
         <passedAgreedToInHouse>1</passedAgreedToInHouse>
         <considerationByHouse>1</considerationByHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
       </actionTypeCounts>
     </actions>
-    <createDate>2017-01-14T04:47:30Z</createDate>
-    <introducedDate>2017-01-13</introducedDate>
-    <constitutionalAuthorityStatementText />
-    <title>Electing Members to certain standing committees of the House of Representatives.</title>
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <actionTime>15:41:14</actionTime>
-      <links />
-      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-    </latestAction>
-    <cosponsors />
-    <originChamber>House</originChamber>
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <billType>HRES</billType>
     <policyArea>
       <name>Congress</name>
     </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
+        <party>D</party>
+        <bioguideId>C001038</bioguideId>
+        <identifiers>
+          <lisID>1604</lisID>
+          <gpoId>8068</gpoId>
+          <bioguideId>C001038</bioguideId>
+        </identifiers>
+        <lastName>CROWLEY</lastName>
+        <district>14</district>
+        <middleName />
+        <firstName>JOSEPH</firstName>
+        <byRequestType />
+        <state>NY</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:53:51Z</updateDate>
+    <billNumber>52</billNumber>
+    <title>Electing Members to certain standing committees of the House of Representatives.</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
     <laws />
     <cboCostEstimates />
-    <calendarNumbers />
-    <amendments />
+    <billType>HRES</billType>
+    <createDate>2017-01-14T04:47:30Z</createDate>
+    <originChamber>House</originChamber>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-03-15T18:57:53Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Elects specified Members to the following House Committees: (1) Agriculture; (2) the Budget; (3) Foreign Affairs; (4) Natural Resources; (5) Oversight and Government Reform; (6) Science, Space, and Technology; (7) Small Business; and (8) Veterans&rsquo; Affairs.</p>]]></text>
+          <actionDate>2017-01-13</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+        <item>
+          <updateDate>2017-01-13T16:18:47Z</updateDate>
+          <lastSummaryUpdateDate>2017-03-15T18:58:03Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Elects specified Members to the following House Committees: (1) Agriculture; (2) the Budget; (3) Foreign Affairs; (4) Natural Resources; (5) Oversight and Government Reform; (6) Science, Space, and Technology; (7) Small Business; and (8) Veterans&rsquo; Affairs.</p>]]></text>
+          <actionDate>2017-01-13</actionDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <name>Passed House without amendment</name>
+          <versionCode>81</versionCode>
+        </item>
+      </billSummaries>
     </summaries>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>Electing Members to certain standing committees of the House of Representatives.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>Electing Members to certain standing committees of the House of Representatives.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <committees>
-      <billCommittees />
-    </committees>
-    <billNumber>52</billNumber>
-    <relatedBills />
-    <notes />
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-13</introducedDate>
     <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>House Committee on Agriculture</name>
+          </item>
+          <item>
+            <name>House Committee on Foreign Affairs</name>
+          </item>
+          <item>
+            <name>House Committee on Homeland Security</name>
+          </item>
+          <item>
+            <name>House Committee on Natural Resources</name>
+          </item>
+          <item>
+            <name>House Committee on Oversight and Government Reform</name>
+          </item>
+          <item>
+            <name>House Committee on Science, Space, and Technology</name>
+          </item>
+          <item>
+            <name>House Committee on Small Business</name>
+          </item>
+          <item>
+            <name>House Committee on Veterans' Affairs</name>
+          </item>
+          <item>
+            <name>House Committee on the Budget</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,135 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea>
-      <name>Health</name>
-    </policyArea>
-    <updateDate>2017-01-12T17:31:22Z</updateDate>
-    <billType>HR</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Rep. Green, Al [D-TX-9]</fullName>
-        <identifiers>
-          <lisID>1803</lisID>
-          <gpoId>8165</gpoId>
-          <bioguideId>G000553</bioguideId>
-        </identifiers>
-        <byRequestType />
-        <firstName>Al</firstName>
-        <bioguideId>G000553</bioguideId>
-        <lastName>Green</lastName>
-        <state>TX</state>
-        <district>9</district>
-        <party>D</party>
-        <middleName />
-      </item>
-    </sponsors>
-    <congress>115</congress>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</title>
-    <actions>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:01:15Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
           <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <actionCode>H11100</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <introducedDate>2017-01-03</introducedDate>
-    <billNumber>148</billNumber>
-    <relatedBills />
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:10:17Z</date>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</strong></p> <p>This bill amends title XIX (Medicaid) of the Social Security Act to pay states 50% of their costs for providing education on the risk of renal medullary carcinoma to individuals with sickle cell disease. (Renal medullary carcinoma is a rare kidney disease usually found in individuals with the sickle cell trait.) </p>]]></text>
+          <lastSummaryUpdateDate>2017-01-12T17:09:32Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
     <titles>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</title>
       </item>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>To amend title XIX of the Social Security Act to provide incentives for education on the risk of renal medullary carcinoma in individuals who are receiving medical assistance under such title and who have Sickle Cell Disease.</title>
       </item>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</title>
       </item>
     </titles>
     <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <committeeReports />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Health.</text>
+      <links />
+      <actionDate>2017-01-25</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:02Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. AL GREEN of Texas:H.R. 148.Congress has the power to enact this legislation pursuantto the following:Commerce Clause (Art. 1, Sec. 8, Cl. 3)Necessary and Proper Clause (Art. 1, Sec. 8, Cl. 18)[Page H50]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>148</billNumber>
     <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries>
-        <item>
-          <lastSummaryUpdateDate>2017-01-12T17:09:32Z</lastSummaryUpdateDate>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p><strong>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</strong></p> <p>This bill amends title XIX (Medicaid) of the Social Security Act to pay states 50% of their costs for providing education on the risk of renal medullary carcinoma to individuals with sickle cell disease. (Renal medullary carcinoma is a rare kidney disease usually found in individuals with the sickle cell trait.) </p>]]></text>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
-        </item>
-      </billSummaries>
-    </summaries>
+    <relatedBills />
+    <title>Byron Nash Renal Medullary Carcinoma Awareness Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Cancer</name>
@@ -144,30 +177,31 @@
             <name>Medicaid</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Health</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-04T07:01:11Z</createDate>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>G000553</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <lastName>Green</lastName>
+        <state>TX</state>
+        <district>9</district>
+        <party>D</party>
+        <identifiers>
+          <bioguideId>G000553</bioguideId>
+          <lisID>1803</lisID>
+          <gpoId>8165</gpoId>
+        </identifiers>
+        <firstName>Al</firstName>
+      </item>
+    </sponsors>
     <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <date>2017-01-03T17:01:15Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

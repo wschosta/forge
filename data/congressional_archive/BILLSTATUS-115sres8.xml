@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billType>SRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-05</actionDate>
+      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S106-107; text as passed Senate: CR S117-118)</text>
+    </latestAction>
+    <createDate>2017-01-06T04:57:27Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-05</actionDate>
         <committee />
@@ -23,8 +39,10 @@
         <type>Floor</type>
       </item>
       <item>
-        <type>Floor</type>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>17000</actionCode>
         <committee />
+        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S106-107; text as passed Senate: CR S117-118)</text>
         <links>
           <link>
             <name>S106-107</name>
@@ -35,21 +53,19 @@
             <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S117-118</url>
           </link>
         </links>
-        <actionDate>2017-01-05</actionDate>
-        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S106-107; text as passed Senate: CR S117-118)</text>
-        <actionCode>17000</actionCode>
+        <type>Floor</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
         <actionDate>2017-01-05</actionDate>
-        <text>Introduced in Senate</text>
         <actionCode>10000</actionCode>
+        <committee />
+        <text>Introduced in Senate</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
@@ -58,67 +74,14 @@
       <actionByCounts>
         <senate>3</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
-      </actionTypeCounts>
     </actions>
-    <amendments />
-    <committees>
-      <billCommittees />
-    </committees>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-        <parentTitleType />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>Senate</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-05</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>E.</middleName>
-        <firstName>CHARLES</firstName>
-        <bioguideId>S000148</bioguideId>
-        <byRequestType />
-        <state>NY</state>
-        <identifiers>
-          <lisID>1036</lisID>
-          <gpoId>8279</gpoId>
-          <bioguideId>S000148</bioguideId>
-        </identifiers>
-        <party>D</party>
-        <lastName>SCHUMER</lastName>
-        <fullName>Sen. Schumer, Charles E. [D-NY]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <links />
-      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S106-107; text as passed Senate: CR S117-118)</text>
-    </latestAction>
     <congress>115</congress>
-    <cosponsors />
-    <billNumber>8</billNumber>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional committees</name>
@@ -193,22 +156,79 @@
             <name>Senate Special Committee on Aging</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
+    <billNumber>8</billNumber>
     <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-    <recordedVotes />
+    <committees>
+      <billCommittees />
+    </committees>
+    <introducedDate>2017-01-05</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:20:15Z</updateDate>
+    <laws />
+    <originChamber>Senate</originChamber>
     <cboCostEstimates />
-    <updateDate>2017-01-12T14:28:17Z</updateDate>
-    <createDate>2017-01-06T04:57:27Z</createDate>
-    <billType>SRES</billType>
+    <sponsors>
+      <item>
+        <middleName>E.</middleName>
+        <bioguideId>S000148</bioguideId>
+        <identifiers>
+          <lisID>1036</lisID>
+          <bioguideId>S000148</bioguideId>
+          <gpoId>8279</gpoId>
+        </identifiers>
+        <fullName>Sen. Schumer, Charles E. [D-NY]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>CHARLES</firstName>
+        <state>NY</state>
+        <lastName>SCHUMER</lastName>
+      </item>
+    </sponsors>
     <relatedBills />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
+    <cosponsors />
+    <titles>
+      <item>
+        <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>Designates the minority party membership on specified Senate committees for the 115th Congress.</p>]]></text>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2017-02-17T23:00:53Z</lastSummaryUpdateDate>
+        </item>
+        <item>
+          <updateDate>2017-01-05T13:34:26Z</updateDate>
+          <versionCode>82</versionCode>
+          <name>Passed Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the minority party membership on specified Senate committees for the 115th Congress.</p>]]></text>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <lastSummaryUpdateDate>2017-03-16T18:35:08Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

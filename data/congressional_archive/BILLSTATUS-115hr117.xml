@@ -1,74 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>117</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
     <policyArea>
       <name>Energy</name>
     </policyArea>
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-10T16:01:22Z</updateDate>
+    <billNumber>117</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]Mr. BURGESS:H.R. 117.Congress has the power to enact this legislation pursuantto the following:This legislation would repeal existing federal law, whichwas passed under the claimed constitutional authority ofArticle I, Section 8, Clause 3, often referred to as the``Commerce Clause.''[Page H49]</pre>]]></constitutionalAuthorityStatementText>
     <originChamber>House</originChamber>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Energy Efficiency Free Market Act of 2016</b></p> <p>This bill amends the Energy Policy and Conservation Act to eliminate the Department of Energy's authority to set energy efficiency and water conservation standards for consumer and commercial appliances. All existing standards are repealed.</p> <p>Additionally, the bill prohibitsstatesfrom setting their own energy efficiency and water conservation standards.All existing state standards are nullified.</p>]]></text>
+          <lastSummaryUpdateDate>2017-04-03T14:24:57Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Burgess</lastName>
+        <party>R</party>
+        <middleName>C.</middleName>
+        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
+        <identifiers>
+          <bioguideId>B001248</bioguideId>
+          <lisID>1751</lisID>
+          <gpoId>8182</gpoId>
+        </identifiers>
+        <state>TX</state>
+        <firstName>Michael</firstName>
+        <byRequestType />
+        <district>26</district>
+        <bioguideId>B001248</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:57:57Z</updateDate>
+    <committeeReports />
     <actions>
       <item>
+        <actionDate>2017-01-25</actionDate>
         <committee>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
+          <systemCode>hsif03</systemCode>
+          <name>Energy and Power Subcommittee</name>
         </committee>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
         <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Energy.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <links />
         <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <links />
         <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
       </item>
       <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
         <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
         <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <committeeReports />
+    <title>Energy Efficiency Free Market Act of 2017</title>
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-25</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Energy.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Energy Efficiency Free Market Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To repeal Federal energy conservation standards, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Energy Efficiency Free Market Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Energy Efficiency Free Market Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cboCostEstimates />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsif03</systemCode>
+              <name>Energy and Power Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-25T14:09:03Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:12:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -105,74 +217,6 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>Energy Efficiency Free Market Act of 2017</title>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>To repeal Federal energy conservation standards, and for other purposes.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>Energy Efficiency Free Market Act of 2017</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>Energy Efficiency Free Market Act of 2017</title>
-    <introducedDate>2017-01-03</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <links />
-    </latestAction>
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-          <subcommittees />
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:12:50Z</date>
-            </item>
-          </activities>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
-        <firstName>Michael</firstName>
-        <bioguideId>B001248</bioguideId>
-        <party>R</party>
-        <middleName>C.</middleName>
-        <byRequestType />
-        <district>26</district>
-        <state>TX</state>
-        <lastName>Burgess</lastName>
-        <identifiers>
-          <bioguideId>B001248</bioguideId>
-          <lisID>1751</lisID>
-          <gpoId>8182</gpoId>
-        </identifiers>
-      </item>
-    </sponsors>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

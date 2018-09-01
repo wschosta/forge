@@ -1,150 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>Sarah's Law</title>
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>To require U.S. Immigration and Customs Enforcement to take into custody certain aliens who have been charged in the United States with a crime that resulted in the death or serious bodily injury of another person, and for other purposes.</title>
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>Sarah's Law</title>
-        <chamberName />
-      </item>
-    </titles>
+    <committeeReports />
+    <updateDate>2018-08-28T19:58:44Z</updateDate>
+    <laws />
     <billType>HR</billType>
-    <calendarNumbers />
-    <relatedBills>
-      <item>
-        <latestAction>
-          <actionDate>2017-01-13</actionDate>
-          <text>Referred to the Subcommittee on Immigration and Border Security.</text>
-        </latestAction>
-        <congress>115</congress>
-        <relationshipDetails>
-          <item>
-            <type>Identical bill</type>
-            <identifiedBy>CRS</identifiedBy>
-          </item>
-        </relationshipDetails>
-        <number>174</number>
-        <latestTitle>Sarah's Law</latestTitle>
-        <type>HR</type>
-      </item>
-    </relatedBills>
-    <sponsors>
-      <item>
-        <state>IA</state>
-        <firstName>David</firstName>
-        <fullName>Rep. Young, David [R-IA-3]</fullName>
-        <party>R</party>
-        <identifiers>
-          <bioguideId>Y000066</bioguideId>
-          <gpoId />
-          <lisID>2242</lisID>
-        </identifiers>
-        <bioguideId>Y000066</bioguideId>
-        <district>3</district>
-        <lastName>Young</lastName>
-        <middleName />
-        <byRequestType />
-      </item>
-    </sponsors>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
         <policyArea>
           <name>Immigration</name>
         </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Border security and unlawful immigration</name>
+          </item>
+          <item>
+            <name>Crime victims</name>
+          </item>
+          <item>
+            <name>Criminal justice information and records</name>
+          </item>
+          <item>
+            <name>Detention of persons</name>
+          </item>
+          <item>
+            <name>Immigration status and procedures</name>
+          </item>
+          <item>
+            <name>Visas and passports</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <notes />
-    <updateDate>2017-01-23T17:01:16Z</updateDate>
-    <actions>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <committee>
-          <name>Judiciary Committee</name>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>House</originChamber>
+    <latestAction>
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+      <links />
+      <actionDate>2017-01-31</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Iowa:H.R. 300.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 of the Constitution of the UnitedStates[Page H182]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>300</billNumber>
+    <committees>
+      <billCommittees>
+        <item>
           <systemCode>hsju00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-31T14:31:00Z</date>
+                </item>
+              </activities>
+              <name>Immigration and Border Security Subcommittee</name>
+              <systemCode>hsju01</systemCode>
+            </item>
+          </subcommittees>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-05T15:01:50Z</date>
+            </item>
+          </activities>
+          <name>Judiciary Committee</name>
+          <chamber>House</chamber>
+          <type>Standing</type>
+        </item>
+      </billCommittees>
+    </committees>
     <introducedDate>2017-01-05</introducedDate>
-    <laws />
     <cosponsors>
       <item>
         <fullName>Rep. Bacon, Don [R-NE-2]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>Bacon</lastName>
+        <state>NE</state>
         <party>R</party>
         <bioguideId>B001298</bioguideId>
         <identifiers>
-          <bioguideId>B001298</bioguideId>
-          <gpoId />
           <lisID>2337</lisID>
+          <gpoId />
+          <bioguideId>B001298</bioguideId>
         </identifiers>
-        <middleName />
-        <state>NE</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Don</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>2</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Don</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>2</district>
       </item>
       <item>
         <fullName>Rep. Blum, Rod [R-IA-1]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>Blum</lastName>
+        <state>IA</state>
         <party>R</party>
         <bioguideId>B001294</bioguideId>
         <identifiers>
@@ -152,214 +104,359 @@
           <bioguideId>B001294</bioguideId>
           <gpoId />
         </identifiers>
-        <middleName />
-        <state>IA</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Rod</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>1</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Rod</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>1</district>
       </item>
       <item>
         <fullName>Rep. Shimkus, John [R-IL-15]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>SHIMKUS</lastName>
+        <state>IL</state>
         <party>R</party>
         <bioguideId>S000364</bioguideId>
         <identifiers>
-          <lisID>1527</lisID>
           <bioguideId>S000364</bioguideId>
+          <lisID>1527</lisID>
           <gpoId>7939</gpoId>
         </identifiers>
-        <middleName>M.</middleName>
-        <state>IL</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>JOHN</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>15</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>JOHN</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>M.</middleName>
+        <district>15</district>
       </item>
       <item>
         <fullName>Rep. Hice, Jody B. [R-GA-10]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>Hice</lastName>
+        <state>GA</state>
         <party>R</party>
         <bioguideId>H001071</bioguideId>
         <identifiers>
-          <bioguideId>H001071</bioguideId>
           <gpoId />
           <lisID>2237</lisID>
+          <bioguideId>H001071</bioguideId>
         </identifiers>
-        <middleName>B.</middleName>
-        <state>GA</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Jody</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>10</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Jody</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>B.</middleName>
+        <district>10</district>
       </item>
       <item>
         <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>Roe</lastName>
+        <state>TN</state>
         <party>R</party>
         <bioguideId>R000582</bioguideId>
         <identifiers>
-          <gpoId>8148</gpoId>
           <lisID>1954</lisID>
           <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
         </identifiers>
-        <middleName>P.</middleName>
-        <state>TN</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>David</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>1</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>David</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>P.</middleName>
+        <district>1</district>
       </item>
       <item>
         <fullName>Rep. Gowdy, Trey [R-SC-4]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
         <lastName>Gowdy</lastName>
+        <state>SC</state>
         <party>R</party>
         <bioguideId>G000566</bioguideId>
         <identifiers>
-          <lisID>2058</lisID>
           <gpoId>8144</gpoId>
+          <lisID>2058</lisID>
           <bioguideId>G000566</bioguideId>
         </identifiers>
-        <middleName />
-        <state>SC</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Trey</firstName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>4</district>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Trey</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>4</district>
       </item>
       <item>
         <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
         <lastName>Gosar</lastName>
+        <state>AZ</state>
         <party>R</party>
         <bioguideId>G000565</bioguideId>
         <identifiers>
           <bioguideId>G000565</bioguideId>
-          <gpoId>7798</gpoId>
           <lisID>1992</lisID>
+          <gpoId>7798</gpoId>
         </identifiers>
-        <middleName>A.</middleName>
-        <state>AZ</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Paul</firstName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <district>4</district>
         <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Paul</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>A.</middleName>
+        <district>4</district>
       </item>
       <item>
         <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
         <lastName>Burgess</lastName>
+        <state>TX</state>
         <party>R</party>
         <bioguideId>B001248</bioguideId>
         <identifiers>
-          <lisID>1751</lisID>
           <bioguideId>B001248</bioguideId>
+          <lisID>1751</lisID>
           <gpoId>8182</gpoId>
         </identifiers>
-        <middleName>C.</middleName>
-        <state>TX</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Michael</firstName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <district>26</district>
         <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Michael</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>C.</middleName>
+        <district>26</district>
       </item>
       <item>
         <fullName>Rep. Pittenger, Robert [R-NC-9]</fullName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
         <lastName>Pittenger</lastName>
+        <state>NC</state>
         <party>R</party>
         <bioguideId>P000606</bioguideId>
         <identifiers>
-          <gpoId />
           <lisID>2141</lisID>
+          <gpoId />
           <bioguideId>P000606</bioguideId>
         </identifiers>
-        <middleName />
-        <state>NC</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Robert</firstName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <district>9</district>
         <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Robert</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>9</district>
       </item>
       <item>
         <fullName>Rep. Jenkins, Lynn [R-KS-2]</fullName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
         <lastName>Jenkins</lastName>
+        <state>KS</state>
         <party>R</party>
         <bioguideId>J000290</bioguideId>
         <identifiers>
-          <lisID>1921</lisID>
-          <gpoId>7950</gpoId>
           <bioguideId>J000290</bioguideId>
+          <gpoId>7950</gpoId>
+          <lisID>1921</lisID>
         </identifiers>
-        <middleName />
-        <state>KS</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Lynn</firstName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <district>2</district>
         <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Lynn</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>2</district>
       </item>
       <item>
         <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
         <lastName>Fortenberry</lastName>
+        <state>NE</state>
         <party>R</party>
         <bioguideId>F000449</bioguideId>
         <identifiers>
+          <gpoId>8038</gpoId>
           <lisID>1793</lisID>
           <bioguideId>F000449</bioguideId>
-          <gpoId>8038</gpoId>
         </identifiers>
-        <middleName />
-        <state>NE</state>
-        <sponsorshipWithdrawnDate />
-        <firstName>Jeff</firstName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <district>1</district>
         <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Jeff</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>1</district>
+      </item>
+      <item>
+        <fullName>Rep. Smith, Adrian [R-NE-3]</fullName>
+        <sponsorshipDate>2017-02-01</sponsorshipDate>
+        <lastName>Smith</lastName>
+        <state>NE</state>
+        <party>R</party>
+        <bioguideId>S001172</bioguideId>
+        <identifiers>
+          <lisID>1860</lisID>
+          <gpoId>8040</gpoId>
+          <bioguideId>S001172</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Adrian</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>3</district>
       </item>
     </cosponsors>
-    <createDate>2017-01-06T04:57:25Z</createDate>
-    <committeeReports />
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Iowa:H.R. 300.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 of the Constitution of the UnitedStates[Page H182]</pre>]]></constitutionalAuthorityStatementText>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Immigration</name>
-    </policyArea>
-    <originChamber>House</originChamber>
-    <congress>115</congress>
-    <billNumber>300</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on the Judiciary.</text>
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-05T15:01:50Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <recordedVotes />
-    <amendments />
+    <notes />
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Sarah's Law</latestTitle>
+        <type>S</type>
+        <congress>115</congress>
+        <number>37</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on the Judiciary.</text>
+          <actionDate>2017-01-05</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Sarah's Law</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>174</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+          <actionDate>2017-01-13</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
     <title>Sarah's Law</title>
+    <sponsors>
+      <item>
+        <district>3</district>
+        <fullName>Rep. Young, David [R-IA-3]</fullName>
+        <firstName>David</firstName>
+        <lastName>Young</lastName>
+        <state>IA</state>
+        <bioguideId>Y000066</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <gpoId />
+          <lisID>2242</lisID>
+          <bioguideId>Y000066</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <middleName />
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Sarah's Law</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require U.S. Immigration and Customs Enforcement to take into custody certain aliens who have been charged in the United States with a crime that resulted in the death or serious bodily injury of another person, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Sarah's Law</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Sarah’s Law</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <createDate>2017-01-06T04:57:25Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <actions>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <committee>
+          <systemCode>hsju01</systemCode>
+          <name>Immigration and Border Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-31T21:45:56Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Sarah's Law</strong></p> <p>This bill amends the Immigration and Nationality Act to require the detention of an alien: (1) who was not inspected and admitted into the United States, who held a revoked nonimmigrant visa (or other nonimmigrant admission document), or who is deportable for failing to maintain nonimmigrant status; and (2) who has been charged in the United States with a crime that resulted in the death or serious bodily injury of another person.</p> <p> U.S. Immigration and Customs Enforcement shall make reasonable efforts to: </p> <ul> <li>obtain information about the identity of any victims of the crimes for which such alien was charged or convicted; and </li> <li> provide the victim, or a parent, guardian, spouse, or closest living relative of a deceased victim, with information about such alien, including name, date of birth, nationality, immigration status, criminal history, and a description of any related removal efforts.</li> </ul>]]></text>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
     </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">

@@ -1,50 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>A resolution expressing the sense of the Senate that the Mexico City policy should be permanently established.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>A resolution expressing the sense of the Senate that the Mexico City policy should be permanently established.</title>
-      </item>
-    </titles>
-    <billType>SRES</billType>
-    <calendarNumbers />
-    <relatedBills />
-    <sponsors>
-      <item>
-        <firstName>Mike</firstName>
-        <fullName>Sen. Lee, Mike [R-UT]</fullName>
-        <party>R</party>
-        <identifiers>
-          <gpoId>8303</gpoId>
-          <lisID>2080</lisID>
-          <bioguideId>L000577</bioguideId>
-        </identifiers>
-        <bioguideId>L000577</bioguideId>
-        <middleName />
-        <lastName>Lee</lastName>
-        <state>UT</state>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <notes />
-    <updateDate>2017-01-23T14:32:21Z</updateDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>ssfr00</systemCode>
+          <name>Foreign Relations Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-20T22:17:11Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-20</actionDate>
         <committee>
@@ -53,178 +31,294 @@
         </committee>
         <links>
           <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S362</url>
             <name>S362</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S362</url>
           </link>
         </links>
         <sourceSystem>
           <name>Senate</name>
           <code>0</code>
         </sourceSystem>
-        <text>Referred to the Committee on Foreign Relations. (text of measure as introduced in Senate: CR S362)</text>
+        <text>Referred to the Committee on Foreign Relations. (text of measure as introduced: CR S362)</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
         <actionDate>2017-01-20</actionDate>
-        <committee />
+        <links />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
+        <committee />
       </item>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <introducedDate>2017-01-20</introducedDate>
-    <policyArea />
+    <recordedVotes />
+    <laws />
+    <calendarNumbers />
+    <titles>
+      <item>
+        <title>A resolution expressing the sense of the Senate that the Mexico City policy should be permanently established.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>A resolution expressing the sense of the Senate that the Mexico City policy should be permanently established.</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
     <cosponsors>
       <item>
+        <party>R</party>
         <state>MT</state>
         <bioguideId>D000618</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Daines, Steve [R-MT]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>Daines</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Daines, Steve [R-MT]</fullName>
         <firstName>Steve</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <gpoId />
           <lisID>2138</lisID>
+          <gpoId />
           <bioguideId>D000618</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
+        <party>R</party>
         <state>KS</state>
         <bioguideId>M000934</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>MORAN</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
         <firstName>JERRY</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>1507</lisID>
-          <bioguideId>M000934</bioguideId>
           <gpoId>8307</gpoId>
+          <bioguideId>M000934</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
+        <party>R</party>
         <state>NE</state>
         <bioguideId>S001197</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Sasse, Ben  [R-NE]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>Sasse</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Sasse, Ben  [R-NE]</fullName>
         <firstName>Ben</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <bioguideId>S001197</bioguideId>
           <gpoId />
           <lisID>2289</lisID>
         </identifiers>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
+        <party>R</party>
         <state>TX</state>
         <bioguideId>C001056</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>Cornyn</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
         <firstName>John</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>1692</lisID>
           <gpoId>8295</gpoId>
           <bioguideId>C001056</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
+        <party>R</party>
         <state>TX</state>
         <bioguideId>C001098</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Cruz, Ted [R-TX]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>Cruz</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Cruz, Ted [R-TX]</fullName>
         <firstName>Ted</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <gpoId />
           <lisID>2175</lisID>
+          <gpoId />
           <bioguideId>C001098</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
+        <party>R</party>
         <state>KY</state>
         <bioguideId>P000603</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Paul, Rand [R-KY]</fullName>
+        <sponsorshipWithdrawnDate />
         <lastName>Paul</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <fullName>Sen. Paul, Rand [R-KY]</fullName>
         <firstName>Rand</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <gpoId>8308</gpoId>
           <lisID>2082</lisID>
+          <gpoId>8308</gpoId>
           <bioguideId>P000603</bioguideId>
         </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>OK</state>
+        <bioguideId>L000575</bioguideId>
         <sponsorshipWithdrawnDate />
+        <lastName>Lankford</lastName>
+        <fullName>Sen. Lankford, James [R-OK]</fullName>
+        <firstName>James</firstName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>L000575</bioguideId>
+          <lisID>2050</lisID>
+          <gpoId>8113</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>NE</state>
+        <bioguideId>F000463</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Fischer</lastName>
+        <fullName>Sen. Fischer, Deb [R-NE]</fullName>
+        <firstName>Deb</firstName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2179</lisID>
+          <bioguideId>F000463</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>FL</state>
+        <bioguideId>R000595</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Rubio</lastName>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <firstName>Marco</firstName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>ID</state>
+        <bioguideId>R000584</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Risch</lastName>
+        <fullName>Sen. Risch, James E. [R-ID]</fullName>
+        <firstName>James</firstName>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <middleName>E.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000584</bioguideId>
+          <gpoId>8274</gpoId>
+          <lisID>1896</lisID>
+        </identifiers>
       </item>
     </cosponsors>
-    <createDate>2017-01-21T04:55:45Z</createDate>
-    <committeeReports />
-    <amendments />
     <cboCostEstimates />
-    <laws />
-    <originChamber>Senate</originChamber>
-    <congress>115</congress>
-    <billNumber>15</billNumber>
     <latestAction>
+      <text>Referred to the Committee on Foreign Relations. (text of measure as introduced: CR S362)</text>
       <links />
       <actionDate>2017-01-20</actionDate>
-      <text>Referred to the Committee on Foreign Relations. (text of measure as introduced in Senate: CR S362)</text>
     </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <date>2017-01-20T22:17:11Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-          <name>Foreign Relations Committee</name>
-          <systemCode>ssfr00</systemCode>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
-    <recordedVotes />
+    <updateDate>2018-08-28T20:20:17Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <billType>SRES</billType>
+    <billNumber>15</billNumber>
+    <originChamber>Senate</originChamber>
+    <relatedBills />
     <title>A resolution expressing the sense of the Senate that the Mexico City policy should be permanently established.</title>
+    <congress>115</congress>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <actionDate>2017-01-20</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>Expresses the sense of the Senate that: (1) the President should immediately reapply and consider improving the Mexico City Policy (requires foreign nongovernmental organizations receiving certain types of U.S. assistance to certify that they will not perform or actively promote abortion as a method of family planning), and (2) Congress should expeditiously consider statutory changes that permanently codify such policy.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-14T20:20:56Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
     </summaries>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Abortion</name>
+          </item>
+          <item>
+            <name>Family planning and birth control</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <committeeReports />
+    <introducedDate>2017-01-20</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>L000577</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Sen. Lee, Mike [R-UT]</fullName>
+        <lastName>Lee</lastName>
+        <state>UT</state>
+        <party>R</party>
+        <identifiers>
+          <gpoId>8303</gpoId>
+          <lisID>2080</lisID>
+          <bioguideId>L000577</bioguideId>
+        </identifiers>
+        <firstName>Mike</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-21T04:55:45Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

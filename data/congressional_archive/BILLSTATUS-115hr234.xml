@@ -1,75 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <cosponsors />
-    <calendarNumbers />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Maritime Lien Reform Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To provide limitations on maritime liens on fishing permits, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Maritime Lien Reform Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Maritime Lien Reform Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Coast Guard and Maritime Transportation.</text>
+      <actionDate>2017-01-04</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 234.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 3, and Article 1, Section 8,Clause 1[Page H53]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:28:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hspw00</systemCode>
+          <name>Transportation and Infrastructure Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hspw07</systemCode>
+              <name>Coast Guard and Maritime Transportation Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-04T21:57:48Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <systemCode>hspw07</systemCode>
+          <name>Coast Guard and Maritime Transportation Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Coast Guard and Maritime Transportation.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
+        <committee>
+          <systemCode>hspw00</systemCode>
+          <name>Transportation and Infrastructure Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <policyArea>
       <name>Transportation and Public Works</name>
     </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <party>R</party>
+        <bioguideId>Y000033</bioguideId>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <lastName>YOUNG</lastName>
+        <district>0</district>
+        <middleName>E.</middleName>
+        <firstName>DON</firstName>
+        <byRequestType />
+        <state>AK</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:58:23Z</updateDate>
+    <billNumber>234</billNumber>
+    <title>Maritime Lien Reform Act</title>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Federal Maritime Commission Authorization Act of 2017</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>2593</number>
+        <latestAction>
+          <text>Committee Consideration and Mark-up Session Held.</text>
+          <actionDate>2017-05-24</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
     <billType>HR</billType>
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <originChamber>House</originChamber>
     <summaries>
       <billSummaries>
         <item>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p><b>Maritime Lien Reform Act</b></p> <p>This bill revises federal shipping laws governing maritime liability to prohibit: (1) maritime liens (liens on vessels) from being imposed on state or federal fishing permits, or (2) civil actions to enforce maritime liens on the permits. A fishing permit is not considered to be part of a vessel, so it does not pass with a vessel upon the vessel's sale or transfer.</p>]]></text>
-          <name>Introduced in House</name>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Maritime Lien Reform Act</b></p> <p>This bill revises federal shipping laws governing maritime liability to prohibit: (1) maritime liens (liens on vessels) from being imposed on state or federal fishing permits, or (2) civil actions to enforce maritime liens on the permits. A fishing permit is not considered to be part of a vessel, so it does not pass with a vessel upon the vessel's sale or transfer.</p>]]></text>
           <lastSummaryUpdateDate>2017-01-12T17:19:42Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
         </item>
       </billSummaries>
     </summaries>
-    <notes />
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
     <congress>115</congress>
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <party>R</party>
-        <middleName>E.</middleName>
-        <lastName>YOUNG</lastName>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <bioguideId>Y000033</bioguideId>
-        <state>AK</state>
-        <byRequestType />
-        <district>0</district>
-        <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <firstName>DON</firstName>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <title>Maritime Lien Reform Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To provide limitations on maritime liens on fishing permits, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Maritime Lien Reform Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <billNumber>234</billNumber>
-    <relatedBills />
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Transportation and Public Works</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Civil actions and liability</name>
@@ -84,90 +217,8 @@
             <name>Marine and inland water transportation</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Transportation and Public Works</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <amendments />
-    <originChamber>House</originChamber>
-    <updateDate>2017-01-12T17:31:23Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Transportation and Infrastructure.</text>
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <name>Transportation and Infrastructure Committee</name>
-          <systemCode>hspw00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:28:30Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Transportation and Infrastructure.</text>
-        <committee>
-          <systemCode>hspw00</systemCode>
-          <name>Transportation and Infrastructure Committee</name>
-        </committee>
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <laws />
-    <cboCostEstimates />
-    <title>Maritime Lien Reform Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

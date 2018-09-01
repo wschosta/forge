@@ -1,128 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <committeeReports />
-    <recordedVotes />
-    <originChamber>Senate</originChamber>
-    <congress>115</congress>
-    <createDate>2017-01-05T04:47:34Z</createDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <relatedBills>
+    <sponsors>
       <item>
-        <type>HR</type>
-        <congress>115</congress>
-        <latestTitle>Nevada Land Sovereignty Act</latestTitle>
-        <relationshipDetails>
-          <item>
-            <type>Identical bill</type>
-            <identifiedBy>CRS</identifiedBy>
-          </item>
-        </relationshipDetails>
-        <number>243</number>
-        <latestAction>
-          <actionDate>2017-01-04</actionDate>
-          <text>Referred to the House Committee on Natural Resources.</text>
-        </latestAction>
+        <middleName />
+        <party>R</party>
+        <bioguideId>H001041</bioguideId>
+        <lastName>Heller</lastName>
+        <firstName>Dean</firstName>
+        <state>NV</state>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <byRequestType />
       </item>
-    </relatedBills>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-05T04:47:34Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+      <links />
+      <actionDate>2017-01-04</actionDate>
+    </latestAction>
+    <notes />
     <introducedDate>2017-01-04</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <name>Energy and Natural Resources Committee</name>
-          <systemCode>sseg00</systemCode>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-04T17:59:00Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
+          <name>Energy and Natural Resources Committee</name>
           <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>sseg00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-19T09:53:55Z</updateDate>
-    <title>Nevada Land Sovereignty Act</title>
-    <policyArea>
-      <name>Public Lands and Natural Resources</name>
-    </policyArea>
-    <notes />
-    <titles>
+    <relatedBills>
       <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <title>Nevada Land Sovereignty Act</title>
-        <parentTitleType />
-        <chamberCode />
+        <latestAction>
+          <actionDate>2017-02-10</actionDate>
+          <text>Referred to the Subcommittee on Federal Lands.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Nevada Land Sovereignty Act</latestTitle>
+        <type>HR</type>
+        <number>243</number>
       </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to amend title 54, United States Code, to prohibit the further extension or establishment of national monuments in the State of Nevada except by express authorization of Congress.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>Nevada Land Sovereignty Act</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <amendments />
-    <cboCostEstimates />
+    </relatedBills>
     <billNumber>22</billNumber>
-    <billType>S</billType>
-    <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <committee>
-          <systemCode>sseg00</systemCode>
-          <name>Energy and Natural Resources Committee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-04</actionDate>
-        <committee />
-        <text>Introduced in Senate</text>
-      </item>
-    </actions>
-    <calendarNumbers />
-    <cosponsors />
-    <latestAction>
-      <actionDate>2017-01-04</actionDate>
-      <links />
-      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
-    </latestAction>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional oversight</name>
@@ -139,29 +85,104 @@
           <item>
             <name>Parks, recreation areas, trails</name>
           </item>
+          <item>
+            <name>Wilderness and natural areas, wildlife refuges, wild rivers, habitats</name>
+          </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Public Lands and Natural Resources</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <sponsors>
+    <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <congress>115</congress>
+    <actions>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <item>
-        <bioguideId>H001041</bioguideId>
-        <lastName>Heller</lastName>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <state>NV</state>
-        <middleName />
-        <byRequestType />
-        <firstName>Dean</firstName>
-        <party>R</party>
-        <identifiers>
-          <bioguideId>H001041</bioguideId>
-          <lisID>1863</lisID>
-          <gpoId>8060</gpoId>
-        </identifiers>
+        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        <type>IntroReferral</type>
       </item>
-    </sponsors>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <actionCode>10000</actionCode>
+        <committee />
+        <text>Introduced in Senate</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <cosponsors />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Nevada Land Sovereignty Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to amend title 54, United States Code, to prohibit the further extension or establishment of national monuments in the State of Nevada except by express authorization of Congress.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Nevada Land Sovereignty Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Nevada Land Sovereignty Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:22:16Z</updateDate>
+    <calendarNumbers />
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-02-08T22:00:37Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-04</actionDate>
+          <text><![CDATA[<p><b>Nevada Land Sovereignty Act</b></p> <p>This bill prohibits any extension or establishment of national monuments in Nevada except by express authorization of Congress. </p>]]></text>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Nevada Land Sovereignty Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,179 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea />
-    <updateDate>2017-01-14T09:59:05Z</updateDate>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
     <billType>HR</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Rep. Young, David [R-IA-3]</fullName>
-        <identifiers>
-          <bioguideId>Y000066</bioguideId>
-          <lisID>2242</lisID>
-          <gpoId />
-        </identifiers>
-        <byRequestType />
-        <firstName>David</firstName>
-        <bioguideId>Y000066</bioguideId>
-        <lastName>Young</lastName>
-        <state>IA</state>
-        <district>3</district>
-        <party>R</party>
-        <middleName />
-      </item>
-    </sponsors>
-    <congress>115</congress>
     <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to House Agriculture</text>
       <links />
+      <actionDate>2017-02-13</actionDate>
+      <text>Referred to the Subcommittee on Conservation and Forestry.</text>
     </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>To provide for the issuance of a semipostal to support Department of Agriculture conservation programs, and for other purposes.</title>
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <notes />
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
       <item>
+        <actionDate>2017-02-13</actionDate>
+        <committee>
+          <systemCode>hsag15</systemCode>
+          <name>Conservation and Forestry Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Conservation and Forestry.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <committee>
           <systemCode>hsag00</systemCode>
           <name>Agriculture Committee</name>
         </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to House Agriculture</text>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>H11100-A</actionCode>
-        <type>IntroReferral</type>
         <text>Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <committee>
           <systemCode>hsgo00</systemCode>
           <name>Oversight and Government Reform Committee</name>
         </committee>
+        <text>Referred to the Committee on Oversight and Government Reform, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to House Oversight and Government Reform</text>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
       </item>
       <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
       </item>
       <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
         <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
       <actionTypeCounts>
-        <billReferrals>2</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
         <billReferralsAggregate>1</billReferralsAggregate>
         <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>2</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
       </actionTypeCounts>
     </actions>
-    <amendments />
-    <introducedDate>2017-01-13</introducedDate>
-    <billNumber>581</billNumber>
-    <relatedBills />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To provide for the issuance of a semipostal to support Department of Agriculture conservation programs, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To provide for the issuance of a semipostal to support Department of Agriculture conservation programs, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Agricultural conservation and pollution</name>
+          </item>
+          <item>
+            <name>Department of Agriculture</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Postal service</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-14T04:47:33Z</createDate>
-    <notes />
+    <billNumber>581</billNumber>
+    <title>Agriculture Conservation Stamp Act</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Iowa:H.R. 581.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 ofthe United States Constitution.[Page H548]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
+          <activities>
+            <item>
+              <date>2017-01-13T14:03:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
           <chamber>House</chamber>
           <systemCode>hsag00</systemCode>
-          <type>Standing</type>
           <name>Agriculture Committee</name>
-          <activities>
+          <subcommittees>
             <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:03:00Z</date>
+              <systemCode>hsag15</systemCode>
+              <name>Conservation and Forestry Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-13T19:52:46Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
             </item>
-          </activities>
-          <subcommittees />
+          </subcommittees>
         </item>
         <item>
-          <chamber>House</chamber>
-          <systemCode>hsgo00</systemCode>
-          <type>Standing</type>
-          <name>Oversight and Government Reform Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-13T14:02:50Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsgo00</systemCode>
+          <name>Oversight and Government Reform Committee</name>
           <subcommittees />
         </item>
       </billCommittees>
     </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T20:00:05Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-13</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>Y000066</bioguideId>
+        <identifiers>
+          <lisID>2242</lisID>
+          <gpoId />
+          <bioguideId>Y000066</bioguideId>
+        </identifiers>
+        <fullName>Rep. Young, David [R-IA-3]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>David</firstName>
+        <state>IA</state>
+        <lastName>Young</lastName>
+        <district>3</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Agriculture Conservation Stamp Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To provide for the issuance of a semipostal to support Department of Agriculture conservation programs, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Agriculture Conservation Stamp Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Agriculture Conservation Stamp Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-04-03T13:11:23Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Agriculture Conservation Stamp Act </b></p> <p>This bill requires the U.S. Postal Service (USPS) to issue for a four-year period a semipostal to benefit certain Department of Agriculture (USDA) conservation programs. (A semipostal is a postage stamp that is issued and sold by the USPS at a premium, in order to help provide funding for a cause that the USPS considers to be in the national public interest and appropriate.) </p> <p>USDA is the sole agency to which the USPS may transfer funds received from the sale of the semipostal. USDA must use the transferred funds exclusively for programs authorized under title XII (Conservation) of the Food Security Act of 1985.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

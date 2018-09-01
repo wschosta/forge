@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-09</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-10T05:15:42Z</createDate>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>Proposing an amendment to the Constitution of the United States to end the practice of including more than one subject in a single law by requiring that each law enacted by Congress be limited to only one subject and that the subject be clearly and descriptively expressed in the title of the law.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Proposing an amendment to the Constitution of the United States to end the practice of including more than one subject in a single law by requiring that each law enacted by Congress be limited to only one subject and that the subject be clearly and descriptively expressed in the title of the law.</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 5 (Monday, January 9, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MARINO:H.J. Res. 25.Congress has the power to enact this legislation pursuantto the following:Article V of the United States Constitution: The Congress,whenever two thirds of both houses shall deem it necessary,shall propose amendments to this Constitution . . . which . .. shall be valid in all intents and purposes, as part of thisConstitution, when ratified by the legislatures of threefourths of the several states, or by conventions in threefourths thereof.____________________[Page H236]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-09T17:01:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-12T16:02:44Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
@@ -17,153 +61,146 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
         <type>Committee</type>
       </item>
       <item>
+        <actionDate>2017-01-09</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on the Judiciary.</text>
         <committee>
           <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
         </committee>
-        <actionCode>H11100</actionCode>
+        <links />
         <type>IntroReferral</type>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionDate>2017-01-09</actionDate>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
-        <links />
       </item>
       <item>
-        <committee />
+        <actionDate>2017-01-09</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
-        <actionDate>2017-01-09</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <committee />
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
         <actionDate>2017-01-09</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <actionTypeCounts>
-        <billReferrals>1</billReferrals>
         <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
         <introducedInHouse>1</introducedInHouse>
         <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>25</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
     <sponsors>
       <item>
+        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
         <party>R</party>
-        <state>PA</state>
-        <middleName />
         <bioguideId>M001179</bioguideId>
-        <lastName>Marino</lastName>
-        <firstName>Tom</firstName>
         <identifiers>
           <lisID>2053</lisID>
           <gpoId>8128</gpoId>
           <bioguideId>M001179</bioguideId>
         </identifiers>
-        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
+        <lastName>Marino</lastName>
         <district>10</district>
+        <middleName />
+        <firstName>Tom</firstName>
         <byRequestType />
+        <state>PA</state>
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HJRES</billType>
+    <recordedVotes />
+    <updateDate>2018-08-29T07:15:24Z</updateDate>
+    <billNumber>25</billNumber>
     <title>Proposing an amendment to the Constitution of the United States to end the practice of including more than one subject in a single law by requiring that each law enacted by Congress be limited to only one subject and that the subject be clearly and descriptively expressed in the title of the law.</title>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-    </latestAction>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
     <cboCostEstimates />
+    <billType>HJRES</billType>
+    <createDate>2017-01-10T05:15:42Z</createDate>
     <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
+    <summaries>
+      <billSummaries>
         <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-09T17:01:35Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-12T16:02:44Z</date>
-                </item>
-              </activities>
-              <name>Constitution and Civil Justice Subcommittee</name>
-              <systemCode>hsju10</systemCode>
-            </item>
-          </subcommittees>
-          <type>Standing</type>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Constitutional Amendment</b></p> <p> This joint resolution proposes a constitutional amendment requiring: (1) each bill, order, resolution, or vote that must be submitted to the President under the U.S. Constitution to embrace no more than one subject; and (2) such subject to be clearly and descriptively expressed in the title of the bill, order, resolution, or vote.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-02-22T15:35:47Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <actionDate>2017-01-09</actionDate>
         </item>
-      </billCommittees>
-    </committees>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
     <calendarNumbers />
-    <updateDate>2017-01-14T09:58:11Z</updateDate>
-    <titles>
+    <cosponsors>
       <item>
-        <chamberCode />
-        <title>Proposing an amendment to the Constitution of the United States to end the practice of including more than one subject in a single law by requiring that each law enacted by Congress be limited to only one subject and that the subject be clearly and descriptively expressed in the title of the law.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
+        <lastName>Meadows</lastName>
+        <state>NC</state>
+        <firstName>Mark</firstName>
+        <sponsorshipDate>2018-08-28</sponsorshipDate>
+        <district>11</district>
+        <fullName>Rep. Meadows, Mark [R-NC-11]</fullName>
+        <identifiers>
+          <bioguideId>M001187</bioguideId>
+          <gpoId />
+          <lisID>2142</lisID>
+        </identifiers>
+        <bioguideId>M001187</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
-      <item>
-        <chamberCode />
-        <title>Proposing an amendment to the Constitution of the United States to end the practice of including more than one subject in a single law by requiring that each law enacted by Congress be limited to only one subject and that the subject be clearly and descriptively expressed in the title of the law.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
+    </cosponsors>
+    <introducedDate>2017-01-09</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Constitution and constitutional amendments</name>
+          </item>
+          <item>
+            <name>Legislative rules and procedure</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

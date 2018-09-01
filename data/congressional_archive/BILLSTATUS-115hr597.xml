@@ -1,138 +1,512 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-21T10:04:13Z</updateDate>
-    <relatedBills />
-    <policyArea />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <committeeReports />
-    <sponsors>
-      <item>
-        <bioguideId>D000612</bioguideId>
-        <middleName />
-        <party>R</party>
-        <firstName>Jeff</firstName>
-        <lastName>Denham</lastName>
-        <district>10</district>
-        <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
-        <identifiers>
-          <gpoId>7824</gpoId>
-          <bioguideId>D000612</bioguideId>
-          <lisID>1995</lisID>
-        </identifiers>
-        <state>CA</state>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <latestAction>
-      <actionDate>2017-01-20</actionDate>
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-202</citation>
+      </committeeReport>
+    </committeeReports>
+    <updateDate>2018-08-28T20:00:09Z</updateDate>
+    <laws />
     <billType>HR</billType>
-    <constitutionalAuthorityStatementText />
-    <createDate>2017-01-21T04:55:45Z</createDate>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Native Americans</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>California</name>
+          </item>
+          <item>
+            <name>Federal-Indian relations</name>
+          </item>
+          <item>
+            <name>Indian lands and resources rights</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <policyArea>
+      <name>Native Americans</name>
+    </policyArea>
+    <recordedVotes />
     <originChamber>House</originChamber>
-    <introducedDate>2017-01-20</introducedDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To take lands in Sonoma County, California, into trust as part of the reservation of the Lytton Rancheria of California, and for other purposes.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>To take lands in Sonoma County, California, into trust as part of the reservation of the Lytton Rancheria of California, and for other purposes.</title>
-        <chamberName />
-      </item>
-    </titles>
+    <latestAction>
+      <text>Committee on Indian Affairs. Ordered to be reported without amendment favorably.</text>
+      <links />
+      <actionDate>2018-07-11</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. DENHAM:H.R. 597.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 of the United States Constitution,specifically Clause 3 which grants Congress the power toregulate Commerce with foreign Nations, and among the severalStates, and with the Indian Tribes.[Page H560]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>597</billNumber>
     <committees>
       <billCommittees>
         <item>
+          <type>Other</type>
+          <name>Indian Affairs Committee</name>
+          <systemCode>slia00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Markup by</name>
+              <date>2018-07-11T18:30:34Z</date>
+            </item>
+            <item>
+              <name>Hearings by</name>
+              <date>2018-04-25T18:30:02Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-07-12T19:38:50Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+        <item>
+          <type>Standing</type>
           <name>Natural Resources Committee</name>
           <systemCode>hsii00</systemCode>
+          <chamber>House</chamber>
           <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-07-11T16:32:37Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-06-27T13:41:17Z</date>
+            </item>
             <item>
               <name>Referred to</name>
               <date>2017-01-20T15:00:45Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <name>Indian, Insular and Alaska Native Affairs Subcommittee</name>
+              <systemCode>hsii24</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-10T16:57:34Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
+    <introducedDate>2017-01-20</introducedDate>
     <cosponsors />
     <notes />
+    <relatedBills />
+    <title>Lytton Rancheria Homelands Act of 2017</title>
+    <sponsors>
+      <item>
+        <district>10</district>
+        <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
+        <firstName>Jeff</firstName>
+        <lastName>Denham</lastName>
+        <state>CA</state>
+        <bioguideId>D000612</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>D000612</bioguideId>
+          <gpoId>7824</gpoId>
+          <lisID>1995</lisID>
+        </identifiers>
+        <byRequestType />
+        <middleName />
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
     <amendments />
+    <titles>
+      <item>
+        <titleType>Short Titles as Passed House</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberCode>H</chamberCode>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To take lands in Sonoma County, California, into trust as part of the reservation of the Lytton Rancheria of California, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType />
+        <chamberCode>H</chamberCode>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType />
+        <chamberCode>H</chamberCode>
+        <chamberName>House</chamberName>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Lytton Rancheria Homelands Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <createDate>2017-01-21T04:55:45Z</createDate>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-07-06T20:25:29Z</pubDate>
+        <url>https://www.cbo.gov/publication/52866</url>
+        <title>H.R. 597, Lytton Rancheria Homelands Act of 2017</title>
+      </item>
+    </cboCostEstimates>
+    <calendarNumbers>
+      <item>
+        <number />
+        <calendar>U00139</calendar>
+      </item>
+    </calendarNumbers>
     <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <senate>3</senate>
+        <houseOfRepresentatives>15</houseOfRepresentatives>
       </actionByCounts>
       <item>
-        <actionDate>2017-01-20</actionDate>
-        <text>Referred to the House Committee on Natural Resources.</text>
+        <actionDate>2018-07-11</actionDate>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links />
         <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
+          <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
+        <text>Committee on Indian Affairs. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-04-25</actionDate>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Indian Affairs. Hearings held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-07-12</actionDate>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Indian Affairs.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H38310</actionCode>
+        <actionTime>17:29:22</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5415-5416</url>
+            <name>H5415-5416</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H5415-5416)</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H37300</actionCode>
+        <actionTime>17:29:20</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5415-5416</url>
+            <name>H5415-5416</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.(text: CR H5415-5416)</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>8000</actionCode>
+        <actionTime>17:29:20</actionTime>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/597</url>
+            <name>H.R. 597</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 597.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <actionTime>17:26:17</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5415-5416</url>
+            <name>H5415-5416</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Considered under suspension of the rules. (consideration: CR H5415-5416)</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H30000</actionCode>
+        <actionTime>17:26:16</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <text>Mr. LaHood moved to suspend the rules and pass the bill.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H30300</actionCode>
+        <actionTime>17:26:06</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>Calendars</type>
+        <text>Placed on the Union Calendar, Calendar No. 139.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H12410</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/202</url>
+            <name>H. Rept. 115-202</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-202.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>H12200</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/202</url>
+            <name>H. Rept. 115-202</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-202.</text>
+        <actionDate>2017-07-11</actionDate>
+        <actionCode>5000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-06-27</actionDate>
         <committee>
           <systemCode>hsii00</systemCode>
           <name>Natural Resources Committee</name>
         </committee>
         <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-27</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii24</systemCode>
+          <name>Indian, Insular and Alaska Native Affairs Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Indian, Insular and Alaska Native Affairs.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <actionDate>2017-01-20</actionDate>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <committee />
         <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-20</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <committee />
         <links />
-        <actionCode>1000</actionCode>
         <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionTypeCounts>
+        <placeholderTextForH>2</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <referredToCommittee>1</referredToCommittee>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <considerationByHouse>1</considerationByHouse>
+        <hearingsHeld>1</hearingsHeld>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <orderedReported>1</orderedReported>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <generalDebate>1</generalDebate>
+        <reportedToHouse>1</reportedToHouse>
+        <actionStageOverride>1</actionStageOverride>
+      </actionTypeCounts>
     </actions>
-    <congress>115</congress>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <billNumber>597</billNumber>
-    <recordedVotes />
-    <title>To take lands in Sonoma County, California, into trust as part of the reservation of the Lytton Rancheria of California, and for other purposes.</title>
-    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-20</actionDate>
+          <lastSummaryUpdateDate>2017-02-01T16:30:05Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Lytton Rancheria Homelands Act of 2017</b></p> <p>This bill takes into trust for the benefit of the Lytton Rancheria of California certain land owned by the tribe in Sonoma County, California. Land taken into trust is made a part of the tribe's reservation. Gaming is prohibited on this land and in a specified area of Sonoma County.</p> <p>Gaming is prohibited until March 16, 2037, on land taken into trust for the benefit of the tribe after enactment of this bill.</p> <p>The memorandum of agreement entered into by the tribe and the county that was approved by the county on March 10, 2015, is not subject to review and approval by the Department of the Interior.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2017-07-11</actionDate>
+          <lastSummaryUpdateDate>2017-09-21T19:35:24Z</lastSummaryUpdateDate>
+          <name>Passed House without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Lytton Rancheria Homelands Act of 2017</b></p> <p>(Sec. 4) This bill takes into trust for the benefit of the Lytton Rancheria of California certain land owned by the tribe in Sonoma County, California. Land taken into trust is made a part of the tribe's reservation.</p> <p>(Sec. 5) Gaming is prohibited on land taken into trust by this bill and in a specified area of Sonoma County. Gaming is prohibited until March 16, 2037, on land taken into trust for the benefit of the tribe after enactment of this bill.</p> <p>(Sec. 6) The memorandum of agreement entered into by the tribe and the county that was approved by the county on March 10, 2015, is not subject to review or approval by the Department of the Interior.</p>]]></text>
+          <versionCode>81</versionCode>
+          <updateDate>2017-07-11T15:15:59Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

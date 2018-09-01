@@ -1,147 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <billNumber>90</billNumber>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-02-28T22:28:42Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>sseg03</systemCode>
+              <name>Public Lands, Forests, and Mining Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-07-26T13:46:00Z</date>
+                  <name>Hearings by</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <activities>
+            <item>
+              <date>2017-02-28T22:28:18Z</date>
+              <name>Discharged from</name>
+            </item>
+            <item>
+              <date>2017-01-10T22:00:11Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-07-26</actionDate>
+        <committee>
+          <systemCode>sseg03</systemCode>
+          <name>Public Lands, Forests, and Mining Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-28</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Referred to the Committee on Energy and Natural Resources.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-02-28</actionDate>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Senate Committee on the Judiciary discharged by Unanimous Consent.</text>
+        <type>Discharge</type>
+      </item>
+      <item>
+        <actionDate>2017-02-28</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <text>Senate Committee on the Judiciary discharged by Unanimous Consent.</text>
+        <type>Committee</type>
+        <actionCode>14500</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
+      </item>
+      <actionByCounts>
+        <senate>6</senate>
+      </actionByCounts>
+      <actionTypeCounts>
+        <hearingsHeld>1</hearingsHeld>
+        <senateCommitteeDischarged>1</senateCommitteeDischarged>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>2</referredToCommittee>
+        <committeeDischarged>1</committeeDischarged>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <calendarNumbers />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
     <cosponsors>
       <item>
-        <lastName>Cruz</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>TX</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C001098</bioguideId>
-        <firstName>Ted</firstName>
         <fullName>Sen. Cruz, Ted [R-TX]</fullName>
         <identifiers>
           <lisID>2175</lisID>
           <gpoId />
           <bioguideId>C001098</bioguideId>
         </identifiers>
-        <middleName />
         <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <lastName>Cruz</lastName>
+        <firstName>Ted</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
         <party>R</party>
+        <middleName />
+        <bioguideId>C001098</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
     </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+      <links />
+      <actionDate>2017-07-26</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T20:22:34Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <billType>S</billType>
+    <billNumber>90</billNumber>
+    <originChamber>Senate</originChamber>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>428</number>
+        <latestAction>
+          <actionDate>2017-03-07</actionDate>
+          <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Red River Gradient Boundary Survey Act</latestTitle>
+      </item>
+    </relatedBills>
+    <title>Red River Gradient Boundary Survey Act</title>
+    <congress>115</congress>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-02-02T19:05:25Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Red River Gradient Boundary Survey Act</b></p> <p>This bill directs the Bureau of Land Management (BLM) to commission a survey to identify the South Bank boundary line with respect to land along a specified 116-mile stretch of the Red River in Oklahoma and Texas (the affected area). </p> <p>The survey shall:</p> <ul> <li>adhere to the gradient boundary survey method;</li> <li>span the length of the affected area;</li> <li>be conducted by surveyors who are licensed and qualified to conduct official gradient boundary surveys, and selected by and operating under the direction of the Texas General Land Office and the Oklahoma Commissioners of the Land Office (the offices); and</li> <li>be completed within two years of enactment of this bill. </li> </ul> <p>The BLM shall submit the survey to the offices for approval and, within 60 days of receiving it, they shall determine whether to approve it. </p> <p>Surveys of individual parcels in the affected area shall be conducted according to the requirements for the survey of the South Bank boundary line. A survey of such a parcel shall be approved or disapproved by the offices within 60 days of receipt.</p> <p>The survey for identifying the South Bank boundary line and any survey of an individual parcel shall not be submitted to the BLM for approval. </p> <p>After a survey for an individual parcel has been approved, the offices shall submit to the BLM:</p> <ul> <li> a notice of the approval of such survey, and </li> <li>a copy of such survey and any field notes related to the parcel. </li> </ul>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Lakes and rivers</name>
+          </item>
+          <item>
+            <name>Oklahoma</name>
+          </item>
+          <item>
+            <name>Texas</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on the Judiciary.</text>
-      <actionDate>2017-01-10</actionDate>
-    </latestAction>
-    <updateDate>2017-01-13T10:07:30Z</updateDate>
-    <actions>
-      <item>
-        <actionDate>2017-01-10</actionDate>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>ssju00</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on the Judiciary.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-10</actionDate>
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
-    </actions>
-    <billType>S</billType>
     <committeeReports />
-    <originChamber>Senate</originChamber>
-    <notes />
-    <policyArea />
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Judiciary Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-10T22:00:11Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-          <systemCode>ssju00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <createDate>2017-01-11T05:09:45Z</createDate>
-    <title>Red River Gradient Boundary Survey Act</title>
-    <titles>
-      <item>
-        <chamberName />
-        <title>Red River Gradient Boundary Survey Act</title>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>A bill to survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>Red River Gradient Boundary Survey Act</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-      </item>
-    </titles>
-    <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
     <introducedDate>2017-01-10</introducedDate>
-    <amendments />
     <sponsors>
       <item>
+        <bioguideId>C001056</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
         <lastName>Cornyn</lastName>
+        <state>TX</state>
+        <party>R</party>
         <identifiers>
           <lisID>1692</lisID>
           <gpoId>8295</gpoId>
           <bioguideId>C001056</bioguideId>
         </identifiers>
-        <byRequestType />
-        <middleName />
-        <state>TX</state>
         <firstName>John</firstName>
-        <party>R</party>
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
-        <bioguideId>C001056</bioguideId>
       </item>
     </sponsors>
+    <notes />
+    <createDate>2017-01-11T05:09:45Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

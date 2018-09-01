@@ -1,75 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <amendments />
+    <billNumber>30</billNumber>
+    <laws />
     <cboCostEstimates />
-    <relatedBills />
-    <congress>115</congress>
-    <introducedDate>2017-01-04</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Extending Justice for Sex Crime Victims Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to extend the civil statute of limitations for victims of Federal sex offenses.</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <title>Extending Justice for Sex Crime Victims Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-      </item>
-    </titles>
+    <originChamber>Senate</originChamber>
+    <billType>S</billType>
     <summaries>
       <billSummaries>
         <item>
-          <lastSummaryUpdateDate>2017-01-17T22:08:27Z</lastSummaryUpdateDate>
-          <actionDate>2017-01-04</actionDate>
-          <text><![CDATA[<p><b>Extending Justice for Sex Crime Victims Act of </b><b>2017</b></p> <p>This bill amends the federal criminal code to revise the statute of limitations for a victim of a human trafficking offense or federal sexual offense to file a civil action to recover damages. </p> <p>Under current law, the statute of limitations is 10 years from the date the cause of action arose. This bill sets a 10-year statute of limitations from the date the victim discovers the offense or injury.</p> <p>Additionally, it extends the statute of limitations for a minor victim of a federal sex offense to file a civil action to 10 years (currently 3 years) from the date such individual reaches age 18.</p>]]></text>
-          <name>Introduced in Senate</name>
-          <versionCode>00</versionCode>
           <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Extending Justice for Sex Crime Victims Act of </b><b>2017</b></p> <p>This bill amends the federal criminal code to revise the statute of limitations for a victim of a human trafficking offense or federal sexual offense to file a civil action to recover damages. </p> <p>Under current law, the statute of limitations is 10 years from the date the cause of action arose. This bill sets a 10-year statute of limitations from the date the victim discovers the offense or injury.</p> <p>Additionally, it extends the statute of limitations for a minor victim of a federal sex offense to file a civil action to 10 years (currently 3 years) from the date such individual reaches age 18.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-17T22:08:27Z</lastSummaryUpdateDate>
           <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <actionDate>2017-01-04</actionDate>
         </item>
       </billSummaries>
     </summaries>
-    <policyArea>
-      <name>Crime and Law Enforcement</name>
-    </policyArea>
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Crime and Law Enforcement</name>
-        </policyArea>
-        <legislativeSubjects>
+    <relatedBills>
+      <item>
+        <latestTitle>Extending Justice for Sex Crime Victims Act of 2017</latestTitle>
+        <number>1035</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-03-02</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
           <item>
-            <name>Civil actions and liability</name>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
           </item>
-          <item>
-            <name>Crime victims</name>
-          </item>
-          <item>
-            <name>Crimes against children</name>
-          </item>
-          <item>
-            <name>Human trafficking</name>
-          </item>
-          <item>
-            <name>Sex offenses</name>
-          </item>
-        </legislativeSubjects>
-      </billSubjects>
-    </subjects>
-    <amendments />
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-05T04:47:34Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>FEINSTEIN</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <identifiers>
+          <lisID>1332</lisID>
+          <gpoId>8338</gpoId>
+          <bioguideId>F000062</bioguideId>
+        </identifiers>
+        <state>CA</state>
+        <firstName>DIANNE</firstName>
+        <byRequestType />
+        <bioguideId>F000062</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T20:22:19Z</updateDate>
+    <committeeReports />
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -94,277 +83,313 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
+        <committee />
         <links />
+        <type>IntroReferral</type>
+        <text>Introduced in Senate</text>
+        <actionDate>2017-01-04</actionDate>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-04</actionDate>
-        <committee />
       </item>
       <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
     </actions>
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T23:00:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>ssju00</systemCode>
-          <chamber>Senate</chamber>
-          <name>Judiciary Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>30</billNumber>
-    <updateDate>2017-01-20T09:55:46Z</updateDate>
-    <title>Extending Justice for Sex Crime Victims Act of 2017</title>
-    <billType>S</billType>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <actionDate>2017-01-04</actionDate>
-      <text>Read twice and referred to the Committee on the Judiciary. (Sponsor introductory remarks on measure: CR S61)</text>
-      <links />
-    </latestAction>
-    <committeeReports />
-    <sponsors>
-      <item>
-        <middleName />
-        <state>CA</state>
-        <bioguideId>F000062</bioguideId>
-        <identifiers>
-          <gpoId>8338</gpoId>
-          <lisID>1332</lisID>
-          <bioguideId>F000062</bioguideId>
-        </identifiers>
-        <lastName>FEINSTEIN</lastName>
-        <byRequestType />
-        <firstName>DIANNE</firstName>
-        <party>D</party>
-        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
-      </item>
-    </sponsors>
     <cosponsors>
       <item>
-        <bioguideId>C001056</bioguideId>
-        <middleName />
         <party>R</party>
+        <state>TX</state>
+        <bioguideId>C001056</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Cornyn</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
         <firstName>John</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>1692</lisID>
           <gpoId>8295</gpoId>
           <bioguideId>C001056</bioguideId>
         </identifiers>
-        <state>TX</state>
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
       </item>
       <item>
-        <bioguideId>K000367</bioguideId>
-        <middleName />
         <party>D</party>
+        <state>MN</state>
+        <bioguideId>K000367</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Klobuchar</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
         <firstName>Amy</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
+          <gpoId>8249</gpoId>
           <lisID>1826</lisID>
           <bioguideId>K000367</bioguideId>
-          <gpoId>8249</gpoId>
         </identifiers>
-        <state>MN</state>
-        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
       </item>
       <item>
-        <bioguideId>I000024</bioguideId>
-        <middleName />
         <party>R</party>
+        <state>OK</state>
+        <bioguideId>I000024</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>INHOFE</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>JIM</firstName>
-        <identifiers>
-          <bioguideId>I000024</bioguideId>
-          <gpoId>8322</gpoId>
-          <lisID>583</lisID>
-        </identifiers>
-        <state>OK</state>
         <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <firstName>JIM</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>583</lisID>
+          <gpoId>8322</gpoId>
+          <bioguideId>I000024</bioguideId>
+        </identifiers>
       </item>
       <item>
-        <bioguideId>F000457</bioguideId>
-        <middleName />
         <party>D</party>
+        <state>MN</state>
+        <bioguideId>F000457</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Franken</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Franken, Al [D-MN]</fullName>
         <firstName>Al</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
+          <lisID>1969</lisID>
           <bioguideId>F000457</bioguideId>
           <gpoId>8339</gpoId>
-          <lisID>1969</lisID>
         </identifiers>
-        <state>MN</state>
-        <fullName>Sen. Franken, Al [D-MN]</fullName>
       </item>
       <item>
-        <bioguideId>T000476</bioguideId>
-        <middleName>Roland</middleName>
         <party>R</party>
+        <state>NC</state>
+        <bioguideId>T000476</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Tillis</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Thomas</firstName>
-        <identifiers>
-          <lisID>2291</lisID>
-          <gpoId />
-          <bioguideId>T000476</bioguideId>
-        </identifiers>
-        <state>NC</state>
         <fullName>Sen. Tillis, Thom [R-NC]</fullName>
+        <firstName>Thomas</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName>Roland</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>T000476</bioguideId>
+          <gpoId />
+          <lisID>2291</lisID>
+        </identifiers>
       </item>
       <item>
-        <bioguideId>G000555</bioguideId>
-        <middleName>E.</middleName>
         <party>D</party>
+        <state>NY</state>
+        <bioguideId>G000555</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Gillibrand</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
         <firstName>Kirsten</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName>E.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
           <lisID>1866</lisID>
           <bioguideId>G000555</bioguideId>
           <gpoId>8336</gpoId>
         </identifiers>
-        <state>NY</state>
-        <fullName>Sen. Gillibrand, Kirsten E. [D-NY]</fullName>
       </item>
       <item>
-        <bioguideId>M000133</bioguideId>
-        <middleName>J.</middleName>
         <party>D</party>
+        <state>MA</state>
+        <bioguideId>M000133</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>MARKEY</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
         <firstName>EDWARD</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <bioguideId>M000133</bioguideId>
           <lisID>735</lisID>
+          <bioguideId>M000133</bioguideId>
           <gpoId>7972</gpoId>
         </identifiers>
-        <state>MA</state>
-        <fullName>Sen. Markey, Edward J. [D-MA]</fullName>
       </item>
       <item>
-        <bioguideId>F000444</bioguideId>
-        <middleName />
         <party>R</party>
+        <state>AZ</state>
+        <bioguideId>F000444</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>FLAKE</lastName>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>JEFF</firstName>
-        <identifiers>
-          <gpoId>7803</gpoId>
-          <lisID>1633</lisID>
-          <bioguideId>F000444</bioguideId>
-        </identifiers>
-        <state>AZ</state>
         <fullName>Sen. Flake, Jeff [R-AZ]</fullName>
+        <firstName>JEFF</firstName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>F000444</bioguideId>
+          <lisID>1633</lisID>
+          <gpoId>7803</gpoId>
+        </identifiers>
       </item>
       <item>
-        <bioguideId>H000338</bioguideId>
-        <middleName>GRANT</middleName>
         <party>R</party>
+        <state>UT</state>
+        <bioguideId>H000338</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>HATCH</lastName>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <firstName>ORRIN</firstName>
-        <identifiers>
-          <gpoId>8314</gpoId>
-          <lisID>1351</lisID>
-          <bioguideId>H000338</bioguideId>
-        </identifiers>
-        <state>UT</state>
         <fullName>Sen. Hatch, Orrin G. [R-UT]</fullName>
+        <firstName>ORRIN</firstName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <middleName>GRANT</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>H000338</bioguideId>
+          <lisID>1351</lisID>
+          <gpoId>8314</gpoId>
+        </identifiers>
       </item>
       <item>
-        <bioguideId>B001277</bioguideId>
-        <middleName />
         <party>D</party>
+        <state>CT</state>
+        <bioguideId>B001277</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Blumenthal</lastName>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
         <firstName>Richard</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <identifiers>
-          <bioguideId>B001277</bioguideId>
           <lisID>2076</lisID>
           <gpoId>8332</gpoId>
+          <bioguideId>B001277</bioguideId>
         </identifiers>
-        <state>CT</state>
-        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
       </item>
       <item>
-        <bioguideId>R000595</bioguideId>
-        <middleName />
         <party>R</party>
+        <state>FL</state>
+        <bioguideId>R000595</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>Rubio</lastName>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
         <firstName>Marco</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <identifiers>
           <bioguideId>R000595</bioguideId>
-          <gpoId>8242</gpoId>
           <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
         </identifiers>
-        <state>FL</state>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
       </item>
       <item>
-        <bioguideId>M001111</bioguideId>
-        <middleName />
         <party>D</party>
+        <state>WA</state>
+        <bioguideId>M001111</bioguideId>
         <sponsorshipWithdrawnDate />
         <lastName>MURRAY</lastName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Murray, Patty [D-WA]</fullName>
         <firstName>PATTY</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <identifiers>
-          <bioguideId>M001111</bioguideId>
           <lisID>1409</lisID>
           <gpoId>8237</gpoId>
+          <bioguideId>M001111</bioguideId>
         </identifiers>
-        <state>WA</state>
-        <fullName>Sen. Murray, Patty [D-WA]</fullName>
       </item>
     </cosponsors>
-    <createDate>2017-01-05T04:47:34Z</createDate>
+    <title>Extending Justice for Sex Crime Victims Act of 2017</title>
+    <introducedDate>2017-01-04</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <version>1.0.0</version>
     <calendarNumbers />
-    <notes />
+    <latestAction>
+      <actionDate>2017-01-04</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on the Judiciary. (Sponsor introductory remarks on measure: CR S61)</text>
+    </latestAction>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Extending Justice for Sex Crime Victims Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>A bill to extend the civil statute of limitations for victims of Federal sex offenses.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Extending Justice for Sex Crime Victims Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Extending Justice for Sex Crime Victims Act of 2017</title>
+      </item>
+    </titles>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-04T23:00:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Civil actions and liability</name>
+          </item>
+          <item>
+            <name>Crime victims</name>
+          </item>
+          <item>
+            <name>Crimes against children</name>
+          </item>
+          <item>
+            <name>Human trafficking</name>
+          </item>
+          <item>
+            <name>Sex offenses</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

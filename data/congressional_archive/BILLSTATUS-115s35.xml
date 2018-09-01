@@ -1,164 +1,932 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <relatedBills />
-    <originChamber>Senate</originChamber>
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>sseg00</systemCode>
-          <chamber>Senate</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-05T17:08:38Z</date>
-            </item>
-          </activities>
-          <name>Energy and Natural Resources Committee</name>
-          <subcommittees />
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <billType>S</billType>
-    <titles>
-      <item>
-        <parentTitleType />
-        <title>Black Hills National Cemetery Boundary Expansion Act</title>
-        <chamberCode />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-      </item>
-      <item>
-        <parentTitleType />
-        <title>A bill to transfer administrative jurisdiction over certain Bureau of Land Management land from the Secretary of the Interior to the Secretary of Veterans Affairs for inclusion in the Black Hills National Cemetery, and for other purposes.</title>
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <parentTitleType />
-        <title>Black Hills National Cemetery Boundary Expansion Act</title>
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
     <sponsors>
       <item>
-        <byRequestType />
-        <lastName>THUNE</lastName>
-        <firstName>JOHN</firstName>
+        <middleName>R.</middleName>
         <party>R</party>
         <bioguideId>T000250</bioguideId>
-        <middleName>R.</middleName>
+        <lastName>THUNE</lastName>
+        <firstName>JOHN</firstName>
+        <state>SD</state>
         <identifiers>
           <lisID>1534</lisID>
           <bioguideId>T000250</bioguideId>
           <gpoId>8257</gpoId>
         </identifiers>
         <fullName>Sen. Thune, John [R-SD]</fullName>
-        <state>SD</state>
+        <byRequestType />
       </item>
     </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <updateDate>2017-01-20T09:55:46Z</updateDate>
-    <cosponsors>
-      <item>
-        <middleName />
-        <state>SD</state>
-        <party>R</party>
-        <bioguideId>R000605</bioguideId>
-        <identifiers>
-          <bioguideId>R000605</bioguideId>
-          <lisID>2288</lisID>
-          <gpoId />
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Rounds</lastName>
-        <firstName>Mike</firstName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
-      </item>
-      <item>
-        <middleName>B.</middleName>
-        <state>WY</state>
-        <party>R</party>
-        <bioguideId>E000285</bioguideId>
-        <identifiers>
-          <gpoId>8328</gpoId>
-          <lisID>1542</lisID>
-          <bioguideId>E000285</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>ENZI</lastName>
-        <firstName>MICHAEL</firstName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <fullName>Sen. Enzi, Michael B. [R-WY]</fullName>
-      </item>
-    </cosponsors>
-    <policyArea />
-    <billNumber>35</billNumber>
+    <version>1.0.0</version>
     <createDate>2017-01-06T04:57:27Z</createDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <cboCostEstimates />
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-35</citation>
+      </committeeReport>
+      <committeeReport>
+        <citation>H. Rept. 115-626</citation>
+      </committeeReport>
+    </committeeReports>
     <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+      <text>Became Public Law No: 115-175.</text>
       <links />
+      <actionDate>2018-05-25</actionDate>
     </latestAction>
-    <recordedVotes />
-    <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-05</actionDate>
-        <committee>
-          <name>Energy and Natural Resources Committee</name>
+    <notes />
+    <introducedDate>2017-01-05</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsvr00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr09</systemCode>
+              <name>Disability Assistance and Memorial Affairs Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2018-03-07T15:38:25Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <name>Discharged from</name>
+              <date>2018-04-10T16:26:47Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2018-03-07T22:15:15Z</date>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsii00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Natural Resources Committee</name>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2018-04-10T16:26:37Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2018-03-14T19:49:29Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2018-03-07T22:15:14Z</date>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <chamber>Senate</chamber>
           <systemCode>sseg00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Energy and Natural Resources Committee</name>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-05-03T22:46:11Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-03-30T13:30:00Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-05T17:08:38Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <number>2414</number>
+        <latestTitle>Elko National Cemetery Act</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2018-02-08</actionDate>
+          <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <billNumber>35</billNumber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Cemeteries and funerals</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+          <item>
+            <name>South Dakota</name>
+          </item>
+          <item>
+            <name>Veterans' organizations and recognition</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-04-10T21:25:55Z</pubDate>
+        <title>S. 35, Black Hills National Cemetery Boundary Expansion Act</title>
+        <url>https://www.cbo.gov/publication/52631</url>
+      </item>
+      <item>
+        <pubDate>2018-03-22T19:45:24Z</pubDate>
+        <title>S. 35, Black Hills National Cemetery Boundary Expansion Act</title>
+        <url>https://www.cbo.gov/publication/53674</url>
+      </item>
+    </cboCostEstimates>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2018-05-25</actionDate>
+        <actionCode>E40000</actionCode>
+        <text>Became Public Law No: 115-175.</text>
+        <committee />
+        <links />
+        <type>President</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-25</actionDate>
+        <actionCode>36000</actionCode>
+        <text>Became Public Law No: 115-175.</text>
+        <committee />
+        <links />
+        <type>BecameLaw</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-25</actionDate>
+        <actionCode>E30000</actionCode>
+        <text>Signed by President.</text>
+        <committee />
+        <links />
+        <type>President</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-25</actionDate>
+        <actionCode>36000</actionCode>
+        <text>Signed by President.</text>
+        <committee />
+        <links />
+        <type>BecameLaw</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-21</actionDate>
+        <actionCode>E20000</actionCode>
+        <text>Presented to President.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-21</actionDate>
+        <actionCode>28000</actionCode>
+        <text>Presented to President.</text>
+        <committee />
+        <links />
+        <type>President</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-05-16</actionDate>
+        <actionCode>H38310</actionCode>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:11:05</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-16</actionDate>
+        <actionCode>H37300</actionCode>
+        <text>On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 407 - 0 (Roll no. 187). (text: CR 5/16/2018 H3951-3952)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H3951</url>
+            <name>CR 5/16/2018 H3951</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2018/roll187.xml</url>
+            <name>Roll no. 187</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:11:04</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-16</actionDate>
+        <actionCode>8000</actionCode>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by the Yeas and Nays: (2/3 required): 407 - 0 (Roll no. 187).(text: CR 5/16/2018 H3951-3952)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H3951</url>
+            <name>CR 5/16/2018 H3951</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2018/roll187.xml</url>
+            <name>Roll no. 187</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionTime>15:11:04</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-16</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered as unfinished business. (CR H4008)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H4008</url>
+            <name>H4008</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:03:28</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-15</actionDate>
+        <actionCode>H37220</actionCode>
+        <text>At the conclusion of debate, the Yeas and Nays were demanded and ordered. Pursuant to the provisions of clause 8, rule XX, the Chair announced that further proceedings on the motion would be postponed.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:24:11</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-15</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - The House proceeded with forty minutes of debate on S. 35.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/35</url>
+            <name>S. 35</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:17:42</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-15</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered under suspension of the rules. (consideration: CR H3951-3953)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H3951-3953</url>
+            <name>H3951-3953</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:17:40</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-05-15</actionDate>
+        <actionCode>H30300</actionCode>
+        <text>Mr. Bishop (UT) moved to suspend the rules and pass the bill.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:17:32</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-04-10</actionDate>
+        <actionCode>H12410</actionCode>
+        <text>Placed on the Union Calendar, Calendar No. 479.</text>
+        <committee />
+        <links />
+        <type>Calendars</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-04-10</actionDate>
+        <actionCode>H12300</actionCode>
+        <text>Committee on Veterans' Affairs discharged.</text>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <type>Discharge</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-04-10</actionDate>
+        <actionCode>5500</actionCode>
+        <text>Committee on Veterans' Affairs discharged.</text>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-04-10</actionDate>
+        <actionCode>H12200</actionCode>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-626, Part I.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/626</url>
+            <name>H. Rept. 115-626</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-04-10</actionDate>
+        <actionCode>5000</actionCode>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-626, Part I.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/626</url>
+            <name>H. Rept. 115-626</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-03-14</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-03-14</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-03-07</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-03-07</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-03-07</actionDate>
+        <committee>
+          <systemCode>hsvr09</systemCode>
+          <name>Disability Assistance and Memorial Affairs Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Disability Assistance and Memorial Affairs.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-12-22</actionDate>
+        <actionCode>H15000</actionCode>
+        <text>Held at the desk.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:19:10</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-12-22</actionDate>
+        <actionCode>H14000</actionCode>
+        <text>Received in the House.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:05:47</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-12-22</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
           <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-12-21</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8267-8268</url>
+            <name>S8267-8268</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8267-8269</url>
+            <name>S8267-8269</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with an amendment by Voice Vote. (consideration: CR S8267-8269; text: CR S8267-8268)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-12-21</actionDate>
+        <actionCode>17000</actionCode>
+        <text>Passed/agreed to in Senate: Passed Senate with an amendment by Voice Vote.(consideration: CR S8267-8269; text: CR S8267-8268)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8267-8268</url>
+            <name>S8267-8268</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S8267-8269</url>
+            <name>S8267-8269</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-05-03</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 49.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-05-03</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/35</url>
+            <name>report No. 115-35</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment in the nature of a substitute. With written report No. 115-35.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-05-03</actionDate>
+        <actionCode>14000</actionCode>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment in the nature of a substitute. With written report No. 115-35.</text>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/35</url>
+            <name>report No. 115-35</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-03-30</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
         <actionDate>2017-01-05</actionDate>
         <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
         <committee />
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
       </item>
       <actionTypeCounts>
+        <placeholderTextForE>3</placeholderTextForE>
+        <passedSenate>1</passedSenate>
+        <billReferrals>2</billReferrals>
         <referredToCommittee>1</referredToCommittee>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <considerationByHouse>2</considerationByHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <generalDebate>1</generalDebate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <becamePublicLaw>2</becamePublicLaw>
+        <reportedToSenate>2</reportedToSenate>
+        <presentedToPresident>1</presentedToPresident>
+        <sentToHouse>1</sentToHouse>
+        <reportedToHouse>1</reportedToHouse>
+        <orderedReported>1</orderedReported>
+        <actionStageOverride>1</actionStageOverride>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
         <introducedInSenate>1</introducedInSenate>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <houseCommitteeDischarged>1</houseCommitteeDischarged>
+        <committeeDischarged>1</committeeDischarged>
+        <placeholderTextForH>3</placeholderTextForH>
+        <heldAtTheDesk>1</heldAtTheDesk>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>20</houseOfRepresentatives>
+        <senate>9</senate>
+      </actionByCounts>
     </actions>
+    <recordedVotes>
+      <recordedVote>
+        <chamber>House</chamber>
+        <rollNumber>187</rollNumber>
+        <congress>115</congress>
+        <url>http://clerk.house.gov/evs/2018/roll187.xml</url>
+        <sessionNumber>2</sessionNumber>
+        <fullActionName>Final Passage Under Suspension of the Rules Results</fullActionName>
+        <date>2018-05-16T19:11:04Z</date>
+      </recordedVote>
+    </recordedVotes>
+    <laws>
+      <item>
+        <type>Public Law</type>
+        <number>115-175</number>
+      </item>
+    </laws>
+    <cosponsors>
+      <item>
+        <bioguideId>R000605</bioguideId>
+        <party>R</party>
+        <firstName>Mike</firstName>
+        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
+        <lastName>Rounds</lastName>
+        <state>SD</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <gpoId />
+          <lisID>2288</lisID>
+          <bioguideId>R000605</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>E000285</bioguideId>
+        <party>R</party>
+        <firstName>MICHAEL</firstName>
+        <fullName>Sen. Enzi, Michael B. [R-WY]</fullName>
+        <lastName>ENZI</lastName>
+        <state>WY</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>1542</lisID>
+          <bioguideId>E000285</bioguideId>
+          <gpoId>8328</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType>Short Title</parentTitleType>
+        <titleType>Short Titles as Enacted</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>S</chamberCode>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>S</chamberCode>
+      </item>
+      <item>
+        <chamberName>House</chamberName>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <titleType>Short Titles as Reported to House</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>H</chamberCode>
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to transfer administrative jurisdiction over certain Bureau of Land Management land from the Secretary of the Interior to the Secretary of Veterans Affairs for inclusion in the Black Hills National Cemetery, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName>House</chamberName>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>H</chamberCode>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>S</chamberCode>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode>S</chamberCode>
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Black Hills National Cemetery Boundary Expansion Act</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:22:21Z</updateDate>
+    <calendarNumbers>
+      <item>
+        <number>0049</number>
+        <calendar>Senate Calendar of Business</calendar>
+      </item>
+      <item>
+        <number />
+        <calendar>U00479</calendar>
+      </item>
+    </calendarNumbers>
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2018-02-16T16:35:52Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>This bill transfers jurisdiction over certain public land from the Department of the Interior to the Department of Veterans Affairs for inclusion in the Black Hills National Cemetery. </p>]]></text>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <versionCode>01</versionCode>
+          <actionDate>2017-05-03</actionDate>
+          <actionDesc>Reported to Senate with amendment(s)</actionDesc>
+          <name>Reported to Senate with amendment(s)</name>
+          <lastSummaryUpdateDate>2017-12-08T20:31:29Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>(Sec. 3) This bill directs the Department of Veterans Affairs (VA) to: (1) complete environmental, cultural resource, and other due diligence activities on certain federal land to confirm its suitability for inclusion in the Black Hills National Cemetery, South Dakota; and (2) notify, and coordinate with, the Department of the Interior regarding such activities. </p> <p>After completion of such activities and upon receipt by Interior of written confirmation of suitability from the VA, the land shall: (1) be withdrawn from all forms of appropriation under the public land laws, including the mining laws, the mineral leasing laws, and the geothermal leasing laws, for as long as it remains under VA administrative jurisdiction; (2) be treated as property; and (3) be transferred, except for the land within 100 feet of the center of the Centennial Trail, from Interior to the VA for use as a national cemetery.</p> <p> Interior shall publish a notice containing the legal descriptions of such transferred land. </p> <p>The VA shall reimburse Interior for reasonable transfer costs, including survey costs. </p> <p> The cemetery's boundary is modified to include such federal land.</p>]]></text>
+          <updateDate>2017-05-03T14:38:59Z</updateDate>
+        </item>
+        <item>
+          <versionCode>35</versionCode>
+          <actionDate>2017-12-21</actionDate>
+          <actionDesc>Passed Senate amended</actionDesc>
+          <name>Passed Senate amended</name>
+          <lastSummaryUpdateDate>2018-01-25T18:46:23Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was reported to the Senate on May 3, 2017. The summary of that version is repeated here.)</p> <p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>(Sec. 3) This bill directs the Department of Veterans Affairs (VA) to: (1) complete environmental, cultural resource, and other due diligence activities on certain federal land to confirm its suitability for inclusion in the Black Hills National Cemetery, South Dakota; and (2) notify, and coordinate with, the Department of the Interior regarding such activities. </p> <p>After completion of such activities and upon receipt by Interior of written confirmation of suitability from the VA, the land shall: (1) be withdrawn from all forms of appropriation under the public land laws, including the mining laws, the mineral leasing laws, and the geothermal leasing laws, for as long as it remains under VA administrative jurisdiction; (2) be treated as property; and (3) be transferred, except for the land within 100 feet of the center of the Centennial Trail, from Interior to the VA for use as a national cemetery.</p> <p> Interior shall publish a notice containing the legal descriptions of such transferred land. </p> <p>The VA shall reimburse Interior for reasonable transfer costs, including survey costs. </p> <p> The cemetery's boundary is modified to include such federal land.</p>]]></text>
+          <updateDate>2017-12-21T16:22:58Z</updateDate>
+        </item>
+        <item>
+          <versionCode>28</versionCode>
+          <actionDate>2018-04-10</actionDate>
+          <actionDesc>Reported to House without amendment, Part I</actionDesc>
+          <name>Reported to House without amendment, Part I</name>
+          <lastSummaryUpdateDate>2018-05-14T15:34:59Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>(Sec. 3) This bill directs the Department of Veterans Affairs (VA) to: (1) complete environmental, cultural resource, and other due diligence activities on certain federal land to confirm its suitability for inclusion in the Black Hills National Cemetery, South Dakota; and (2) notify, and coordinate with, the Department of the Interior regarding such activities. </p> <p>After completion of such activities and upon receipt by Interior of written confirmation of suitability from the VA, the land shall: (1) be withdrawn from all forms of appropriation under the public land laws, including the mining laws, the mineral leasing laws, and the geothermal leasing laws, for as long as it remains under VA administrative jurisdiction; (2) be treated as property; and (3) be transferred, except for the land within 100 feet of the center of the Centennial Trail, from Interior to the VA for use as a national cemetery.</p> <p> Interior shall publish a notice containing the legal descriptions of such transferred land. </p> <p>The VA shall reimburse Interior for reasonable transfer costs, including survey costs. </p> <p> The cemetery's boundary is modified to include such federal land.</p>]]></text>
+          <updateDate>2018-04-10T13:10:24Z</updateDate>
+        </item>
+        <item>
+          <versionCode>81</versionCode>
+          <actionDate>2018-05-16</actionDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <name>Passed House without amendment</name>
+          <lastSummaryUpdateDate>2018-05-29T16:37:33Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>(Sec. 3) This bill directs the Department of Veterans Affairs (VA) to: (1) complete environmental, cultural resource, and other due diligence activities on certain federal land to confirm its suitability for inclusion in the Black Hills National Cemetery, South Dakota; and (2) notify, and coordinate with, the Department of the Interior regarding such activities. </p> <p>After completion of such activities and upon receipt by Interior of written confirmation of suitability from the VA, the land shall: (1) be withdrawn from all forms of appropriation under the public land laws, including the mining laws, the mineral leasing laws, and the geothermal leasing laws, for as long as it remains under VA administrative jurisdiction; (2) be treated as property; and (3) be transferred, except for the land within 100 feet of the center of the Centennial Trail, from Interior to the VA for use as a national cemetery.</p> <p> Interior shall publish a notice containing the legal descriptions of such transferred land. </p> <p>The VA shall reimburse Interior for reasonable transfer costs, including survey costs. </p> <p> The cemetery's boundary is modified to include such federal land.</p>]]></text>
+          <updateDate>2018-05-16T13:43:49Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <title>Black Hills National Cemetery Boundary Expansion Act</title>
-    <notes />
-    <introducedDate>2017-01-05</introducedDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

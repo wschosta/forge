@@ -1,98 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
+    <titles>
       <item>
-        <lastName>Lee</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>UT</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>L000577</bioguideId>
-        <firstName>Mike</firstName>
-        <fullName>Sen. Lee, Mike [R-UT]</fullName>
-        <identifiers>
-          <lisID>2080</lisID>
-          <gpoId>8303</gpoId>
-          <bioguideId>L000577</bioguideId>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>ObamaCare Repeal Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
       <item>
-        <lastName>Rubio</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>FL</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>R000595</bioguideId>
-        <firstName>Marco</firstName>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <identifiers>
-          <lisID>2084</lisID>
-          <gpoId>8242</gpoId>
-          <bioguideId>R000595</bioguideId>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to repeal the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010 entirely.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
       <item>
-        <lastName>Paul</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>KY</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>P000603</bioguideId>
-        <firstName>Rand</firstName>
-        <fullName>Sen. Paul, Rand [R-KY]</fullName>
-        <identifiers>
-          <lisID>2082</lisID>
-          <gpoId>8308</gpoId>
-          <bioguideId>P000603</bioguideId>
-        </identifiers>
-        <middleName />
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
+        <titleType>Display Title</titleType>
+        <title>ObamaCare Repeal Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
-    </cosponsors>
-    <laws />
-    <congress>115</congress>
-    <billNumber>106</billNumber>
-    <billType>S</billType>
-    <cboCostEstimates />
-    <policyArea />
-    <amendments />
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>ObamaCare Repeal Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
     <notes />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T14:39:54Z</updateDate>
-    <originChamber>Senate</originChamber>
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Finance.</text>
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssfi00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-12T06:16:02Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Finance Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Finance Committee</name>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Finance.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-12</actionDate>
-        <text>Introduced in Senate</text>
-        <links />
         <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
+        <committee />
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
       </item>
       <actionTypeCounts>
@@ -103,72 +89,168 @@
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <createDate>2017-01-12T08:17:36Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>A bill to repeal the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010 entirely.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>A bill to repeal the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010 entirely.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>A bill to repeal the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010 entirely.</title>
-    <introducedDate>2017-01-12</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <text>Read twice and referred to the Committee on Finance.</text>
-      <links />
-    </latestAction>
-    <committeeReports />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>ssfi00</systemCode>
-          <name>Finance Committee</name>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T06:16:02Z</date>
-            </item>
-          </activities>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
     <sponsors>
       <item>
         <fullName>Sen. Cruz, Ted [R-TX]</fullName>
-        <firstName>Ted</firstName>
-        <bioguideId>C001098</bioguideId>
         <party>R</party>
-        <byRequestType />
-        <middleName />
-        <state>TX</state>
-        <lastName>Cruz</lastName>
+        <bioguideId>C001098</bioguideId>
         <identifiers>
           <lisID>2175</lisID>
           <gpoId />
           <bioguideId>C001098</bioguideId>
         </identifiers>
+        <lastName>Cruz</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>Ted</firstName>
+        <state>TX</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:22:39Z</updateDate>
+    <billNumber>106</billNumber>
+    <title>ObamaCare Repeal Act</title>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>1718</number>
+        <latestAction>
+          <actionDate>2017-03-31</actionDate>
+          <text>Referred to the Subcommittee on Health.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>ObamaCare Repeal Act</latestTitle>
+      </item>
+      <item>
+        <type>HR</type>
+        <number>3276</number>
+        <latestAction>
+          <actionDate>2017-07-31</actionDate>
+          <text>Referred to the Subcommittee on Health.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Responsible Path to Full Obamacare Repeal Act</latestTitle>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-12T08:17:36Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2017-02-01T17:15:46Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>ObamaCare Repeal Act</b></p> <p>This bill repeals the Patient Protection and Affordable Care Act and the Health Care and Education Reconciliation Act of 2010 and restores provisions of law amended by those Acts, effective January 1, 2018.</p>]]></text>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>UT</state>
+        <bioguideId>L000577</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Lee</lastName>
+        <fullName>Sen. Lee, Mike [R-UT]</fullName>
+        <firstName>Mike</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2080</lisID>
+          <bioguideId>L000577</bioguideId>
+          <gpoId>8303</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>FL</state>
+        <bioguideId>R000595</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Rubio</lastName>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <firstName>Marco</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <party>R</party>
+        <state>KY</state>
+        <bioguideId>P000603</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Paul</lastName>
+        <fullName>Sen. Paul, Rand [R-KY]</fullName>
+        <firstName>Rand</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2082</lisID>
+          <bioguideId>P000603</bioguideId>
+          <gpoId>8308</gpoId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-12</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Comprehensive health care</name>
+          </item>
+          <item>
+            <name>Government lending and loan guarantees</name>
+          </item>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Higher education</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

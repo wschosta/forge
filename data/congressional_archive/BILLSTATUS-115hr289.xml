@@ -1,198 +1,859 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>289</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Public Lands and Natural Resources</name>
-    </policyArea>
-    <amendments />
     <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-13T19:31:22Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
+    <title>GO Act</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>sseg00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-10-03T20:59:19Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Energy and Natural Resources Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+        <item>
+          <systemCode>hsag00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-09-21T16:20:02Z</date>
+              <name>Discharged from</name>
+            </item>
+            <item>
+              <date>2017-01-04T15:07:15Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Agriculture Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsag15</systemCode>
+              <name>Conservation and Forestry Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-26T16:26:44Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <systemCode>hsii00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-09-21T16:19:27Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-06-27T13:41:12Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-04T15:07:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Natural Resources Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsii10</systemCode>
+              <name>Federal Lands Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:49:05Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-320</citation>
+      </committeeReport>
+    </committeeReports>
+    <cboCostEstimates>
       <item>
+        <url>https://www.cbo.gov/publication/53115</url>
+        <pubDate>2017-09-18T19:28:00Z</pubDate>
+        <title>H.R. 289, GO Act</title>
+      </item>
+    </cboCostEstimates>
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:58:40Z</updateDate>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <number>2335</number>
+        <latestAction>
+          <actionDate>2018-01-24</actionDate>
+          <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>GO Act</latestTitle>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
+    <actions>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <actionStageOverride>1</actionStageOverride>
+        <introducedInHouse>1</introducedInHouse>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <considerationByHouse>1</considerationByHouse>
+        <placeholderTextForH>3</placeholderTextForH>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <houseCommitteeDischarged>1</houseCommitteeDischarged>
+        <committeeDischarged>1</committeeDischarged>
+        <reportedToHouse>1</reportedToHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <generalDebate>1</generalDebate>
+        <billReferrals>2</billReferrals>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
         <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
         <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:51:40</actionTime>
+        <committee />
+        <links />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionCode>H38310</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:51:37</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H7646-7648</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7646-7648</url>
+          </link>
+        </links>
+        <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H7646-7648)</text>
+        <actionCode>H37300</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:51:37</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H7646-7648</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7646-7648</url>
+          </link>
+        </links>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.(text: CR H7646-7648)</text>
+        <actionCode>8000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:40:30</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H.R. 289</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/289</url>
+          </link>
+        </links>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 289.</text>
+        <actionCode>H8D000</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:40:29</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H7646-7650</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7646-7650</url>
+          </link>
+        </links>
+        <text>Considered under suspension of the rules. (consideration: CR H7646-7650)</text>
+        <actionCode>H30000</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-10-02</actionDate>
+        <actionTime>17:40:19</actionTime>
+        <committee />
+        <links />
+        <text>Mr. LaMalfa moved to suspend the rules and pass the bill, as amended.</text>
+        <actionCode>H30300</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-09-21</actionDate>
+        <links />
+        <text>Placed on the Union Calendar, Calendar No. 230.</text>
+        <type>Calendars</type>
+        <actionCode>H12410</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-09-21</actionDate>
+        <links />
+        <text>Committee on Agriculture discharged.</text>
+        <type>Discharge</type>
+        <actionCode>H12300</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <committee>
           <systemCode>hsag00</systemCode>
           <name>Agriculture Committee</name>
         </committee>
-        <text>Referred to House Agriculture</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
       </item>
       <item>
+        <actionDate>2017-09-21</actionDate>
         <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <text>Committee on Agriculture discharged.</text>
+        <type>Committee</type>
+        <actionCode>5500</actionCode>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <systemCode>hsag00</systemCode>
+          <name>Agriculture Committee</name>
+        </committee>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
+        <actionDate>2017-09-21</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-320</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/320</url>
+          </link>
+        </links>
+        <text>Reported (Amended) by the Committee on Natural Resources. H. Rept. 115-320, Part I.</text>
+        <type>Committee</type>
+        <actionCode>H12200</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <committee>
           <systemCode>hsii00</systemCode>
           <name>Natural Resources Committee</name>
         </committee>
-        <text>Referred to House Natural Resources</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
       </item>
       <item>
+        <actionDate>2017-09-21</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-320</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/320</url>
+          </link>
+        </links>
+        <text>Reported (Amended) by the Committee on Natural Resources. H. Rept. 115-320, Part I.</text>
+        <type>Committee</type>
+        <actionCode>5000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-06-27</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
         <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Ordered to be Reported (Amended) by Voice Vote.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-27</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-26</actionDate>
+        <committee>
+          <systemCode>hsag15</systemCode>
+          <name>Conservation and Forestry Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Conservation and Forestry.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsag00</systemCode>
+          <name>Agriculture Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
+        <committee />
       </item>
       <item>
+        <actionDate>2017-01-04</actionDate>
         <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
+        <committee />
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
+        <senate>1</senate>
+        <houseOfRepresentatives>20</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
     </actions>
-    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+        <identifiers>
+          <lisID>2100</lisID>
+          <bioguideId>L000578</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>L000578</bioguideId>
+        <lastName>LaMalfa</lastName>
+        <firstName>Doug</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>CA</state>
+        <district>1</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Pages H97-H98]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LaMALFA:H.R. 289.[[Page H98]]Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3, Clause 2</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>289</billNumber>
+    <titles>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>Guides and Outfitters Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Reported to House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Reported to House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>Guides and Outfitters Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Guides and Outfitters Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To authorize the Secretary of the Interior and the Secretary of Agriculture to issue permits for recreation services on lands managed by Federal agencies, and for other purposes.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>Guides and Outfitters Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>Guides and Outfitters Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>GO Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Guides and Outfitters Act</title>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
           <name>Public Lands and Natural Resources</name>
         </policyArea>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Department of Agriculture</name>
+          </item>
+          <item>
+            <name>Department of the Interior</name>
+          </item>
+          <item>
+            <name>Forests, forestry, trees</name>
+          </item>
+          <item>
+            <name>Government liability</name>
+          </item>
+          <item>
+            <name>Land use and conservation</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Outdoor recreation</name>
+          </item>
+          <item>
+            <name>Parks, recreation areas, trails</name>
+          </item>
+          <item>
+            <name>Rural conditions and development</name>
+          </item>
+          <item>
+            <name>Small business</name>
+          </item>
+          <item>
+            <name>User charges and fees</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <titles>
+    <cosponsors>
       <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>GO Act</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Guides and Outfitters Act</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To authorize the Secretary of the Interior and the Secretary of Agriculture to issue permits for recreation services on lands managed by Federal agencies, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <title>GO Act</title>
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>GO Act</title>
-    <introducedDate>2017-01-04</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-04</actionDate>
-      <text>Referred to House Agriculture</text>
-      <links />
-    </latestAction>
-    <createDate>2017-01-05T04:47:33Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <systemCode>hsag00</systemCode>
-          <type>Standing</type>
-          <name>Agriculture Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T15:07:15Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <systemCode>hsii00</systemCode>
-          <type>Standing</type>
-          <name>Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T15:07:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
-        <firstName>Doug</firstName>
-        <bioguideId>L000578</bioguideId>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>2271</lisID>
+          <gpoId />
+          <bioguideId>L000584</bioguideId>
+        </identifiers>
+        <firstName>Mia</firstName>
+        <state>UT</state>
+        <bioguideId>L000584</bioguideId>
+        <district>4</district>
+        <fullName>Rep. Love, Mia B. [R-UT-4]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Love</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
         <middleName />
-        <byRequestType />
-        <district>1</district>
+        <identifiers>
+          <lisID>1908</lisID>
+          <bioguideId>M001177</bioguideId>
+          <gpoId>7809</gpoId>
+        </identifiers>
+        <firstName>Tom</firstName>
         <state>CA</state>
-        <lastName>LaMalfa</lastName>
+        <bioguideId>M001177</bioguideId>
+        <district>4</district>
+        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>McClintock</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2275</lisID>
+          <gpoId />
+          <bioguideId>N000189</bioguideId>
+        </identifiers>
+        <firstName>Dan</firstName>
+        <state>WA</state>
+        <bioguideId>N000189</bioguideId>
+        <district>4</district>
+        <fullName>Rep. Newhouse, Dan [R-WA-4]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Newhouse</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2168</lisID>
+          <bioguideId>S001192</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Chris</firstName>
+        <state>UT</state>
+        <bioguideId>S001192</bioguideId>
+        <district>2</district>
+        <fullName>Rep. Stewart, Chris [R-UT-2]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Stewart</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>G.</middleName>
         <identifiers>
           <gpoId />
-          <bioguideId>L000578</bioguideId>
-          <lisID>2100</lisID>
+          <lisID>2105</lisID>
+          <bioguideId>V000129</bioguideId>
         </identifiers>
+        <firstName>David</firstName>
+        <state>CA</state>
+        <bioguideId>V000129</bioguideId>
+        <district>21</district>
+        <fullName>Rep. Valadao, David G. [R-CA-21]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Valadao</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
       </item>
-    </sponsors>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>M001193</bioguideId>
+          <lisID>2258</lisID>
+          <gpoId />
+        </identifiers>
+        <firstName>Thomas</firstName>
+        <state>NJ</state>
+        <bioguideId>M001193</bioguideId>
+        <district>3</district>
+        <fullName>Rep. MacArthur, Thomas [R-NJ-3]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>MacArthur</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <gpoId />
+          <lisID>2306</lisID>
+          <bioguideId>O000171</bioguideId>
+        </identifiers>
+        <firstName>Tom</firstName>
+        <state>AZ</state>
+        <bioguideId>O000171</bioguideId>
+        <district>1</district>
+        <fullName>Rep. O'Halleran, Tom [D-AZ-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>O'Halleran</lastName>
+        <sponsorshipDate>2017-03-09</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>K.</middleName>
+        <identifiers>
+          <lisID>1590</lisID>
+          <bioguideId>S001148</bioguideId>
+          <gpoId>7920</gpoId>
+        </identifiers>
+        <firstName>MICHAEL</firstName>
+        <state>ID</state>
+        <bioguideId>S001148</bioguideId>
+        <district>2</district>
+        <fullName>Rep. Simpson, Michael K. [R-ID-2]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>SIMPSON</lastName>
+        <sponsorshipDate>2017-05-02</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>C001109</bioguideId>
+          <lisID>2356</lisID>
+          <gpoId />
+        </identifiers>
+        <firstName>Liz</firstName>
+        <state>WY</state>
+        <bioguideId>C001109</bioguideId>
+        <district>0</district>
+        <fullName>Rep. Cheney, Liz [R-WY-At Large]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Cheney</lastName>
+        <sponsorshipDate>2017-05-11</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2245</lisID>
+          <bioguideId>G000577</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Garret</firstName>
+        <state>LA</state>
+        <bioguideId>G000577</bioguideId>
+        <district>6</district>
+        <fullName>Rep. Graves, Garret [R-LA-6]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Graves</lastName>
+        <sponsorshipDate>2017-06-26</sponsorshipDate>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-04</introducedDate>
+    <calendarNumbers>
+      <item>
+        <number />
+        <calendar>U00230</calendar>
+      </item>
+    </calendarNumbers>
+    <latestAction>
+      <actionDate>2017-10-03</actionDate>
+      <links />
+      <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Guides and Outfitters Act or the GO Act</b></p> <p>This bill amends the Federal Lands Recreation Enhancement Act to specify the circumstances in which the Department of the Interior and the Department of Agriculture (USDA) may: (1) issue special recreation permits for federal recreational lands and waters, and (2) charge a special recreation permit fee for them. </p> <p>Interior and USDA may issue special recreation permits: </p> <ul> <li>for specialized individual and group use of federal facilities and federal recreational lands and waters;</li> <li>to recreation service providers who conduct outfitting, guiding, and other recreation services on federal recreational lands and waters; and </li> <li>to recreation service providers who conduct recreation or competitive events, which may involve incidental sales on federal recreational lands and waters.</li> </ul> <p>Interior and USDA shall issue joint permits for the use of lands managed by the Forest Service and the Bureau of Land Management (BLM). </p> <p>Interior shall publish guidelines for establishing recreation permit fees.</p> <p>Revenues from special recreation permits issued to recreation service providers shall be used to: (1) offset partially Interior's direct cost of administering permits, and (2) improve and streamline the permitting process. </p> <p>When reviewing and adjusting allocations for the use of priority use permits for special uses of federal recreational lands and water managed by the Forest Service USDA shall allocate to the permit holder a prescribed amount subject to a cap. </p> <p>USDA and Interior shall implement a program that authorizes temporary permits for new recreational uses of federal recreational lands and waters managed by the Forest Service or the BLM, respectively. </p> <p>A permit holder prohibited by a state from indemnifying the federal government shall be considered to be in compliance with Interior and USDA indemnification requirements if the permit holder carries the required minimum amount of liability insurance coverage or is self-insured for the same minimum amount.</p> <p>Interior and USDA shall revise certain:</p> <ul> <li>special land use and special recreation permit regulations to streamline the processes for the issuance and renewal of outfitter and guide special use permits, and</li> <li>cost recovery fee regulations to reduce costs and minimize the burden of cost recovery on small businesses and adverse impacts of cost recovery on jobs in the outfitting and guiding industry and on rural economies. </li> </ul> <p>If a holder of a special use permit for outfitting and guiding that authorizes priority use has requested renewal of the permit, USDA may grant one or more existing permit extensions for additional items for up to five years altogether, as necessary to allow completion of the renewal process and avoid the interruption of services under the permit.</p>]]></text>
+          <lastSummaryUpdateDate>2017-10-05T17:26:47Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-04</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p><b>Guides and Outfitters Act or the GO Act</b></p> <p>(Sec. 2) This bill amends the Federal Lands Recreation Enhancement Act to specify the circumstances in which the Department of Agriculture (USDA), with respect to the Forest Service, or the Department of the Interior, with respect to any other federal land management agency, may issue and charge a fee for special recreation permits for federal recreational lands and waters. </p> <p>Interior and USDA may issue special recreation permits: </p> <ul> <li>for specialized individual and group use of federal facilities and federal recreational lands and waters;</li> <li>to recreation service providers who conduct outfitting, guiding, and other recreation services on such lands and waters; and </li> <li>to recreation service providers who conduct recreation or competitive events, which may involve incidental sales on such lands and waters. </li> </ul> <p>The bill categorically excludes the issuance of new permits for such activities from undergoing further analysis and documentation under the National Environmental Policy Act of 1969 (NEPA) if the proposed use is the same as or similar to a previously authorized use and such issuance does not have significant environmental effects based upon the application of NEPA's extraordinary circumstances procedures. </p> <p>Each entity that pays a special recreation permit fee shall not be subject to a road cost-sharing fee or a fee to use highways and roads that are open for private, noncommercial use within the boundaries of any federal recreational lands or waters. </p> <p>(Sec. 3) Interior and USDA may issue a joint permit for activities that require special recreation permits for the use of lands managed by both the Forest Service and the Bureau of Land Management (BLM). </p> <p>(Sec. 4) Interior and USDA shall: (1) publish guidelines for establishing recreation permit fees; and (2) provide appropriate deductions from gross revenues used as a basis for such fees for revenue from goods, services, and activities furnished by a recreation service provider that is outside of the federal recreational lands and waters and for fees to be paid by permit holders to furnish services on other federal lands if separate permits are issued for a single event or trip. </p> <p>Fees charged by Interior and USDA for the issuance of a special recreation permit must not exceed 3% of the recreational service provider's annual gross revenue for the activities authorized by the permit on federal lands, plus the applicable revenue additions and minus the applicable revenue exclusions or a similar flat fee per person. </p> <p>(Sec. 5) Revenues from special recreation permits issued to recreation service providers shall be held in special accounts for each unit or area for which such revenues are collected, shall remain available until expended, and shall be used only: (1) to partially offset administrative costs; (2) to improve and streamline the permitting process; and (3) for related recreation infrastructure and other purposes to support recreation activities at the site for which use is authorized under the permit. </p> <p>Permit fees may not be used for biological monitoring on federal recreational lands and waters under the Endangered Species Act of 1973 for listed or candidate species. </p> <p>(Sec. 6) In reviewing and adjusting allocations for priority use permits, USDA shall allocate to the holder of a permit for special use of lands and water managed by the Forest Service a level of use not less than the highest amount of actual annual use over the reviewed period plus 25%, capped at the amount of use allocated when the permit was issued unless additional capacity is available. Use reviews may be waived during specified periods, such as when circumstances prevented the use of the assigned capacity. </p> <p>(Sec. 7) USDA and Interior shall implement a program that: (1) authorizes temporary permits for new recreational uses of federal recreational lands and waters managed by the Forest Service or the BLM, and (2) provides for the conversions of such permits to long-term permits after two years of satisfactory operation.</p> <p>(Sec. 8) A permit holder prohibited by a state from indemnifying the federal government shall be considered to be in compliance with Interior and USDA indemnification requirements if the permit holder carries the required minimum amount of liability insurance coverage or is self-insured for the same minimum amount. Interior and USDA shall not enforce policies that prohibit exculpatory agreements between recreation service providers and their customers for services provided under a special recreation permit. </p> <p>(Sec. 9) Interior and USDA shall streamline the processes for the issuance and renewal of outfitter and guide special use permits by: (1) shortening application processing times and minimizing application and administration costs; and (2) providing for the use of programmatic environmental assessments and categorical exclusions for environmental reviews for the issuance or renewal of outfitter and guide and similar recreation special use permits. </p> <p>Interior and USDA shall provide for special recreation permit applications to be filled out and submitted online. </p> <p> (Sec. 10) USDA and Interior shall revise certain cost recovery fee regulations to reduce costs and minimize the burden of cost recovery on small businesses and the adverse impacts of cost recovery on jobs in the outfitting and guiding industry and on rural economies. </p> <p>Regulations issued by Interior or USDA to establish fees to recover processing costs for recreation special use permit applications and monitoring costs for special use authorizations must include an exemption providing that at least the first 50 hours of work necessary in any one year to process and/or monitor such an application shall not be subject to cost recovery. The 50-hour per permit credit shall also apply to any monitoring fees on an annual basis during the permit term. </p> <p>Interior and USDA may waive the recovery of costs for the processing of applications and renewals, on a categorical or case-by-case basis, if: </p> <ul> <li>such costs would impose a significant economic burden on small business;</li> <li>such cost recovery could threaten the ability of an applicant or permittee to provide, in a particular area, an outdoor recreational activity that is consistent with the public interest and with the applicable resource management plans; or </li> <li>prevailing economic conditions are unfavorable. </li> </ul> <p>(Sec. 11) USDA may grant one or more existing permit extensions for additional items for up to five years as necessary to allow completion of the renewal process and avoid the interruption of services under a special use permit for outfitting and guiding that authorizes priority use. </p>]]></text>
+          <lastSummaryUpdateDate>2018-01-26T21:11:56Z</lastSummaryUpdateDate>
+          <actionDesc>Reported to House amended, Part I</actionDesc>
+          <updateDate>2017-09-21T14:07:57Z</updateDate>
+          <name>Reported to House amended, Part I</name>
+          <versionCode>18</versionCode>
+          <actionDate>2017-09-21</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p><b>Guides and Outfitters Act or the GO Act</b></p> <p>(Sec. 2) This bill amends the Federal Lands Recreation Enhancement Act to specify the circumstances in which the Department of Agriculture (USDA), with respect to the Forest Service, or the Department of the Interior, with respect to any other federal land management agency, may issue and charge a fee for special recreation permits for federal recreational lands and waters. </p> <p>Interior and USDA may issue special recreation permits: </p> <ul> <li>for specialized individual and group use of federal facilities and federal recreational lands and waters;</li> <li>to recreation service providers who conduct outfitting, guiding, and other recreation services on such lands and waters; and </li> <li>to recreation service providers who conduct recreation or competitive events, which may involve incidental sales on such lands and waters. </li> </ul> <p>The bill categorically excludes the issuance of new permits for such activities from undergoing further analysis and documentation under the National Environmental Policy Act of 1969 (NEPA) if the proposed use is the same as or similar to a previously authorized use and such issuance does not have significant environmental effects based upon the application of NEPA's extraordinary circumstances procedures. </p> <p>Each entity that pays a special recreation permit fee shall not be subject to a road cost-sharing fee or a fee to use highways and roads that are open for private, noncommercial use within the boundaries of any federal recreational lands or waters. </p> <p>(Sec. 3) Interior and USDA may issue a joint permit for activities that require special recreation permits for the use of lands managed by both the Forest Service and the Bureau of Land Management (BLM). </p> <p>(Sec. 4) Interior and USDA shall: (1) publish guidelines for establishing recreation permit fees; and (2) provide appropriate deductions from gross revenues used as a basis for such fees for revenue from goods, services, and activities furnished by a recreation service provider that is outside of the federal recreational lands and waters and for fees to be paid by permit holders to furnish services on other federal lands if separate permits are issued for a single event or trip. </p> <p>Fees charged by Interior and USDA for the issuance of a special recreation permit must not exceed 3% of the recreational service provider's annual gross revenue for the activities authorized by the permit on federal lands, plus the applicable revenue additions and minus the applicable revenue exclusions or a similar flat fee per person. </p> <p>(Sec. 5) Revenues from special recreation permits issued to recreation service providers shall be held in special accounts for each unit or area for which such revenues are collected, shall remain available until expended, and shall be used only: (1) to partially offset administrative costs; (2) to improve and streamline the permitting process; and (3) for related recreation infrastructure and other purposes to support recreation activities at the site for which use is authorized under the permit. </p> <p>Permit fees may not be used for biological monitoring on federal recreational lands and waters under the Endangered Species Act of 1973 for listed or candidate species. </p> <p>(Sec. 6) To the extent that USDA utilizes permit use reviews, in reviewing and adjusting allocations for use of permits, USDA shall allocate to the holder of a permit for special use of lands and water managed by the Forest Service a level of use not less than the highest amount of actual annual use over the reviewed period plus 25%, capped at the amount of use allocated when the permit was issued unless additional capacity is available. Use reviews may be waived during specified periods, such as when circumstances prevented the use of the assigned capacity. </p> <p>(Sec. 7) USDA and Interior shall implement a program that: (1) authorizes temporary permits for new recreational uses of federal recreational lands and waters managed by the Forest Service or the BLM, and (2) provides for the conversions of such permits to long-term permits after two years of satisfactory operation.</p> <p>(Sec. 8) A permit holder prohibited by a state from indemnifying the federal government shall be considered to be in compliance with Interior and USDA indemnification requirements if the permit holder carries the required minimum amount of liability insurance coverage or is self-insured for the same minimum amount. Interior and USDA shall not enforce policies that prohibit exculpatory agreements between recreation service providers and their customers for services provided under a special recreation permit. </p> <p>(Sec. 9) Interior and USDA shall streamline the processes for the issuance and renewal of outfitter and guide special use permits by: (1) shortening application processing times and minimizing application and administration costs; and (2) providing for the use of programmatic environmental assessments and categorical exclusions for environmental reviews for the issuance or renewal of outfitter and guide and similar recreation special use permits. </p> <p>Interior and USDA shall provide for special recreation permit applications to be filled out and submitted online. </p> <p> (Sec. 10) USDA and Interior shall revise certain cost recovery fee regulations to reduce costs and minimize the burden of cost recovery on small businesses and the adverse impacts of cost recovery on jobs in the outfitting and guiding industry and on rural economies. </p> <p>Regulations issued by Interior or USDA to establish fees to recover processing costs for recreation special use permit applications and monitoring costs for special use authorizations must include an exemption providing that at least the first 50 hours of work necessary in any one year to process and/or monitor such an application shall not be subject to cost recovery. The 50-hour per permit credit shall also apply to any monitoring fees on an annual basis during the permit term. </p> <p>Interior and USDA may waive the recovery of costs for the processing of applications and renewals, on a categorical or case-by-case basis, if: </p> <ul> <li>such costs would impose a significant economic burden on small business;</li> <li>such cost recovery could threaten the ability of an applicant or permittee to provide, in a particular area, an outdoor recreational activity that is consistent with the public interest and with the applicable resource management plans; or </li> <li>prevailing economic conditions are unfavorable. </li> </ul> <p>(Sec. 11) USDA may grant one or more existing permit extensions for additional items for up to five years as necessary to allow completion of the renewal process and avoid the interruption of services under a special use permit for outfitting and guiding that authorizes priority use. </p>]]></text>
+          <lastSummaryUpdateDate>2018-01-26T21:12:18Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House amended</actionDesc>
+          <updateDate>2017-10-02T13:17:35Z</updateDate>
+          <name>Passed House amended</name>
+          <versionCode>36</versionCode>
+          <actionDate>2017-10-02</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-05T04:47:33Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

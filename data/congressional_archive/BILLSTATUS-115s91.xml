@@ -1,66 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <sponsors>
+    <titles>
       <item>
-        <identifiers>
-          <gpoId>8234</gpoId>
-          <bioguideId>M001153</bioguideId>
-          <lisID>1694</lisID>
-        </identifiers>
-        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
-        <lastName>Murkowski</lastName>
-        <middleName />
-        <bioguideId>M001153</bioguideId>
-        <party>R</party>
-        <firstName>Lisa</firstName>
-        <state>AK</state>
-        <byRequestType />
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
       </item>
-    </sponsors>
-    <billType>S</billType>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to amend the Indian Employment, Training and Related Services Demonstration Act of 1992 to facilitate the ability of Indian tribes to integrate the employment, training, and related services from diverse Federal sources, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Indian Employment, Training and Related Services Act of 1992</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Indian Employment, Training and Related Services Act of 1992</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Star Print ordered on report 115-26.</text>
+      <actionDate>2017-04-25</actionDate>
+    </latestAction>
     <committees>
       <billCommittees>
         <item>
           <systemCode>slia00</systemCode>
-          <name>Indian Affairs Committee</name>
           <subcommittees />
-          <chamber>Senate</chamber>
           <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-04-06T21:12:03Z</date>
+            </item>
             <item>
               <name>Referred to</name>
               <date>2017-01-10T22:29:14Z</date>
             </item>
           </activities>
+          <name>Indian Affairs Committee</name>
+          <chamber>Senate</chamber>
           <type>Other</type>
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <title>A bill to amend the Indian Employment, Training and Related Services Demonstration Act of 1992 to facilitate the ability of Indian tribes to integrate the employment, training, and related services from diverse Federal sources, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <title>A bill to amend the Indian Employment, Training and Related Services Demonstration Act of 1992 to facilitate the ability of Indian tribes to integrate the employment, training, and related services from diverse Federal sources, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
-    <billNumber>91</billNumber>
-    <cboCostEstimates />
-    <title>A bill to amend the Indian Employment, Training and Related Services Demonstration Act of 1992 to facilitate the ability of Indian tribes to integrate the employment, training, and related services from diverse Federal sources, and for other purposes.</title>
-    <amendments />
     <actions>
+      <actionByCounts>
+        <senate>7</senate>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-04-25</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Star Print ordered on report 115-26.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-04-06</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 32.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-04-06</actionDate>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/26</url>
+            <name>report No. 115-26</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Indian Affairs. Reported by Senator Hoeven without amendment. With written report No. 115-26.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/26</url>
+            <name>report No. 115-26</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <text>Committee on Indian Affairs. Reported by Senator Hoeven without amendment. With written report No. 115-26.</text>
+        <actionDate>2017-04-06</actionDate>
+        <actionCode>14000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-02-08</actionDate>
+        <committee>
+          <systemCode>slia00</systemCode>
+          <name>Indian Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Indian Affairs. Ordered to be reported favorably.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-10</actionDate>
         <committee>
@@ -76,63 +180,213 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <committee />
         <links />
         <type>IntroReferral</type>
-        <actionCode>10000</actionCode>
-        <committee />
         <text>Introduced in Senate</text>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
       </item>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
       <actionTypeCounts>
+        <reportedToSenate>2</reportedToSenate>
         <introducedInSenate>1</introducedInSenate>
+        <starPrintOrdered>1</starPrintOrdered>
         <referredToCommittee>1</referredToCommittee>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <orderedReported>1</orderedReported>
       </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-11T10:17:59Z</updateDate>
-    <createDate>2017-01-11T05:09:45Z</createDate>
+    <policyArea>
+      <name>Native Americans</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
+        <party>R</party>
+        <bioguideId>M001153</bioguideId>
+        <identifiers>
+          <bioguideId>M001153</bioguideId>
+          <gpoId>8234</gpoId>
+          <lisID>1694</lisID>
+        </identifiers>
+        <lastName>Murkowski</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>Lisa</firstName>
+        <state>AK</state>
+      </item>
+    </sponsors>
     <recordedVotes />
-    <introducedDate>2017-01-10</introducedDate>
-    <congress>115</congress>
-    <committeeReports />
+    <updateDate>2018-08-28T20:22:34Z</updateDate>
+    <billNumber>91</billNumber>
+    <title>Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <actionDate>2017-12-18</actionDate>
+          <text>Became Public Law No: 115-93.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+          <item>
+            <identifiedBy>House</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Indian Employment, Training and Related Services Consolidation Act of 2017</latestTitle>
+        <type>HR</type>
+        <number>228</number>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
     <laws />
+    <cboCostEstimates>
+      <item>
+        <title>S. 91, Indian Employment, Training and Related Services Consolidation Act of 2017</title>
+        <pubDate>2017-03-13T21:01:26Z</pubDate>
+        <url>https://www.cbo.gov/publication/52491</url>
+      </item>
+    </cboCostEstimates>
+    <billType>S</billType>
+    <createDate>2017-01-11T05:09:45Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Indian Employment, Training and Related Services Consolidation Act of 2017</b></p> <p> This bill amends the Indian Employment, Training and Related Services Demonstration Act of 1992 to revise the program that provides for the integration of employment, training, and related services programs for Indian tribes. The Act is renamed the Indian Employment, Training and Related Services Act of 1992.</p> <p>The bill revises the types of programs that may be integrated. <p> The bill revises the process for: (1) federal agencies to grant or deny a tribe's request to waive statutory, regulatory, or administrative requirements to efficiently implement an integration plan, and (2) the Department of the Interior to approve or disapprove an integration plan. A tribe is granted certain hearing and appeal rights if Interior disapproves its plan. </p> <p> Tribal authority to use funds to place participants in training positions with employers is revised. </p> <p> The Bureau of Indian Affairs must receive and distribute funds for use in accordance with an approved integration plan. </p> <p>Funds transferred to a tribe must be treated as non-federal funds for purposes of meeting matching requirements, except funds administered by the Department of Labor or the Department of Health and Human Services. <p>Civil liability limitations apply to integration plans.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-28T21:27:14Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-10</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Indian Employment, Training and Related Services Consolidation Act of 2017</b></p> <p> (Sec. 2) This bill amends the Indian Employment, Training and Related Services Demonstration Act of 1992 to rename the Act to the Indian Employment, Training and Related Services Act of 1992 and to revise the program that provides for the integration of employment, training, and related services programs for Indian tribes.</p> <p>(Sec. 6) The bill revises the types of programs that may be integrated. <p> (Sec. 8) The bill revises the process for: (1) federal agencies to grant or deny a tribe's request to waive statutory, regulatory, or administrative requirements to efficiently implement an integration plan; and (2) the Department of the Interior to approve or disapprove an integration plan. A tribe is granted certain hearing and appeal rights if Interior disapproves its plan. </p> <p> (Sec. 10) Tribal authority to use funds to place participants in training positions with employers is revised. </p> <p> (Sec. 13) The Bureau of Indian Affairs must receive and distribute funds for use in accordance with an approved integration plan. </p> <p>(Sec. 14) Funds transferred to a tribe must be treated as non-federal funds for purposes of meeting matching requirements, except funds administered by the Department of Labor or the Department of Health and Human Services. <p>Civil liability limitations apply to approved integration plans.</p>]]></text>
+          <lastSummaryUpdateDate>2017-11-07T19:32:36Z</lastSummaryUpdateDate>
+          <actionDesc>Reported to Senate without amendment</actionDesc>
+          <updateDate>2017-04-06T16:00:32Z</updateDate>
+          <name>Reported to Senate without amendment</name>
+          <versionCode>80</versionCode>
+          <actionDate>2017-04-06</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-26</citation>
+      </committeeReport>
+    </committeeReports>
+    <calendarNumbers>
+      <item>
+        <number>0032</number>
+        <calendar>Senate Calendar of Business</calendar>
+      </item>
+    </calendarNumbers>
     <cosponsors>
       <item>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <party>R</party>
-        <state>AK</state>
+        <bioguideId>S001198</bioguideId>
         <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>S001198</bioguideId>
+        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
         <lastName>Sullivan</lastName>
-        <firstName>Dan</firstName>
+        <state>AK</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
         <identifiers>
-          <gpoId />
           <bioguideId>S001198</bioguideId>
+          <gpoId />
           <lisID>2290</lisID>
         </identifiers>
-        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <firstName>Dan</firstName>
+      </item>
+      <item>
+        <bioguideId>B001230</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Baldwin, Tammy [D-WI]</fullName>
+        <lastName>BALDWIN</lastName>
+        <state>WI</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1558</lisID>
+          <bioguideId>B001230</bioguideId>
+          <gpoId>8215</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-10-05</sponsorshipDate>
+        <firstName>TAMMY</firstName>
+      </item>
+      <item>
+        <bioguideId>T000464</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <lastName>Tester</lastName>
+        <state>MT</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-11-16</sponsorshipDate>
+        <firstName>Jon</firstName>
       </item>
     </cosponsors>
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on Indian Affairs.</text>
-      <actionDate>2017-01-10</actionDate>
-    </latestAction>
-    <policyArea />
-    <relatedBills />
+    <introducedDate>2017-01-10</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Native Americans</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative remedies</name>
+          </item>
+          <item>
+            <name>Civil actions and liability</name>
+          </item>
+          <item>
+            <name>Department of the Interior</name>
+          </item>
+          <item>
+            <name>Economic development</name>
+          </item>
+          <item>
+            <name>Employment and training programs</name>
+          </item>
+          <item>
+            <name>Evidence and witnesses</name>
+          </item>
+          <item>
+            <name>Federal-Indian relations</name>
+          </item>
+          <item>
+            <name>Indian claims</name>
+          </item>
+          <item>
+            <name>Indian social and development programs</name>
+          </item>
+          <item>
+            <name>Minority employment</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
   </bill>

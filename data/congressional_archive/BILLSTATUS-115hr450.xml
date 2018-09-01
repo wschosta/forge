@@ -1,109 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>450</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea />
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T09:58:06Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <systemCode>hsas00</systemCode>
-          <name>Armed Services Committee</name>
-        </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Armed Services.</text>
-        <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
     <committeeReports />
+    <updateDate>2018-08-28T19:59:17Z</updateDate>
+    <laws />
+    <billType>HR</billType>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+          <item>
+            <name>Religion</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
-      <item>
-        <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
-    <introducedDate>2017-01-11</introducedDate>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>House</originChamber>
     <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <text>Referred to the House Committee on Armed Services.</text>
+      <text>Referred to the Subcommittee on Military Personnel.</text>
       <links />
+      <actionDate>2017-02-21</actionDate>
     </latestAction>
-    <createDate>2017-01-12T04:45:49Z</createDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. JONES:H.R. 450.Congress has the power to enactthis legislation pursuantto the following:Article 1, Section 8 of the United States Constitution(clauses 12, 13, 14, and16), which grats Congress the powerto raise and support an Army; to provide and maintain a Navy;to to make rules for thegovernment and regulation of the landand naval forces; and to provide for organizing, arming, anddisciplining themilitia.[Page H392]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>450</billNumber>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsas00</systemCode>
+          <type>Standing</type>
           <name>Armed Services Committee</name>
-          <subcommittees />
+          <systemCode>hsas00</systemCode>
           <chamber>House</chamber>
           <activities>
             <item>
@@ -111,28 +45,162 @@
               <date>2017-01-11T15:03:00Z</date>
             </item>
           </activities>
-          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <name>Military Personnel Subcommittee</name>
+              <systemCode>hsas02</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-21T19:09:12Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
+    <introducedDate>2017-01-11</introducedDate>
+    <cosponsors>
       <item>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <firstName>WALTER</firstName>
-        <bioguideId>J000255</bioguideId>
-        <party>R</party>
-        <middleName>B.</middleName>
-        <byRequestType />
+        <firstName>Jeff</firstName>
+        <lastName>Duncan</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-11</sponsorshipDate>
+        <bioguideId>D000615</bioguideId>
         <district>3</district>
-        <state>NC</state>
-        <lastName>JONES</lastName>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
+        <state>SC</state>
+        <party>R</party>
         <identifiers>
-          <bioguideId>J000255</bioguideId>
-          <gpoId>8026</gpoId>
-          <lisID>612</lisID>
+          <bioguideId>D000615</bioguideId>
+          <lisID>2057</lisID>
+          <gpoId>8143</gpoId>
         </identifiers>
       </item>
+    </cosponsors>
+    <notes />
+    <relatedBills />
+    <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
+    <sponsors>
+      <item>
+        <district>3</district>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <firstName>WALTER</firstName>
+        <lastName>JONES</lastName>
+        <state>NC</state>
+        <bioguideId>J000255</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <lisID>612</lisID>
+          <bioguideId>J000255</bioguideId>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <byRequestType />
+        <middleName>B.</middleName>
+      </item>
     </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend title 10, United States Code, to ensure that every military chaplain has the prerogative to close a prayer outside of a religious service according to the dictates of the chaplain's own conscience.</title>
+      </item>
+    </titles>
+    <createDate>2017-01-12T04:45:49Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-02-21</actionDate>
+        <committee>
+          <systemCode>hsas02</systemCode>
+          <name>Military Personnel Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Military Personnel.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <links />
+        <text>Referred to the House Committee on Armed Services.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-11</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-06-07T19:18:12Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>This bill authorizes a military chaplain to close a prayer according to the dictates of the chaplain's conscience if called upon to lead a prayer outside of a religious service or during a chaplain-led program to assist members of the Armed Forces on active duty, members of reserve components in an active status, and their immediate family members in building and maintaining a strong family structure.</p>]]></text>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

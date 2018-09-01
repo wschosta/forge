@@ -1,121 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Education</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-10</actionDate>
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+    </latestAction>
+    <createDate>2017-01-11T05:09:43Z</createDate>
+    <notes />
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <item>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
         <committee>
           <systemCode>hsed00</systemCode>
           <name>Education and the Workforce Committee</name>
         </committee>
-        <links />
         <actionDate>2017-01-10</actionDate>
         <actionCode>H11100</actionCode>
       </item>
       <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
         <committee />
-        <links />
         <actionDate>2017-01-10</actionDate>
         <actionCode>Intro-H</actionCode>
       </item>
       <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
         <committee />
-        <links />
         <actionDate>2017-01-10</actionDate>
         <actionCode>1000</actionCode>
       </item>
       <actionTypeCounts>
-        <billReferrals>1</billReferrals>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <amendments />
-    <updateDate>2017-01-11T10:17:53Z</updateDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To amend the Elementary and Secondary Education Act of 1965 to strengthen accountability of authorized public chartering agencies and reduce charter school authorizing misconduct.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To amend the Elementary and Secondary Education Act of 1965 to strengthen accountability of authorized public chartering agencies and reduce charter school authorizing misconduct.</title>
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-10</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>L.</middleName>
-        <firstName>Brenda</firstName>
-        <bioguideId>L000581</bioguideId>
-        <district>14</district>
-        <byRequestType />
-        <state>MI</state>
-        <identifiers>
-          <gpoId />
-          <bioguideId>L000581</bioguideId>
-          <lisID>2252</lisID>
-        </identifiers>
-        <party>D</party>
-        <lastName>Lawrence</lastName>
-        <fullName>Rep. Lawrence, Brenda L. [D-MI-14]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-10</actionDate>
-      <links />
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-    </latestAction>
     <congress>115</congress>
-    <cosponsors />
-    <relatedBills />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Education</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Academic performance and assessments</name>
+          </item>
+          <item>
+            <name>Education programs funding</name>
+          </item>
+          <item>
+            <name>Elementary and secondary education</name>
+          </item>
+          <item>
+            <name>School administration</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>To amend the Elementary and Secondary Education Act of 1965 to strengthen accountability of authorized public chartering agencies and reduce charter school authorizing misconduct.</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <billNumber>416</billNumber>
+    <title>Raising Accountability to Improve School Excellence Act</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 6 (Tuesday, January 10, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mrs. LAWRENCE:H.R. 416.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, clause 3--The Congress shall havePower To  . .  regulate Commerce with foreign nations, andamong the several States, and with Indian Tribes;[Page H300]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
           <chamber>House</chamber>
+          <systemCode>hsed00</systemCode>
+          <subcommittees />
           <type>Standing</type>
           <name>Education and the Workforce Committee</name>
           <activities>
@@ -124,15 +101,81 @@
               <date>2017-01-10T15:02:30Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsed00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-11T05:09:43Z</createDate>
-    <billType>HR</billType>
-    <billNumber>416</billNumber>
-    <policyArea />
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:59:06Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-10</introducedDate>
+    <sponsors>
+      <item>
+        <middleName>L.</middleName>
+        <bioguideId>L000581</bioguideId>
+        <identifiers>
+          <gpoId />
+          <lisID>2252</lisID>
+          <bioguideId>L000581</bioguideId>
+        </identifiers>
+        <fullName>Rep. Lawrence, Brenda L. [D-MI-14]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>Brenda</firstName>
+        <state>MI</state>
+        <lastName>Lawrence</lastName>
+        <district>14</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Raising Accountability to Improve School Excellence Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend the Elementary and Secondary Education Act of 1965 to strengthen accountability of authorized public chartering agencies and reduce charter school authorizing misconduct.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Raising Accountability to Improve School Excellence Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Raising Accountability to Improve School Excellence Act</title>
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-01-26T15:15:17Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Raising Accountability to Improve School Excellence Act</strong></p> <p>This bill amends the Elementary and Secondary Education Act of 1965 to: (1)&nbsp;require a charter school grant application to include additional information and assurances related to oversight&nbsp;of&nbsp;authorizing activity by a public chartering agency; and (2) expand grant selection criteria and priorities to include consideration of the number of times a state entity has applied for, and been denied, such a grant.</p>]]></text>
+          <actionDate>2017-01-10</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,88 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-17T23:01:19Z</updateDate>
-    <relatedBills />
     <policyArea>
       <name>Housing and Community Development</name>
     </policyArea>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <committeeReports />
-    <sponsors>
-      <item>
-        <bioguideId>G000553</bioguideId>
-        <middleName />
-        <party>D</party>
-        <firstName>Al</firstName>
-        <lastName>Green</lastName>
-        <district>9</district>
-        <fullName>Rep. Green, Al [D-TX-9]</fullName>
-        <identifiers>
-          <lisID>1803</lisID>
-          <bioguideId>G000553</bioguideId>
-          <gpoId>8165</gpoId>
-        </identifiers>
-        <state>TX</state>
-        <byRequestType />
-      </item>
-    </sponsors>
+    <billType>HR</billType>
     <latestAction>
+      <links />
       <actionDate>2017-01-03</actionDate>
       <text>Referred to the House Committee on Financial Services.</text>
-      <links />
     </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>HR</billType>
-    <constitutionalAuthorityStatementText />
     <createDate>2017-01-04T07:01:11Z</createDate>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>FHA In-Person Servicing Improvement Act of 2017</title>
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To authorize a pilot program to improve asset recovery levels, asset management, and homeownership retention with respect to delinquent single-family mortgages insured under the FHA mortgage insurance programs by providing for in-person contact outreach activities with mortgagors under such mortgages, and for other purposes.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>FHA In-Person Servicing Improvement Act of 2017</title>
-      </item>
-    </titles>
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <name>Financial Services Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:01:40Z</date>
-            </item>
-          </activities>
-          <systemCode>hsba00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <cosponsors />
     <notes />
-    <amendments />
     <actions>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
@@ -90,54 +19,52 @@
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
       <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsba00</systemCode>
+          <name>Financial Services Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Financial Services.</text>
         <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Financial Services.</text>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Financial Services Committee</name>
-          <systemCode>hsba00</systemCode>
-        </committee>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <actionCode>Intro-H</actionCode>
         <committee />
-      </item>
-      <item>
+        <text>Introduced in House</text>
         <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>1000</actionCode>
         <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
     </actions>
+    <calendarNumbers />
     <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Housing and Community Development</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Government lending and loan guarantees</name>
@@ -146,12 +73,140 @@
             <name>Housing finance and home ownership</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Housing and Community Development</name>
+        </policyArea>
       </billSubjects>
     </subjects>
     <billNumber>125</billNumber>
-    <recordedVotes />
     <title>FHA In-Person Servicing Improvement Act of 2017</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. AL GREEN of Texas:H.R. 125.Congress has the power to enact this legislation pursuantto the following:Necessary and Proper Clause (Art. 1, Sec. 8, Cl. 18)[Page H50]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:01:40Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsba00</systemCode>
+          <name>Financial Services Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
+      <item>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>729</lisID>
+          <bioguideId>M000087</bioguideId>
+          <gpoId>8075</gpoId>
+        </identifiers>
+        <firstName>CAROLYN</firstName>
+        <state>NY</state>
+        <bioguideId>M000087</bioguideId>
+        <district>12</district>
+        <fullName>Rep. Maloney, Carolyn B. [D-NY-12]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>MALONEY</lastName>
+        <sponsorshipDate>2017-02-01</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>HOLMES</middleName>
+        <identifiers>
+          <lisID>868</lisID>
+          <gpoId>7871</gpoId>
+          <bioguideId>N000147</bioguideId>
+        </identifiers>
+        <firstName>ELEANOR</firstName>
+        <state>DC</state>
+        <bioguideId>N000147</bioguideId>
+        <district>0</district>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>NORTON</lastName>
+        <sponsorshipDate>2017-07-28</sponsorshipDate>
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T23:10:42Z</updateDate>
     <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>G000553</bioguideId>
+        <identifiers>
+          <gpoId>8165</gpoId>
+          <lisID>1803</lisID>
+          <bioguideId>G000553</bioguideId>
+        </identifiers>
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>Al</firstName>
+        <state>TX</state>
+        <lastName>Green</lastName>
+        <district>9</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>FHA In-Person Servicing Improvement Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To authorize a pilot program to improve asset recovery levels, asset management, and homeownership retention with respect to delinquent single-family mortgages insured under the FHA mortgage insurance programs by providing for in-person contact outreach activities with mortgagors under such mortgages, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>FHA In-Person Servicing Improvement Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>FHA In-Person Servicing Improvement Act of 2017</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-27T14:49:38Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>FHA In-Person Servicing Improvement Act of</b> <b>2017</b></p> <p> This bill directs the Department of Housing and Urban Development (HUD) to carry out a pilot program to use authority under the National Housing Act to pay insurance benefits to compensate a mortgagee for any costs of taking loss mitigation actions providing an alternative to foreclosure of a mortgage in default or facing imminent default.</p> <p>HUD must make payments to a qualified entity or entities to compensate for their costs of making in-person contact with mortgagors whose payments under covered mortgages are more than 60 days past due.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

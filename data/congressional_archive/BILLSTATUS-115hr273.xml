@@ -1,69 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-04</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-05T04:47:33Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <actionDate>2017-01-04</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-04</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-04</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>273</billNumber>
     <amendments />
+    <latestAction>
+      <actionDate>2017-01-04</actionDate>
+      <text>Referred to the House Committee on Ways and Means.</text>
+      <links />
+    </latestAction>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Taxation</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Income tax credits</name>
@@ -75,94 +21,175 @@
             <name>Women's health</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
       </billSubjects>
     </subjects>
+    <laws />
+    <notes />
+    <billType>HR</billType>
     <sponsors>
       <item>
-        <party>D</party>
-        <state>GA</state>
+        <lastName>LEWIS</lastName>
         <middleName />
         <bioguideId>L000287</bioguideId>
-        <lastName>LEWIS</lastName>
-        <firstName>JOHN</firstName>
+        <fullName>Rep. Lewis, John [D-GA-5]</fullName>
         <identifiers>
           <lisID>688</lisID>
           <gpoId>7902</gpoId>
           <bioguideId>L000287</bioguideId>
         </identifiers>
-        <fullName>Rep. Lewis, John [D-GA-5]</fullName>
-        <district>5</district>
         <byRequestType />
+        <state>GA</state>
+        <firstName>JOHN</firstName>
+        <party>D</party>
+        <district>5</district>
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDate>2017-01-04</actionDate>
-          <name>Introduced in House</name>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-04T05:00:00Z</updateDate>
-          <text><![CDATA[<p><b>Family Act of 201</b><b>7</b></p> <p>This bill amends the Internal Revenue Code to allow a tax credit for 50% of an individual's qualified infertility treatment expenses, subject to specified limits based on dollar amounts and the taxpayer's adjusted gross income. Qualified infertility treatment expenses are amounts paid for the treatment of infertility via in vitro fertilization if such treatment is provided by a licensed physician, surgeon, or other medical practitioner and is administered with respect to a diagnosis of infertility by a physician licensed in the United States. </p>]]></text>
-          <lastSummaryUpdateDate>2017-01-13T14:46:35Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>Family Act of 2017</title>
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-04</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-04</introducedDate>
+    <relatedBills />
+    <cosponsors>
+      <item>
+        <bioguideId>L000397</bioguideId>
+        <party>D</party>
+        <firstName>ZOE</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>L000397</bioguideId>
+          <lisID>701</lisID>
+          <gpoId>7821</gpoId>
+        </identifiers>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <district>19</district>
+        <lastName>LOFGREN</lastName>
+        <sponsorshipDate>2017-10-06</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-          <type>Standing</type>
           <activities>
             <item>
-              <date>2017-01-04T15:02:45Z</date>
               <name>Referred to</name>
+              <date>2017-01-04T15:02:45Z</date>
             </item>
           </activities>
           <chamber>House</chamber>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
+    <updateDate>2018-08-28T19:58:37Z</updateDate>
+    <version>1.0.0</version>
+    <title>Family Act of 2017</title>
+    <createDate>2017-01-05T04:47:33Z</createDate>
+    <billNumber>273</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LEWIS of Georgia:H.R. 273.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I of the United States Constitutionand its subsequent amendments, and further clarified andinterpreted by the Supreme Court of the United States.[Page H97]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
     <calendarNumbers />
-    <updateDate>2017-01-13T15:01:32Z</updateDate>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Family Act of 201</b><b>7</b></p> <p>This bill amends the Internal Revenue Code to allow a tax credit for 50% of an individual's qualified infertility treatment expenses, subject to specified limits based on dollar amounts and the taxpayer's adjusted gross income. Qualified infertility treatment expenses are amounts paid for the treatment of infertility via in vitro fertilization if such treatment is provided by a licensed physician, surgeon, or other medical practitioner and is administered with respect to a diagnosis of infertility by a physician licensed in the United States. </p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-13T14:46:35Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <actionDate>2017-01-04</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
     <titles>
       <item>
-        <chamberCode />
-        <title>Family Act of 2017</title>
+        <chamberName />
         <parentTitleType />
         <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
+        <title>Family Act of 2017</title>
+        <chamberCode />
       </item>
       <item>
-        <chamberCode />
-        <title>To amend the Internal Revenue Code of 1986 to provide an income tax credit for the costs of certain infertility treatments.</title>
+        <chamberName />
         <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
-        <chamberName />
+        <title>To amend the Internal Revenue Code of 1986 to provide an income tax credit for the costs of certain infertility treatments.</title>
+        <chamberCode />
       </item>
       <item>
-        <chamberCode />
-        <title>Family Act of 2017</title>
+        <chamberName />
         <parentTitleType />
         <titleType>Display Title</titleType>
+        <title>Family Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
         <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Family Act of 2017</title>
+        <chamberCode />
       </item>
     </titles>
   </bill>

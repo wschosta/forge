@@ -1,101 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>57</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Crime and Law Enforcement</name>
-    </policyArea>
-    <amendments />
     <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries>
+    <title>Accidental Firearms Transfers Reporting Act of 2017</title>
+    <committees>
+      <billCommittees>
         <item>
-          <actionDate>2017-01-03</actionDate>
-          <name>Introduced in House</name>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <text><![CDATA[<p><b>Accidental Firearms Transfers Reporting Act of </b><b>2017</b></p> <p>This bill requires the Federal Bureau of Investigation (FBI) to submit a biannual report to Congress on the number of proposed firearm transfers where: (1) a licensed gun dealer submitted a background check through the National Instant Criminal History Background Check System (NICS), (2) NICS failed to respond to the licensed gun dealer within three business days, and (3) the licensed gun dealer completed the transfer.</p> <p>The FBI must also report on the procedures followed once the transferee is discovered to be ineligible. </p> <p><br /> </p>]]></text>
-          <lastSummaryUpdateDate>2017-01-11T20:21:15Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
+          <systemCode>hsju00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-03T17:22:15Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju08</systemCode>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-12T15:58:30Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
         </item>
-      </billSummaries>
-    </summaries>
-    <updateDate>2017-01-14T09:58:15Z</updateDate>
-    <originChamber>House</originChamber>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:57:46Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
           <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
         <type>Committee</type>
       </item>
       <item>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <actionDate>2017-01-03</actionDate>
         <text>Referred to the House Committee on the Judiciary.</text>
         <links />
-        <actionCode>H11100</actionCode>
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <committee />
-        <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
       </item>
       <item>
-        <committee />
-        <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
         <links />
-        <actionCode>1000</actionCode>
         <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
       </item>
       <actionTypeCounts>
         <billReferrals>1</billReferrals>
         <introducedInTheHouse>1</introducedInTheHouse>
-        <placeholderTextForH>1</placeholderTextForH>
         <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
       </actionTypeCounts>
       <actionByCounts>
         <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <committeeReports />
+    <sponsors>
+      <item>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <identifiers>
+          <lisID>588</lisID>
+          <bioguideId>J000032</bioguideId>
+          <gpoId>8174</gpoId>
+        </identifiers>
+        <bioguideId>J000032</bioguideId>
+        <lastName>JACKSON LEE</lastName>
+        <firstName>SHEILA</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>TX</state>
+        <district>18</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JACKSON LEE:H.R. 57.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8, Clauses 3 and 18 of theUnited States Constitution.[Page H48]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>57</billNumber>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Accidental Firearms Transfers Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require the Director of the Federal Bureau of Investigation to report to the Congress semiannually on the number of firearms transfers resulting from the failure to complete a background check within 3 business days, and the procedures followed after it is discovered that a firearm transfer has been made to a transferee who is ineligible to receive a firearm.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Accidental Firearms Transfers Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Accidental Firearms Transfers Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional oversight</name>
@@ -107,90 +174,140 @@
             <name>Firearms and explosives</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Crime and Law Enforcement</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
+    <cosponsors>
       <item>
-        <chamberCode />
-        <title>Accidental Firearms Transfers Reporting Act of 2017</title>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
+        <lastName>Cohen</lastName>
+        <state>TN</state>
+        <firstName>Steve</firstName>
+        <sponsorshipDate>2017-10-02</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <identifiers>
+          <bioguideId>C001068</bioguideId>
+          <lisID>1878</lisID>
+          <gpoId>8156</gpoId>
+        </identifiers>
+        <bioguideId>C001068</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <chamberCode />
-        <title>To require the Director of the Federal Bureau of Investigation to report to the Congress semiannually on the number of firearms transfers resulting from the failure to complete a background check within 3 business days, and the procedures followed after it is discovered that a firearm transfer has been made to a transferee who is ineligible to receive a firearm.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
+        <lastName>Soto</lastName>
+        <state>FL</state>
+        <firstName>Darren</firstName>
+        <sponsorshipDate>2018-03-05</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Soto, Darren [D-FL-9]</fullName>
+        <identifiers>
+          <lisID>2319</lisID>
+          <bioguideId>S001200</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>S001200</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <chamberCode />
-        <title>Accidental Firearms Transfers Reporting Act of 2017</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
+        <lastName>Green</lastName>
+        <state>TX</state>
+        <firstName>Al</firstName>
+        <sponsorshipDate>2018-03-05</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <identifiers>
+          <gpoId>8165</gpoId>
+          <lisID>1803</lisID>
+          <bioguideId>G000553</bioguideId>
+        </identifiers>
+        <bioguideId>G000553</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>Accidental Firearms Transfers Reporting Act of 2017</title>
+      <item>
+        <lastName>Cicilline</lastName>
+        <state>RI</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2018-05-01</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Cicilline, David N. [D-RI-1]</fullName>
+        <identifiers>
+          <gpoId>8139</gpoId>
+          <lisID>2055</lisID>
+          <bioguideId>C001084</bioguideId>
+        </identifiers>
+        <bioguideId>C001084</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>N.</middleName>
+      </item>
+      <item>
+        <lastName>HASTINGS</lastName>
+        <state>FL</state>
+        <firstName>ALCEE</firstName>
+        <sponsorshipDate>2018-06-05</sponsorshipDate>
+        <district>20</district>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <identifiers>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <bioguideId>H000324</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <lastName>NORTON</lastName>
+        <state>DC</state>
+        <firstName>ELEANOR</firstName>
+        <sponsorshipDate>2018-06-26</sponsorshipDate>
+        <district>0</district>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <identifiers>
+          <lisID>868</lisID>
+          <bioguideId>N000147</bioguideId>
+          <gpoId>7871</gpoId>
+        </identifiers>
+        <bioguideId>N000147</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>HOLMES</middleName>
+      </item>
+    </cosponsors>
     <introducedDate>2017-01-03</introducedDate>
+    <calendarNumbers />
     <latestAction>
       <actionDate>2017-01-12</actionDate>
-      <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
       <links />
+      <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
     </latestAction>
-    <createDate>2017-01-04T07:01:09Z</createDate>
-    <committees>
-      <billCommittees>
+    <amendments />
+    <summaries>
+      <billSummaries>
         <item>
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <date>2017-01-03T17:22:15Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <date>2017-01-12T15:58:30Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
-              <systemCode>hsju08</systemCode>
-              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
-            </item>
-          </subcommittees>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
+          <lastSummaryUpdateDate>2017-01-11T20:21:15Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-03</actionDate>
+          <text><![CDATA[<p><b>Accidental Firearms Transfers Reporting Act of </b><b>2017</b></p> <p>This bill requires the Federal Bureau of Investigation (FBI) to submit a biannual report to Congress on the number of proposed firearm transfers where: (1) a licensed gun dealer submitted a background check through the National Instant Criminal History Background Check System (NICS), (2) NICS failed to respond to the licensed gun dealer within three business days, and (3) the licensed gun dealer completed the transfer.</p> <p>The FBI must also report on the procedures followed once the transferee is discovered to be ineligible. </p> <p><br /> </p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
         </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
-        <firstName>SHEILA</firstName>
-        <bioguideId>J000032</bioguideId>
-        <party>D</party>
-        <middleName />
-        <byRequestType />
-        <district>18</district>
-        <state>TX</state>
-        <lastName>JACKSON LEE</lastName>
-        <identifiers>
-          <gpoId>8174</gpoId>
-          <bioguideId>J000032</bioguideId>
-          <lisID>588</lisID>
-        </identifiers>
-      </item>
-    </sponsors>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:09Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,47 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <congress>115</congress>
-    <introducedDate>2017-01-03</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:27:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr09</systemCode>
+              <name>Disability Assistance and Memorial Affairs Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-19T20:11:19Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:27:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hspw00</systemCode>
+          <name>Transportation and Infrastructure Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hspw14</systemCode>
+              <name>Railroads, Pipelines, and Hazardous Materials Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-04T21:26:16Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:27:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
     <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-26T19:57:21Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Social Security Safety Dividend Act of 2017</b></p> <p>This bill directs the Department of the Treasury to disburse a $250 cash payment to recipients of Social Security benefits, Supplemental Security Income benefits (under title XVI of the Social Security Act), railroad retirement benefits, or veterans disability compensation or pension benefits if no cost-of-living adjustment is payable for the year. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
     <titles>
       <item>
+        <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
         <chamberName />
         <title>Social Security Safety Dividend Act of 2017</title>
         <parentTitleType />
-        <chamberCode />
       </item>
       <item>
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <chamberName />
         <title>To ensure that seniors, veterans, and people with disabilities who receive Social Security and certain other Federal benefits receive a $250 payment in the event that no cost-of-living adjustment is payable in a calendar year.</title>
         <parentTitleType />
-        <chamberCode />
       </item>
       <item>
+        <chamberCode />
         <titleType>Display Title</titleType>
         <chamberName />
         <title>Social Security Safety Dividend Act of 2017</title>
         <parentTitleType />
+      </item>
+      <item>
         <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Social Security Safety Dividend Act of 2017</title>
+        <parentTitleType />
       </item>
     </titles>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Disability Assistance and Memorial Affairs.</text>
+      <links />
+      <actionDate>2017-01-19</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:57:48Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JACKSON LEE:H.R. 67.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8, Clauses 1 and 18 of theUnited States Constitution.[Page H48]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Social Welfare</name>
     </policyArea>
+    <billType>HR</billType>
+    <billNumber>67</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Social Security Safety Dividend Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr09</systemCode>
+          <name>Disability Assistance and Memorial Affairs Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Disability Assistance and Memorial Affairs.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-04</actionDate>
+        <committee>
+          <systemCode>hspw14</systemCode>
+          <name>Railroads, Pipelines, and Hazardous Materials Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Railroads, Pipelines, and Hazardous Materials.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Transportation and Infrastructure, and Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Transportation and Infrastructure, and Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hspw00</systemCode>
+          <name>Transportation and Infrastructure Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Transportation and Infrastructure, and Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Transportation and Infrastructure, and Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>8</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>3</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>2</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Social Welfare</name>
+        </policyArea>
         <legislativeSubjects>
-          <item>
-            <name>Disability assistance</name>
-          </item>
           <item>
             <name>Employee benefits and pensions</name>
           </item>
@@ -64,181 +280,31 @@
             <name>Veterans' pensions and compensation</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Social Welfare</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>3</billReferrals>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <name>Veterans' Affairs Committee</name>
-          <systemCode>hsvr00</systemCode>
-        </committee>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Veterans' Affairs</text>
-      </item>
-      <item>
-        <committee>
-          <name>Transportation and Infrastructure Committee</name>
-          <systemCode>hspw00</systemCode>
-        </committee>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Transportation and Infrastructure</text>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>H11100-A</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Transportation and Infrastructure, and Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-      </item>
-      <item>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Ways and Means</text>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <committee />
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-      </item>
-    </actions>
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <name>Veterans' Affairs Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:27:35Z</date>
-            </item>
-          </activities>
-          <systemCode>hsvr00</systemCode>
-        </item>
-        <item>
-          <type>Standing</type>
-          <name>Transportation and Infrastructure Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:27:30Z</date>
-            </item>
-          </activities>
-          <systemCode>hspw00</systemCode>
-        </item>
-        <item>
-          <type>Standing</type>
-          <name>Ways and Means Committee</name>
-          <chamber>House</chamber>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:27:25Z</date>
-            </item>
-          </activities>
-          <systemCode>hswm00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>67</billNumber>
-    <updateDate>2017-01-17T18:31:11Z</updateDate>
-    <title>Social Security Safety Dividend Act of 2017</title>
-    <billType>HR</billType>
-    <laws />
-    <originChamber>House</originChamber>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to House Veterans' Affairs</text>
-      <links />
-    </latestAction>
     <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <middleName />
-        <state>TX</state>
         <bioguideId>J000032</bioguideId>
+        <middleName />
+        <byRequestType />
         <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <lastName>JACKSON LEE</lastName>
+        <state>TX</state>
+        <district>18</district>
+        <party>D</party>
         <identifiers>
-          <bioguideId>J000032</bioguideId>
           <lisID>588</lisID>
+          <bioguideId>J000032</bioguideId>
           <gpoId>8174</gpoId>
         </identifiers>
-        <lastName>JACKSON LEE</lastName>
-        <byRequestType />
         <firstName>SHEILA</firstName>
-        <party>D</party>
-        <district>18</district>
       </item>
     </sponsors>
-    <cosponsors />
-    <createDate>2017-01-04T07:01:10Z</createDate>
-    <calendarNumbers />
     <notes />
+    <createDate>2017-01-04T07:01:10Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

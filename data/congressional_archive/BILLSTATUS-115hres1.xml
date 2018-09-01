@@ -1,29 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>Cathy</firstName>
-        <bioguideId>M001159</bioguideId>
-        <fullName>Rep. McMorris Rodgers, Cathy [R-WA-5]</fullName>
-        <lastName>McMorris Rodgers</lastName>
-        <byRequestType />
-        <identifiers>
-          <gpoId>8209</gpoId>
-          <lisID>1809</lisID>
-          <bioguideId>M001159</bioguideId>
-        </identifiers>
-        <district>5</district>
-        <state>WA</state>
-        <party>R</party>
-      </item>
-    </sponsors>
+    <notes />
+    <title>Electing officers of the House of Representatives.</title>
     <committees>
       <billCommittees />
     </committees>
-    <notes />
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:53:40Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <considerationByHouse>1</considerationByHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H38310</actionCode>
+        <committee />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:34:00</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H37100</actionCode>
+        <committee />
+        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H6)</text>
+        <links>
+          <link>
+            <name>H6</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:33:52</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>8000</actionCode>
+        <committee />
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H6)</text>
+        <links>
+          <link>
+            <name>H6</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <actionTime>14:33:52</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H30000</actionCode>
+        <committee />
+        <text>Considered as privileged matter. (consideration: CR H6)</text>
+        <links>
+          <link>
+            <name>H6</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:31:15</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. McMorris Rodgers, Cathy [R-WA-5]</fullName>
+        <identifiers>
+          <lisID>1809</lisID>
+          <bioguideId>M001159</bioguideId>
+          <gpoId>8209</gpoId>
+        </identifiers>
+        <bioguideId>M001159</bioguideId>
+        <lastName>McMorris Rodgers</lastName>
+        <firstName>Cathy</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>WA</state>
+        <district>5</district>
+      </item>
+    </sponsors>
+    <billType>HRES</billType>
+    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <recordedVotes />
     <billNumber>1</billNumber>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>Electing officers of the House of Representatives.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Electing officers of the House of Representatives.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -39,248 +174,72 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <congress>115</congress>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <cosponsors />
     <introducedDate>2017-01-03</introducedDate>
     <calendarNumbers />
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <billType>HRES</billType>
-    <cosponsors />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>Electing officers of the House of Representatives.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>Electing officers of the House of Representatives.</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills />
-    <title>Electing officers of the House of Representatives.</title>
     <latestAction>
-      <actionTime>14:34:00</actionTime>
+      <links />
       <actionDate>2017-01-03</actionDate>
       <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-      <links />
+      <actionTime>14:34:00</actionTime>
     </latestAction>
-    <createDate>2017-01-04T07:01:07Z</createDate>
-    <laws />
-    <recordedVotes />
-    <actions>
-      <actionTypeCounts>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <considerationByHouse>1</considerationByHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links />
-        <committee />
-        <actionCode>H38310</actionCode>
-        <actionTime>14:34:00</actionTime>
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <type>Floor</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
-          </link>
-        </links>
-        <committee />
-        <actionCode>H37100</actionCode>
-        <actionTime>14:33:52</actionTime>
-        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H6)</text>
-        <type>Floor</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
-          </link>
-        </links>
-        <committee />
-        <actionCode>8000</actionCode>
-        <actionTime>14:33:52</actionTime>
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H6)</text>
-        <type>Floor</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links>
-          <link>
-            <name>H6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
-          </link>
-        </links>
-        <committee />
-        <actionCode>H30000</actionCode>
-        <actionTime>14:31:15</actionTime>
-        <text>Considered as privileged matter. (consideration: CR H6)</text>
-        <type>Floor</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-    </actions>
-    <originChamber>House</originChamber>
     <amendments>
       <amendment>
-        <type>HAMDT</type>
-        <congress>115</congress>
-        <latestAction>
-          <actionDate>2017-01-03</actionDate>
-          <text>On agreeing to the Crowley amendment Failed by voice vote.</text>
-          <actionTime>14:33:33</actionTime>
-        </latestAction>
-        <description>That Robert D. Edmonson of the District of Columbia be, and is hereby, chosen Clerk of the House of Representatives; ***.</description>
-        <purpose>An amendment to nominate Democrat candidates for Officers of the House.</purpose>
-        <number>1</number>
-        <purpose>An amendment to nominate Democrat candidates for Officers of the House.</purpose>
-        <description>That Robert D. Edmonson of the District of Columbia be, and is hereby, chosen Clerk of the House of Representatives; ***.</description>
         <titles />
-        <chamber>House of Representatives</chamber>
-        <proposedDate />
+        <notes />
+        <description>That Robert D. Edmonson of the District of Columbia be, and is hereby, chosen Clerk of the House of Representatives; ***.</description>
         <submittedDate>2017-01-03T05:00:00Z</submittedDate>
+        <purpose>An amendment to nominate Democrat candidates for Officers of the House.</purpose>
         <cosponsors>
           <totalCount>0</totalCount>
           <currentCount>0</currentCount>
         </cosponsors>
-        <notes />
-        <amendedAmendment />
-        <amendedBill>
-          <originChamber>House</originChamber>
-          <originChamberCode>H</originChamberCode>
-          <congress>115</congress>
-          <type>HRES</type>
-          <title>Electing officers of the House of Representatives.</title>
-          <number>1</number>
-        </amendedBill>
-        <congress>115</congress>
-        <updateDate>2017-01-06T18:01:14Z</updateDate>
+        <amendments>
+          <count>0</count>
+        </amendments>
         <createDate>2017-01-04T12:10:10Z</createDate>
-        <type>HAMDT</type>
-        <sponsors>
-          <item>
-            <party>D</party>
-            <firstName>JOSEPH</firstName>
-            <middleName />
-            <lastName>CROWLEY</lastName>
-            <state>NY</state>
-            <district>14</district>
-            <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
-            <bioguideId>C001038</bioguideId>
-          </item>
-        </sponsors>
         <actions>
-          <count>3</count>
-          <actionTypeCounts>
-            <agreeingToTheAmendmentResults>1</agreeingToTheAmendmentResults>
-            <amendmentOffered>1</amendmentOffered>
-          </actionTypeCounts>
-          <actionByCounts>
-            <houseOfRepresentatives>2</houseOfRepresentatives>
-          </actionByCounts>
+          <count>7</count>
           <actions>
             <item>
-              <links>
-                <link>
-                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
-                  <name>H.Amdt.1</name>
-                </link>
-              </links>
               <text>On agreeing to the Crowley amendment Failed by voice vote.</text>
               <actionTime>14:33:33</actionTime>
+              <type>Floor</type>
               <committee />
               <sourceSystem>
                 <code>2</code>
                 <name>House floor actions</name>
               </sourceSystem>
-              <type>Floor</type>
-              <actionDate>2017-01-03</actionDate>
-              <actionCode>H34111</actionCode>
-            </item>
-            <item>
               <links>
                 <link>
-                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
                   <name>H.Amdt.1</name>
-                </link>
-                <link>
-                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
-                  <name>H6</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
                 </link>
               </links>
+              <actionCode>H34111</actionCode>
+              <actionDate>2017-01-03</actionDate>
+            </item>
+            <item>
               <text>Amendment (A001) offered by Mr. Crowley. (consideration: CR H6; text: CR H6)</text>
               <actionTime>14:32:38</actionTime>
+              <type>Floor</type>
               <committee />
               <sourceSystem>
                 <code>2</code>
                 <name>House floor actions</name>
               </sourceSystem>
-              <type>Floor</type>
-              <actionDate>2017-01-03</actionDate>
+              <links>
+                <link>
+                  <name>H.Amdt.1</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
+                </link>
+                <link>
+                  <name>H6</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
+                </link>
+              </links>
               <actionCode>H3A100</actionCode>
+              <actionDate>2017-01-03</actionDate>
             </item>
             <item>
               <actionDate>2017-01-03</actionDate>
@@ -288,17 +247,158 @@
               <links />
               <text />
             </item>
+            <item>
+              <text>House amendment offered/reported by : Amendment (A001) offered by Mr. Crowley.(consideration: CR H6; text: CR H6)</text>
+              <actionTime>14:32:38</actionTime>
+              <type>NotUsed</type>
+              <committee />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <links>
+                <link>
+                  <name>H.Amdt.1</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
+                </link>
+                <link>
+                  <name>H6</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H6</url>
+                </link>
+              </links>
+              <actionCode>71500</actionCode>
+              <actionDate>2017-01-03</actionDate>
+            </item>
+            <item>
+              <text>Amendment failed by House: On agreeing to the Crowley amendment Failed by voice vote.</text>
+              <actionTime>14:33:33</actionTime>
+              <type>NotUsed</type>
+              <committee />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <links>
+                <link>
+                  <name>H.Amdt.1</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
+                </link>
+              </links>
+              <actionCode>80000</actionCode>
+              <actionDate>2017-01-03</actionDate>
+            </item>
+            <item>
+              <text>House amendment not agreed to: On agreeing to the Crowley amendment Failed by voice vote.</text>
+              <actionTime>14:33:33</actionTime>
+              <type>Floor</type>
+              <committee />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <links>
+                <link>
+                  <name>H.Amdt.1</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/1</url>
+                </link>
+              </links>
+              <actionCode>73000</actionCode>
+              <actionDate>2017-01-03</actionDate>
+            </item>
+            <item>
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <committee />
+              <actionDate>2017-01-03</actionDate>
+              <links />
+              <actionCode>71000</actionCode>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
           </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <agreeingToTheAmendmentResults>1</agreeingToTheAmendmentResults>
+            <houseAmendmentNotAgreedTo>1</houseAmendmentNotAgreedTo>
+            <amendmentFailedByHouse>1</amendmentFailedByHouse>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+          </actionTypeCounts>
         </actions>
+        <type>HAMDT</type>
         <number>1</number>
-        <amendments>
-          <count>0</count>
-        </amendments>
+        <chamber>House of Representatives</chamber>
+        <amendedAmendment />
+        <version>1.0.0</version>
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <originChamber>House</originChamber>
+          <number>1</number>
+          <type>HRES</type>
+          <title>Electing officers of the House of Representatives.</title>
+          <congress>115</congress>
+        </amendedBill>
         <links />
+        <updateDate>2018-08-28T19:53:40Z</updateDate>
+        <sponsors>
+          <item>
+            <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
+            <party>D</party>
+            <bioguideId>C001038</bioguideId>
+            <identifiers>
+              <lisID>1604</lisID>
+              <gpoId>8068</gpoId>
+              <bioguideId>C001038</bioguideId>
+            </identifiers>
+            <lastName>CROWLEY</lastName>
+            <district>14</district>
+            <middleName />
+            <firstName>JOSEPH</firstName>
+            <state>NY</state>
+          </item>
+        </sponsors>
+        <congress>115</congress>
+        <proposedDate />
+        <description>That Robert D. Edmonson of the District of Columbia be, and is hereby, chosen Clerk of the House of Representatives; ***.</description>
+        <purpose>An amendment to nominate Democrat candidates for Officers of the House.</purpose>
+        <number>1</number>
+        <latestAction>
+          <actionDate>2017-01-03</actionDate>
+          <actionTime>14:33:33</actionTime>
+          <text>On agreeing to the Crowley amendment Failed by voice vote.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HAMDT</type>
       </amendment>
     </amendments>
-    <updateDate>2017-01-06T18:01:14Z</updateDate>
-    <cboCostEstimates />
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-23T21:06:43Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Elects the following officers of the House of Representatives: (1) Karen L. Haas as Clerk, (2) Paul D. Irving as Sergeant at Arms, (3) Philip George Kiko as Chief Administrative Officer, and (4) Father Patrick J. Conroy as Chaplain.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <versionCode>81</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <name>Passed House without amendment</name>
+          <lastSummaryUpdateDate>2017-01-23T21:06:57Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Elects the following officers of the House of Representatives: (1) Karen L. Haas as Clerk, (2) Paul D. Irving as Sergeant at Arms, (3) Philip George Kiko as Chief Administrative Officer, and (4) Father Patrick J. Conroy as Chaplain.</p>]]></text>
+          <updateDate>2017-01-03T14:25:11Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:07Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

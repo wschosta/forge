@@ -4,11 +4,80 @@
     <policyArea>
       <name>Health</name>
     </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-25</actionDate>
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:12Z</createDate>
+    <notes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
     <congress>115</congress>
-    <cosponsors />
-    <relatedBills />
-    <title>Stop Obamacare Spam Act of 2017</title>
-    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -33,144 +102,109 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <billNumber>182</billNumber>
+    <title>Stop Obamacare Spam Act of 2017</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MULLIN:H.R. 182.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the United StatesConstitution[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:18:10Z</date>
+            </item>
+          </activities>
+          <name>Energy and Commerce Committee</name>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:14:38Z</date>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+            </item>
+          </subcommittees>
+          <systemCode>hsif00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:58:10Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>M001190</bioguideId>
+        <identifiers>
+          <lisID>2156</lisID>
+          <gpoId />
+          <bioguideId>M001190</bioguideId>
+        </identifiers>
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Markwayne</firstName>
+        <state>OK</state>
+        <lastName>Mullin</lastName>
+        <district>2</district>
+      </item>
+    </sponsors>
+    <relatedBills />
     <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <notes />
-    <billType>HR</billType>
     <titles>
       <item>
         <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
         <chamberName />
         <title>Stop Obamacare Spam Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
         <chamberName />
         <title>To prohibit the Secretary of Health and Human Services from using any type of fee collected to advertise or market Exchanges established under the Patient Protection and Affordable Care Act.</title>
+        <parentTitleType />
       </item>
       <item>
         <chamberCode />
         <titleType>Display Title</titleType>
-        <parentTitleType />
         <chamberName />
         <title>Stop Obamacare Spam Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Stop Obamacare Spam Act of 2017</title>
+        <parentTitleType />
       </item>
     </titles>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-    </latestAction>
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <cboCostEstimates />
     <recordedVotes />
-    <sponsors>
-      <item>
-        <state>OK</state>
-        <party>R</party>
-        <district>2</district>
-        <lastName>Mullin</lastName>
-        <middleName />
-        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
-        <identifiers>
-          <lisID>2156</lisID>
-          <bioguideId>M001190</bioguideId>
-          <gpoId />
-        </identifiers>
-        <bioguideId>M001190</bioguideId>
-        <firstName>Markwayne</firstName>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <updateDate>2017-01-17T22:31:15Z</updateDate>
-    <billNumber>182</billNumber>
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <subcommittees />
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <date>2017-01-03T17:18:10Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <actions>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <committee>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
-        </committee>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
     <summaries>
       <billSummaries>
         <item>
-          <lastSummaryUpdateDate>2017-01-17T22:24:39Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
           <actionDate>2017-01-03</actionDate>
           <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <text><![CDATA[<p><b>Stop Obamacare Spam Act of 2017</b></p> This bill prohibits the Department of Health and Human Services from using collected fees to advertise health insurance exchanges.]]></text>
-          <versionCode>00</versionCode>
           <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-17T22:24:39Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Stop Obamacare Spam Act of 2017</b></p> This bill prohibits the Department of Health and Human Services from using collected fees to advertise health insurance exchanges.]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
         </item>
       </billSummaries>
     </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

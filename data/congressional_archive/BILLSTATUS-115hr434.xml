@@ -1,229 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Water Resources Development</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-02-07</actionDate>
+      <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+    </latestAction>
+    <createDate>2017-01-12T04:45:49Z</createDate>
+    <notes />
     <actions>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
         <billReferrals>1</billReferrals>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
       <item>
-        <text>Referred to the House Committee on Natural Resources.</text>
+        <actionDate>2017-02-07</actionDate>
         <committee>
-          <name>Natural Resources Committee</name>
-          <systemCode>hsii00</systemCode>
+          <systemCode>hsii13</systemCode>
+          <name>Water, Power and Oceans Subcommittee</name>
         </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
         <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
         <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
         <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
         <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
       <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
         <actionDate>2017-01-11</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
         <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <amendments />
-    <updateDate>2017-01-12T09:57:54Z</updateDate>
-    <titles>
-      <item>
-        <title>To authorize a pilot project for an innovative water project financing program, and for other purposes.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>To authorize a pilot project for an innovative water project financing program, and for other purposes.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-11</introducedDate>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>Jeff</firstName>
-        <bioguideId>D000612</bioguideId>
-        <district>10</district>
-        <byRequestType />
-        <state>CA</state>
-        <identifiers>
-          <bioguideId>D000612</bioguideId>
-          <lisID>1995</lisID>
-          <gpoId>7824</gpoId>
-        </identifiers>
-        <party>R</party>
-        <lastName>Denham</lastName>
-        <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <links />
-      <text>Referred to the House Committee on Natural Resources.</text>
-    </latestAction>
     <congress>115</congress>
-    <cosponsors>
-      <item>
-        <firstName>Doug</firstName>
-        <middleName />
-        <bioguideId>L000578</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
-        <identifiers>
-          <bioguideId>L000578</bioguideId>
-          <lisID>2100</lisID>
-          <gpoId />
-        </identifiers>
-        <lastName>LaMalfa</lastName>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>1</district>
-      </item>
-      <item>
-        <firstName>Dan</firstName>
-        <middleName />
-        <bioguideId>N000189</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Newhouse, Dan [R-WA-4]</fullName>
-        <identifiers>
-          <gpoId />
-          <bioguideId>N000189</bioguideId>
-          <lisID>2275</lisID>
-        </identifiers>
-        <lastName>Newhouse</lastName>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>WA</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>4</district>
-      </item>
-      <item>
-        <firstName>KEN</firstName>
-        <middleName />
-        <bioguideId>C000059</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Calvert, Ken [R-CA-42]</fullName>
-        <identifiers>
-          <gpoId>7849</gpoId>
-          <bioguideId>C000059</bioguideId>
-          <lisID>165</lisID>
-        </identifiers>
-        <lastName>CALVERT</lastName>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>42</district>
-      </item>
-      <item>
-        <firstName>Jim</firstName>
-        <middleName />
-        <bioguideId>C001059</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
-        <identifiers>
-          <bioguideId>C001059</bioguideId>
-          <lisID>1774</lisID>
-          <gpoId>7825</gpoId>
-        </identifiers>
-        <lastName>Costa</lastName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>16</district>
-      </item>
-      <item>
-        <firstName>John</firstName>
-        <middleName />
-        <bioguideId>G000559</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Garamendi, John [D-CA-3]</fullName>
-        <identifiers>
-          <bioguideId>G000559</bioguideId>
-          <lisID>1973</lisID>
-          <gpoId>7815</gpoId>
-        </identifiers>
-        <lastName>Garamendi</lastName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>3</district>
-      </item>
-    </cosponsors>
-    <relatedBills />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Government lending and loan guarantees</name>
+          </item>
+          <item>
+            <name>Water resources funding</name>
+          </item>
+          <item>
+            <name>Water use and supply</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Water Resources Development</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>To authorize a pilot project for an innovative water project financing program, and for other purposes.</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <billNumber>434</billNumber>
+    <title>New WATER Act</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. DENHAM:H.R. 434.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8of the United States Constitution,specifically Clause 1 (relating to providing for he commondefense and general welfare of theUnited States), Clause 3(relating to regulating commerce with foreign nations, andamong the several states, and with theIndian tribes) andClause 18 (relating to the power to make all laws necessaryand proper for carrying out the powers vested inCongress).[Page H391]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
+          <systemCode>hsii00</systemCode>
           <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsii13</systemCode>
+              <activities>
+                <item>
+                  <date>2017-02-07T21:46:52Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Water, Power and Oceans Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Natural Resources Committee</name>
           <activities>
             <item>
               <date>2017-01-11T15:01:00Z</date>
               <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-12T04:45:49Z</createDate>
-    <billType>HR</billType>
-    <billNumber>434</billNumber>
-    <policyArea />
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
+      <item>
+        <bioguideId>L000578</bioguideId>
+        <party>R</party>
+        <firstName>Doug</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>2100</lisID>
+          <bioguideId>L000578</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+        <district>1</district>
+        <lastName>LaMalfa</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>N000189</bioguideId>
+        <party>R</party>
+        <firstName>Dan</firstName>
+        <state>WA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>2275</lisID>
+          <bioguideId>N000189</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Newhouse, Dan [R-WA-4]</fullName>
+        <district>4</district>
+        <lastName>Newhouse</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C000059</bioguideId>
+        <party>R</party>
+        <firstName>KEN</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>165</lisID>
+          <gpoId>7849</gpoId>
+          <bioguideId>C000059</bioguideId>
+        </identifiers>
+        <fullName>Rep. Calvert, Ken [R-CA-42]</fullName>
+        <district>42</district>
+        <lastName>CALVERT</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001059</bioguideId>
+        <party>D</party>
+        <firstName>Jim</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>C001059</bioguideId>
+          <lisID>1774</lisID>
+          <gpoId>7825</gpoId>
+        </identifiers>
+        <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
+        <district>16</district>
+        <lastName>Costa</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>G000559</bioguideId>
+        <party>D</party>
+        <firstName>John</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1973</lisID>
+          <bioguideId>G000559</bioguideId>
+          <gpoId>7815</gpoId>
+        </identifiers>
+        <fullName>Rep. Garamendi, John [D-CA-3]</fullName>
+        <district>3</district>
+        <lastName>Garamendi</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001096</bioguideId>
+        <party>R</party>
+        <firstName>Kevin</firstName>
+        <state>ND</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>C001096</bioguideId>
+          <lisID>2144</lisID>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
+        <district>0</district>
+        <lastName>Cramer</lastName>
+        <sponsorshipDate>2017-08-18</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>V000129</bioguideId>
+        <party>R</party>
+        <firstName>David</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>G.</middleName>
+        <identifiers>
+          <lisID>2105</lisID>
+          <bioguideId>V000129</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Valadao, David G. [R-CA-21]</fullName>
+        <district>21</district>
+        <lastName>Valadao</lastName>
+        <sponsorshipDate>2017-09-01</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>K000387</bioguideId>
+        <party>R</party>
+        <firstName>Stephen</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <gpoId />
+          <lisID>2228</lisID>
+          <bioguideId>K000387</bioguideId>
+        </identifiers>
+        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
+        <district>25</district>
+        <lastName>Knight</lastName>
+        <sponsorshipDate>2017-09-01</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001053</bioguideId>
+        <party>R</party>
+        <firstName>Tom</firstName>
+        <state>OK</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>C001053</bioguideId>
+          <lisID>1742</lisID>
+          <gpoId>8112</gpoId>
+        </identifiers>
+        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
+        <district>4</district>
+        <lastName>Cole</lastName>
+        <sponsorshipDate>2017-09-08</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T19:59:09Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-11</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>D000612</bioguideId>
+        <identifiers>
+          <lisID>1995</lisID>
+          <gpoId>7824</gpoId>
+          <bioguideId>D000612</bioguideId>
+        </identifiers>
+        <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Jeff</firstName>
+        <state>CA</state>
+        <lastName>Denham</lastName>
+        <district>10</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <title>New WATER Act</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>New Water Available To Every Reclamation State Act</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>To authorize a pilot project for an innovative water project financing program, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>New WATER Act</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>New Water Available To Every Reclamation State Act</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>New Water Available To Every Reclamation State Act or the New WATER Act</strong></p> <p>This bill authorizes the Department of the Interior, for 15 years after this bill's enactment, to provide financial assistance, such as secured loans or loan guarantees, to entities that contract under federal reclamation law to carry out water projects within the 17 western states served by the Bureau of Reclamation, other states where the Bureau is authorized to provide project assistance, Alaska, and Hawaii. Projects eligible for assistance include: </p> <ul> <li>non-federal water infrastructure projects that would contribute to a safe, adequate water supply for domestic, agricultural, environmental, or municipal and industrial use;</li> <li>projects for enhanced energy efficiency in the operation of a water system; </li> <li>projects for accelerated repair and replacement of aging water distribution facilities;</li> <li>brackish or sea water desalination projects; and</li> <li>the acquisition of real property or an interest therein for water storage, reclaimed or recycled water, or wastewater that is integral to such a project.</li> </ul> <p>To be eligible for assistance, a project must be deemed creditworthy. Eligible project costs must be reasonably anticipated to be at least $20 million.</p> <p>Interior shall establish criteria for project selection and may enter into a master credit agreement for projects secured by a common security pledge on terms acceptable to it. </p> <p> Interior may enter into agreements with obligors to make secured loans to finance or refinance eligible project costs or to refinance long-term project obligations or federal credit instruments to provide additional funding capacity for the completion, enhancement, or expansion of a project.</p> <p>The total amount of federal assistance for a project shall not exceed 80% of its total cost.</p> <p>Interior shall establish: (1) a repayment schedule for each secured loan based on the useful life of the project, and (2) a uniform system to service the federal credit instruments made available under this bill. </p> <p>Interior shall report biennially on the financial performance of the projects that receive assistance under this bill.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-04T17:38:49Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-11</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,42 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-23T18:31:18Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
-      <links />
-    </latestAction>
-    <billNumber>187</billNumber>
-    <notes />
     <committees>
       <billCommittees>
         <item>
-          <activities>
-            <item>
-              <date>2017-01-03T17:24:00Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <chamber>House</chamber>
           <type>Standing</type>
           <name>Judiciary Committee</name>
           <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:24:00Z</date>
+            </item>
+          </activities>
           <subcommittees>
             <item>
-              <activities>
-                <item>
-                  <date>2017-01-13T14:24:22Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
               <name>Immigration and Border Security Subcommittee</name>
               <systemCode>hsju01</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-13T14:24:22Z</date>
+                </item>
+              </activities>
             </item>
           </subcommittees>
         </item>
       </billCommittees>
     </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-13T19:03:37Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Virgin Islands Visa Waiver Act of 2017</strong></p> <p>This bill amends the Immigration and Nationality Act to establish a visa waiver program for the United States Virgin Islands for individuals who are a national of a country that is a member or an associate member of the Caribbean Community (CARICOM) listed in regulations under this Act and who apply for admission as a nonimmigrant business or pleasure visitor solely for entry into and stay in the United States Virgin Islands for not more than 30 days, if the Department of Homeland Security (DHS) determines that such waiver does not represent a threat to the welfare or security of the United States or its territories and commonwealths.</p> <p>DHS shall suspend the admission of nationals of a country if DHS determines that: (1) such admissions have resulted in an unacceptable number of visitors remaining unlawfully in the United States Virgin Islands, unlawfully obtaining entry to other parts of the United States, or seeking withholding of removal or asylum; or (2) visitors from such country pose a risk to law enforcement or security interests of the United States Virgin Islands or of the United States. </p> <p>DHS is authorized to suspend the program at any time, on a country-by-country basis, for other good cause.</p> <p>The bill provides for the addition of program countries.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Virgin Islands Visa Waiver Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Immigration and Nationality Act to establish the Virgin Islands visa waiver program.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Virgin Islands Visa Waiver Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Virgin Islands Visa Waiver Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <bioguideId>L000397</bioguideId>
+        <party>D</party>
+        <firstName>ZOE</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>L000397</bioguideId>
+          <lisID>701</lisID>
+          <gpoId>7821</gpoId>
+        </identifiers>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <district>19</district>
+        <lastName>LOFGREN</lastName>
+        <sponsorshipDate>2017-03-02</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>M001137</bioguideId>
+        <party>D</party>
+        <firstName>GREGORY</firstName>
+        <state>NY</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>W.</middleName>
+        <identifiers>
+          <lisID>1506</lisID>
+          <gpoId>8067</gpoId>
+          <bioguideId>M001137</bioguideId>
+        </identifiers>
+        <fullName>Rep. Meeks, Gregory W. [D-NY-5]</fullName>
+        <district>5</district>
+        <lastName>MEEKS</lastName>
+        <sponsorshipDate>2017-03-02</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>B001270</bioguideId>
+        <party>D</party>
+        <firstName>Karen</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>B001270</bioguideId>
+          <lisID>1996</lisID>
+          <gpoId>7838</gpoId>
+        </identifiers>
+        <fullName>Rep. Bass, Karen [D-CA-37]</fullName>
+        <district>37</district>
+        <lastName>Bass</lastName>
+        <sponsorshipDate>2017-06-28</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001067</bioguideId>
+        <party>D</party>
+        <firstName>Yvette</firstName>
+        <state>NY</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>D.</middleName>
+        <identifiers>
+          <gpoId>8072</gpoId>
+          <lisID>1864</lisID>
+          <bioguideId>C001067</bioguideId>
+        </identifiers>
+        <fullName>Rep. Clarke, Yvette D. [D-NY-9]</fullName>
+        <district>9</district>
+        <lastName>Clarke</lastName>
+        <sponsorshipDate>2017-07-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>W000808</bioguideId>
+        <party>D</party>
+        <firstName>Frederica</firstName>
+        <state>FL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <identifiers>
+          <lisID>2004</lisID>
+          <gpoId>7889</gpoId>
+          <bioguideId>W000808</bioguideId>
+        </identifiers>
+        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
+        <district>24</district>
+        <lastName>Wilson</lastName>
+        <sponsorshipDate>2017-08-15</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:12Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. PLASKETT:H.R. 187.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3 provides that the Congress shall havePower to dispose of and make needful Rules and Regulationsrespecting the Territory or other Property belong to theUnited States.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>187</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Virgin Islands Visa Waiver Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <committee>
+          <name>Immigration and Border Security Subcommittee</name>
+          <systemCode>hsju01</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -130,142 +342,29 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <originChamber>House</originChamber>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <identifiers>
-          <lisID>2274</lisID>
-          <bioguideId>P000610</bioguideId>
-          <gpoId />
-        </identifiers>
+        <bioguideId>P000610</bioguideId>
         <middleName>E.</middleName>
-        <lastName>Plaskett</lastName>
-        <firstName>Stacey</firstName>
         <byRequestType />
         <fullName>Rep. Plaskett, Stacey E. [D-VI-At Large]</fullName>
+        <lastName>Plaskett</lastName>
+        <state>VI</state>
         <district>0</district>
         <party>D</party>
-        <state>VI</state>
-        <bioguideId>P000610</bioguideId>
+        <identifiers>
+          <bioguideId>P000610</bioguideId>
+          <lisID>2274</lisID>
+          <gpoId />
+        </identifiers>
+        <firstName>Stacey</firstName>
       </item>
     </sponsors>
-    <congress>115</congress>
-    <policyArea>
-      <name>Immigration</name>
-    </policyArea>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <name>Introduced in House</name>
-          <text><![CDATA[<p><strong>Virgin Islands Visa Waiver Act of 2017</strong></p> <p>This bill amends the Immigration and Nationality Act to establish a visa waiver program for the United States Virgin Islands for individuals who are a national of a country that is a member or an associate member of the Caribbean Community (CARICOM) listed in regulations under this Act and who apply for admission as a nonimmigrant business or pleasure visitor solely for entry into and stay in the United States Virgin Islands for not more than 30 days, if the Department of Homeland Security (DHS) determines that such waiver does not represent a threat to the welfare or security of the United States or its territories and commonwealths.</p> <p>DHS shall suspend the admission of nationals of a country if DHS determines that: (1) such admissions have resulted in an unacceptable number of visitors remaining unlawfully in the United States Virgin Islands, unlawfully obtaining entry to other parts of the United States, or seeking withholding of removal or asylum; or (2) visitors from such country pose a risk to law enforcement or security interests of the United States Virgin Islands or of the United States. </p> <p>DHS is authorized to suspend the program at any time, on a country-by-country basis, for other good cause.</p> <p>The bill provides for the addition of program countries.</p>]]></text>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-          <actionDate>2017-01-03</actionDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <lastSummaryUpdateDate>2017-01-13T19:03:37Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <cboCostEstimates />
-    <billType>HR</billType>
-    <relatedBills />
-    <cosponsors />
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <item>
-        <actionDate>2017-01-13</actionDate>
-        <committee>
-          <systemCode>hsju01</systemCode>
-          <name>Immigration and Border Security Subcommittee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>1</code>
-          <name>House committee actions</name>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-        </committee>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
+    <notes />
     <createDate>2017-01-04T07:01:12Z</createDate>
-    <laws />
     <amendments />
-    <recordedVotes />
-    <title>Virgin Islands Visa Waiver Act of 2017</title>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. PLASKETT:H.R. 187.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3 provides that the Congress shall havePower to dispose of and make needful Rules and Regulationsrespecting the Territory or other Property belong to theUnited States.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
-    <committeeReports />
-    <calendarNumbers />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Virgin Islands Visa Waiver Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend the Immigration and Nationality Act to establish the Virgin Islands visa waiver program.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Virgin Islands Visa Waiver Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,145 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-13T04:55:34Z</createDate>
+    <committeeReports />
+    <updateDate>2018-08-28T20:20:16Z</updateDate>
+    <laws />
+    <billType>SRES</billType>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Army Corps of Engineers</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Defense</name>
+          </item>
+          <item>
+            <name>Environmental Protection Agency (EPA)</name>
+          </item>
+          <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
+            <name>Lakes and rivers</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+          <item>
+            <name>Wetlands</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>Senate</originChamber>
+    <latestAction>
+      <text>Referred to the Committee on Environment and Public Works.</text>
+      <links />
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
+    <billNumber>12</billNumber>
+    <introducedDate>2017-01-12</introducedDate>
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>IA</state>
+        <bioguideId>E000295</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Ernst</lastName>
+        <fullName>Sen. Ernst, Joni  [R-IA]</fullName>
+        <firstName>Joni</firstName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2283</lisID>
+          <gpoId />
+          <bioguideId>E000295</bioguideId>
+        </identifiers>
+      </item>
+    </cosponsors>
     <committees>
       <billCommittees>
         <item>
-          <name>Environment and Public Works Committee</name>
-          <chamber>Senate</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-12T18:14:45Z</date>
             </item>
           </activities>
-          <type>Standing</type>
+          <chamber>Senate</chamber>
           <systemCode>ssev00</systemCode>
+          <name>Environment and Public Works Committee</name>
+          <type>Standing</type>
           <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-23T18:01:17Z</updateDate>
-    <calendarNumbers />
-    <title>A resolution expressing the sense of the Senate that clean water is a national priority, and that the June 29, 2015, Waters of the United States Rule should be withdrawn or vacated.</title>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <originChamber>Senate</originChamber>
-    <billType>SRES</billType>
-    <recordedVotes />
-    <laws />
-    <latestAction>
-      <links />
-      <text>Referred to the Committee on Environment and Public Works.</text>
-      <actionDate>2017-01-12</actionDate>
-    </latestAction>
     <notes />
-    <cosponsors>
+    <relatedBills>
       <item>
-        <lastName>Ernst</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <middleName />
-        <fullName>Sen. Ernst, Joni  [R-IA]</fullName>
-        <firstName>Joni</firstName>
-        <bioguideId>E000295</bioguideId>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <state>IA</state>
-        <identifiers>
-          <gpoId />
-          <bioguideId>E000295</bioguideId>
-          <lisID>2283</lisID>
-        </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <type>HRES</type>
+        <latestTitle>Expressing the sense of the House of Representatives that clean water is a national priority, and that the June 29, 2015, Waters of the United States Rule should be withdrawn or vacated.</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Referred to the Subcommittee on Water Resources and Environment.</text>
+          <actionDate>2017-02-28</actionDate>
+        </latestAction>
+        <number>152</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
       </item>
-    </cosponsors>
-    <amendments />
-    <congress>115</congress>
-    <cboCostEstimates />
+    </relatedBills>
+    <title>A resolution expressing the sense of the Senate that clean water is a national priority, and that the June 29, 2015, Waters of the United States Rule should be withdrawn or vacated.</title>
     <sponsors>
       <item>
-        <lastName>Fischer</lastName>
-        <bioguideId>F000463</bioguideId>
-        <middleName />
         <fullName>Sen. Fischer, Deb [R-NE]</fullName>
+        <firstName>Deb</firstName>
+        <lastName>Fischer</lastName>
+        <state>NE</state>
+        <bioguideId>F000463</bioguideId>
         <party>R</party>
         <identifiers>
-          <gpoId />
           <lisID>2179</lisID>
           <bioguideId>F000463</bioguideId>
+          <gpoId />
         </identifiers>
-        <state>NE</state>
-        <firstName>Deb</firstName>
         <byRequestType />
+        <middleName />
       </item>
     </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
     <titles>
       <item>
         <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
         <parentTitleType />
         <title>A resolution expressing the sense of the Senate that clean water is a national priority, and that the June 29, 2015, Waters of the United States Rule should be withdrawn or vacated.</title>
-        <chamberCode />
-        <chamberName />
       </item>
       <item>
         <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
         <parentTitleType />
         <title>A resolution expressing the sense of the Senate that clean water is a national priority, and that the June 29, 2015, Waters of the United States Rule should be withdrawn or vacated.</title>
-        <chamberCode />
-        <chamberName />
       </item>
     </titles>
-    <introducedDate>2017-01-12</introducedDate>
-    <policyArea>
-      <name>Environmental Protection</name>
-    </policyArea>
-    <billNumber>12</billNumber>
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <systemCode>ssev00</systemCode>
           <name>Environment and Public Works Committee</name>
+          <systemCode>ssev00</systemCode>
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Referred to the Committee on Environment and Public Works.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-12</actionDate>
-        <actionCode>10000</actionCode>
         <type>IntroReferral</type>
         <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
+        <actionDate>2017-01-12</actionDate>
       </item>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
     </actions>
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Environmental Protection</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <relatedBills />
-    <committeeReports />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-01-26T17:25:35Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Calls for the nullification of the final rule entitled, &quot;Clean Water Rule: Definition of 'Waters of the United States,'&quot; about the scope of the Federal Water Pollution Control Act (commonly known as the Clean Water Act). The Environmental Protection Agency and the U.S. Army Corps of Engineers issued the rule on June 29, 2015.</p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

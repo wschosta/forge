@@ -1,175 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>478</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-13</actionDate>
-      <text>Sponsor introductory remarks on measure. (CR H534)</text>
-    </latestAction>
-    <introducedDate>2017-01-12</introducedDate>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <placeholderTextForB>1</placeholderTextForB>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links>
-          <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H534</url>
-            <name>H534</name>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>B00100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <committee />
-        <text>Sponsor introductory remarks on measure. (CR H534)</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-    </actions>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <calendarNumbers />
-    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. POE ofTexas:H.R. 478.Congress has the power to enact this legislation pursuantto thefollowing:Article 1, Section 8, Clause 1.[Page H472]</pre>]]></constitutionalAuthorityStatementText>
     <sponsors>
       <item>
+        <middleName />
+        <party>R</party>
+        <bioguideId>P000592</bioguideId>
         <lastName>Poe</lastName>
         <firstName>Ted</firstName>
-        <party>R</party>
-        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
-        <middleName />
         <state>TX</state>
-        <byRequestType />
-        <bioguideId>P000592</bioguideId>
-        <district>2</district>
         <identifiers>
           <gpoId>8158</gpoId>
           <lisID>1802</lisID>
           <bioguideId>P000592</bioguideId>
         </identifiers>
+        <district>2</district>
+        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
+        <byRequestType />
       </item>
     </sponsors>
-    <originChamber>House</originChamber>
-    <recordedVotes />
-    <committeeReports />
-    <policyArea />
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <version>1.0.0</version>
     <createDate>2017-01-13T04:55:31Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Sponsor introductory remarks on measure. (CR H534)</text>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <billNumber>478</billNumber>
+    <notes />
+    <introducedDate>2017-01-12</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:04:20Z</date>
-            </item>
-          </activities>
-          <subcommittees />
           <systemCode>hsfa00</systemCode>
           <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
           <name>Foreign Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:04:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
         </item>
       </billCommittees>
     </committees>
     <relatedBills />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Iran</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Presidents and presidential powers, Vice Presidents</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForB>1</placeholderTextForB>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>B00100</actionCode>
+        <committee />
+        <text>Sponsor introductory remarks on measure. (CR H534)</text>
+        <links>
+          <link>
+            <name>H534</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H534</url>
+          </link>
+        </links>
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <recordedVotes />
     <laws />
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>To require the imposition of sanctions against Iran's Islamic Revolutionary Guard Corps, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>To require the imposition of sanctions against Iran's Islamic Revolutionary Guard Corps, and for other purposes.</title>
-      </item>
-    </titles>
     <cosponsors>
       <item>
-        <middleName />
-        <state>CA</state>
-        <bioguideId>S000344</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>SHERMAN</lastName>
         <district>30</district>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
+        <firstName>BRAD</firstName>
         <identifiers>
-          <bioguideId>S000344</bioguideId>
           <lisID>1526</lisID>
+          <bioguideId>S000344</bioguideId>
           <gpoId>7832</gpoId>
         </identifiers>
-        <firstName>BRAD</firstName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <bioguideId>S000344</bioguideId>
+        <state>CA</state>
         <fullName>Rep. Sherman, Brad [D-CA-30]</fullName>
+        <party>D</party>
+        <lastName>SHERMAN</lastName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>14</district>
+        <firstName>Randy</firstName>
+        <identifiers>
+          <lisID>2161</lisID>
+          <bioguideId>W000814</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>W000814</bioguideId>
+        <state>TX</state>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
+        <party>R</party>
+        <lastName>Weber</lastName>
+        <sponsorshipDate>2017-03-10</sponsorshipDate>
+        <middleName>K.</middleName>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>8</district>
+        <firstName>Paul</firstName>
+        <identifiers>
+          <gpoId />
+          <lisID>2103</lisID>
+          <bioguideId>C001094</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>C001094</bioguideId>
+        <state>CA</state>
+        <fullName>Rep. Cook, Paul [R-CA-8]</fullName>
+        <party>R</party>
+        <lastName>Cook</lastName>
+        <sponsorshipDate>2017-03-10</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>48</district>
+        <firstName>DANA</firstName>
+        <identifiers>
+          <lisID>979</lisID>
+          <bioguideId>R000409</bioguideId>
+          <gpoId>7851</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>R000409</bioguideId>
+        <state>CA</state>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <party>R</party>
+        <lastName>ROHRABACHER</lastName>
+        <sponsorshipDate>2017-03-10</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>3</district>
+        <firstName>Jeff</firstName>
+        <identifiers>
+          <bioguideId>D000615</bioguideId>
+          <gpoId>8143</gpoId>
+          <lisID>2057</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>D000615</bioguideId>
+        <state>SC</state>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
+        <party>R</party>
+        <lastName>Duncan</lastName>
+        <sponsorshipDate>2017-03-10</sponsorshipDate>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>1</district>
+        <firstName>Lee</firstName>
+        <identifiers>
+          <bioguideId>Z000017</bioguideId>
+          <gpoId />
+          <lisID>2261</lisID>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>Z000017</bioguideId>
+        <state>NY</state>
+        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+        <party>R</party>
+        <lastName>Zeldin</lastName>
+        <sponsorshipDate>2017-03-13</sponsorshipDate>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>5</district>
+        <firstName>Thomas</firstName>
+        <identifiers>
+          <lisID>2353</lisID>
+          <bioguideId>G000580</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>G000580</bioguideId>
+        <state>VA</state>
+        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
+        <party>R</party>
+        <lastName>Garrett</lastName>
+        <sponsorshipDate>2017-05-24</sponsorshipDate>
+        <middleName>A.</middleName>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>25</district>
+        <firstName>LOUISE</firstName>
+        <identifiers>
+          <bioguideId>S000480</bioguideId>
+          <lisID>1069</lisID>
+          <gpoId>8089</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>S000480</bioguideId>
+        <state>NY</state>
+        <fullName>Rep. Slaughter, Louise McIntosh [D-NY-25]</fullName>
+        <party>D</party>
+        <lastName>SLAUGHTER</lastName>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <district>11</district>
+        <firstName>Daniel</firstName>
+        <identifiers>
+          <lisID>2293</lisID>
+          <gpoId />
+          <bioguideId>D000625</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <bioguideId>D000625</bioguideId>
+        <state>NY</state>
+        <fullName>Rep. Donovan, Daniel M., Jr. [R-NY-11]</fullName>
+        <party>R</party>
+        <lastName>Donovan</lastName>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <updateDate>2017-01-17T15:35:15Z</updateDate>
-    <constitutionalAuthorityStatementText />
-    <title>To require the imposition of sanctions against Iran's Islamic Revolutionary Guard Corps, and for other purposes.</title>
-    <congress>115</congress>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>IRGC Terrorist Sanctions Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To require the imposition of sanctions against Iran's Islamic Revolutionary Guard Corps, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>IRGC Terrorist Sanctions Act of 2017</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>IRGC Terrorist Sanctions Act of 2017</title>
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T19:59:37Z</updateDate>
+    <calendarNumbers />
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-07-11T20:41:20Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>IRGC Terrorist Sanctions Act of 2017</strong></p> <p>This bill directs the President to: (1) designate Iran's Islamic Revolutionary Guard Corps (IRGC) as a terrorist entity, (2) impose sanctions against the IRGC, and (3) report to Congress on the results of such sanctions.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>IRGC Terrorist Sanctions Act of 2017</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,110 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
-        <party>R</party>
-        <lastName>Blum</lastName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B001294</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>1</district>
-        <state>IA</state>
-        <middleName />
-        <identifiers>
-          <lisID>2241</lisID>
-          <gpoId />
-          <bioguideId>B001294</bioguideId>
-        </identifiers>
-        <fullName>Rep. Blum, Rod [R-IA-1]</fullName>
-        <firstName>Rod</firstName>
-      </item>
-    </cosponsors>
-    <laws />
-    <congress>115</congress>
-    <billNumber>13</billNumber>
-    <billType>HJRES</billType>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T09:57:08Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
-      <item>
-        <actionDate>2017-01-11</actionDate>
-        <committee>
-          <systemCode>hsju10</systemCode>
-          <name>Constitution and Civil Justice Subcommittee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>1</code>
-          <name>House committee actions</name>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-        </committee>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionCode>H11100</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <placeholderTextForH>1</placeholderTextForH>
-      </actionTypeCounts>
-    </actions>
     <committeeReports />
+    <updateDate>2018-08-28T19:56:34Z</updateDate>
+    <laws />
+    <billType>HJRES</billType>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional elections</name>
@@ -122,116 +27,320 @@
             <name>Senate</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>House</originChamber>
+    <latestAction>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+      <links />
+      <actionDate>2017-01-11</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. O'ROURKE:H.J. Res. 13.Congress has the power to enact this legislation pursuantto the following:Article V of the Constitution: The Congress, whenever twothirds of both Houses shall deem it necessary, shall proposeamendments to this Constitution, or, on the application ofthe legislatures of two thirds of the several states, shallcall a convention for proposing amendments, which, in eithercase, shall be valid to all intents and purposes, as part ofthis Constitution, when ratified by the legislatures of threefourths of the several states or by conventions in threethereof, as the one or the other mode of ratification may beproposed by the Congress; provided that no amendment whichmay be made prior to the year one thousand eight hundred andeight shall in any manner affect the first and fourth clausesin the ninth section of the first article; and that no state,without its consent, shall be deprived of its equal suffragein the Senate.[Page H54]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>13</billNumber>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2017-01-11T19:03:03Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+            </item>
+          </subcommittees>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:24:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <introducedDate>2017-01-03</introducedDate>
+    <cosponsors>
       <item>
-        <chamberCode />
-        <title>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
+        <firstName>Rod</firstName>
+        <lastName>Blum</lastName>
+        <sponsorshipWithdrawnDate>2017-05-23</sponsorshipWithdrawnDate>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <bioguideId>B001294</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Blum, Rod [R-IA-1]</fullName>
+        <state>IA</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>B001294</bioguideId>
+          <gpoId />
+          <lisID>2241</lisID>
+        </identifiers>
       </item>
       <item>
-        <chamberCode />
-        <title>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
+        <firstName>Trey</firstName>
+        <lastName>Hollingsworth</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <bioguideId>H001074</bioguideId>
+        <district>9</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Hollingsworth, Trey [R-IN-9]</fullName>
+        <state>IN</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>H001074</bioguideId>
+          <lisID>2327</lisID>
+          <gpoId />
+        </identifiers>
       </item>
-    </titles>
+    </cosponsors>
+    <notes />
     <relatedBills>
       <item>
         <congress>115</congress>
         <number>17</number>
-        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</latestTitle>
-        <latestAction>
-          <actionDate>2017-01-11</actionDate>
-          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-        </latestAction>
         <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</latestTitle>
         <relationshipDetails>
           <item>
-            <identifiedBy>CRS</identifiedBy>
             <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
           </item>
         </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-01-11</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>50</number>
+        <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-02-08</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>20</number>
+        <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of consecutive terms that a Member of Congress may serve.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-01-12</actionDate>
+        </latestAction>
       </item>
       <item>
         <congress>115</congress>
         <number>6</number>
-        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of terms that a Member of Congress may serve.</latestTitle>
-        <latestAction>
-          <actionDate>2017-01-11</actionDate>
-          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-        </latestAction>
         <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of terms that a Member of Congress may serve.</latestTitle>
         <relationshipDetails>
           <item>
-            <identifiedBy>CRS</identifiedBy>
             <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
           </item>
         </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-01-11</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>134</number>
+        <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of terms an individual may serve as a Member of Congress.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2018-05-22</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>101</number>
+        <type>HJRES</type>
+        <latestTitle>Proposing an amendment to the Constitution of the United States to limit the number of terms an individual may serve as a Member of Congress.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+          <actionDate>2017-06-07</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>51</number>
+        <type>SJRES</type>
+        <latestTitle>A joint resolution proposing an amendment to the Constitution of the United States relative to limiting the number of terms that a Member of Congress may serve.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Read twice and referred to the Committee on the Judiciary.</text>
+          <actionDate>2017-12-21</actionDate>
+        </latestAction>
       </item>
     </relatedBills>
-    <calendarNumbers />
     <title>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</title>
-    <introducedDate>2017-01-03</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-      <links />
-    </latestAction>
-    <createDate>2017-01-04T07:01:08Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees>
-            <item>
-              <systemCode>hsju10</systemCode>
-              <name>Constitution and Civil Justice Subcommittee</name>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-11T19:03:03Z</date>
-                </item>
-              </activities>
-            </item>
-          </subcommittees>
-          <type>Standing</type>
-          <name>Judiciary Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:24:30Z</date>
-            </item>
-          </activities>
-          <systemCode>hsju00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
     <sponsors>
       <item>
+        <district>16</district>
         <fullName>Rep. O'Rourke, Beto [D-TX-16]</fullName>
         <firstName>Beto</firstName>
+        <lastName>O'Rourke</lastName>
+        <state>TX</state>
         <bioguideId>O000170</bioguideId>
         <party>D</party>
-        <middleName />
-        <byRequestType />
-        <district>16</district>
-        <state>TX</state>
-        <lastName>O'Rourke</lastName>
         <identifiers>
           <bioguideId>O000170</bioguideId>
-          <gpoId />
           <lisID>2162</lisID>
+          <gpoId />
         </identifiers>
+        <byRequestType />
+        <middleName />
       </item>
     </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Proposing an amendment to the Constitution of the United States to limit the number of terms a Representative or Senator may serve.</title>
+      </item>
+    </titles>
+    <createDate>2017-01-04T07:01:08Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <committee>
+          <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-23T22:41:57Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Constitutional Amendment</b></p> <p>This joint resolution proposes a constitutional amendment limiting Members of the Senate to two terms and Members of the House of Representatives to four terms.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

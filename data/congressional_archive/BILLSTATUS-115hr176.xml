@@ -1,39 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-03</introducedDate>
-    <laws />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+    </latestAction>
     <createDate>2017-01-04T07:01:12Z</createDate>
-    <titles>
+    <notes />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>3</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
       <item>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>New IDEA Act</title>
+        <actionDate>2017-01-13</actionDate>
+        <committee>
+          <systemCode>hsju01</systemCode>
+          <name>Immigration and Border Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
       </item>
       <item>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>New Illegal Deduction Elimination Act</title>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on the Judiciary, and Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>To amend the Internal Revenue Code of 1986 to clarify that wages paid to unauthorized aliens may not be deducted from gross income, and for other purposes.</title>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on the Judiciary, and Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>New IDEA Act</title>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <committee />
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on the Judiciary, and Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
-    </titles>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on the Judiciary, and Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -67,348 +154,730 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <billNumber>176</billNumber>
     <title>New IDEA Act</title>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KING of Iowa:H.R. 176.Congress has the power to enact this legislation pursuantto the following:Article I Section 8 Clause I and Article I Section 8 Clause4 of the Constitution[Page H51]</pre>]]></constitutionalAuthorityStatementText>
-    <updateDate>2017-01-23T17:01:17Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KING of Iowa:H.R. 176.Congress has the power to enact this legislation pursuantto the following:Article I Section 8 Clause I and Article I Section 8 Clause4 of the Constitution[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <activities>
+                <item>
+                  <date>2017-01-13T14:23:43Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Immigration and Border Security Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:09:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <systemCode>hsed00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Education and the Workforce Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:09:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <systemCode>hswm00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:08:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
     <cosponsors>
       <item>
+        <firstName>Jeff</firstName>
+        <lastName>Duncan</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>D000615</bioguideId>
         <district>3</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
+        <state>SC</state>
         <party>R</party>
         <identifiers>
           <lisID>2057</lisID>
           <bioguideId>D000615</bioguideId>
           <gpoId>8143</gpoId>
         </identifiers>
-        <lastName>Duncan</lastName>
-        <bioguideId>D000615</bioguideId>
-        <middleName />
-        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
-        <firstName>Jeff</firstName>
-        <sponsorshipWithdrawnDate />
-        <state>SC</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
       </item>
       <item>
-        <district>4</district>
-        <party>R</party>
-        <identifiers>
-          <bioguideId>G000565</bioguideId>
-          <gpoId>7798</gpoId>
-          <lisID>1992</lisID>
-        </identifiers>
-        <lastName>Gosar</lastName>
-        <bioguideId>G000565</bioguideId>
-        <middleName>A.</middleName>
-        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
         <firstName>Paul</firstName>
+        <lastName>Gosar</lastName>
         <sponsorshipWithdrawnDate />
-        <state>AZ</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-      </item>
-      <item>
-        <district>1</district>
+        <bioguideId>G000565</bioguideId>
+        <district>4</district>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
+        <state>AZ</state>
         <party>R</party>
         <identifiers>
+          <lisID>1992</lisID>
+          <gpoId>7798</gpoId>
+          <bioguideId>G000565</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Louie</firstName>
+        <lastName>Gohmert</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>G000552</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1801</lisID>
           <gpoId>8157</gpoId>
           <bioguideId>G000552</bioguideId>
-          <lisID>1801</lisID>
         </identifiers>
-        <lastName>Gohmert</lastName>
-        <bioguideId>G000552</bioguideId>
-        <middleName />
-        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
-        <firstName>Louie</firstName>
-        <sponsorshipWithdrawnDate />
-        <state>TX</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
       </item>
       <item>
+        <firstName>WALTER</firstName>
+        <lastName>JONES</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>J000255</bioguideId>
         <district>3</district>
+        <middleName>B.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <state>NC</state>
         <party>R</party>
         <identifiers>
           <lisID>612</lisID>
           <bioguideId>J000255</bioguideId>
           <gpoId>8026</gpoId>
         </identifiers>
-        <lastName>JONES</lastName>
-        <bioguideId>J000255</bioguideId>
-        <middleName>B.</middleName>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <firstName>WALTER</firstName>
-        <sponsorshipWithdrawnDate />
-        <state>NC</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
       </item>
       <item>
+        <firstName>LAMAR</firstName>
+        <lastName>SMITH</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>S000583</bioguideId>
         <district>21</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
+        <state>TX</state>
         <party>R</party>
         <identifiers>
-          <gpoId>8177</gpoId>
           <lisID>1075</lisID>
           <bioguideId>S000583</bioguideId>
+          <gpoId>8177</gpoId>
         </identifiers>
-        <lastName>SMITH</lastName>
-        <bioguideId>S000583</bioguideId>
-        <middleName />
-        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
-        <firstName>LAMAR</firstName>
-        <sponsorshipWithdrawnDate />
-        <state>TX</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
       </item>
       <item>
+        <firstName>Mo</firstName>
+        <lastName>Brooks</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>B001274</bioguideId>
         <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
+        <state>AL</state>
         <party>R</party>
         <identifiers>
           <lisID>1987</lisID>
           <bioguideId>B001274</bioguideId>
           <gpoId>7790</gpoId>
         </identifiers>
-        <lastName>Brooks</lastName>
-        <bioguideId>B001274</bioguideId>
-        <middleName />
-        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
-        <firstName>Mo</firstName>
-        <sponsorshipWithdrawnDate />
-        <state>AL</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
       </item>
       <item>
+        <firstName>Lou</firstName>
+        <lastName>Barletta</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <bioguideId>B001269</bioguideId>
         <district>11</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Barletta, Lou [R-PA-11]</fullName>
+        <state>PA</state>
         <party>R</party>
         <identifiers>
-          <lisID>2054</lisID>
           <bioguideId>B001269</bioguideId>
+          <lisID>2054</lisID>
           <gpoId>8129</gpoId>
         </identifiers>
-        <lastName>Barletta</lastName>
-        <bioguideId>B001269</bioguideId>
-        <middleName />
-        <fullName>Rep. Barletta, Lou [R-PA-11]</fullName>
-        <firstName>Lou</firstName>
+      </item>
+      <item>
+        <firstName>DANA</firstName>
+        <lastName>ROHRABACHER</lastName>
         <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-02-06</sponsorshipDate>
+        <bioguideId>R000409</bioguideId>
+        <district>48</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <state>CA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>979</lisID>
+          <gpoId>7851</gpoId>
+          <bioguideId>R000409</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Brian</firstName>
+        <lastName>Babin</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-11</sponsorshipDate>
+        <bioguideId>B001291</bioguideId>
+        <district>36</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2270</lisID>
+          <bioguideId>B001291</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Joe</firstName>
+        <lastName>Wilson</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-16</sponsorshipDate>
+        <bioguideId>W000795</bioguideId>
+        <district>2</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Wilson, Joe [R-SC-2]</fullName>
+        <state>SC</state>
+        <party>R</party>
+        <identifiers>
+          <gpoId>8142</gpoId>
+          <lisID>1688</lisID>
+          <bioguideId>W000795</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Randy</firstName>
+        <lastName>Weber</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-16</sponsorshipDate>
+        <bioguideId>W000814</bioguideId>
+        <district>14</district>
+        <middleName>K.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2161</lisID>
+          <gpoId />
+          <bioguideId>W000814</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Doug</firstName>
+        <lastName>Lamborn</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-23</sponsorshipDate>
+        <bioguideId>L000564</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
+        <state>CO</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1834</lisID>
+          <bioguideId>L000564</bioguideId>
+          <gpoId>7863</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Michael</firstName>
+        <lastName>Burgess</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-10-25</sponsorshipDate>
+        <bioguideId>B001248</bioguideId>
+        <district>26</district>
+        <middleName>C.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>B001248</bioguideId>
+          <lisID>1751</lisID>
+          <gpoId>8182</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <lastName>Carter</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-06</sponsorshipDate>
+        <bioguideId>C001051</bioguideId>
+        <district>31</district>
+        <middleName>R.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Carter, John R. [R-TX-31]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <gpoId>8187</gpoId>
+          <lisID>1752</lisID>
+          <bioguideId>C001051</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Scott</firstName>
+        <lastName>DesJarlais</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-06</sponsorshipDate>
+        <bioguideId>D000616</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
+        <state>TN</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2062</lisID>
+          <bioguideId>D000616</bioguideId>
+          <gpoId>8151</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Matt</firstName>
+        <lastName>Gaetz</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-07</sponsorshipDate>
+        <bioguideId>G000578</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2314</lisID>
+          <gpoId />
+          <bioguideId>G000578</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Scott</firstName>
+        <lastName>Perry</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-07</sponsorshipDate>
+        <bioguideId>P000605</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
         <state>PA</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <identifiers>
+          <lisID>2157</lisID>
+          <bioguideId>P000605</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Andy</firstName>
+        <lastName>Biggs</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-07</sponsorshipDate>
+        <bioguideId>B001302</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
+        <state>AZ</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2307</lisID>
+          <gpoId />
+          <bioguideId>B001302</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Doug</firstName>
+        <lastName>LaMalfa</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-08</sponsorshipDate>
+        <bioguideId>L000578</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+        <state>CA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2100</lisID>
+          <gpoId />
+          <bioguideId>L000578</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Ralph</firstName>
+        <lastName>Norman</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-08</sponsorshipDate>
+        <bioguideId>N000190</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Norman, Ralph [R-SC-5]</fullName>
+        <state>SC</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2361</lisID>
+          <gpoId />
+          <bioguideId>N000190</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Trent</firstName>
+        <lastName>Franks</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-09</sponsorshipDate>
+        <bioguideId>F000448</bioguideId>
+        <district>8</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
+        <state>AZ</state>
+        <party>R</party>
+        <identifiers>
+          <gpoId>7799</gpoId>
+          <lisID>1707</lisID>
+          <bioguideId>F000448</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Daniel</firstName>
+        <lastName>Webster</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-14</sponsorshipDate>
+        <bioguideId>W000806</bioguideId>
+        <district>11</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Webster, Daniel [R-FL-11]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2002</lisID>
+          <bioguideId>W000806</bioguideId>
+          <gpoId>7880</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Jody</firstName>
+        <lastName>Hice</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-21</sponsorshipDate>
+        <bioguideId>H001071</bioguideId>
+        <district>10</district>
+        <middleName>B.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Hice, Jody B. [R-GA-10]</fullName>
+        <state>GA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2237</lisID>
+          <bioguideId>H001071</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <lastName>Roe</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-21</sponsorshipDate>
+        <bioguideId>R000582</bioguideId>
+        <district>1</district>
+        <middleName>P.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <state>TN</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+          <lisID>1954</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>STEVE</firstName>
+        <lastName>CHABOT</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-21</sponsorshipDate>
+        <bioguideId>C000266</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Chabot, Steve [R-OH-1]</fullName>
+        <state>OH</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>186</lisID>
+          <bioguideId>C000266</bioguideId>
+          <gpoId>8091</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Bill</firstName>
+        <lastName>Posey</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-21</sponsorshipDate>
+        <bioguideId>P000599</bioguideId>
+        <district>8</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>P000599</bioguideId>
+          <lisID>1915</lisID>
+          <gpoId>7887</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Robert</firstName>
+        <lastName>Pittenger</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-21</sponsorshipDate>
+        <bioguideId>P000606</bioguideId>
+        <district>9</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Pittenger, Robert [R-NC-9]</fullName>
+        <state>NC</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2141</lisID>
+          <bioguideId>P000606</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Glenn</firstName>
+        <lastName>Grothman</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-11-30</sponsorshipDate>
+        <bioguideId>G000576</bioguideId>
+        <district>6</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <state>WI</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Andy</firstName>
+        <lastName>Harris</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-12-04</sponsorshipDate>
+        <bioguideId>H001052</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Harris, Andy [R-MD-1]</fullName>
+        <state>MD</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>H001052</bioguideId>
+          <lisID>2026</lisID>
+          <gpoId>7976</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Todd</firstName>
+        <lastName>Rokita</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-12-04</sponsorshipDate>
+        <bioguideId>R000592</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Rokita, Todd [R-IN-4]</fullName>
+        <state>IN</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2017</lisID>
+          <bioguideId>R000592</bioguideId>
+          <gpoId>7943</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Tom</firstName>
+        <lastName>McClintock</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2018-07-19</sponsorshipDate>
+        <bioguideId>M001177</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
+        <state>CA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1908</lisID>
+          <bioguideId>M001177</bioguideId>
+          <gpoId>7809</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Jodey</firstName>
+        <lastName>Arrington</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2018-07-25</sponsorshipDate>
+        <bioguideId>A000375</bioguideId>
+        <district>19</district>
+        <middleName>C.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Arrington, Jodey C. [R-TX-19]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2350</lisID>
+          <bioguideId>A000375</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Ted</firstName>
+        <lastName>Yoho</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2018-07-25</sponsorshipDate>
+        <bioguideId>Y000065</bioguideId>
+        <district>3</district>
+        <middleName>S.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2115</lisID>
+          <bioguideId>Y000065</bioguideId>
+          <gpoId />
+        </identifiers>
       </item>
     </cosponsors>
+    <updateDate>2018-08-28T19:58:09Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <state>IA</state>
-        <bioguideId>K000362</bioguideId>
-        <party>R</party>
         <middleName />
-        <byRequestType />
-        <fullName>Rep. King, Steve [R-IA-4]</fullName>
-        <lastName>King</lastName>
+        <bioguideId>K000362</bioguideId>
         <identifiers>
-          <gpoId>7918</gpoId>
           <lisID>1724</lisID>
+          <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
         </identifiers>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <byRequestType />
+        <party>R</party>
         <firstName>Steve</firstName>
+        <state>IA</state>
+        <lastName>King</lastName>
         <district>4</district>
       </item>
     </sponsors>
-    <congress>115</congress>
-    <notes />
-    <committeeReports />
     <relatedBills />
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the Subcommittee on Immigration and Border Security.</text>
-      <links />
-    </latestAction>
-    <calendarNumbers />
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees>
-            <item>
-              <name>Immigration and Border Security Subcommittee</name>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-13T14:23:43Z</date>
-                </item>
-              </activities>
-              <systemCode>hsju01</systemCode>
-            </item>
-          </subcommittees>
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:09:00Z</date>
-            </item>
-          </activities>
-        </item>
-        <item>
-          <subcommittees />
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <systemCode>hsed00</systemCode>
-          <name>Education and the Workforce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:09:05Z</date>
-            </item>
-          </activities>
-        </item>
-        <item>
-          <subcommittees />
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:08:50Z</date>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
+    <committeeReports />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>New IDEA Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>New Illegal Deduction Elimination Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Internal Revenue Code of 1986 to clarify that wages paid to unauthorized aliens may not be deducted from gross income, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>New IDEA Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
     <recordedVotes />
-    <actions>
-      <item>
-        <actionDate>2017-01-13</actionDate>
-        <committee>
-          <name>Immigration and Border Security Subcommittee</name>
-          <systemCode>hsju01</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>House committee actions</name>
-          <code>1</code>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to House Education and the Workforce</text>
-        <committee>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to House Judiciary</text>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100-A</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on the Judiciary, and Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to House Ways and Means</text>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <placeholderTextForH>1</placeholderTextForH>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <billReferrals>3</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>7</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
     <summaries>
       <billSummaries>
         <item>
-          <lastSummaryUpdateDate>2017-01-12T14:39:34Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
           <text><![CDATA[<p><strong>New IDEA Act or the New Illegal Deduction Elimination Act</strong></p> <p>This bill amends the Internal Revenue Code to deny a tax deduction for wages and benefits paid to or on behalf of an unauthorized alien. The bill also extends to six years&nbsp;the period for assessing and collecting underpayments of tax due to deductions claimed for wages paid to unauthorized aliens.</p> <p>The Social Security Administration (SSA), the Department of Homeland Security (DHS), and the Department of the Treasury must jointly establish a program to share information that may lead to the identification of unauthorized aliens. Treasury must provide information to DHS and the SSA regarding employers who paid nondeductible wages to unauthorized aliens and the aliens to whom such wages were paid.</p> <p>The bill amends the Illegal Immigration Reform and Immigrant Responsibility Act of 1996 to: (1) make permanent the E-Verify Program for verifying the employment eligibility of alien workers, (2) apply such program to current employees in addition to new hires, (3) establish a rebuttable presumption that employers who participate in the E-Verify Program and obtain confirmation of identity and employment eligibility have not violated hiring requirements under such Act, and (4) allow employers participating in the E-Verify Program&nbsp;to make a conditional offer of employment pending final verification of the identity and employment eligibility of the job applicant.</p>]]></text>
           <actionDate>2017-01-03</actionDate>
-          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-12T14:39:34Z</lastSummaryUpdateDate>
         </item>
       </billSummaries>
     </summaries>
-    <billType>HR</billType>
-    <cboCostEstimates />
     <amendments />
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <originChamber>House</originChamber>
-    <billNumber>176</billNumber>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,283 +1,526 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-02-01</actionDate>
+      <text>Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+      <links />
+    </latestAction>
     <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Homeland Security</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>Intelligence activities, surveillance, classified information</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Emergency Management</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <laws />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Katko</lastName>
+        <middleName />
+        <bioguideId>K000386</bioguideId>
+        <fullName>Rep. Katko, John [R-NY-24]</fullName>
+        <identifiers>
+          <lisID>2264</lisID>
+          <gpoId />
+          <bioguideId>K000386</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>NY</state>
+        <firstName>John</firstName>
+        <party>R</party>
+        <district>24</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-13</introducedDate>
+    <relatedBills>
+      <item>
+        <latestTitle>Counterterrorism Advisory Board Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>2262</number>
+        <latestAction>
+          <actionDate>2017-12-21</actionDate>
+          <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <firstName>Will</firstName>
+        <lastName>Hurd</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>H001073</bioguideId>
+        <district>23</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Hurd, Will [R-TX-23]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>H001073</bioguideId>
+          <lisID>2269</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Daniel</firstName>
+        <lastName>Donovan</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>D000625</bioguideId>
+        <district>11</district>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Donovan, Daniel M., Jr. [R-NY-11]</fullName>
+        <state>NY</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2293</lisID>
+          <gpoId />
+          <bioguideId>D000625</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Filemon</firstName>
+        <lastName>Vela</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>V000132</bioguideId>
+        <district>34</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Vela, Filemon [D-TX-34]</fullName>
+        <state>TX</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>2167</lisID>
+          <gpoId />
+          <bioguideId>V000132</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>William</firstName>
+        <lastName>Keating</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>K000375</bioguideId>
+        <district>9</district>
+        <middleName>R.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
+        <state>MA</state>
+        <party>D</party>
+        <identifiers>
+          <gpoId>7975</gpoId>
+          <lisID>2025</lisID>
+          <bioguideId>K000375</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Michael</firstName>
+        <lastName>McCaul</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>M001157</bioguideId>
+        <district>10</district>
+        <middleName>T.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>M001157</bioguideId>
+          <lisID>1804</lisID>
+          <gpoId>8166</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Donald</firstName>
+        <lastName>Payne</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>P000604</bioguideId>
+        <district>10</district>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Payne, Donald M., Jr. [D-NJ-10]</fullName>
+        <state>NJ</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>2097</lisID>
+          <gpoId>8373</gpoId>
+          <bioguideId>P000604</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Martha</firstName>
+        <lastName>McSally</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>M001197</bioguideId>
+        <district>2</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. McSally, Martha [R-AZ-2]</fullName>
+        <state>AZ</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2225</lisID>
+          <gpoId />
+          <bioguideId>M001197</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <lastName>Ratcliffe</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>R000601</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Ratcliffe, John [R-TX-4]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2268</lisID>
+          <gpoId />
+          <bioguideId>R000601</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Kyrsten</firstName>
+        <lastName>Sinema</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <bioguideId>S001191</bioguideId>
+        <district>9</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Sinema, Kyrsten [D-AZ-9]</fullName>
+        <state>AZ</state>
+        <party>D</party>
+        <identifiers>
+          <bioguideId>S001191</bioguideId>
+          <lisID>2099</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+    </cosponsors>
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <generalDebate>1</generalDebate>
+        <considerationByHouse>1</considerationByHouse>
+        <referredToCommittee>1</referredToCommittee>
         <introducedInHouse>1</introducedInHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
         <billReferrals>1</billReferrals>
       </actionTypeCounts>
       <item>
+        <actionDate>2017-02-01</actionDate>
+        <committee>
+          <systemCode>ssga00</systemCode>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
         <type>IntroReferral</type>
-        <text>Referred to the House Committee on Homeland Security.</text>
-        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>H38310</actionCode>
+        <committee />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <links />
+        <type>Floor</type>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
+        <actionTime>15:04:11</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>H37300</actionCode>
+        <committee />
+        <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote. (text: CR H781)</text>
+        <links>
+          <link>
+            <name>H781</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H781</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>15:04:10</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>8000</actionCode>
+        <committee />
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.(text: CR H781)</text>
+        <links>
+          <link>
+            <name>H781</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H781</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <actionTime>15:04:10</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>H8D000</actionCode>
+        <committee />
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 526.</text>
+        <links>
+          <link>
+            <name>H.R. 526</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/526</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:56:26</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>H30000</actionCode>
+        <committee />
+        <text>Considered under suspension of the rules. (consideration: CR H781-782)</text>
+        <links>
+          <link>
+            <name>H781-782</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H781-782</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:56:25</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <actionCode>H30300</actionCode>
+        <committee />
+        <text>Mr. Katko moved to suspend the rules and pass the bill, as amended.</text>
         <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>14:56:20</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100</actionCode>
         <committee>
           <systemCode>hshm00</systemCode>
           <name>Homeland Security Committee</name>
         </committee>
-        <actionDate>2017-01-13</actionDate>
+        <text>Referred to the House Committee on Homeland Security.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-13</actionDate>
         <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
         <committee />
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
-        <committee />
+      </item>
+      <item>
         <actionDate>2017-01-13</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>9</houseOfRepresentatives>
+        <senate>1</senate>
+      </actionByCounts>
     </actions>
-    <relatedBills />
-    <latestAction>
-      <text>Referred to the House Committee on Homeland Security.</text>
-      <links />
-      <actionDate>2017-01-13</actionDate>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <title>To amend the Homeland Security Act of 2002 to establish in the Department of Homeland Security a board to coordinate and integrate departmental intelligence, activities, and policy related to counterterrorism, and for other purposes.</title>
-    <titles>
-      <item>
-        <title>To amend the Homeland Security Act of 2002 to establish in the Department of Homeland Security a board to coordinate and integrate departmental intelligence, activities, and policy related to counterterrorism, and for other purposes.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>To amend the Homeland Security Act of 2002 to establish in the Department of Homeland Security a board to coordinate and integrate departmental intelligence, activities, and policy related to counterterrorism, and for other purposes.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-14T09:58:28Z</updateDate>
-    <billType>HR</billType>
-    <recordedVotes />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <name>Homeland Security Committee</name>
-          <systemCode>hshm00</systemCode>
-          <type>Standing</type>
           <subcommittees />
+          <type>Standing</type>
+          <systemCode>ssga00</systemCode>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-02-01T23:27:36Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+        </item>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hshm00</systemCode>
+          <name>Homeland Security Committee</name>
           <activities>
             <item>
               <date>2017-01-13T14:07:00Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
-      <item>
-        <identifiers>
-          <gpoId />
-          <bioguideId>K000386</bioguideId>
-          <lisID>2264</lisID>
-        </identifiers>
-        <state>NY</state>
-        <bioguideId>K000386</bioguideId>
-        <lastName>Katko</lastName>
-        <middleName />
-        <party>R</party>
-        <district>24</district>
-        <fullName>Rep. Katko, John [R-NY-24]</fullName>
-        <byRequestType />
-        <firstName>John</firstName>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-13</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
+    <updateDate>2018-08-28T19:59:52Z</updateDate>
+    <version>1.0.0</version>
+    <title>Counterterrorism Advisory Board Act of 2017</title>
     <createDate>2017-01-14T04:47:32Z</createDate>
     <billNumber>526</billNumber>
-    <cosponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KATKO:H.R. 526.Congress has the power to enactthis legislation pursuantto the following:Article I, Section 8, Clause 18--To make all Laws whichshall be necessary andproper for carrying into Execution theforegoing Powers, and all other Powers vested by thisConstitution in the Government ofthe United States, or in anyDepartment or Officer thereof[Page H547]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Emergency Management</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-08T16:26:53Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Counterterrorism Advisory Board Act of 2017</strong></p> <p>This bill amends the Homeland Security Act of 2002 to establish in the Department of Homeland Security (DHS) a board to coordinate and integrate DHS's intelligence, activities, and policy related to its counterterrorism mission and functions. The board shall: (1) advise the Secretary of DHS on the issuance of terrorism alerts, and (2) meet on a regular basis to discuss intelligence and coordinate ongoing threat mitigation efforts and departmental activities. </p> <p>The board's charter shall direct it to focus on the current threat environment and the importance of aligning departmental counterterrorism activities under the Secretary's guidance. </p> <p>The Secretary shall appoint a Coordinator for Counterterrorism within DHS who shall: (1) serve as the chair of the board, and (2) report on the board's status and activities.</p>]]></text>
+          <actionDate>2017-01-13</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+        <item>
+          <updateDate>2017-01-31T13:33:13Z</updateDate>
+          <lastSummaryUpdateDate>2017-05-03T15:01:01Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Counterterrorism Advisory Board Act of 2017</strong></p> <p>(Sec. 2) This bill amends the Homeland Security Act of 2002 to establish in the Department of Homeland Security (DHS) a board to coordinate and integrate DHS's intelligence, activities, and policy related to its counterterrorism mission and functions. The board shall: (1) advise the Secretary of DHS on the issuance of terrorism alerts, and (2) meet on a regular basis to discuss intelligence and coordinate ongoing threat mitigation efforts and departmental activities. </p> <p>The board's charter shall direct it to focus on the current threat environment and the importance of aligning departmental counterterrorism activities under the Secretary's guidance. </p> <p>The Secretary shall appoint a Coordinator for Counterterrorism within DHS who shall: (1) serve as the chair of the board, and (2) report on the board's status and activities.</p>]]></text>
+          <actionDate>2017-01-31</actionDate>
+          <actionDesc>Passed House amended</actionDesc>
+          <name>Passed House amended</name>
+          <versionCode>36</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
       <item>
-        <middleName />
-        <identifiers>
-          <gpoId />
-          <bioguideId>H001073</bioguideId>
-          <lisID>2269</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Hurd, Will [R-TX-23]</fullName>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Will</firstName>
-        <lastName>Hurd</lastName>
-        <district>23</district>
-        <bioguideId>H001073</bioguideId>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <title>Counterterrorism Advisory Board Act of 2017</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
       </item>
       <item>
-        <middleName>M.</middleName>
-        <identifiers>
-          <lisID>2293</lisID>
-          <gpoId />
-          <bioguideId>D000625</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Donovan, Daniel M., Jr. [R-NY-11]</fullName>
-        <state>NY</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Daniel</firstName>
-        <lastName>Donovan</lastName>
-        <district>11</district>
-        <bioguideId>D000625</bioguideId>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Counterterrorism Advisory Board Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
-        <middleName />
-        <identifiers>
-          <bioguideId>V000132</bioguideId>
-          <gpoId />
-          <lisID>2167</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Vela, Filemon [D-TX-34]</fullName>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Filemon</firstName>
-        <lastName>Vela</lastName>
-        <district>34</district>
-        <bioguideId>V000132</bioguideId>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Homeland Security Act of 2002 to establish in the Department of Homeland Security a board to coordinate and integrate departmental intelligence, activities, and policy related to counterterrorism, and for other purposes.</title>
+        <parentTitleType />
       </item>
       <item>
-        <middleName>R.</middleName>
-        <identifiers>
-          <bioguideId>K000375</bioguideId>
-          <lisID>2025</lisID>
-          <gpoId>7975</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
-        <state>MA</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>William</firstName>
-        <lastName>Keating</lastName>
-        <district>9</district>
-        <bioguideId>K000375</bioguideId>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Counterterrorism Advisory Board Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
-        <middleName>T.</middleName>
-        <identifiers>
-          <gpoId>8166</gpoId>
-          <bioguideId>M001157</bioguideId>
-          <lisID>1804</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Michael</firstName>
-        <lastName>McCaul</lastName>
-        <district>10</district>
-        <bioguideId>M001157</bioguideId>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Counterterrorism Advisory Board Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
-        <middleName>M.</middleName>
-        <identifiers>
-          <lisID>2097</lisID>
-          <gpoId>8373</gpoId>
-          <bioguideId>P000604</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Payne, Donald M., Jr. [D-NJ-10]</fullName>
-        <state>NJ</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Donald</firstName>
-        <lastName>Payne</lastName>
-        <district>10</district>
-        <bioguideId>P000604</bioguideId>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <title>Counterterrorism Advisory Board Act of 2017</title>
+        <parentTitleType />
       </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <gpoId />
-          <bioguideId>M001197</bioguideId>
-          <lisID>2225</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. McSally, Martha [R-AZ-2]</fullName>
-        <state>AZ</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>Martha</firstName>
-        <lastName>McSally</lastName>
-        <district>2</district>
-        <bioguideId>M001197</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <bioguideId>R000601</bioguideId>
-          <lisID>2268</lisID>
-          <gpoId />
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Ratcliffe, John [R-TX-4]</fullName>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <firstName>John</firstName>
-        <lastName>Ratcliffe</lastName>
-        <district>4</district>
-        <bioguideId>R000601</bioguideId>
-      </item>
-    </cosponsors>
-    <constitutionalAuthorityStatementText />
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

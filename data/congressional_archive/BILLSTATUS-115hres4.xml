@@ -1,183 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <considerationByHouse>1</considerationByHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-      </actionTypeCounts>
-      <item>
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <committee />
-        <type>Floor</type>
-        <actionTime>14:38:25</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <actionCode>H38310</actionCode>
-      </item>
-      <item>
-        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H7)</text>
-        <committee />
-        <type>Floor</type>
-        <actionTime>14:38:18</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links>
-          <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
-            <name>H7</name>
-          </link>
-        </links>
-        <actionCode>H37100</actionCode>
-      </item>
-      <item>
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H7)</text>
-        <committee />
-        <type>Floor</type>
-        <actionTime>14:38:18</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links>
-          <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
-            <name>H7</name>
-          </link>
-        </links>
-        <actionCode>8000</actionCode>
-      </item>
-      <item>
-        <text>Considered as privileged matter. (consideration: CR H7)</text>
-        <committee />
-        <type>Floor</type>
-        <actionTime>14:37:53</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links>
-          <link>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
-            <name>H7</name>
-          </link>
-        </links>
-        <actionCode>H30000</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-13T22:31:12Z</updateDate>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
-        <parentTitleType />
-      </item>
-    </titles>
-    <notes />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billNumber>4</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText />
     <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>JOHN</firstName>
-        <bioguideId>C000714</bioguideId>
-        <district>13</district>
-        <byRequestType />
-        <state>MI</state>
-        <identifiers>
-          <lisID>229</lisID>
-          <gpoId>7999</gpoId>
-          <bioguideId>C000714</bioguideId>
-        </identifiers>
-        <party>D</party>
-        <lastName>CONYERS</lastName>
-        <fullName>Rep. Conyers, John, Jr. [D-MI-13]</fullName>
-      </item>
-    </sponsors>
+    <billType>HRES</billType>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Instructs the Clerk of the House of Representatives to inform the President that Paul D. Ryan has been elected Speaker of the House and that Karen L. Haas has been elected Clerk.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-23T21:09:49Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+        <item>
+          <updateDate>2017-01-03T14:28:11Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>81</versionCode>
+          <name>Passed House without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Instructs the Clerk of the House of Representatives to inform the President that Paul D. Ryan has been elected Speaker of the House and that Karen L. Haas has been elected Clerk.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-23T21:09:56Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+        </item>
+      </billSummaries>
     </summaries>
-    <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <actionTime>14:38:25</actionTime>
-      <links />
-      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-    </latestAction>
-    <congress>115</congress>
-    <cosponsors />
     <relatedBills>
       <item>
         <type>HRES</type>
-        <congress>115</congress>
-        <number>2</number>
         <latestTitle>To inform the Senate that a quorum of the House has assembled and of the election of the Speaker and the Clerk.</latestTitle>
-        <relationshipDetails>
-          <item>
-            <type>Related bill</type>
-            <identifiedBy>CRS</identifiedBy>
-          </item>
-        </relationshipDetails>
+        <congress>115</congress>
         <latestAction>
-          <actionDate>2017-01-03</actionDate>
           <text>Motion to reconsider laid on the table Agreed to without objection.</text>
           <actionTime>14:36:33</actionTime>
+          <actionDate>2017-01-03</actionDate>
         </latestAction>
+        <number>2</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
       </item>
     </relatedBills>
+    <createDate>2017-01-04T07:01:07Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>CONYERS</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Rep. Conyers, John, Jr. [D-MI-13]</fullName>
+        <identifiers>
+          <bioguideId>C000714</bioguideId>
+          <lisID>229</lisID>
+          <gpoId>7999</gpoId>
+        </identifiers>
+        <state>MI</state>
+        <firstName>JOHN</firstName>
+        <byRequestType />
+        <district>13</district>
+        <bioguideId>C000714</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:53:41Z</updateDate>
+    <committeeReports />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H38310</actionCode>
+        <actionTime>14:38:25</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
+            <name>H7</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H7)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H37100</actionCode>
+        <actionTime>14:38:18</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
+            <name>H7</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H7)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>8000</actionCode>
+        <actionTime>14:38:18</actionTime>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7</url>
+            <name>H7</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Considered as privileged matter. (consideration: CR H7)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H30000</actionCode>
+        <actionTime>14:37:53</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <considerationByHouse>1</considerationByHouse>
+      </actionTypeCounts>
+    </actions>
+    <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-03</actionDate>
+      <links />
+      <actionTime>14:38:25</actionTime>
+      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
+      </item>
+    </titles>
+    <cboCostEstimates />
+    <committees>
+      <billCommittees />
+    </committees>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional leadership</name>
@@ -192,25 +229,8 @@
             <name>House of Representatives</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>Authorizing the Clerk to inform the President of the election of the Speaker and the Clerk.</title>
-    <recordedVotes />
-    <cboCostEstimates />
-    <committees>
-      <billCommittees />
-    </committees>
-    <createDate>2017-01-04T07:01:07Z</createDate>
-    <billType>HRES</billType>
-    <billNumber>4</billNumber>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

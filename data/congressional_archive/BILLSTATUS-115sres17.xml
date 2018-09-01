@@ -1,28 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <committeeReports />
+    <updateDate>2018-08-28T20:20:18Z</updateDate>
+    <laws />
+    <billType>SRES</billType>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+          <item>
+            <name>Senate</name>
+          </item>
+          <item>
+            <name>Senate Committee on Rules and Administration</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>Senate</originChamber>
+    <latestAction>
+      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S365; text as passed Senate: CR S362)</text>
+      <links />
+      <actionDate>2017-01-20</actionDate>
+    </latestAction>
+    <billNumber>17</billNumber>
+    <introducedDate>2017-01-20</introducedDate>
+    <cosponsors />
+    <committees>
+      <billCommittees />
+    </committees>
+    <notes />
+    <relatedBills />
+    <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+    <sponsors>
+      <item>
+        <fullName>Sen. Schumer, Charles E. [D-NY]</fullName>
+        <firstName>CHARLES</firstName>
+        <lastName>SCHUMER</lastName>
+        <state>NY</state>
+        <bioguideId>S000148</bioguideId>
+        <party>D</party>
+        <identifiers>
+          <lisID>1036</lisID>
+          <bioguideId>S000148</bioguideId>
+          <gpoId>8279</gpoId>
+        </identifiers>
+        <byRequestType />
+        <middleName>E.</middleName>
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
     <titles>
       <item>
         <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-        <parentTitleType />
         <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+        <parentTitleType />
+        <chamberCode />
         <chamberName />
       </item>
       <item>
         <titleType>Display Title</titleType>
-        <chamberCode />
-        <parentTitleType />
         <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
+        <parentTitleType />
+        <chamberCode />
         <chamberName />
       </item>
     </titles>
-    <cosponsors />
-    <originChamber>Senate</originChamber>
-    <billType>SRES</billType>
-    <notes />
-    <relatedBills />
+    <createDate>2017-01-21T04:55:45Z</createDate>
     <cboCostEstimates />
+    <calendarNumbers />
     <actions>
       <item>
         <actionDate>2017-01-20</actionDate>
@@ -38,90 +99,76 @@
           </link>
         </links>
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S365; text as passed Senate: CR S362)</text>
         <type>Floor</type>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.</text>
-        <actionDate>2017-01-20</actionDate>
+        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S365; text as passed Senate: CR S362)</text>
         <type>Floor</type>
-        <links />
+        <committee />
+        <actionDate>2017-01-20</actionDate>
+        <links>
+          <link>
+            <name>S362</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S362</url>
+          </link>
+          <link>
+            <name>S365</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S365</url>
+          </link>
+        </links>
         <actionCode>17000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
         <text>Introduced in Senate</text>
-        <actionDate>2017-01-20</actionDate>
         <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-20</actionDate>
         <links />
         <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
-      <actionTypeCounts>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
-        <introducedInSenate>1</introducedInSenate>
-        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
-      </actionTypeCounts>
       <actionByCounts>
         <senate>3</senate>
       </actionByCounts>
+      <actionTypeCounts>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
     </actions>
-    <title>A resolution to constitute the minority party's membership on certain committees for the One Hundred Fifteenth Congress, or until their successors are chosen.</title>
-    <sponsors>
-      <item>
-        <firstName>CHARLES</firstName>
-        <identifiers>
-          <lisID>1036</lisID>
-          <bioguideId>S000148</bioguideId>
-          <gpoId>8279</gpoId>
-        </identifiers>
-        <middleName>E.</middleName>
-        <lastName>SCHUMER</lastName>
-        <byRequestType />
-        <bioguideId>S000148</bioguideId>
-        <state>NY</state>
-        <party>D</party>
-        <fullName>Sen. Schumer, Charles E. [D-NY]</fullName>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <committeeReports />
-    <latestAction>
-      <actionDate>2017-01-20</actionDate>
-      <links />
-      <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S365; text as passed Senate: CR S362)</text>
-    </latestAction>
-    <congress>115</congress>
-    <billNumber>17</billNumber>
-    <updateDate>2017-01-23T14:32:21Z</updateDate>
-    <committees>
-      <billCommittees />
-    </committees>
-    <laws />
-    <recordedVotes />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <actionDate>2017-01-20</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>Designates the minority party's membership on the Senate Committee on Rules and Administration for the 115th Congress.</p>]]></text>
+          <lastSummaryUpdateDate>2017-03-16T18:46:44Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+        <item>
+          <updateDate>2017-01-20T14:15:51Z</updateDate>
+          <actionDate>2017-01-20</actionDate>
+          <versionCode>82</versionCode>
+          <name>Passed Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the minority party's membership on the Senate Committee on Rules and Administration for the 115th Congress.</p>]]></text>
+          <lastSummaryUpdateDate>2017-03-16T18:47:47Z</lastSummaryUpdateDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+        </item>
+      </billSummaries>
     </summaries>
-    <amendments />
-    <policyArea />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <introducedDate>2017-01-20</introducedDate>
-    <createDate>2017-01-21T04:55:45Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

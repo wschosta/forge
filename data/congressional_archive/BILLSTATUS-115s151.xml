@@ -1,19 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>151</billNumber>
+    <sponsors>
+      <item>
+        <middleName />
+        <party>R</party>
+        <bioguideId>R000595</bioguideId>
+        <lastName>Rubio</lastName>
+        <firstName>Marco</firstName>
+        <state>FL</state>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-18T05:04:59Z</createDate>
+    <committeeReports />
     <latestAction>
+      <text>Read twice and referred to the Committee on the Judiciary.</text>
       <links />
       <actionDate>2017-01-17</actionDate>
-      <text>Read twice and referred to the Committee on the Judiciary.</text>
     </latestAction>
+    <notes />
     <introducedDate>2017-01-17</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-17T20:52:49Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills />
+    <billNumber>151</billNumber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Criminal investigation, prosecution, interrogation</name>
+          </item>
+          <item>
+            <name>Criminal justice information and records</name>
+          </item>
+          <item>
+            <name>Detention of persons</name>
+          </item>
+          <item>
+            <name>Firearms and explosives</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
     <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <congress>115</congress>
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
@@ -22,78 +94,39 @@
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on the Judiciary.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
-        <links />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
         <actionDate>2017-01-17</actionDate>
+        <links />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
         <committee />
       </item>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
     </actions>
-    <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
-      <item>
-        <firstName>Marco</firstName>
-        <party>R</party>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <middleName />
-        <state>FL</state>
-        <byRequestType />
-        <bioguideId>R000595</bioguideId>
-        <identifiers>
-          <lisID>2084</lisID>
-          <bioguideId>R000595</bioguideId>
-          <gpoId>8242</gpoId>
-        </identifiers>
-        <lastName>Rubio</lastName>
-      </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
     <recordedVotes />
-    <updateDate>2017-01-18T10:20:18Z</updateDate>
-    <policyArea />
-    <title>A bill to provide appropriate information to Federal law enforcement and intelligence agencies, pursuant to investigating terrorism, and for other purposes.</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-18T05:04:59Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Judiciary Committee</name>
-          <systemCode>ssju00</systemCode>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-17T20:52:49Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <relatedBills />
     <laws />
+    <cosponsors />
     <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Terror Intelligence Improvement Act of 2017</title>
+      </item>
       <item>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
@@ -106,17 +139,33 @@
         <titleType>Display Title</titleType>
         <parentTitleType />
         <chamberName />
-        <title>A bill to provide appropriate information to Federal law enforcement and intelligence agencies, pursuant to investigating terrorism, and for other purposes.</title>
+        <title>Terror Intelligence Improvement Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Terror Intelligence Improvement Act of 2017</title>
       </item>
     </titles>
-    <cosponsors />
-    <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <congress>115</congress>
+    <updateDate>2018-08-28T20:22:55Z</updateDate>
+    <calendarNumbers />
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <actionDate>2017-01-17</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Terror Intelligence Improvement Act of </b><b>2017</b></p> <p>This bill requires each federal department or agency to provide to the Federal Bureau of Investigation (FBI) information about a person who is or has been under a federal terrorism investigation.</p> <p>The FBI and its Joint Terrorism Task Forces must immediately be notified of a request to transfer a firearm or explosive to a person who is, or was within the previous 10 years, under a federal terrorism investigation.</p> <p>The Inspector General of the Intelligence Community must audit the federal government's terrorism-related screening and watch list procedures.</p> <p>The bill directs the Department of Justice to establish a process to delay and prevent the transfer of a firearm or explosive to a person who is, or was within the previous 10 years, under a federal terrorism investigation. </p>]]></text>
+          <lastSummaryUpdateDate>2017-02-03T22:40:17Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Terror Intelligence Improvement Act of 2017</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

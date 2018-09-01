@@ -1,64 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-03</actionDate>
+      <text>Referred to the House Committee on Ways and Means.</text>
+      <links />
+    </latestAction>
     <congress>115</congress>
-    <billNumber>111</billNumber>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>16</district>
-        <firstName>James</firstName>
-        <fullName>Rep. Renacci, James B. [R-OH-16]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>R000586</bioguideId>
-          <gpoId>8106</gpoId>
-          <lisID>2048</lisID>
-        </identifiers>
-        <bioguideId>R000586</bioguideId>
-        <lastName>Renacci</lastName>
-        <state>OH</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
-        <middleName>B.</middleName>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>25</district>
-        <firstName>Mario</firstName>
-        <fullName>Rep. Diaz-Balart, Mario [R-FL-25]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1717</lisID>
-          <gpoId>7893</gpoId>
-          <bioguideId>D000600</bioguideId>
-        </identifiers>
-        <bioguideId>D000600</bioguideId>
-        <lastName>Diaz-Balart</lastName>
-        <state>FL</state>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <district>3</district>
-        <firstName>RON</firstName>
-        <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1498</lisID>
-          <gpoId>8216</gpoId>
-          <bioguideId>K000188</bioguideId>
-        </identifiers>
-        <bioguideId>K000188</bioguideId>
-        <lastName>KIND</lastName>
-        <state>WI</state>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>D</party>
-        <middleName />
-      </item>
-    </cosponsors>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -77,149 +26,261 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <updateDate>2017-01-10T15:01:30Z</updateDate>
+    <laws />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Buchanan</lastName>
+        <middleName />
+        <bioguideId>B001260</bioguideId>
+        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
+        <identifiers>
+          <lisID>1840</lisID>
+          <bioguideId>B001260</bioguideId>
+          <gpoId>7885</gpoId>
+        </identifiers>
+        <byRequestType />
+        <state>FL</state>
+        <firstName>Vern</firstName>
+        <party>R</party>
+        <district>16</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills>
+      <item>
+        <latestTitle>Support Our Start-Ups Act</latestTitle>
+        <number>1984</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2017-10-19</actionDate>
+        </latestAction>
+        <type>S</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>2048</lisID>
+          <gpoId>8106</gpoId>
+          <bioguideId>R000586</bioguideId>
+        </identifiers>
+        <firstName>James</firstName>
+        <state>OH</state>
+        <bioguideId>R000586</bioguideId>
+        <district>16</district>
+        <fullName>Rep. Renacci, James B. [R-OH-16]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Renacci</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>D000600</bioguideId>
+          <lisID>1717</lisID>
+          <gpoId>7893</gpoId>
+        </identifiers>
+        <firstName>Mario</firstName>
+        <state>FL</state>
+        <bioguideId>D000600</bioguideId>
+        <district>25</district>
+        <fullName>Rep. Diaz-Balart, Mario [R-FL-25]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Diaz-Balart</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>K000188</bioguideId>
+          <gpoId>8216</gpoId>
+          <lisID>1498</lisID>
+        </identifiers>
+        <firstName>RON</firstName>
+        <state>WI</state>
+        <bioguideId>K000188</bioguideId>
+        <district>3</district>
+        <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>KIND</lastName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>S001187</bioguideId>
+          <gpoId>8105</gpoId>
+          <lisID>2047</lisID>
+        </identifiers>
+        <firstName>Steve</firstName>
+        <state>OH</state>
+        <bioguideId>S001187</bioguideId>
+        <district>15</district>
+        <fullName>Rep. Stivers, Steve [R-OH-15]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Stivers</lastName>
+        <sponsorshipDate>2017-02-27</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2235</lisID>
+          <gpoId />
+          <bioguideId>C001107</bioguideId>
+        </identifiers>
+        <firstName>Carlos</firstName>
+        <state>FL</state>
+        <bioguideId>C001107</bioguideId>
+        <district>26</district>
+        <fullName>Rep. Curbelo, Carlos [R-FL-26]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Curbelo</lastName>
+        <sponsorshipDate>2017-04-03</sponsorshipDate>
+      </item>
+    </cosponsors>
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
       <item>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Ways and Means.</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
         <committee>
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
         </committee>
-        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
         <committee />
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-03</actionDate>
       </item>
-    </actions>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDate>2017-01-03</actionDate>
-          <name>Introduced in House</name>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <text><![CDATA[<p><strong>Support Our Start-Ups Act </strong></p> <p>This bill amends the Internal Revenue Code to extend the tax deduction for new business expenditures to organizational expenditures, generally defined as expenditures incident to the creation of a corporation or a partnership.</p> <p>The bill also increases the maximum deduction amount for start-up and organizational expenditures from $5,000 to $20,000 and increases from $50,000 to $120,000 the threshold amount after which the maximum deduction amount for such expenditures is reduced. </p>]]></text>
-          <lastSummaryUpdateDate>2017-01-10T14:48:21Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
-    <billType>HR</billType>
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <notes />
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <title>Support Our Start-Ups Act</title>
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <sponsors>
       <item>
-        <lastName>Buchanan</lastName>
-        <identifiers>
-          <bioguideId>B001260</bioguideId>
-          <lisID>1840</lisID>
-          <gpoId>7885</gpoId>
-        </identifiers>
-        <byRequestType />
-        <middleName />
-        <state>FL</state>
-        <firstName>Vern</firstName>
-        <party>R</party>
-        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
-        <district>16</district>
-        <bioguideId>B001260</bioguideId>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
-    </sponsors>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-          <subcommittees />
           <chamber>House</chamber>
+          <systemCode>hswm00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Ways and Means Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-03T17:04:50Z</date>
             </item>
           </activities>
-          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
+    <updateDate>2018-08-28T19:57:56Z</updateDate>
+    <version>1.0.0</version>
+    <title>Support Our Start-Ups Act</title>
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <billNumber>111</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BUCHANAN:H.R. 111.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 of the U.S. Constitution.[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-10T14:48:21Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Support Our Start-Ups Act </strong></p> <p>This bill amends the Internal Revenue Code to extend the tax deduction for new business expenditures to organizational expenditures, generally defined as expenditures incident to the creation of a corporation or a partnership.</p> <p>The bill also increases the maximum deduction amount for start-up and organizational expenditures from $5,000 to $20,000 and increases from $50,000 to $120,000 the threshold amount after which the maximum deduction amount for such expenditures is reduced. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
     <titles>
       <item>
-        <title>Support Our Start-Ups Act</title>
         <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
         <chamberName />
-      </item>
-      <item>
-        <title>To amend the Internal Revenue Code of 1986 to increase the limitations for deductible new business expenditures and to consolidate provisions for start-up and organizational expenditures.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
         <chamberCode />
-        <chamberName />
-      </item>
-      <item>
+        <parentTitleType />
         <title>Support Our Start-Ups Act</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
         <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To amend the Internal Revenue Code of 1986 to increase the limitations for deductible new business expenditures and to consolidate provisions for start-up and organizational expenditures.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Support Our Start-Ups Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Support Our Start-Ups Act</title>
       </item>
     </titles>
-    <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-03</actionDate>
-    </latestAction>
-    <calendarNumbers />
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

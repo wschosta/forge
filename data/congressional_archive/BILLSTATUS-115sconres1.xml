@@ -1,229 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-        <senate>4</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>H38310</actionCode>
-        <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionTime>18:05:56</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>H37100</actionCode>
-        <committee />
-        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H36)</text>
-        <actionTime>18:05:52</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H36</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>8000</actionCode>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H36)</text>
-        <actionTime>18:05:52</actionTime>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H36</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>H30000</actionCode>
-        <committee />
-        <text>Considered as privileged matter. (consideration: CR H36)</text>
-        <actionTime>18:04:32</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H36</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>H15000</actionCode>
-        <committee />
-        <text>Held at the desk.</text>
-        <actionTime>16:54:59</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Message on Senate action sent to the House.</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>H14000</actionCode>
-        <committee />
-        <text>Received in the House.</text>
-        <actionTime>15:59:49</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <links>
-          <link>
-            <name>S6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>Floor</type>
-        <actionCode>17000</actionCode>
-        <committee />
-        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>S6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>10000</actionCode>
-        <committee />
-        <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <passedAgreedToInSenate>1</passedAgreedToInSenate>
-        <considerationByHouse>1</considerationByHouse>
-        <heldAtTheDesk>1</heldAtTheDesk>
-        <introducedInSenate>1</introducedInSenate>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <sentToHouse>1</sentToHouse>
-        <receivedInTheHouse>1</receivedInTheHouse>
-        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <committees>
-      <billCommittees />
-    </committees>
-    <titles>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
-      </item>
-    </titles>
-    <notes />
-    <originChamber>Senate</originChamber>
     <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>MITCH</firstName>
-        <bioguideId>M000355</bioguideId>
-        <byRequestType />
-        <state>KY</state>
-        <identifiers>
-          <lisID>1395</lisID>
-          <gpoId>8254</gpoId>
-          <bioguideId>M000355</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <lastName>MCCONNELL</lastName>
-        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <actionTime>18:05:56</actionTime>
-      <links />
-      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-    </latestAction>
-    <congress>115</congress>
-    <cosponsors />
-    <billNumber>1</billNumber>
+    <updateDate>2018-08-28T20:20:01Z</updateDate>
+    <laws />
+    <billType>SCONRES</billType>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional committees</name>
@@ -238,22 +24,256 @@
             <name>U.S. Capitol</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
-    <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
-    <recordedVotes />
-    <cboCostEstimates />
-    <updateDate>2017-01-10T10:26:02Z</updateDate>
-    <createDate>2017-01-04T04:47:41Z</createDate>
-    <billType>SCONRES</billType>
-    <relatedBills />
     <policyArea>
       <name>Congress</name>
     </policyArea>
+    <recordedVotes />
+    <originChamber>Senate</originChamber>
+    <latestAction>
+      <actionTime>18:05:56</actionTime>
+      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <billNumber>1</billNumber>
+    <introducedDate>2017-01-03</introducedDate>
+    <cosponsors />
+    <committees>
+      <billCommittees />
+    </committees>
+    <notes />
+    <relatedBills />
+    <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
+    <sponsors>
+      <item>
+        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
+        <firstName>MITCH</firstName>
+        <lastName>MCCONNELL</lastName>
+        <state>KY</state>
+        <bioguideId>M000355</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <lisID>1395</lisID>
+          <bioguideId>M000355</bioguideId>
+          <gpoId>8254</gpoId>
+        </identifiers>
+        <byRequestType />
+        <middleName />
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>A concurrent resolution extending the life of the Joint Congressional Committee on Inaugural Ceremonies.</title>
+        <chamberName />
+      </item>
+    </titles>
+    <createDate>2017-01-04T04:47:41Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <actions>
+      <item>
+        <actionTime>18:05:56</actionTime>
+        <links />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H38310</actionCode>
+      </item>
+      <item>
+        <actionTime>18:05:52</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
+            <name>H36</name>
+          </link>
+        </links>
+        <text>On agreeing to the resolution Agreed to by voice vote. (text: CR H36)</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H37100</actionCode>
+      </item>
+      <item>
+        <actionTime>18:05:52</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
+            <name>H36</name>
+          </link>
+        </links>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to by voice vote.(text: CR H36)</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>8000</actionCode>
+      </item>
+      <item>
+        <actionTime>18:04:32</actionTime>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H36</url>
+            <name>H36</name>
+          </link>
+        </links>
+        <text>Considered as privileged matter. (consideration: CR H36)</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H30000</actionCode>
+      </item>
+      <item>
+        <actionTime>16:54:59</actionTime>
+        <links />
+        <text>Held at the desk.</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H15000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionTime>15:59:49</actionTime>
+        <links />
+        <text>Received in the House.</text>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <type>Floor</type>
+        <actionCode>H14000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
+            <name>S6</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
+            <name>S6</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
+        <type>Floor</type>
+        <actionCode>17000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
+      </item>
+      <actionByCounts>
+        <senate>4</senate>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
+        <heldAtTheDesk>1</heldAtTheDesk>
+        <considerationByHouse>1</considerationByHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <sentToHouse>1</sentToHouse>
+        <introducedInSenate>1</introducedInSenate>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+      </actionTypeCounts>
+    </actions>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in Senate</name>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-02-04T14:01:21Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p>Declares that: (1) the Joint Congressional Committee on Inaugural Ceremonies, created by S.Con.Res. 28 (114th Congress), to make the necessary arrangements for the inauguration of the President-elect and the Vice President-elect of the United States, is continued with the same power and authority provided for in such resolution; and (2) the provisions of S.Con.Res. 29 (114th Congress), to authorize the rotunda and Emancipation Hall of the Capitol to be used in connection with such proceedings and ceremonies, are continued with the same power and authority provided for in such resolution.</p>]]></text>
+        </item>
+        <item>
+          <name>Passed House without amendment</name>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-02-04T14:01:35Z</lastSummaryUpdateDate>
+          <versionCode>81</versionCode>
+          <updateDate>2017-01-03T14:30:45Z</updateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Declares that: (1) the Joint Congressional Committee on Inaugural Ceremonies, created by S.Con.Res. 28 (114th Congress), to make the necessary arrangements for the inauguration of the President-elect and the Vice President-elect of the United States, is continued with the same power and authority provided for in such resolution; and (2) the provisions of S.Con.Res. 29 (114th Congress), to authorize the rotunda and Emancipation Hall of the Capitol to be used in connection with such proceedings and ceremonies, are continued with the same power and authority provided for in such resolution.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

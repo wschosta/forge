@@ -1,143 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Judiciary Committee</name>
-          <subcommittees />
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:27:00Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hsju00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <committeeReports />
-    <congress>115</congress>
-    <relatedBills />
-    <cosponsors />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <cboCostEstimates />
-    <notes />
-    <recordedVotes />
-    <updateDate>2017-01-05T21:31:18Z</updateDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <originChamber>House</originChamber>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <title>Expressing the sense of the House of Representatives regarding the enhancement of unity in America.</title>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <title>Expressing the sense of the House of Representatives regarding the enhancement of unity in America.</title>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
+    <amendments />
     <latestAction>
-      <actionDate>2017-01-03</actionDate>
+      <actionDate>2017-01-23</actionDate>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
       <links />
-      <text>Referred to the House Committee on the Judiciary.</text>
     </latestAction>
-    <calendarNumbers />
-    <billType>HRES</billType>
-    <billNumber>12</billNumber>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <createDate>2017-01-04T07:01:08Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>First Amendment rights</name>
+          </item>
+          <item>
+            <name>Motor vehicles</name>
+          </item>
+          <item>
+            <name>National symbols</name>
+          </item>
+          <item>
+            <name>Racial and ethnic relations</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+          <item>
+            <name>Texas</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
-          <name>Congress</name>
+          <name>Civil Rights and Liberties, Minority Issues</name>
         </policyArea>
       </billSubjects>
     </subjects>
+    <laws />
+    <notes />
+    <billType>HRES</billType>
+    <sponsors>
+      <item>
+        <lastName>JACKSON LEE</lastName>
+        <middleName />
+        <bioguideId>J000032</bioguideId>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <identifiers>
+          <lisID>588</lisID>
+          <gpoId>8174</gpoId>
+          <bioguideId>J000032</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>TX</state>
+        <firstName>SHEILA</firstName>
+        <party>D</party>
+        <district>18</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills />
+    <cosponsors>
+      <item>
+        <party>D</party>
+        <state>TN</state>
+        <bioguideId>C001068</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>C001068</bioguideId>
+          <gpoId>8156</gpoId>
+          <lisID>1878</lisID>
+        </identifiers>
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <lastName>Cohen</lastName>
+        <sponsorshipDate>2017-07-27</sponsorshipDate>
+        <firstName>Steve</firstName>
+        <district>9</district>
+        <middleName />
+      </item>
+    </cosponsors>
     <actions>
       <item>
+        <actionDate>2017-01-23</actionDate>
         <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
+          <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
         </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
         <text>Referred to the House Committee on the Judiciary.</text>
-        <actionDate>2017-01-03</actionDate>
         <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
-        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
         <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
         <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <links />
       </item>
       <item>
-        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
         <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
         <type>IntroReferral</type>
         <actionCode>1000</actionCode>
-        <links />
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
       <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
         <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
     </actions>
-    <amendments />
-    <sponsors>
-      <item>
-        <identifiers>
-          <gpoId>8174</gpoId>
-          <bioguideId>J000032</bioguideId>
-          <lisID>588</lisID>
-        </identifiers>
-        <party>D</party>
-        <firstName>SHEILA</firstName>
-        <bioguideId>J000032</bioguideId>
-        <byRequestType />
-        <district>18</district>
-        <state>TX</state>
-        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
-        <middleName />
-        <lastName>JACKSON LEE</lastName>
-      </item>
-    </sponsors>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-03T17:27:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-23T16:29:38Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <updateDate>2018-08-28T19:53:43Z</updateDate>
+    <version>1.0.0</version>
     <title>Expressing the sense of the House of Representatives regarding the enhancement of unity in America.</title>
+    <createDate>2017-01-04T07:01:08Z</createDate>
+    <billNumber>12</billNumber>
+    <constitutionalAuthorityStatementText />
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Civil Rights and Liberties, Minority Issues</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-01-23T22:08:35Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Expresses the sense of the House of Representatives that the United States can achieve a more perfect union:</p> <ul> <li>through avoidance of &quot;government speech&quot; (as the state of Texas did in <i>Walker III v. Texas Division, Sons of Confederate Veterans, Inc.</i>) that promotes or displays symbols, signs, and vestiges of racism, oppression, and intimidation;</li> <li> by abating the use of government speech through signs, actions, and words that promote division and tear at the fabric of American society; and</li> <li> by taking actions to ensure that government speech does not foster division, disharmony, or intolerance through government-issued or sponsored flags, signs, images, or other symbol.</li> </ul>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>Expressing the sense of the House of Representatives regarding the enhancement of unity in America.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Expressing the sense of the House of Representatives regarding the enhancement of unity in America.</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

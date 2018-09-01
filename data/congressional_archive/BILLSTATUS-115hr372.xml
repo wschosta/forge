@@ -1,398 +1,1199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <billNumber>372</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <constitutionalAuthorityStatementText />
-    <actions>
-      <item>
-        <links />
-        <actionDate>2017-01-09</actionDate>
-        <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <actionDate>2017-01-09</actionDate>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <links />
-        <actionDate>2017-01-09</actionDate>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-      </item>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <amendments />
-    <cboCostEstimates />
-    <committeeReports />
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-36</citation>
+      </committeeReport>
+    </committeeReports>
+    <updateDate>2018-08-28T19:58:58Z</updateDate>
     <laws />
-    <createDate>2017-01-10T05:15:44Z</createDate>
-    <latestAction>
-      <actionDate>2017-01-09</actionDate>
-      <text>Referred to the House Committee on the Judiciary.</text>
-      <links />
-    </latestAction>
+    <billType>HR</billType>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Competition and antitrust</name>
+          </item>
+          <item>
+            <name>Dental care</name>
+          </item>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Insurance industry and regulation</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <title>Competitive Health Insurance Reform Act of 2017</title>
-    <sponsors>
-      <item>
-        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
-        <byRequestType />
-        <lastName>Gosar</lastName>
-        <party>R</party>
-        <bioguideId>G000565</bioguideId>
-        <identifiers>
-          <lisID>1992</lisID>
-          <bioguideId>G000565</bioguideId>
-          <gpoId>7798</gpoId>
-        </identifiers>
-        <middleName>A.</middleName>
-        <district>4</district>
-        <state>AZ</state>
-        <firstName>Paul</firstName>
-      </item>
-    </sponsors>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <recordedVotes>
+      <recordedVote>
+        <date>2017-03-22T17:53:33Z</date>
+        <sessionNumber>1</sessionNumber>
+        <url>http://clerk.house.gov/evs/2017/roll184.xml</url>
+        <chamber>House</chamber>
+        <congress>115</congress>
+        <rollNumber>184</rollNumber>
+        <fullActionName>Passage of a Measure</fullActionName>
+      </recordedVote>
+      <recordedVote>
+        <date>2017-03-22T17:46:28Z</date>
+        <sessionNumber>1</sessionNumber>
+        <url>http://clerk.house.gov/evs/2017/roll183.xml</url>
+        <chamber>House</chamber>
+        <congress>115</congress>
+        <rollNumber>183</rollNumber>
+        <fullActionName>Motion to Commit/Recommit With Instructions Results</fullActionName>
+      </recordedVote>
+    </recordedVotes>
+    <originChamber>House</originChamber>
+    <latestAction>
+      <text>Received in the Senate and Read twice and referred to the Committee on the Judiciary.</text>
+      <links />
+      <actionDate>2017-03-23</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 5 (Monday, January 9, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GOSAR:H.R. 372.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3. (commerce clause)``The Congress shall have Power to regulate Commerce withforeign Nations, and among the several States, and with theIndian Tribes.''[Page H235]</pre>]]></constitutionalAuthorityStatementText>
+    <billNumber>372</billNumber>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <systemCode>hsju00</systemCode>
-          <chamber>House</chamber>
-          <name>Judiciary Committee</name>
-          <type>Standing</type>
           <activities>
             <item>
-              <date>2017-01-09T17:03:20Z</date>
               <name>Referred to</name>
+              <date>2017-03-23T17:17:26Z</date>
             </item>
           </activities>
+          <chamber>Senate</chamber>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <type>Standing</type>
+          <subcommittees />
+        </item>
+        <item>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-03-15T15:02:46Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-02-28T17:36:25Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-09T17:03:20Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsju05</systemCode>
+              <activities>
+                <item>
+                  <name>Discharged from</name>
+                  <date>2017-02-20T21:35:34Z</date>
+                </item>
+                <item>
+                  <name>Hearings by</name>
+                  <date>2017-02-16T21:34:21Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-06T22:25:45Z</date>
+                </item>
+              </activities>
+              <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-23T14:01:29Z</updateDate>
-    <notes />
-    <recordedVotes />
-    <billType>HR</billType>
+    <introducedDate>2017-01-09</introducedDate>
     <cosponsors>
       <item>
+        <firstName>Dave</firstName>
         <lastName>Brat</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>B001290</bioguideId>
+        <district>7</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
+        <state>VA</state>
+        <party>R</party>
         <identifiers>
-          <gpoId />
           <bioguideId>B001290</bioguideId>
+          <gpoId />
           <lisID>2203</lisID>
         </identifiers>
-        <party>R</party>
-        <state>VA</state>
-        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
-        <firstName>Dave</firstName>
-        <middleName />
-        <district>7</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Mo</firstName>
         <lastName>Brooks</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>B001274</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
+        <state>AL</state>
+        <party>R</party>
         <identifiers>
           <lisID>1987</lisID>
           <bioguideId>B001274</bioguideId>
           <gpoId>7790</gpoId>
         </identifiers>
-        <party>R</party>
-        <state>AL</state>
-        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
-        <firstName>Mo</firstName>
-        <middleName />
-        <district>5</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Scott</firstName>
         <lastName>DesJarlais</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>D000616</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
+        <state>TN</state>
+        <party>R</party>
         <identifiers>
           <lisID>2062</lisID>
           <bioguideId>D000616</bioguideId>
           <gpoId>8151</gpoId>
         </identifiers>
-        <party>R</party>
-        <state>TN</state>
-        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
-        <firstName>Scott</firstName>
-        <middleName />
-        <district>4</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>JOHN</firstName>
         <lastName>DUNCAN</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>D000533</bioguideId>
+        <district>2</district>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
+        <state>TN</state>
+        <party>R</party>
         <identifiers>
-          <lisID>322</lisID>
           <bioguideId>D000533</bioguideId>
           <gpoId>8149</gpoId>
+          <lisID>322</lisID>
         </identifiers>
-        <party>R</party>
-        <state>TN</state>
-        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
-        <firstName>JOHN</firstName>
-        <middleName>J.</middleName>
-        <district>2</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Louie</firstName>
         <lastName>Gohmert</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>G000552</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
+        <state>TX</state>
+        <party>R</party>
         <identifiers>
           <lisID>1801</lisID>
           <bioguideId>G000552</bioguideId>
           <gpoId>8157</gpoId>
         </identifiers>
-        <party>R</party>
-        <state>TX</state>
-        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
-        <firstName>Louie</firstName>
-        <middleName />
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>WALTER</firstName>
         <lastName>JONES</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>J000255</bioguideId>
+        <district>3</district>
+        <middleName>B.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <state>NC</state>
+        <party>R</party>
         <identifiers>
+          <lisID>612</lisID>
           <bioguideId>J000255</bioguideId>
           <gpoId>8026</gpoId>
-          <lisID>612</lisID>
         </identifiers>
-        <party>R</party>
-        <state>NC</state>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <firstName>WALTER</firstName>
-        <middleName>B.</middleName>
-        <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Steve</firstName>
         <lastName>King</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>K000362</bioguideId>
+        <district>4</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <state>IA</state>
+        <party>R</party>
         <identifiers>
           <lisID>1724</lisID>
           <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
         </identifiers>
-        <party>R</party>
-        <state>IA</state>
-        <fullName>Rep. King, Steve [R-IA-4]</fullName>
-        <firstName>Steve</firstName>
-        <middleName />
-        <district>4</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>David</firstName>
         <lastName>Roe</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>R000582</bioguideId>
+        <district>1</district>
+        <middleName>P.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <state>TN</state>
+        <party>R</party>
         <identifiers>
+          <lisID>1954</lisID>
           <bioguideId>R000582</bioguideId>
           <gpoId>8148</gpoId>
-          <lisID>1954</lisID>
         </identifiers>
-        <party>R</party>
-        <state>TN</state>
-        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
-        <firstName>David</firstName>
-        <middleName>P.</middleName>
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Austin</firstName>
         <lastName>Scott</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>S001189</bioguideId>
+        <district>8</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Scott, Austin [R-GA-8]</fullName>
+        <state>GA</state>
+        <party>R</party>
         <identifiers>
-          <gpoId>7905</gpoId>
           <lisID>2009</lisID>
+          <gpoId>7905</gpoId>
           <bioguideId>S001189</bioguideId>
         </identifiers>
-        <party>R</party>
-        <state>GA</state>
-        <fullName>Rep. Scott, Austin [R-GA-8]</fullName>
-        <firstName>Austin</firstName>
-        <middleName />
-        <district>8</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Ted</firstName>
         <lastName>Yoho</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>Y000065</bioguideId>
+        <district>3</district>
+        <middleName>S.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <state>FL</state>
+        <party>R</party>
         <identifiers>
-          <gpoId />
           <lisID>2115</lisID>
+          <gpoId />
           <bioguideId>Y000065</bioguideId>
         </identifiers>
-        <party>R</party>
-        <state>FL</state>
-        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
-        <firstName>Ted</firstName>
-        <middleName>S.</middleName>
-        <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>A.</firstName>
         <lastName>Ferguson</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>F000465</bioguideId>
+        <district>3</district>
+        <middleName>Drew</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Ferguson, A. Drew, IV [R-GA-3]</fullName>
+        <state>GA</state>
+        <party>R</party>
         <identifiers>
-          <gpoId />
           <lisID>2324</lisID>
+          <gpoId />
           <bioguideId>F000465</bioguideId>
         </identifiers>
-        <party>R</party>
-        <state>GA</state>
-        <fullName>Rep. Ferguson, A. Drew IV [R-GA-3]</fullName>
-        <firstName>A.</firstName>
-        <middleName>Drew</middleName>
-        <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>Robert</firstName>
         <lastName>Wittman</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>W000804</bioguideId>
-        <identifiers>
-          <gpoId>8192</gpoId>
-          <lisID>1886</lisID>
-          <bioguideId>W000804</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>VA</state>
-        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
-        <firstName>Robert</firstName>
-        <middleName>J.</middleName>
         <district>1</district>
+        <middleName>J.</middleName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <state>VA</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>W000804</bioguideId>
+          <lisID>1886</lisID>
+          <gpoId>8192</gpoId>
+        </identifiers>
       </item>
       <item>
+        <firstName>Brian</firstName>
         <lastName>Babin</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>B001291</bioguideId>
+        <district>36</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <state>TX</state>
+        <party>R</party>
         <identifiers>
           <lisID>2270</lisID>
           <bioguideId>B001291</bioguideId>
           <gpoId />
         </identifiers>
-        <party>R</party>
-        <state>TX</state>
-        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
-        <firstName>Brian</firstName>
-        <middleName />
-        <district>36</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
       <item>
+        <firstName>LAMAR</firstName>
         <lastName>SMITH</lastName>
         <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-09</sponsorshipDate>
         <bioguideId>S000583</bioguideId>
-        <identifiers>
-          <lisID>1075</lisID>
-          <gpoId>8177</gpoId>
-          <bioguideId>S000583</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>TX</state>
-        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
-        <firstName>LAMAR</firstName>
-        <middleName />
         <district>21</district>
+        <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>S000583</bioguideId>
+          <gpoId>8177</gpoId>
+          <lisID>1075</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Andy</firstName>
+        <lastName>Biggs</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <bioguideId>B001302</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
+        <state>AZ</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2307</lisID>
+          <bioguideId>B001302</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Doug</firstName>
+        <lastName>Lamborn</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <bioguideId>L000564</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
+        <state>CO</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>L000564</bioguideId>
+          <lisID>1834</lisID>
+          <gpoId>7863</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Mark</firstName>
+        <lastName>Sanford</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <bioguideId>S000051</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Sanford, Mark [R-SC-1]</fullName>
+        <state>SC</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1012</lisID>
+          <gpoId />
+          <bioguideId>S000051</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Thomas</firstName>
+        <lastName>Garrett</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <bioguideId>G000580</bioguideId>
+        <district>5</district>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
+        <state>VA</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2353</lisID>
+          <bioguideId>G000580</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Raul</firstName>
+        <lastName>Labrador</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <bioguideId>L000573</bioguideId>
+        <district>1</district>
+        <middleName>R.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Labrador, Raul R. [R-ID-1]</fullName>
+        <state>ID</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2011</lisID>
+          <gpoId>7919</gpoId>
+          <bioguideId>L000573</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Scott</firstName>
+        <lastName>Tipton</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-03-10</sponsorshipDate>
+        <bioguideId>T000470</bioguideId>
+        <district>3</district>
+        <middleName>R.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Tipton, Scott  R. [R-CO-3]</fullName>
+        <state>CO</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1997</lisID>
+          <bioguideId>T000470</bioguideId>
+          <gpoId>7861</gpoId>
+        </identifiers>
       </item>
     </cosponsors>
-    <relatedBills />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <introducedDate>2017-01-09</introducedDate>
+    <notes />
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <number>1072</number>
+        <type>HR</type>
+        <latestTitle>Obamacare Replacement Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on Health.</text>
+          <actionDate>2017-02-17</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>222</number>
+        <type>S</type>
+        <latestTitle>Obamacare Replacement Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2017-01-24</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>209</number>
+        <type>HRES</type>
+        <latestTitle>Providing for consideration of the bill (H.R. 372) to restore the application of the Federal antitrust laws to the business of health insurance to protect competition and consumers.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Procedurally-related</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <actionTime>13:43:31</actionTime>
+          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+          <actionDate>2017-03-21</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <title>Competitive Health Insurance Reform Act of 2017</title>
+    <sponsors>
+      <item>
+        <district>4</district>
+        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
+        <firstName>Paul</firstName>
+        <lastName>Gosar</lastName>
+        <state>AZ</state>
+        <bioguideId>G000565</bioguideId>
+        <party>R</party>
+        <identifiers>
+          <lisID>1992</lisID>
+          <bioguideId>G000565</bioguideId>
+          <gpoId>7798</gpoId>
+        </identifiers>
+        <byRequestType />
+        <middleName>A.</middleName>
+      </item>
+    </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments>
+      <amendment>
+        <type>HAMDT</type>
+        <number>102</number>
+        <proposedDate />
+        <actions>
+          <actionTypeCounts>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2017-03-21</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2017-03-21</actionDate>
+              <actionCode>71000</actionCode>
+              <committee />
+              <text>House amendment offered</text>
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>1</houseOfRepresentatives>
+          </actionByCounts>
+          <count>2</count>
+        </actions>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <title>Competitive Health Insurance Reform Act of 2017</title>
+          <number>372</number>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <type>HAMDT</type>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <number>102</number>
+        <description />
+        <titles />
+        <congress>115</congress>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <purpose>Pursuant to the provisions of H.Res. 209, the amendment in the nature of a substitute consisting of the text in the Rules Committee Print 115-8 is considered as adopted.</purpose>
+        <submittedDate>2017-03-21T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <chamber>House of Representatives</chamber>
+        <links />
+        <createDate>2017-03-22T09:45:51Z</createDate>
+        <sponsors>
+          <item>
+            <name>Rules Committee</name>
+          </item>
+        </sponsors>
+        <notes />
+        <updateDate>2018-08-28T19:58:58Z</updateDate>
+        <description />
+        <latestAction />
+        <congress>115</congress>
+        <purpose>Pursuant to the provisions of H.Res. 209, the amendment in the nature of a substitute consisting of the text in the Rules Committee Print 115-8 is considered as adopted.</purpose>
+      </amendment>
+    </amendments>
     <titles>
       <item>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Reported to House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+      <item>
         <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
         <title>Competitive Health Insurance Reform Act of 2017</title>
       </item>
       <item>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
         <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
         <title>To restore the application of the Federal antitrust laws to the business of health insurance to protect competition and consumers.</title>
       </item>
       <item>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
         <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
         <title>Competitive Health Insurance Reform Act of 2017</title>
       </item>
     </titles>
-    <policyArea />
-    <calendarNumbers />
+    <createDate>2017-01-10T05:15:44Z</createDate>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-03-13T21:01:34Z</pubDate>
+        <url>https://www.cbo.gov/publication/52492</url>
+        <title>H.R. 372, Competitive Health Insurance Reform Act of 2017</title>
+      </item>
+    </cboCostEstimates>
+    <calendarNumbers>
+      <item>
+        <number />
+        <calendar>U00018</calendar>
+      </item>
+    </calendarNumbers>
+    <actions>
+      <actionByCounts>
+        <senate>1</senate>
+        <houseOfRepresentatives>26</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-03-23</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>ssju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionTime>13:53:35</actionTime>
+        <actionCode>H38310</actionCode>
+        <actionDate>2017-03-22</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>Roll no. 184</name>
+            <url>http://clerk.house.gov/evs/2017/roll184.xml</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>On passage Passed by recorded vote: 416 - 7 (Roll no. 184).</text>
+        <actionTime>13:53:33</actionTime>
+        <actionCode>H37100</actionCode>
+        <actionDate>2017-03-22</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>Roll no. 184</name>
+            <url>http://clerk.house.gov/evs/2017/roll184.xml</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Passed/agreed to in House: On passage Passed by recorded vote: 416 - 7 (Roll no. 184).</text>
+        <actionTime>13:53:33</actionTime>
+        <actionCode>8000</actionCode>
+        <actionDate>2017-03-22</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>Roll no. 183</name>
+            <url>http://clerk.house.gov/evs/2017/roll183.xml</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>On motion to recommit with instructions Failed by the Yeas and Nays: 189 - 233 (Roll no. 183).</text>
+        <actionTime>13:46:28</actionTime>
+        <actionCode>H36110</actionCode>
+        <actionDate>2017-03-22</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H2311-2312</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H2311-2312</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Considered as unfinished business. (consideration: CR H2311-2312)</text>
+        <actionTime>13:38:44</actionTime>
+        <actionCode>H30000</actionCode>
+        <actionDate>2017-03-22</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>POSTPONED PROCEEDINGS - At the conclusion of debate on the motion to recommit with instructions, the Chair put the question on the motion and by voice vote, announced that the nays had prevailed. Ms. Rosen demanded the yeas and nays and the Chair postponed further proceedings on the motion to recommit with instructions until a time to be announced.</text>
+        <actionTime>15:31:15</actionTime>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>The previous question on the motion to recommit with instructions was ordered without objection.</text>
+        <actionTime>15:31:05</actionTime>
+        <actionCode>H8A000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>DEBATE - The House proceeded with 10 minutes of debate on the motion to recommit with instructions. The instructions contained in the motion seek to require the bill to reported back to the House with an amendment to add a subsection to the bill titled Protecting Affordable Healthcare for Older Americans.</text>
+        <actionTime>15:24:37</actionTime>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H2274</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H2274</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Ms. Rosen moved to recommit with instructions to the Committee on the Judiciary. (text: CR H2274)</text>
+        <actionTime>15:24:11</actionTime>
+        <actionCode>H36100</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>The previous question was ordered pursuant to the rule.</text>
+        <actionTime>15:23:42</actionTime>
+        <actionCode>H35000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H.R. 372</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/372</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>DEBATE - The House proceeded with one hour of debate on H.R. 372.</text>
+        <actionTime>14:42:07</actionTime>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H.R. 372</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/372</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Rule provides for consideration of H.R. 372 with 1 hour of general debate. Previous question shall be considered as ordered without intervening motions except motion to recommit with or without instructions. Measure will be considered read. Bill is closed to amendments.</text>
+        <actionTime>14:41:37</actionTime>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H. Res. 209</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/209</url>
+          </link>
+          <link>
+            <name>H2267</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H2267</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Considered under the provisions of rule H. Res. 209. (consideration: CR H2267; text of measure as reported in House: CR H2267)</text>
+        <actionTime>14:41:32</actionTime>
+        <actionCode>H30000</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H. Res. 209</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/209</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Rule H. Res. 209 passed House.</text>
+        <actionTime>13:43:31</actionTime>
+        <actionCode>H1L220</actionCode>
+        <actionDate>2017-03-21</actionDate>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>H. Res. 209</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/209</url>
+          </link>
+          <link>
+            <name>H.R. 372</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/372</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Rules Committee Resolution H. Res. 209 Reported to House. Rule provides for consideration of H.R. 372 with 1 hour of general debate. Previous question shall be considered as ordered without intervening motions except motion to recommit with or without instructions. Measure will be considered read. Bill is closed to amendments.</text>
+        <actionTime>19:28:49</actionTime>
+        <actionCode>H1L210</actionCode>
+        <actionDate>2017-03-20</actionDate>
+      </item>
+      <item>
+        <type>Calendars</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Placed on the Union Calendar, Calendar No. 18.</text>
+        <actionCode>H12410</actionCode>
+        <actionDate>2017-03-15</actionDate>
+      </item>
+      <item>
+        <type>Committee</type>
+        <links>
+          <link>
+            <name>H. Rept. 115-36</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/36</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Reported (Amended) by the Committee on Judiciary. H. Rept. 115-36.</text>
+        <actionCode>H12200</actionCode>
+        <actionDate>2017-03-15</actionDate>
+      </item>
+      <item>
+        <type>Committee</type>
+        <links>
+          <link>
+            <name>H. Rept. 115-36</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/36</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Reported (Amended) by the Committee on Judiciary. H. Rept. 115-36.</text>
+        <actionCode>5000</actionCode>
+        <actionDate>2017-03-15</actionDate>
+      </item>
+      <item>
+        <actionDate>2017-02-28</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Ordered to be Reported by Voice Vote.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-28</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-20</actionDate>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Subcommittee on Regulatory Reform, Commercial And Antitrust Law Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-16</actionDate>
+        <committee>
+          <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+          <systemCode>hsju05</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Subcommittee Hearings Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-06</actionDate>
+        <committee>
+          <name>Regulatory Reform, Commercial And Antitrust Law Subcommittee</name>
+          <systemCode>hsju05</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-09</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-09</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-09</actionDate>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>3</placeholderTextForH>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <referredToCommittee>1</referredToCommittee>
+        <placeholderTextForHL>1</placeholderTextForHL>
+        <actionStageOverride>1</actionStageOverride>
+        <motionForPreviousQuestion>1</motionForPreviousQuestion>
+        <considerationByHouse>2</considerationByHouse>
+        <motionToCommitRecommitWithInstructionsResults>1</motionToCommitRecommitWithInstructionsResults>
+        <motionToCommitRecommitWithInstructionsOffered>1</motionToCommitRecommitWithInstructionsOffered>
+        <generalDebate>4</generalDebate>
+        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <introducedInHouse>1</introducedInHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <prayer>1</prayer>
+        <reportedToHouse>1</reportedToHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForHA>1</placeholderTextForHA>
+      </actionTypeCounts>
+    </actions>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <actionDate>2017-01-09</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Competitive Health Insurance Reform Act of 2017</b></p> <p>This bill amends the McCarran-Ferguson Act to declare that nothing in that Act modifies, impairs, or supersedes the operation of antitrust laws with respect to the business of health insurance, including the business of dental insurance.</p> <p>Prohibitions against unfair methods of competition apply to the business of health insurance without regard to whether the business is for profit.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-01T19:14:09Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+        <item>
+          <updateDate>2017-03-15T16:01:47Z</updateDate>
+          <actionDate>2017-03-15</actionDate>
+          <versionCode>17</versionCode>
+          <name>Reported to House with amendment(s)</name>
+          <text><![CDATA[<p><b>Competitive Health Insurance Reform Act of 2017</b></p> <p>(Sec. 2) This bill amends the McCarran-Ferguson Act to declare that nothing in that Act modifies, impairs, or supersedes the operation of antitrust laws with respect to the business of health insurance, including the business of dental insurance. This declaration does not apply to a contract, combination, or conspiracy to: (1) collect, compile, or disseminate historical loss data; (2) determine a loss development factor for historical loss data; (3) perform actuarial services if the collaboration does not involve a restraint of trade; or (4) develop or disseminate a standard insurance policy form if adherence to the form is not required.</p> <p>Prohibitions against unfair methods of competition apply to the business of health insurance without regard to whether the business is for profit.</p>]]></text>
+          <lastSummaryUpdateDate>2017-04-03T13:33:53Z</lastSummaryUpdateDate>
+          <actionDesc>Reported to House with amendment(s)</actionDesc>
+        </item>
+        <item>
+          <updateDate>2017-03-22T13:57:34Z</updateDate>
+          <actionDate>2017-03-22</actionDate>
+          <versionCode>36</versionCode>
+          <name>Passed House amended</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was reported to the House on March 15, 2017. The summary of that version is repeated here.)</p> <p><b>Competitive Health Insurance Reform Act of 2017</b></p> <p>(Sec. 2) This bill amends the McCarran-Ferguson Act to declare that nothing in that Act modifies, impairs, or supersedes the operation of antitrust laws with respect to the business of health insurance, including the business of dental insurance. This declaration does not apply to a contract, combination, or conspiracy to: (1) collect, compile, or disseminate historical loss data; (2) determine a loss development factor for historical loss data; (3) perform actuarial services if the collaboration does not involve a restraint of trade; or (4) develop or disseminate a standard insurance policy form if adherence to the form is not required.</p> <p>Prohibitions against unfair methods of competition apply to the business of health insurance without regard to whether the business is for profit.</p>]]></text>
+          <lastSummaryUpdateDate>2017-07-03T13:46:57Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House amended</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

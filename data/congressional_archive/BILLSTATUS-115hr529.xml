@@ -1,157 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JENKINS of Kansas:H.R. 529.Congress has the power to enact this legislation pursuantto the following:Article I:Section8:The Congress shall have Power To lay and collect Taxes,Duties, Imposts and Excises, to pay the Debts and provide forthecommon Defense and general Welfare of the United States.[Page H547]</pre>]]></constitutionalAuthorityStatementText>
+    <sponsors>
       <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>H11100</actionCode>
+        <middleName />
+        <party>R</party>
+        <bioguideId>J000290</bioguideId>
+        <lastName>Jenkins</lastName>
+        <firstName>Lynn</firstName>
+        <state>KS</state>
+        <identifiers>
+          <lisID>1921</lisID>
+          <gpoId>7950</gpoId>
+          <bioguideId>J000290</bioguideId>
+        </identifiers>
+        <district>2</district>
+        <fullName>Rep. Jenkins, Lynn [R-KS-2]</fullName>
+        <byRequestType />
       </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <relatedBills />
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-14T04:47:32Z</createDate>
+    <committeeReports />
     <latestAction>
       <text>Referred to the House Committee on Ways and Means.</text>
       <links />
       <actionDate>2017-01-13</actionDate>
     </latestAction>
-    <originChamber>House</originChamber>
-    <title>To amend the Internal Revenue Code of 1986 to make improvements in the rules related to qualified tuition programs and qualified ABLE programs.</title>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To amend the Internal Revenue Code of 1986 to make improvements in the rules related to qualified tuition programs and qualified ABLE programs.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To amend the Internal Revenue Code of 1986 to make improvements in the rules related to qualified tuition programs and qualified ABLE programs.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-14T09:58:30Z</updateDate>
-    <billType>HR</billType>
-    <recordedVotes />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
+    <billNumber>529</billNumber>
+    <notes />
+    <introducedDate>2017-01-13</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Ways and Means Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-13T14:02:00Z</date>
             </item>
           </activities>
+          <chamber>House</chamber>
           <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
+    <relatedBills />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Bank accounts, deposits, capital</name>
+          </item>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Employee benefits and pensions</name>
+          </item>
+          <item>
+            <name>Financial services and investments</name>
+          </item>
+          <item>
+            <name>Higher education</name>
+          </item>
+          <item>
+            <name>Income tax credits</name>
+          </item>
+          <item>
+            <name>Income tax exclusion</name>
+          </item>
+          <item>
+            <name>Income tax rates</name>
+          </item>
+          <item>
+            <name>Inflation and prices</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <actions>
       <item>
-        <identifiers>
-          <gpoId>7950</gpoId>
-          <bioguideId>J000290</bioguideId>
-          <lisID>1921</lisID>
-        </identifiers>
-        <state>KS</state>
-        <bioguideId>J000290</bioguideId>
-        <lastName>Jenkins</lastName>
-        <middleName />
-        <party>R</party>
-        <district>2</district>
-        <fullName>Rep. Jenkins, Lynn [R-KS-2]</fullName>
-        <byRequestType />
-        <firstName>Lynn</firstName>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-13</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
       </item>
-    </sponsors>
-    <introducedDate>2017-01-13</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <createDate>2017-01-14T04:47:32Z</createDate>
-    <billNumber>529</billNumber>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-13</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-13</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
     <cosponsors>
       <item>
-        <lastName>KIND</lastName>
-        <state>WI</state>
-        <bioguideId>K000188</bioguideId>
-        <firstName>RON</firstName>
-        <identifiers>
-          <bioguideId>K000188</bioguideId>
-          <gpoId>8216</gpoId>
-          <lisID>1498</lisID>
-        </identifiers>
         <sponsorshipDate>2017-01-13</sponsorshipDate>
         <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>3</district>
         <fullName>Rep. Kind, Ron [D-WI-3]</fullName>
+        <identifiers>
+          <bioguideId>K000188</bioguideId>
+          <lisID>1498</lisID>
+          <gpoId>8216</gpoId>
+        </identifiers>
+        <lastName>KIND</lastName>
+        <firstName>RON</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>WI</state>
+        <district>3</district>
+        <bioguideId>K000188</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-02</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <identifiers>
+          <gpoId>8192</gpoId>
+          <lisID>1886</lisID>
+          <bioguideId>W000804</bioguideId>
+        </identifiers>
+        <lastName>Wittman</lastName>
+        <firstName>Robert</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>VA</state>
+        <district>1</district>
+        <bioguideId>W000804</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-18</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <identifiers>
+          <lisID>701</lisID>
+          <gpoId>7821</gpoId>
+          <bioguideId>L000397</bioguideId>
+        </identifiers>
+        <lastName>LOFGREN</lastName>
+        <firstName>ZOE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>19</district>
+        <bioguideId>L000397</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. DeFazio, Peter A. [D-OR-4]</fullName>
+        <identifiers>
+          <gpoId>8117</gpoId>
+          <lisID>279</lisID>
+          <bioguideId>D000191</bioguideId>
+        </identifiers>
+        <lastName>DEFAZIO</lastName>
+        <firstName>PETER</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>OR</state>
+        <district>4</district>
+        <bioguideId>D000191</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-07-24</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
+        <identifiers>
+          <lisID>1742</lisID>
+          <gpoId>8112</gpoId>
+          <bioguideId>C001053</bioguideId>
+        </identifiers>
+        <lastName>Cole</lastName>
+        <firstName>Tom</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OK</state>
+        <district>4</district>
+        <bioguideId>C001053</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-08-15</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Fitzpatrick, Brian K. [R-PA-8]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2345</lisID>
+          <bioguideId>F000466</bioguideId>
+        </identifiers>
+        <lastName>Fitzpatrick</lastName>
+        <firstName>Brian</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>K.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>PA</state>
+        <district>8</district>
+        <bioguideId>F000466</bioguideId>
       </item>
     </cosponsors>
-    <constitutionalAuthorityStatementText />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>529 and ABLE Account Improvement Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Internal Revenue Code of 1986 to make improvements in the rules related to qualified tuition programs and qualified ABLE programs.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>529 and ABLE Account Improvement Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>529 and ABLE Account Improvement Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T19:59:52Z</updateDate>
+    <calendarNumbers />
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-02-02T13:54:50Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>529 and ABLE Account Improvement Act of 201</b><b>7</b></p> <p>This bill amends the Internal Revenue Code to modify the tax treatment of qualified tuition programs (known as 529 plans) and ABLE accounts. (Tax-favored ABLE [Achieving a Better Life Experience] accounts are designed to enable individuals with disabilities to save for and pay for disability-related expenses.) </p> <p>The bill excludes from gross income a fringe benefit consisting of up to $100 per year (adjusted for inflation after 2017) of employer contributions to an employee's 529 or ABLE account. The employer contribution must be made: (1) to an account for which the designated beneficiary is the employee or a member of the employee's family, and (2) in connection with a payroll deduction contribution program established by the employer. </p> <p>The bill also: (1) expands the tax credit for small employer pension plan startup costs to include the costs of establishing a payroll deduction contribution program for 529 plans and ABLE accounts,(2) permits 529 funds to be used for education loan payments or charitable contributions without being subject to the additional tax for distributions that are not used for qualified higher education expenses, and (3) permits tax-free rollovers of funds between 529 and ABLE accounts for the benefit of the same beneficiary or a family member of the beneficiary.</p> <p>For the purpose of current law restrictions on the frequency of investment directions that a beneficiary or contributor may provide for a 529 or ABLE account, rebalancing investments among broad-based investment strategies established under the program is not an investment direction unless the beneficiary or contributor directs the specific investments within the strategies. </p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>529 and ABLE Account Improvement Act of 2017</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

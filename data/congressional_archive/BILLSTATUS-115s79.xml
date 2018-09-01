@@ -1,13 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
+    <titles>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Securing Energy Infrastructure Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Securing Energy Infrastructure Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to provide for the establishment of a pilot program to identify security vulnerabilities of certain entities in the energy sector.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Securing Energy Infrastructure Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Securing Energy Infrastructure Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Securing Energy Infrastructure Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 410.</text>
+      <actionDate>2018-05-10</actionDate>
+    </latestAction>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>Senate</chamber>
+          <systemCode>sseg00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>sseg01</systemCode>
+              <name>Energy Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Hearings by</name>
+                  <date>2017-03-28T18:15:00Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Energy and Natural Resources Committee</name>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2018-05-10T18:59:41Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2018-03-08T15:00:10Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-10T18:04:37Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <item>
+        <actionDate>2018-05-10</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 410.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2018-05-10</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/246</url>
+            <name>report No. 115-246</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment in the nature of a substitute. With written report No. 115-246.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Committee on Energy and Natural Resources. Reported by Senator Murkowski with an amendment in the nature of a substitute. With written report No. 115-246.</text>
+        <type>Committee</type>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/246</url>
+            <name>report No. 115-246</name>
+          </link>
+        </links>
+        <actionDate>2018-05-10</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <actionCode>14000</actionCode>
+      </item>
+      <item>
+        <actionDate>2018-03-08</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources. Ordered to be reported with an amendment in the nature of a substitute favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-03-28</actionDate>
+        <committee>
+          <systemCode>sseg01</systemCode>
+          <name>Energy Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources Subcommittee on Energy. Hearings held. With printed Hearing: S.Hrg. 115-262.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-10</actionDate>
         <committee>
@@ -16,176 +174,245 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <committee />
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <links />
         <actionDate>2017-01-10</actionDate>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
+        <committee />
+        <actionCode>10000</actionCode>
       </item>
+      <actionByCounts>
+        <senate>7</senate>
+      </actionByCounts>
       <actionTypeCounts>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
         <referredToCommittee>1</referredToCommittee>
+        <hearingsHeld>1</hearingsHeld>
+        <reportedToSenate>2</reportedToSenate>
         <introducedInSenate>1</introducedInSenate>
+        <orderedReported>1</orderedReported>
       </actionTypeCounts>
     </actions>
-    <relatedBills />
-    <latestAction>
-      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
-      <links />
-      <actionDate>2017-01-10</actionDate>
-    </latestAction>
-    <originChamber>Senate</originChamber>
-    <title>A bill to provide for the establishment of a pilot program to identify security vulnerabilities of certain entities in the energy sector.</title>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>A bill to provide for the establishment of a pilot program to identify security vulnerabilities of certain entities in the energy sector.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>A bill to provide for the establishment of a pilot program to identify security vulnerabilities of certain entities in the energy sector.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-11T10:17:58Z</updateDate>
-    <billType>S</billType>
-    <createDate>2017-01-11T05:09:45Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <systemCode>sseg00</systemCode>
-          <type>Standing</type>
-          <name>Energy and Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-10T18:04:37Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
+    <policyArea>
+      <name>Energy</name>
+    </policyArea>
     <sponsors>
       <item>
+        <fullName>Sen. King, Angus S., Jr. [I-ME]</fullName>
+        <party>I</party>
+        <bioguideId>K000383</bioguideId>
         <identifiers>
+          <lisID>2185</lisID>
           <gpoId />
           <bioguideId>K000383</bioguideId>
-          <lisID>2185</lisID>
         </identifiers>
-        <state>ME</state>
-        <bioguideId>K000383</bioguideId>
         <lastName>King</lastName>
-        <middleName />
-        <party>I</party>
-        <fullName>Sen. King, Angus S., Jr. [I-ME]</fullName>
         <byRequestType />
+        <middleName />
         <firstName>Angus</firstName>
+        <state>ME</state>
       </item>
     </sponsors>
-    <introducedDate>2017-01-10</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
     <recordedVotes />
+    <updateDate>2018-08-28T20:22:31Z</updateDate>
     <billNumber>79</billNumber>
+    <title>Securing Energy Infrastructure Act</title>
+    <relatedBills>
+      <item>
+        <latestTitle>Securing Energy Infrastructure Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>3958</number>
+        <latestAction>
+          <actionDate>2018-05-22</actionDate>
+          <text>Referred to the Subcommittee on Energy.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+      <item>
+        <latestTitle>Intelligence Authorization Act for Fiscal Year 2018</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>1761</number>
+        <latestAction>
+          <actionDate>2017-09-07</actionDate>
+          <text>By Senator Burr from Select Committee on Intelligence filed written report. Report No. 115-151. Additional and Minority views filed.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates>
+      <item>
+        <title>S. 79, Securing Energy Infrastructure Act</title>
+        <pubDate>2018-04-24T13:00:03Z</pubDate>
+        <url>https://www.cbo.gov/publication/53791</url>
+      </item>
+    </cboCostEstimates>
+    <billType>S</billType>
+    <createDate>2017-01-11T05:09:45Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-04-03T13:45:30Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Securing Energy Infrastructure Act</b></p> <p>This bill establishes a two-year pilot program within the Department of Energy's (DOE)national laboratories to identify thesecurity vulnerabilities of certain entities in the energy sector, and research and test technology that can be used to isolate the most critical systems of such entities from cyber-attacks.</p> <p>In addition,DOE must establish a working group to evaluate the technology solutions proposed by the national laboratories and to develop a national cyber strategy to isolate the energy grid from attacks.</p> <p>DOE must also submit a report to Congress describing the results of the pilot program, assessing the feasibility of the techniques considered, and outlining the results of the working group's evaluation.</p>]]></text>
+          <actionDate>2017-01-10</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-246</citation>
+      </committeeReport>
+    </committeeReports>
+    <calendarNumbers>
+      <item>
+        <number>0410</number>
+        <calendar>Senate Calendar of Business</calendar>
+      </item>
+    </calendarNumbers>
     <cosponsors>
       <item>
-        <middleName>E.</middleName>
-        <firstName>James</firstName>
         <bioguideId>R000584</bioguideId>
+        <middleName>E.</middleName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>ID</state>
-        <identifiers>
-          <bioguideId>R000584</bioguideId>
-          <lisID>1896</lisID>
-          <gpoId>8274</gpoId>
-        </identifiers>
-        <party>R</party>
         <fullName>Sen. Risch, James E. [R-ID]</fullName>
         <lastName>Risch</lastName>
+        <state>ID</state>
+        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1896</lisID>
+          <gpoId>8274</gpoId>
+          <bioguideId>R000584</bioguideId>
+        </identifiers>
         <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <firstName>James</firstName>
       </item>
       <item>
-        <middleName />
-        <firstName>Martin</firstName>
         <bioguideId>H001046</bioguideId>
+        <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>NM</state>
-        <identifiers>
-          <lisID>1937</lisID>
-          <gpoId>8056</gpoId>
-          <bioguideId>H001046</bioguideId>
-        </identifiers>
-        <party>D</party>
         <fullName>Sen. Heinrich, Martin [D-NM]</fullName>
         <lastName>Heinrich</lastName>
+        <state>NM</state>
+        <party>D</party>
         <sponsorshipWithdrawnDate />
+        <identifiers>
+          <gpoId>8056</gpoId>
+          <lisID>1937</lisID>
+          <bioguideId>H001046</bioguideId>
+        </identifiers>
         <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <firstName>Martin</firstName>
       </item>
       <item>
-        <middleName>MARGARET</middleName>
-        <firstName>SUSAN</firstName>
         <bioguideId>C001035</bioguideId>
+        <middleName>MARGARET</middleName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>ME</state>
-        <identifiers>
-          <gpoId>8291</gpoId>
-          <bioguideId>C001035</bioguideId>
-          <lisID>1541</lisID>
-        </identifiers>
-        <party>R</party>
         <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
         <lastName>COLLINS</lastName>
+        <state>ME</state>
+        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1541</lisID>
+          <gpoId>8291</gpoId>
+          <bioguideId>C001035</bioguideId>
+        </identifiers>
         <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <firstName>SUSAN</firstName>
       </item>
       <item>
-        <middleName>D.</middleName>
-        <firstName>MICHAEL</firstName>
         <bioguideId>C000880</bioguideId>
+        <middleName>D.</middleName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>ID</state>
-        <identifiers>
-          <bioguideId>C000880</bioguideId>
-          <lisID>250</lisID>
-          <gpoId>8289</gpoId>
-        </identifiers>
-        <party>R</party>
         <fullName>Sen. Crapo, Mike [R-ID]</fullName>
         <lastName>CRAPO</lastName>
+        <state>ID</state>
+        <party>R</party>
         <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>250</lisID>
+          <gpoId>8289</gpoId>
+          <bioguideId>C000880</bioguideId>
+        </identifiers>
         <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <firstName>MICHAEL</firstName>
       </item>
     </cosponsors>
+    <introducedDate>2017-01-10</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Computer security and identity theft</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Energy</name>
+          </item>
+          <item>
+            <name>Electric power generation and transmission</name>
+          </item>
+          <item>
+            <name>Energy research</name>
+          </item>
+          <item>
+            <name>Energy storage, supplies, demand</name>
+          </item>
+          <item>
+            <name>Government buildings, facilities, and property</name>
+          </item>
+          <item>
+            <name>Industrial facilities</name>
+          </item>
+          <item>
+            <name>Research administration and funding</name>
+          </item>
+          <item>
+            <name>Technology assessment</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Energy</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

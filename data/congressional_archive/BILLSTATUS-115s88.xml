@@ -1,10 +1,661 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
+    <calendarNumbers>
+      <item>
+        <number>0113</number>
+        <calendar>Senate Calendar of Business</calendar>
+      </item>
+    </calendarNumbers>
+    <amendments>
+      <amendment>
+        <type>SAMDT</type>
+        <number>769</number>
+        <updateDate>2018-08-28T20:22:33Z</updateDate>
+        <sponsors>
+          <item>
+            <fullName>Sen. Fischer, Deb [R-NE]</fullName>
+            <identifiers>
+              <lisID>2179</lisID>
+              <bioguideId>F000463</bioguideId>
+              <gpoId />
+            </identifiers>
+            <lastName>Fischer</lastName>
+            <firstName>Deb</firstName>
+            <state>NE</state>
+            <party>R</party>
+            <middleName />
+            <bioguideId>F000463</bioguideId>
+          </item>
+        </sponsors>
+        <purpose>In the nature of substitute.</purpose>
+        <amendedAmendment />
+        <notes />
+        <number>769</number>
+        <titles />
+        <links />
+        <congress>115</congress>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <proposedDate>2017-08-03T04:00:00Z</proposedDate>
+        <amendedBill>
+          <congress>115</congress>
+          <number>88</number>
+          <originChamberCode>S</originChamberCode>
+          <originChamber>Senate</originChamber>
+          <title>DIGIT Act</title>
+          <type>S</type>
+        </amendedBill>
+        <submittedDate>2017-08-03T04:00:00Z</submittedDate>
+        <type>SAMDT</type>
+        <description />
+        <createDate>2017-08-04T13:57:21Z</createDate>
+        <actions>
+          <actions>
+            <item>
+              <actionDate>2017-08-03</actionDate>
+              <committee />
+              <links>
+                <link>
+                  <name>S.Amdt.769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+                <link>
+                  <name>SA 769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <code>0</code>
+                <name>Senate</name>
+              </sourceSystem>
+              <text>Amendment SA 769 agreed to in Senate by Unanimous Consent.</text>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2017-08-03</actionDate>
+              <committee />
+              <links>
+                <link>
+                  <name>S.Amdt.769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+                <link>
+                  <name>S4819</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4819</url>
+                </link>
+                <link>
+                  <name>SA 769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <code>0</code>
+                <name>Senate</name>
+              </sourceSystem>
+              <text>Amendment SA 769 proposed by Senator Wicker for Senator Fischer. (consideration: CR S4819; text: CR S4819) In the nature of substitute.</text>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2017-08-03</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <text>Senate amendment agreed to: Amendment SA 769 agreed to in Senate by Unanimous Consent.</text>
+              <type>Floor</type>
+              <committee />
+              <actionDate>2017-08-03</actionDate>
+              <links>
+                <link>
+                  <name>S.Amdt.769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+                <link>
+                  <name>SA 769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+              </links>
+              <actionCode>94000</actionCode>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <text>Senate amendment proposed (on the floor): Amendment SA 769 proposed by Senator Wicker for Senator Fischer.(consideration: CR S4819; text: CR S4819)</text>
+              <type>Floor</type>
+              <committee />
+              <actionDate>2017-08-03</actionDate>
+              <links>
+                <link>
+                  <name>S.Amdt.769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+                <link>
+                  <name>S4819</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4819</url>
+                </link>
+                <link>
+                  <name>SA 769</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/769</url>
+                </link>
+              </links>
+              <actionCode>93000</actionCode>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <text>Senate amendment submitted</text>
+              <type>Floor</type>
+              <committee />
+              <actionDate>2017-08-03</actionDate>
+              <links />
+              <actionCode>91000</actionCode>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionByCounts>
+            <senate>5</senate>
+          </actionByCounts>
+          <actionTypeCounts>
+            <senateAmendmentSubmitted>1</senateAmendmentSubmitted>
+            <amendmentProposed>1</amendmentProposed>
+            <senateAmendmentProposedOnTheFloor>1</senateAmendmentProposedOnTheFloor>
+            <senateAmendmentAgreedTo>1</senateAmendmentAgreedTo>
+            <amendmentAgreedTo>1</amendmentAgreedTo>
+          </actionTypeCounts>
+          <count>6</count>
+        </actions>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <chamber>Senate</chamber>
+        <description />
+        <latestAction>
+          <actionDate>2017-08-03</actionDate>
+          <text>Amendment SA 769 agreed to in Senate by Unanimous Consent.</text>
+        </latestAction>
+        <congress>115</congress>
+        <purpose>In the nature of substitute.</purpose>
+      </amendment>
+    </amendments>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-90</citation>
+      </committeeReport>
+    </committeeReports>
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Developing Innovation and Growing the Internet of Things Act or the DIGIT Act</b></p> <p>This bill requires the Department of Commerce to convene a working group of federal stakeholders to provide recommendations and a report to Congress regarding the growing number of connected and interconnected devices known as the Internet of Things (IoT). The bill establishes a steering committee to be composed of stakeholders outside the federal government to advise the working group.</p> <p>The Federal Communications Commission must: (1) seek public comment on the IoT's spectrum needs, regulatory barriers, and growth with licensed and unlicensed spectrum; and (2) submit a summary of those comments to Congress.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-23T16:14:05Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-10</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Developing Innovation and Growing the Internet of Things Act or the DIGIT Act</b></p> <p>(Sec. 2) This bill expresses the sense of Congress that policies governing the Internet of Things (IoT) should maximize the potential and development of the growing number of connected and interconnected devices to benefit businesses, governments, and consumers.</p> <p>(Sec. 4) The Department of Commerce must convene a working group of federal stakeholders to provide recommendations and a report to Congress regarding the IoT. The bill establishes a steering committee to be composed of stakeholders outside the federal government to advise the working group.</p> <p>The working group must: (1) identify federal laws and regulations, grant practices, budgetary or jurisdictional challenges, and other sector-specific policies that inhibit IoT development; (2) consider policies or programs that encourage and improve coordination among federal agencies with IoT jurisdiction; (3) implement recommendations from the steering committee; (4) examine how federal agencies can benefit from, use, prepare for, and secure the IoT; and (5) consult with nongovernmental stakeholders. </p> <p>The steering committee must advise the working group about laws, budgets, spectrum needs, individual privacy, security, small business challenges, and any international proceedings or negotiations affecting the IoT. </p> <p>Within 18 months after enactment of this bill, the working group must report its findings and recommendations, its reasons for inaction on steering committee recommendations, and an accounting of any progress by federal agencies to implement recommendations. </p> <p>(Sec. 5) The Federal Communications Commission must: (1) seek public comment on the IoT's spectrum needs, regulatory barriers, and growth with licensed and unlicensed spectrum; and (2) submit a summary of those comments to Congress.</p>]]></text>
+          <lastSummaryUpdateDate>2017-06-14T15:44:24Z</lastSummaryUpdateDate>
+          <actionDesc>Reported to Senate without amendment</actionDesc>
+          <updateDate>2017-06-05T14:43:36Z</updateDate>
+          <name>Reported to Senate without amendment</name>
+          <versionCode>80</versionCode>
+          <actionDate>2017-06-05</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p><b>Developing Innovation and Growing the Internet of Things Act or the DIGIT Act</b></p> <p>(Sec. 2) This bill expresses the sense of Congress that policies governing the Internet of Things (IoT) should maximize the potential and development of the growing number of connected and interconnected devices to benefit businesses, governments, and consumers.</p> <p>(Sec. 4) The Department of Commerce must convene a working group of federal stakeholders to provide recommendations and a report to Congress regarding the IoT. The bill establishes a steering committee to be composed of stakeholders outside the federal government to advise the working group.</p> <p>The working group must: (1) identify federal laws and regulations, grant practices, budgetary or jurisdictional challenges, and other sector-specific policies that inhibit IoT development; (2) consider policies or programs that encourage and improve coordination among federal agencies with IoT jurisdiction; (3) implement recommendations from the steering committee; (4) examine how federal agencies can benefit from, use, prepare for, and secure the IoT; and (5) consult with nongovernmental stakeholders. </p> <p>The steering committee must advise the working group about laws, budgets, spectrum needs, individual privacy, security, small business challenges, and any international proceedings or negotiations affecting the IoT. </p> <p>Within 18 months after enactment of this bill, the working group must report its findings and recommendations, its reasons for inaction on steering committee recommendations, and an accounting of any progress by federal agencies to implement recommendations. </p> <p>(Sec. 5) The Federal Communications Commission must: (1) seek public comment on the IoT's spectrum needs, regulatory barriers, and growth with licensed and unlicensed spectrum; and (2) submit a summary of those comments to Congress.</p>]]></text>
+          <lastSummaryUpdateDate>2017-11-24T18:46:05Z</lastSummaryUpdateDate>
+          <actionDesc>Passed Senate amended</actionDesc>
+          <updateDate>2017-08-03T15:03:26Z</updateDate>
+          <name>Passed Senate amended</name>
+          <versionCode>35</versionCode>
+          <actionDate>2017-08-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <latestTitle>DIGIT Act</latestTitle>
+        <number>686</number>
+        <latestAction>
+          <text>Referred to the House Committee on Energy and Commerce.</text>
+          <actionDate>2017-01-24</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Identical bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-11T05:09:45Z</createDate>
+    <latestAction>
+      <links />
+      <actionDate>2017-08-11</actionDate>
+      <text>Referred to the Subcommittee on Communications and Technology.</text>
+    </latestAction>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>NE</state>
+        <bioguideId>F000463</bioguideId>
+        <middleName />
+        <lastName>Fischer</lastName>
+        <fullName>Sen. Fischer, Deb [R-NE]</fullName>
+        <firstName>Deb</firstName>
+        <byRequestType />
+        <identifiers>
+          <lisID>2179</lisID>
+          <bioguideId>F000463</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+    </sponsors>
+    <billNumber>88</billNumber>
+    <updateDate>2018-08-28T20:22:33Z</updateDate>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-02-21T14:50:00Z</pubDate>
+        <title>S. 88, Developing Innovation and Growing the Internet of Things Act</title>
+        <url>https://www.cbo.gov/publication/52431</url>
+      </item>
+    </cboCostEstimates>
+    <notes />
+    <titles>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <title>DIGIT Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <title>DIGIT Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>DIGIT Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to ensure appropriate spectrum planning and interagency coordination to support the Internet of Things.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>DIGIT Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName>Senate</chamberName>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Developing Innovation and Growing the Internet of Things Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <introducedDate>2017-01-10</introducedDate>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Science, Technology, Communications</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Computer security and identity theft</name>
+          </item>
+          <item>
+            <name>Digital media</name>
+          </item>
+          <item>
+            <name>Federal Communications Commission (FCC)</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+          <item>
+            <name>Internet and video services</name>
+          </item>
+          <item>
+            <name>Right of privacy</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billType>S</billType>
+    <originChamber>Senate</originChamber>
+    <title>DIGIT Act</title>
+    <cosponsors>
+      <item>
+        <lastName>Booker</lastName>
+        <middleName>A.</middleName>
+        <sponsorshipWithdrawnDate />
+        <bioguideId>B001288</bioguideId>
+        <fullName>Sen. Booker, Cory A. [D-NJ]</fullName>
+        <identifiers>
+          <bioguideId>B001288</bioguideId>
+          <gpoId />
+          <lisID>2194</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <state>NJ</state>
+        <firstName>Cory</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+      </item>
+      <item>
+        <lastName>Gardner</lastName>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <bioguideId>G000562</bioguideId>
+        <fullName>Sen. Gardner, Cory [R-CO]</fullName>
+        <identifiers>
+          <lisID>1998</lisID>
+          <bioguideId>G000562</bioguideId>
+          <gpoId>7862</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <state>CO</state>
+        <firstName>Cory</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+      </item>
+      <item>
+        <lastName>Schatz</lastName>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <bioguideId>S001194</bioguideId>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <identifiers>
+          <lisID>2173</lisID>
+          <bioguideId>S001194</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <state>HI</state>
+        <firstName>Brian</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <recordedVotes />
+    <policyArea>
+      <name>Science, Technology, Communications</name>
+    </policyArea>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-08-04T18:48:38Z</date>
+            </item>
+          </activities>
+          <name>Energy and Commerce Committee</name>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-08-11T20:09:11Z</date>
+                </item>
+              </activities>
+              <name>Communications and Technology Subcommittee</name>
+              <systemCode>hsif16</systemCode>
+            </item>
+          </subcommittees>
+          <systemCode>hsif00</systemCode>
+        </item>
+        <item>
+          <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2017-06-05T20:10:02Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-01-24T15:00:00Z</date>
+            </item>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-10T20:45:11Z</date>
+            </item>
+          </activities>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>sscm00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
+      <item>
+        <actionDate>2017-08-11</actionDate>
+        <committee>
+          <systemCode>hsif16</systemCode>
+          <name>Communications and Technology Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Communications and Technology.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H14000</actionCode>
+        <text>Received in the House.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>13:06:33</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with an amendment by Voice Vote.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <actionCode>17000</actionCode>
+        <text>Passed/agreed to in Senate: Passed Senate with an amendment by Voice Vote.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4819</url>
+            <name>S4819</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Measure laid before Senate by unanimous consent. (consideration: CR S4819)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-06-05</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 113.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-06-05</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/90</url>
+            <name>report No. 115-90</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-90.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-05</actionDate>
+        <actionCode>14000</actionCode>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-90.</text>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/90</url>
+            <name>report No. 115-90</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-24</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-10</actionDate>
         <committee>
@@ -20,155 +671,38 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
-        <links />
       </item>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
       <actionTypeCounts>
         <referredToCommittee>1</referredToCommittee>
+        <reportedToSenate>2</reportedToSenate>
+        <sentToHouse>1</sentToHouse>
+        <passedSenate>1</passedSenate>
+        <orderedReported>1</orderedReported>
+        <billReferrals>1</billReferrals>
+        <measureLaidBeforeSenate>1</measureLaidBeforeSenate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <placeholderTextForH>1</placeholderTextForH>
         <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <senate>10</senate>
+      </actionByCounts>
     </actions>
-    <relatedBills />
-    <latestAction>
-      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-      <links />
-      <actionDate>2017-01-10</actionDate>
-    </latestAction>
-    <originChamber>Senate</originChamber>
-    <title>A bill to ensure appropriate spectrum planning and interagency coordination to support the Internet of Things.</title>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>A bill to ensure appropriate spectrum planning and interagency coordination to support the Internet of Things.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>A bill to ensure appropriate spectrum planning and interagency coordination to support the Internet of Things.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-11T10:17:59Z</updateDate>
-    <billType>S</billType>
-    <createDate>2017-01-11T05:09:45Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <name>Commerce, Science, and Transportation Committee</name>
-          <systemCode>sscm00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-10T20:45:11Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <identifiers>
-          <lisID>2179</lisID>
-          <gpoId />
-          <bioguideId>F000463</bioguideId>
-        </identifiers>
-        <state>NE</state>
-        <bioguideId>F000463</bioguideId>
-        <lastName>Fischer</lastName>
-        <middleName />
-        <party>R</party>
-        <fullName>Sen. Fischer, Deb [R-NE]</fullName>
-        <byRequestType />
-        <firstName>Deb</firstName>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-10</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <recordedVotes />
-    <billNumber>88</billNumber>
-    <cosponsors>
-      <item>
-        <fullName>Sen. Booker, Cory A. [D-NJ]</fullName>
-        <bioguideId>B001288</bioguideId>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Cory</firstName>
-        <middleName>A.</middleName>
-        <state>NJ</state>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <lastName>Booker</lastName>
-        <identifiers>
-          <lisID>2194</lisID>
-          <gpoId />
-          <bioguideId>B001288</bioguideId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <fullName>Sen. Gardner, Cory [R-CO]</fullName>
-        <bioguideId>G000562</bioguideId>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Cory</firstName>
-        <middleName />
-        <state>CO</state>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <lastName>Gardner</lastName>
-        <identifiers>
-          <lisID>1998</lisID>
-          <gpoId>7862</gpoId>
-          <bioguideId>G000562</bioguideId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
-        <bioguideId>S001194</bioguideId>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Brian</firstName>
-        <middleName />
-        <state>HI</state>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <lastName>Schatz</lastName>
-        <identifiers>
-          <gpoId />
-          <bioguideId>S001194</bioguideId>
-          <lisID>2173</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-    </cosponsors>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

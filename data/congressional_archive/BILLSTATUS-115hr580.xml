@@ -1,154 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <committee>
-          <name>Foreign Affairs Committee</name>
-          <systemCode>hsfa00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-14T09:59:04Z</updateDate>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To establish a grant program to preserve the legacy and ideals of Muhammad Ali and promote global respect, understanding, and communication, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To establish a grant program to preserve the legacy and ideals of Muhammad Ali and promote global respect, understanding, and communication, and for other purposes.</title>
-        <parentTitleType />
-      </item>
-    </titles>
     <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-13</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>A.</middleName>
-        <firstName>John</firstName>
-        <bioguideId>Y000062</bioguideId>
-        <district>3</district>
-        <byRequestType />
-        <state>KY</state>
-        <identifiers>
-          <bioguideId>Y000062</bioguideId>
-          <lisID>1853</lisID>
-          <gpoId>7955</gpoId>
-        </identifiers>
-        <party>D</party>
-        <lastName>Yarmuth</lastName>
-        <fullName>Rep. Yarmuth, John A. [D-KY-3]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <links />
-      <text>Referred to the House Committee on Foreign Affairs.</text>
-    </latestAction>
-    <congress>115</congress>
-    <cosponsors>
-      <item>
-        <firstName>GREGORY</firstName>
-        <middleName>W.</middleName>
-        <bioguideId>M001137</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Meeks, Gregory W. [D-NY-5]</fullName>
-        <identifiers>
-          <bioguideId>M001137</bioguideId>
-          <lisID>1506</lisID>
-          <gpoId>8067</gpoId>
-        </identifiers>
-        <lastName>MEEKS</lastName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>NY</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <district>5</district>
-      </item>
-      <item>
-        <firstName>Steve</firstName>
-        <middleName />
-        <bioguideId>C001068</bioguideId>
-        <sponsorshipWithdrawnDate />
-        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
-        <identifiers>
-          <gpoId>8156</gpoId>
-          <bioguideId>C001068</bioguideId>
-          <lisID>1878</lisID>
-        </identifiers>
-        <lastName>Cohen</lastName>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>TN</state>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <district>9</district>
-      </item>
-    </cosponsors>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>To establish a grant program to preserve the legacy and ideals of Muhammad Ali and promote global respect, understanding, and communication, and for other purposes.</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <title>Muhammad Ali Legacy Act</title>
     <committees>
       <billCommittees>
         <item>
@@ -158,18 +12,393 @@
               <date>2017-01-13T14:00:26Z</date>
             </item>
           </activities>
-          <chamber>House</chamber>
-          <systemCode>hsfa00</systemCode>
           <name>Foreign Affairs Committee</name>
-          <subcommittees />
           <type>Standing</type>
+          <chamber>House</chamber>
+          <subcommittees />
+          <systemCode>hsfa00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-14T04:47:33Z</createDate>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T20:00:04Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
+        </committee>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-13</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-13</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-13</actionDate>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Yarmuth, John A. [D-KY-3]</fullName>
+        <identifiers>
+          <gpoId>7955</gpoId>
+          <lisID>1853</lisID>
+          <bioguideId>Y000062</bioguideId>
+        </identifiers>
+        <bioguideId>Y000062</bioguideId>
+        <lastName>Yarmuth</lastName>
+        <firstName>John</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName>A.</middleName>
+        <state>KY</state>
+        <district>3</district>
+      </item>
+    </sponsors>
     <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr.YARMUTH:H.R. 580.Congress has the power to enact this legislation pursuantto thefollowing:Section 8 of Article I of the Constitution.[Page H548]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <recordedVotes />
     <billNumber>580</billNumber>
-    <policyArea />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Muhammad Ali Legacy Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To establish a grant program to preserve the legacy and ideals of Muhammad Ali and promote global respect, understanding, and communication, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Muhammad Ali Legacy Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Muhammad Ali Legacy Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Area studies and international education</name>
+          </item>
+          <item>
+            <name>Athletes</name>
+          </item>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Diplomacy, foreign officials, Americans abroad</name>
+          </item>
+          <item>
+            <name>Education programs funding</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <bioguideId>M001137</bioguideId>
+        <party>D</party>
+        <firstName>GREGORY</firstName>
+        <state>NY</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>W.</middleName>
+        <identifiers>
+          <gpoId>8067</gpoId>
+          <lisID>1506</lisID>
+          <bioguideId>M001137</bioguideId>
+        </identifiers>
+        <fullName>Rep. Meeks, Gregory W. [D-NY-5]</fullName>
+        <district>5</district>
+        <lastName>MEEKS</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001068</bioguideId>
+        <party>D</party>
+        <firstName>Steve</firstName>
+        <state>TN</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>C001068</bioguideId>
+          <gpoId>8156</gpoId>
+          <lisID>1878</lisID>
+        </identifiers>
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <district>9</district>
+        <lastName>Cohen</lastName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>K000381</bioguideId>
+        <party>D</party>
+        <firstName>Derek</firstName>
+        <state>WA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>2169</lisID>
+          <bioguideId>K000381</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Kilmer, Derek [D-WA-6]</fullName>
+        <district>6</district>
+        <lastName>Kilmer</lastName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>R000515</bioguideId>
+        <party>D</party>
+        <firstName>BOBBY</firstName>
+        <state>IL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <identifiers>
+          <bioguideId>R000515</bioguideId>
+          <lisID>1003</lisID>
+          <gpoId>7921</gpoId>
+        </identifiers>
+        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
+        <district>1</district>
+        <lastName>RUSH</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>L000565</bioguideId>
+        <party>D</party>
+        <firstName>David</firstName>
+        <state>IA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1846</lisID>
+          <gpoId>7915</gpoId>
+          <bioguideId>L000565</bioguideId>
+        </identifiers>
+        <fullName>Rep. Loebsack, David [D-IA-2]</fullName>
+        <district>2</district>
+        <lastName>Loebsack</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>N000147</bioguideId>
+        <party>D</party>
+        <firstName>ELEANOR</firstName>
+        <state>DC</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>HOLMES</middleName>
+        <identifiers>
+          <lisID>868</lisID>
+          <gpoId>7871</gpoId>
+          <bioguideId>N000147</bioguideId>
+        </identifiers>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <district>0</district>
+        <lastName>NORTON</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>L000551</bioguideId>
+        <party>D</party>
+        <firstName>BARBARA</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1501</lisID>
+          <bioguideId>L000551</bioguideId>
+          <gpoId>7814</gpoId>
+        </identifiers>
+        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
+        <district>13</district>
+        <lastName>LEE</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>D000624</bioguideId>
+        <party>D</party>
+        <firstName>Debbie</firstName>
+        <state>MI</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>2251</lisID>
+          <bioguideId>D000624</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Dingell, Debbie [D-MI-12]</fullName>
+        <district>12</district>
+        <lastName>Dingell</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>J000032</bioguideId>
+        <party>D</party>
+        <firstName>SHEILA</firstName>
+        <state>TX</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>J000032</bioguideId>
+          <lisID>588</lisID>
+          <gpoId>8174</gpoId>
+        </identifiers>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <district>18</district>
+        <lastName>JACKSON LEE</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>K000380</bioguideId>
+        <party>D</party>
+        <firstName>Daniel</firstName>
+        <state>MI</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>T.</middleName>
+        <identifiers>
+          <bioguideId>K000380</bioguideId>
+          <gpoId />
+          <lisID>2134</lisID>
+        </identifiers>
+        <fullName>Rep. Kildee, Daniel T. [D-MI-5]</fullName>
+        <district>5</district>
+        <lastName>Kildee</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>W000808</bioguideId>
+        <party>D</party>
+        <firstName>Frederica</firstName>
+        <state>FL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <identifiers>
+          <lisID>2004</lisID>
+          <bioguideId>W000808</bioguideId>
+          <gpoId>7889</gpoId>
+        </identifiers>
+        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
+        <district>24</district>
+        <lastName>Wilson</lastName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>K000009</bioguideId>
+        <party>D</party>
+        <firstName>MARCY</firstName>
+        <state>OH</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <gpoId>8099</gpoId>
+          <lisID>616</lisID>
+          <bioguideId>K000009</bioguideId>
+        </identifiers>
+        <fullName>Rep. Kaptur, Marcy [D-OH-9]</fullName>
+        <district>9</district>
+        <lastName>KAPTUR</lastName>
+        <sponsorshipDate>2017-04-04</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-13</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-13</actionDate>
+      <links />
+      <text>Referred to the House Committee on Foreign Affairs.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Muhammad Ali Legacy Act</b></p> <p>This bill directs the Department of State to award grants to one or more eligible organizations that: (1) are established to promote global respect, understanding, and communication and to encourage character and leadership development world-wide; and (2) demonstrate a commitment to preserving the legacy of Muhammad Ali.</p>]]></text>
+          <lastSummaryUpdateDate>2017-06-28T20:42:52Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-13</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-14T04:47:33Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

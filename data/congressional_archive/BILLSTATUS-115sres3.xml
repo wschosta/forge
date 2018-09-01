@@ -1,54 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-04T04:47:42Z</createDate>
-    <cosponsors />
+    <title>A resolution fixing the hour of daily meeting of the Senate.</title>
+    <originChamber>Senate</originChamber>
+    <updateDate>2018-08-28T20:20:13Z</updateDate>
     <calendarNumbers />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <billType>SRES</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <congress>115</congress>
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <party>R</party>
-        <middleName />
-        <lastName>MCCONNELL</lastName>
-        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
-        <bioguideId>M000355</bioguideId>
-        <state>KY</state>
-        <byRequestType />
-        <identifiers>
-          <gpoId>8254</gpoId>
-          <bioguideId>M000355</bioguideId>
-          <lisID>1395</lisID>
-        </identifiers>
-        <firstName>MITCH</firstName>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A resolution fixing the hour of daily meeting of the Senate.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A resolution fixing the hour of daily meeting of the Senate.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <billNumber>3</billNumber>
-    <relatedBills />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -67,77 +23,141 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <amendments />
-    <originChamber>Senate</originChamber>
-    <updateDate>2017-01-11T10:17:56Z</updateDate>
+    <version>1.0.0</version>
+    <billType>SRES</billType>
     <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
       <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
     </latestAction>
-    <committees>
-      <billCommittees />
-    </committees>
-    <committeeReports />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <relatedBills />
     <introducedDate>2017-01-03</introducedDate>
     <actions>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <links>
-          <link>
-            <name>S6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
-          </link>
-        </links>
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
-        <type>Floor</type>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-03</actionDate>
-        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
-        <links>
-          <link>
-            <name>S6</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
-          </link>
-        </links>
-        <actionCode>17000</actionCode>
-        <type>Floor</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in Senate</text>
-        <links />
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
       <actionTypeCounts>
         <passedOrAgreedToInSenateDayOf>1</passedOrAgreedToInSenateDayOf>
         <passedAgreedToInSenate>1</passedAgreedToInSenate>
         <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
+            <name>S6</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S6; text as passed Senate: CR S6)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6</url>
+            <name>S6</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Passed/agreed to in Senate: Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent.(consideration: CR S6; text as passed Senate: CR S6)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>17000</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>10000</actionCode>
+      </item>
       <actionByCounts>
         <senate>3</senate>
       </actionByCounts>
     </actions>
     <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>3</billNumber>
     <cboCostEstimates />
-    <title>A resolution fixing the hour of daily meeting of the Senate.</title>
+    <cosponsors />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-02-04T14:04:24Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p>Sets the daily meeting of the Senate at 12 Noon unless otherwise ordered.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-02-04T14:04:33Z</lastSummaryUpdateDate>
+          <name>Passed Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Sets the daily meeting of the Senate at 12 Noon unless otherwise ordered.</p>]]></text>
+          <versionCode>82</versionCode>
+          <updateDate>2017-01-03T14:31:52Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committees>
+      <billCommittees />
+    </committees>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T04:47:42Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>M000355</bioguideId>
+        <party>R</party>
+        <firstName>MITCH</firstName>
+        <fullName>Sen. McConnell, Mitch [R-KY]</fullName>
+        <state>KY</state>
+        <lastName>MCCONNELL</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>1395</lisID>
+          <bioguideId>M000355</bioguideId>
+          <gpoId>8254</gpoId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>A resolution fixing the hour of daily meeting of the Senate.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>A resolution fixing the hour of daily meeting of the Senate.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

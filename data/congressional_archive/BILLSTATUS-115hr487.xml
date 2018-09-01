@@ -1,198 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-13T04:55:31Z</createDate>
-    <introducedDate>2017-01-12</introducedDate>
-    <cosponsors>
-      <item>
-        <lastName>Amash</lastName>
-        <state>MI</state>
-        <bioguideId>A000367</bioguideId>
-        <firstName>Justin</firstName>
-        <identifiers>
-          <bioguideId>A000367</bioguideId>
-          <lisID>2029</lisID>
-          <gpoId>7988</gpoId>
-        </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>3</district>
-        <fullName>Rep. Amash, Justin [R-MI-3]</fullName>
-        <middleName />
-      </item>
-    </cosponsors>
-    <calendarNumbers />
-    <policyArea />
-    <billType>HR</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <congress>115</congress>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:06:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <subcommittees />
+          <systemCode>hlig00</systemCode>
+          <name>Intelligence (Permanent Select) Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:06:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Select</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <recordedVotes />
-    <sponsors>
-      <item>
-        <party>R</party>
-        <middleName>C.</middleName>
-        <lastName>Burgess</lastName>
-        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
-        <bioguideId>B001248</bioguideId>
-        <state>TX</state>
-        <byRequestType />
-        <district>26</district>
-        <identifiers>
-          <gpoId>8182</gpoId>
-          <bioguideId>B001248</bioguideId>
-          <lisID>1751</lisID>
-        </identifiers>
-        <firstName>Michael</firstName>
-      </item>
-    </sponsors>
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-03-08T19:31:50Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>This bill prohibits the Central Intelligence Agency from using an unmanned aerial vehicle to carry out a weapons strike or other lethal action.</p> <p>The President must transfer to the Department of Defense all authority to use such a vehicle to conduct such a strike or lethal action.</p>]]></text>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
     <titles>
       <item>
-        <chamberCode />
         <chamberName />
         <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
         <title>To prohibit the Central Intelligence Agency from using an unmanned aerial vehicle to carry out a weapons strike or other deliberately lethal action and to transfer the authority to conduct such strikes or lethal action to the Department of Defense.</title>
+        <chamberCode />
       </item>
       <item>
-        <chamberCode />
         <chamberName />
         <parentTitleType />
         <titleType>Display Title</titleType>
         <title>To prohibit the Central Intelligence Agency from using an unmanned aerial vehicle to carry out a weapons strike or other deliberately lethal action and to transfer the authority to conduct such strikes or lethal action to the Department of Defense.</title>
+        <chamberCode />
       </item>
     </titles>
-    <billNumber>487</billNumber>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <amendments />
-    <originChamber>House</originChamber>
-    <updateDate>2017-01-13T10:07:05Z</updateDate>
+    <cosponsors>
+      <item>
+        <fullName>Rep. Amash, Justin [R-MI-3]</fullName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Amash</lastName>
+        <state>MI</state>
+        <party>R</party>
+        <bioguideId>A000367</bioguideId>
+        <identifiers>
+          <lisID>2029</lisID>
+          <bioguideId>A000367</bioguideId>
+          <gpoId>7988</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Justin</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>3</district>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
     <latestAction>
-      <actionDate>2017-01-12</actionDate>
+      <text>Referred to the Committee on Intelligence (Permanent Select), and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
       <links />
-      <text>Referred to House Armed Services</text>
+      <actionDate>2017-01-12</actionDate>
     </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Armed Services Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:06:05Z</date>
-            </item>
-          </activities>
-          <systemCode>hsas00</systemCode>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Select</type>
-          <name>Intelligence (Permanent) Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:06:00Z</date>
-            </item>
-          </activities>
-          <systemCode>hlig00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
+    <updateDate>2018-08-28T19:59:44Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BURGESS:H.R. 487.Congress has the power to enact this legislation pursuantto the following:Under Article I, Section VIII,Clause 1, ``The Congressshall have power to lay and collect taxes, duties, impostsand excises, to pay the debts and providefor the commondefense and general welfare of the United States . . .'' Inaddition, Article I, Section VIII, Clause 14provides, ``Tomake rules for the government and regulation of the land andnaval forces.'' Lastly, Article I, Section VIII,Clause 16states ``The Congress shall have Power To provide fororganizing, arming, and disciplining, the Militia, andforgoverning such Part of them as may be employed in theService of the United States, reserving to the Statesrespectively, theAppointment of the Officers, and theAuthority of training the Militia according to the disciplineprescribed byCongress.''[Page H472]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>487</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>To prohibit the Central Intelligence Agency from using an unmanned aerial vehicle to carry out a weapons strike or other deliberately lethal action and to transfer the authority to conduct such strikes or lethal action to the Department of Defense.</title>
+    <congress>115</congress>
     <actions>
-      <item>
-        <type>IntroReferral</type>
-        <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>hsas00</systemCode>
-        </committee>
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to House Armed Services</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to the Committee on Intelligence (Permanent Select), and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionCode>H11100-A</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee>
-          <name>Intelligence (Permanent) Committee</name>
-          <systemCode>hlig00</systemCode>
-        </committee>
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to House Intelligence (Permanent)</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
       <actionByCounts>
         <houseOfRepresentatives>5</houseOfRepresentatives>
       </actionByCounts>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Armed Services Committee</name>
+          <systemCode>hsas00</systemCode>
+        </committee>
+        <text>Referred to the Committee on Intelligence (Permanent Select), and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-12</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Referred to the Committee on Intelligence (Permanent Select), and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionCode>H11100-A</actionCode>
+        <actionDate>2017-01-12</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Intelligence (Permanent Select) Committee</name>
+          <systemCode>hlig00</systemCode>
+        </committee>
+        <text>Referred to the Committee on Intelligence (Permanent Select), and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-12</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-12</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-12</actionDate>
+      </item>
       <actionTypeCounts>
-        <billReferralsAggregate>1</billReferralsAggregate>
         <billReferrals>2</billReferrals>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
     </actions>
-    <laws />
-    <cboCostEstimates />
-    <title>To prohibit the Central Intelligence Agency from using an unmanned aerial vehicle to carry out a weapons strike or other deliberately lethal action and to transfer the authority to conduct such strikes or lethal action to the Department of Defense.</title>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Aviation and airports</name>
+          </item>
+          <item>
+            <name>Central Intelligence Agency (CIA)</name>
+          </item>
+          <item>
+            <name>Department of Defense</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Intelligence activities, surveillance, classified information</name>
+          </item>
+          <item>
+            <name>Military operations and strategy</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <committeeReports />
+    <introducedDate>2017-01-12</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>B001248</bioguideId>
+        <middleName>C.</middleName>
+        <byRequestType />
+        <fullName>Rep. Burgess, Michael C. [R-TX-26]</fullName>
+        <lastName>Burgess</lastName>
+        <state>TX</state>
+        <district>26</district>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>B001248</bioguideId>
+          <lisID>1751</lisID>
+          <gpoId>8182</gpoId>
+        </identifiers>
+        <firstName>Michael</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-13T04:55:31Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

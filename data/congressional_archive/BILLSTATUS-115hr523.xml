@@ -1,138 +1,380 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>523</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea />
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-14T09:58:26Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MARCHANT:H.R. 523.Congress has the power to enact this legislation pursuantto thefollowing:U.S. Constitution Art. I Sec. 8 cl. 2, under the power ``Toborrow Money on the credit of the United States'';andArt. I Sec. 8 cl. 18, under the power ``To make all Lawswhich shall be necessary and proper for carrying intoExecutionthe foregoing Powers, and all other Powers vested bythis Constitution in the Government of the United States, orin anyDepartment or Officer thereof.''[Page H546]</pre>]]></constitutionalAuthorityStatementText>
+    <sponsors>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-13</actionDate>
+        <middleName />
+        <party>R</party>
+        <bioguideId>M001158</bioguideId>
+        <lastName>Marchant</lastName>
+        <firstName>Kenny</firstName>
+        <state>TX</state>
+        <identifiers>
+          <lisID>1806</lisID>
+          <bioguideId>M001158</bioguideId>
+          <gpoId>8766</gpoId>
+        </identifiers>
+        <district>24</district>
+        <fullName>Rep. Marchant, Kenny [R-TX-24]</fullName>
+        <byRequestType />
       </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-14T04:47:32Z</createDate>
     <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <titles>
-      <item>
-        <chamberName />
-        <title>To provide further means of accountability of the United States debt and promote fiscal responsibility.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <title>To provide further means of accountability of the United States debt and promote fiscal responsibility.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>To provide further means of accountability of the United States debt and promote fiscal responsibility.</title>
-    <introducedDate>2017-01-13</introducedDate>
     <latestAction>
-      <actionDate>2017-01-13</actionDate>
       <text>Referred to the House Committee on Ways and Means.</text>
       <links />
+      <actionDate>2017-01-13</actionDate>
     </latestAction>
-    <createDate>2017-01-14T04:47:32Z</createDate>
+    <billNumber>523</billNumber>
+    <notes />
+    <introducedDate>2017-01-13</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <name>Ways and Means Committee</name>
+          <systemCode>hswm00</systemCode>
+          <subcommittees />
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-13T14:02:20Z</date>
             </item>
           </activities>
-          <subcommittees />
+          <name>Ways and Means Committee</name>
           <chamber>House</chamber>
           <type>Standing</type>
-          <systemCode>hswm00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
+    <relatedBills />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Economics and Public Finance</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Budget deficits and national debt</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Financial services and investments</name>
+          </item>
+          <item>
+            <name>Government employee pay, benefits, personnel management</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>International monetary system and foreign exchange</name>
+          </item>
+          <item>
+            <name>Medicaid</name>
+          </item>
+          <item>
+            <name>Medicare</name>
+          </item>
+          <item>
+            <name>Securities</name>
+          </item>
+          <item>
+            <name>Social security and elderly assistance</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Economics and Public Finance</name>
+    </policyArea>
+    <actions>
       <item>
-        <fullName>Rep. Marchant, Kenny [R-TX-24]</fullName>
-        <firstName>Kenny</firstName>
-        <bioguideId>M001158</bioguideId>
-        <party>R</party>
-        <middleName />
-        <byRequestType />
-        <district>24</district>
-        <state>TX</state>
-        <lastName>Marchant</lastName>
-        <identifiers>
-          <lisID>1806</lisID>
-          <gpoId>8766</gpoId>
-          <bioguideId>M001158</bioguideId>
-        </identifiers>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
-    </sponsors>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <cosponsors>
+      <item>
+        <lastName>Kelly</lastName>
+        <state>PA</state>
+        <firstName>Mike</firstName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Kelly, Mike [R-PA-3]</fullName>
+        <identifiers>
+          <lisID>2051</lisID>
+          <gpoId>8708</gpoId>
+          <bioguideId>K000376</bioguideId>
+        </identifiers>
+        <bioguideId>K000376</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Meehan</lastName>
+        <state>PA</state>
+        <firstName>Patrick</firstName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <district>7</district>
+        <fullName>Rep. Meehan, Patrick [R-PA-7]</fullName>
+        <identifiers>
+          <bioguideId>M001181</bioguideId>
+          <lisID>2052</lisID>
+          <gpoId>8125</gpoId>
+        </identifiers>
+        <bioguideId>M001181</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>TIBERI</lastName>
+        <state>OH</state>
+        <firstName>PATRICK</firstName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <district>12</district>
+        <fullName>Rep. Tiberi, Patrick J. [R-OH-12]</fullName>
+        <identifiers>
+          <lisID>1664</lisID>
+          <gpoId>8102</gpoId>
+          <bioguideId>T000462</bioguideId>
+        </identifiers>
+        <bioguideId>T000462</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <lastName>Schweikert</lastName>
+        <state>AZ</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Schweikert, David [R-AZ-6]</fullName>
+        <identifiers>
+          <lisID>1994</lisID>
+          <bioguideId>S001183</bioguideId>
+          <gpoId>7802</gpoId>
+        </identifiers>
+        <bioguideId>S001183</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>SMITH</lastName>
+        <state>TX</state>
+        <firstName>LAMAR</firstName>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <district>21</district>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
+        <identifiers>
+          <lisID>1075</lisID>
+          <bioguideId>S000583</bioguideId>
+          <gpoId>8177</gpoId>
+        </identifiers>
+        <bioguideId>S000583</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Holding</lastName>
+        <state>NC</state>
+        <firstName>George</firstName>
+        <sponsorshipDate>2017-02-01</sponsorshipDate>
+        <district>2</district>
+        <fullName>Rep. Holding, George [R-NC-2]</fullName>
+        <identifiers>
+          <lisID>2143</lisID>
+          <gpoId />
+          <bioguideId>H001065</bioguideId>
+        </identifiers>
+        <bioguideId>H001065</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Hensarling</lastName>
+        <state>TX</state>
+        <firstName>Jeb</firstName>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <district>5</district>
+        <fullName>Rep. Hensarling, Jeb [R-TX-5]</fullName>
+        <identifiers>
+          <lisID>1749</lisID>
+          <bioguideId>H001036</bioguideId>
+          <gpoId>8161</gpoId>
+        </identifiers>
+        <bioguideId>H001036</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Rice</lastName>
+        <state>SC</state>
+        <firstName>Tom</firstName>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <district>7</district>
+        <fullName>Rep. Rice, Tom [R-SC-7]</fullName>
+        <identifiers>
+          <lisID>2160</lisID>
+          <gpoId />
+          <bioguideId>R000597</bioguideId>
+        </identifiers>
+        <bioguideId>R000597</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>JOHNSON</lastName>
+        <state>TX</state>
+        <firstName>SAM</firstName>
+        <sponsorshipDate>2017-03-20</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Johnson, Sam [R-TX-3]</fullName>
+        <identifiers>
+          <lisID>603</lisID>
+          <gpoId>8159</gpoId>
+          <bioguideId>J000174</bioguideId>
+        </identifiers>
+        <bioguideId>J000174</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Norman</lastName>
+        <state>SC</state>
+        <firstName>Ralph</firstName>
+        <sponsorshipDate>2017-07-14</sponsorshipDate>
+        <district>5</district>
+        <fullName>Rep. Norman, Ralph [R-SC-5]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2361</lisID>
+          <bioguideId>N000190</bioguideId>
+        </identifiers>
+        <bioguideId>N000190</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+    </cosponsors>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Debt Transparency and Accountability Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To provide further means of accountability of the United States debt and promote fiscal responsibility.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Debt Transparency and Accountability Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Debt Transparency and Accountability Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T19:59:51Z</updateDate>
+    <calendarNumbers />
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-04-03T13:10:52Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Debt Transparency and Accountability Act </b></p> <p> This bill requires the Secretary of the Treasury to provide a report to Congress prior to any date on which Treasury anticipates the public debt will reach the statutory limit. </p> <p>The Secretary must appear before the House Ways and Means Committee and the Senate Finance Committee to submit a debt report including: (1) historic, current, and projected levels of debt; (2) the drivers and composition of future debt; and (3) how the United States will meet debt obligations if the debt limit is raised.</p> <p>The Secretary must also provide a detailed explanation of: </p> <ul> <li>proposals to reduce the debt and a progress report on implementing them; </li> <li>the impact an increased debt limit will have on future government spending, debt service, and the position of the U.S. dollar as the international reserve currency;</li> <li> projections of the fiscal health and sustainability of major entitlement programs; </li> <li> any extraordinary measures Treasury intends to take to fund federal government obligations if the debt limit is not raised and projections of the administrative cost and duration of the measures.</li> </ul> <p>Treasury must make specified information required by this bill available to the public on its website.</p> <p>Upon request, Treasury must submit to Congress specified financial and economic data relevant to determining the amount of the public debt. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Debt Transparency and Accountability Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

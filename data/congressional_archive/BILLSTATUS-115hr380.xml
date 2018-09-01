@@ -1,99 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <billNumber>380</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <constitutionalAuthorityStatementText />
-    <actions>
+    <titles>
       <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionDate>2017-01-09</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>H11100</actionCode>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>IRGC Terrorist Designation Act</title>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-09</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>Intro-H</actionCode>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To direct the Secretary of State to submit to Congress a report on the designation of Iran's Islamic Revolutionary Guard Corps as a foreign terrorist organization, and for other purposes.</title>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-09</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>1000</actionCode>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>IRGC Terrorist Designation Act</title>
       </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <amendments />
-    <cboCostEstimates />
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-10T05:15:44Z</createDate>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>IRGC Terrorist Designation Act</title>
+      </item>
+    </titles>
+    <notes />
     <latestAction>
-      <actionDate>2017-01-09</actionDate>
-      <text>Referred to the House Committee on the Judiciary.</text>
       <links />
+      <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+      <actionDate>2017-02-06</actionDate>
     </latestAction>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <title>IRGC Terrorist Designation Act</title>
-    <sponsors>
-      <item>
-        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
-        <byRequestType />
-        <lastName>McCaul</lastName>
-        <party>R</party>
-        <bioguideId>M001157</bioguideId>
-        <identifiers>
-          <lisID>1804</lisID>
-          <bioguideId>M001157</bioguideId>
-          <gpoId>8166</gpoId>
-        </identifiers>
-        <middleName>T.</middleName>
-        <district>10</district>
-        <state>TX</state>
-        <firstName>Michael</firstName>
-      </item>
-    </sponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 5 (Monday, January 9, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. McCAUL:H.R. 380.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 1: ``Congress shall have PowerTo . . . provide for the common Defence and general Welfareof the United States.''[Page H235]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-          <subcommittees />
           <activities>
             <item>
               <date>2017-01-09T17:01:40Z</date>
@@ -102,153 +49,633 @@
           </activities>
           <type>Standing</type>
           <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju08</systemCode>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-06T22:27:09Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+            <item>
+              <systemCode>hsju01</systemCode>
+              <name>Immigration and Border Security Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-06T22:26:56Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-23T14:31:28Z</updateDate>
-    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-02-06</actionDate>
+        <committee>
+          <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-06</actionDate>
+        <committee>
+          <systemCode>hsju01</systemCode>
+          <name>Immigration and Border Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Immigration and Border Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionDate>2017-01-09</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-09</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-09</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>2</placeholderTextForH>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. McCaul, Michael T. [R-TX-10]</fullName>
+        <party>R</party>
+        <bioguideId>M001157</bioguideId>
+        <identifiers>
+          <bioguideId>M001157</bioguideId>
+          <lisID>1804</lisID>
+          <gpoId>8166</gpoId>
+        </identifiers>
+        <lastName>McCaul</lastName>
+        <district>10</district>
+        <middleName>T.</middleName>
+        <firstName>Michael</firstName>
+        <byRequestType />
+        <state>TX</state>
+      </item>
+    </sponsors>
     <recordedVotes />
+    <updateDate>2018-08-28T19:59:00Z</updateDate>
+    <billNumber>380</billNumber>
+    <title>IRGC Terrorist Designation Act</title>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>IRGC Terrorist Designation Act</latestTitle>
+        <type>S</type>
+        <congress>115</congress>
+        <number>67</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Foreign Relations.</text>
+          <actionDate>2017-01-09</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
     <billType>HR</billType>
+    <createDate>2017-01-10T05:15:44Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-09</actionDate>
+          <lastSummaryUpdateDate>2017-02-04T16:29:57Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <text><![CDATA[<p><strong>IRGC Terrorist Designation Act</strong></p> <p>This bill expresses the sense of Congress that Iran's Islamic Revolutionary Guard Corps (IRGC) meets the criteria for designation as a foreign terrorist organization and should be so designated by the Department of State. </p> <p>State shall submit to Congress: (1) a detailed report on whether the IRGC meets such criteria; and (2) if State determines the IRGC doe not meet such criteria, a detailed justification as to which criteria have not been met.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
     <cosponsors>
       <item>
         <lastName>Weber</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <firstName>Randy</firstName>
         <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>W000814</bioguideId>
-        <party>R</party>
+        <district>14</district>
+        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
         <identifiers>
           <gpoId />
           <lisID>2161</lisID>
           <bioguideId>W000814</bioguideId>
         </identifiers>
-        <fullName>Rep. Weber, Randy K., Sr. [R-TX-14]</fullName>
-        <district>14</district>
-        <state>TX</state>
+        <bioguideId>W000814</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <middleName>K.</middleName>
-        <firstName>Randy</firstName>
       </item>
       <item>
         <lastName>Carter</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>C001051</bioguideId>
-        <party>R</party>
-        <identifiers>
-          <gpoId>8187</gpoId>
-          <lisID>1752</lisID>
-          <bioguideId>C001051</bioguideId>
-        </identifiers>
-        <fullName>Rep. Carter, John R. [R-TX-31]</fullName>
-        <district>31</district>
         <state>TX</state>
-        <middleName>R.</middleName>
         <firstName>John</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <district>31</district>
+        <fullName>Rep. Carter, John R. [R-TX-31]</fullName>
+        <identifiers>
+          <bioguideId>C001051</bioguideId>
+          <lisID>1752</lisID>
+          <gpoId>8187</gpoId>
+        </identifiers>
+        <bioguideId>C001051</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>R.</middleName>
       </item>
       <item>
         <lastName>ROHRABACHER</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>R000409</bioguideId>
-        <party>R</party>
-        <identifiers>
-          <gpoId>7851</gpoId>
-          <bioguideId>R000409</bioguideId>
-          <lisID>979</lisID>
-        </identifiers>
-        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
-        <district>48</district>
         <state>CA</state>
-        <middleName />
         <firstName>DANA</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <district>48</district>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <identifiers>
+          <lisID>979</lisID>
+          <bioguideId>R000409</bioguideId>
+          <gpoId>7851</gpoId>
+        </identifiers>
+        <bioguideId>R000409</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
         <lastName>Duncan</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
+        <state>SC</state>
+        <firstName>Jeff</firstName>
         <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>D000615</bioguideId>
-        <party>R</party>
+        <district>3</district>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
         <identifiers>
-          <lisID>2057</lisID>
           <bioguideId>D000615</bioguideId>
+          <lisID>2057</lisID>
           <gpoId>8143</gpoId>
         </identifiers>
-        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
-        <district>3</district>
-        <state>SC</state>
+        <bioguideId>D000615</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <middleName />
-        <firstName>Jeff</firstName>
       </item>
       <item>
         <lastName>Coffman</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
+        <state>CO</state>
+        <firstName>Mike</firstName>
         <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>C001077</bioguideId>
-        <party>R</party>
+        <district>6</district>
+        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
         <identifiers>
           <lisID>1912</lisID>
           <bioguideId>C001077</bioguideId>
           <gpoId>7864</gpoId>
         </identifiers>
-        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
-        <district>6</district>
-        <state>CO</state>
+        <bioguideId>C001077</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
         <middleName />
-        <firstName>Mike</firstName>
       </item>
       <item>
         <lastName>Garrett</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <bioguideId>G000580</bioguideId>
-        <party>R</party>
-        <identifiers>
-          <gpoId />
-          <bioguideId>G000580</bioguideId>
-          <lisID>2353</lisID>
-        </identifiers>
-        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
-        <district>5</district>
         <state>VA</state>
-        <middleName>A.</middleName>
         <firstName>Thomas</firstName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <district>5</district>
+        <fullName>Rep. Garrett, Thomas A., Jr. [R-VA-5]</fullName>
+        <identifiers>
+          <lisID>2353</lisID>
+          <bioguideId>G000580</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>G000580</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+      </item>
+      <item>
+        <lastName>Olson</lastName>
+        <state>TX</state>
+        <firstName>Pete</firstName>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <district>22</district>
+        <fullName>Rep. Olson, Pete [R-TX-22]</fullName>
+        <identifiers>
+          <lisID>1955</lisID>
+          <bioguideId>O000168</bioguideId>
+          <gpoId>8178</gpoId>
+        </identifiers>
+        <bioguideId>O000168</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Bilirakis</lastName>
+        <state>FL</state>
+        <firstName>Gus</firstName>
+        <sponsorshipDate>2017-01-27</sponsorshipDate>
+        <district>12</district>
+        <fullName>Rep. Bilirakis, Gus M. [R-FL-12]</fullName>
+        <identifiers>
+          <lisID>1838</lisID>
+          <bioguideId>B001257</bioguideId>
+          <gpoId>7881</gpoId>
+        </identifiers>
+        <bioguideId>B001257</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <lastName>Luetkemeyer</lastName>
+        <state>MO</state>
+        <firstName>Blaine</firstName>
+        <sponsorshipDate>2017-02-03</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Luetkemeyer, Blaine [R-MO-3]</fullName>
+        <identifiers>
+          <lisID>1931</lisID>
+          <bioguideId>L000569</bioguideId>
+          <gpoId>8017</gpoId>
+        </identifiers>
+        <bioguideId>L000569</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Zeldin</lastName>
+        <state>NY</state>
+        <firstName>Lee</firstName>
+        <sponsorshipDate>2017-02-16</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+        <identifiers>
+          <bioguideId>Z000017</bioguideId>
+          <gpoId />
+          <lisID>2261</lisID>
+        </identifiers>
+        <bioguideId>Z000017</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <lastName>Gallagher</lastName>
+        <state>WI</state>
+        <firstName>Mike</firstName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <district>8</district>
+        <fullName>Rep. Gallagher, Mike [R-WI-8]</fullName>
+        <identifiers>
+          <lisID>2355</lisID>
+          <bioguideId>G000579</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>G000579</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Roskam</lastName>
+        <state>IL</state>
+        <firstName>Peter</firstName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Roskam, Peter J. [R-IL-6]</fullName>
+        <identifiers>
+          <lisID>1848</lisID>
+          <bioguideId>R000580</bioguideId>
+          <gpoId>7926</gpoId>
+        </identifiers>
+        <bioguideId>R000580</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <lastName>GRAVES</lastName>
+        <state>MO</state>
+        <firstName>SAM</firstName>
+        <sponsorshipDate>2017-03-08</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
+        <identifiers>
+          <lisID>1656</lisID>
+          <bioguideId>G000546</bioguideId>
+          <gpoId>8014</gpoId>
+        </identifiers>
+        <bioguideId>G000546</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Trott</lastName>
+        <state>MI</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2017-03-08</sponsorshipDate>
+        <district>11</district>
+        <fullName>Rep. Trott, David A. [R-MI-11]</fullName>
+        <identifiers>
+          <lisID>2250</lisID>
+          <bioguideId>T000475</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>T000475</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+      </item>
+      <item>
+        <lastName>Comstock</lastName>
+        <state>VA</state>
+        <firstName>Barbara</firstName>
+        <sponsorshipDate>2017-03-09</sponsorshipDate>
+        <district>10</district>
+        <fullName>Rep. Comstock, Barbara [R-VA-10]</fullName>
+        <identifiers>
+          <lisID>2273</lisID>
+          <bioguideId>C001105</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>C001105</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>McClintock</lastName>
+        <state>CA</state>
+        <firstName>Tom</firstName>
+        <sponsorshipDate>2017-03-09</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
+        <identifiers>
+          <lisID>1908</lisID>
+          <gpoId>7809</gpoId>
+          <bioguideId>M001177</bioguideId>
+        </identifiers>
+        <bioguideId>M001177</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Hill</lastName>
+        <state>AR</state>
+        <firstName>J.</firstName>
+        <sponsorshipDate>2017-03-09</sponsorshipDate>
+        <district>2</district>
+        <fullName>Rep. Hill, J. French [R-AR-2]</fullName>
+        <identifiers>
+          <lisID>2223</lisID>
+          <bioguideId>H001072</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>H001072</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>French</middleName>
+      </item>
+      <item>
+        <lastName>Grothman</lastName>
+        <state>WI</state>
+        <firstName>Glenn</firstName>
+        <sponsorshipDate>2017-04-08</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
+        <bioguideId>G000576</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Farenthold</lastName>
+        <state>TX</state>
+        <firstName>Blake</firstName>
+        <sponsorshipDate>2017-04-28</sponsorshipDate>
+        <district>27</district>
+        <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
+        <identifiers>
+          <gpoId>8183</gpoId>
+          <lisID>2067</lisID>
+          <bioguideId>F000460</bioguideId>
+        </identifiers>
+        <bioguideId>F000460</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Hartzler</lastName>
+        <state>MO</state>
+        <firstName>Vicky</firstName>
+        <sponsorshipDate>2017-06-15</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Hartzler, Vicky [R-MO-4]</fullName>
+        <identifiers>
+          <lisID>2032</lisID>
+          <gpoId>8012</gpoId>
+          <bioguideId>H001053</bioguideId>
+        </identifiers>
+        <bioguideId>H001053</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>JOHNSON</lastName>
+        <state>TX</state>
+        <firstName>SAM</firstName>
+        <sponsorshipDate>2017-06-22</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Johnson, Sam [R-TX-3]</fullName>
+        <identifiers>
+          <lisID>603</lisID>
+          <bioguideId>J000174</bioguideId>
+          <gpoId>8159</gpoId>
+        </identifiers>
+        <bioguideId>J000174</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Carter</lastName>
+        <state>GA</state>
+        <firstName>Earl</firstName>
+        <sponsorshipDate>2017-07-25</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Carter, Earl L. "Buddy" [R-GA-1]</fullName>
+        <identifiers>
+          <lisID>2236</lisID>
+          <gpoId />
+          <bioguideId>C001103</bioguideId>
+        </identifiers>
+        <bioguideId>C001103</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L. "Buddy"</middleName>
+      </item>
+      <item>
+        <lastName>Banks</lastName>
+        <state>IN</state>
+        <firstName>Jim</firstName>
+        <sponsorshipDate>2017-10-24</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Banks, Jim [R-IN-3]</fullName>
+        <identifiers>
+          <bioguideId>B001299</bioguideId>
+          <gpoId />
+          <lisID>2326</lisID>
+        </identifiers>
+        <bioguideId>B001299</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Gohmert</lastName>
+        <state>TX</state>
+        <firstName>Louie</firstName>
+        <sponsorshipDate>2018-07-16</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
+        <identifiers>
+          <lisID>1801</lisID>
+          <bioguideId>G000552</bioguideId>
+          <gpoId>8157</gpoId>
+        </identifiers>
+        <bioguideId>G000552</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
     </cosponsors>
-    <relatedBills />
-    <summaries>
-      <billSummaries />
-    </summaries>
     <introducedDate>2017-01-09</introducedDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-        <chamberName />
-        <title>IRGC Terrorist Designation Act</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-        <chamberName />
-        <title>To direct the Secretary of State to submit to Congress a report on the designation of Iran's Islamic Revolutionary Guard Corps as a foreign terrorist organization, and for other purposes.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-        <chamberName />
-        <title>IRGC Terrorist Designation Act</title>
-      </item>
-    </titles>
-    <policyArea />
-    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Iran</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

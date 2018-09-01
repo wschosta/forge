@@ -1,175 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <titles>
+    <notes />
+    <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsfa05</systemCode>
+              <name>Asia and the Pacific Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-16T22:03:42Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:03:45Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <subcommittees />
+          <type>Select</type>
+          <systemCode>hlig00</systemCode>
+          <name>Intelligence (Permanent Select) Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:03:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:53:44Z</updateDate>
+    <relatedBills>
       <item>
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
+        <type>HRES</type>
+        <number>153</number>
+        <latestAction>
+          <actionDate>2017-05-18</actionDate>
+          <text>Referred to the Subcommittee on Asia and the Pacific.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</latestTitle>
       </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
-      </item>
-    </titles>
-    <amendments />
+    </relatedBills>
+    <version>1.0.0</version>
     <actions>
       <item>
+        <actionDate>2017-02-16</actionDate>
+        <committee>
+          <systemCode>hsfa05</systemCode>
+          <name>Asia and the Pacific Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Asia and the Pacific.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Intelligence (Permanent Select), for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <committee>
           <systemCode>hlig00</systemCode>
-          <name>Intelligence (Permanent) Committee</name>
+          <name>Intelligence (Permanent Select) Committee</name>
         </committee>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <text>Referred to House Intelligence (Permanent)</text>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Intelligence (Permanent Select), for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <committee />
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Intelligence (Permanent Select), for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100-A</actionCode>
-        <links />
       </item>
       <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Intelligence (Permanent Select), for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <committee>
           <systemCode>hsfa00</systemCode>
           <name>Foreign Affairs Committee</name>
         </committee>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <text>Referred to House Foreign Affairs</text>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <text>Introduced in House</text>
         <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
+        <text>Introduced in House</text>
         <committee />
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <text>Introduced in House</text>
+      </item>
+      <item>
         <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
         <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>2</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
         <billReferralsAggregate>1</billReferralsAggregate>
+        <billReferrals>2</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
         <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
       </actionByCounts>
     </actions>
     <sponsors>
       <item>
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <identifiers>
+          <bioguideId>G000553</bioguideId>
+          <lisID>1803</lisID>
+          <gpoId>8165</gpoId>
+        </identifiers>
+        <bioguideId>G000553</bioguideId>
+        <lastName>Green</lastName>
+        <firstName>Al</firstName>
+        <party>D</party>
         <byRequestType />
         <middleName />
-        <firstName>Al</firstName>
-        <district>9</district>
         <state>TX</state>
-        <party>D</party>
-        <identifiers>
-          <gpoId>8165</gpoId>
-          <lisID>1803</lisID>
-          <bioguideId>G000553</bioguideId>
-        </identifiers>
-        <lastName>Green</lastName>
-        <fullName>Rep. Green, Al [D-TX-9]</fullName>
-        <bioguideId>G000553</bioguideId>
+        <district>9</district>
       </item>
     </sponsors>
+    <billType>HRES</billType>
     <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <updateDate>2017-01-06T20:31:12Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to House Intelligence (Permanent)</text>
-      <links />
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:03:50Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <name>Intelligence (Permanent) Committee</name>
-          <type>Select</type>
-          <systemCode>hlig00</systemCode>
-          <subcommittees />
-        </item>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:03:45Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <name>Foreign Affairs Committee</name>
-          <type>Standing</type>
-          <systemCode>hsfa00</systemCode>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
-    <cboCostEstimates />
-    <notes />
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <laws />
-    <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
-    <introducedDate>2017-01-03</introducedDate>
     <policyArea>
       <name>International Affairs</name>
     </policyArea>
-    <congress>115</congress>
+    <recordedVotes />
+    <billNumber>18</billNumber>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.</title>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>International Affairs</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Asia</name>
@@ -193,14 +227,34 @@
             <name>Intelligence activities, surveillance, classified information</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
       </billSubjects>
     </subjects>
     <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
     <calendarNumbers />
-    <billNumber>18</billNumber>
+    <latestAction>
+      <actionDate>2017-02-16</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Asia and the Pacific.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Expresses concern about the detainment of Sandy Phan-Gillis in Yunnan Province, People's Republic of China, in August 2004.</p> <p> Encourages the Department of State and the intelligence community to: (1) jointly continue investigations and consider all plausible explanations for Phan-Gillis's detainment, (2) coordinate investigations with the Chinese government and solicit information from appropriate regional affairs and law enforcement experts on plausible explanations, and (3) continue to work with and inform Congress and Phan-Gillis's family on efforts to possibly recover Phan-Gillis and to resolve her detainment.</p> <ul> </ul>]]></text>
+          <lastSummaryUpdateDate>2017-04-17T22:08:36Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <createDate>2017-01-04T07:01:08Z</createDate>
-    <billType>HRES</billType>
-    <relatedBills />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,150 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Natural Resources Committee</name>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:47:11Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <systemCode>hsii10</systemCode>
+              <name>Federal Lands Subcommittee</name>
+            </item>
+          </subcommittees>
           <systemCode>hsii00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-12T21:01:16Z</updateDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Second Division Memorial Modification Act</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To authorize modification or augmentation of the Second Division Memorial, and for other purposes.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>Second Division Memorial Modification Act</title>
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>E.</middleName>
-        <firstName>DON</firstName>
-        <bioguideId>Y000033</bioguideId>
-        <district>0</district>
-        <byRequestType />
-        <state>AK</state>
-        <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <lastName>YOUNG</lastName>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-      </item>
-    </sponsors>
+          <name>Natural Resources Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:24:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Second Division Memorial Modification Act</b></p> <p>This bill authorizes the Second Indianhead Division Association, Inc. Scholarship and Memorials Foundation to place three benches honoring the members of the Second Infantry Division killed in the Cold War in Korea, the War in Iraq, and the War in Afghanistan on the Second Division Memorial located in President's Park in the District of Columbia. </p> <p>No federal funds may be used for these modifications or augmentations. </p>]]></text>
+          <lastSummaryUpdateDate>2017-01-26T21:33:51Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
     </summaries>
     <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Second Division Memorial Modification Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To authorize modification or augmentation of the Second Division Memorial, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Second Division Memorial Modification Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Second Division Memorial Modification Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>FL</state>
+        <bioguideId>M001199</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2322</lisID>
+          <gpoId />
+          <bioguideId>M001199</bioguideId>
+        </identifiers>
+        <fullName>Rep. Mast, Brian J. [R-FL-18]</fullName>
+        <lastName>Mast</lastName>
+        <sponsorshipDate>2017-05-02</sponsorshipDate>
+        <firstName>Brian</firstName>
+        <district>18</district>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <party>R</party>
+        <state>VA</state>
+        <bioguideId>C001105</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2273</lisID>
+          <gpoId />
+          <bioguideId>C001105</bioguideId>
+        </identifiers>
+        <fullName>Rep. Comstock, Barbara [R-VA-10]</fullName>
+        <lastName>Comstock</lastName>
+        <sponsorshipDate>2017-07-18</sponsorshipDate>
+        <firstName>Barbara</firstName>
+        <district>10</district>
+        <middleName />
+      </item>
+      <item>
+        <party>R</party>
+        <state>TN</state>
+        <bioguideId>R000582</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+          <lisID>1954</lisID>
+        </identifiers>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <lastName>Roe</lastName>
+        <sponsorshipDate>2017-09-26</sponsorshipDate>
+        <firstName>David</firstName>
+        <district>1</district>
+        <middleName>P.</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>MN</state>
+        <bioguideId>P000258</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>8007</gpoId>
+          <lisID>910</lisID>
+          <bioguideId>P000258</bioguideId>
+        </identifiers>
+        <fullName>Rep. Peterson, Collin C. [D-MN-7]</fullName>
+        <lastName>PETERSON</lastName>
+        <sponsorshipDate>2017-11-16</sponsorshipDate>
+        <firstName>COLLIN</firstName>
+        <district>7</district>
+        <middleName>C.</middleName>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
     <latestAction>
-      <actionDate>2017-01-03</actionDate>
+      <text>Referred to the Subcommittee on Federal Lands.</text>
       <links />
-      <text>Referred to the House Committee on Natural Resources.</text>
+      <actionDate>2017-02-10</actionDate>
     </latestAction>
+    <updateDate>2018-08-28T19:58:19Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 216.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3, Clause 2The constitutional authority of Congress to enact thislegislation is provided by Article IV, Section 3, Clause 2 ofthe United States Constitution, which grants Congress thepower to dispose of and make all needful Rules andRegulations respecting the Territory or other Propertybelonging to the United States.[Page H52]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>216</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+          <actionDate>2017-04-07</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>907</number>
+        <latestTitle>Second Division Memorial Modification Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <title>Second Division Memorial Modification Act</title>
     <congress>115</congress>
-    <cosponsors />
-    <relatedBills />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Afghanistan</name>
+          </item>
+          <item>
+            <name>Asia</name>
+          </item>
+          <item>
+            <name>Conflicts and wars</name>
+          </item>
+          <item>
+            <name>District of Columbia</name>
+          </item>
+          <item>
+            <name>Iraq</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Military history</name>
+          </item>
+          <item>
+            <name>Monuments and memorials</name>
+          </item>
+          <item>
+            <name>North Korea</name>
+          </item>
+          <item>
+            <name>South Korea</name>
+          </item>
+          <item>
+            <name>Veterans' organizations and recognition</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Public Lands and Natural Resources</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>Second Division Memorial Modification Act</title>
-    <recordedVotes />
-    <cboCostEstimates />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <name>Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:24:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>Y000033</bioguideId>
+        <middleName>E.</middleName>
+        <byRequestType />
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <lastName>YOUNG</lastName>
+        <state>AK</state>
+        <district>0</district>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <firstName>DON</firstName>
+      </item>
+    </sponsors>
+    <notes />
     <createDate>2017-01-04T07:01:13Z</createDate>
-    <billType>HR</billType>
-    <billNumber>216</billNumber>
-    <policyArea>
-      <name>Public Lands and Natural Resources</name>
-    </policyArea>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

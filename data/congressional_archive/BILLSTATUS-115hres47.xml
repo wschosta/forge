@@ -1,198 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-13T04:55:29Z</createDate>
+    <committeeReports />
+    <updateDate>2018-08-28T19:53:49Z</updateDate>
+    <laws />
+    <billType>HRES</billType>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Budget process</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Legislative rules and procedure</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <recordedVotes />
+    <originChamber>House</originChamber>
+    <latestAction>
+      <text>Referred to the House Committee on Rules.</text>
+      <links />
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText />
+    <billNumber>47</billNumber>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>hsru00</systemCode>
+          <name>Rules Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:02:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <introducedDate>2017-01-12</introducedDate>
     <cosponsors>
       <item>
-        <identifiers>
-          <lisID>1967</lisID>
-          <gpoId>7925</gpoId>
-          <bioguideId>Q000023</bioguideId>
-        </identifiers>
-        <state>IL</state>
+        <firstName>Mike</firstName>
+        <lastName>Quigley</lastName>
+        <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>Q000023</bioguideId>
         <district>5</district>
         <middleName />
-        <party>D</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>Q000023</bioguideId>
-        <lastName>Quigley</lastName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Quigley, Mike [D-IL-5]</fullName>
-        <firstName>Mike</firstName>
+        <state>IL</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1967</lisID>
+          <bioguideId>Q000023</bioguideId>
+          <gpoId>7925</gpoId>
+        </identifiers>
       </item>
       <item>
+        <firstName>Mark</firstName>
+        <lastName>Amodei</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>A000369</bioguideId>
+        <district>2</district>
+        <middleName>E.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Amodei, Mark E. [R-NV-2]</fullName>
+        <state>NV</state>
+        <party>R</party>
         <identifiers>
           <lisID>2090</lisID>
           <gpoId>8366</gpoId>
           <bioguideId>A000369</bioguideId>
         </identifiers>
-        <state>NV</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <district>2</district>
-        <middleName>E.</middleName>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>A000369</bioguideId>
-        <lastName>Amodei</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Amodei, Mark E. [R-NV-2]</fullName>
-        <firstName>Mark</firstName>
       </item>
       <item>
-        <identifiers>
-          <lisID>2224</lisID>
-          <gpoId />
-          <bioguideId>W000821</bioguideId>
-        </identifiers>
-        <state>AR</state>
+        <firstName>Bruce</firstName>
+        <lastName>Westerman</lastName>
+        <sponsorshipWithdrawnDate />
         <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>W000821</bioguideId>
         <district>4</district>
         <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>W000821</bioguideId>
-        <lastName>Westerman</lastName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <fullName>Rep. Westerman, Bruce [R-AR-4]</fullName>
-        <firstName>Bruce</firstName>
+        <state>AR</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>W000821</bioguideId>
+          <lisID>2224</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>John</firstName>
+        <lastName>Faso</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <bioguideId>F000464</bioguideId>
+        <district>19</district>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Faso, John J. [R-NY-19]</fullName>
+        <state>NY</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2343</lisID>
+          <gpoId />
+          <bioguideId>F000464</bioguideId>
+        </identifiers>
       </item>
     </cosponsors>
-    <calendarNumbers />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <billType>HRES</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <notes />
-    <congress>115</congress>
-    <recordedVotes />
+    <relatedBills />
+    <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
     <sponsors>
       <item>
-        <party>R</party>
-        <middleName>B.</middleName>
-        <lastName>Renacci</lastName>
-        <fullName>Rep. Renacci, James B. [R-OH-16]</fullName>
-        <bioguideId>R000586</bioguideId>
-        <state>OH</state>
-        <byRequestType />
         <district>16</district>
+        <fullName>Rep. Renacci, James B. [R-OH-16]</fullName>
+        <firstName>James</firstName>
+        <lastName>Renacci</lastName>
+        <state>OH</state>
+        <bioguideId>R000586</bioguideId>
+        <party>R</party>
         <identifiers>
           <lisID>2048</lisID>
-          <gpoId>8106</gpoId>
           <bioguideId>R000586</bioguideId>
+          <gpoId>8106</gpoId>
         </identifiers>
-        <firstName>James</firstName>
+        <byRequestType />
+        <middleName>B.</middleName>
       </item>
     </sponsors>
+    <congress>115</congress>
+    <version>1.0.0</version>
+    <amendments />
     <titles>
       <item>
-        <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
-        <parentTitleType />
-        <chamberName />
         <titleType>Official Title as Introduced</titleType>
+        <chamberName />
         <chamberCode />
+        <parentTitleType />
+        <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
       </item>
       <item>
-        <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
-        <parentTitleType />
-        <chamberName />
         <titleType>Display Title</titleType>
+        <chamberName />
         <chamberCode />
+        <parentTitleType />
+        <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
       </item>
     </titles>
-    <billNumber>47</billNumber>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <amendments />
-    <originChamber>House</originChamber>
-    <updateDate>2017-01-13T20:31:21Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-      <text>Referred to the House Committee on Rules.</text>
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:02:35Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <systemCode>hsru00</systemCode>
-          <name>Rules Committee</name>
-          <subcommittees />
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
+    <createDate>2017-01-13T04:55:29Z</createDate>
+    <cboCostEstimates />
+    <calendarNumbers />
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <text>Referred to the House Committee on Rules.</text>
+        <type>IntroReferral</type>
         <committee>
           <systemCode>hsru00</systemCode>
           <name>Rules Committee</name>
         </committee>
-        <links />
         <actionDate>2017-01-12</actionDate>
+        <links />
         <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <committee />
-        <links />
         <actionDate>2017-01-12</actionDate>
+        <links />
         <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <actionCode>1000</actionCode>
       </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
       <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
         <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
       </actionTypeCounts>
     </actions>
-    <laws />
-    <cboCostEstimates />
-    <title>Amending the Rules of the House of Representatives respecting budget-related points of order.</title>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Amends Rule XXI (Restrictions on Certain Bills) of the Rules of the House of Representatives to require any Committee on Rules resolution for consideration of a bill or joint resolution waiving, or in effect waiving, a budget-related point of order to specify each such point of order.</p> <p>Declares it in order to offer a privileged, unamendable motion to strike or amend to eliminate any provision of that resolution that waives, or in effect waives, the application of a budget-related point of order.</p> <p>Makes it out of order to move to reconsider the vote by which such a motion is agreed to or disagreed to.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-28T23:24:52Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

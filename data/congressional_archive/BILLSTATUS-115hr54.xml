@@ -1,34 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <notes />
+    <title>CAPITALS Act</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Homeland Security Committee</name>
+          <systemCode>hshm00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:21:30Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
+              <systemCode>hshm08</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-11T16:03:47Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
     <committeeReports />
-    <sponsors>
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:57:45Z</updateDate>
+    <relatedBills>
       <item>
-        <middleName />
-        <party>D</party>
-        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
-        <state>TX</state>
-        <byRequestType />
-        <lastName>JACKSON LEE</lastName>
-        <district>18</district>
-        <identifiers>
-          <bioguideId>J000032</bioguideId>
-          <lisID>588</lisID>
-          <gpoId>8174</gpoId>
-        </identifiers>
-        <firstName>SHEILA</firstName>
-        <bioguideId>J000032</bioguideId>
+        <latestAction>
+          <actionDate>2017-02-07</actionDate>
+          <text>Referred to the House Committee on Intelligence (Permanent Select).</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Cyber Defense National Guard Act</latestTitle>
+        <type>HR</type>
+        <number>955</number>
       </item>
-    </sponsors>
-    <recordedVotes />
-    <updateDate>2017-01-17T17:31:16Z</updateDate>
+    </relatedBills>
+    <version>1.0.0</version>
     <actions>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
       <actionByCounts>
         <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
@@ -40,62 +67,127 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
         <type>Committee</type>
       </item>
       <item>
-        <links />
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
         <committee>
           <systemCode>hshm00</systemCode>
           <name>Homeland Security Committee</name>
         </committee>
+        <links />
+        <type>IntroReferral</type>
         <text>Referred to the House Committee on Homeland Security.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
+        <committee />
         <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
         <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-04T07:01:09Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <constitutionalAuthorityStatementText />
-    <title>CAPITALS Act</title>
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <links />
-      <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
-    </latestAction>
-    <cosponsors />
+    <sponsors>
+      <item>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <identifiers>
+          <lisID>588</lisID>
+          <bioguideId>J000032</bioguideId>
+          <gpoId>8174</gpoId>
+        </identifiers>
+        <bioguideId>J000032</bioguideId>
+        <lastName>JACKSON LEE</lastName>
+        <firstName>SHEILA</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>TX</state>
+        <district>18</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JACKSON LEE:H.R. 54.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I, Section 8, Clauses 1 and 18 of theUnited States Constitution.[Page H48]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Emergency Management</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>54</billNumber>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>CAPITALS Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Department of Homeland Security's Cybersecurity Asset Protection of Infrastructure under Terrorist Attack Logistical Structure or CAPITALS Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To require the Secretary of Homeland Security to conduct a study on the feasibility of establishing a Civilian Cyber Defense National Resource in the Department of Homeland Security.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>CAPITALS Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>CAPITALS Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Department of Homeland Security’s Cybersecurity Asset Protection of Infrastructure under Terrorist Attack Logistical Structure or CAPITALS Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
     <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
@@ -133,79 +225,29 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
-    <policyArea>
-      <name>Emergency Management</name>
-    </policyArea>
-    <laws />
-    <cboCostEstimates />
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
     <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-11</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
+    </latestAction>
     <amendments />
     <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>CAPITALS Act</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Department of Homeland Security's Cybersecurity Asset Protection of Infrastructure under Terrorist Attack Logistical Structure or CAPITALS Act</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To require the Secretary of Homeland Security to conduct a study on the feasibility of establishing a Civilian Cyber Defense National Resource in the Department of Homeland Security.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>CAPITALS Act</title>
-        <chamberName />
-      </item>
-    </titles>
-    <committees>
-      <billCommittees>
+      <billSummaries>
         <item>
-          <type>Standing</type>
-          <subcommittees>
-            <item>
-              <systemCode>hshm08</systemCode>
-              <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
-              <activities>
-                <item>
-                  <date>2017-01-11T16:03:47Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
-            </item>
-          </subcommittees>
-          <systemCode>hshm00</systemCode>
-          <name>Homeland Security Committee</name>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <date>2017-01-03T17:21:30Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-01-24T22:30:26Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Department of Homeland Security's Cybersecurity Asset Protection of Infrastructure under Terrorist Attack Logistical Structure or CAPITALS Act or the CAPITALS Act</b></p> <p> The Department of Homeland Security (DHS) must report to Congress regarding the feasibility of establishing a DHS Civilian Cyber Defense National Resource.</p> <p>The report must address: </p> <ul> <li>the number of persons who would be needed to defend the critical infrastructure of the United States from a cyber attack or man-made intentional or unintentional catastrophic incident; </li> <li>elements of DHS that would be best equipped to recruit, train, and manage such a resource; </li> <li>resources that could be pre-positioned and training that could be instilled to assure responsiveness if an incident disrupts communications in a region or area; </li> <li>the impact of potential recruits' lack of experience in military, intelligence, law enforcement, or government work experience;</li> <li>logistics of allowing governors to make requests of DHS to use such a resource in states during times of cyber emergency; and</li> <li>whether a resource trained to defend U.S. networks in a major attack or natural or man-made disaster will benefit overall efforts to defend the interests of the United States.</li> </ul>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
         </item>
-      </billCommittees>
-    </committees>
-    <billNumber>54</billNumber>
-    <relatedBills />
-    <notes />
-    <congress>115</congress>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:09Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

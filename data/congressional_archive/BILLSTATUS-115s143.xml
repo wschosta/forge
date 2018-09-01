@@ -1,191 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
-      <item>
-        <identifiers>
-          <lisID>1507</lisID>
-          <gpoId>8307</gpoId>
-          <bioguideId>M000934</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>MORAN</lastName>
-        <middleName />
-        <bioguideId>M000934</bioguideId>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
-        <firstName>JERRY</firstName>
-        <state>KS</state>
-        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <identifiers>
-          <lisID>1464</lisID>
-          <gpoId>8313</gpoId>
-          <bioguideId>B000575</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Blunt</lastName>
-        <middleName />
-        <bioguideId>B000575</bioguideId>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
-        <firstName>Roy</firstName>
-        <state>MO</state>
-        <fullName>Sen. Blunt, Roy [R-MO]</fullName>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>C001088</bioguideId>
-          <lisID>1984</lisID>
-          <gpoId>8297</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Coons</lastName>
-        <middleName>A.</middleName>
-        <bioguideId>C001088</bioguideId>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <firstName>Christopher</firstName>
-        <state>DE</state>
-        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>K000384</bioguideId>
-          <lisID>2176</lisID>
-          <gpoId />
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Kaine</lastName>
-        <middleName />
-        <bioguideId>K000384</bioguideId>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <firstName>Timothy</firstName>
-        <state>VA</state>
-        <fullName>Sen. Kaine, Tim [D-VA]</fullName>
-        <sponsorshipWithdrawnDate />
-      </item>
-    </cosponsors>
-    <laws />
-    <congress>115</congress>
-    <billNumber>143</billNumber>
-    <billType>S</billType>
-    <cboCostEstimates />
-    <policyArea />
     <amendments />
-    <notes />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-13T10:07:39Z</updateDate>
+    <billNumber>143</billNumber>
+    <laws />
+    <cboCostEstimates />
     <originChamber>Senate</originChamber>
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-01-31T14:15:02Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><strong>Military Spouse Job Continuity Act of 201</strong><b>7</b></p> <p> This bill amends the Internal Revenue Code to allow the spouse of a member of the Armed Forces (military spouse) who moves with such member to another state under a permanent change of station order a tax credit for up to $500 of qualified relicensing costs incurred by such spouse. The bill defines "qualified relicensing costs" as costs for a state license or certification to engage in the profession that such military spouse engaged in while residing in the former state. </p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Military Spouse Job Continuity Act of 2017</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>488</number>
+        <latestAction>
+          <text>Referred to the House Committee on Ways and Means.</text>
+          <actionDate>2017-01-12</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-13T04:55:35Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Casey</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <identifiers>
+          <bioguideId>C001070</bioguideId>
+          <lisID>1828</lisID>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <state>PA</state>
+        <firstName>Bob</firstName>
+        <byRequestType />
+        <bioguideId>C001070</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T20:22:53Z</updateDate>
+    <committeeReports />
     <actions>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Finance Committee</name>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Finance.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
         <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>10000</actionCode>
       </item>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-13T04:55:35Z</createDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <cosponsors>
+      <item>
+        <fullName>Sen. Moran, Jerry [R-KS]</fullName>
+        <identifiers>
+          <lisID>1507</lisID>
+          <bioguideId>M000934</bioguideId>
+          <gpoId>8307</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>MORAN</lastName>
+        <firstName>JERRY</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>KS</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>M000934</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Blunt, Roy [R-MO]</fullName>
+        <identifiers>
+          <lisID>1464</lisID>
+          <bioguideId>B000575</bioguideId>
+          <gpoId>8313</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Blunt</lastName>
+        <firstName>Roy</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MO</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>B000575</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <lisID>1984</lisID>
+          <gpoId>8297</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Coons</lastName>
+        <firstName>Christopher</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>DE</state>
+        <party>D</party>
+        <middleName>A.</middleName>
+        <bioguideId>C001088</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Kaine, Tim [D-VA]</fullName>
+        <identifiers>
+          <bioguideId>K000384</bioguideId>
+          <lisID>2176</lisID>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <lastName>Kaine</lastName>
+        <firstName>Timothy</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>VA</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>K000384</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <identifiers>
+          <lisID>2173</lisID>
+          <bioguideId>S001194</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <lastName>Schatz</lastName>
+        <firstName>Brian</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>HI</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>S001194</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <lastName>Tester</lastName>
+        <firstName>Jon</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MT</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>T000464</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Menendez, Robert [D-NJ]</fullName>
+        <identifiers>
+          <bioguideId>M000639</bioguideId>
+          <lisID>791</lisID>
+          <gpoId>8239</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <lastName>MENENDEZ</lastName>
+        <firstName>ROBERT</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NJ</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>M000639</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-17</sponsorshipDate>
+        <lastName>Heller</lastName>
+        <firstName>Dean</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NV</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>H001041</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <title>Military Spouse Job Continuity Act of 2017</title>
+    <introducedDate>2017-01-12</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-12</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Finance.</text>
+    </latestAction>
     <titles>
       <item>
+        <title>Military Spouse Job Continuity Act of 2017</title>
         <chamberCode />
-        <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against income tax for amounts paid by a spouse of a member of the Armed Forces for a new State license or certification required by reason of a permanent change in the duty station of such member to another State.</title>
+        <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
         <chamberName />
       </item>
       <item>
-        <chamberCode />
         <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against income tax for amounts paid by a spouse of a member of the Armed Forces for a new State license or certification required by reason of a permanent change in the duty station of such member to another State.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Military Spouse Job Continuity Act of 2017</title>
+        <chamberCode />
         <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Military Spouse Job Continuity Act of 2017</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
     </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against income tax for amounts paid by a spouse of a member of the Armed Forces for a new State license or certification required by reason of a permanent change in the duty station of such member to another State.</title>
-    <introducedDate>2017-01-12</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <text>Read twice and referred to the Committee on Finance.</text>
-      <links />
-    </latestAction>
-    <committeeReports />
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <name>Finance Committee</name>
-          <systemCode>ssfi00</systemCode>
-          <type>Standing</type>
           <activities>
             <item>
-              <date>2017-01-12T21:56:53Z</date>
               <name>Referred to</name>
+              <date>2017-01-12T21:56:53Z</date>
             </item>
           </activities>
+          <name>Finance Committee</name>
+          <type>Standing</type>
           <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssfi00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <sponsors>
-      <item>
-        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
-        <firstName>Bob</firstName>
-        <bioguideId>C001070</bioguideId>
-        <party>D</party>
-        <byRequestType />
-        <middleName />
-        <state>PA</state>
-        <lastName>Casey</lastName>
-        <identifiers>
-          <gpoId>8282</gpoId>
-          <bioguideId>C001070</bioguideId>
-          <lisID>1828</lisID>
-        </identifiers>
-      </item>
-    </sponsors>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Income tax credits</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

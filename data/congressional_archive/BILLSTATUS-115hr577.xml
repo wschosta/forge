@@ -1,136 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:02:40Z</date>
-            </item>
-          </activities>
-          <systemCode>hsii00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <sponsors>
-      <item>
-        <identifiers>
-          <lisID>1940</lisID>
-          <gpoId>7493</gpoId>
-          <bioguideId>T000468</bioguideId>
-        </identifiers>
-        <district>1</district>
-        <fullName>Rep. Titus, Dina [D-NV-1]</fullName>
-        <lastName>Titus</lastName>
-        <middleName />
-        <bioguideId>T000468</bioguideId>
-        <party>D</party>
-        <firstName>Dina</firstName>
-        <state>NV</state>
-        <byRequestType />
-      </item>
-    </sponsors>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <billNumber>577</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. TITUS:H.R. 577.Congress hasthe power to enact this legislation pursuantto the following:The Congress enacts this bill pursuant to Clause 18 ofSection8 of Article I of the United States Constitution.[Page H548]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
     <billType>HR</billType>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-02-22T16:46:02Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This bill designates the peak of Frenchman Mountain in Nevada as the &quot;Maude Frazier Mountain.&quot; </p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
     </summaries>
-    <titles>
+    <relatedBills />
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <sponsors>
       <item>
-        <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
+        <lastName>Titus</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Rep. Titus, Dina [D-NV-1]</fullName>
+        <identifiers>
+          <bioguideId>T000468</bioguideId>
+          <lisID>1940</lisID>
+          <gpoId>7493</gpoId>
+        </identifiers>
+        <state>NV</state>
+        <firstName>Dina</firstName>
+        <byRequestType />
+        <district>1</district>
+        <bioguideId>T000468</bioguideId>
       </item>
-      <item>
-        <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <billNumber>577</billNumber>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
-    <amendments />
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T20:00:04Z</updateDate>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-839</citation>
+      </committeeReport>
+    </committeeReports>
     <actions>
+      <actionTypeCounts>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <billReferrals>1</billReferrals>
+        <actionStageOverride>1</actionStageOverride>
+        <houseCalendarAssignment>1</houseCalendarAssignment>
+        <reportedToHouse>1</reportedToHouse>
+        <placeholderTextForH>3</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
       <item>
+        <links />
+        <type>Calendars</type>
+        <actionDate>2018-07-18</actionDate>
+        <text>Placed on the House Calendar, Calendar No. 171.</text>
+        <committee />
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
+        <actionCode>H12420</actionCode>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/839</url>
+            <name>H. Rept. 115-839</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <actionDate>2018-07-18</actionDate>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-839.</text>
         <committee>
-          <systemCode>hsii00</systemCode>
           <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
         </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H12200</actionCode>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/839</url>
+            <name>H. Rept. 115-839</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <actionDate>2018-07-18</actionDate>
+        <text>Reported by the Committee on Natural Resources. H. Rept. 115-839.</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>5000</actionCode>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Federal Lands Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <name>Federal Lands Subcommittee</name>
+          <systemCode>hsii10</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
         <text>Referred to the House Committee on Natural Resources.</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
         <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
+        <text>Introduced in House</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <links />
       </item>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
+        <text>Introduced in House</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>1000</actionCode>
-        <links />
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>10</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-14T09:59:01Z</updateDate>
-    <createDate>2017-01-14T04:47:33Z</createDate>
-    <recordedVotes />
-    <introducedDate>2017-01-13</introducedDate>
-    <congress>115</congress>
-    <committeeReports />
-    <laws />
+    <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
     <cosponsors />
-    <originChamber>House</originChamber>
+    <introducedDate>2017-01-13</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers>
+      <item>
+        <calendar>H00171</calendar>
+        <number />
+      </item>
+    </calendarNumbers>
     <latestAction>
+      <actionDate>2018-07-18</actionDate>
       <links />
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <actionDate>2017-01-13</actionDate>
+      <text>Placed on the House Calendar, Calendar No. 171.</text>
     </latestAction>
-    <policyArea />
-    <relatedBills />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>To designate a peak in the State of Nevada as Maude Frazier Mountain.</title>
+        <chamberName />
+      </item>
+    </titles>
+    <cboCostEstimates />
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsii00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsii10</systemCode>
+              <activities>
+                <item>
+                  <date>2018-07-11T20:38:39Z</date>
+                  <name>Discharged from</name>
+                </item>
+                <item>
+                  <date>2017-02-10T16:52:19Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Federal Lands Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Natural Resources Committee</name>
+          <activities>
+            <item>
+              <date>2018-07-18T21:32:21Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2018-07-11T20:41:07Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-13T14:02:40Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Nevada</name>
+          </item>
+          <item>
+            <name>Wilderness and natural areas, wildlife refuges, wild rivers, habitats</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
       </billSubjects>
     </subjects>
   </bill>

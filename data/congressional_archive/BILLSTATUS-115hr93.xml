@@ -1,56 +1,564 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:25:30Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr03</systemCode>
+              <activities>
+                <item>
+                  <name>Hearings by</name>
+                  <date>2017-09-26T15:24:33Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-19T20:16:01Z</date>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
     <laws />
-    <createDate>2017-01-04T07:01:10Z</createDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>This bill directs the Department of Veterans Affairs (VA) to ensure that gender specific services are continuously available at every VA medical center and community based outpatient clinic.</p> <p>The VA is authorized to employ such personnel and enter into such contracts as may be necessary to provide such services based on the standards of the VA and the demand for such services.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-12T18:58:39Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
+        <identifiers>
+          <lisID>2145</lisID>
+          <gpoId />
+          <bioguideId>K000382</bioguideId>
+        </identifiers>
+        <lastName>Kuster</lastName>
+        <firstName>Ann</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NH</state>
+        <district>2</district>
+        <bioguideId>K000382</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-04-20</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. O'Halleran, Tom [D-AZ-1]</fullName>
+        <identifiers>
+          <lisID>2306</lisID>
+          <gpoId />
+          <bioguideId>O000171</bioguideId>
+        </identifiers>
+        <lastName>O'Halleran</lastName>
+        <firstName>Tom</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>AZ</state>
+        <district>1</district>
+        <bioguideId>O000171</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-04-27</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Carson, Andre [D-IN-7]</fullName>
+        <identifiers>
+          <bioguideId>C001072</bioguideId>
+          <gpoId>7946</gpoId>
+          <lisID>1889</lisID>
+        </identifiers>
+        <lastName>Carson</lastName>
+        <firstName>Andre</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>IN</state>
+        <district>7</district>
+        <bioguideId>C001072</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-04-27</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <identifiers>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <lastName>HASTINGS</lastName>
+        <firstName>ALCEE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>20</district>
+        <bioguideId>H000324</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-03</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. O'Rourke, Beto [D-TX-16]</fullName>
+        <identifiers>
+          <lisID>2162</lisID>
+          <gpoId />
+          <bioguideId>O000170</bioguideId>
+        </identifiers>
+        <lastName>O'Rourke</lastName>
+        <firstName>Beto</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>16</district>
+        <bioguideId>O000170</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-30</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Barragan, Nanette Diaz [D-CA-44]</fullName>
+        <identifiers>
+          <lisID>2311</lisID>
+          <bioguideId>B001300</bioguideId>
+          <gpoId />
+        </identifiers>
+        <lastName>Barragan</lastName>
+        <firstName>Nanette</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>Diaz</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>44</district>
+        <bioguideId>B001300</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-30</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Lofgren, Zoe [D-CA-19]</fullName>
+        <identifiers>
+          <bioguideId>L000397</bioguideId>
+          <gpoId>7821</gpoId>
+          <lisID>701</lisID>
+        </identifiers>
+        <lastName>LOFGREN</lastName>
+        <firstName>ZOE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>19</district>
+        <bioguideId>L000397</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Moore, Gwen [D-WI-4]</fullName>
+        <identifiers>
+          <lisID>1811</lisID>
+          <bioguideId>M001160</bioguideId>
+          <gpoId>8217</gpoId>
+        </identifiers>
+        <lastName>Moore</lastName>
+        <firstName>Gwen</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>WI</state>
+        <district>4</district>
+        <bioguideId>M001160</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Tsongas, Niki [D-MA-3]</fullName>
+        <identifiers>
+          <lisID>1884</lisID>
+          <gpoId>7970</gpoId>
+          <bioguideId>T000465</bioguideId>
+        </identifiers>
+        <lastName>Tsongas</lastName>
+        <firstName>Niki</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MA</state>
+        <district>3</district>
+        <bioguideId>T000465</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Thompson, Mike [D-CA-5]</fullName>
+        <identifiers>
+          <lisID>1593</lisID>
+          <bioguideId>T000460</bioguideId>
+          <gpoId>7806</gpoId>
+        </identifiers>
+        <lastName>THOMPSON</lastName>
+        <firstName>MIKE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>5</district>
+        <bioguideId>T000460</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-07</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Pingree, Chellie [D-ME-1]</fullName>
+        <identifiers>
+          <lisID>1927</lisID>
+          <bioguideId>P000597</bioguideId>
+          <gpoId>7984</gpoId>
+        </identifiers>
+        <lastName>Pingree</lastName>
+        <firstName>Chellie</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>ME</state>
+        <district>1</district>
+        <bioguideId>P000597</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-20</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Lynch, Stephen F. [D-MA-8]</fullName>
+        <identifiers>
+          <bioguideId>L000562</bioguideId>
+          <lisID>1686</lisID>
+          <gpoId>7974</gpoId>
+        </identifiers>
+        <lastName>Lynch</lastName>
+        <firstName>Stephen</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>F.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>MA</state>
+        <district>8</district>
+        <bioguideId>L000562</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-06-21</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Ruppersberger, C. A. Dutch [D-MD-2]</fullName>
+        <identifiers>
+          <bioguideId>R000576</bioguideId>
+          <lisID>1728</lisID>
+          <gpoId>7977</gpoId>
+        </identifiers>
+        <lastName>Ruppersberger</lastName>
+        <firstName>C. A.</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>Dutch</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>MD</state>
+        <district>2</district>
+        <bioguideId>R000576</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-07-03</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Himes, James A. [D-CT-4]</fullName>
+        <identifiers>
+          <lisID>1913</lisID>
+          <bioguideId>H001047</bioguideId>
+          <gpoId>7869</gpoId>
+        </identifiers>
+        <lastName>Himes</lastName>
+        <firstName>James</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CT</state>
+        <district>4</district>
+        <bioguideId>H001047</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-07-11</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Velazquez, Nydia M. [D-NY-7]</fullName>
+        <identifiers>
+          <lisID>1184</lisID>
+          <gpoId>8073</gpoId>
+          <bioguideId>V000081</bioguideId>
+        </identifiers>
+        <lastName>VELAZQUEZ</lastName>
+        <firstName>NYDIA</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NY</state>
+        <district>7</district>
+        <bioguideId>V000081</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-11-08</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Pascrell, Bill, Jr. [D-NJ-9]</fullName>
+        <identifiers>
+          <bioguideId>P000096</bioguideId>
+          <lisID>1510</lisID>
+          <gpoId>8050</gpoId>
+        </identifiers>
+        <lastName>PASCRELL</lastName>
+        <firstName>WILLIAM</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NJ</state>
+        <district>9</district>
+        <bioguideId>P000096</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-11-29</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Larsen, Rick [D-WA-2]</fullName>
+        <identifiers>
+          <lisID>1675</lisID>
+          <bioguideId>L000560</bioguideId>
+          <gpoId>8206</gpoId>
+        </identifiers>
+        <lastName>LARSEN</lastName>
+        <firstName>RICK</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>WA</state>
+        <district>2</district>
+        <bioguideId>L000560</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-02-08</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Lawson, Al, Jr. [D-FL-5]</fullName>
+        <identifiers>
+          <bioguideId>L000586</bioguideId>
+          <gpoId />
+          <lisID>2317</lisID>
+        </identifiers>
+        <lastName>Lawson</lastName>
+        <firstName>Al</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>5</district>
+        <bioguideId>L000586</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-03-23</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Cartwright, Matt [D-PA-17]</fullName>
+        <identifiers>
+          <lisID>2159</lisID>
+          <bioguideId>C001090</bioguideId>
+          <gpoId />
+        </identifiers>
+        <lastName>Cartwright</lastName>
+        <firstName>Matt</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>PA</state>
+        <district>17</district>
+        <bioguideId>C001090</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-04-05</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. DeFazio, Peter A. [D-OR-4]</fullName>
+        <identifiers>
+          <lisID>279</lisID>
+          <bioguideId>D000191</bioguideId>
+          <gpoId>8117</gpoId>
+        </identifiers>
+        <lastName>DEFAZIO</lastName>
+        <firstName>PETER</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>OR</state>
+        <district>4</district>
+        <bioguideId>D000191</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-04-13</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Schrader, Kurt [D-OR-5]</fullName>
+        <identifiers>
+          <bioguideId>S001180</bioguideId>
+          <lisID>1950</lisID>
+          <gpoId>8118</gpoId>
+        </identifiers>
+        <lastName>Schrader</lastName>
+        <firstName>Kurt</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OR</state>
+        <district>5</district>
+        <bioguideId>S001180</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-06-21</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. McGovern, James P. [D-MA-2]</fullName>
+        <identifiers>
+          <bioguideId>M000312</bioguideId>
+          <lisID>1504</lisID>
+          <gpoId>7968</gpoId>
+        </identifiers>
+        <lastName>MCGOVERN</lastName>
+        <firstName>JAMES</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>P.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>MA</state>
+        <district>2</district>
+        <bioguideId>M000312</bioguideId>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Subcommittee Hearings Held.</text>
+      <links />
+      <actionDate>2017-09-26</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:57:53Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. BROWNLEY of California:H.R. 93.Congress has the power to enact this legislation pursuantto the following:Article I, Section VIII of the U.S. Constitution[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>93</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
+    <congress>115</congress>
     <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
       </actionByCounts>
       <item>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <actionDate>2017-09-26</actionDate>
+        <committee>
+          <name>Health Subcommittee</name>
+          <systemCode>hsvr03</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Subcommittee Hearings Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <name>Health Subcommittee</name>
+          <systemCode>hsvr03</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
         <committee>
-          <systemCode>hsvr00</systemCode>
           <name>Veterans' Affairs Committee</name>
+          <systemCode>hsvr00</systemCode>
         </committee>
-        <links />
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
       </item>
       <item>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
         <committee />
-        <links />
+        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
       </item>
       <item>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
         <committee />
-        <links />
+        <text>Introduced in House</text>
         <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
       </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <prayer>1</prayer>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
     </actions>
     <subjects>
       <billSubjects>
@@ -76,113 +584,29 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:25:30Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsvr00</systemCode>
-          <name>Veterans' Affairs Committee</name>
-          <chamber>House</chamber>
-        </item>
-      </billCommittees>
-    </committees>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <middleName>M.</middleName>
-        <lastName>Kuster</lastName>
-        <firstName>Ann</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000382</bioguideId>
-        <identifiers>
-          <lisID>2145</lisID>
-          <gpoId />
-          <bioguideId>K000382</bioguideId>
-        </identifiers>
-        <party>D</party>
-        <state>NH</state>
-        <district>2</district>
-      </item>
-    </cosponsors>
-    <latestAction>
-      <text>Referred to the House Committee on Veterans' Affairs.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
-    <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <lastName>Brownley</lastName>
         <bioguideId>B001285</bioguideId>
-        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <middleName />
         <byRequestType />
-        <firstName>Julia</firstName>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <lastName>Brownley</lastName>
+        <state>CA</state>
+        <district>26</district>
+        <party>D</party>
         <identifiers>
           <bioguideId>B001285</bioguideId>
-          <gpoId />
           <lisID>2106</lisID>
+          <gpoId />
         </identifiers>
-        <party>D</party>
-        <state>CA</state>
-        <middleName />
-        <district>26</district>
+        <firstName>Julia</firstName>
       </item>
     </sponsors>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-12T18:58:39Z</lastSummaryUpdateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <text><![CDATA[<p>This bill directs the Department of Veterans Affairs (VA) to ensure that gender specific services are continuously available at every VA medical center and community based outpatient clinic.</p> <p>The VA is authorized to employ such personnel and enter into such contracts as may be necessary to provide such services based on the standards of the VA and the demand for such services.</p>]]></text>
-          <actionDate>2017-01-03</actionDate>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-        </item>
-      </billSummaries>
-    </summaries>
     <notes />
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>To amend title 38, United States Code, to provide for increased access to Department of Veterans Affairs medical care for women veterans.</title>
-      </item>
-    </titles>
+    <createDate>2017-01-04T07:01:10Z</createDate>
     <amendments />
-    <cboCostEstimates />
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <calendarNumbers />
-    <billNumber>93</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <billType>HR</billType>
-    <updateDate>2017-01-17T21:01:22Z</updateDate>
-    <committeeReports />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

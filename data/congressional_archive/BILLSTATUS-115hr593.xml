@@ -1,92 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-20</actionDate>
+      <text>Referred to the House Committee on House Administration.</text>
+      <links />
+    </latestAction>
     <congress>115</congress>
-    <introducedDate>2017-01-20</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To amend the Federal Election Campaign Act of 1971 to prohibit the conversion of leadership PAC funds to personal use.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To amend the Federal Election Campaign Act of 1971 to prohibit the conversion of leadership PAC funds to personal use.</title>
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <policyArea />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional elections</name>
+          </item>
+          <item>
+            <name>Elections, voting, political campaign regulation</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <amendments />
+    <laws />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>CAPUANO</lastName>
+        <middleName>E.</middleName>
+        <bioguideId>C001037</bioguideId>
+        <fullName>Rep. Capuano, Michael E. [D-MA-7]</fullName>
+        <identifiers>
+          <lisID>1564</lisID>
+          <gpoId>7973</gpoId>
+          <bioguideId>C001037</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>MA</state>
+        <firstName>MICHAEL</firstName>
+        <party>D</party>
+        <district>7</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-20</introducedDate>
+    <relatedBills />
+    <cosponsors>
+      <item>
+        <bioguideId>J000255</bioguideId>
+        <party>R</party>
+        <firstName>WALTER</firstName>
+        <state>NC</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>B.</middleName>
+        <identifiers>
+          <bioguideId>J000255</bioguideId>
+          <lisID>612</lisID>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <district>3</district>
+        <lastName>JONES</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>P000608</bioguideId>
+        <party>D</party>
+        <firstName>Scott</firstName>
+        <state>CA</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>H.</middleName>
+        <identifiers>
+          <bioguideId>P000608</bioguideId>
+          <lisID>2113</lisID>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
+        <district>52</district>
+        <lastName>Peters</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001066</bioguideId>
+        <party>D</party>
+        <firstName>Kathy</firstName>
+        <state>FL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1839</lisID>
+          <gpoId>7883</gpoId>
+          <bioguideId>C001066</bioguideId>
+        </identifiers>
+        <fullName>Rep. Castor, Kathy [D-FL-14]</fullName>
+        <district>14</district>
+        <lastName>Castor</lastName>
+        <sponsorshipDate>2018-02-02</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
     <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
         <billReferrals>1</billReferrals>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
       <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsha00</systemCode>
+          <name>House Administration Committee</name>
+        </committee>
+        <text>Referred to the House Committee on House Administration.</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
-        <text>Referred to the House Committee on House Administration.</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-20</actionDate>
-        <committee>
-          <name>House Administration Committee</name>
-          <systemCode>hsha00</systemCode>
-        </committee>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <links />
-        <type>IntroReferral</type>
+        <actionDate>2017-01-20</actionDate>
         <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-20</actionDate>
         <committee />
-      </item>
-      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
         <text>Introduced in House</text>
         <links />
         <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-20</actionDate>
-        <committee />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
     <committees>
       <billCommittees>
         <item>
           <subcommittees />
-          <chamber>House</chamber>
+          <systemCode>hsha00</systemCode>
           <name>House Administration Committee</name>
           <activities>
             <item>
@@ -95,81 +166,65 @@
             </item>
           </activities>
           <type>Standing</type>
-          <systemCode>hsha00</systemCode>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>593</billNumber>
-    <updateDate>2017-01-21T10:03:36Z</updateDate>
-    <title>To amend the Federal Election Campaign Act of 1971 to prohibit the conversion of leadership PAC funds to personal use.</title>
-    <billType>HR</billType>
-    <laws />
-    <originChamber>House</originChamber>
-    <latestAction>
-      <actionDate>2017-01-20</actionDate>
-      <text>Referred to the House Committee on House Administration.</text>
-      <links />
-    </latestAction>
-    <committeeReports />
-    <sponsors>
-      <item>
-        <middleName>E.</middleName>
-        <state>MA</state>
-        <bioguideId>C001037</bioguideId>
-        <fullName>Rep. Capuano, Michael E. [D-MA-7]</fullName>
-        <identifiers>
-          <gpoId>7973</gpoId>
-          <lisID>1564</lisID>
-          <bioguideId>C001037</bioguideId>
-        </identifiers>
-        <lastName>CAPUANO</lastName>
-        <byRequestType />
-        <firstName>MICHAEL</firstName>
-        <party>D</party>
-        <district>7</district>
-      </item>
-    </sponsors>
-    <cosponsors>
-      <item>
-        <middleName>B.</middleName>
-        <state>NC</state>
-        <bioguideId>J000255</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>JONES</lastName>
-        <district>3</district>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <identifiers>
-          <gpoId>8026</gpoId>
-          <lisID>612</lisID>
-          <bioguideId>J000255</bioguideId>
-        </identifiers>
-        <firstName>WALTER</firstName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-      </item>
-      <item>
-        <middleName>H.</middleName>
-        <state>CA</state>
-        <bioguideId>P000608</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Peters</lastName>
-        <district>52</district>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <identifiers>
-          <lisID>2113</lisID>
-          <bioguideId>P000608</bioguideId>
-          <gpoId />
-        </identifiers>
-        <firstName>Scott</firstName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
-      </item>
-    </cosponsors>
+    <updateDate>2018-08-28T20:00:08Z</updateDate>
+    <version>1.0.0</version>
+    <title>Leadership PAC Limitation Act</title>
     <createDate>2017-01-21T04:55:45Z</createDate>
+    <billNumber>593</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CAPUANO:H.R. 593.Congress has the power to enact this legislation pursuantto the following:ARTICLE 1, SECTION 4, CLAUSE 1[Page H560]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
     <calendarNumbers />
-    <notes />
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-20</actionDate>
+          <lastSummaryUpdateDate>2017-10-02T20:40:25Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Leadership PAC Limitation Act </b></p> <p>This bill amends the Federal Election Campaign Act of 1971 to prohibit the conversion of leadership PAC funds to personal use. A leadership PAC is a political action committee (other than a political committee of a political party) that is established, financed, maintained, or controlled by the candidate or an individual but which is not an authorized committee of the candidate or individual and not affiliated with an authorized committee of the candidate or individual.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Leadership PAC Limitation Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To amend the Federal Election Campaign Act of 1971 to prohibit the conversion of leadership PAC funds to personal use.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Leadership PAC Limitation Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Leadership PAC Limitation Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

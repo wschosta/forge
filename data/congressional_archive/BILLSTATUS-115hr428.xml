@@ -1,157 +1,739 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-10</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-11T05:09:43Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
+    <titles>
       <item>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
-        </committee>
-        <actionDate>2017-01-10</actionDate>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <chamberName>House</chamberName>
+        <title>Red River Gradient Boundary Survey Act</title>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-10</actionDate>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-10</actionDate>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
       </item>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors>
       <item>
-        <middleName />
-        <identifiers>
-          <bioguideId>C001053</bioguideId>
-          <lisID>1742</lisID>
-          <gpoId>8112</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
-        <state>OK</state>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <firstName>Tom</firstName>
-        <lastName>Cole</lastName>
-        <district>4</district>
-        <bioguideId>C001053</bioguideId>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
       </item>
-    </cosponsors>
-    <billNumber>428</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
       <item>
-        <party>R</party>
-        <state>TX</state>
-        <middleName>M.</middleName>
-        <bioguideId>T000238</bioguideId>
-        <lastName>THORNBERRY</lastName>
-        <firstName>WILLIAM</firstName>
-        <identifiers>
-          <lisID>1155</lisID>
-          <gpoId>8755</gpoId>
-          <bioguideId>T000238</bioguideId>
-        </identifiers>
-        <fullName>Rep. Thornberry, Mac [R-TX-13]</fullName>
-        <district>13</district>
-        <byRequestType />
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <parentTitleType />
+        <chamberName>House</chamberName>
+        <title>Red River Gradient Boundary Survey Act</title>
       </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <actionDate>2017-01-10</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Red River Gradient Boundary Survey Act</title>
+      </item>
+    </titles>
     <notes />
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+      <actionDate>2017-03-07</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 6 (Tuesday, January 10, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. THORNBERRY:H.R. 428.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 and Article IV, Section 3 of theUnited States Constitution.[Page H300]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
+          <type>Standing</type>
+          <name>Energy and Natural Resources Committee</name>
+          <systemCode>sseg00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-03-07T17:22:30Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+        <item>
+          <type>Standing</type>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-10T15:05:20Z</date>
             </item>
           </activities>
-          <chamber>House</chamber>
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
-          <subcommittees />
-          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <name>Federal Lands Subcommittee</name>
+              <systemCode>hsii10</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-10T16:50:47Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
+    <actions>
+      <item>
+        <actionDate>2017-03-07</actionDate>
+        <committee>
+          <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-02-15</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H38310</actionCode>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:39:11</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H37100</actionCode>
+        <text>On passage Passed by the Yeas and Nays: 250 - 171 (Roll no. 92). (text: CR H1154)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H1154</url>
+            <name>H1154</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll092.xml</url>
+            <name>Roll no. 92</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:39:10</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>8000</actionCode>
+        <text>Passed/agreed to in House: On passage Passed by the Yeas and Nays: 250 - 171 (Roll no. 92).(text: CR H1154)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H1154</url>
+            <name>H1154</name>
+          </link>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll092.xml</url>
+            <name>Roll no. 92</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionTime>16:39:10</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered as unfinished business. (consideration: CR H1159-1160)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H1159-1160</url>
+            <name>H1159-1160</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:15:23</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>POSTPONED PROCEEDINGS - At the conclusion of debate on H.R. 428, the Chair put the question on adoption of the bill and by voice vote, announced that the ayes had prevailed. Ms. Hanabusa demanded the yeas and nays, and the Chair postponed further proceedings on adoption of the bill until later in the legislative day.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/428</url>
+            <name>H.R. 428</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:52:09</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H35000</actionCode>
+        <text>The previous question was ordered pursuant to the rule.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:51:26</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - The House proceeded with one hour of debate on H.R. 428.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/428</url>
+            <name>H.R. 428</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:05:30</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>Rule provides for one hour of debate on each bill, the previous question shall be ordered on each bill without intervening motions except one motion to recommit. Both bills are closed to amendments.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:04:19</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-14</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered under the provisions of rule H. Res. 99. (consideration: CR H1154-1159)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/99</url>
+            <name>H. Res. 99</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H1154-1159</url>
+            <name>H1154-1159</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:04:14</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-07</actionDate>
+        <actionCode>H1L210</actionCode>
+        <text>Rules Committee Resolution H. Res. 99 Reported to House. Rule provides for one hour of debate on each bill, the previous question shall be ordered on each bill without intervening motions except one motion to recommit. Both bills are closed to amendments.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/99</url>
+            <name>H. Res. 99</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:20:40</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <referredToCommittee>1</referredToCommittee>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>2</considerationByHouse>
+        <motionForPreviousQuestion>1</motionForPreviousQuestion>
+        <placeholderTextForH>1</placeholderTextForH>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <generalDebate>3</generalDebate>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>14</houseOfRepresentatives>
+        <senate>2</senate>
+      </actionByCounts>
+    </actions>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Thornberry, Mac [R-TX-13]</fullName>
+        <party>R</party>
+        <bioguideId>T000238</bioguideId>
+        <identifiers>
+          <lisID>1155</lisID>
+          <bioguideId>T000238</bioguideId>
+          <gpoId>8755</gpoId>
+        </identifiers>
+        <lastName>THORNBERRY</lastName>
+        <district>13</district>
+        <middleName>M.</middleName>
+        <firstName>WILLIAM</firstName>
+        <byRequestType />
+        <state>TX</state>
+      </item>
+    </sponsors>
+    <recordedVotes>
+      <recordedVote>
+        <rollNumber>92</rollNumber>
+        <sessionNumber>1</sessionNumber>
+        <fullActionName>Passage of a Measure</fullActionName>
+        <date>2017-02-14T21:39:10Z</date>
+        <url>http://clerk.house.gov/evs/2017/roll092.xml</url>
+        <congress>115</congress>
+        <chamber>House</chamber>
+      </recordedVote>
+    </recordedVotes>
+    <updateDate>2018-08-28T19:59:09Z</updateDate>
+    <billNumber>428</billNumber>
+    <title>Red River Gradient Boundary Survey Act</title>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+          <actionDate>2017-02-14</actionDate>
+          <actionTime>14:47:48</actionTime>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+          <item>
+            <type>Procedurally-related</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HRES</type>
+        <latestTitle>Providing for consideration of the bill (H.R. 428) to survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes, and providing for consideration of the joint resolution (H.J. Res. 42) disapproving the rule submitted by the Department of Labor relating to drug testing of unemployment compensation applicants.</latestTitle>
+        <number>99</number>
+      </item>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-07-26</actionDate>
+          <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>House</identifiedBy>
+          </item>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Red River Gradient Boundary Survey Act</latestTitle>
+        <number>90</number>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-11T05:09:43Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-02-01T22:57:57Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Red River Gradient Boundary Survey Act</b></p> <p>This bill directs the Bureau of Land Management (BLM) to commission a survey to identify the South Bank boundary line with respect to land along a specified 116-mile stretch of the Red River in Oklahoma and Texas (the affected area). </p> <p>The survey shall:</p> <ul> <li>adhere to the gradient boundary survey method;</li> <li>span the length of the affected area;</li> <li>be conducted by surveyors who are licensed and qualified to conduct official gradient boundary surveys, and selected by and operating under the direction of the Texas General Land Office and the Oklahoma Commissioners of the Land Office (the offices); and</li> <li>be completed within two years of enactment of this bill. </li> </ul> <p>The BLM shall submit the survey to the offices for approval and, within 60 days of receiving it, they shall determine whether to approve it. </p> <p>Surveys of individual parcels in the affected area shall be conducted according to the requirements for the survey of the South Bank boundary line. A survey of such a parcel shall be approved or disapproved by the offices within 60 days of receipt.</p> <p>The survey for identifying the South Bank boundary line and any survey of an individual parcel shall not be submitted to the BLM for approval. </p> <p>After a survey for an individual parcel has been approved, the offices shall submit to the BLM:</p> <ul> <li> a notice of the approval of such survey, and </li> <li>a copy of such survey and any field notes related to the parcel. </li> </ul>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+        <item>
+          <updateDate>2017-02-14T14:12:36Z</updateDate>
+          <actionDate>2017-02-14</actionDate>
+          <lastSummaryUpdateDate>2017-03-29T20:12:46Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Red River Gradient Boundary Survey Act</b></p> <p>(Sec. 3) This bill directs the Bureau of Land Management (BLM) to commission a survey to identify the South Bank boundary line with respect to land along a specified 116-mile stretch of the Red River in Oklahoma and Texas (the affected area). </p> <p>The survey shall:</p> <ul> <li>adhere to the gradient boundary survey method;</li> <li>span the length of the affected area;</li> <li>be conducted by surveyors who are licensed and qualified to conduct official gradient boundary surveys, and selected by and operating under the direction of the Texas General Land Office and the Oklahoma Commissioners of the Land Office (the offices); and</li> <li>be completed within two years of enactment of this bill. </li> </ul> <p>The BLM shall submit the survey to the offices for approval. The offices shall determine whether to approve the survey within 60 days after receiving it. </p> <p>Surveys of individual parcels in the affected area shall be conducted according to the requirements for the survey of the South Bank boundary line. A parcel survey also shall be approved or disapproved by the offices within 60 days of receipt.</p> <p>Neither the South Bank boundary survey nor any parcel survey shall be submitted to the BLM for approval. </p> <p>After a survey for an individual parcel has been approved, the offices shall submit to the BLM:</p> <ul> <li> a notice of the approval of such survey; and </li> <li>a copy of such survey and any field notes related to the parcel. </li> </ul> <p>After receiving a notice of the approval of a survey related to an individual parcel, the BLM shall provide to each landowner of land adjacent to that parcel:</p> <ul> <li> such notice; and</li> <li> a copy of such survey and any field notes related to the parcel. </li> </ul>]]></text>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <versionCode>81</versionCode>
+          <name>Passed House without amendment</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
     <calendarNumbers />
-    <updateDate>2017-01-11T10:17:55Z</updateDate>
-    <titles>
+    <cosponsors>
       <item>
-        <title>To survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Cole, Tom [R-OK-4]</fullName>
+        <identifiers>
+          <bioguideId>C001053</bioguideId>
+          <lisID>1742</lisID>
+          <gpoId>8112</gpoId>
+        </identifiers>
+        <lastName>Cole</lastName>
+        <firstName>Tom</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OK</state>
+        <district>4</district>
+        <bioguideId>C001053</bioguideId>
       </item>
       <item>
-        <title>To survey the gradient boundary along the Red River in the States of Oklahoma and Texas, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Flores, Bill [R-TX-17]</fullName>
+        <identifiers>
+          <lisID>2065</lisID>
+          <gpoId>8173</gpoId>
+          <bioguideId>F000461</bioguideId>
+        </identifiers>
+        <lastName>Flores</lastName>
+        <firstName>Bill</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>17</district>
+        <bioguideId>F000461</bioguideId>
       </item>
-    </titles>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Conaway, K. Michael [R-TX-11]</fullName>
+        <identifiers>
+          <bioguideId>C001062</bioguideId>
+          <gpoId>8167</gpoId>
+          <lisID>1805</lisID>
+        </identifiers>
+        <lastName>Conaway</lastName>
+        <firstName>K.</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>Michael</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>11</district>
+        <bioguideId>C001062</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Farenthold, Blake [R-TX-27]</fullName>
+        <identifiers>
+          <gpoId>8183</gpoId>
+          <lisID>2067</lisID>
+          <bioguideId>F000460</bioguideId>
+        </identifiers>
+        <lastName>Farenthold</lastName>
+        <firstName>Blake</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>27</district>
+        <bioguideId>F000460</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Carter, John R. [R-TX-31]</fullName>
+        <identifiers>
+          <bioguideId>C001051</bioguideId>
+          <lisID>1752</lisID>
+          <gpoId>8187</gpoId>
+        </identifiers>
+        <lastName>Carter</lastName>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>R.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>31</district>
+        <bioguideId>C001051</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Gohmert, Louie [R-TX-1]</fullName>
+        <identifiers>
+          <lisID>1801</lisID>
+          <bioguideId>G000552</bioguideId>
+          <gpoId>8157</gpoId>
+        </identifiers>
+        <lastName>Gohmert</lastName>
+        <firstName>Louie</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>1</district>
+        <bioguideId>G000552</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Culberson, John Abney [R-TX-7]</fullName>
+        <identifiers>
+          <lisID>1670</lisID>
+          <gpoId>8163</gpoId>
+          <bioguideId>C001048</bioguideId>
+        </identifiers>
+        <lastName>CULBERSON</lastName>
+        <firstName>JOHN</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>ABNEY</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>7</district>
+        <bioguideId>C001048</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Hensarling, Jeb [R-TX-5]</fullName>
+        <identifiers>
+          <gpoId>8161</gpoId>
+          <lisID>1749</lisID>
+          <bioguideId>H001036</bioguideId>
+        </identifiers>
+        <lastName>Hensarling</lastName>
+        <firstName>Jeb</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>5</district>
+        <bioguideId>H001036</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-02</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
+        <identifiers>
+          <bioguideId>S000250</bioguideId>
+          <lisID>1525</lisID>
+          <gpoId>8188</gpoId>
+        </identifiers>
+        <lastName>SESSIONS</lastName>
+        <firstName>PETE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>32</district>
+        <bioguideId>S000250</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Johnson, Sam [R-TX-3]</fullName>
+        <identifiers>
+          <lisID>603</lisID>
+          <bioguideId>J000174</bioguideId>
+          <gpoId>8159</gpoId>
+        </identifiers>
+        <lastName>JOHNSON</lastName>
+        <firstName>SAM</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>3</district>
+        <bioguideId>J000174</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-06</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Ratcliffe, John [R-TX-4]</fullName>
+        <identifiers>
+          <lisID>2268</lisID>
+          <bioguideId>R000601</bioguideId>
+          <gpoId />
+        </identifiers>
+        <lastName>Ratcliffe</lastName>
+        <firstName>John</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <district>4</district>
+        <bioguideId>R000601</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
+        <identifiers>
+          <bioguideId>R000604</bioguideId>
+          <lisID>2265</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Russell</lastName>
+        <firstName>Steve</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OK</state>
+        <district>5</district>
+        <bioguideId>R000604</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Lucas, Frank D. [R-OK-3]</fullName>
+        <identifiers>
+          <lisID>711</lisID>
+          <bioguideId>L000491</bioguideId>
+          <gpoId>8111</gpoId>
+        </identifiers>
+        <lastName>LUCAS</lastName>
+        <firstName>FRANK</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>D.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>OK</state>
+        <district>3</district>
+        <bioguideId>L000491</bioguideId>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-10</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Lakes and rivers</name>
+          </item>
+          <item>
+            <name>Oklahoma</name>
+          </item>
+          <item>
+            <name>Texas</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

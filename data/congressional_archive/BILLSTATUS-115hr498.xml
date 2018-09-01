@@ -1,198 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <lastName>Welch</lastName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>W000800</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>0</district>
-        <state>VT</state>
-        <middleName />
-        <identifiers>
-          <bioguideId>W000800</bioguideId>
-          <lisID>1879</lisID>
-          <gpoId>8204</gpoId>
-        </identifiers>
-        <fullName>Rep. Welch, Peter [D-VT-At Large]</fullName>
-        <firstName>Peter</firstName>
-      </item>
-    </cosponsors>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To authorize the exportation of consumer communication devices to Cuba and the provision of telecommunications services to Cuba, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To authorize the exportation of consumer communication devices to Cuba and the provision of telecommunications services to Cuba, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <laws />
-    <amendments />
-    <createDate>2017-01-13T04:55:31Z</createDate>
-    <updateDate>2017-01-13T10:07:07Z</updateDate>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <billType>HR</billType>
-    <introducedDate>2017-01-12</introducedDate>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <firstName>Kevin</firstName>
-        <state>ND</state>
-        <district>0</district>
-        <bioguideId>C001096</bioguideId>
-        <lastName>Cramer</lastName>
-        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
-        <party>R</party>
-        <identifiers>
-          <bioguideId>C001096</bioguideId>
-          <lisID>2144</lisID>
-          <gpoId />
-        </identifiers>
-        <middleName />
-      </item>
-    </sponsors>
-    <recordedVotes />
-    <originChamber>House</originChamber>
-    <calendarNumbers />
-    <congress>115</congress>
-    <title>To authorize the exportation of consumer communication devices to Cuba and the provision of telecommunications services to Cuba, and for other purposes.</title>
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <text>Referred to House Energy and Commerce</text>
-        <actionCode>H11100</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionCode>H11100-A</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-        </committee>
-        <text>Referred to House Foreign Affairs</text>
-        <actionCode>H11100</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-      </actionTypeCounts>
-    </actions>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <text>Referred to House Energy and Commerce</text>
-      <links />
-    </latestAction>
-    <committeeReports />
     <notes />
+    <title>Cuba DATA Act</title>
     <committees>
       <billCommittees>
         <item>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-12T15:05:20Z</date>
             </item>
           </activities>
-          <chamber>House</chamber>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
           <subcommittees />
-          <type>Standing</type>
         </item>
         <item>
+          <type>Standing</type>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-12T15:05:15Z</date>
             </item>
           </activities>
-          <chamber>House</chamber>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
           <subcommittees />
-          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:59:46Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>2</billReferrals>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Cramer, Kevin [R-ND-At Large]</fullName>
+        <identifiers>
+          <lisID>2144</lisID>
+          <gpoId />
+          <bioguideId>C001096</bioguideId>
+        </identifiers>
+        <bioguideId>C001096</bioguideId>
+        <lastName>Cramer</lastName>
+        <firstName>Kevin</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>ND</state>
+        <district>0</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CRAMER:H.R. 498.Congress has the power to enact this legislationpursuantto the following:Section 1, Article 8, Clause 3 of the United StatesConstitution[Page H473]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <recordedVotes />
     <billNumber>498</billNumber>
-    <constitutionalAuthorityStatementText />
-    <policyArea />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Cuba DATA Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Cuba Digital and Telecommunications Advancement Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To authorize the exportation of consumer communication devices to Cuba and the provision of telecommunications services to Cuba, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Cuba DATA Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Cuba DATA Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Cuba Digital and Telecommunications Advancement Act of 2017</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Caribbean area</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Cuba</name>
+          </item>
+          <item>
+            <name>Economic development</name>
+          </item>
+          <item>
+            <name>Human rights</name>
+          </item>
+          <item>
+            <name>Internet and video services</name>
+          </item>
+          <item>
+            <name>Latin America</name>
+          </item>
+          <item>
+            <name>Sanctions</name>
+          </item>
+          <item>
+            <name>Telephone and wireless communication</name>
+          </item>
+          <item>
+            <name>Trade restrictions</name>
+          </item>
+          <item>
+            <name>Travel and tourism</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <bioguideId>W000800</bioguideId>
+        <lastName>Welch</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>W000800</bioguideId>
+          <lisID>1879</lisID>
+          <gpoId>8204</gpoId>
+        </identifiers>
+        <district>0</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Welch, Peter [D-VT-At Large]</fullName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <state>VT</state>
+        <firstName>Peter</firstName>
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-12</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-12</actionDate>
+      <links />
+      <text>Referred to the Committee on Foreign Affairs, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+    </latestAction>
+    <amendments />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-02-08T16:35:55Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-12</actionDate>
+          <text><![CDATA[<p><strong>Cuba Digital and Telecommunications Advancement Act of 2017 or the Cuba DATA Act</strong></p> <p>This bill authorizes the President to permit any person subject to U.S. jurisdiction to: </p> <ul> <li>export consumer communication devices and other telecommunications equipment to Cuba; </li> <li>provide telecommunications services involving Cuba or persons in Cuba; </li> <li>establish facilities to provide telecommunications services connecting Cuba with another country or to provide telecommunications services in Cuba; </li> <li>conduct any transaction incident to carrying out such activities; and </li> <li>enter into, perform, and make and receive payments under a contract with any individual or entity in Cuba regarding the provision of telecommunications services involving Cuba or persons in Cuba.</li> </ul> <p>The bill repeals or amends specified requirements and prohibitions of: (1) the Cuban Democracy Act of 1992, and (2) the Cuban Liberty and Democratic Solidarity (LIBERTAD) Act of 1996.</p>]]></text>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
     </summaries>
+    <createDate>2017-01-13T04:55:31Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

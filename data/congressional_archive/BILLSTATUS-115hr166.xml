@@ -2,91 +2,228 @@
 <billStatus>
   <bill>
     <notes />
-    <billNumber>166</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to House Energy and Commerce</text>
-    </latestAction>
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
-    <actions>
-      <item>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Energy and Commerce</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <committee>
-          <systemCode>hsif00</systemCode>
+    <title>Outpatient Mental Health Modernization Act of 2017</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
           <name>Energy and Commerce Committee</name>
-        </committee>
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>H11100-A</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Ways and Means</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <committee>
-          <systemCode>hswm00</systemCode>
+          <systemCode>hsif00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:16:15Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:12:19Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <type>Standing</type>
           <name>Ways and Means Committee</name>
-        </committee>
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
-      </item>
+          <systemCode>hswm00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:16:10Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Health Subcommittee</name>
+              <systemCode>hswm02</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-12T22:00:35Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:58:07Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>2</placeholderTextForH>
         <billReferralsAggregate>1</billReferralsAggregate>
         <billReferrals>2</billReferrals>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <committee>
+          <systemCode>hswm02</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100-A</actionCode>
+        <committee />
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
       <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
       </actionByCounts>
     </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <identifiers>
+          <gpoId>7895</gpoId>
+          <lisID>511</lisID>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <bioguideId>H000324</bioguideId>
+        <lastName>HASTINGS</lastName>
+        <firstName>ALCEE</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName>L.</middleName>
+        <state>FL</state>
+        <district>20</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. HASTINGS:H.R. 166.Congress has the power to enact this legislation pursuantto the following:Article 1 Section 8 of the U.S. Constitution[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>166</billNumber>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Outpatient Mental Health Modernization Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend title XVIII of the Social Security Act to stabilize and modernize the provision of partial hospitalization services under the Medicare Program, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Outpatient Mental Health Modernization Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Outpatient Mental Health Modernization Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -126,134 +263,102 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <calendarNumbers />
-    <billType>HR</billType>
-    <sponsors>
-      <item>
-        <lastName>HASTINGS</lastName>
-        <firstName>ALCEE</firstName>
-        <party>D</party>
-        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
-        <middleName>L.</middleName>
-        <state>FL</state>
-        <byRequestType />
-        <bioguideId>H000324</bioguideId>
-        <district>20</district>
-        <identifiers>
-          <bioguideId>H000324</bioguideId>
-          <gpoId>7895</gpoId>
-          <lisID>511</lisID>
-        </identifiers>
-      </item>
-    </sponsors>
-    <originChamber>House</originChamber>
-    <recordedVotes />
-    <committeeReports />
-    <policyArea>
-      <name>Health</name>
-    </policyArea>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:16:15Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:16:10Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <relatedBills />
-    <laws />
-    <titles>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Outpatient Mental Health Modernization Act of 2017</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title XVIII of the Social Security Act to stabilize and modernize the provision of partial hospitalization services under the Medicare Program, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Outpatient Mental Health Modernization Act of 2017</title>
-      </item>
-    </titles>
     <cosponsors>
       <item>
-        <middleName>F.</middleName>
+        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <party>D</party>
         <fullName>Rep. Napolitano, Grace F. [D-CA-32]</fullName>
-        <firstName>GRACE</firstName>
-        <state>CA</state>
-        <lastName>NAPOLITANO</lastName>
         <identifiers>
+          <lisID>1602</lisID>
           <gpoId>7843</gpoId>
           <bioguideId>N000179</bioguideId>
-          <lisID>1602</lisID>
         </identifiers>
-        <sponsorshipDate>2017-01-06</sponsorshipDate>
+        <lastName>NAPOLITANO</lastName>
+        <firstName>GRACE</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>F.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
         <district>32</district>
         <bioguideId>N000179</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <party>D</party>
-        <sponsorshipWithdrawnDate />
       </item>
       <item>
-        <middleName>S.</middleName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <party>D</party>
         <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
-        <firstName>Frederica</firstName>
-        <state>FL</state>
-        <lastName>Wilson</lastName>
         <identifiers>
-          <gpoId>7889</gpoId>
           <lisID>2004</lisID>
+          <gpoId>7889</gpoId>
           <bioguideId>W000808</bioguideId>
         </identifiers>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <lastName>Wilson</lastName>
+        <firstName>Frederica</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
         <district>24</district>
         <bioguideId>W000808</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
         <party>D</party>
+        <fullName>Rep. Soto, Darren [D-FL-9]</fullName>
+        <identifiers>
+          <lisID>2319</lisID>
+          <gpoId />
+          <bioguideId>S001200</bioguideId>
+        </identifiers>
+        <lastName>Soto</lastName>
+        <firstName>Darren</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
         <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>9</district>
+        <bioguideId>S001200</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-10-11</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Peterson, Collin C. [D-MN-7]</fullName>
+        <identifiers>
+          <gpoId>8007</gpoId>
+          <lisID>910</lisID>
+          <bioguideId>P000258</bioguideId>
+        </identifiers>
+        <lastName>PETERSON</lastName>
+        <firstName>COLLIN</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>C.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>MN</state>
+        <district>7</district>
+        <bioguideId>P000258</bioguideId>
       </item>
     </cosponsors>
-    <updateDate>2017-01-18T23:31:16Z</updateDate>
-    <constitutionalAuthorityStatementText />
-    <title>Outpatient Mental Health Modernization Act of 2017</title>
-    <congress>115</congress>
+    <introducedDate>2017-01-03</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-25</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-05-19T20:54:58Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Outpatient Mental Health Modernization Act of 2017</strong></p> <p>This bill amends title XVIII (Medicare) of the Social Security Act to&nbsp;cover nutritional planning, meals, and transportation as partial-hospitalization services under Medicare.</p> <p>The Department of Health and Human Services&nbsp;shall convene a Behavioral Health Advisory Committee.</p>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:12Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

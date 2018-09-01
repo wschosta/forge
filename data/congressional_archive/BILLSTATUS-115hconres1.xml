@@ -1,154 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
     <calendarNumbers />
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <committee />
-        <links />
-        <sourceSystem>
-          <code>0</code>
-          <name>Senate</name>
-        </sourceSystem>
-        <text>Received in the Senate.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>17:39:05</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionCode>H38310</actionCode>
-        <type>Floor</type>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>17:39:02</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>On agreeing to the resolution Agreed to without objection. (text: CR H29)</text>
-        <actionCode>H37100</actionCode>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionTime>17:39:02</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H29)</text>
-        <actionCode>8000</actionCode>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>17:38:14</actionTime>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Considered as privileged matter. (consideration: CR H29)</text>
-        <actionCode>H30000</actionCode>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
-      </item>
-      <actionByCounts>
-        <senate>1</senate>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInHouse>1</introducedInHouse>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <considerationByHouse>1</considerationByHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-      </actionTypeCounts>
-    </actions>
+    <amendments />
+    <committeeReports />
+    <constitutionalAuthorityStatementText />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Authorizes the Speaker of the House and the Majority Leader of the Senate, or their respective designees, to notify the Members of the House and the Senate, respectively, to assemble at a place outside the District of Columbia whenever, in their opinion, the public interest shall warrant it.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-23T21:05:21Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+        <item>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Authorizes the Speaker of the House and the Majority Leader of the Senate, or their respective designees, to notify the Members of the House and the Senate to assemble at a place outside the District of Columbia whenever, in their opinion, the public interest shall warrant it.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-05T16:06:07Z</lastSummaryUpdateDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <updateDate>2017-01-03T14:24:31Z</updateDate>
+          <name>Passed House without amendment</name>
+          <versionCode>81</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <relatedBills />
+    <createDate>2017-01-04T07:01:07Z</createDate>
     <latestAction>
-      <text>Received in the Senate.</text>
       <links />
       <actionDate>2017-01-04</actionDate>
+      <text>Received in the Senate.</text>
     </latestAction>
-    <originChamber>House</originChamber>
-    <title>Regarding consent to assemble outside the seat of government.</title>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>TX</state>
+        <bioguideId>S000250</bioguideId>
+        <middleName />
+        <lastName>SESSIONS</lastName>
+        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
+        <firstName>PETE</firstName>
+        <district>32</district>
+        <byRequestType />
+        <identifiers>
+          <lisID>1525</lisID>
+          <gpoId>8188</gpoId>
+          <bioguideId>S000250</bioguideId>
+        </identifiers>
+      </item>
+    </sponsors>
+    <billNumber>1</billNumber>
+    <updateDate>2018-08-28T19:53:09Z</updateDate>
+    <cboCostEstimates />
+    <notes />
     <titles>
       <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
         <title>Regarding consent to assemble outside the seat of government.</title>
-        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
       <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
         <title>Regarding consent to assemble outside the seat of government.</title>
-        <chamberCode />
+        <titleType>Display Title</titleType>
         <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
     </titles>
-    <committeeReports />
-    <updateDate>2017-01-10T10:28:53Z</updateDate>
-    <billType>HCONRES</billType>
-    <recordedVotes />
+    <introducedDate>2017-01-03</introducedDate>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -161,51 +86,136 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <billType>HCONRES</billType>
+    <originChamber>House</originChamber>
+    <title>Regarding consent to assemble outside the seat of government.</title>
+    <cosponsors />
+    <recordedVotes />
     <policyArea>
       <name>Congress</name>
     </policyArea>
-    <laws />
-    <amendments />
     <committees>
       <billCommittees />
     </committees>
-    <sponsors>
+    <actions>
+      <actionByCounts>
+        <senate>1</senate>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
       <item>
-        <identifiers>
-          <bioguideId>S000250</bioguideId>
-          <lisID>1525</lisID>
-          <gpoId>8188</gpoId>
-        </identifiers>
-        <state>TX</state>
-        <bioguideId>S000250</bioguideId>
-        <lastName>SESSIONS</lastName>
-        <middleName />
-        <party>R</party>
-        <district>32</district>
-        <fullName>Rep. Sessions, Pete [R-TX-32]</fullName>
-        <byRequestType />
-        <firstName>PETE</firstName>
+        <actionDate>2017-01-04</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate.</text>
+        <type>IntroReferral</type>
       </item>
-    </sponsors>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <lastSummaryUpdateDate>2017-01-05T16:06:07Z</lastSummaryUpdateDate>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Authorizes the Speaker of the House and the Majority Leader of the Senate, or their respective designees, to notify the Members of the House and the Senate to assemble at a place outside the District of Columbia whenever, in their opinion, the public interest shall warrant it.</p>]]></text>
-          <updateDate>2017-01-03T14:24:31Z</updateDate>
-          <name>Passed House without amendment</name>
-          <versionCode>81</versionCode>
-          <actionDesc>Passed House without amendment</actionDesc>
-        </item>
-      </billSummaries>
-    </summaries>
-    <notes />
-    <createDate>2017-01-04T07:01:07Z</createDate>
-    <billNumber>1</billNumber>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
+      <item>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H38310</actionCode>
+        <actionTime>17:39:05</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
+            <name>H29</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H29)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H37100</actionCode>
+        <actionTime>17:39:02</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
+            <name>H29</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H29)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>8000</actionCode>
+        <actionTime>17:39:02</actionTime>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H29</url>
+            <name>H29</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <text>Considered as privileged matter. (consideration: CR H29)</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H30000</actionCode>
+        <actionTime>17:38:14</actionTime>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <considerationByHouse>1</considerationByHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
+    </actions>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

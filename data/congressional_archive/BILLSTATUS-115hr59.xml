@@ -1,52 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-17T18:01:20Z</updateDate>
-    <relatedBills />
-    <laws />
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To enhance the security of chemical facilities, and for other purposes.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Environment.</text>
+      <actionDate>2017-01-25</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. JACKSON LEE:H.R. 59.Congress has the power to enact this legislation pursuantto the following:This bill Is enacted pursuant to the power granted toCongress under Article I, Section 8, Clauses 1 and 18 of theUnited States Constitution.[Page H48]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
           <subcommittees>
             <item>
-              <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
               <activities>
                 <item>
+                  <date>2017-01-25T14:07:50Z</date>
                   <name>Referred to</name>
-                  <date>2017-01-11T20:07:26Z</date>
                 </item>
               </activities>
-              <systemCode>hshm08</systemCode>
+              <systemCode>hsif18</systemCode>
+              <name>Environment and the Economy Subcommittee</name>
             </item>
           </subcommittees>
-          <type>Standing</type>
-          <systemCode>hshm00</systemCode>
-          <name>Homeland Security Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:22:30Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-        </item>
-        <item>
-          <subcommittees />
-          <type>Standing</type>
           <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-03T17:22:35Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <date>2017-01-11T20:07:26Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <systemCode>hshm08</systemCode>
+              <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
+            </item>
+          </subcommittees>
+          <systemCode>hshm00</systemCode>
+          <name>Homeland Security Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:22:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
           <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>2</billReferrals>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>2</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <name>Environment and the Economy Subcommittee</name>
+          <systemCode>hsif18</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <committee>
+          <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
+          <systemCode>hshm08</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the Committee on Homeland Security, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the Committee on Homeland Security, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the Committee on Homeland Security, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <name>Homeland Security Committee</name>
+          <systemCode>hshm00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <policyArea>
+      <name>Emergency Management</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <party>D</party>
+        <bioguideId>J000032</bioguideId>
+        <identifiers>
+          <lisID>588</lisID>
+          <bioguideId>J000032</bioguideId>
+          <gpoId>8174</gpoId>
+        </identifiers>
+        <lastName>JACKSON LEE</lastName>
+        <district>18</district>
+        <middleName />
+        <firstName>SHEILA</firstName>
+        <byRequestType />
+        <state>TX</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:57:46Z</updateDate>
+    <billNumber>59</billNumber>
+    <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
+    <relatedBills />
     <amendments />
-    <constitutionalAuthorityStatementText />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-04T07:01:09Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-10T22:08:29Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Frank Lautenberg Memorial </b><b>Secure Chemical Facilities Act</b></p> <p>This bill amends the Homeland Security Act of 2002 to set forth provisions for the regulation of security practices at chemical facilities. </p> <p>The Department of Homeland Security (DHS) is authorized to designate: (1) any chemical substance as a substance of concern and establish and adjust the threshold quantity for each such substance after considering the potential extent of death, injury, and serious adverse effects that could result from a chemical facility terrorist incident; and (2) a chemical facility as a covered chemical facility if DHS determines such facility is a sufficient security risk. </p> <p>DHS must: (1) maintain a list of covered chemical facilities that are of sufficient security risk, (2) assign each covered facility to one of four risk-based tiers, (3) establish standards and procedures for security vulnerability assessments and site security plans, (4) require each facility owner or operator to submit and implement such an assessment and plan, and (5) establish risk-based chemical security performance standards for site security plans. </p> <p>DHS is authorized, under specified circumstances, to: (1) accept an alternate security program submitted by the owner or operator of the facility, (2) conduct facility security inspections, and (3) obtain access to and copy records necessary for reviewing or analyzing a security vulnerability assessment or site security plan.</p> <p>DHS shall: (1) share threat information with owners, operators, security officers, and representative of bargaining agents at the facility and with state and local government authorities in a timely manner; (2) require a facility owner or operator to provide information concerning a threat to, or any unauthorized penetration of the physical security or cyber security of, the facility in a timely manner; and (3) disapprove and require revisions to a security vulnerability assessment or site security plan that does not comply with the requirements of this bill or that fails to meet security performance standards.</p> <p>The bill authorizes DHS to: (1) issue an order assessing penalties for noncompliance with this bill, and (2) order a facility owner or operator that continues to be in noncompliance to cease facility operations. </p> <p>The bill: (1) establishes whistleblower protections for employees of a covered chemical facility who report violations of this bill, and (2) prohibits the public disclosure of certain protected information related to security vulnerability assessments and site security plans developed pursuant to this bill.</p> <p>DHS shall make available information on the use and availability of methods to reduce the consequences of a chemical facility terrorist attack. Site security plans must include an assessment of such methods. The owner or operator of a tier 1 or tier 2 facility shall implement such methods if the Office of Chemical Facility Security determines that such implementation would significantly reduce the risk of death, injury, or serious adverse effects to human health resulting from a terrorist incident, can feasibly be incorporated into facility operations, and would not significantly impair the owner's or operator's ability to continue the business of the facility at its location.</p> <p>DHS must provide guidance and appropriate, tools, methodologies, or computer software to assist farm supplies merchant wholesalers and small covered chemical facilities in complying with this bill.</p> <p>Specified facilities are exempt from the requirements of this bill, including Department of Defense chemical facilities, Nuclear Regulatory Commission-regulated chemical facilities, public water systems, and treatment works.</p> <p>The bill establishes in DHS an Office of Chemical Facility Security. </p> <p>DHS shall require covered chemical facilities to establish personnel surety for facility employees by conducting appropriate security background checks and ensuring appropriate credentials for unescorted facility visitors and personnel.</p> <p>The bill authorizes civil actions and citizen petitions by individuals alleging violations of this bill.</p> <p>DHS shall: (1) establish a notification system to report a suspected security deficiency or suspected noncompliance with the requirements of this bill, (2) assess and report on the emergency response resources that would be required to feasibly respond to a worst-case chemical facility terrorist incident, and (3) report annually for 10 years on progress in achieving compliance with this bill. </p> <p>The bill authorizes appropriations for grants for methods to reduce the consequences of a terrorist attack FY2016-F2020.</p> <p>DHS may, until final rules issued to carry out this bill take effect, to: (1) continue to carry out existing Chemical Facility Anti-Terrorism Standards regulations, and (2) amend such regulations to ensure that they are consistent with this bill. </p> <p>DHS shall review the designation of sodium fluoroacetate as a substance of concern.</p> <p>The bill prohibits DHS from using federal funds to approve a site security plan for a chemical facility unless the facility meets or exceeds security standards and requirements to protect the facility against acts of terrorism.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -125,173 +325,6 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To enhance the security of chemical facilities, and for other purposes.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
-        <chamberName />
-      </item>
-    </titles>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <lastName>JACKSON LEE</lastName>
-        <firstName>SHEILA</firstName>
-        <state>TX</state>
-        <party>D</party>
-        <bioguideId>J000032</bioguideId>
-        <middleName />
-        <identifiers>
-          <bioguideId>J000032</bioguideId>
-          <lisID>588</lisID>
-          <gpoId>8174</gpoId>
-        </identifiers>
-        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
-        <district>18</district>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <cosponsors />
-    <policyArea>
-      <name>Emergency Management</name>
-    </policyArea>
-    <billNumber>59</billNumber>
-    <createDate>2017-01-04T07:01:09Z</createDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-10T22:08:29Z</lastSummaryUpdateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <text><![CDATA[<p><b>Frank Lautenberg Memorial </b><b>Secure Chemical Facilities Act</b></p> <p>This bill amends the Homeland Security Act of 2002 to set forth provisions for the regulation of security practices at chemical facilities. </p> <p>The Department of Homeland Security (DHS) is authorized to designate: (1) any chemical substance as a substance of concern and establish and adjust the threshold quantity for each such substance after considering the potential extent of death, injury, and serious adverse effects that could result from a chemical facility terrorist incident; and (2) a chemical facility as a covered chemical facility if DHS determines such facility is a sufficient security risk. </p> <p>DHS must: (1) maintain a list of covered chemical facilities that are of sufficient security risk, (2) assign each covered facility to one of four risk-based tiers, (3) establish standards and procedures for security vulnerability assessments and site security plans, (4) require each facility owner or operator to submit and implement such an assessment and plan, and (5) establish risk-based chemical security performance standards for site security plans. </p> <p>DHS is authorized, under specified circumstances, to: (1) accept an alternate security program submitted by the owner or operator of the facility, (2) conduct facility security inspections, and (3) obtain access to and copy records necessary for reviewing or analyzing a security vulnerability assessment or site security plan.</p> <p>DHS shall: (1) share threat information with owners, operators, security officers, and representative of bargaining agents at the facility and with state and local government authorities in a timely manner; (2) require a facility owner or operator to provide information concerning a threat to, or any unauthorized penetration of the physical security or cyber security of, the facility in a timely manner; and (3) disapprove and require revisions to a security vulnerability assessment or site security plan that does not comply with the requirements of this bill or that fails to meet security performance standards.</p> <p>The bill authorizes DHS to: (1) issue an order assessing penalties for noncompliance with this bill, and (2) order a facility owner or operator that continues to be in noncompliance to cease facility operations. </p> <p>The bill: (1) establishes whistleblower protections for employees of a covered chemical facility who report violations of this bill, and (2) prohibits the public disclosure of certain protected information related to security vulnerability assessments and site security plans developed pursuant to this bill.</p> <p>DHS shall make available information on the use and availability of methods to reduce the consequences of a chemical facility terrorist attack. Site security plans must include an assessment of such methods. The owner or operator of a tier 1 or tier 2 facility shall implement such methods if the Office of Chemical Facility Security determines that such implementation would significantly reduce the risk of death, injury, or serious adverse effects to human health resulting from a terrorist incident, can feasibly be incorporated into facility operations, and would not significantly impair the owner's or operator's ability to continue the business of the facility at its location.</p> <p>DHS must provide guidance and appropriate, tools, methodologies, or computer software to assist farm supplies merchant wholesalers and small covered chemical facilities in complying with this bill.</p> <p>Specified facilities are exempt from the requirements of this bill, including Department of Defense chemical facilities, Nuclear Regulatory Commission-regulated chemical facilities, public water systems, and treatment works.</p> <p>The bill establishes in DHS an Office of Chemical Facility Security. </p> <p>DHS shall require covered chemical facilities to establish personnel surety for facility employees by conducting appropriate security background checks and ensuring appropriate credentials for unescorted facility visitors and personnel.</p> <p>The bill authorizes civil actions and citizen petitions by individuals alleging violations of this bill.</p> <p>DHS shall: (1) establish a notification system to report a suspected security deficiency or suspected noncompliance with the requirements of this bill, (2) assess and report on the emergency response resources that would be required to feasibly respond to a worst-case chemical facility terrorist incident, and (3) report annually for 10 years on progress in achieving compliance with this bill. </p> <p>The bill authorizes appropriations for grants for methods to reduce the consequences of a terrorist attack FY2016-F2020.</p> <p>DHS may, until final rules issued to carry out this bill take effect, to: (1) continue to carry out existing Chemical Facility Anti-Terrorism Standards regulations, and (2) amend such regulations to ensure that they are consistent with this bill. </p> <p>DHS shall review the designation of sodium fluoroacetate as a substance of concern.</p> <p>The bill prohibits DHS from using federal funds to approve a site security plan for a chemical facility unless the facility meets or exceeds security standards and requirements to protect the facility against acts of terrorism.</p>]]></text>
-          <actionDate>2017-01-03</actionDate>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-        </item>
-      </billSummaries>
-    </summaries>
-    <cboCostEstimates />
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <actions>
-      <actionTypeCounts>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <actionDate>2017-01-11</actionDate>
-        <committee>
-          <name>Cybersecurity, Infrastructure Protection, and Security Technologies Subcommittee</name>
-          <systemCode>hshm08</systemCode>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>House committee actions</name>
-          <code>1</code>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on Cybersecurity, Infrastructure Protection, and Security Technologies.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Energy and Commerce</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
-        </committee>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the Committee on Homeland Security, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Homeland Security</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Homeland Security Committee</name>
-          <systemCode>hshm00</systemCode>
-        </committee>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <committee />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <title>Frank Lautenberg Memorial Secure Chemical Facilities Act</title>
-    <notes />
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

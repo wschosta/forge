@@ -1,72 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
+    <notes />
     <congress>115</congress>
-    <introducedDate>2017-01-20</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
-        <chamberName />
-        <parentTitleType />
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <policyArea />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-20</actionDate>
-        <committee>
-          <systemCode>ssga00</systemCode>
-          <name>Homeland Security and Governmental Affairs Committee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <name>Senate</name>
-          <code>0</code>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <actionDate>2017-01-20</actionDate>
-        <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <links />
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-      </item>
-    </actions>
     <committees>
       <billCommittees>
         <item>
@@ -76,47 +12,170 @@
               <date>2017-01-20T23:29:51Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>ssga00</systemCode>
           <name>Homeland Security and Governmental Affairs Committee</name>
+          <type>Standing</type>
           <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssga00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>181</billNumber>
-    <updateDate>2017-01-21T10:05:42Z</updateDate>
-    <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
-    <billType>S</billType>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <actionDate>2017-01-20</actionDate>
-      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-      <links />
-    </latestAction>
     <committeeReports />
+    <cboCostEstimates />
+    <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
+    <laws />
+    <updateDate>2018-08-28T20:23:01Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <committee>
+          <systemCode>ssga00</systemCode>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-20</actionDate>
+        <links />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
+    </actions>
     <sponsors>
       <item>
-        <middleName />
-        <state>OH</state>
-        <bioguideId>B000944</bioguideId>
+        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
         <identifiers>
           <bioguideId>B000944</bioguideId>
           <lisID>136</lisID>
           <gpoId>8309</gpoId>
         </identifiers>
+        <bioguideId>B000944</bioguideId>
         <lastName>BROWN</lastName>
-        <byRequestType />
         <firstName>SHERROD</firstName>
         <party>D</party>
-        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
+        <byRequestType />
+        <middleName />
+        <state>OH</state>
       </item>
     </sponsors>
-    <cosponsors />
-    <createDate>2017-01-21T04:55:45Z</createDate>
+    <billType>S</billType>
+    <policyArea>
+      <name>Economics and Public Finance</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>181</billNumber>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A bill to ensure that certain Federal public works and infrastructure projects use materials produced in the United States, and for other purposes.</title>
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Economics and Public Finance</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Building construction</name>
+          </item>
+          <item>
+            <name>Buy American requirements</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Infrastructure development</name>
+          </item>
+          <item>
+            <name>Manufacturing</name>
+          </item>
+          <item>
+            <name>Metals</name>
+          </item>
+          <item>
+            <name>Public contracts and procurement</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <lastName>PORTMAN</lastName>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <bioguideId>P000449</bioguideId>
+        <fullName>Sen. Portman, Rob [R-OH]</fullName>
+        <identifiers>
+          <lisID>924</lisID>
+          <gpoId>8266</gpoId>
+          <bioguideId>P000449</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <state>OH</state>
+        <firstName>ROB</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-20</introducedDate>
     <calendarNumbers />
-    <notes />
+    <latestAction>
+      <actionDate>2017-01-20</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <actionDate>2017-01-20</actionDate>
+          <lastSummaryUpdateDate>2017-08-04T19:49:36Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>This bill requires the Government Accountability Office (GAO) to publish a report that identifies all federal assistance programs for public works and infrastructure administered by the federal government. For each such program, GAO shall: (1) identify whether a domestic content preference requirement applies and, if so, provide preference details; and (2) describe the type of infrastructure projects receiving funding, the number of entities that are participating, and the amount of federal funds that are made available for each fiscal year. </p> <p>No funds or credit assistance made available under any such program for which a domestic content preference requirement does not apply may be used for a project commencing after the GAO issues such report for the construction, alteration, maintenance, repair, rehabilitation, conversion, or extension of infrastructure or the acquisition of related equipment and vehicles unless all of the iron, steel, manufactured goods, and commodity construction materials used in the project are produced in the United States. Such prohibition shall not apply if the agency involved finds that:</p> <ul> <li> applying it would be inconsistent with the public interest; </li> <li> iron, steel, the relevant manufactured goods, and the relevant commodity construction materials are not produced in the United States in sufficient and reasonably available quantities and of a satisfactory quality; or </li> <li> inclusion of such U.S.-produced materials will increase the cost of the overall project by more than 25%.</li> </ul>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-21T04:55:45Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

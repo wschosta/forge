@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <billType>S</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-11</actionDate>
+      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+    </latestAction>
+    <createDate>2017-01-12T08:17:36Z</createDate>
+    <notes />
     <actions>
       <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
       <item>
         <actionDate>2017-01-11</actionDate>
@@ -21,120 +32,169 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
-        <committee />
+        <links />
         <type>IntroReferral</type>
         <actionDate>2017-01-11</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <links />
         <actionCode>10000</actionCode>
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <amendments />
+    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+          <item>
+            <name>Roads and highways</name>
+          </item>
+          <item>
+            <name>Wilderness and natural areas, wildlife refuges, wild rivers, habitats</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <billNumber>101</billNumber>
+    <title>King Cove Road Land Exchange Act</title>
     <committees>
       <billCommittees>
         <item>
           <type>Standing</type>
+          <name>Energy and Natural Resources Committee</name>
+          <systemCode>sseg00</systemCode>
           <chamber>Senate</chamber>
           <activities>
             <item>
-              <date>2017-01-11T19:47:56Z</date>
               <name>Referred to</name>
+              <date>2017-01-11T19:47:56Z</date>
             </item>
           </activities>
           <subcommittees />
-          <systemCode>sseg00</systemCode>
-          <name>Energy and Natural Resources Committee</name>
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <title>A bill to provide for the exchange of Federal land and non-Federal land in the State of Alaska for the construction of a road between King Cove and Cold Bay.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>A bill to provide for the exchange of Federal land and non-Federal land in the State of Alaska for the construction of a road between King Cove and Cold Bay.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>Senate</originChamber>
-    <committeeReports />
     <introducedDate>2017-01-11</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:22:38Z</updateDate>
+    <laws />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
     <sponsors>
       <item>
         <middleName />
-        <firstName>Lisa</firstName>
         <bioguideId>M001153</bioguideId>
-        <byRequestType />
-        <state>AK</state>
         <identifiers>
-          <gpoId>8234</gpoId>
           <bioguideId>M001153</bioguideId>
+          <gpoId>8234</gpoId>
           <lisID>1694</lisID>
         </identifiers>
-        <party>R</party>
-        <lastName>Murkowski</lastName>
         <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Lisa</firstName>
+        <state>AK</state>
+        <lastName>Murkowski</lastName>
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <links />
-      <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
-    </latestAction>
-    <congress>115</congress>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <latestTitle>King Cove Road Land Exchange Act</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
+          <actionDate>2017-07-20</actionDate>
+        </latestAction>
+        <number>218</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
     <cosponsors>
       <item>
-        <firstName>Dan</firstName>
-        <state>AK</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>S001198</bioguideId>
-        <lastName>Sullivan</lastName>
         <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
-        <sponsorshipWithdrawnDate />
         <party>R</party>
+        <bioguideId>S001198</bioguideId>
         <identifiers>
           <bioguideId>S001198</bioguideId>
           <gpoId />
           <lisID>2290</lisID>
         </identifiers>
+        <lastName>Sullivan</lastName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
         <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Dan</firstName>
+        <state>AK</state>
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <billNumber>101</billNumber>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <laws />
-    <title>A bill to provide for the exchange of Federal land and non-Federal land in the State of Alaska for the construction of a road between King Cove and Cold Bay.</title>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>King Cove Road Land Exchange Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>A bill to provide for the exchange of Federal land and non-Federal land in the State of Alaska for the construction of a road between King Cove and Cold Bay.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>King Cove Road Land Exchange Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>King Cove Road Land Exchange Act</title>
+      </item>
+    </titles>
     <recordedVotes />
-    <cboCostEstimates />
-    <updateDate>2017-01-12T14:39:54Z</updateDate>
-    <createDate>2017-01-12T08:17:36Z</createDate>
-    <billType>S</billType>
-    <relatedBills />
-    <policyArea />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <actionDate>2017-01-11</actionDate>
+          <lastSummaryUpdateDate>2017-03-13T19:45:01Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>King Cove Road Land Exchange Act</b></p> <p>This bill declares that, if the state of Alaska offers to convey to the Department of the Interior 43,093 acres of state-owned land, Interior shall convey to Alaska, in exchange, 206 acres of federal land within the Izembek National Wildlife Refuge and 131 acres of federal land within the Izembek Wilderness, for purposes of: (1) designating a road corridor through the refuge, and (2) constructing a single-lane gravel road along the road corridor. </p> <p>The values of the federal and nonfederal lands to be exchanged shall be equal. </p> <p>Interior and Alaska shall select an appraiser to conduct appraisals of the federal and nonfederal lands in accordance with nationally recognized appraisal standards. </p> <p>The bill requires the route of the road corridor to follow a specified southern road alignment.</p> <p>The bill states that the exchange of the federal and nonfederal lands and the road to be constructed under this bill (including the issuance of any permit that may be required from any federal agency to construct such road) shall not constitute a major federal action requiring environmental impact review under the National Environmental Policy Act of 1969.</p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

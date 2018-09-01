@@ -1,150 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-17T15:01:25Z</updateDate>
-    <relatedBills />
-    <laws />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:16:22Z</date>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+            </item>
+          </subcommittees>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-03T17:29:20Z</date>
             </item>
           </activities>
-          <subcommittees />
           <name>Energy and Commerce Committee</name>
+          <chamber>House</chamber>
           <type>Standing</type>
-          <systemCode>hsif00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <amendments />
-    <constitutionalAuthorityStatementText />
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Health</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <billType>HR</billType>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Ensuring Health Care Opportunities Act</b></p> <p>This bill waives certain health insurance benefit requirements in states with a county where only one health insurer offers individual coverage. In these states, health plans are not required to provide essential health benefits to be offered in the individual or small group market or through the health insurance exchange. (Plans offered in the individual market or through an exchange fulfill the requirement for individuals to maintain minimum essential coverage.)</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-03-06T18:39:10Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
     <titles>
       <item>
+        <chamberName />
+        <parentTitleType />
         <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
         <title>Ensuring Health Care Opportunities Act</title>
+        <chamberCode />
       </item>
       <item>
+        <chamberName />
+        <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
         <title>To waive the essential health benefits requirements for certain States.</title>
+        <chamberCode />
       </item>
       <item>
-        <titleType>Display Title</titleType>
         <chamberName />
-        <chamberCode />
         <parentTitleType />
+        <titleType>Display Title</titleType>
         <title>Ensuring Health Care Opportunities Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Ensuring Health Care Opportunities Act</title>
+        <chamberCode />
       </item>
     </titles>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <lastName>YOUNG</lastName>
-        <firstName>DON</firstName>
-        <state>AK</state>
-        <party>R</party>
-        <bioguideId>Y000033</bioguideId>
-        <middleName>E.</middleName>
-        <identifiers>
-          <gpoId>7785</gpoId>
-          <lisID>1256</lisID>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <district>0</district>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
     <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Health.</text>
+      <links />
+      <actionDate>2017-01-25</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:17Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 208.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 3``To regulate Commerce with foreign Nations, and among theseveral States, and with the Indian Tribes;''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Health</name>
     </policyArea>
+    <billType>HR</billType>
     <billNumber>208</billNumber>
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <cboCostEstimates />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Ensuring Health Care Opportunities Act</title>
+    <congress>115</congress>
     <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
       <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <name>Health Subcommittee</name>
+          <systemCode>hsif14</systemCode>
+        </committee>
         <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <links />
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
-        <actionCode>H11100</actionCode>
         <committee>
           <name>Energy and Commerce Committee</name>
           <systemCode>hsif00</systemCode>
         </committee>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-03</actionDate>
       </item>
       <item>
-        <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <committee />
+        <actionDate>2017-01-03</actionDate>
       </item>
       <item>
-        <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <actionCode>1000</actionCode>
         <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-03</actionDate>
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
     </actions>
-    <title>Ensuring Health Care Opportunities Act</title>
-    <notes />
-    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <committeeReports />
     <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>Y000033</bioguideId>
+        <middleName>E.</middleName>
+        <byRequestType />
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <lastName>YOUNG</lastName>
+        <state>AK</state>
+        <district>0</district>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <firstName>DON</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

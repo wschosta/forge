@@ -1,169 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <item>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <type>IntroReferral</type>
-        <links />
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-      </item>
-      <item>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <links />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-      </item>
-      <item>
-        <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <links />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
+          <activities>
+            <item>
+              <date>2017-01-05T15:05:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
           <type>Standing</type>
           <chamber>House</chamber>
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
-          <activities>
+          <subcommittees>
             <item>
-              <name>Referred to</name>
-              <date>2017-01-05T15:05:30Z</date>
+              <systemCode>hswm01</systemCode>
+              <name>Social Security Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-23T21:50:17Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
             </item>
-          </activities>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>313</billNumber>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Savings for Seniors Act of 2017</b></p> <p> This bill amends title II (Old Age, Survivors and Disability Insurance) (OASDI) of the Social Security Act to establish in the Federal Old-Age and Survivors Insurance Trust Fund a Social Security Surplus Protection Account.</p> <p>The Managing Trustee of the Social Security trust funds (the Secretary of the Treasury) must: (1) transfer annual Social Security surpluses to the account; and (2) may not invest the balance in the account until a law takes effect after FY2017 that authorizes, for amounts in the trust fund, an investment vehicle other than U.S. obligations resulting in the transfer of trust fund assets to the general fund of the Treasury.</p>  <p> The bill establishes in the executive branch a commission to study the most effective vehicles for investment of the Federal Old-Age and Survivors Insurance Trust Fund other than investments in the form of U.S. obligations.]]></text>
+          <actionDate>2017-01-05</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-04-19T15:45:49Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Savings for Seniors Act of 2017</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To amend title II of the Social Security Act to establish a Social Security Surplus Protection Account in the Federal Old-Age and Survivors Insurance Trust Fund to hold the Social Security surplus, to provide for suspension of investment of amounts held in the Account until enactment of legislation providing for investment of the Trust Fund in investment vehicles other than obligations of the United States, and to establish a Social Security Investment Commission to make recommendations for alternative forms of investment of the Social Security surplus in the Trust Fund.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Savings for Seniors Act of 2017</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Savings for Seniors Act of 2017</title>
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <firstName>Jeb</firstName>
+        <lastName>Hensarling</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <bioguideId>H001036</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Hensarling, Jeb [R-TX-5]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1749</lisID>
+          <bioguideId>H001036</bioguideId>
+          <gpoId>8161</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Jenniffer</firstName>
+        <lastName>Gonzalez-Colon</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-06-20</sponsorshipDate>
+        <bioguideId>G000582</bioguideId>
+        <district>0</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Gonzalez-Colon, Jenniffer [R-PR-At Large]</fullName>
+        <state>PR</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>G000582</bioguideId>
+          <lisID>2347</lisID>
+          <gpoId />
+        </identifiers>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Social Security.</text>
+      <links />
+      <actionDate>2017-01-23</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:47Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mrs. BLACKBURN:H.R. 313.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 3[Page H182]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Social Welfare</name>
     </policyArea>
+    <billType>HR</billType>
+    <billNumber>313</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>1218</number>
+        <latestAction>
+          <actionDate>2017-02-24</actionDate>
+          <text>Referred to the House Committee on Ways and Means.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Social Security and Medicare Lock-Box Act</latestTitle>
+      </item>
+    </relatedBills>
+    <title>Savings for Seniors Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-01-23</actionDate>
+        <committee>
+          <systemCode>hswm01</systemCode>
+          <name>Social Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Social Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Financial services and investments</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Government trust funds</name>
+          </item>
+          <item>
+            <name>Social security and elderly assistance</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Social Welfare</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <updateDate>2017-01-23T13:01:26Z</updateDate>
-    <laws />
-    <createDate>2017-01-06T04:57:26Z</createDate>
-    <constitutionalAuthorityStatementText />
+    <committeeReports />
     <introducedDate>2017-01-05</introducedDate>
-    <cosponsors>
-      <item>
-        <lastName>Hensarling</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <bioguideId>H001036</bioguideId>
-        <identifiers>
-          <gpoId>8161</gpoId>
-          <lisID>1749</lisID>
-          <bioguideId>H001036</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>TX</state>
-        <fullName>Rep. Hensarling, Jeb [R-TX-5]</fullName>
-        <firstName>Jeb</firstName>
-        <middleName />
-        <district>5</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-      </item>
-    </cosponsors>
     <sponsors>
       <item>
-        <party>R</party>
-        <lastName>Blackburn</lastName>
-        <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
         <bioguideId>B001243</bioguideId>
         <middleName />
-        <district>7</district>
         <byRequestType />
+        <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
+        <lastName>Blackburn</lastName>
+        <state>TN</state>
+        <district>7</district>
+        <party>R</party>
         <identifiers>
-          <gpoId>8154</gpoId>
           <lisID>1748</lisID>
           <bioguideId>B001243</bioguideId>
+          <gpoId>8154</gpoId>
         </identifiers>
-        <state>TN</state>
         <firstName>Marsha</firstName>
       </item>
     </sponsors>
-    <cboCostEstimates />
-    <billType>HR</billType>
-    <recordedVotes />
     <notes />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-05</actionDate>
-    </latestAction>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>Savings for Seniors Act of 2017</title>
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>To amend title II of the Social Security Act to establish a Social Security Surplus Protection Account in the Federal Old-Age and Survivors Insurance Trust Fund to hold the Social Security surplus, to provide for suspension of investment of amounts held in the Account until enactment of legislation providing for investment of the Trust Fund in investment vehicles other than obligations of the United States, and to establish a Social Security Investment Commission to make recommendations for alternative forms of investment of the Social Security surplus in the Trust Fund.</title>
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberCode />
-        <parentTitleType />
-        <title>Savings for Seniors Act of 2017</title>
-        <chamberName />
-      </item>
-    </titles>
-    <title>Savings for Seniors Act of 2017</title>
-    <calendarNumbers />
-    <committeeReports />
-    <congress>115</congress>
+    <createDate>2017-01-06T04:57:26Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

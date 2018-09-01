@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <notes />
+    <congress>115</congress>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>Senate</chamber>
+          <systemCode>ssfr00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Foreign Relations Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-17T21:55:42Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <title>Countering Anti-Semitism and Anti-Israel Activities at the United Nations Act of 2017</title>
     <laws />
-    <createDate>2017-01-18T05:05:00Z</createDate>
+    <updateDate>2018-08-28T20:22:57Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -10,131 +34,217 @@
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
-          <systemCode>ssfr00</systemCode>
           <name>Foreign Relations Committee</name>
+          <systemCode>ssfr00</systemCode>
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Foreign Relations.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
         <links />
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
+        <actionDate>2017-01-17</actionDate>
       </item>
       <actionTypeCounts>
         <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
       </actionTypeCounts>
     </actions>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <relatedBills />
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-17T21:55:42Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>ssfr00</systemCode>
-          <name>Foreign Relations Committee</name>
-          <chamber>Senate</chamber>
-        </item>
-      </billCommittees>
-    </committees>
-    <cosponsors>
-      <item>
-        <middleName />
-        <party>R</party>
-        <fullName>Sen. Cotton, Tom [R-AR]</fullName>
-        <state>AR</state>
-        <firstName>Tom</firstName>
-        <lastName>Cotton</lastName>
-        <bioguideId>C001095</bioguideId>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>2098</lisID>
-          <gpoId />
-          <bioguideId>C001095</bioguideId>
-        </identifiers>
-      </item>
-    </cosponsors>
-    <amendments />
-    <updateDate>2017-01-18T10:22:55Z</updateDate>
-    <title>A bill to counter anti-Semitism at the United Nations, and for other purposes.</title>
     <sponsors>
       <item>
-        <lastName>Rubio</lastName>
-        <bioguideId>R000595</bioguideId>
         <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <byRequestType />
-        <firstName>Marco</firstName>
         <identifiers>
-          <lisID>2084</lisID>
           <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
           <gpoId>8242</gpoId>
         </identifiers>
+        <bioguideId>R000595</bioguideId>
+        <lastName>Rubio</lastName>
+        <firstName>Marco</firstName>
         <party>R</party>
-        <state>FL</state>
+        <byRequestType />
         <middleName />
+        <state>FL</state>
       </item>
     </sponsors>
-    <introducedDate>2017-01-17</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
+    <billType>S</billType>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>169</billNumber>
     <titles>
       <item>
-        <titleType>Official Title as Introduced</titleType>
         <chamberName />
-        <chamberCode />
         <parentTitleType />
-        <title>A bill to counter anti-Semitism at the United Nations, and for other purposes.</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Countering Anti-Semitism and Anti-Israel Activities at the United Nations Act of 2017</title>
+        <chamberCode />
       </item>
       <item>
-        <titleType>Display Title</titleType>
         <chamberName />
-        <chamberCode />
         <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
         <title>A bill to counter anti-Semitism at the United Nations, and for other purposes.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Countering Anti-Semitism and Anti-Israel Activities at the United Nations Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Countering Anti-Semitism and Anti-Israel Activities at the United Nations Act of 2017</title>
+        <chamberCode />
       </item>
     </titles>
+    <originChamber>Senate</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Arab-Israeli relations</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Diplomacy, foreign officials, Americans abroad</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+          <item>
+            <name>Human rights</name>
+          </item>
+          <item>
+            <name>International law and treaties</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+          <item>
+            <name>Israel</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Palestinians</name>
+          </item>
+          <item>
+            <name>Refugees, asylum, displaced persons</name>
+          </item>
+          <item>
+            <name>Religion</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+          <item>
+            <name>United Nations</name>
+          </item>
+          <item>
+            <name>West Bank</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <bioguideId>C001095</bioguideId>
+        <party>R</party>
+        <firstName>Tom</firstName>
+        <fullName>Sen. Cotton, Tom [R-AR]</fullName>
+        <lastName>Cotton</lastName>
+        <state>AR</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>2098</lisID>
+          <bioguideId>C001095</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>W000437</bioguideId>
+        <party>R</party>
+        <firstName>ROGER</firstName>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <lastName>WICKER</lastName>
+        <state>MS</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>F.</middleName>
+        <identifiers>
+          <bioguideId>W000437</bioguideId>
+          <lisID>1226</lisID>
+          <gpoId>8263</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>I000024</bioguideId>
+        <party>R</party>
+        <firstName>JIM</firstName>
+        <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <lastName>INHOFE</lastName>
+        <state>OK</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>583</lisID>
+          <gpoId>8322</gpoId>
+          <bioguideId>I000024</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-17</introducedDate>
+    <calendarNumbers />
     <latestAction>
-      <text>Read twice and referred to the Committee on Foreign Relations.</text>
       <actionDate>2017-01-17</actionDate>
       <links />
+      <text>Read twice and referred to the Committee on Foreign Relations.</text>
     </latestAction>
-    <cboCostEstimates />
-    <policyArea />
-    <calendarNumbers />
-    <billNumber>169</billNumber>
-    <congress>115</congress>
-    <originChamber>Senate</originChamber>
-    <billType>S</billType>
-    <recordedVotes />
-    <committeeReports />
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in Senate</name>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-17</actionDate>
+          <lastSummaryUpdateDate>2017-09-05T13:59:47Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <text><![CDATA[<p><strong>Countering Anti-Semitism and Anti-Israel Activities at the United Nations Act of 2017</strong> </p> <p>This bill requires the President to direct the U.S. Permanent Representative to the United Nations (U.N.) to use U.S. influence at the U.N. to work toward reducing anti-Semitism in the U.N., including among its employees and its specialized agencies, programs, and funds.</p> <p>The bill withholds funding for: </p> <ul> <li> the U.N. and affiliated agencies until the President certifies that no U.N. agency or affiliated agency grants any official status, accreditation, or recognition to an organization that promotes or condones anti-Semitism; and </li> <li>the United Nations Relief and Works Agency for Palestine Refugees in the Near East (UNRWA) for programs in the West Bank and Gaza until the Department of State certifies that no official, employee, consultant, contractor, representative, or affiliate of UNRWA is a member of Hamas or any U.S.-designated terrorist group and that no UNRWA school, hospital, facility, or resource is being used by Hamas or an affiliated group.</li> </ul> <p>The bill reduces funding for the United Nations Human Rights Council (UNHRC) and prohibits the United States from running for a seat on UNHRC until the State Department certifies that UNHRC does not include a permanent item related to Israel or the Palestinian territories.</p> <p>The bill states that it shall be U.S. policy to: (1) reject the premise in U.N. Security Council Resolution 2334 that Israel's establishment of settlements in the Palestinian territory occupied since 1967 constitutes a violation of international law, and (2) prohibit U.S. funding for any U.N. entity that attempts to enforce resolution 2334. </p> <p>The bill requires reports on: (1) U.S. contributions to countries seeking to implement resolution 2334, (2) U.N. voting practices, and (3) anti-Semitic and anti-Israel activity at the U.N.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-18T05:05:00Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

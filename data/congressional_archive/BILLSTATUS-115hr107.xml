@@ -1,139 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <committeeReports />
-    <recordedVotes />
-    <originChamber>House</originChamber>
-    <congress>115</congress>
+    <notes />
     <title>Homeless Veterans with Children Reintegration Act</title>
-    <summaries>
-      <billSummaries>
-        <item>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <lastSummaryUpdateDate>2017-01-12T23:13:53Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p><b>Homeless Veterans with Children Reintegration Act</b></p> <p>This bill directs the Department of Labor to give homeless veterans with dependent children service priority under homeless veterans reintegration programs.</p>]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <name>Introduced in House</name>
-        </item>
-      </billSummaries>
-    </summaries>
-    <relatedBills />
-    <introducedDate>2017-01-03</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
+          <type>Standing</type>
           <name>Veterans' Affairs Committee</name>
           <systemCode>hsvr00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
+          <chamber>House</chamber>
           <activities>
             <item>
-              <date>2017-01-03T17:26:45Z</date>
               <name>Referred to</name>
+              <date>2017-01-03T17:26:45Z</date>
             </item>
           </activities>
+          <subcommittees>
+            <item>
+              <name>Health Subcommittee</name>
+              <systemCode>hsvr03</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-19T20:13:14Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-17T22:01:41Z</updateDate>
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <notes />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Homeless Veterans with Children Reintegration Act</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title 38, United States Code, to direct the Secretary of Labor to prioritize the provision of services to homeless veterans with dependent children in carrying out homeless veterans reintegration programs, and for other purposes.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Homeless Veterans with Children Reintegration Act</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <amendments />
+    <committeeReports />
     <cboCostEstimates />
-    <constitutionalAuthorityStatementText />
-    <billNumber>107</billNumber>
-    <billType>HR</billType>
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:57:55Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
       <item>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr03</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
         <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
+          <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <committee>
           <systemCode>hsvr00</systemCode>
           <name>Veterans' Affairs Committee</name>
         </committee>
         <links />
         <type>IntroReferral</type>
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
       </item>
       <item>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-03</actionDate>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <committee />
-        <links />
-        <type>IntroReferral</type>
       </item>
       <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
         <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
     </actions>
-    <calendarNumbers />
-    <cosponsors />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Veterans' Affairs.</text>
-    </latestAction>
+    <sponsors>
+      <item>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <identifiers>
+          <bioguideId>B001285</bioguideId>
+          <lisID>2106</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001285</bioguideId>
+        <lastName>Brownley</lastName>
+        <firstName>Julia</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>CA</state>
+        <district>26</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. BROWNLEY of California:H.R. 107.Congress has the power to enact this legislation pursuantto the following:Article I, Section VIII of the U.S. Constitution[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>107</billNumber>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Homeless Veterans with Children Reintegration Act</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To amend title 38, United States Code, to direct the Secretary of Labor to prioritize the provision of services to homeless veterans with dependent children in carrying out homeless veterans reintegration programs, and for other purposes.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Homeless Veterans with Children Reintegration Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Homeless Veterans with Children Reintegration Act</title>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Armed Forces and National Security</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Child safety and welfare</name>
@@ -151,26 +177,34 @@
             <name>Veterans' loans, housing, homeless programs</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <sponsors>
-      <item>
-        <bioguideId>B001285</bioguideId>
-        <lastName>Brownley</lastName>
-        <district>26</district>
-        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
-        <state>CA</state>
-        <middleName />
-        <byRequestType />
-        <firstName>Julia</firstName>
-        <party>D</party>
-        <identifiers>
-          <bioguideId>B001285</bioguideId>
-          <gpoId />
-          <lisID>2106</lisID>
-        </identifiers>
-      </item>
-    </sponsors>
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-19</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><b>Homeless Veterans with Children Reintegration Act</b></p> <p>This bill directs the Department of Labor to give homeless veterans with dependent children service priority under homeless veterans reintegration programs.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-12T23:13:53Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:11Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

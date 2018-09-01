@@ -1,140 +1,441 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>174</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-17</actionDate>
-      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-    </latestAction>
-    <introducedDate>2017-01-17</introducedDate>
-    <amendments />
-    <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-17</actionDate>
-        <committee>
-          <systemCode>sscm00</systemCode>
-          <name>Commerce, Science, and Transportation Committee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>0</code>
-          <name>Senate</name>
-        </sourceSystem>
-        <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <text>Introduced in Senate</text>
-        <links />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
-        <committee />
-      </item>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
-    </actions>
-    <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
-      <item>
-        <firstName>Dean</firstName>
-        <party>R</party>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <middleName />
-        <state>NV</state>
-        <byRequestType />
-        <bioguideId>H001041</bioguideId>
-        <identifiers>
-          <bioguideId>H001041</bioguideId>
-          <gpoId>8060</gpoId>
-          <lisID>1863</lisID>
-        </identifiers>
-        <lastName>Heller</lastName>
-      </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
-    <recordedVotes />
-    <updateDate>2017-01-18T10:23:38Z</updateDate>
-    <policyArea />
-    <title>A bill to amend the Communications Act of 1934 to consolidate the reporting obligations of the Federal Communications Commission in order to improve congressional oversight and reduce reporting burdens.</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-18T05:05:00Z</createDate>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
           <subcommittees />
           <systemCode>sscm00</systemCode>
           <name>Commerce, Science, and Transportation Committee</name>
-          <chamber>Senate</chamber>
           <activities>
+            <item>
+              <date>2017-05-11T20:32:23Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-01-24T15:00:00Z</date>
+              <name>Markup by</name>
+            </item>
             <item>
               <date>2017-01-17T22:21:28Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
         </item>
       </billCommittees>
     </committees>
-    <relatedBills />
-    <laws />
-    <titles>
+    <actions>
+      <actionByCounts>
+        <senate>9</senate>
+        <houseOfRepresentatives>2</houseOfRepresentatives>
+      </actionByCounts>
       <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to amend the Communications Act of 1934 to consolidate the reporting obligations of the Federal Communications Commission in order to improve congressional oversight and reduce reporting burdens.</title>
-        <chamberName />
-        <parentTitleType />
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Held at the desk.</text>
+        <actionTime>14:32:13</actionTime>
+        <actionCode>H15000</actionCode>
+        <actionDate>2017-08-04</actionDate>
       </item>
       <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>A bill to amend the Communications Act of 1934 to consolidate the reporting obligations of the Federal Communications Commission in order to improve congressional oversight and reduce reporting burdens.</title>
-        <chamberName />
+        <type>Floor</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee />
+        <text>Received in the House.</text>
+        <actionTime>13:06:30</actionTime>
+        <actionCode>H14000</actionCode>
+        <actionDate>2017-08-04</actionDate>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <committee />
+        <links>
+          <link>
+            <name>S4816-4817</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4816-4817</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Passed Senate without amendment by Unanimous Consent. (consideration: CR S4816-4817; text: CR S4816-4817)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <type>Floor</type>
+        <links>
+          <link>
+            <name>S4816-4817</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4816-4817</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.(consideration: CR S4816-4817; text: CR S4816-4817)</text>
+        <actionCode>17000</actionCode>
+        <actionDate>2017-08-03</actionDate>
+      </item>
+      <item>
+        <actionDate>2017-05-11</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 77.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-05-11</actionDate>
+        <committee>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <systemCode>sscm00</systemCode>
+        </committee>
+        <links>
+          <link>
+            <name>report No. 115-61</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/61</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-61.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>Committee</type>
+        <links>
+          <link>
+            <name>report No. 115-61</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/61</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <systemCode>sscm00</systemCode>
+        </committee>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-61.</text>
+        <actionCode>14000</actionCode>
+        <actionDate>2017-05-11</actionDate>
+      </item>
+      <item>
+        <actionDate>2017-01-24</actionDate>
+        <committee>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <systemCode>sscm00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-17</actionDate>
+        <committee>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <systemCode>sscm00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
+        <actionDate>2017-01-17</actionDate>
+      </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <sentToHouse>1</sentToHouse>
+        <heldAtTheDesk>1</heldAtTheDesk>
+        <referredToCommittee>1</referredToCommittee>
+        <passedSenate>1</passedSenate>
+        <reportedToSenate>2</reportedToSenate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <orderedReported>1</orderedReported>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+      </actionTypeCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <calendarNumbers>
+      <item>
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0077</number>
+      </item>
+    </calendarNumbers>
+    <titles>
+      <item>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <chamberCode>S</chamberCode>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <chamberCode>S</chamberCode>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
         <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend the Communications Act of 1934 to consolidate the reporting obligations of the Federal Communications Commission in order to improve congressional oversight and reduce reporting burdens.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode>S</chamberCode>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode>S</chamberCode>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
       </item>
     </titles>
     <cosponsors>
       <item>
-        <lastName>Schatz</lastName>
-        <firstName>Brian</firstName>
-        <party>D</party>
-        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>HI</state>
         <bioguideId>S001194</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <lastName>Schatz</lastName>
+        <state>HI</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>2173</lisID>
           <bioguideId>S001194</bioguideId>
           <gpoId />
         </identifiers>
         <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <sponsorshipWithdrawnDate />
-        <middleName />
+        <firstName>Brian</firstName>
       </item>
     </cosponsors>
-    <committeeReports />
+    <cboCostEstimates>
+      <item>
+        <title>S. 174, Federal Communications Commission Consolidated Reporting Act of 2017</title>
+        <pubDate>2017-02-16T16:03:36Z</pubDate>
+        <url>https://www.cbo.gov/publication/52427</url>
+      </item>
+    </cboCostEstimates>
+    <latestAction>
+      <text>Held at the desk.</text>
+      <links />
+      <actionTime>14:32:13</actionTime>
+      <actionDate>2017-08-04</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T20:22:59Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>Science, Technology, Communications</name>
+    </policyArea>
+    <billType>S</billType>
+    <billNumber>174</billNumber>
+    <originChamber>Senate</originChamber>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2018-03-07</actionDate>
+          <text>Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>RAY BAUM'S Act of 2018</latestTitle>
+        <number>4986</number>
+      </item>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-01-24</actionDate>
+          <text>Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>Federal Communications Commission Consolidated Reporting Act of 2017</latestTitle>
+        <number>599</number>
+      </item>
+    </relatedBills>
+    <title>Federal Communications Commission Consolidated Reporting Act of 2017</title>
+    <congress>115</congress>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><strong>Federal Communications Commission Consolidated Reporting Act of 2017</strong></p> <p>This bill amends the Communications Act of 1934 to replace various reporting requirements with a communications marketplace report that the Federal Communications Commission (FCC) is required to publish on its website and submit to Congress every two years assessing: (1) competition in the communications marketplace; (2) deployment of communications capabilities, including advanced telecommunications capabilities; and (3) whether laws, regulations, regulatory practices, or demonstrated marketplace practices pose a barrier to competitive entry or expansion of existing providers of communications services.</p> <p>Each report must describe the FCC's agenda for the next two years. </p> <p>The FCC must: (1) include a list of geographic areas that are not served by any provider of advanced telecommunications capability; and (2) consider market entry barriers for entrepreneurs and small businesses in accordance with national policy favoring diversity of media voices, competition, technological advancement, and promotion of the public interest, convenience, and necessity.</p>]]></text>
+          <actionDate>2017-01-17</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2017-03-08T19:37:23Z</lastSummaryUpdateDate>
+        </item>
+        <item>
+          <updateDate>2017-05-11T13:59:15Z</updateDate>
+          <versionCode>80</versionCode>
+          <name>Reported to Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><strong>Federal Communications Commission Consolidated Reporting Act of 2017</strong></p> <p>(Sec. 2) This bill amends the Communications Act of 1934 to replace various reporting requirements with a communications marketplace report that the Federal Communications Commission (FCC) is required to publish on its website and submit to Congress every two years assessing: (1) competition in the communications marketplace; (2) deployment of communications capabilities, including advanced telecommunications capabilities; and (3) whether laws, regulations, regulatory practices, or demonstrated marketplace practices pose a barrier to competitive entry or expansion of existing providers of communications services.</p> <p>Each report must describe the FCC's agenda for the next two years. </p> <p>The FCC must: (1) include a list of geographic areas that are not served by any provider of advanced telecommunications capability; and (2) consider market entry barriers for entrepreneurs and small businesses in accordance with national policy favoring diversity of media voices, competition, technological advancement, and promotion of the public interest, convenience, and necessity.</p> <p> The bill establishes a process for the FCC to publish a report after its deadline if it provides Congress, and posts on the FCC website, a notification letter (within 7 days after the deadline and every 60 days thereafter) regarding the delay and the anticipated date on which the report will be published. </p> <p>(Sec. 3) The bill repeals or consolidates various existing communications reporting requirements. </p>]]></text>
+          <actionDate>2017-05-11</actionDate>
+          <actionDesc>Reported to Senate without amendment</actionDesc>
+          <lastSummaryUpdateDate>2017-06-01T19:58:58Z</lastSummaryUpdateDate>
+        </item>
+        <item>
+          <updateDate>2017-08-03T15:07:11Z</updateDate>
+          <versionCode>82</versionCode>
+          <name>Passed Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p><strong>Federal Communications Commission Consolidated Reporting Act of 2017</strong></p> <p>(Sec. 2) This bill amends the Communications Act of 1934 to replace various reporting requirements with a communications marketplace report that the Federal Communications Commission (FCC) is required to publish on its website and submit to Congress every two years assessing: (1) competition in the communications marketplace; (2) deployment of communications capabilities, including advanced telecommunications capabilities; and (3) whether laws, regulations, regulatory practices, or demonstrated marketplace practices pose a barrier to competitive entry or expansion of existing providers of communications services.</p> <p>Each report must describe the FCC's agenda for the next two years. </p> <p>The FCC must: (1) include a list of geographic areas that are not served by any provider of advanced telecommunications capability; and (2) consider market entry barriers for entrepreneurs and small businesses in accordance with national policy favoring diversity of media voices, competition, technological advancement, and promotion of the public interest, convenience, and necessity.</p> <p>The bill establishes a process for the FCC to publish a report after its deadline if it provides Congress, and posts on the FCC website, a notification letter (within 7 days after the deadline and every 60 days thereafter) regarding the delay and the anticipated date on which the report will be published. </p> <p>(Sec. 3) The bill repeals or consolidates various existing communications reporting requirements. </p>]]></text>
+          <actionDate>2017-08-03</actionDate>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <lastSummaryUpdateDate>2017-10-18T19:12:10Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Competition and antitrust</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Federal Communications Commission (FCC)</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Internet and video services</name>
+          </item>
+          <item>
+            <name>Small business</name>
+          </item>
+          <item>
+            <name>Telephone and wireless communication</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Science, Technology, Communications</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <congress>115</congress>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-61</citation>
+      </committeeReport>
+    </committeeReports>
+    <introducedDate>2017-01-17</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>H001041</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <lastName>Heller</lastName>
+        <state>NV</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <firstName>Dean</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-18T05:05:00Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-17</actionDate>
+      <text>Read twice and referred to the Committee on Armed Services.</text>
+      <links />
+    </latestAction>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+          <item>
+            <name>Veterans' education, employment, rehabilitation</name>
+          </item>
+          <item>
+            <name>Veterans' medical care</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
     <laws />
-    <createDate>2017-01-18T05:05:00Z</createDate>
+    <notes />
+    <billType>S</billType>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>R000605</bioguideId>
+        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2288</lisID>
+          <bioguideId>R000605</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>SD</state>
+        <firstName>Mike</firstName>
+        <party>R</party>
+        <lastName>Rounds</lastName>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-17</introducedDate>
+    <updateDate>2018-08-28T20:22:57Z</updateDate>
+    <cosponsors />
     <actions>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
@@ -12,111 +67,116 @@
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Armed Services.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <actionCode>10000</actionCode>
         <actionDate>2017-01-17</actionDate>
+        <links />
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
         <committee />
-        <links />
-        <type>IntroReferral</type>
       </item>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <relatedBills />
     <committees>
       <billCommittees>
         <item>
-          <chamber>Senate</chamber>
-          <name>Armed Services Committee</name>
-          <systemCode>ssas00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
           <activities>
             <item>
               <date>2017-01-17T21:19:20Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>ssas00</systemCode>
+          <name>Armed Services Committee</name>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <cosponsors />
-    <amendments />
-    <updateDate>2017-01-18T10:22:20Z</updateDate>
-    <title>A bill to amend title 10, United States Code, to require an element in preseparation counseling for members of the Armed Forces on assistance and support services for caregivers of certain veterans through the Department of Veterans Affairs.</title>
-    <sponsors>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <title>Caregiver Program Information Dissemination Act of 2017</title>
+    <createDate>2017-01-18T05:05:00Z</createDate>
+    <billNumber>165</billNumber>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <relatedBills>
       <item>
-        <lastName>Rounds</lastName>
-        <bioguideId>R000605</bioguideId>
-        <fullName>Sen. Rounds, Mike  [R-SD]</fullName>
-        <byRequestType />
-        <firstName>Mike</firstName>
-        <identifiers>
-          <lisID>2288</lisID>
-          <bioguideId>R000605</bioguideId>
-          <gpoId />
-        </identifiers>
-        <party>R</party>
-        <state>SD</state>
-        <middleName />
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Caregiver Program Information Improvement Act of 2017</latestTitle>
+        <type>S</type>
+        <congress>115</congress>
+        <number>1378</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Armed Services.</text>
+          <actionDate>2017-06-19</actionDate>
+        </latestAction>
       </item>
-    </sponsors>
-    <introducedDate>2017-01-17</introducedDate>
+    </relatedBills>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-17</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2017-07-11T21:41:00Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Caregiver Program Information Dissemination Act of 2017</strong></p> <p>This bill requires pre-separation counseling for members of the Armed Forces to include a description of Department of Veterans Affairs family caregiver assistance and support services, including information about covered veterans, eligible caregivers, and program assistance and support.</p>]]></text>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
     </summaries>
-    <notes />
+    <originChamber>Senate</originChamber>
     <titles>
       <item>
-        <parentTitleType />
-        <title>A bill to amend title 10, United States Code, to require an element in preseparation counseling for members of the Armed Forces on assistance and support services for caregivers of certain veterans through the Department of Veterans Affairs.</title>
-        <chamberCode />
         <chamberName />
-        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Caregiver Program Information Dissemination Act of 2017</title>
+        <parentTitleType />
       </item>
       <item>
-        <parentTitleType />
-        <title>A bill to amend title 10, United States Code, to require an element in preseparation counseling for members of the Armed Forces on assistance and support services for caregivers of certain veterans through the Department of Veterans Affairs.</title>
-        <chamberCode />
         <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend title 10, United States Code, to require an element in preseparation counseling for members of the Armed Forces on assistance and support services for caregivers of certain veterans through the Department of Veterans Affairs.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
         <titleType>Display Title</titleType>
+        <title>Caregiver Program Information Dissemination Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Caregiver Program Information Dissemination Act of 2017</title>
+        <parentTitleType />
       </item>
     </titles>
-    <latestAction>
-      <text>Read twice and referred to the Committee on Armed Services.</text>
-      <actionDate>2017-01-17</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <policyArea />
-    <calendarNumbers />
-    <billNumber>165</billNumber>
-    <congress>115</congress>
-    <originChamber>Senate</originChamber>
-    <billType>S</billType>
-    <recordedVotes />
-    <committeeReports />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

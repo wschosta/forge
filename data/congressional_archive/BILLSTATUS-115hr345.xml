@@ -1,150 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <billNumber>345</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <constitutionalAuthorityStatementText />
-    <actions>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <committee />
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <type>IntroReferral</type>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
     <amendments />
-    <cboCostEstimates />
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-06T04:57:26Z</createDate>
     <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on the Judiciary.</text>
+      <actionDate>2017-01-31</actionDate>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
       <links />
     </latestAction>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>General foreign operations matters</name>
+          </item>
+          <item>
+            <name>Government ethics and transparency, public corruption</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+          <item>
+            <name>Presidents and presidential powers, Vice Presidents</name>
+          </item>
+          <item>
+            <name>Public participation and lobbying</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
-          <name>Congress</name>
+          <name>Crime and Law Enforcement</name>
         </policyArea>
-        <legislativeSubjects />
       </billSubjects>
     </subjects>
-    <title>Stop Foreign Influence Act</title>
+    <laws />
+    <notes />
+    <billType>HR</billType>
     <sponsors>
       <item>
-        <fullName>Rep. Trott, David A. [R-MI-11]</fullName>
-        <byRequestType />
         <lastName>Trott</lastName>
-        <party>R</party>
+        <middleName>A.</middleName>
         <bioguideId>T000475</bioguideId>
+        <fullName>Rep. Trott, David A. [R-MI-11]</fullName>
         <identifiers>
-          <lisID>2250</lisID>
           <bioguideId>T000475</bioguideId>
+          <lisID>2250</lisID>
           <gpoId />
         </identifiers>
-        <middleName>A.</middleName>
-        <district>11</district>
+        <byRequestType />
         <state>MI</state>
         <firstName>David</firstName>
+        <party>R</party>
+        <district>11</district>
       </item>
     </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-05</introducedDate>
+    <relatedBills />
+    <cosponsors />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <committee>
+          <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsju00</systemCode>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-05T15:06:15Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
           <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-31T14:31:32Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-23T13:01:32Z</updateDate>
-    <notes />
-    <recordedVotes />
-    <billType>HR</billType>
-    <cosponsors />
-    <relatedBills />
+    <updateDate>2018-08-28T19:58:53Z</updateDate>
+    <version>1.0.0</version>
+    <title>Stop Foreign Influence Act</title>
+    <createDate>2017-01-06T04:57:26Z</createDate>
+    <billNumber>345</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. TROTT:H.R. 345.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8[Page H184]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <actionDate>2017-01-05</actionDate>
+          <lastSummaryUpdateDate>2017-06-08T19:14:13Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Stop Foreign Influence Act</b></p> <p>This bill amends the federal criminal code to impose a 10-year post-employment lobbying ban on a former President, Vice President, Member of Congress, or specified intelligence appointee who knowingly represents, or aids or advises, a country of particular concern. The term &quot;country of particular concern&quot; means: (1) a country designated by the Department of State to be of particular concern for religious freedom violations, and (2) any entity owned or controlled by such country. </p> <p>Additionally, the bill amends the Lobbying Disclosure Act of 1995 to revise the definition of &quot;lobbyist.&quot; Currently, a lobbyist is an individual who: (1) is employed or retained by a client for compensation, (2) makes more than one lobbying contact, and (3) spends at least 20% of the time working for that client on lobbying activities. This bill broadens the definition to include, as a lobbyist, an individual who spends less than 20% of the time working for that client on lobbying activities, if the client is a country of particular concern and if the individual is a former President, Vice President, Member of Congress, or specified intelligence appointee. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
     </summaries>
-    <introducedDate>2017-01-05</introducedDate>
+    <originChamber>House</originChamber>
     <titles>
       <item>
+        <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Stop Foreign Influence Act</title>
-        <chamberCode />
         <chamberName />
+        <title>Stop Foreign Influence Act</title>
+        <parentTitleType />
       </item>
       <item>
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title 18, United States Code, to prohibit the President, the Vice President, Members of Congress, and other officers of the executive branch from lobbying on behalf of countries designated as countries of particular concern for religious freedom for 10 years after leaving office, and for other purposes.</title>
-        <chamberCode />
         <chamberName />
+        <title>To amend title 18, United States Code, to prohibit the President, the Vice President, Members of Congress, and other officers of the executive branch from lobbying on behalf of countries designated as countries of particular concern for religious freedom for 10 years after leaving office, and for other purposes.</title>
+        <parentTitleType />
       </item>
       <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Stop Foreign Influence Act</title>
         <chamberCode />
+        <titleType>Display Title</titleType>
         <chamberName />
+        <title>Stop Foreign Influence Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Stop Foreign Influence Act</title>
+        <parentTitleType />
       </item>
     </titles>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <calendarNumbers />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

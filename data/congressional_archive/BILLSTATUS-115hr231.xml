@@ -1,150 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <congress>115</congress>
-    <introducedDate>2017-01-03</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Canyon Village Land Conveyance Act</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To fulfill the land conveyance requirements under the Alaska Native Claims Settlement Act for the Alaska Native Village of Canyon Village, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Canyon Village Land Conveyance Act</title>
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <policyArea>
-      <name>Native Americans</name>
-    </policyArea>
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Native Americans</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <amendments />
-    <actions>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Natural Resources.</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-    </actions>
     <committees>
       <billCommittees>
         <item>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-03T17:28:25Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
           <type>Standing</type>
+          <chamber>House</chamber>
           <systemCode>hsii00</systemCode>
           <name>Natural Resources Committee</name>
-          <chamber>House</chamber>
+          <subcommittees>
+            <item>
+              <systemCode>hsii24</systemCode>
+              <name>Indian, Insular and Alaska Native Affairs Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2018-02-06T20:09:31Z</date>
+                  <name>Hearings by</name>
+                </item>
+                <item>
+                  <date>2017-02-10T16:55:12Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>231</billNumber>
-    <updateDate>2017-01-17T23:01:20Z</updateDate>
-    <title>Canyon Village Land Conveyance Act</title>
-    <billType>HR</billType>
+    <recordedVotes />
     <laws />
-    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-02-14T22:35:43Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Canyon Village Land Conveyance Act</b></p> <p>This bill amends the Alaska Native Claims Settlement Act to require the Department of the Interior to convey to Kian Tr'ee Corporation, an Alaska Native village corporation, for the Native village of Canyon Village, the surface estate of up to 6,400 acres of public land selected by the corporation.</p> Interior must convey an equal acreage of subsurface estate to Doyon Limited, an Alaska Native regional corporation.]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Canyon Village Land Conveyance Act</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To fulfill the land conveyance requirements under the Alaska Native Claims Settlement Act for the Alaska Native Village of Canyon Village, and for other purposes.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Canyon Village Land Conveyance Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Canyon Village Land Conveyance Act</title>
+      </item>
+    </titles>
+    <cosponsors />
+    <cboCostEstimates />
     <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Natural Resources.</text>
+      <text>Subcommittee Hearings Held.</text>
       <links />
+      <actionDate>2018-02-06</actionDate>
     </latestAction>
+    <updateDate>2018-08-28T19:58:23Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 231.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3, Clause 2 and Article I, Section 8,Clause 3[Page H53]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Native Americans</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>231</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2018-02-07</actionDate>
+          <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Alaska Native Claims Settlement Improvement Act of 2017</latestTitle>
+        <number>1481</number>
+      </item>
+    </relatedBills>
+    <title>Canyon Village Land Conveyance Act</title>
+    <congress>115</congress>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2018-02-06</actionDate>
+        <committee>
+          <systemCode>hsii24</systemCode>
+          <name>Indian, Insular and Alaska Native Affairs Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee Hearings Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii24</systemCode>
+          <name>Indian, Insular and Alaska Native Affairs Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Indian, Insular and Alaska Native Affairs.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <prayer>1</prayer>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+    </actions>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Native Americans</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>Alaska Natives and Hawaiians</name>
+          </item>
+          <item>
+            <name>Indian claims</name>
+          </item>
+          <item>
+            <name>Indian lands and resources rights</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
     <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <middleName>E.</middleName>
-        <state>AK</state>
         <bioguideId>Y000033</bioguideId>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <lastName>YOUNG</lastName>
+        <middleName>E.</middleName>
         <byRequestType />
-        <firstName>DON</firstName>
-        <party>R</party>
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <lastName>YOUNG</lastName>
+        <state>AK</state>
         <district>0</district>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <firstName>DON</firstName>
       </item>
     </sponsors>
-    <cosponsors />
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <calendarNumbers />
     <notes />
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

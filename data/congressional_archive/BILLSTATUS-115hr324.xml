@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <item>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <billType>HR</billType>
-    <billNumber>324</billNumber>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <createDate>2017-01-06T04:57:26Z</createDate>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KENNEDY:H.R. 324.Congress has the power to enact this legislation pursuantto the following:Article 8, Section--to provide for the general welfare andto regulate commerce among the states.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
-    <title>Medicaid Bump Act of 2017</title>
+    <amendments />
+    <latestAction>
+      <actionDate>2017-01-25</actionDate>
+      <text>Referred to the Subcommittee on Health.</text>
+      <links />
+    </latestAction>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -87,103 +38,286 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <congress>115</congress>
     <laws />
-    <updateDate>2017-01-23T16:01:18Z</updateDate>
     <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Kennedy</lastName>
+        <middleName>P.</middleName>
+        <bioguideId>K000379</bioguideId>
+        <fullName>Rep. Kennedy, Joseph P., III [D-MA-4]</fullName>
+        <identifiers>
+          <lisID>2172</lisID>
+          <gpoId />
+          <bioguideId>K000379</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>MA</state>
+        <firstName>Joseph</firstName>
+        <party>D</party>
+        <district>4</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
     <introducedDate>2017-01-05</introducedDate>
-    <calendarNumbers />
+    <relatedBills />
+    <cosponsors>
+      <item>
+        <bioguideId>L000570</bioguideId>
+        <lastName>Lujan</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>L000570</bioguideId>
+          <gpoId>8058</gpoId>
+          <lisID>1939</lisID>
+        </identifiers>
+        <district>3</district>
+        <middleName>Ray</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Lujan, Ben Ray [D-NM-3]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <state>NM</state>
+        <firstName>Ben</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>B000574</bioguideId>
+        <lastName>BLUMENAUER</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>B000574</bioguideId>
+          <gpoId>8116</gpoId>
+          <lisID>99</lisID>
+        </identifiers>
+        <district>3</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Blumenauer, Earl [D-OR-3]</fullName>
+        <sponsorshipDate>2017-05-22</sponsorshipDate>
+        <state>OR</state>
+        <firstName>EARL</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>T000469</bioguideId>
+        <lastName>Tonko</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>T000469</bioguideId>
+          <lisID>1942</lisID>
+          <gpoId>8082</gpoId>
+        </identifiers>
+        <district>20</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Tonko, Paul [D-NY-20]</fullName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <state>NY</state>
+        <firstName>Paul</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>M001163</bioguideId>
+        <lastName>Matsui</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1814</lisID>
+          <gpoId>7810</gpoId>
+          <bioguideId>M001163</bioguideId>
+        </identifiers>
+        <district>6</district>
+        <middleName>O.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Matsui, Doris O. [D-CA-6]</fullName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <state>CA</state>
+        <firstName>Doris</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>E000296</bioguideId>
+        <lastName>Evans</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2298</lisID>
+          <gpoId />
+          <bioguideId>E000296</bioguideId>
+        </identifiers>
+        <district>2</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Evans, Dwight [D-PA-2]</fullName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <state>PA</state>
+        <firstName>Dwight</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>E000215</bioguideId>
+        <lastName>ESHOO</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>355</lisID>
+          <gpoId>7819</gpoId>
+          <bioguideId>E000215</bioguideId>
+        </identifiers>
+        <district>18</district>
+        <middleName>G.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Eshoo, Anna G. [D-CA-18]</fullName>
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <state>CA</state>
+        <firstName>ANNA</firstName>
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <name>Health Subcommittee</name>
+          <systemCode>hsif14</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-05</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-05</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-05</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <systemCode>hsif00</systemCode>
-          <chamber>House</chamber>
-          <name>Energy and Commerce Committee</name>
-          <type>Standing</type>
           <activities>
             <item>
               <date>2017-01-05T15:02:10Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsif14</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-25T14:23:03Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <links />
-    </latestAction>
-    <cosponsors>
-      <item>
-        <sponsorshipWithdrawnDate />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <party>D</party>
-        <district>3</district>
-        <state>NM</state>
-        <fullName>Rep. Lujan, Ben Ray [D-NM-3]</fullName>
-        <identifiers>
-          <gpoId>8058</gpoId>
-          <lisID>1939</lisID>
-          <bioguideId>L000570</bioguideId>
-        </identifiers>
-        <lastName>Lujan</lastName>
-        <middleName>Ray</middleName>
-        <bioguideId>L000570</bioguideId>
-        <firstName>Ben</firstName>
-      </item>
-    </cosponsors>
-    <committeeReports />
-    <amendments />
-    <sponsors>
-      <item>
-        <state>MA</state>
-        <middleName>P.</middleName>
-        <party>D</party>
-        <identifiers>
-          <gpoId />
-          <lisID>2172</lisID>
-          <bioguideId>K000379</bioguideId>
-        </identifiers>
-        <bioguideId>K000379</bioguideId>
-        <byRequestType />
-        <firstName>Joseph</firstName>
-        <lastName>Kennedy</lastName>
-        <fullName>Rep. Kennedy, Joseph P., III [D-MA-4]</fullName>
-        <district>4</district>
-      </item>
-    </sponsors>
-    <recordedVotes />
+    <updateDate>2018-08-28T19:58:49Z</updateDate>
+    <version>1.0.0</version>
+    <title>Medicaid Bump Act of 2017</title>
+    <createDate>2017-01-06T04:57:26Z</createDate>
+    <billNumber>324</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KENNEDY:H.R. 324.Congress has the power to enact this legislation pursuantto the following:Article 8, Section--to provide for the general welfare andto regulate commerce among the states.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
     <policyArea>
       <name>Health</name>
     </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-05</actionDate>
+          <lastSummaryUpdateDate>2017-02-01T20:54:05Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Medicaid Bump Act of 2017</strong></p> <p>This bill amends title XIX (Medicaid) of the Social Security Act to&nbsp;increase the&nbsp;Federal Medical Assistance Percentage (FMAP) to 90% with respect to increased state Medicaid program expenditures for mental and behavioral health services. In general, a state's FMAP may range from 50% to 83% under current law.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
     <titles>
       <item>
-        <chamberName />
+        <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
+        <chamberName />
         <title>Medicaid Bump Act of 2017</title>
-        <chamberCode />
       </item>
       <item>
-        <chamberName />
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
+        <chamberName />
         <title>To amend title XIX of the Social Security Act to provide a higher Federal matching rate for increased expenditures under Medicaid for mental and behavioral health services, and for other purposes.</title>
-        <chamberCode />
       </item>
       <item>
-        <chamberName />
+        <chamberCode />
         <titleType>Display Title</titleType>
         <parentTitleType />
+        <chamberName />
         <title>Medicaid Bump Act of 2017</title>
+      </item>
+      <item>
         <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Medicaid Bump Act of 2017</title>
       </item>
     </titles>
   </bill>

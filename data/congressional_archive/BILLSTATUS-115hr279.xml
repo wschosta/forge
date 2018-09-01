@@ -1,144 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <billNumber>279</billNumber>
-    <cosponsors />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <updateDate>2017-01-13T13:32:12Z</updateDate>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-02-21</actionDate>
+      <text>Referred to the Subcommittee on Readiness.</text>
+    </latestAction>
+    <createDate>2017-01-05T04:47:33Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
       <item>
+        <actionDate>2017-02-21</actionDate>
+        <committee>
+          <systemCode>hsas03</systemCode>
+          <name>Readiness Subcommittee</name>
+        </committee>
+        <links />
         <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
+          <name>House committee actions</name>
+          <code>1</code>
         </sourceSystem>
-        <type>IntroReferral</type>
+        <text>Referred to the Subcommittee on Readiness.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <actionDate>2017-01-04</actionDate>
+        <links />
+        <text>Referred to the House Committee on Armed Services.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <committee>
           <systemCode>hsas00</systemCode>
           <name>Armed Services Committee</name>
         </committee>
-        <text>Referred to the House Committee on Armed Services.</text>
-        <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <actionDate>2017-01-04</actionDate>
-        <committee />
+        <links />
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <actionDate>2017-01-04</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
         <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
     </actions>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>HR</billType>
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <notes />
-    <policyArea />
+    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Child health</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Defense spending</name>
+          </item>
+          <item>
+            <name>Department of Defense</name>
+          </item>
+          <item>
+            <name>Elementary and secondary education</name>
+          </item>
+          <item>
+            <name>Family relationships</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Long-term, rehabilitative, and terminal care</name>
+          </item>
+          <item>
+            <name>Mental health</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+          <item>
+            <name>Transportation costs</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>279</billNumber>
     <title>Military Family Stability Act of 2017</title>
-    <createDate>2017-01-05T04:47:33Z</createDate>
-    <sponsors>
-      <item>
-        <lastName>Stefanik</lastName>
-        <identifiers>
-          <bioguideId>S001196</bioguideId>
-          <lisID>2263</lisID>
-          <gpoId />
-        </identifiers>
-        <byRequestType />
-        <middleName>M.</middleName>
-        <state>NY</state>
-        <firstName>Elise</firstName>
-        <party>R</party>
-        <fullName>Rep. Stefanik, Elise M. [R-NY-21]</fullName>
-        <district>21</district>
-        <bioguideId>S001196</bioguideId>
-      </item>
-    </sponsors>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. STEFANIK:H.R. 279.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8[Page H97]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <name>Armed Services Committee</name>
+          <chamber>House</chamber>
           <systemCode>hsas00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsas03</systemCode>
+              <name>Readiness Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-21T19:02:25Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <type>Standing</type>
+          <name>Armed Services Committee</name>
           <activities>
             <item>
-              <date>2017-01-04T15:01:30Z</date>
               <name>Referred to</name>
+              <date>2017-01-04T15:01:30Z</date>
             </item>
           </activities>
-          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:58:38Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-04</introducedDate>
+    <sponsors>
+      <item>
+        <middleName>M.</middleName>
+        <bioguideId>S001196</bioguideId>
+        <identifiers>
+          <lisID>2263</lisID>
+          <bioguideId>S001196</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Stefanik, Elise M. [R-NY-21]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Elise</firstName>
+        <state>NY</state>
+        <lastName>Stefanik</lastName>
+        <district>21</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
     <titles>
       <item>
-        <title>Military Family Stability Act of 2017</title>
+        <chamberCode />
         <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <title>Military Family Stability Act of 2017</title>
       </item>
       <item>
-        <title>To amend title 10, United States Code, to provide a period for the relocation of spouses and dependents of certain members of the Armed Forces undergoing a permanent change of station in order to ease and facilitate the relocation of military families, and for other purposes.</title>
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <title>To amend title 10, United States Code, to provide a period for the relocation of spouses and dependents of certain members of the Armed Forces undergoing a permanent change of station in order to ease and facilitate the relocation of military families, and for other purposes.</title>
       </item>
       <item>
-        <title>Military Family Stability Act of 2017</title>
+        <chamberCode />
         <titleType>Display Title</titleType>
         <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <title>Military Family Stability Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Military Family Stability Act of 2017</title>
       </item>
     </titles>
     <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Armed Services.</text>
-      <actionDate>2017-01-04</actionDate>
-    </latestAction>
-    <calendarNumbers />
-    <introducedDate>2017-01-04</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-04</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-31T20:21:28Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Military Family Stability Act of 2017</strong></p> <p>This bill allows a member of the Armed Forces undergoing a permanent change of station and the member's spouse to elect jointly that the spouse may relocate to the new location at the time during the covered relocation period as the member and spouse jointly select.</p> <p>A member and spouse may make such an election if: </p> <ul> <li>the spouse is employed, or enrolled in a degree-, certificate-, or license-granting program, at the beginning of the covered relocation period; </li> <li>the member and spouse have one or more children in school; </li> <li>the spouse or children are covered under the Exceptional Family Member Program; </li> <li>the member and spouse are caring for an immediate family member with a chronic or long-term illness; or </li> <li>the member is undergoing a permanent change of station as an individual augmentee or other deployment arrangement.</li> </ul> <p>Families with other needs may receive exceptions granted by military commanders on a case-by-case basis.</p> <p>A member undergoing a permanent change of station who has one or more specified dependents and is no longer married to the individual who is or was the parent of such dependents at the beginning of the covered period of relocation may make an election that such dependents relocate to the new location: </p> <ul> <li>by the member alone, if the former spouse is dead or has no custodial rights, or </li> <li>by the member and the former spouse jointly in all other circumstances.</li> </ul> <p> A member may not make: </p> <ul> <li> more than three elections; or </li> <li>any election unless the member's period of obligated service, or the time remaining under the member's enlistment contract, at the time of election is at least 24 months.</li> </ul> <p>The bill prescribes related housing and housing allowance requirements. </p> <p>Transportation allowances authorized for personal property of a member and spouse may be allocated as the member and spouse select.</p> <p>The Department of Defense shall establish a single application approval process for coverage under this bill, which shall apply uniformly among the Armed Forces.</p>]]></text>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">

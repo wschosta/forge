@@ -1,32 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <notes />
+    <title>Expanding Care for Veterans Act</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsvr00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-03T17:20:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Veterans' Affairs Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr03</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-19T20:12:36Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:57:54Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr03</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <identifiers>
+          <bioguideId>B001285</bioguideId>
+          <lisID>2106</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001285</bioguideId>
+        <lastName>Brownley</lastName>
+        <firstName>Julia</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>CA</state>
+        <district>26</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. BROWNLEY of California:H.R. 102.Congress has the power to enact this legislation pursuantto the following:Article I, Section VIII of the U.S. Constitution[Page H49]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Armed Forces and National Security</name>
     </policyArea>
-    <congress>115</congress>
-    <cosponsors>
+    <recordedVotes />
+    <billNumber>102</billNumber>
+    <titles>
       <item>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>2</district>
-        <bioguideId>K000382</bioguideId>
-        <identifiers>
-          <lisID>2145</lisID>
-          <gpoId />
-          <bioguideId>K000382</bioguideId>
-        </identifiers>
-        <firstName>Ann</firstName>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
-        <state>NH</state>
-        <middleName>M.</middleName>
-        <lastName>Kuster</lastName>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Expanding Care for Veterans Act</title>
+        <parentTitleType />
       </item>
-    </cosponsors>
-    <relatedBills />
-    <title>Expanding Care for Veterans Act</title>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To expand the research and education on and delivery of complementary and alternative medicine to veterans, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Expanding Care for Veterans Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Expanding Care for Veterans Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
     <originChamber>House</originChamber>
     <subjects>
       <billSubjects>
@@ -82,144 +212,138 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <notes />
-    <billType>HR</billType>
-    <titles>
+    <cosponsors>
       <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Expanding Care for Veterans Act</title>
-        <chamberCode />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To expand the research and education on and delivery of complementary and alternative medicine to veterans, and for other purposes.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>Expanding Care for Veterans Act</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Veterans' Affairs.</text>
-    </latestAction>
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
-    <createDate>2017-01-04T07:01:10Z</createDate>
-    <cboCostEstimates />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <state>CA</state>
-        <party>D</party>
-        <district>26</district>
-        <lastName>Brownley</lastName>
-        <middleName />
-        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <lastName>Kuster</lastName>
+        <state>NH</state>
+        <firstName>Ann</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <district>2</district>
+        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
         <identifiers>
-          <bioguideId>B001285</bioguideId>
+          <lisID>2145</lisID>
+          <bioguideId>K000382</bioguideId>
           <gpoId />
-          <lisID>2106</lisID>
         </identifiers>
-        <bioguideId>B001285</bioguideId>
-        <firstName>Julia</firstName>
-        <byRequestType />
+        <bioguideId>K000382</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
       </item>
-    </sponsors>
+      <item>
+        <lastName>SCHIFF</lastName>
+        <state>CA</state>
+        <firstName>ADAM</firstName>
+        <sponsorshipDate>2017-03-27</sponsorshipDate>
+        <district>28</district>
+        <fullName>Rep. Schiff, Adam B. [D-CA-28]</fullName>
+        <identifiers>
+          <gpoId>7834</gpoId>
+          <lisID>1635</lisID>
+          <bioguideId>S001150</bioguideId>
+        </identifiers>
+        <bioguideId>S001150</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>B.</middleName>
+      </item>
+      <item>
+        <lastName>Carson</lastName>
+        <state>IN</state>
+        <firstName>Andre</firstName>
+        <sponsorshipDate>2017-04-27</sponsorshipDate>
+        <district>7</district>
+        <fullName>Rep. Carson, Andre [D-IN-7]</fullName>
+        <identifiers>
+          <bioguideId>C001072</bioguideId>
+          <gpoId>7946</gpoId>
+          <lisID>1889</lisID>
+        </identifiers>
+        <bioguideId>C001072</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>O'Rourke</lastName>
+        <state>TX</state>
+        <firstName>Beto</firstName>
+        <sponsorshipDate>2017-05-03</sponsorshipDate>
+        <district>16</district>
+        <fullName>Rep. O'Rourke, Beto [D-TX-16]</fullName>
+        <identifiers>
+          <lisID>2162</lisID>
+          <gpoId />
+          <bioguideId>O000170</bioguideId>
+        </identifiers>
+        <bioguideId>O000170</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Beatty</lastName>
+        <state>OH</state>
+        <firstName>Joyce</firstName>
+        <sponsorshipDate>2017-06-08</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Beatty, Joyce [D-OH-3]</fullName>
+        <identifiers>
+          <bioguideId>B001281</bioguideId>
+          <lisID>2153</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001281</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Raskin</lastName>
+        <state>MD</state>
+        <firstName>Jamie</firstName>
+        <sponsorshipDate>2017-10-03</sponsorshipDate>
+        <district>8</district>
+        <fullName>Rep. Raskin, Jamie [D-MD-8]</fullName>
+        <identifiers>
+          <lisID>2332</lisID>
+          <bioguideId>R000606</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>R000606</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
     <calendarNumbers />
-    <updateDate>2017-01-17T21:01:33Z</updateDate>
-    <billNumber>102</billNumber>
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hsvr00</systemCode>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:20:50Z</date>
-            </item>
-          </activities>
-          <name>Veterans' Affairs Committee</name>
-          <subcommittees />
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <actions>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
-          <systemCode>hsvr00</systemCode>
-          <name>Veterans' Affairs Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Veterans' Affairs.</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-      <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-      </item>
-    </actions>
+    <latestAction>
+      <actionDate>2017-01-19</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <amendments />
     <summaries>
       <billSummaries>
         <item>
-          <name>Introduced in House</name>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-12T19:13:35Z</lastSummaryUpdateDate>
           <text><![CDATA[<p><strong>Expanding Care for Veterans Act</strong></p> <p>This bill directs the Department of Veterans Affairs (VA) to develop a plan to expand the scope of VA's research and education on, and delivery and integration of, complementary and alternative medicine services.</p> <p>The VA shall carry out, through its Office of Patient Centered Care and Cultural Transformation, a three-year program to: (1) assess the feasibility and advisability of integrating the delivery of selected complementary and alternative medicine services with other VA health care services for veterans, and (2) identify and resolve barriers to providing such services and integrating them with other VA health services.</p> <p>Such program shall be conducted at not fewer than 15 VA medical centers by integrating the provision of complementary and alternative medicine services with other VA health care services provided to veterans who have a mental health condition, experience chronic pain, or have a chronic condition. Veterans' participation shall be voluntary.</p> <p>The VA shall contract with a qualified independent entity for comprehensive studies of the barriers encountered by veterans in receiving, and by administrators and clinicians in providing, complementary and alternative medicine services through the VA. Such studies shall be conducted through surveys of veterans and VA administrators and clinicians.</p> <p>The VA shall carry out a three-year program awarding grants to public or private nonprofit entities to assess the feasibility and advisability of using wellness programs to complement the provision of mental health care to veterans and family members who are eligible for readjustment counseling from the VA.</p>]]></text>
           <actionDesc>Introduced in House</actionDesc>
           <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-12T19:13:35Z</lastSummaryUpdateDate>
-          <actionDate>2017-01-03</actionDate>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
         </item>
       </billSummaries>
     </summaries>
+    <createDate>2017-01-04T07:01:10Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

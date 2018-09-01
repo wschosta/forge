@@ -1,138 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <notes />
+    <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
     <committees>
       <billCommittees>
         <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-05T15:04:05Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
-          <name>Foreign Affairs Committee</name>
           <chamber>House</chamber>
-          <systemCode>hsfa00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
         </item>
       </billCommittees>
     </committees>
     <committeeReports />
-    <congress>115</congress>
-    <relatedBills />
-    <cosponsors />
-    <policyArea />
     <cboCostEstimates />
-    <notes />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:53:11Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-05</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-05</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-05</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
+        <identifiers>
+          <gpoId>7814</gpoId>
+          <lisID>1501</lisID>
+          <bioguideId>L000551</bioguideId>
+        </identifiers>
+        <bioguideId>L000551</bioguideId>
+        <lastName>LEE</lastName>
+        <firstName>BARBARA</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>CA</state>
+        <district>13</district>
+      </item>
+    </sponsors>
+    <billType>HCONRES</billType>
+    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
     <recordedVotes />
-    <updateDate>2017-01-06T10:04:55Z</updateDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <originChamber>House</originChamber>
+    <billNumber>6</billNumber>
     <titles>
       <item>
-        <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
         <titleType>Official Title as Introduced</titleType>
+        <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
         <parentTitleType />
         <chamberCode />
         <chamberName />
       </item>
       <item>
-        <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
         <titleType>Display Title</titleType>
+        <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
         <parentTitleType />
         <chamberCode />
         <chamberName />
       </item>
     </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors />
+    <introducedDate>2017-01-05</introducedDate>
+    <calendarNumbers />
     <latestAction>
       <actionDate>2017-01-05</actionDate>
       <links />
       <text>Referred to the House Committee on Foreign Affairs.</text>
     </latestAction>
-    <calendarNumbers />
-    <billType>HCONRES</billType>
-    <billNumber>6</billNumber>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <createDate>2017-01-06T04:57:25Z</createDate>
-    <introducedDate>2017-01-05</introducedDate>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <actionDate>2017-01-05</actionDate>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <committee>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-        </committee>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-05</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-05</actionDate>
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-      </item>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
     <amendments />
-    <sponsors>
-      <item>
-        <identifiers>
-          <gpoId>7814</gpoId>
-          <bioguideId>L000551</bioguideId>
-          <lisID>1501</lisID>
-        </identifiers>
-        <party>D</party>
-        <firstName>BARBARA</firstName>
-        <bioguideId>L000551</bioguideId>
-        <byRequestType />
-        <district>13</district>
-        <state>CA</state>
-        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
-        <middleName />
-        <lastName>LEE</lastName>
-      </item>
-    </sponsors>
-    <title>Expressing the sense of Congress that the United States should provide, on an annual basis, an amount equal to at least one percent of United States gross domestic product for nonmilitary foreign assistance programs.</title>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p>Recognizes the importance of foreign assistance programs in promoting national security, demonstrating the American people's humanitarian spirit, and improving U.S. credibility in world affairs.</p> <p>Expresses support for providing at least 1% of U.S. gross domestic product (GDP) each year for nonmilitary foreign assistance.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-30T20:35:36Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-05</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-06T04:57:25Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

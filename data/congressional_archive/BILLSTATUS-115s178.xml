@@ -1,194 +1,668 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-20</introducedDate>
-    <cosponsors>
+    <amendments>
+      <amendment>
+        <type>SAMDT</type>
+        <number>742</number>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <updateDate>2018-08-28T20:23:00Z</updateDate>
+        <proposedDate>2017-08-01T04:00:00Z</proposedDate>
+        <description />
+        <sponsors>
+          <item>
+            <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
+            <firstName>CHARLES</firstName>
+            <lastName>GRASSLEY</lastName>
+            <state>IA</state>
+            <bioguideId>G000386</bioguideId>
+            <party>R</party>
+            <identifiers>
+              <lisID>457</lisID>
+              <gpoId>8316</gpoId>
+              <bioguideId>G000386</bioguideId>
+            </identifiers>
+            <middleName>ERNEST</middleName>
+          </item>
+        </sponsors>
+        <number>742</number>
+        <submittedDate>2017-08-01T04:00:00Z</submittedDate>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <titles />
+        <congress>115</congress>
+        <amendedAmendment />
+        <createDate>2017-08-02T04:36:33Z</createDate>
+        <chamber>Senate</chamber>
+        <actions>
+          <actions>
+            <item>
+              <actionDate>2017-08-01</actionDate>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>S.Amdt.742</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>SA 742</name>
+                </link>
+              </links>
+              <sourceSystem>
+                <code>0</code>
+                <name>Senate</name>
+              </sourceSystem>
+              <text>Amendment SA 742 agreed to in Senate by Unanimous Consent.</text>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2017-08-01</actionDate>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>S.Amdt.742</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4681</url>
+                  <name>S4681</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>SA 742</name>
+                </link>
+              </links>
+              <sourceSystem>
+                <code>0</code>
+                <name>Senate</name>
+              </sourceSystem>
+              <text>Amendment SA 742 proposed by Senator Portman for Senator Grassley. (consideration: CR S4681; text: CR S4681) To improve the bill.</text>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2017-08-01</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <text>Senate amendment agreed to: Amendment SA 742 agreed to in Senate by Unanimous Consent.</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>S.Amdt.742</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>SA 742</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionDate>2017-08-01</actionDate>
+              <actionCode>94000</actionCode>
+            </item>
+            <item>
+              <text>Senate amendment proposed (on the floor): Amendment SA 742 proposed by Senator Portman for Senator Grassley.(consideration: CR S4681; text: CR S4681)</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>S.Amdt.742</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4681</url>
+                  <name>S4681</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/senate-amendment/742</url>
+                  <name>SA 742</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionDate>2017-08-01</actionDate>
+              <actionCode>93000</actionCode>
+            </item>
+            <item>
+              <text>Senate amendment submitted</text>
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionDate>2017-08-01</actionDate>
+              <actionCode>91000</actionCode>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <senateAmendmentSubmitted>1</senateAmendmentSubmitted>
+            <amendmentAgreedTo>1</amendmentAgreedTo>
+            <senateAmendmentProposedOnTheFloor>1</senateAmendmentProposedOnTheFloor>
+            <senateAmendmentAgreedTo>1</senateAmendmentAgreedTo>
+            <amendmentProposed>1</amendmentProposed>
+          </actionTypeCounts>
+          <actionByCounts>
+            <senate>5</senate>
+          </actionByCounts>
+          <count>6</count>
+        </actions>
+        <amendedBill>
+          <congress>115</congress>
+          <originChamberCode>S</originChamberCode>
+          <type>S</type>
+          <title>Elder Abuse Prevention and Prosecution Act</title>
+          <originChamber>Senate</originChamber>
+          <number>178</number>
+        </amendedBill>
+        <type>SAMDT</type>
+        <links />
+        <notes />
+        <purpose>To improve the bill.</purpose>
+        <description />
+        <latestAction>
+          <actionDate>2017-08-01</actionDate>
+          <text>Amendment SA 742 agreed to in Senate by Unanimous Consent.</text>
+        </latestAction>
+        <congress>115</congress>
+        <purpose>To improve the bill.</purpose>
+      </amendment>
+    </amendments>
+    <billNumber>178</billNumber>
+    <laws>
       <item>
-        <state>CT</state>
-        <bioguideId>B001277</bioguideId>
-        <party>D</party>
-        <middleName />
-        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
-        <lastName>Blumenthal</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>Richard</firstName>
-        <identifiers>
-          <gpoId>8332</gpoId>
-          <bioguideId>B001277</bioguideId>
-          <lisID>2076</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
+        <type>Public Law</type>
+        <number>115-70</number>
       </item>
+    </laws>
+    <cboCostEstimates>
       <item>
-        <state>NC</state>
-        <bioguideId>T000476</bioguideId>
-        <party>R</party>
-        <middleName>Roland</middleName>
-        <fullName>Sen. Tillis, Thom [R-NC]</fullName>
-        <lastName>Tillis</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>Thomas</firstName>
-        <identifiers>
-          <gpoId />
-          <lisID>2291</lisID>
-          <bioguideId>T000476</bioguideId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
+        <url>https://www.cbo.gov/publication/52434</url>
+        <pubDate>2017-02-21T14:43:00Z</pubDate>
+        <title>S. 178, Elder Abuse Prevention and Prosecution Act</title>
       </item>
+    </cboCostEstimates>
+    <originChamber>Senate</originChamber>
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2018-01-09T20:48:13Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-20</actionDate>
+          <text><![CDATA[<p><b>Elder Abuse Prevention and Prosecution Act</b></p> <p>This bill establishes requirements for the Department of Justice, the Federal Trade Commission, and the Department of Health and Human Services (HHS) with respect to preventing, investigating, and prosecuting elder abuse crimes and enforcing elder abuse laws. </p> <p>It amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to specify that HHS may award adult protective services demonstration grants to state courts to improve adult guardianship and conservatorship proceedings. </p> <p><i>Robert Matava Elder Abuse Prosecution Act of </i><i>2017</i> <p>The bill amends the federal criminal code to expand prohibited telemarketing fraud to include &quot;telemarketing or email marketing&quot; fraud. It broadens the definition of telemarketing or email marketing. </p> <p> A defendant convicted of telemarketing or email marketing fraud that targets or victimizes a person over age 55 is subject to an enhanced criminal penalty and mandatory forfeiture. </p> <p>The bill also adds health care fraud to the list of fraud offenses subject to enhanced penalties. </p> <p>The Government Accountability Office must report on: (1) elder justice programs and initiatives in the federal criminal justice system; and (2) the exploitation of older adults in global drug trafficking schemes and criminal enterprises, the incarceration of exploited older adults in foreign court systems, and the federal government's intervention on behalf of incarcerated older adult victims who are U.S. citizens.</p>]]></text>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-09-14T18:58:15Z</lastSummaryUpdateDate>
+          <actionDate>2017-03-23</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Elder Abuse Prevention and Prosecution Act</b></p> <p>TITLE I--SUPPORTING FEDERAL CASES INVOLVING ELDER JUSTICE</p> <p>(Sec. 101) This bill establishes requirements for the Department of Justice (DOJ) with respect to investigating and prosecuting elder abuse crimes and enforcing elder abuse laws. Specifically, DOJ must: </p> <ul> <li>designate Elder Justice Coordinators in federal judicial districts and at DOJ, </li> <li>implement comprehensive training for Federal Bureau of Investigation agents, and</li> <li>establish a working group to provide policy advice.</li> </ul> <p>The Executive Office for United States Attorneys must operate a resource group to assist prosecutors in pursuing elder abuse cases. </p> <p>The Federal Trade Commission must designate an Elder Justice Coordinator within its Bureau of Consumer Protection.</p> <p>TITLE II--IMPROVED DATA COLLECTION AND FEDERAL COORDINATION</p> <p>(Sec. 201) DOJ must establish best practices for data collection on elder abuse. </p> <p>(Sec. 202) DOJ must collect and publish data on elder abuse cases and investigations. The Department of Health and Human Services (HHS) must provide for publication data on elder abuse cases referred to adult protective services. <p>TITLE III--ENHANCED VICTIM ASSISTANCE TO ELDER ABUSE SURVIVORS <p>(Sec. 301) This section expresses the sense of the Senate that: (1) elder abuse involves exploitation of potentially vulnerable individuals; (2) combatting elder abuse requires support for victims and prevention; and (3) the Senate supports a multipronged approach to prevent elder abuse, protect victims, and prosecute perpetrators of elder abuse crimes. <p>(Sec. 302) DOJ's Office for Victims of Crime must report to Congress on the nature, extent, and amount of funding under the Victims of Crime Act of 1984 for victims of crime who are elders. <p>TITLE IV--ROBERT MATAVA ELDER ABUSE PROSECUTION ACT OF 2017 <p><i>Robert Matava Elder Abuse Prosecution Act of </i><i>2017</i></p> <p>This bill amends the federal criminal code to expand prohibited telemarketing fraud to include &quot;telemarketing or email marketing&quot; fraud. It expands the definition of telemarketing or email marketing to include measures to induce investment for financial profit, participation in a business opportunity, or commitment to a loan.</p> <p> A defendant convicted of telemarketing or email marketing fraud that targets or victimizes a person over age 55 is subject to an enhanced criminal penalty and mandatory forfeiture. </p> <p>The bill adds health care fraud to the list of fraud offenses subject to enhanced penalties.</p> <p>(Sec. 403) DOJ, in coordination with the Elder Justice Coordinating Council, must provide information, training, and technical assistance to help states and local governments investigate, prosecute, prevent, and mitigate the impact of elder abuse, exploitation, and neglect.</p> <p>(Sec. 404) It grants congressional consent to states to enter into cooperative agreements or compacts to promote and to enforce elder abuse laws. The State Justice Institute must submit legislative proposals to Congress to facilitate such agreements and compacts.</p> <p>TITLE V--MISCELLANEOUS</p> <p>(Sec. 501) This section amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to specify that HHS may award adult protective services demonstration grants to the highest courts of states to assess adult guardianship and conservatorship proceedings and to implement necessary changes. The highest court of a state that receives a demonstration grant must collaborate with the state's unit on aging and adult protective services agency. </p> <p>(Sec. 502) The Government Accountability Office (GAO) must review and report on elder justice programs and initiatives in the federal criminal justice system. The GAO must also report on the exploitation of older adults in global drug trafficking schemes and criminal enterprises, the incarceration of exploited older adults in foreign court systems, and the federal government's intervention on behalf of incarcerated older adult victims who are U.S. citizens. </p> <p>(Sec. 503) DOJ must report to Congress on its outreach to state and local law enforcement agencies on the process for collaborating with the federal government to investigate and prosecute interstate and international elder financial exploitation cases.</p> <p>(Sec. 504) DOJ must publish model power of attorney legislation for the purpose of preventing elder abuse.</p> <p>(Sec. 505) DOJ must publish best practices for improving guardianship proceedings and model legislation related to guardianship proceedings for the purpose of preventing elder abuse. </p>]]></text>
+          <updateDate>2017-03-23T12:31:06Z</updateDate>
+          <name>Reported to Senate without amendment</name>
+          <versionCode>80</versionCode>
+          <actionDesc>Reported to Senate without amendment</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2017-09-25T19:41:15Z</lastSummaryUpdateDate>
+          <actionDate>2017-08-01</actionDate>
+          <text><![CDATA[<p><b>Elder Abuse Prevention and Prosecution Act</b></p> <p>TITLE I--SUPPORTING FEDERAL CASES INVOLVING ELDER JUSTICE</p> <p>(Sec. 101) This bill establishes requirements for the Department of Justice (DOJ) with respect to investigating and prosecuting elder abuse crimes and enforcing elder abuse laws. Specifically, DOJ must: </p> <ul> <li>designate Elder Justice Coordinators in federal judicial districts and at DOJ, </li> <li>implement comprehensive training for Federal Bureau of Investigation agents, and</li> <li>establish a working group to provide policy advice.</li> </ul> <p>The Executive Office for United States Attorneys must operate a resource group to assist prosecutors in pursuing elder abuse cases. </p> <p>The Federal Trade Commission must designate an Elder Justice Coordinator within its Bureau of Consumer Protection.</p> <p>TITLE II--IMPROVED DATA COLLECTION AND FEDERAL COORDINATION</p> <p>(Sec. 201) DOJ must establish best practices for data collection on elder abuse. </p> <p>(Sec. 202) DOJ must collect and publish data on elder abuse cases and investigations. The Department of Health and Human Services (HHS) must provide for publication data on elder abuse cases referred to adult protective services. <p>TITLE III--ENHANCED VICTIM ASSISTANCE TO ELDER ABUSE SURVIVORS <p>(Sec. 301) This section expresses the sense of the Senate that: (1) elder abuse involves exploitation of potentially vulnerable individuals; (2) combatting elder abuse requires support for victims and prevention; and (3) the Senate supports a multipronged approach to prevent elder abuse, protect victims, and prosecute perpetrators of elder abuse crimes. <p>(Sec. 302) DOJ's Office for Victims of Crime must report to Congress on the nature, extent, and amount of funding under the Victims of Crime Act of 1984 for victims of crime who are elders. <p>TITLE IV--ROBERT MATAVA ELDER ABUSE PROSECUTION ACT OF 2017 <p><i>Robert Matava Elder Abuse Prosecution Act of </i><i>2017</i></p> <p>This bill amends the federal criminal code to expand prohibited telemarketing fraud to include &quot;telemarketing or email marketing&quot; fraud. It expands the definition of telemarketing or email marketing to include measures to induce investment for financial profit, participation in a business opportunity, or commitment to a loan.</p> <p> A defendant convicted of telemarketing or email marketing fraud that targets or victimizes a person over age 55 is subject to an enhanced criminal penalty and mandatory forfeiture. </p> <p>The bill adds health care fraud to the list of fraud offenses subject to enhanced penalties.</p> <p>(Sec. 403) DOJ, in coordination with the Elder Justice Coordinating Council, must provide information, training, and technical assistance to help states and local governments investigate, prosecute, prevent, and mitigate the impact of elder abuse, exploitation, and neglect.</p> <p>(Sec. 404) It grants congressional consent to states to enter into cooperative agreements or compacts to promote and to enforce elder abuse laws. The State Justice Institute must submit legislative proposals to Congress to facilitate such agreements and compacts.</p> <p>TITLE V--MISCELLANEOUS</p> <p>(Sec. 501) This section amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to specify that HHS may award adult protective services demonstration grants to the highest courts of states to assess adult guardianship and conservatorship proceedings and to implement necessary changes. The highest court of a state that receives a demonstration grant must collaborate with the state's unit on aging and adult protective services agency. </p> <p>(Sec. 502) The Government Accountability Office (GAO) must review and report on elder justice programs and initiatives in the federal criminal justice system. The GAO must also report on: (1) federal government efforts to monitor the exploitation of older adults in global drug trafficking schemes and criminal enterprises, the incarceration of exploited older adults who are U.S. citizens in foreign court systems, and the total number of elder abuse cases pending in the United States; and (2) the results of federal government intervention with foreign officials on behalf of U.S. citizens who are elder abuse victims in international criminal enterprises. </p> <p>(Sec. 503) DOJ must report to Congress on its outreach to state and local law enforcement agencies on the process for collaborating with the federal government to investigate and prosecute interstate and international elder financial exploitation cases.</p> <p>(Sec. 504) DOJ must publish model power of attorney legislation for the purpose of preventing elder abuse.</p> <p>(Sec. 505) DOJ must publish best practices for improving guardianship proceedings and model legislation related to guardianship proceedings for the purpose of preventing elder abuse. </p>]]></text>
+          <updateDate>2017-08-01T12:32:18Z</updateDate>
+          <name>Passed Senate amended</name>
+          <versionCode>35</versionCode>
+          <actionDesc>Passed Senate amended</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2018-02-09T17:57:39Z</lastSummaryUpdateDate>
+          <actionDate>2017-10-03</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was passed by the Senate on August 1, 2017. The summary of that version is repeated here.)</p> <p><b>Elder Abuse Prevention and Prosecution Act</b></p> <p>TITLE I--SUPPORTING FEDERAL CASES INVOLVING ELDER JUSTICE</p> <p>(Sec. 101) This bill establishes requirements for the Department of Justice (DOJ) with respect to investigating and prosecuting elder abuse crimes and enforcing elder abuse laws. Specifically, DOJ must: </p> <ul> <li>designate Elder Justice Coordinators in federal judicial districts and at DOJ, </li> <li>implement comprehensive training for Federal Bureau of Investigation agents, and</li> <li>establish a working group to provide policy advice.</li> </ul> <p>The Executive Office for United States Attorneys must operate a resource group to assist prosecutors in pursuing elder abuse cases. </p> <p>The Federal Trade Commission must designate an Elder Justice Coordinator within its Bureau of Consumer Protection.</p> <p>TITLE II--IMPROVED DATA COLLECTION AND FEDERAL COORDINATION</p> <p>(Sec. 201) DOJ must establish best practices for data collection on elder abuse. </p> <p>(Sec. 202) DOJ must collect and publish data on elder abuse cases and investigations. The Department of Health and Human Services (HHS) must provide for publication data on elder abuse cases referred to adult protective services. <p>TITLE III--ENHANCED VICTIM ASSISTANCE TO ELDER ABUSE SURVIVORS <p>(Sec. 301) This section expresses the sense of the Senate that: (1) elder abuse involves exploitation of potentially vulnerable individuals; (2) combatting elder abuse requires support for victims and prevention; and (3) the Senate supports a multipronged approach to prevent elder abuse, protect victims, and prosecute perpetrators of elder abuse crimes. <p>(Sec. 302) DOJ's Office for Victims of Crime must report to Congress on the nature, extent, and amount of funding under the Victims of Crime Act of 1984 for victims of crime who are elders. <p>TITLE IV--ROBERT MATAVA ELDER ABUSE PROSECUTION ACT OF 2017 <p><i>Robert Matava Elder Abuse Prosecution Act of </i><i>2017</i></p> <p>This bill amends the federal criminal code to expand prohibited telemarketing fraud to include &quot;telemarketing or email marketing&quot; fraud. It expands the definition of telemarketing or email marketing to include measures to induce investment for financial profit, participation in a business opportunity, or commitment to a loan.</p> <p> A defendant convicted of telemarketing or email marketing fraud that targets or victimizes a person over age 55 is subject to an enhanced criminal penalty and mandatory forfeiture. </p> <p>The bill adds health care fraud to the list of fraud offenses subject to enhanced penalties.</p> <p>(Sec. 403) DOJ, in coordination with the Elder Justice Coordinating Council, must provide information, training, and technical assistance to help states and local governments investigate, prosecute, prevent, and mitigate the impact of elder abuse, exploitation, and neglect.</p> <p>(Sec. 404) It grants congressional consent to states to enter into cooperative agreements or compacts to promote and to enforce elder abuse laws. The State Justice Institute must submit legislative proposals to Congress to facilitate such agreements and compacts.</p> <p>TITLE V--MISCELLANEOUS</p> <p>(Sec. 501) This section amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to specify that HHS may award adult protective services demonstration grants to the highest courts of states to assess adult guardianship and conservatorship proceedings and to implement necessary changes. The highest court of a state that receives a demonstration grant must collaborate with the state's unit on aging and adult protective services agency. </p> <p>(Sec. 502) The Government Accountability Office (GAO) must review and report on elder justice programs and initiatives in the federal criminal justice system. The GAO must also report on: (1) federal government efforts to monitor the exploitation of older adults in global drug trafficking schemes and criminal enterprises, the incarceration of exploited older adults who are U.S. citizens in foreign court systems, and the total number of elder abuse cases pending in the United States; and (2) the results of federal government intervention with foreign officials on behalf of U.S. citizens who are elder abuse victims in international criminal enterprises. </p> <p>(Sec. 503) DOJ must report to Congress on its outreach to state and local law enforcement agencies on the process for collaborating with the federal government to investigate and prosecute interstate and international elder financial exploitation cases.</p> <p>(Sec. 504) DOJ must publish model power of attorney legislation for the purpose of preventing elder abuse.</p> <p>(Sec. 505) DOJ must publish best practices for improving guardianship proceedings and model legislation related to guardianship proceedings for the purpose of preventing elder abuse. </p>]]></text>
+          <updateDate>2017-10-03T13:05:02Z</updateDate>
+          <name>Passed House without amendment</name>
+          <versionCode>81</versionCode>
+          <actionDesc>Passed House without amendment</actionDesc>
+        </item>
+        <item>
+          <lastSummaryUpdateDate>2018-02-09T23:18:10Z</lastSummaryUpdateDate>
+          <actionDate>2017-10-18</actionDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was passed by the Senate on August 1, 2017. The summary of that version is repeated here.)</p> <p><b>Elder Abuse Prevention and Prosecution Act</b></p> <p>TITLE I--SUPPORTING FEDERAL CASES INVOLVING ELDER JUSTICE</p> <p>(Sec. 101) This bill establishes requirements for the Department of Justice (DOJ) with respect to investigating and prosecuting elder abuse crimes and enforcing elder abuse laws. Specifically, DOJ must: </p> <ul> <li>designate Elder Justice Coordinators in federal judicial districts and at DOJ, </li> <li>implement comprehensive training for Federal Bureau of Investigation agents, and</li> <li>establish a working group to provide policy advice.</li> </ul> <p>The Executive Office for United States Attorneys must operate a resource group to assist prosecutors in pursuing elder abuse cases. </p> <p>The Federal Trade Commission must designate an Elder Justice Coordinator within its Bureau of Consumer Protection.</p> <p>TITLE II--IMPROVED DATA COLLECTION AND FEDERAL COORDINATION</p> <p>(Sec. 201) DOJ must establish best practices for data collection on elder abuse. </p> <p>(Sec. 202) DOJ must collect and publish data on elder abuse cases and investigations. The Department of Health and Human Services (HHS) must provide for publication data on elder abuse cases referred to adult protective services. <p>TITLE III--ENHANCED VICTIM ASSISTANCE TO ELDER ABUSE SURVIVORS <p>(Sec. 301) This section expresses the sense of the Senate that: (1) elder abuse involves exploitation of potentially vulnerable individuals; (2) combatting elder abuse requires support for victims and prevention; and (3) the Senate supports a multipronged approach to prevent elder abuse, protect victims, and prosecute perpetrators of elder abuse crimes. <p>(Sec. 302) DOJ's Office for Victims of Crime must report to Congress on the nature, extent, and amount of funding under the Victims of Crime Act of 1984 for victims of crime who are elders. <p>TITLE IV--ROBERT MATAVA ELDER ABUSE PROSECUTION ACT OF 2017 <p><i>Robert Matava Elder Abuse Prosecution Act of </i><i>2017</i></p> <p>This bill amends the federal criminal code to expand prohibited telemarketing fraud to include &quot;telemarketing or email marketing&quot; fraud. It expands the definition of telemarketing or email marketing to include measures to induce investment for financial profit, participation in a business opportunity, or commitment to a loan.</p> <p> A defendant convicted of telemarketing or email marketing fraud that targets or victimizes a person over age 55 is subject to an enhanced criminal penalty and mandatory forfeiture. </p> <p>The bill adds health care fraud to the list of fraud offenses subject to enhanced penalties.</p> <p>(Sec. 403) DOJ, in coordination with the Elder Justice Coordinating Council, must provide information, training, and technical assistance to help states and local governments investigate, prosecute, prevent, and mitigate the impact of elder abuse, exploitation, and neglect.</p> <p>(Sec. 404) It grants congressional consent to states to enter into cooperative agreements or compacts to promote and to enforce elder abuse laws. The State Justice Institute must submit legislative proposals to Congress to facilitate such agreements and compacts.</p> <p>TITLE V--MISCELLANEOUS</p> <p>(Sec. 501) This section amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to specify that HHS may award adult protective services demonstration grants to the highest courts of states to assess adult guardianship and conservatorship proceedings and to implement necessary changes. The highest court of a state that receives a demonstration grant must collaborate with the state's unit on aging and adult protective services agency. </p> <p>(Sec. 502) The Government Accountability Office (GAO) must review and report on elder justice programs and initiatives in the federal criminal justice system. The GAO must also report on: (1) federal government efforts to monitor the exploitation of older adults in global drug trafficking schemes and criminal enterprises, the incarceration of exploited older adults who are U.S. citizens in foreign court systems, and the total number of elder abuse cases pending in the United States; and (2) the results of federal government intervention with foreign officials on behalf of U.S. citizens who are elder abuse victims in international criminal enterprises. </p> <p>(Sec. 503) DOJ must report to Congress on its outreach to state and local law enforcement agencies on the process for collaborating with the federal government to investigate and prosecute interstate and international elder financial exploitation cases.</p> <p>(Sec. 504) DOJ must publish model power of attorney legislation for the purpose of preventing elder abuse.</p> <p>(Sec. 505) DOJ must publish best practices for improving guardianship proceedings and model legislation related to guardianship proceedings for the purpose of preventing elder abuse. </p>]]></text>
+          <updateDate>2017-10-19T03:59:59Z</updateDate>
+          <name>Public Law</name>
+          <versionCode>49</versionCode>
+          <actionDesc>Public Law</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
       <item>
-        <state>MN</state>
-        <bioguideId>K000367</bioguideId>
-        <party>D</party>
-        <middleName />
-        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
-        <lastName>Klobuchar</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>Amy</firstName>
-        <identifiers>
-          <lisID>1826</lisID>
-          <bioguideId>K000367</bioguideId>
-          <gpoId>8249</gpoId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
+        <latestAction>
+          <text>Read twice and referred to the Committee on the Judiciary.</text>
+          <actionDate>2017-01-20</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>182</number>
+        <latestTitle>Court-Appointed Guardian Accountability and Senior Protection Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
       </item>
-      <item>
-        <state>TX</state>
-        <bioguideId>C001056</bioguideId>
-        <party>R</party>
-        <middleName />
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
-        <lastName>Cornyn</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>John</firstName>
-        <identifiers>
-          <gpoId>8295</gpoId>
-          <lisID>1692</lisID>
-          <bioguideId>C001056</bioguideId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <state>VT</state>
-        <bioguideId>L000174</bioguideId>
-        <party>D</party>
-        <middleName>JOSEPH</middleName>
-        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
-        <lastName>LEAHY</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>PATRICK</firstName>
-        <identifiers>
-          <lisID>1383</lisID>
-          <bioguideId>L000174</bioguideId>
-          <gpoId>8244</gpoId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <state>CO</state>
-        <bioguideId>B001267</bioguideId>
-        <party>D</party>
-        <middleName>F.</middleName>
-        <fullName>Sen. Bennet, Michael F. [D-CO]</fullName>
-        <lastName>Bennet</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>Michael</firstName>
-        <identifiers>
-          <bioguideId>B001267</bioguideId>
-          <gpoId>8302</gpoId>
-          <lisID>1965</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-      <item>
-        <state>CA</state>
-        <bioguideId>F000062</bioguideId>
-        <party>D</party>
-        <middleName />
-        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
-        <lastName>FEINSTEIN</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <firstName>DIANNE</firstName>
-        <identifiers>
-          <lisID>1332</lisID>
-          <bioguideId>F000062</bioguideId>
-          <gpoId>8338</gpoId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-      </item>
-    </cosponsors>
-    <amendments />
-    <updateDate>2017-01-23T13:02:18Z</updateDate>
-    <policyArea />
-    <title>A bill to prevent elder abuse and exploitation and improve the justice system's response to victims in elder abuse and exploitation cases.</title>
-    <relatedBills />
-    <cboCostEstimates />
-    <titles>
-      <item>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-        <chamberName />
-        <title>A bill to prevent elder abuse and exploitation and improve the justice system's response to victims in elder abuse and exploitation cases.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-        <chamberName />
-        <title>A bill to prevent elder abuse and exploitation and improve the justice system's response to victims in elder abuse and exploitation cases.</title>
-      </item>
-    </titles>
-    <calendarNumbers />
+    </relatedBills>
+    <createDate>2017-01-21T04:55:45Z</createDate>
     <sponsors>
       <item>
-        <middleName>ERNEST</middleName>
-        <state>IA</state>
-        <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
-        <party>R</party>
-        <firstName>CHARLES</firstName>
-        <byRequestType />
         <lastName>GRASSLEY</lastName>
-        <bioguideId>G000386</bioguideId>
+        <party>R</party>
+        <middleName>ERNEST</middleName>
+        <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
         <identifiers>
-          <gpoId>8316</gpoId>
           <lisID>457</lisID>
+          <gpoId>8316</gpoId>
           <bioguideId>G000386</bioguideId>
         </identifiers>
+        <state>IA</state>
+        <firstName>CHARLES</firstName>
+        <byRequestType />
+        <bioguideId>G000386</bioguideId>
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>S</billType>
-    <createDate>2017-01-21T04:55:45Z</createDate>
-    <committeeReports />
-    <laws />
-    <congress>115</congress>
-    <billNumber>178</billNumber>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
     <notes />
+    <updateDate>2018-08-28T20:23:00Z</updateDate>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-9</citation>
+      </committeeReport>
+    </committeeReports>
     <actions>
       <item>
-        <actionDate>2017-01-20</actionDate>
+        <actionDate>2017-10-18</actionDate>
+        <actionCode>E40000</actionCode>
+        <text>Became Public Law No: 115-70.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/178/text/pl</url>
+            <name>Public Law No: 115-70</name>
+          </link>
+        </links>
+        <type>President</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-18</actionDate>
+        <actionCode>36000</actionCode>
+        <text>Became Public Law No: 115-70.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/178/text/pl</url>
+            <name>Public Law No: 115-70</name>
+          </link>
+        </links>
+        <type>BecameLaw</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-18</actionDate>
+        <actionCode>E30000</actionCode>
+        <text>Signed by President.</text>
+        <committee />
+        <links />
+        <type>President</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-18</actionDate>
+        <actionCode>36000</actionCode>
+        <text>Signed by President.</text>
+        <committee />
+        <links />
+        <type>BecameLaw</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-06</actionDate>
+        <actionCode>E20000</actionCode>
+        <text>Presented to President.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-06</actionDate>
+        <actionCode>28000</actionCode>
+        <text>Presented to President.</text>
+        <committee />
+        <links />
+        <type>President</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>H38310</actionCode>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:56:32</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>H37300</actionCode>
+        <text>On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H7709-7712)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7709-7712</url>
+            <name>H7709-7712</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:56:31</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>8000</actionCode>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.(text: CR H7709-7712)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7709-7712</url>
+            <name>H7709-7712</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionTime>15:56:31</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - The House proceeded with forty minutes of debate on S. 178.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/senate-bill/178</url>
+            <name>S. 178</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:47:29</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered under suspension of the rules. (consideration: CR H7709-7712)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H7709-7712</url>
+            <name>H7709-7712</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:47:28</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-10-03</actionDate>
+        <actionCode>H30300</actionCode>
+        <text>Mr. Goodlatte moved to suspend the rules and pass the bill.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:47:14</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-08-11</actionDate>
         <committee>
+          <systemCode>hsif17</systemCode>
+          <name>Commerce, Manufacturing, and Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Digital Commerce and Consumer Protection.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H14000</actionCode>
+        <text>Received in the House.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>13:04:47</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-08-02</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-01</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4681-4684</url>
+            <name>S4681-4684</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with amendments by Voice Vote. (text: CR S4681-4684)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-01</actionDate>
+        <actionCode>17000</actionCode>
+        <text>Passed/agreed to in Senate: Passed Senate with amendments by Voice Vote.(text: CR S4681-4684)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4681-4684</url>
+            <name>S4681-4684</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-08-01</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4681-4684</url>
+            <name>S4681-4684</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Measure laid before Senate by unanimous consent. (consideration: CR S4681-4684)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-03-23</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 23.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-03-23</actionDate>
+        <committee>
           <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
         </committee>
         <links>
           <link>
-            <name>S361-362</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/9</url>
+            <name>report No. 115-9</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on the Judiciary. Reported by Senator Grassley without amendment. With written report No. 115-9.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-03-23</actionDate>
+        <actionCode>14000</actionCode>
+        <text>Committee on the Judiciary. Reported by Senator Grassley without amendment. With written report No. 115-9.</text>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/9</url>
+            <name>report No. 115-9</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-02-09</actionDate>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on the Judiciary. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-20</actionDate>
+        <committee>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <links>
+          <link>
             <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S361-362</url>
+            <name>S361-362</name>
           </link>
         </links>
         <sourceSystem>
@@ -199,49 +673,585 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <actionCode>10000</actionCode>
         <actionDate>2017-01-20</actionDate>
+        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
+        <committee />
         <links />
         <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <committee />
-        <text>Introduced in Senate</text>
       </item>
       <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
+        <becamePublicLaw>2</becamePublicLaw>
+        <measureLaidBeforeSenate>1</measureLaidBeforeSenate>
+        <generalDebate>1</generalDebate>
+        <presentedToPresident>1</presentedToPresident>
+        <placeholderTextForE>3</placeholderTextForE>
+        <passedSenate>1</passedSenate>
+        <orderedReported>1</orderedReported>
+        <billReferrals>2</billReferrals>
         <referredToCommittee>1</referredToCommittee>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <sentToHouse>1</sentToHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <considerationByHouse>1</considerationByHouse>
         <introducedInSenate>1</introducedInSenate>
+        <reportedToSenate>2</reportedToSenate>
       </actionTypeCounts>
       <actionByCounts>
-        <senate>2</senate>
+        <houseOfRepresentatives>10</houseOfRepresentatives>
+        <senate>10</senate>
       </actionByCounts>
     </actions>
+    <cosponsors>
+      <item>
+        <fullName>Sen. Blumenthal, Richard [D-CT]</fullName>
+        <identifiers>
+          <lisID>2076</lisID>
+          <gpoId>8332</gpoId>
+          <bioguideId>B001277</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>Blumenthal</lastName>
+        <firstName>Richard</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>CT</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>B001277</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Tillis, Thom [R-NC]</fullName>
+        <identifiers>
+          <bioguideId>T000476</bioguideId>
+          <gpoId />
+          <lisID>2291</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>Tillis</lastName>
+        <firstName>Thomas</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NC</state>
+        <party>R</party>
+        <middleName>Roland</middleName>
+        <bioguideId>T000476</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
+        <identifiers>
+          <lisID>1826</lisID>
+          <bioguideId>K000367</bioguideId>
+          <gpoId>8249</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>Klobuchar</lastName>
+        <firstName>Amy</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MN</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>K000367</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <identifiers>
+          <lisID>1692</lisID>
+          <gpoId>8295</gpoId>
+          <bioguideId>C001056</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>Cornyn</lastName>
+        <firstName>John</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>C001056</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
+        <identifiers>
+          <bioguideId>L000174</bioguideId>
+          <lisID>1383</lisID>
+          <gpoId>8244</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>LEAHY</lastName>
+        <firstName>PATRICK</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>VT</state>
+        <party>D</party>
+        <middleName>JOSEPH</middleName>
+        <bioguideId>L000174</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Bennet, Michael F. [D-CO]</fullName>
+        <identifiers>
+          <bioguideId>B001267</bioguideId>
+          <lisID>1965</lisID>
+          <gpoId>8302</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>Bennet</lastName>
+        <firstName>Michael</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>CO</state>
+        <party>D</party>
+        <middleName>F.</middleName>
+        <bioguideId>B001267</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <identifiers>
+          <lisID>1332</lisID>
+          <bioguideId>F000062</bioguideId>
+          <gpoId>8338</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <lastName>FEINSTEIN</lastName>
+        <firstName>DIANNE</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>F000062</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Durbin, Richard J. [D-IL]</fullName>
+        <identifiers>
+          <gpoId>8326</gpoId>
+          <lisID>326</lisID>
+          <bioguideId>D000563</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <lastName>DURBIN</lastName>
+        <firstName>RICHARD</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>IL</state>
+        <party>D</party>
+        <middleName>J.</middleName>
+        <bioguideId>D000563</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Franken, Al [D-MN]</fullName>
+        <identifiers>
+          <lisID>1969</lisID>
+          <gpoId>8339</gpoId>
+          <bioguideId>F000457</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <lastName>Franken</lastName>
+        <firstName>Al</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MN</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>F000457</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-01</sponsorshipDate>
+        <lastName>Rubio</lastName>
+        <firstName>Marco</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <party>R</party>
+        <middleName />
+        <bioguideId>R000595</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
+        <identifiers>
+          <lisID>1541</lisID>
+          <gpoId>8291</gpoId>
+          <bioguideId>C001035</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-08</sponsorshipDate>
+        <lastName>COLLINS</lastName>
+        <firstName>SUSAN</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>ME</state>
+        <party>R</party>
+        <middleName>MARGARET</middleName>
+        <bioguideId>C001035</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Whitehouse, Sheldon [D-RI]</fullName>
+        <identifiers>
+          <lisID>1823</lisID>
+          <bioguideId>W000802</bioguideId>
+          <gpoId>8264</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>Whitehouse</lastName>
+        <firstName>Sheldon</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>RI</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>W000802</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Hirono, Mazie K. [D-HI]</fullName>
+        <identifiers>
+          <gpoId>7913</gpoId>
+          <lisID>1844</lisID>
+          <bioguideId>H001042</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>Hirono</lastName>
+        <firstName>Mazie</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>HI</state>
+        <party>D</party>
+        <middleName>K.</middleName>
+        <bioguideId>H001042</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <identifiers>
+          <bioguideId>C001070</bioguideId>
+          <lisID>1828</lisID>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-04-03</sponsorshipDate>
+        <lastName>Casey</lastName>
+        <firstName>Bob</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>PA</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>C001070</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Cortez Masto, Catherine  [D-NV]</fullName>
+        <identifiers>
+          <lisID>2299</lisID>
+          <gpoId />
+          <bioguideId>C001113</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-06-14</sponsorshipDate>
+        <lastName>Cortez Masto</lastName>
+        <firstName>Catherine</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NV</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>C001113</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <title>Elder Abuse Prevention and Prosecution Act</title>
+    <introducedDate>2017-01-20</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <policyArea>
+      <name>Crime and Law Enforcement</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <calendarNumbers>
+      <item>
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0023</number>
+      </item>
+    </calendarNumbers>
+    <latestAction>
+      <actionDate>2017-10-18</actionDate>
+      <links>
+        <link>
+          <url>https://www.congress.gov/bill/115th-congress/senate-bill/178/text/pl</url>
+          <name>Public Law No: 115-70</name>
+        </link>
+      </links>
+      <text>Became Public Law No: 115-70.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Enacted for portions of this bill</titleType>
+        <chamberName />
+        <title>Robert Matava Elder Abuse Prosecution Act of 2017</title>
+        <parentTitleType>Short Title</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Passed Senate for portions of this bill</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Robert Matava Elder Abuse Prosecution Act of 2017</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Robert Matava Elder Abuse Prosecution Act of 2017</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Reported to Senate for portions of this bill</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Robert Matava Elder Abuse Prosecution Act of 2017</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Robert Matava Elder Abuse Prosecution Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Enacted</titleType>
+        <chamberName />
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType>Short Title</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberName>House</chamberName>
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to prevent elder abuse and exploitation and improve the justice system's response to victims in elder abuse and exploitation cases.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>S</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberName>Senate</chamberName>
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Elder Abuse Prevention and Prosecution Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>ssju00</systemCode>
           <activities>
             <item>
+              <date>2017-08-04T18:46:06Z</date>
               <name>Referred to</name>
-              <date>2017-01-20T22:29:51Z</date>
             </item>
           </activities>
-          <chamber>Senate</chamber>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsif17</systemCode>
+              <name>Commerce, Manufacturing, and Trade Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-08-11T20:09:26Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <activities>
+            <item>
+              <date>2017-08-04T18:46:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
+          <subcommittees />
+        </item>
+        <item>
+          <activities>
+            <item>
+              <date>2017-03-23T22:08:26Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-02-09T15:00:34Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-20T22:29:51Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <originChamber>Senate</originChamber>
-    <recordedVotes />
-    <latestAction>
-      <links />
-      <actionDate>2017-01-20</actionDate>
-      <text>Read twice and referred to the Committee on the Judiciary. (Sponsor introductory remarks on measure: CR S361-362)</text>
-    </latestAction>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Crime and Law Enforcement</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Aging</name>
+          </item>
+          <item>
+            <name>Census and government statistics</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Consumer affairs</name>
+          </item>
+          <item>
+            <name>Crime prevention</name>
+          </item>
+          <item>
+            <name>Crime victims</name>
+          </item>
+          <item>
+            <name>Criminal investigation, prosecution, interrogation</name>
+          </item>
+          <item>
+            <name>Criminal justice information and records</name>
+          </item>
+          <item>
+            <name>Department of Justice</name>
+          </item>
+          <item>
+            <name>Detention of persons</name>
+          </item>
+          <item>
+            <name>Diplomacy, foreign officials, Americans abroad</name>
+          </item>
+          <item>
+            <name>Drug trafficking and controlled substances</name>
+          </item>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Family services</name>
+          </item>
+          <item>
+            <name>Federal Trade Commission (FTC)</name>
+          </item>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>Fraud offenses and financial crimes</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Law enforcement administration and funding</name>
+          </item>
+          <item>
+            <name>Lawyers and legal services</name>
+          </item>
+          <item>
+            <name>Marketing and advertising</name>
+          </item>
+          <item>
+            <name>Mental health</name>
+          </item>
+          <item>
+            <name>Organized crime</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+          <item>
+            <name>Telephone and wireless communication</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,138 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-13</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-14T04:47:33Z</createDate>
-    <actions>
-      <item>
-        <committee>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>551</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>NE</state>
-        <middleName />
-        <bioguideId>F000449</bioguideId>
-        <lastName>Fortenberry</lastName>
-        <firstName>Jeff</firstName>
-        <identifiers>
-          <lisID>1793</lisID>
-          <gpoId>8038</gpoId>
-          <bioguideId>F000449</bioguideId>
-        </identifiers>
-        <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
-        <district>1</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To amend the Patient Protection and Affordable Care Act to permit insurers to offer catastrophic coverage plans to anyone, and for other purposes.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <actionDate>2017-01-13</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-          <subcommittees />
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:02:05Z</date>
-            </item>
-          </activities>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-14T09:58:44Z</updateDate>
     <titles>
       <item>
-        <titleType>Official Title as Introduced</titleType>
         <chamberName />
-        <title>To amend the Patient Protection and Affordable Care Act to permit insurers to offer catastrophic coverage plans to anyone, and for other purposes.</title>
         <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Care for All Act of 2017</title>
         <parentTitleType />
       </item>
       <item>
-        <titleType>Display Title</titleType>
         <chamberName />
-        <title>To amend the Patient Protection and Affordable Care Act to permit insurers to offer catastrophic coverage plans to anyone, and for other purposes.</title>
         <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Patient Protection and Affordable Care Act to permit insurers to offer catastrophic coverage plans to anyone, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Care for All Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Care for All Act of 2017</title>
         <parentTitleType />
       </item>
     </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the House Committee on Energy and Commerce.</text>
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr.FORTENBERRY:H.R. 551.Congress has the power to enact this legislation pursuantto thefollowing:Article I, Section 8, Clause 1 of the United StatesConstitution.[Page H547]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-13T14:02:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Fortenberry, Jeff [R-NE-1]</fullName>
+        <party>R</party>
+        <bioguideId>F000449</bioguideId>
+        <identifiers>
+          <bioguideId>F000449</bioguideId>
+          <lisID>1793</lisID>
+          <gpoId>8038</gpoId>
+        </identifiers>
+        <lastName>Fortenberry</lastName>
+        <district>1</district>
+        <middleName />
+        <firstName>Jeff</firstName>
+        <byRequestType />
+        <state>NE</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:59:57Z</updateDate>
+    <billNumber>551</billNumber>
+    <title>Care for All Act of 2017</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Care for All Act of 2017</b></p> <p>This bill amends the Patient Protection and Affordable Care Act to allow catastrophic plans to be offered as qualified health plans to any individual in the individual or group market. (Qualified health plans are sold on health insurance exchanges, are the only plans eligible for premium subsidies, and fulfill an individual's requirement to maintain minimum essential coverage.) Currently, to be a qualified health plan, a catastrophic plan must enroll only individuals who are below age 30 and exempt from minimum essential coverage requirements.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-02-01T16:40:18Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <actionDate>2017-01-13</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-13</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Insurance industry and regulation</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

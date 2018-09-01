@@ -1,110 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors>
-      <item>
-        <middleName />
-        <identifiers>
-          <bioguideId>O000170</bioguideId>
-          <gpoId />
-          <lisID>2162</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. O'Rourke, Beto [D-TX-16]</fullName>
-        <state>TX</state>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <firstName>Beto</firstName>
-        <lastName>O'Rourke</lastName>
-        <district>16</district>
-        <bioguideId>O000170</bioguideId>
-      </item>
-    </cosponsors>
-    <laws />
-    <congress>115</congress>
-    <billNumber>4</billNumber>
-    <billType>HJRES</billType>
-    <cboCostEstimates />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-12T09:57:06Z</updateDate>
+    <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
     <originChamber>House</originChamber>
-    <actions>
-      <item>
-        <actionDate>2017-01-11</actionDate>
-        <committee>
-          <systemCode>hsju10</systemCode>
-          <name>Constitution and Civil Justice Subcommittee</name>
-        </committee>
-        <links />
-        <sourceSystem>
-          <code>1</code>
-          <name>House committee actions</name>
-        </sourceSystem>
-        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-        <type>Committee</type>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsju00</systemCode>
-          <name>Judiciary Committee</name>
-        </committee>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>4</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <committeeReports />
+    <updateDate>2018-08-28T19:56:33Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BRIDENSTINE:H.J. Res. 4.Congress has the power to enact this legislation pursuantto the following:Article V of the Constitution which grants Congress theauthority to propose Constitutional Amendments.[Page H53]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Congressional elections</name>
@@ -122,83 +28,188 @@
             <name>Senate</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <titles>
-      <item>
-        <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
-    <introducedDate>2017-01-03</introducedDate>
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-24T19:06:17Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Constitutional Amendment</b></p> <p>This joint resolution proposes a constitutional amendment authorizing Congress, by law, to limit the number of terms that Representatives and Senators may serve.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <billType>HJRES</billType>
     <latestAction>
-      <actionDate>2017-01-11</actionDate>
       <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
       <links />
+      <actionDate>2017-01-11</actionDate>
     </latestAction>
-    <createDate>2017-01-04T07:01:08Z</createDate>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <relatedBills />
+    <introducedDate>2017-01-03</introducedDate>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <committee>
+          <name>Constitution and Civil Justice Subcommittee</name>
+          <systemCode>hsju10</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+        </committee>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <actionCode>H11100</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <actionCode>1000</actionCode>
+        <actionDate>2017-01-03</actionDate>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>4</billNumber>
+    <cboCostEstimates />
+    <cosponsors>
+      <item>
+        <party>D</party>
+        <state>TX</state>
+        <bioguideId>O000170</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>O000170</bioguideId>
+          <lisID>2162</lisID>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. O'Rourke, Beto [D-TX-16]</fullName>
+        <lastName>O'Rourke</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <firstName>Beto</firstName>
+        <district>16</district>
+        <middleName />
+      </item>
+    </cosponsors>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <date>2017-01-11T19:04:40Z</date>
-                  <name>Referred to</name>
-                </item>
-              </activities>
-              <name>Constitution and Civil Justice Subcommittee</name>
-              <systemCode>hsju10</systemCode>
-            </item>
-          </subcommittees>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-          <type>Standing</type>
           <activities>
             <item>
               <date>2017-01-03T17:06:45Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <type>Standing</type>
           <chamber>House</chamber>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-11T19:04:40Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T07:01:08Z</createDate>
     <sponsors>
       <item>
-        <fullName>Rep. Bridenstine, Jim [R-OK-1]</fullName>
-        <firstName>Jim</firstName>
         <bioguideId>B001283</bioguideId>
         <party>R</party>
-        <middleName />
-        <byRequestType />
-        <district>1</district>
+        <firstName>Jim</firstName>
+        <fullName>Rep. Bridenstine, Jim [R-OK-1]</fullName>
         <state>OK</state>
+        <district>1</district>
         <lastName>Bridenstine</lastName>
+        <middleName />
         <identifiers>
           <lisID>2155</lisID>
           <gpoId />
           <bioguideId>B001283</bioguideId>
         </identifiers>
+        <byRequestType />
       </item>
     </sponsors>
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Proposing an amendment to the Constitution of the United States granting Congress the authority to enact laws limiting the number of terms that Representatives and Senators may serve.</title>
+        <chamberCode />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

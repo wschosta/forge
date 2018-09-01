@@ -1,355 +1,467 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <committee>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-        </committee>
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-12</actionDate>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-13T10:06:48Z</updateDate>
-    <titles>
-      <item>
-        <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-12</introducedDate>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>BARBARA</firstName>
-        <bioguideId>L000551</bioguideId>
-        <district>13</district>
-        <byRequestType />
-        <state>CA</state>
-        <identifiers>
-          <lisID>1501</lisID>
-          <gpoId>7814</gpoId>
-          <bioguideId>L000551</bioguideId>
-        </identifiers>
-        <party>D</party>
-        <lastName>LEE</lastName>
-        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-      <text>Referred to the House Committee on Foreign Affairs.</text>
-    </latestAction>
-    <congress>115</congress>
-    <cosponsors>
-      <item>
-        <middleName>D.</middleName>
-        <identifiers>
-          <bioguideId>C001067</bioguideId>
-          <lisID>1864</lisID>
-          <gpoId>8072</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Clarke, Yvette D. [D-NY-9]</fullName>
-        <state>NY</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>Yvette</firstName>
-        <lastName>Clarke</lastName>
-        <district>9</district>
-        <bioguideId>C001067</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>1205</lisID>
-          <gpoId>7840</gpoId>
-          <bioguideId>W000187</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Waters, Maxine [D-CA-43]</fullName>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>MAXINE</firstName>
-        <lastName>WATERS</lastName>
-        <district>43</district>
-        <bioguideId>W000187</bioguideId>
-      </item>
-      <item>
-        <middleName>L.</middleName>
-        <identifiers>
-          <lisID>511</lisID>
-          <gpoId>7895</gpoId>
-          <bioguideId>H000324</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
-        <state>FL</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>ALCEE</firstName>
-        <lastName>HASTINGS</lastName>
-        <district>20</district>
-        <bioguideId>H000324</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>229</lisID>
-          <gpoId>7999</gpoId>
-          <bioguideId>C000714</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Conyers, John, Jr. [D-MI-13]</fullName>
-        <state>MI</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>JOHN</firstName>
-        <lastName>CONYERS</lastName>
-        <district>13</district>
-        <bioguideId>C000714</bioguideId>
-      </item>
-      <item>
-        <middleName>P.</middleName>
-        <identifiers>
-          <bioguideId>M000312</bioguideId>
-          <gpoId>7968</gpoId>
-          <lisID>1504</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. McGovern, James P. [D-MA-2]</fullName>
-        <state>MA</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>JAMES</firstName>
-        <lastName>MCGOVERN</lastName>
-        <district>2</district>
-        <bioguideId>M000312</bioguideId>
-      </item>
-      <item>
-        <middleName>S.</middleName>
-        <identifiers>
-          <bioguideId>W000808</bioguideId>
-          <lisID>2004</lisID>
-          <gpoId>7889</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
-        <state>FL</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>Frederica</firstName>
-        <lastName>Wilson</lastName>
-        <district>24</district>
-        <bioguideId>W000808</bioguideId>
-      </item>
-      <item>
-        <middleName>L.</middleName>
-        <identifiers>
-          <lisID>1003</lisID>
-          <gpoId>7921</gpoId>
-          <bioguideId>R000515</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
-        <state>IL</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>BOBBY</firstName>
-        <lastName>RUSH</lastName>
-        <district>1</district>
-        <bioguideId>R000515</bioguideId>
-      </item>
-      <item>
-        <middleName>L.</middleName>
-        <identifiers>
-          <gpoId>8078</gpoId>
-          <bioguideId>E000179</bioguideId>
-          <lisID>344</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Engel, Eliot L. [D-NY-16]</fullName>
-        <state>NY</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>ELIOT</firstName>
-        <lastName>ENGEL</lastName>
-        <district>16</district>
-        <bioguideId>E000179</bioguideId>
-      </item>
-      <item>
-        <middleName>M.</middleName>
-        <identifiers>
-          <bioguideId>G000551</bioguideId>
-          <lisID>1708</lisID>
-          <gpoId>7804</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Grijalva, Raul M. [D-AZ-3]</fullName>
-        <state>AZ</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>Raul</firstName>
-        <lastName>Grijalva</lastName>
-        <district>3</district>
-        <bioguideId>G000551</bioguideId>
-      </item>
-      <item>
-        <middleName>HOLMES</middleName>
-        <identifiers>
-          <bioguideId>N000147</bioguideId>
-          <gpoId>7871</gpoId>
-          <lisID>868</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
-        <state>DC</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>ELEANOR</firstName>
-        <lastName>NORTON</lastName>
-        <district>0</district>
-        <bioguideId>N000147</bioguideId>
-      </item>
-      <item>
-        <middleName>M.</middleName>
-        <identifiers>
-          <lisID>709</lisID>
-          <gpoId>8079</gpoId>
-          <bioguideId>L000480</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Lowey, Nita M. [D-NY-17]</fullName>
-        <state>NY</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>NITA</firstName>
-        <lastName>LOWEY</lastName>
-        <district>17</district>
-        <bioguideId>L000480</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>1884</lisID>
-          <gpoId>7970</gpoId>
-          <bioguideId>T000465</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Tsongas, Niki [D-MA-3]</fullName>
-        <state>MA</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <firstName>Niki</firstName>
-        <lastName>Tsongas</lastName>
-        <district>3</district>
-        <bioguideId>T000465</bioguideId>
-      </item>
-    </cosponsors>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
-    <recordedVotes />
-    <cboCostEstimates />
     <committees>
       <billCommittees>
         <item>
           <chamber>House</chamber>
-          <name>Foreign Affairs Committee</name>
           <systemCode>hsfa00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsfa07</systemCode>
+              <name>Western Hemisphere Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-16T22:24:29Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <type>Standing</type>
-          <subcommittees />
+          <name>Foreign Affairs Committee</name>
           <activities>
             <item>
-              <date>2017-01-12T15:06:45Z</date>
               <name>Referred to</name>
+              <date>2017-01-12T15:06:45Z</date>
             </item>
           </activities>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-13T04:55:29Z</createDate>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <actionDate>2017-01-12</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Honors: (1) those who lost their lives in Haiti due to the earthquake on January 12, 2010, and Hurricane Matthew in October 2016; and (2) the sacrifice of the men and women of the government of Haiti, the U.S. government, the United Nations (U.N.), and the international community for their response to those affected by these calamities.</p> <p>Expresses solidarity with the people of Haiti as they work to prevent malnutrition and hunger, mitigate the effects of climate change, and rebuild their homes, neighborhoods, livelihoods, and country.</p> <p>Reaffirms the commitment of the House of Representatives to support long-term Haitian development and disaster preparedness.</p> <p>Supports the Administration's efforts to: (1) increase food security in Haiti through sustainable agriculture programs; (2) shore up housing initiatives; (3) prevent the spread of cholera and treat persons who contract the disease; (4) provide technical assistance to the Haitian Ministry of Public Health and Population; and (5) improve water, sanitation, and health systems.</p> <p>Urges the President and the international community to: (1) focus assistance on building the capacity of Haiti's public sector and reinforcing the systems it employs to provide basic services, (2) develop and improve communications and participatory mechanisms to more substantially involve Haitian civil society at all stages of post-disaster responses, and (3) give priority to programs that protect vulnerable populations. </p> <p>Urges the President to: (1) make necessary resources available to U.S. and U.N. agencies, nongovernmental organizations, private volunteer organizations, and regional institutions; (2) support U.N. efforts to fully execute the U.N.'s new two-track response to eradicate cholera from Haiti and provide material assistance to those Haitians most directly affected; (3) lead humanitarian and development and disaster risk reduction efforts with the government of Haiti, the Haitian Diaspora, and international actors; (4) maximize responsible local and regional procurement; (5) improve the monitoring of U.S. government-funded aid programs; and (6) work with Haitian authorities and private landowners to prevent evictions of internally displaced person communities.</p>]]></text>
+          <lastSummaryUpdateDate>2017-03-20T13:54:33Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Clarke, Yvette D. [D-NY-9]</fullName>
+        <identifiers>
+          <lisID>1864</lisID>
+          <gpoId>8072</gpoId>
+          <bioguideId>C001067</bioguideId>
+        </identifiers>
+        <lastName>Clarke</lastName>
+        <firstName>Yvette</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>D.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NY</state>
+        <district>9</district>
+        <bioguideId>C001067</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Waters, Maxine [D-CA-43]</fullName>
+        <identifiers>
+          <bioguideId>W000187</bioguideId>
+          <lisID>1205</lisID>
+          <gpoId>7840</gpoId>
+        </identifiers>
+        <lastName>WATERS</lastName>
+        <firstName>MAXINE</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>43</district>
+        <bioguideId>W000187</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <identifiers>
+          <bioguideId>H000324</bioguideId>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+        </identifiers>
+        <lastName>HASTINGS</lastName>
+        <firstName>ALCEE</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>20</district>
+        <bioguideId>H000324</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Conyers, John, Jr. [D-MI-13]</fullName>
+        <identifiers>
+          <bioguideId>C000714</bioguideId>
+          <lisID>229</lisID>
+          <gpoId>7999</gpoId>
+        </identifiers>
+        <lastName>CONYERS</lastName>
+        <firstName>JOHN</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MI</state>
+        <district>13</district>
+        <bioguideId>C000714</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. McGovern, James P. [D-MA-2]</fullName>
+        <identifiers>
+          <bioguideId>M000312</bioguideId>
+          <gpoId>7968</gpoId>
+          <lisID>1504</lisID>
+        </identifiers>
+        <lastName>MCGOVERN</lastName>
+        <firstName>JAMES</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>P.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>MA</state>
+        <district>2</district>
+        <bioguideId>M000312</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
+        <identifiers>
+          <gpoId>7889</gpoId>
+          <lisID>2004</lisID>
+          <bioguideId>W000808</bioguideId>
+        </identifiers>
+        <lastName>Wilson</lastName>
+        <firstName>Frederica</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>S.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>FL</state>
+        <district>24</district>
+        <bioguideId>W000808</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Rush, Bobby L. [D-IL-1]</fullName>
+        <identifiers>
+          <bioguideId>R000515</bioguideId>
+          <lisID>1003</lisID>
+          <gpoId>7921</gpoId>
+        </identifiers>
+        <lastName>RUSH</lastName>
+        <firstName>BOBBY</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>IL</state>
+        <district>1</district>
+        <bioguideId>R000515</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Engel, Eliot L. [D-NY-16]</fullName>
+        <identifiers>
+          <lisID>344</lisID>
+          <bioguideId>E000179</bioguideId>
+          <gpoId>8078</gpoId>
+        </identifiers>
+        <lastName>ENGEL</lastName>
+        <firstName>ELIOT</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>L.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NY</state>
+        <district>16</district>
+        <bioguideId>E000179</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Grijalva, Raul M. [D-AZ-3]</fullName>
+        <identifiers>
+          <lisID>1708</lisID>
+          <gpoId>7804</gpoId>
+          <bioguideId>G000551</bioguideId>
+        </identifiers>
+        <lastName>Grijalva</lastName>
+        <firstName>Raul</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>AZ</state>
+        <district>3</district>
+        <bioguideId>G000551</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <identifiers>
+          <bioguideId>N000147</bioguideId>
+          <lisID>868</lisID>
+          <gpoId>7871</gpoId>
+        </identifiers>
+        <lastName>NORTON</lastName>
+        <firstName>ELEANOR</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>HOLMES</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>DC</state>
+        <district>0</district>
+        <bioguideId>N000147</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Lowey, Nita M. [D-NY-17]</fullName>
+        <identifiers>
+          <bioguideId>L000480</bioguideId>
+          <lisID>709</lisID>
+          <gpoId>8079</gpoId>
+        </identifiers>
+        <lastName>LOWEY</lastName>
+        <firstName>NITA</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>M.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NY</state>
+        <district>17</district>
+        <bioguideId>L000480</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Tsongas, Niki [D-MA-3]</fullName>
+        <identifiers>
+          <lisID>1884</lisID>
+          <bioguideId>T000465</bioguideId>
+          <gpoId>7970</gpoId>
+        </identifiers>
+        <lastName>Tsongas</lastName>
+        <firstName>Niki</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>MA</state>
+        <district>3</district>
+        <bioguideId>T000465</bioguideId>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on the Western Hemisphere.</text>
+      <links />
+      <actionDate>2017-02-16</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:53:50Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
     <billType>HRES</billType>
     <billNumber>49</billNumber>
-    <policyArea />
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Recognizing the anniversary of the tragic earthquake in Haiti on January 12, 2010, honoring those who lost their lives in the earthquake and in Hurricane Matthew in October 2016, and expressing continued solidarity with the Haitian people.</title>
+    <congress>115</congress>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-02-16</actionDate>
+        <committee>
+          <name>Western Hemisphere Subcommittee</name>
+          <systemCode>hsfa07</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Western Hemisphere.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-12</actionDate>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <committee>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-12</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-12</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Caribbean area</name>
+          </item>
+          <item>
+            <name>Climate change and greenhouse gases</name>
+          </item>
+          <item>
+            <name>Commemorative events and holidays</name>
+          </item>
+          <item>
+            <name>Congressional tributes</name>
+          </item>
+          <item>
+            <name>Disaster relief and insurance</name>
+          </item>
+          <item>
+            <name>Emergency planning and evacuation</name>
+          </item>
+          <item>
+            <name>Food assistance and relief</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+          <item>
+            <name>Haiti</name>
+          </item>
+          <item>
+            <name>Health promotion and preventive care</name>
+          </item>
+          <item>
+            <name>Housing supply and affordability</name>
+          </item>
+          <item>
+            <name>Infectious and parasitic diseases</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+          <item>
+            <name>Latin America</name>
+          </item>
+          <item>
+            <name>Natural disasters</name>
+          </item>
+          <item>
+            <name>Public contracts and procurement</name>
+          </item>
+          <item>
+            <name>Reconstruction and stabilization</name>
+          </item>
+          <item>
+            <name>Refugees, asylum, displaced persons</name>
+          </item>
+          <item>
+            <name>Solid waste and recycling</name>
+          </item>
+          <item>
+            <name>United Nations</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+          <item>
+            <name>World health</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <committeeReports />
+    <introducedDate>2017-01-12</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>L000551</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
+        <lastName>LEE</lastName>
+        <state>CA</state>
+        <district>13</district>
+        <party>D</party>
+        <identifiers>
+          <lisID>1501</lisID>
+          <gpoId>7814</gpoId>
+          <bioguideId>L000551</bioguideId>
+        </identifiers>
+        <firstName>BARBARA</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-13T04:55:29Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

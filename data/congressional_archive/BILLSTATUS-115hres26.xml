@@ -1,8 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <billNumber>26</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText />
+    <originChamber>House</originChamber>
+    <billType>HRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <actionDate>2017-01-05</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Expresses the sense of the House of Representatives that in the event Congress drafts provisions to amend or repeal the Patient Protection and Affordable Care Act (PPACA), the provisions of PPACA that restored the original eligibility requirements for black lung benefits should be preserved and protected.</p>]]></text>
+          <lastSummaryUpdateDate>2017-01-11T21:16:58Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-06T04:57:25Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Jenkins</lastName>
+        <party>R</party>
+        <middleName>H.</middleName>
+        <fullName>Rep. Jenkins, Evan H. [R-WV-3]</fullName>
+        <identifiers>
+          <lisID>2278</lisID>
+          <gpoId />
+          <bioguideId>J000297</bioguideId>
+        </identifiers>
+        <state>WV</state>
+        <firstName>Evan</firstName>
+        <byRequestType />
+        <district>3</district>
+        <bioguideId>J000297</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:53:46Z</updateDate>
+    <committeeReports />
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+        </committee>
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
+    <cosponsors>
+      <item>
+        <bioguideId>R000395</bioguideId>
+        <lastName>ROGERS</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>977</lisID>
+          <gpoId>7957</gpoId>
+          <bioguideId>R000395</bioguideId>
+        </identifiers>
+        <district>5</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Rogers, Harold [R-KY-5]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <state>KY</state>
+        <firstName>HAROLD</firstName>
+        <party>R</party>
+      </item>
+      <item>
+        <bioguideId>M001180</bioguideId>
+        <lastName>McKinley</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2074</lisID>
+          <gpoId>8222</gpoId>
+          <bioguideId>M001180</bioguideId>
+        </identifiers>
+        <district>1</district>
+        <middleName>B.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <state>WV</state>
+        <firstName>David</firstName>
+        <party>R</party>
+      </item>
+      <item>
+        <bioguideId>G000568</bioguideId>
+        <lastName>Griffith</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>8200</gpoId>
+          <lisID>2070</lisID>
+          <bioguideId>G000568</bioguideId>
+        </identifiers>
+        <district>9</district>
+        <middleName>Morgan</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <state>VA</state>
+        <firstName>H.</firstName>
+        <party>R</party>
+      </item>
+      <item>
+        <bioguideId>M001195</bioguideId>
+        <lastName>Mooney</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2277</lisID>
+          <bioguideId>M001195</bioguideId>
+          <gpoId />
+        </identifiers>
+        <district>2</district>
+        <middleName>X.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Mooney, Alexander X. [R-WV-2]</fullName>
+        <sponsorshipDate>2017-01-05</sponsorshipDate>
+        <state>WV</state>
+        <firstName>Alexander</firstName>
+        <party>R</party>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-05</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-05</actionDate>
+      <links />
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <cboCostEstimates />
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsed00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Education and the Workforce Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-05T15:03:40Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Cardiovascular and respiratory health</name>
@@ -23,223 +239,8 @@
             <name>Worker safety and health</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Health</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <systemCode>hsed00</systemCode>
-          <name>Education and the Workforce Committee</name>
-        </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <actionDate>2017-01-05</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-05</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <policyArea>
-      <name>Health</name>
-    </policyArea>
-    <notes />
-    <createDate>2017-01-06T04:57:25Z</createDate>
-    <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
-    <relatedBills />
-    <cosponsors>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>977</lisID>
-          <gpoId>7957</gpoId>
-          <bioguideId>R000395</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Rogers, Harold [R-KY-5]</fullName>
-        <state>KY</state>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <firstName>HAROLD</firstName>
-        <lastName>ROGERS</lastName>
-        <district>5</district>
-        <bioguideId>R000395</bioguideId>
-      </item>
-      <item>
-        <middleName>B.</middleName>
-        <identifiers>
-          <bioguideId>M001180</bioguideId>
-          <gpoId>8222</gpoId>
-          <lisID>2074</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. McKinley, David B. [R-WV-1]</fullName>
-        <state>WV</state>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <firstName>David</firstName>
-        <lastName>McKinley</lastName>
-        <district>1</district>
-        <bioguideId>M001180</bioguideId>
-      </item>
-      <item>
-        <middleName>Morgan</middleName>
-        <identifiers>
-          <bioguideId>G000568</bioguideId>
-          <lisID>2070</lisID>
-          <gpoId>8200</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
-        <state>VA</state>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <firstName>H.</firstName>
-        <lastName>Griffith</lastName>
-        <district>9</district>
-        <bioguideId>G000568</bioguideId>
-      </item>
-      <item>
-        <middleName>X.</middleName>
-        <identifiers>
-          <gpoId />
-          <bioguideId>M001195</bioguideId>
-          <lisID>2277</lisID>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Mooney, Alexander X. [R-WV-2]</fullName>
-        <state>WV</state>
-        <sponsorshipDate>2017-01-05</sponsorshipDate>
-        <firstName>Alexander</firstName>
-        <lastName>Mooney</lastName>
-        <district>2</district>
-        <bioguideId>M001195</bioguideId>
-      </item>
-    </cosponsors>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-11T21:31:12Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDesc>Introduced in House</actionDesc>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-05</actionDate>
-          <lastSummaryUpdateDate>2017-01-11T21:16:58Z</lastSummaryUpdateDate>
-          <updateDate>2017-01-05T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-          <text><![CDATA[<p>Expresses the sense of the House of Representatives that in the event Congress drafts provisions to amend or repeal the Patient Protection and Affordable Care Act (PPACA), the provisions of PPACA that restored the original eligibility requirements for black lung benefits should be preserved and protected.</p>]]></text>
-        </item>
-      </billSummaries>
-    </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-05</introducedDate>
-    <billNumber>26</billNumber>
-    <amendments />
-    <billType>HRES</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Education and the Workforce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-05T15:03:40Z</date>
-            </item>
-          </activities>
-          <systemCode>hsed00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Jenkins</lastName>
-        <state>WV</state>
-        <byRequestType />
-        <firstName>Evan</firstName>
-        <bioguideId>J000297</bioguideId>
-        <fullName>Rep. Jenkins, Evan H. [R-WV-3]</fullName>
-        <identifiers>
-          <bioguideId>J000297</bioguideId>
-          <gpoId />
-          <lisID>2278</lisID>
-        </identifiers>
-        <middleName>H.</middleName>
-        <district>3</district>
-        <party>R</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <title>Expressing the sense of the House of Representatives that the provisions of the Patient Protection and Affordable Care Act that restored the original black lung benefits eligibility requirements should not be reduced but should be preserved and protected.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

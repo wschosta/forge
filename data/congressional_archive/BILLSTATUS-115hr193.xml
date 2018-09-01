@@ -1,269 +1,368 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+      <text>Referred to the House Committee on Foreign Affairs.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
         <committee>
           <name>Foreign Affairs Committee</name>
           <systemCode>hsfa00</systemCode>
         </committee>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <committee />
+        <links />
+        <type>IntroReferral</type>
         <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
-        <links />
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
       </item>
       <item>
-        <committee />
+        <links />
+        <type>IntroReferral</type>
         <actionDate>2017-01-03</actionDate>
         <text>Introduced in House</text>
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
+        <committee />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
+        <actionCode>1000</actionCode>
       </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <amendments />
-    <updateDate>2017-01-13T20:01:20Z</updateDate>
-    <titles>
-      <item>
-        <title>American Sovereignty Restoration Act of 2017</title>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>To end membership of the United States in the United Nations.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>American Sovereignty Restoration Act of 2017</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName />
-        <firstName>Mike</firstName>
-        <bioguideId>R000575</bioguideId>
-        <district>3</district>
-        <byRequestType />
-        <state>AL</state>
-        <identifiers>
-          <lisID>1704</lisID>
-          <gpoId>7788</gpoId>
-          <bioguideId>R000575</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <lastName>Rogers</lastName>
-        <fullName>Rep. Rogers, Mike D. [R-AL-3]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDate>2017-01-03</actionDate>
-          <name>Introduced in House</name>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <text><![CDATA[<p><strong>American Sovereignty Restoration Act of 2017</strong> </p> <p>This bill repeals the United Nations Participation Act of 1945 and other specified related laws. </p> <p>The bill requires: (1) the President to terminate U.S. membership in the United Nations (U.N.), including any organ, specialized agency, commission, or other formally affiliated body; and (2) closure of the U.S. Mission to the United Nations. </p> <p>The bill prohibits: (1) the authorization of funds for the U.S. assessed or voluntary contribution to the U.N., (2) the authorization of funds for any U.S. contribution to any U.N. military or peacekeeping operation, (3) the expenditure of funds to support the participation of U.S. Armed Forces as part of any U.N. military or peacekeeping operation, (4) U.S. Armed Forces from serving under U.N. command, and (5) diplomatic immunity for U.N. officers or employees.]]></text>
-          <lastSummaryUpdateDate>2017-01-13T19:43:54Z</lastSummaryUpdateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
     <calendarNumbers />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Foreign Affairs.</text>
-    </latestAction>
     <congress>115</congress>
-    <cosponsors>
-      <item>
-        <identifiers>
-          <bioguideId>J000255</bioguideId>
-          <lisID>612</lisID>
-          <gpoId>8026</gpoId>
-        </identifiers>
-        <state>NC</state>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>3</district>
-        <middleName>B.</middleName>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>J000255</bioguideId>
-        <lastName>JONES</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
-        <firstName>WALTER</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <lisID>2307</lisID>
-          <gpoId />
-          <bioguideId>B001302</bioguideId>
-        </identifiers>
-        <state>AZ</state>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>5</district>
-        <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B001302</bioguideId>
-        <lastName>Biggs</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
-        <firstName>Andy</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>S001195</bioguideId>
-          <gpoId />
-          <lisID>2191</lisID>
-        </identifiers>
-        <state>MO</state>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>8</district>
-        <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>S001195</bioguideId>
-        <lastName>Smith</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
-        <firstName>Jason</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>M001184</bioguideId>
-          <gpoId>8371</gpoId>
-          <lisID>2094</lisID>
-        </identifiers>
-        <state>KY</state>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <district>4</district>
-        <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>M001184</bioguideId>
-        <lastName>Massie</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Massie, Thomas [R-KY-4]</fullName>
-        <firstName>Thomas</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <lisID>322</lisID>
-          <gpoId>8149</gpoId>
-          <bioguideId>D000533</bioguideId>
-        </identifiers>
-        <state>TN</state>
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <district>2</district>
-        <middleName>J.</middleName>
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>D000533</bioguideId>
-        <lastName>DUNCAN</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
-        <firstName>JOHN</firstName>
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>G000578</bioguideId>
-          <lisID>2314</lisID>
-          <gpoId />
-        </identifiers>
-        <state>FL</state>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <district>1</district>
-        <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>G000578</bioguideId>
-        <lastName>Gaetz</lastName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
-        <firstName>Matt</firstName>
-      </item>
-    </cosponsors>
-    <relatedBills />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Climate change and greenhouse gases</name>
+          </item>
+          <item>
+            <name>Diplomacy, foreign officials, Americans abroad</name>
+          </item>
+          <item>
+            <name>Ecology</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+          <item>
+            <name>Hazardous wastes and toxic substances</name>
+          </item>
+          <item>
+            <name>International law and treaties</name>
+          </item>
+          <item>
+            <name>International organizations and cooperation</name>
+          </item>
+          <item>
+            <name>Military assistance, sales, and agreements</name>
+          </item>
+          <item>
+            <name>Military command and structure</name>
+          </item>
+          <item>
+            <name>United Nations</name>
+          </item>
+          <item>
+            <name>World health</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>International Affairs</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
+    <billNumber>193</billNumber>
     <title>American Sovereignty Restoration Act of 2017</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ROGERS of Alabama:H.R. 193.Congress has the power to enact this legislation pursuantto the following:This legislation is authorized by Article I, Section 8 ofthe Constitution: ``To make all laws which shall be necessaryand proper for carrying into execution the foregoing powers,and all other powers vested by this Constitution in theGovernment of the United States.''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
+          <systemCode>hsfa00</systemCode>
           <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Foreign Affairs Committee</name>
           <activities>
             <item>
               <date>2017-01-03T17:04:25Z</date>
               <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <billType>HR</billType>
-    <billNumber>193</billNumber>
-    <policyArea>
-      <name>International Affairs</name>
-    </policyArea>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
+      <item>
+        <middleName>B.</middleName>
+        <identifiers>
+          <lisID>612</lisID>
+          <bioguideId>J000255</bioguideId>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <firstName>WALTER</firstName>
+        <state>NC</state>
+        <bioguideId>J000255</bioguideId>
+        <district>3</district>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>JONES</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <gpoId />
+          <lisID>2307</lisID>
+          <bioguideId>B001302</bioguideId>
+        </identifiers>
+        <firstName>Andy</firstName>
+        <state>AZ</state>
+        <bioguideId>B001302</bioguideId>
+        <district>5</district>
+        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Biggs</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <bioguideId>S001195</bioguideId>
+          <gpoId />
+          <lisID>2191</lisID>
+        </identifiers>
+        <firstName>Jason</firstName>
+        <state>MO</state>
+        <bioguideId>S001195</bioguideId>
+        <district>8</district>
+        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Smith</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2094</lisID>
+          <gpoId>8371</gpoId>
+          <bioguideId>M001184</bioguideId>
+        </identifiers>
+        <firstName>Thomas</firstName>
+        <state>KY</state>
+        <bioguideId>M001184</bioguideId>
+        <district>4</district>
+        <fullName>Rep. Massie, Thomas [R-KY-4]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Massie</lastName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>J.</middleName>
+        <identifiers>
+          <lisID>322</lisID>
+          <gpoId>8149</gpoId>
+          <bioguideId>D000533</bioguideId>
+        </identifiers>
+        <firstName>JOHN</firstName>
+        <state>TN</state>
+        <bioguideId>D000533</bioguideId>
+        <district>2</district>
+        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>DUNCAN</lastName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <lisID>2314</lisID>
+          <gpoId />
+          <bioguideId>G000578</bioguideId>
+        </identifiers>
+        <firstName>Matt</firstName>
+        <state>FL</state>
+        <bioguideId>G000578</bioguideId>
+        <district>1</district>
+        <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Gaetz</lastName>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>R.</middleName>
+        <identifiers>
+          <bioguideId>L000573</bioguideId>
+          <lisID>2011</lisID>
+          <gpoId>7919</gpoId>
+        </identifiers>
+        <firstName>Raul</firstName>
+        <state>ID</state>
+        <bioguideId>L000573</bioguideId>
+        <district>1</district>
+        <fullName>Rep. Labrador, Raul R. [R-ID-1]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Labrador</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>X.</middleName>
+        <identifiers>
+          <lisID>2277</lisID>
+          <gpoId />
+          <bioguideId>M001195</bioguideId>
+        </identifiers>
+        <firstName>Alexander</firstName>
+        <state>WV</state>
+        <bioguideId>M001195</bioguideId>
+        <district>2</district>
+        <fullName>Rep. Mooney, Alexander X. [R-WV-2]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Mooney</lastName>
+        <sponsorshipDate>2017-02-02</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>S.</middleName>
+        <identifiers>
+          <lisID>2115</lisID>
+          <bioguideId>Y000065</bioguideId>
+          <gpoId />
+        </identifiers>
+        <firstName>Ted</firstName>
+        <state>FL</state>
+        <bioguideId>Y000065</bioguideId>
+        <district>3</district>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Yoho</lastName>
+        <sponsorshipDate>2018-06-15</sponsorshipDate>
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T19:58:13Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>R000575</bioguideId>
+        <identifiers>
+          <gpoId>7788</gpoId>
+          <lisID>1704</lisID>
+          <bioguideId>R000575</bioguideId>
+        </identifiers>
+        <fullName>Rep. Rogers, Mike D. [R-AL-3]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Mike</firstName>
+        <state>AL</state>
+        <lastName>Rogers</lastName>
+        <district>3</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>American Sovereignty Restoration Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To end membership of the United States in the United Nations.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>American Sovereignty Restoration Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>American Sovereignty Restoration Act of 2017</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>American Sovereignty Restoration Act of 2017</strong> </p> <p>This bill repeals the United Nations Participation Act of 1945 and other specified related laws. </p> <p>The bill requires: (1) the President to terminate U.S. membership in the United Nations (U.N.), including any organ, specialized agency, commission, or other formally affiliated body; and (2) closure of the U.S. Mission to the United Nations. </p> <p>The bill prohibits: (1) the authorization of funds for the U.S. assessed or voluntary contribution to the U.N., (2) the authorization of funds for any U.S. contribution to any U.N. military or peacekeeping operation, (3) the expenditure of funds to support the participation of U.S. Armed Forces as part of any U.N. military or peacekeeping operation, (4) U.S. Armed Forces from serving under U.N. command, and (5) diplomatic immunity for U.N. officers or employees.]]></text>
+          <lastSummaryUpdateDate>2017-01-13T19:43:54Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

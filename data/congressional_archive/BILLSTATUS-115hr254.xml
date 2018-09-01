@@ -1,13 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>REAL Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Restoring Education And Learning Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To reinstate Federal Pell Grant eligibility for individuals incarcerated in Federal and State penal institutions, and for other purposes.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>REAL Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>REAL Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Restoring Education And Learning Act of 2017</title>
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+      <actionDate>2017-01-04</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. DANNY K. DAVIS of Illinois:H.R. 254.Congress has the power to enact this legislation pursuantto the following:Article I of the Constitution and its subsequent amendmentsand further clarified and interpreted by the Supreme Court ofthe United States.[Page H96]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <systemCode>hsed00</systemCode>
           <type>Standing</type>
           <name>Education and the Workforce Committee</name>
+          <systemCode>hsed00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
@@ -18,205 +69,230 @@
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <sponsors>
-      <item>
-        <identifiers>
-          <bioguideId>D000096</bioguideId>
-          <lisID>1477</lisID>
-          <gpoId>7927</gpoId>
-        </identifiers>
-        <district>7</district>
-        <fullName>Rep. Davis, Danny K. [D-IL-7]</fullName>
-        <lastName>DAVIS</lastName>
-        <middleName>K.</middleName>
-        <bioguideId>D000096</bioguideId>
-        <party>D</party>
-        <firstName>DANNY</firstName>
-        <state>IL</state>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <billType>HR</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>REAL Act of 2017</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Restoring Education And Learning Act of 2017</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To reinstate Federal Pell Grant eligibility for individuals incarcerated in Federal and State penal institutions, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <title>REAL Act of 2017</title>
-      </item>
-    </titles>
-    <billNumber>254</billNumber>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <title>REAL Act of 2017</title>
-    <amendments />
     <actions>
+      <item>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-04</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-04</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-04</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-04</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
       <actionTypeCounts>
         <billReferrals>1</billReferrals>
         <introducedInTheHouse>1</introducedInTheHouse>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-13T16:31:39Z</updateDate>
-    <createDate>2017-01-05T04:47:32Z</createDate>
-    <recordedVotes />
-    <introducedDate>2017-01-04</introducedDate>
-    <congress>115</congress>
-    <committeeReports />
-    <laws />
-    <cosponsors>
-      <item>
-        <middleName>C. "Bobby"</middleName>
-        <identifiers>
-          <lisID>1037</lisID>
-          <gpoId>8194</gpoId>
-          <bioguideId>S000185</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Scott, Robert C. "Bobby" [D-VA-3]</fullName>
-        <state>VA</state>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <firstName>Robert</firstName>
-        <lastName>Scott</lastName>
-        <district>3</district>
-        <bioguideId>S000185</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>1501</lisID>
-          <gpoId>7814</gpoId>
-          <bioguideId>L000551</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
-        <state>CA</state>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <firstName>BARBARA</firstName>
-        <lastName>LEE</lastName>
-        <district>13</district>
-        <bioguideId>L000551</bioguideId>
-      </item>
-      <item>
-        <middleName />
-        <identifiers>
-          <lisID>281</lisID>
-          <gpoId>7868</gpoId>
-          <bioguideId>D000216</bioguideId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. DeLauro, Rosa L. [D-CT-3]</fullName>
-        <state>CT</state>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <firstName>ROSA</firstName>
-        <lastName>DELAURO</lastName>
-        <district>3</district>
-        <bioguideId>D000216</bioguideId>
-      </item>
-      <item>
-        <middleName>L.</middleName>
-        <identifiers>
-          <bioguideId>R000588</bioguideId>
-          <lisID>2023</lisID>
-          <gpoId>7960</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Richmond, Cedric L. [D-LA-2]</fullName>
-        <state>LA</state>
-        <sponsorshipDate>2017-01-04</sponsorshipDate>
-        <firstName>Cedric</firstName>
-        <lastName>Richmond</lastName>
-        <district>2</district>
-        <bioguideId>R000588</bioguideId>
-      </item>
-    </cosponsors>
-    <originChamber>House</originChamber>
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-      <actionDate>2017-01-04</actionDate>
-    </latestAction>
     <policyArea>
       <name>Education</name>
     </policyArea>
-    <relatedBills />
+    <sponsors>
+      <item>
+        <fullName>Rep. Davis, Danny K. [D-IL-7]</fullName>
+        <party>D</party>
+        <bioguideId>D000096</bioguideId>
+        <identifiers>
+          <bioguideId>D000096</bioguideId>
+          <gpoId>7927</gpoId>
+          <lisID>1477</lisID>
+        </identifiers>
+        <lastName>DAVIS</lastName>
+        <district>7</district>
+        <middleName>K.</middleName>
+        <firstName>DANNY</firstName>
+        <byRequestType />
+        <state>IL</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:58:34Z</updateDate>
+    <billNumber>254</billNumber>
+    <title>REAL Act of 2017</title>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
+          <actionDate>2018-02-13</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>2423</number>
+        <latestTitle>REAL Act of 2018</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+      <item>
+        <latestAction>
+          <text>Referred to the Committee on Education and the Workforce, and in addition to the Committee on the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+          <actionDate>2017-05-16</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <number>2451</number>
+        <latestTitle>Pell Grant Preservation and Expansion Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-05T04:47:32Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b style=""></b><b style="">Restoring Education And Learning Act of 2017 or the REAL Act of 2017</b></p> <p>This bill amends title IV (Student Aid) of the Higher Education Act of 1965 to eliminate the provision that prohibits Pell Grant eligibility for individuals incarcerated in a federal or state penal institution and for sex offenders subject to civil commitment following incarceration. </p>]]></text>
+          <actionDate>2017-01-04</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-02-01T21:21:38Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <bioguideId>S000185</bioguideId>
+        <lastName>Scott</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>S000185</bioguideId>
+          <gpoId>8194</gpoId>
+          <lisID>1037</lisID>
+        </identifiers>
+        <district>3</district>
+        <middleName>C. "Bobby"</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Scott, Robert C. "Bobby" [D-VA-3]</fullName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <state>VA</state>
+        <firstName>Robert</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>L000551</bioguideId>
+        <lastName>LEE</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1501</lisID>
+          <bioguideId>L000551</bioguideId>
+          <gpoId>7814</gpoId>
+        </identifiers>
+        <district>13</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Lee, Barbara [D-CA-13]</fullName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <state>CA</state>
+        <firstName>BARBARA</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>D000216</bioguideId>
+        <lastName>DELAURO</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>281</lisID>
+          <bioguideId>D000216</bioguideId>
+          <gpoId>7868</gpoId>
+        </identifiers>
+        <district>3</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. DeLauro, Rosa L. [D-CT-3]</fullName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <state>CT</state>
+        <firstName>ROSA</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>R000588</bioguideId>
+        <lastName>Richmond</lastName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000588</bioguideId>
+          <gpoId>7960</gpoId>
+          <lisID>2023</lisID>
+        </identifiers>
+        <district>2</district>
+        <middleName>L.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Richmond, Cedric L. [D-LA-2]</fullName>
+        <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <state>LA</state>
+        <firstName>Cedric</firstName>
+        <party>D</party>
+      </item>
+      <item>
+        <bioguideId>C001068</bioguideId>
+        <lastName>Cohen</lastName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>8156</gpoId>
+          <lisID>1878</lisID>
+          <bioguideId>C001068</bioguideId>
+        </identifiers>
+        <district>9</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <sponsorshipDate>2017-07-24</sponsorshipDate>
+        <state>TN</state>
+        <firstName>Steve</firstName>
+        <party>D</party>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-04</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <policyArea>

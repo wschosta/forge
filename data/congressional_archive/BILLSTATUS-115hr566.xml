@@ -1,175 +1,334 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <item>
-        <type>IntroReferral</type>
-        <committee>
-          <name>Foreign Affairs Committee</name>
-          <systemCode>hsfa00</systemCode>
-        </committee>
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-14T09:58:53Z</updateDate>
-    <titles>
-      <item>
-        <title>To require the President to report on the use by the Government of Iran of commercial aircraft and related services for illicit military or other activities, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To require the President to report on the use by the Government of Iran of commercial aircraft and related services for illicit military or other activities, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-13</introducedDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ROSKAM:H.R. 566.Congress has the powerto enact this legislation pursuantto the following:Article 1, Section 8, Clause 1 of the Constitution.Article 1,Section 8, Clause 3 of the Constitution.Article 1, Section 8, Clause 18 of the Constitution.[Page H548]</pre>]]></constitutionalAuthorityStatementText>
     <sponsors>
       <item>
         <middleName>J.</middleName>
-        <firstName>Peter</firstName>
+        <party>R</party>
         <bioguideId>R000580</bioguideId>
-        <district>6</district>
-        <byRequestType />
+        <lastName>Roskam</lastName>
+        <firstName>Peter</firstName>
         <state>IL</state>
         <identifiers>
           <gpoId>7926</gpoId>
-          <bioguideId>R000580</bioguideId>
           <lisID>1848</lisID>
+          <bioguideId>R000580</bioguideId>
         </identifiers>
-        <party>R</party>
-        <lastName>Roskam</lastName>
+        <district>6</district>
         <fullName>Rep. Roskam, Peter J. [R-IL-6]</fullName>
+        <byRequestType />
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
+    <version>1.0.0</version>
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <committeeReports />
     <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <links />
       <text>Referred to the House Committee on Foreign Affairs.</text>
+      <links />
+      <actionDate>2017-01-13</actionDate>
     </latestAction>
-    <congress>115</congress>
-    <cosponsors>
-      <item>
-        <bioguideId>S000344</bioguideId>
-        <firstName>BRAD</firstName>
-        <party>D</party>
-        <lastName>SHERMAN</lastName>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <middleName />
-        <state>CA</state>
-        <district>30</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1526</lisID>
-          <gpoId>7832</gpoId>
-          <bioguideId>S000344</bioguideId>
-        </identifiers>
-        <fullName>Rep. Sherman, Brad [D-CA-30]</fullName>
-      </item>
-      <item>
-        <bioguideId>Z000017</bioguideId>
-        <firstName>Lee</firstName>
-        <party>R</party>
-        <lastName>Zeldin</lastName>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <middleName>M.</middleName>
-        <state>NY</state>
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>2261</lisID>
-          <gpoId />
-          <bioguideId>Z000017</bioguideId>
-        </identifiers>
-        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
-      </item>
-    </cosponsors>
-    <relatedBills />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <laws />
-    <constitutionalAuthorityStatementText />
-    <title>To require the President to report on the use by the Government of Iran of commercial aircraft and related services for illicit military or other activities, and for other purposes.</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <billNumber>566</billNumber>
+    <notes />
+    <introducedDate>2017-01-13</introducedDate>
     <committees>
       <billCommittees>
         <item>
+          <subcommittees />
           <type>Standing</type>
-          <chamber>House</chamber>
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
           <activities>
             <item>
               <date>2017-01-13T14:02:10Z</date>
               <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <createDate>2017-01-14T04:47:33Z</createDate>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-02-16</actionDate>
+          <text>Read twice and referred to the Committee on Foreign Relations.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Iran Terror-Free Skies Act of 2017</latestTitle>
+        <number>420</number>
+      </item>
+    </relatedBills>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Aviation and airports</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Iran</name>
+          </item>
+          <item>
+            <name>Lebanon</name>
+          </item>
+          <item>
+            <name>Middle East</name>
+          </item>
+          <item>
+            <name>Military assistance, sales, and agreements</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>House</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
+        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <committee>
+          <name>Foreign Affairs Committee</name>
+          <systemCode>hsfa00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-13</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <cosponsors>
+      <item>
+        <fullName>Rep. Sherman, Brad [D-CA-30]</fullName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <lastName>SHERMAN</lastName>
+        <state>CA</state>
+        <party>D</party>
+        <bioguideId>S000344</bioguideId>
+        <identifiers>
+          <lisID>1526</lisID>
+          <bioguideId>S000344</bioguideId>
+          <gpoId>7832</gpoId>
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>BRAD</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>30</district>
+      </item>
+      <item>
+        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <lastName>Zeldin</lastName>
+        <state>NY</state>
+        <party>R</party>
+        <bioguideId>Z000017</bioguideId>
+        <identifiers>
+          <lisID>2261</lisID>
+          <bioguideId>Z000017</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>Lee</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>M.</middleName>
+        <district>1</district>
+      </item>
+      <item>
+        <fullName>Rep. Bacon, Don [R-NE-2]</fullName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <lastName>Bacon</lastName>
+        <state>NE</state>
+        <party>R</party>
+        <bioguideId>B001298</bioguideId>
+        <identifiers>
+          <lisID>2337</lisID>
+          <gpoId />
+          <bioguideId>B001298</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Don</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>2</district>
+      </item>
+      <item>
+        <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <lastName>Russell</lastName>
+        <state>OK</state>
+        <party>R</party>
+        <bioguideId>R000604</bioguideId>
+        <identifiers>
+          <bioguideId>R000604</bioguideId>
+          <lisID>2265</lisID>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Steve</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>5</district>
+      </item>
+      <item>
+        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
+        <sponsorshipDate>2017-05-22</sponsorshipDate>
+        <lastName>Brooks</lastName>
+        <state>AL</state>
+        <party>R</party>
+        <bioguideId>B001274</bioguideId>
+        <identifiers>
+          <lisID>1987</lisID>
+          <gpoId>7790</gpoId>
+          <bioguideId>B001274</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Mo</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>5</district>
+      </item>
+      <item>
+        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
+        <sponsorshipDate>2017-06-23</sponsorshipDate>
+        <lastName>Lamborn</lastName>
+        <state>CO</state>
+        <party>R</party>
+        <bioguideId>L000564</bioguideId>
+        <identifiers>
+          <lisID>1834</lisID>
+          <gpoId>7863</gpoId>
+          <bioguideId>L000564</bioguideId>
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Doug</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName />
+        <district>5</district>
+      </item>
+      <item>
+        <fullName>Rep. Brooks, Susan W. [R-IN-5]</fullName>
+        <sponsorshipDate>2018-01-17</sponsorshipDate>
+        <lastName>Brooks</lastName>
+        <state>IN</state>
+        <party>R</party>
+        <bioguideId>B001284</bioguideId>
+        <identifiers>
+          <lisID>2129</lisID>
+          <bioguideId>B001284</bioguideId>
+          <gpoId />
+        </identifiers>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Susan</firstName>
+        <sponsorshipWithdrawnDate />
+        <middleName>W.</middleName>
+        <district>5</district>
+      </item>
+    </cosponsors>
+    <titles>
+      <item>
+        <title>Terror-Free Skies Act</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To require the President to report on the use by the Government of Iran of commercial aircraft and related services for illicit military or other activities, and for other purposes.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Terror-Free Skies Act</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Terror-Free Skies Act</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:00:01Z</updateDate>
+    <calendarNumbers />
     <billType>HR</billType>
-    <billNumber>566</billNumber>
-    <policyArea />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-08-07T15:50:50Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Terror-Free Skies Act</strong></p> <p>This bill requires the President to report to specified congressional committees every 180 days on the Iranian government's use of commercial aircraft and related services for illicit military or other activities during the past five years. Such report shall describe the extent to which:</p> <ul> <li>Iran's government has used commercial aircraft, including Iran Air, or related services to transport illicit cargo to or from Iran, including military goods, weapons, personnel, electronic parts and mechanical equipment, or rocket or missile components; </li> <li>the commercial aviation sector of Iran has provided support to the Islamic Revolutionary Guard Corps, Iran's Ministry of Defense and Armed Forces Logistics, the Bashar al Assad Regime, Hezbollah, Hamas, Kata'ib Hezbollah, or any other foreign terrorist organizations or entities designated on the specially designated national list maintained by the U.S. Department of the Treasury; and </li> <li>foreign governments and persons have facilitated such activities. </li></ul> <p>If the President determines in such a report that any Iranian commercial airliner has used commercial aircraft for illicit military purposes on or after January 16, 2016, the President shall designate such airline as a specially designated national and blocked person.</p> <p>This bill shall cease to be effective 30 days after the President certifies that the Iranian government has ceased providing support for acts of international terrorism.</p> <ul></ul>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Terror-Free Skies Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

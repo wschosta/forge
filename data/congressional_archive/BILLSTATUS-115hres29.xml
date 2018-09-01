@@ -1,180 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <updateDate>2017-01-09T18:31:12Z</updateDate>
-    <billType>HRES</billType>
+    <calendarNumbers />
+    <amendments />
+    <committeeReports />
+    <constitutionalAuthorityStatementText />
     <laws />
-    <sponsors>
-      <item>
-        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
-        <identifiers>
-          <lisID>2191</lisID>
-          <gpoId />
-          <bioguideId>S001195</bioguideId>
-        </identifiers>
-        <byRequestType />
-        <firstName>Jason</firstName>
-        <bioguideId>S001195</bioguideId>
-        <lastName>Smith</lastName>
-        <state>MO</state>
-        <district>8</district>
-        <party>R</party>
-        <middleName />
-      </item>
-    </sponsors>
-    <congress>115</congress>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-06</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:26:16Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-06T05:00:00Z</updateDate>
+          <text><![CDATA[<p>Elects specified Members to the following House Committees: (1) Appropriations, (2) Energy and Commerce, (3) Financial Services, and (4) Ways and Means.</p>]]></text>
+        </item>
+        <item>
+          <name>Passed House without amendment</name>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2017-01-06</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:26:24Z</lastSummaryUpdateDate>
+          <versionCode>81</versionCode>
+          <updateDate>2017-01-06T14:18:43Z</updateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Elects specified Members to the following House Committees: (1) Appropriations, (2) Energy and Commerce, (3) Financial Services, and (4) Ways and Means.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-07T04:48:24Z</createDate>
     <latestAction>
+      <links />
       <actionDate>2017-01-06</actionDate>
       <text>Motion to reconsider laid on the table Agreed to without objection.</text>
       <actionTime>13:51:30</actionTime>
-      <links />
     </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>Electing Members to certain standing committees of the House of Representatives.</title>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
+    <sponsors>
       <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>Floor</type>
-        <actionCode>H38310</actionCode>
-        <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionTime>13:51:30</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
+        <party>R</party>
+        <state>MO</state>
+        <bioguideId>S001195</bioguideId>
+        <middleName />
+        <lastName>Smith</lastName>
+        <fullName>Rep. Smith, Jason [R-MO-8]</fullName>
+        <firstName>Jason</firstName>
+        <district>8</district>
+        <byRequestType />
+        <identifiers>
+          <lisID>2191</lisID>
+          <bioguideId>S001195</bioguideId>
+          <gpoId />
+        </identifiers>
       </item>
-      <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>Floor</type>
-        <actionCode>H37100</actionCode>
-        <committee />
-        <text>On agreeing to the resolution Agreed to without objection. (text: CR H190)</text>
-        <actionTime>13:51:26</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H190</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H190</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>Floor</type>
-        <actionCode>8000</actionCode>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.</text>
-        <actionTime>13:51:26</actionTime>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>Floor</type>
-        <actionCode>H30000</actionCode>
-        <committee />
-        <text>Considered as privileged matter. (consideration: CR H190)</text>
-        <actionTime>13:51:15</actionTime>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links>
-          <link>
-            <name>H190</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H190</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-06</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInHouse>1</introducedInHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <considerationByHouse>1</considerationByHouse>
-      </actionTypeCounts>
-    </actions>
-    <amendments />
-    <introducedDate>2017-01-06</introducedDate>
+    </sponsors>
     <billNumber>29</billNumber>
-    <relatedBills />
+    <updateDate>2018-08-28T19:53:46Z</updateDate>
+    <cboCostEstimates />
+    <notes />
     <titles>
       <item>
-        <chamberCode />
         <title>Electing Members to certain standing committees of the House of Representatives.</title>
-        <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
         <chamberName />
       </item>
       <item>
-        <chamberCode />
         <title>Electing Members to certain standing committees of the House of Representatives.</title>
-        <parentTitleType />
         <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
         <chamberName />
       </item>
     </titles>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <introducedDate>2017-01-06</introducedDate>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
         <policyArea>
           <name>Congress</name>
         </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>House Committee on Appropriations</name>
+          </item>
+          <item>
+            <name>House Committee on Energy and Commerce</name>
+          </item>
+          <item>
+            <name>House Committee on Financial Services</name>
+          </item>
+          <item>
+            <name>House Committee on Ways and Means</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-07T04:48:24Z</createDate>
-    <notes />
+    <billType>HRES</billType>
+    <originChamber>House</originChamber>
+    <title>Electing Members to certain standing committees of the House of Representatives.</title>
+    <cosponsors />
+    <recordedVotes />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
     <committees>
       <billCommittees />
     </committees>
+    <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <actionTime>13:51:30</actionTime>
+        <committee />
+        <links />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionCode>H38310</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <actionTime>13:51:26</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H190</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H190</url>
+          </link>
+        </links>
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H190)</text>
+        <actionCode>H37100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <actionTime>13:51:26</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H190</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H190</url>
+          </link>
+        </links>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H190)</text>
+        <actionCode>8000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <actionTime>13:51:15</actionTime>
+        <committee />
+        <links>
+          <link>
+            <name>H190</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H190</url>
+          </link>
+        </links>
+        <text>Considered as privileged matter. (consideration: CR H190)</text>
+        <actionCode>H30000</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <item>
+        <actionDate>2017-01-06</actionDate>
+        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

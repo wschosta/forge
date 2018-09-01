@@ -1,108 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <amendments />
+    <policyArea>
+      <name>Law</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:12Z</createDate>
+    <notes />
     <actions>
       <item>
         <actionDate>2017-01-13</actionDate>
         <committee>
-          <name>Constitution and Civil Justice Subcommittee</name>
           <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>House committee actions</name>
           <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
         <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
         <type>Committee</type>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
+        <links />
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
-        <links />
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
         <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
       </item>
-      <actionTypeCounts>
-        <placeholderTextForH>1</placeholderTextForH>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
         <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
     </actions>
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees>
-            <item>
-              <activities>
-                <item>
-                  <name>Referred to</name>
-                  <date>2017-01-13T14:23:56Z</date>
-                </item>
-              </activities>
-              <name>Constitution and Civil Justice Subcommittee</name>
-              <systemCode>hsju10</systemCode>
-            </item>
-          </subcommittees>
-          <type>Standing</type>
-          <systemCode>hsju00</systemCode>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:09:10Z</date>
-            </item>
-          </activities>
-          <chamber>House</chamber>
-          <name>Judiciary Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>177</billNumber>
-    <policyArea>
-      <name>Law</name>
-    </policyArea>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Law</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Health care costs and insurance</name>
@@ -120,66 +97,100 @@
             <name>Supreme Court</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Law</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <updateDate>2017-01-23T17:01:18Z</updateDate>
-    <laws />
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KING of Iowa:H.R. 177.Congress has the power to enact this legislation pursuantto the following:Article III, Section 2, Clause 1Article I, Section 8, Clause 9[Page H51]</pre>]]></constitutionalAuthorityStatementText>
-    <introducedDate>2017-01-03</introducedDate>
+    <billNumber>177</billNumber>
+    <title>To bar Supreme Court decisions in certain Patient Protection and Affordable Care Act cases from citation.</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. KING of Iowa:H.R. 177.Congress has the power to enact this legislation pursuantto the following:Article III, Section 2, Clause 1Article I, Section 8, Clause 9[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <activities>
+                <item>
+                  <date>2017-01-13T14:23:56Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Constitution and Civil Justice Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:09:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
     <cosponsors />
+    <updateDate>2018-08-28T19:58:09Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <party>R</party>
-        <lastName>King</lastName>
-        <fullName>Rep. King, Steve [R-IA-4]</fullName>
-        <bioguideId>K000362</bioguideId>
         <middleName />
-        <district>4</district>
-        <byRequestType />
+        <bioguideId>K000362</bioguideId>
         <identifiers>
-          <gpoId>7918</gpoId>
           <lisID>1724</lisID>
+          <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
         </identifiers>
-        <state>IA</state>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <byRequestType />
+        <party>R</party>
         <firstName>Steve</firstName>
+        <state>IA</state>
+        <lastName>King</lastName>
+        <district>4</district>
       </item>
     </sponsors>
-    <cboCostEstimates />
-    <billType>HR</billType>
-    <recordedVotes />
-    <notes />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <latestAction>
-      <links />
-      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
-      <actionDate>2017-01-13</actionDate>
-    </latestAction>
+    <relatedBills />
+    <committeeReports />
     <titles>
       <item>
-        <chamberName />
+        <title>To bar Supreme Court decisions in certain Patient Protection and Affordable Care Act cases from citation.</title>
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
-        <title>To bar Supreme Court decisions in certain Patient Protection and Affordable Care Act cases from citation.</title>
-        <chamberCode />
+        <chamberName />
       </item>
       <item>
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
         <title>To bar Supreme Court decisions in certain Patient Protection and Affordable Care Act cases from citation.</title>
         <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
       </item>
     </titles>
-    <title>To bar Supreme Court decisions in certain Patient Protection and Affordable Care Act cases from citation.</title>
-    <calendarNumbers />
-    <committeeReports />
-    <congress>115</congress>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-03-08T19:18:21Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p>This bill bars the Supreme Court from citing for the purpose of precedence [<em>sic</em>] in all future cases the following Supreme Court decisions concerning the Patient Protection and Affordable Care Act:</p> <ul> <li><i>National Federation of Independent Business v. Sebelius</i>, </li> <li><i>King v. Burwell</i>, and </li> <li><i>Burwell v. Hobby Lobby Stores Inc</i>.</li></ul> </p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

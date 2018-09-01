@@ -1,138 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-11</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-12T04:45:50Z</createDate>
-    <actions>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hshm00</systemCode>
-          <name>Homeland Security Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Homeland Security.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>454</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>FL</state>
-        <middleName>A.</middleName>
-        <bioguideId>R000593</bioguideId>
-        <lastName>Ross</lastName>
-        <firstName>Dennis</firstName>
-        <identifiers>
-          <lisID>2003</lisID>
-          <gpoId>7884</gpoId>
-          <bioguideId>R000593</bioguideId>
-        </identifiers>
-        <fullName>Rep. Ross, Dennis A. [R-FL-15]</fullName>
-        <district>15</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To amend the Illegal Immigration and Immigrant Responsibility Act of 1996 to direct the Secretary of Homeland Security to complete the required 700-mile southwest border fencing by December 31, 2017, and for other purposes.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Homeland Security.</text>
-      <actionDate>2017-01-11</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
     <notes />
+    <title>Finish the Fence Act of 2017</title>
     <committees>
       <billCommittees>
         <item>
-          <name>Homeland Security Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-11T15:00:40Z</date>
             </item>
           </activities>
-          <subcommittees />
           <chamber>House</chamber>
-          <type>Standing</type>
           <systemCode>hshm00</systemCode>
+          <name>Homeland Security Committee</name>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hshm11</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-02T14:26:00Z</date>
+                </item>
+              </activities>
+              <name>Border and Maritime Security Subcommittee</name>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-12T09:58:09Z</updateDate>
+    <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T19:59:23Z</updateDate>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>278</number>
+        <latestTitle>Finish the Fence Act of 2017</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-02-02</actionDate>
+          <text>Referred to the Subcommittee on Border and Maritime Security.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2017-02-02</actionDate>
+        <committee>
+          <systemCode>hshm11</systemCode>
+          <name>Border and Maritime Security Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Border and Maritime Security.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Homeland Security.</text>
+        <committee>
+          <systemCode>hshm00</systemCode>
+          <name>Homeland Security Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-11</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Ross, Dennis A. [R-FL-15]</fullName>
+        <identifiers>
+          <lisID>2003</lisID>
+          <gpoId>7884</gpoId>
+          <bioguideId>R000593</bioguideId>
+        </identifiers>
+        <bioguideId>R000593</bioguideId>
+        <lastName>Ross</lastName>
+        <firstName>Dennis</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName>A.</middleName>
+        <state>FL</state>
+        <district>15</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ROSS:H.R. 454.Congresshas the power to enact this legislation pursuantto the following:Art. I, Sec. 8, Clause 1[Page H392]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Immigration</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>454</billNumber>
     <titles>
       <item>
-        <title>To amend the Illegal Immigration and Immigrant Responsibility Act of 1996 to direct the Secretary of Homeland Security to complete the required 700-mile southwest border fencing by December 31, 2017, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
         <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
+        <title>Finish the Fence Act of 2017</title>
       </item>
       <item>
-        <title>To amend the Illegal Immigration and Immigrant Responsibility Act of 1996 to direct the Secretary of Homeland Security to complete the required 700-mile southwest border fencing by December 31, 2017, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
         <chamberName />
-        <titleType>Display Title</titleType>
+        <title>To amend the Illegal Immigration and Immigrant Responsibility Act of 1996 to direct the Secretary of Homeland Security to complete the required 700-mile southwest border fencing by December 31, 2017, and for other purposes.</title>
+      </item>
+      <item>
         <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Finish the Fence Act of 2017</title>
       </item>
     </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Immigration</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Border security and unlawful immigration</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Latin America</name>
+          </item>
+          <item>
+            <name>Mexico</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <cosponsors />
+    <introducedDate>2017-01-11</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-02-02</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Border and Maritime Security.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-11</actionDate>
+          <lastSummaryUpdateDate>2017-01-31T16:35:30Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Finish the Fence Act of 2017</strong></p> <p>This bill amends the Illegal Immigration Reform and Immigrant Responsibility Act of 1996 with respect to construction of border fencing and road improvements to direct the Department of Homeland Security (DHS) to complete the required 700-mile southwest border fencing by December 31, 2017. </p> <p>The Secure Fence Act of 2006 is amended to direct DHS, in consultation with state and local officials along the U.S.-Mexico border, to achieve operational control over U.S. international land and maritime borders by December 31, 2017.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-12T04:45:50Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

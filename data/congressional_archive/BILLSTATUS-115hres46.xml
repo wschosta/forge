@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-18T17:01:15Z</updateDate>
-    <relatedBills />
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <committeeReports />
-    <sponsors>
-      <item>
-        <bioguideId>G000546</bioguideId>
-        <middleName />
-        <party>R</party>
-        <firstName>SAM</firstName>
-        <lastName>GRAVES</lastName>
-        <district>6</district>
-        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
-        <identifiers>
-          <lisID>1656</lisID>
-          <bioguideId>G000546</bioguideId>
-          <gpoId>8014</gpoId>
-        </identifiers>
-        <state>MO</state>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <latestAction>
-      <actionDate>2017-01-12</actionDate>
-      <text>Referred to House Veterans' Affairs</text>
-      <links />
-    </latestAction>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsas00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsas02</systemCode>
+              <activities>
+                <item>
+                  <date>2017-02-21T18:59:10Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Military Personnel Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Armed Services Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:02:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+        <item>
+          <systemCode>hsvr00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr03</systemCode>
+              <activities>
+                <item>
+                  <date>2017-01-19T20:17:27Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Health Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:02:10Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
     <summaries>
       <billSummaries>
         <item>
-          <updateDate>2017-01-12T05:00:00Z</updateDate>
-          <actionDate>2017-01-12</actionDate>
-          <name>Introduced in House</name>
           <text><![CDATA[<p>Expresses support for raising public awareness of sleep apnea, especially for soldiers and veterans, and providing access to care for soldiers and veterans with sleep illnesses.</p> Encourages soldiers and veterans to seek and maintain healthy sleep habits.]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
           <lastSummaryUpdateDate>2017-01-18T16:47:50Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
         </item>
       </billSummaries>
     </summaries>
-    <billType>HRES</billType>
-    <constitutionalAuthorityStatementText />
-    <createDate>2017-01-13T04:55:29Z</createDate>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-12</introducedDate>
+    <calendarNumbers />
     <titles>
       <item>
         <titleType>Official Title as Introduced</titleType>
@@ -66,138 +85,227 @@
         <title>Recognizing the increased risk of sleep apnea among soldiers returning from active duty and the benefits of continuous positive airway pressure (CPAP) therapy on treating obstructive sleep apnea (OSA) in soldiers suffering from Posttraumatic Stress Disorder (PTSD).</title>
       </item>
     </titles>
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:02:10Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hsvr00</systemCode>
-          <chamber>House</chamber>
-          <name>Veterans' Affairs Committee</name>
-        </item>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:02:05Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hsas00</systemCode>
-          <chamber>House</chamber>
-          <name>Armed Services Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
     <cosponsors>
       <item>
-        <firstName>Timothy</firstName>
-        <district>1</district>
         <middleName>J.</middleName>
-        <state>MN</state>
-        <bioguideId>W000799</bioguideId>
         <identifiers>
           <lisID>1856</lisID>
           <bioguideId>W000799</bioguideId>
           <gpoId>8001</gpoId>
         </identifiers>
-        <lastName>Walz</lastName>
-        <party>D</party>
+        <firstName>Timothy</firstName>
+        <state>MN</state>
+        <bioguideId>W000799</bioguideId>
+        <district>1</district>
         <fullName>Rep. Walz, Timothy J. [D-MN-1]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
         <sponsorshipWithdrawnDate />
+        <lastName>Walz</lastName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>D.</middleName>
+        <identifiers>
+          <bioguideId>B000490</bioguideId>
+          <lisID>91</lisID>
+          <gpoId>7899</gpoId>
+        </identifiers>
+        <firstName>SANFORD</firstName>
+        <state>GA</state>
+        <bioguideId>B000490</bioguideId>
+        <district>2</district>
+        <fullName>Rep. Bishop, Sanford D., Jr. [D-GA-2]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>BISHOP</lastName>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>J.</middleName>
+        <identifiers>
+          <bioguideId>R000580</bioguideId>
+          <lisID>1848</lisID>
+          <gpoId>7926</gpoId>
+        </identifiers>
+        <firstName>Peter</firstName>
+        <state>IL</state>
+        <bioguideId>R000580</bioguideId>
+        <district>6</district>
+        <fullName>Rep. Roskam, Peter J. [R-IL-6]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Roskam</lastName>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+      </item>
+      <item>
+        <middleName>H.</middleName>
+        <identifiers>
+          <bioguideId>P000608</bioguideId>
+          <lisID>2113</lisID>
+          <gpoId />
+        </identifiers>
+        <firstName>Scott</firstName>
+        <state>CA</state>
+        <bioguideId>P000608</bioguideId>
+        <district>52</district>
+        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Peters</lastName>
+        <sponsorshipDate>2017-03-22</sponsorshipDate>
+      </item>
+      <item>
+        <middleName />
+        <identifiers>
+          <gpoId>7865</gpoId>
+          <lisID>1835</lisID>
+          <bioguideId>P000593</bioguideId>
+        </identifiers>
+        <firstName>Ed</firstName>
+        <state>CO</state>
+        <bioguideId>P000593</bioguideId>
+        <district>7</district>
+        <fullName>Rep. Perlmutter, Ed [D-CO-7]</fullName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Perlmutter</lastName>
+        <sponsorshipDate>2018-01-08</sponsorshipDate>
       </item>
     </cosponsors>
-    <notes />
-    <amendments />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Military Personnel.</text>
+      <links />
+      <actionDate>2017-02-21</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:53:49Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HRES</billType>
+    <billNumber>46</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Recognizing the increased risk of sleep apnea among soldiers returning from active duty and the benefits of continuous positive airway pressure (CPAP) therapy on treating obstructive sleep apnea (OSA) in soldiers suffering from Posttraumatic Stress Disorder (PTSD).</title>
+    <congress>115</congress>
     <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to House Veterans' Affairs</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionCode>H11100</actionCode>
+        <actionDate>2017-02-21</actionDate>
         <committee>
-          <name>Veterans' Affairs Committee</name>
-          <systemCode>hsvr00</systemCode>
+          <systemCode>hsas02</systemCode>
+          <name>Military Personnel Subcommittee</name>
         </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Military Personnel.</text>
+        <type>Committee</type>
       </item>
       <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
+          <systemCode>hsvr03</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
         <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <text>Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>H11100-A</actionCode>
-        <committee />
-      </item>
-      <item>
         <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to House Armed Services</text>
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
-        <actionCode>H11100</actionCode>
         <committee>
-          <name>Armed Services Committee</name>
-          <systemCode>hsas00</systemCode>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
         </committee>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
+        <text>Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <text>Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsas00</systemCode>
+          <name>Armed Services Committee</name>
+        </committee>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
         <actionCode>Intro-H</actionCode>
-        <committee />
       </item>
       <item>
+        <text>Introduced in House</text>
         <links />
         <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>1000</actionCode>
         <committee />
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>1000</actionCode>
       </item>
+      <actionTypeCounts>
+        <billReferrals>2</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <placeholderTextForH>2</placeholderTextForH>
+      </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <congress>115</congress>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Cardiovascular and respiratory health</name>
@@ -218,15 +326,31 @@
             <name>Veterans' medical care</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Armed Forces and National Security</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <billNumber>46</billNumber>
-    <recordedVotes />
-    <title>Recognizing the increased risk of sleep apnea among soldiers returning from active duty and the benefits of continuous positive airway pressure (CPAP) therapy on treating obstructive sleep apnea (OSA) in soldiers suffering from Posttraumatic Stress Disorder (PTSD).</title>
-    <laws />
+    <committeeReports />
+    <introducedDate>2017-01-12</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>G000546</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. Graves, Sam [R-MO-6]</fullName>
+        <lastName>GRAVES</lastName>
+        <state>MO</state>
+        <district>6</district>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>G000546</bioguideId>
+          <lisID>1656</lisID>
+          <gpoId>8014</gpoId>
+        </identifiers>
+        <firstName>SAM</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-13T04:55:29Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

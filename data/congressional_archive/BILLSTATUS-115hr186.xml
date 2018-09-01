@@ -1,114 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <committee>
-          <systemCode>hsed00</systemCode>
-          <name>Education and the Workforce Committee</name>
-        </committee>
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
     <amendments />
-    <updateDate>2017-01-12T17:31:40Z</updateDate>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>United States Virgin Islands College Access Act of 2017</title>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>To establish a program that enables college-bound residents of the United States Virgin Islands to have greater choices among institutions of higher education, and for other purposes.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>United States Virgin Islands College Access Act of 2017</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>E.</middleName>
-        <firstName>Stacey</firstName>
-        <bioguideId>P000610</bioguideId>
-        <district>0</district>
-        <byRequestType />
-        <state>VI</state>
-        <identifiers>
-          <bioguideId>P000610</bioguideId>
-          <gpoId />
-          <lisID>2274</lisID>
-        </identifiers>
-        <party>D</party>
-        <lastName>Plaskett</lastName>
-        <fullName>Rep. Plaskett, Stacey E. [D-VI-At Large]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
     <latestAction>
       <actionDate>2017-01-03</actionDate>
-      <links />
       <text>Referred to the House Committee on Education and the Workforce.</text>
+      <links />
     </latestAction>
     <congress>115</congress>
-    <cosponsors />
-    <relatedBills />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -140,33 +39,169 @@
       </billSubjects>
     </subjects>
     <laws />
-    <constitutionalAuthorityStatementText />
-    <title>United States Virgin Islands College Access Act of 2017</title>
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Plaskett</lastName>
+        <middleName>E.</middleName>
+        <bioguideId>P000610</bioguideId>
+        <fullName>Rep. Plaskett, Stacey E. [D-VI-At Large]</fullName>
+        <identifiers>
+          <bioguideId>P000610</bioguideId>
+          <lisID>2274</lisID>
+          <gpoId />
+        </identifiers>
+        <byRequestType />
+        <state>VI</state>
+        <firstName>Stacey</firstName>
+        <party>D</party>
+        <district>0</district>
+      </item>
+    </sponsors>
     <recordedVotes />
-    <cboCostEstimates />
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>4782</number>
+        <latestTitle>Puerto Rico and Virgin Islands Equitable Rebuild Act of 2018</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2018-05-22</actionDate>
+          <text>Referred to the Subcommittee on Energy.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <cosponsors />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <committee>
+          <name>Education and the Workforce Committee</name>
+          <systemCode>hsed00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsed00</systemCode>
-          <name>Education and the Workforce Committee</name>
-          <subcommittees />
-          <chamber>House</chamber>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-03T17:23:30Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
           <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
+    <updateDate>2018-08-28T19:58:11Z</updateDate>
+    <version>1.0.0</version>
+    <title>United States Virgin Islands College Access Act of 2017</title>
     <createDate>2017-01-04T07:01:12Z</createDate>
-    <billType>HR</billType>
     <billNumber>186</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. PLASKETT:H.R. 186.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3 provides that the Congress shall havePower to dispose of and make needful Rules and Regulationsrespecting the Territory or other Property belong to theUnited States.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
     <policyArea>
       <name>Education</name>
     </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p> <b>United States Virgin Islands College Access Act of </b><b>2017</b></p> <p>This bill directs the U.S. Virgin Islands to award grants to public four-year institutions of higher education (IHEs) located in a state, the District of Columbia, Puerto Rico, or Guam to cover the difference between in-state and out-of-state tuition and fees for students who have: (1) been domiciled in the Virgin Islands for at least the 12 months preceding their enrollment in the IHE; and (2) received on or after January 1, 2013, a secondary school diploma or its equivalent while domiciled there.</p> <p> The Government Accountability Office must monitor the program's effectiveness in expanding educational opportunities for such students.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-02-15T19:36:08Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <title>United States Virgin Islands College Access Act of 2017</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>To establish a program that enables college-bound residents of the United States Virgin Islands to have greater choices among institutions of higher education, and for other purposes.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>United States Virgin Islands College Access Act of 2017</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>United States Virgin Islands College Access Act of 2017</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

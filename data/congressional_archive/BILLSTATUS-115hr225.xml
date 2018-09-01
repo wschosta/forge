@@ -1,64 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-03</introducedDate>
-    <committeeReports />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees>
+            <item>
+              <systemCode>hsii13</systemCode>
+              <name>Water, Power and Oceans Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:33:48Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+            <item>
+              <systemCode>hsii10</systemCode>
+              <name>Federal Lands Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:33:41Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:26:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
     <laws />
-    <createDate>2017-01-04T07:01:13Z</createDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</b> </p> <p>This bill amends the Marine Mammal Protection Act of 1972 to allow the importation of polar bear parts taken legally in sport hunts in Canada.</p>]]></text>
+          <lastSummaryUpdateDate>2017-03-06T17:34:21Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend the Marine Mammal Protection Act of 1972 to allow the importation of polar bear trophies taken in sport hunts in Canada.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
+      </item>
+    </titles>
+    <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+      <links />
+      <actionDate>2017-02-10</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:21Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 225.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3``The Congress shall have the power to regulate commercewith foreign nations, and among several states, and with theIndian Tribes''[Page H53]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Animals</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>225</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
+    <congress>115</congress>
     <actions>
       <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii13</systemCode>
+          <name>Water, Power and Oceans Subcommittee</name>
+        </committee>
+        <links />
         <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
+          <code>1</code>
+          <name>House committee actions</name>
         </sourceSystem>
-        <type>IntroReferral</type>
+        <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Natural Resources.</text>
         <committee>
           <systemCode>hsii00</systemCode>
           <name>Natural Resources Committee</name>
         </committee>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <actionCode>H11100</actionCode>
         <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
         <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
         <links />
-      </item>
-      <item>
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
       <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>2</placeholderTextForH>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>225</billNumber>
-    <amendments />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -89,84 +212,29 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <party>R</party>
-        <state>AK</state>
-        <middleName>E.</middleName>
         <bioguideId>Y000033</bioguideId>
+        <middleName>E.</middleName>
+        <byRequestType />
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
         <lastName>YOUNG</lastName>
-        <firstName>DON</firstName>
+        <state>AK</state>
+        <district>0</district>
+        <party>R</party>
         <identifiers>
-          <gpoId>7785</gpoId>
           <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
           <lisID>1256</lisID>
         </identifiers>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <district>0</district>
-        <byRequestType />
+        <firstName>DON</firstName>
       </item>
     </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
-    <policyArea>
-      <name>Animals</name>
-    </policyArea>
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
     <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <name>Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:26:50Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-11T17:01:17Z</updateDate>
-    <titles>
-      <item>
-        <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To amend the Marine Mammal Protection Act of 1972 to allow the importation of polar bear trophies taken in sport hunts in Canada.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Restoration of the U.S.-Russia Polar Bear Conservation Fund Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

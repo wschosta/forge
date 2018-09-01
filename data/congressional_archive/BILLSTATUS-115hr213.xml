@@ -1,143 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <billNumber>213</billNumber>
-    <cosponsors />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Public Lands and Natural Resources</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <updateDate>2017-01-11T17:01:16Z</updateDate>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <committee>
-          <name>Natural Resources Committee</name>
-          <systemCode>hsii00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>HR</billType>
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <notes />
     <policyArea>
       <name>Public Lands and Natural Resources</name>
     </policyArea>
-    <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
+    <billNumber>213</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 213.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3; Clause 2``The Congress shall have Power to dispose of and make allneedful Rules and Regulations respecting the Territory orother Property belonging to the United States; and nothing inthis Constitution shall be so construed as to Prejudice anyClaims of the United States, or of any particular State.''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-26T21:33:17Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This bill directs the Department of the Interior to convey, without consideration, to the Municipality of Anchorage, Alaska, the reversionary interests of the United States in and to specified nonfederal land in Anchorage for the purpose of unencumbering its title and enabling its economic development. </p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
     <createDate>2017-01-04T07:01:13Z</createDate>
     <sponsors>
       <item>
         <lastName>YOUNG</lastName>
+        <party>R</party>
+        <middleName>E.</middleName>
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
         <identifiers>
-          <gpoId>7785</gpoId>
           <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
           <lisID>1256</lisID>
         </identifiers>
-        <byRequestType />
-        <middleName>E.</middleName>
         <state>AK</state>
         <firstName>DON</firstName>
-        <party>R</party>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <byRequestType />
         <district>0</district>
         <bioguideId>Y000033</bioguideId>
       </item>
     </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:58:18Z</updateDate>
+    <committeeReports />
+    <actions>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-02-10</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Federal Lands.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
+        <chamberName />
+      </item>
+    </titles>
+    <cboCostEstimates />
     <committees>
       <billCommittees>
         <item>
           <type>Standing</type>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
           <chamber>House</chamber>
           <activities>
             <item>
-              <date>2017-01-03T17:20:20Z</date>
               <name>Referred to</name>
+              <date>2017-01-03T17:20:20Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
+          <subcommittees>
+            <item>
+              <name>Federal Lands Subcommittee</name>
+              <systemCode>hsii10</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-10T16:46:59Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>To remove reversionary clauses on property owned by the municipality of Anchorage, Alaska.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <actionDate>2017-01-03</actionDate>
-    </latestAction>
-    <calendarNumbers />
-    <introducedDate>2017-01-03</introducedDate>
-    <amendments />
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>Economic development</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,23 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-12</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-13T04:55:34Z</createDate>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Filipino Veterans Promise Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to require the Secretary of Defense to establish a process to determine whether individuals claiming certain service in the Philippines during World War II are eligible for certain benefits despite not being on the Missouri List, and for other purposes.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>Filipino Veterans Promise Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Filipino Veterans Promise Act</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Committee on Veterans' Affairs. Hearings held.</text>
+      <actionDate>2017-06-15</actionDate>
+    </latestAction>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-06-15T14:00:00Z</date>
+              <name>Hearings by</name>
+            </item>
+            <item>
+              <date>2017-01-12T19:08:39Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <actionByCounts>
-        <senate>2</senate>
+        <senate>3</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
+      <item>
+        <actionDate>2017-06-15</actionDate>
+        <committee>
+          <name>Veterans' Affairs Committee</name>
+          <systemCode>ssva00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>Senate</name>
+          <code>0</code>
+        </sourceSystem>
+        <text>Committee on Veterans' Affairs. Hearings held.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <systemCode>ssva00</systemCode>
           <name>Veterans' Affairs Committee</name>
+          <systemCode>ssva00</systemCode>
         </committee>
         <links />
         <sourceSystem>
@@ -29,112 +92,120 @@
       </item>
       <item>
         <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
         <actionDate>2017-01-12</actionDate>
       </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+        <hearingsHeld>1</hearingsHeld>
+      </actionTypeCounts>
     </actions>
-    <recordedVotes />
-    <cboCostEstimates />
-    <relatedBills />
-    <cosponsors>
-      <item>
-        <lastName>Hirono</lastName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <state>HI</state>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>H001042</bioguideId>
-        <firstName>Mazie</firstName>
-        <fullName>Sen. Hirono, Mazie K. [D-HI]</fullName>
-        <identifiers>
-          <lisID>1844</lisID>
-          <gpoId>7913</gpoId>
-          <bioguideId>H001042</bioguideId>
-        </identifiers>
-        <middleName>K.</middleName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-      </item>
-    </cosponsors>
-    <billNumber>111</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
     <sponsors>
       <item>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
         <party>R</party>
-        <state>NV</state>
-        <middleName />
         <bioguideId>H001041</bioguideId>
-        <lastName>Heller</lastName>
-        <firstName>Dean</firstName>
         <identifiers>
           <bioguideId>H001041</bioguideId>
-          <gpoId>8060</gpoId>
           <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
         </identifiers>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <lastName>Heller</lastName>
         <byRequestType />
+        <middleName />
+        <firstName>Dean</firstName>
+        <state>NV</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:22:41Z</updateDate>
+    <billNumber>111</billNumber>
+    <title>Filipino Veterans Promise Act</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
     <billType>S</billType>
-    <title>A bill to require the Secretary of Defense to establish a process to determine whether individuals claiming certain service in the Philippines during World War II are eligible for certain benefits despite not being on the Missouri List, and for other purposes.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <createDate>2017-01-13T04:55:34Z</createDate>
     <originChamber>Senate</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
+    <summaries>
+      <billSummaries>
         <item>
-          <type>Standing</type>
-          <chamber>Senate</chamber>
-          <activities>
-            <item>
-              <date>2017-01-12T19:08:39Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>ssva00</systemCode>
-          <name>Veterans' Affairs Committee</name>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-12</actionDate>
+          <lastSummaryUpdateDate>2017-02-11T16:05:21Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><strong>Filipino Veterans Promise Act</strong></p> <p>This bill directs the Department of Defense to establish a process for determining whether individuals who served in the organized military forces of the Government of the Commonwealth of the Philippines or in the Philippine Scouts while in the service of the U.S. Armed Forces during World War II and who are not included in the Missouri List are eligible for certain benefits relating to their U.S. service.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
         </item>
-      </billCommittees>
-    </committees>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
     <calendarNumbers />
-    <updateDate>2017-01-13T10:07:32Z</updateDate>
-    <titles>
+    <cosponsors>
       <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to require the Secretary of Defense to establish a process to determine whether individuals claiming certain service in the Philippines during World War II are eligible for certain benefits despite not being on the Missouri List, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
+        <bioguideId>H001042</bioguideId>
+        <party>D</party>
+        <firstName>Mazie</firstName>
+        <fullName>Sen. Hirono, Mazie K. [D-HI]</fullName>
+        <lastName>Hirono</lastName>
+        <state>HI</state>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>K.</middleName>
+        <identifiers>
+          <bioguideId>H001042</bioguideId>
+          <gpoId>7913</gpoId>
+          <lisID>1844</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
       </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A bill to require the Secretary of Defense to establish a process to determine whether individuals claiming certain service in the Philippines during World War II are eligible for certain benefits despite not being on the Missouri List, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
+    </cosponsors>
+    <introducedDate>2017-01-12</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Asia</name>
+          </item>
+          <item>
+            <name>Conflicts and wars</name>
+          </item>
+          <item>
+            <name>Life, casualty, property insurance</name>
+          </item>
+          <item>
+            <name>Military history</name>
+          </item>
+          <item>
+            <name>Military personnel and dependents</name>
+          </item>
+          <item>
+            <name>Philippines</name>
+          </item>
+          <item>
+            <name>Veterans' pensions and compensation</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

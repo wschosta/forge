@@ -1,140 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>A bill to provide for the inclusion of court-appointed guardianship improvement and oversight activities under the Elder Justice Act of 2009.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>A bill to provide for the inclusion of court-appointed guardianship improvement and oversight activities under the Elder Justice Act of 2009.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <recordedVotes />
-    <cboCostEstimates />
+    <notes />
     <congress>115</congress>
-    <originChamber>Senate</originChamber>
-    <updateDate>2017-01-21T10:05:51Z</updateDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssju00</systemCode>
+          <chamber>Senate</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-20T23:31:04Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <title>Court-Appointed Guardian Accountability and Senior Protection Act</title>
     <laws />
+    <updateDate>2018-08-28T20:23:02Z</updateDate>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>Became Public Law No: 115-70.</text>
+          <actionDate>2017-10-18</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>178</number>
+        <latestTitle>Elder Abuse Prevention and Prosecution Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <item>
         <actionDate>2017-01-20</actionDate>
         <committee>
-          <name>Judiciary Committee</name>
           <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on the Judiciary.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-20</actionDate>
         <text>Introduced in Senate</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
+        <type>IntroReferral</type>
         <committee />
+        <actionDate>2017-01-20</actionDate>
+        <links />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-21T04:55:45Z</createDate>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-20T23:31:04Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>ssju00</systemCode>
-          <chamber>Senate</chamber>
-          <name>Judiciary Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <billType>S</billType>
-    <amendments />
-    <cosponsors>
-      <item>
-        <bioguideId>C001056</bioguideId>
-        <middleName />
-        <party>R</party>
-        <sponsorshipWithdrawnDate />
-        <lastName>Cornyn</lastName>
-        <sponsorshipDate>2017-01-20</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>John</firstName>
-        <identifiers>
-          <gpoId>8295</gpoId>
-          <lisID>1692</lisID>
-          <bioguideId>C001056</bioguideId>
-        </identifiers>
-        <state>TX</state>
-        <fullName>Sen. Cornyn, John [R-TX]</fullName>
-      </item>
-    </cosponsors>
-    <billNumber>182</billNumber>
     <sponsors>
       <item>
-        <middleName />
         <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
-        <firstName>Amy</firstName>
-        <bioguideId>K000367</bioguideId>
-        <lastName>Klobuchar</lastName>
-        <party>D</party>
-        <state>MN</state>
         <identifiers>
-          <gpoId>8249</gpoId>
           <lisID>1826</lisID>
           <bioguideId>K000367</bioguideId>
+          <gpoId>8249</gpoId>
         </identifiers>
+        <bioguideId>K000367</bioguideId>
+        <lastName>Klobuchar</lastName>
+        <firstName>Amy</firstName>
+        <party>D</party>
         <byRequestType />
+        <middleName />
+        <state>MN</state>
       </item>
     </sponsors>
-    <introducedDate>2017-01-20</introducedDate>
-    <committeeReports />
-    <policyArea />
-    <title>A bill to provide for the inclusion of court-appointed guardianship improvement and oversight activities under the Elder Justice Act of 2009.</title>
+    <billType>S</billType>
+    <policyArea>
+      <name>Law</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>182</billNumber>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Court-Appointed Guardian Accountability and Senior Protection Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to provide for the inclusion of court-appointed guardianship improvement and oversight activities under the Elder Justice Act of 2009.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Court-Appointed Guardian Accountability and Senior Protection Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Court-Appointed Guardian Accountability and Senior Protection Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Law</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Aging</name>
+          </item>
+          <item>
+            <name>Crime prevention</name>
+          </item>
+          <item>
+            <name>Crime victims</name>
+          </item>
+          <item>
+            <name>Fraud offenses and financial crimes</name>
+          </item>
+          <item>
+            <name>Judicial procedure and administration</name>
+          </item>
+          <item>
+            <name>Law enforcement administration and funding</name>
+          </item>
+          <item>
+            <name>Social work, volunteer service, charitable organizations</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <cosponsors>
+      <item>
+        <lastName>Cornyn</lastName>
+        <sponsorshipDate>2017-01-20</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <identifiers>
+          <bioguideId>C001056</bioguideId>
+          <lisID>1692</lisID>
+          <gpoId>8295</gpoId>
+        </identifiers>
+        <firstName>John</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>TX</state>
+        <middleName />
+        <bioguideId>C001056</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <lastName>Cortez Masto</lastName>
+        <sponsorshipDate>2017-02-02</sponsorshipDate>
+        <party>D</party>
+        <fullName>Sen. Cortez Masto, Catherine  [D-NV]</fullName>
+        <identifiers>
+          <lisID>2299</lisID>
+          <gpoId />
+          <bioguideId>C001113</bioguideId>
+        </identifiers>
+        <firstName>Catherine</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NV</state>
+        <middleName />
+        <bioguideId>C001113</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-20</introducedDate>
+    <calendarNumbers />
     <latestAction>
+      <actionDate>2017-01-20</actionDate>
       <links />
       <text>Read twice and referred to the Committee on the Judiciary.</text>
-      <actionDate>2017-01-20</actionDate>
     </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-20T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-10-03T20:38:02Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Court-Appointed Guardian Accountability and Senior Protection Act </b></p> <p> This bill amends title XX (Block Grants to States for Social Services and Elder Justice) of the Social Security Act to direct the Department of Health and Human Services to award grants to the highest courts of states to conduct demonstration programs that: (1) assess adult guardianship and conservatorship proceedings, including the appointment and the monitoring of the performance of court-appointed guardians and conservators; and (2) implement changes deemed necessary as a result of the assessments, such as requiring background checks for all potential guardians and conservators, and establishing systems that enable electronic filing and review of the annual accountings and other required conservatorship and guardianship filings.</p> <p> The highest court of a state awarded such a grant shall collaborate with the state's own Unit on Aging and its Adult Protective Services agency in conducting the demonstration program.</p>]]></text>
+          <actionDate>2017-01-20</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-21T04:55:45Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

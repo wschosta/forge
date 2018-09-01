@@ -1,34 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committeeReports />
-    <sponsors>
+    <notes />
+    <congress>115</congress>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>sscm00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-03-30T15:32:14Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-01-24T15:00:00Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
+              <date>2017-01-17T21:23:04Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-16</citation>
+      </committeeReport>
+    </committeeReports>
+    <cboCostEstimates>
       <item>
-        <middleName>F.</middleName>
-        <party>R</party>
-        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
-        <state>MS</state>
-        <byRequestType />
-        <lastName>WICKER</lastName>
-        <bioguideId>W000437</bioguideId>
-        <firstName>ROGER</firstName>
-        <identifiers>
-          <bioguideId>W000437</bioguideId>
-          <lisID>1226</lisID>
-          <gpoId>8263</gpoId>
-        </identifiers>
+        <url>https://www.cbo.gov/publication/52452</url>
+        <pubDate>2017-02-23T13:43:30Z</pubDate>
+        <title>S. 168, Commercial Vessel Incidental Discharge Act</title>
       </item>
-    </sponsors>
-    <recordedVotes />
-    <updateDate>2017-01-18T10:22:47Z</updateDate>
+    </cboCostEstimates>
+    <title>Commercial Vessel Incidental Discharge Act</title>
+    <laws />
+    <updateDate>2018-08-28T20:22:57Z</updateDate>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Commercial Vessel Incidental Discharge Act</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>1154</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on Water Resources and Environment.</text>
+          <actionDate>2017-02-17</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <item>
+        <actionDate>2017-03-30</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 27.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-03-30</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/16</url>
+            <name>report No. 115-16</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-16.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-03-30</actionDate>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/16</url>
+            <name>report No. 115-16</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune without amendment. With written report No. 115-16.</text>
+        <type>Committee</type>
+        <actionCode>14000</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-24</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Ordered to be reported without amendment favorably.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
@@ -37,155 +135,565 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
         <type>IntroReferral</type>
       </item>
       <item>
+        <actionDate>2017-01-17</actionDate>
         <links />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
         <committee />
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
       </item>
+      <actionByCounts>
+        <senate>6</senate>
+      </actionByCounts>
+      <actionTypeCounts>
+        <reportedToSenate>2</reportedToSenate>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+        <orderedReported>1</orderedReported>
+      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-18T05:05:00Z</createDate>
+    <sponsors>
+      <item>
+        <fullName>Sen. Wicker, Roger F. [R-MS]</fullName>
+        <identifiers>
+          <bioguideId>W000437</bioguideId>
+          <lisID>1226</lisID>
+          <gpoId>8263</gpoId>
+        </identifiers>
+        <bioguideId>W000437</bioguideId>
+        <lastName>WICKER</lastName>
+        <firstName>ROGER</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName>F.</middleName>
+        <state>MS</state>
+      </item>
+    </sponsors>
+    <billType>S</billType>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <recordedVotes />
     <billNumber>168</billNumber>
-    <policyArea />
-    <title>A bill to amend and enhance certain maritime programs of the Department of Transportation.</title>
-    <latestAction>
-      <actionDate>2017-01-17</actionDate>
-      <links />
-      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-    </latestAction>
+    <titles>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Commercial Vessel Incidental Discharge Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Commercial Vessel Incidental Discharge Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to amend and enhance certain maritime programs of the Department of Transportation.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Commercial Vessel Incidental Discharge Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Commercial Vessel Incidental Discharge Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Commercial Vessel Incidental Discharge Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Aquatic ecology</name>
+          </item>
+          <item>
+            <name>Department of Homeland Security</name>
+          </item>
+          <item>
+            <name>Environmental assessment, monitoring, research</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Marine and inland water transportation</name>
+          </item>
+          <item>
+            <name>Marine pollution</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Environmental Protection</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
     <cosponsors>
       <item>
         <bioguideId>C001070</bioguideId>
         <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <lastName>Casey</lastName>
+        <state>PA</state>
         <party>D</party>
         <sponsorshipWithdrawnDate />
-        <lastName>Casey</lastName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Bob</firstName>
         <identifiers>
-          <gpoId>8282</gpoId>
           <bioguideId>C001070</bioguideId>
           <lisID>1828</lisID>
+          <gpoId>8282</gpoId>
         </identifiers>
-        <state>PA</state>
-        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <firstName>Bob</firstName>
       </item>
       <item>
         <bioguideId>R000595</bioguideId>
         <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <lastName>Rubio</lastName>
+        <state>FL</state>
         <party>R</party>
         <sponsorshipWithdrawnDate />
-        <lastName>Rubio</lastName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Marco</firstName>
         <identifiers>
-          <lisID>2084</lisID>
           <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
           <gpoId>8242</gpoId>
         </identifiers>
-        <state>FL</state>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <firstName>Marco</firstName>
       </item>
       <item>
         <bioguideId>N000032</bioguideId>
         <middleName>WILLIAM</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <lastName>NELSON</lastName>
+        <state>FL</state>
         <party>D</party>
         <sponsorshipWithdrawnDate />
-        <lastName>NELSON</lastName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>CLARENCE</firstName>
         <identifiers>
+          <lisID>859</lisID>
           <gpoId>8236</gpoId>
           <bioguideId>N000032</bioguideId>
-          <lisID>859</lisID>
         </identifiers>
-        <state>FL</state>
-        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <firstName>CLARENCE</firstName>
       </item>
       <item>
         <bioguideId>T000250</bioguideId>
         <middleName>R.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Sen. Thune, John [R-SD]</fullName>
+        <lastName>THUNE</lastName>
+        <state>SD</state>
         <party>R</party>
         <sponsorshipWithdrawnDate />
-        <lastName>THUNE</lastName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>JOHN</firstName>
         <identifiers>
+          <lisID>1534</lisID>
           <bioguideId>T000250</bioguideId>
           <gpoId>8257</gpoId>
-          <lisID>1534</lisID>
         </identifiers>
-        <state>SD</state>
-        <fullName>Sen. Thune, John [R-SD]</fullName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <firstName>JOHN</firstName>
+      </item>
+      <item>
+        <bioguideId>S001194</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Schatz, Brian [D-HI]</fullName>
+        <lastName>Schatz</lastName>
+        <state>HI</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2173</lisID>
+          <bioguideId>S001194</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <firstName>Brian</firstName>
+      </item>
+      <item>
+        <bioguideId>S001198</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Sullivan, Dan  [R-AK]</fullName>
+        <lastName>Sullivan</lastName>
+        <state>AK</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>S001198</bioguideId>
+          <gpoId />
+          <lisID>2290</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <firstName>Dan</firstName>
+      </item>
+      <item>
+        <bioguideId>M001170</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. McCaskill, Claire [D-MO]</fullName>
+        <lastName>McCaskill</lastName>
+        <state>MO</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>M001170</bioguideId>
+          <lisID>1820</lisID>
+          <gpoId>8252</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <firstName>Claire</firstName>
+      </item>
+      <item>
+        <bioguideId>C001047</bioguideId>
+        <middleName>MOORE</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Capito, Shelley Moore [R-WV]</fullName>
+        <lastName>CAPITO</lastName>
+        <state>WV</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1676</lisID>
+          <gpoId>8223</gpoId>
+          <bioguideId>C001047</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>SHELLEY</firstName>
+      </item>
+      <item>
+        <bioguideId>C001075</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cassidy, Bill [R-LA]</fullName>
+        <lastName>Cassidy</lastName>
+        <state>LA</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1925</lisID>
+          <bioguideId>C001075</bioguideId>
+          <gpoId>7964</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>Bill</firstName>
+      </item>
+      <item>
+        <bioguideId>C001056</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <lastName>Cornyn</lastName>
+        <state>TX</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1692</lisID>
+          <gpoId>8295</gpoId>
+          <bioguideId>C001056</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>John</firstName>
+      </item>
+      <item>
+        <bioguideId>I000024</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Inhofe, James M. [R-OK]</fullName>
+        <lastName>INHOFE</lastName>
+        <state>OK</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>583</lisID>
+          <gpoId>8322</gpoId>
+          <bioguideId>I000024</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>JIM</firstName>
+      </item>
+      <item>
+        <bioguideId>B001236</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Boozman, John [R-AR]</fullName>
+        <lastName>Boozman</lastName>
+        <state>AR</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>B001236</bioguideId>
+          <lisID>1687</lisID>
+          <gpoId>8247</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>John</firstName>
+      </item>
+      <item>
+        <bioguideId>B000575</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Blunt, Roy [R-MO]</fullName>
+        <lastName>Blunt</lastName>
+        <state>MO</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1464</lisID>
+          <bioguideId>B000575</bioguideId>
+          <gpoId>8313</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>Roy</firstName>
+      </item>
+      <item>
+        <bioguideId>C001035</bioguideId>
+        <middleName>MARGARET</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
+        <lastName>COLLINS</lastName>
+        <state>ME</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1541</lisID>
+          <gpoId>8291</gpoId>
+          <bioguideId>C001035</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>SUSAN</firstName>
+      </item>
+      <item>
+        <bioguideId>Y000064</bioguideId>
+        <middleName>C.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Young, Todd C. [R-IN]</fullName>
+        <lastName>Young</lastName>
+        <state>IN</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>Y000064</bioguideId>
+          <lisID>2019</lisID>
+          <gpoId>7948</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>Todd</firstName>
+      </item>
+      <item>
+        <bioguideId>K000393</bioguideId>
+        <middleName>Neely</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Kennedy, John [R-LA]</fullName>
+        <lastName>Kennedy</lastName>
+        <state>LA</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>2303</lisID>
+          <bioguideId>K000393</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>John</firstName>
+      </item>
+      <item>
+        <bioguideId>S000320</bioguideId>
+        <middleName>CRAIG</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Shelby, Richard C. [R-AL]</fullName>
+        <lastName>SHELBY</lastName>
+        <state>AL</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>S000320</bioguideId>
+          <gpoId>8277</gpoId>
+          <lisID>1049</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-02-09</sponsorshipDate>
+        <firstName>RICHARD</firstName>
+      </item>
+      <item>
+        <bioguideId>C001088</bioguideId>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <lastName>Coons</lastName>
+        <state>DE</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <lisID>1984</lisID>
+          <gpoId>8297</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-03-08</sponsorshipDate>
+        <firstName>Christopher</firstName>
+      </item>
+      <item>
+        <bioguideId>G000359</bioguideId>
+        <middleName>O.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Graham, Lindsey [R-SC]</fullName>
+        <lastName>GRAHAM</lastName>
+        <state>SC</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>G000359</bioguideId>
+          <lisID>452</lisID>
+          <gpoId>8335</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-03-23</sponsorshipDate>
+        <firstName>LINDSEY</firstName>
+      </item>
+      <item>
+        <bioguideId>C000567</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Cochran, Thad [R-MS]</fullName>
+        <lastName>Cochran</lastName>
+        <state>MS</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>213</lisID>
+          <bioguideId>C000567</bioguideId>
+          <gpoId>8292</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-03-23</sponsorshipDate>
+        <firstName>Thad</firstName>
+      </item>
+      <item>
+        <bioguideId>T000461</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Toomey, Pat [R-PA]</fullName>
+        <lastName>Toomey</lastName>
+        <state>PA</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <lisID>1594</lisID>
+          <bioguideId>T000461</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-05-03</sponsorshipDate>
+        <firstName>Pat</firstName>
+      </item>
+      <item>
+        <bioguideId>S001184</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Scott, Tim [R-SC]</fullName>
+        <lastName>Scott</lastName>
+        <state>SC</state>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>S001184</bioguideId>
+          <lisID>2056</lisID>
+          <gpoId>8141</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-08-02</sponsorshipDate>
+        <firstName>Tim</firstName>
+      </item>
+      <item>
+        <bioguideId>S001181</bioguideId>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Sen. Shaheen, Jeanne [D-NH]</fullName>
+        <lastName>Shaheen</lastName>
+        <state>NH</state>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <identifiers>
+          <bioguideId>S001181</bioguideId>
+          <lisID>1901</lisID>
+          <gpoId>8276</gpoId>
+        </identifiers>
+        <sponsorshipDate>2018-02-27</sponsorshipDate>
+        <firstName>Jeanne</firstName>
       </item>
     </cosponsors>
-    <originChamber>Senate</originChamber>
-    <billType>S</billType>
-    <congress>115</congress>
-    <laws />
-    <cboCostEstimates />
-    <calendarNumbers />
+    <introducedDate>2017-01-17</introducedDate>
+    <calendarNumbers>
+      <item>
+        <number>0027</number>
+        <calendar>Senate Calendar of Business</calendar>
+      </item>
+    </calendarNumbers>
+    <latestAction>
+      <actionDate>2017-03-30</actionDate>
+      <links />
+      <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 27.</text>
+    </latestAction>
     <amendments />
     <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>A bill to amend and enhance certain maritime programs of the Department of Transportation.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>A bill to amend and enhance certain maritime programs of the Department of Transportation.</title>
-      </item>
-    </titles>
-    <committees>
-      <billCommittees>
+      <billSummaries>
         <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>sscm00</systemCode>
-          <name>Commerce, Science, and Transportation Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-17T21:23:04Z</date>
-            </item>
-          </activities>
-          <chamber>Senate</chamber>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-17</actionDate>
+          <lastSummaryUpdateDate>2017-05-04T15:05:37Z</lastSummaryUpdateDate>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Commercial Vessel Incidental Discharge Act</b></p> <p>This bill requires the U.S. Coast Guard to: (1) address the regulation of discharges incidental to the normal operation of a commercial vessel into navigable waters, including ballast water discharges; and (2) preempt applicable state laws and federal regulations issued under the Federal Water Pollution Control Act (commonly known as the Clean Water Act). Ballast water is water and suspended matter taken on board a commercial vessel to control or maintain trim, draught, stability, or stresses of the commercial vessel.</p> <p>This bill requires commercial vessels to meet ballast water discharge standards established by the Coast Guard by applying the best available technology that is economically achievable, unless they are a type of vessel exempted from the standards.</p> <p>By 2022, the Coast Guard must complete an effectiveness review to determine whether revising ballast water discharge standards will result in reducing the risk of introducing or establishing aquatic nuisance species. Further revisions to the standards must be considered every 10 years.</p> <p>If the standard would result in reducing the risk of introducing or establishing aquatic nuisance species, then the Coast Guard must conduct a practicability review to determine whether: (1) a ballast water management system that is capable of achieving the proposed standard is economically achievable and operationally practicable, and (2) testing protocols can accurately measure compliance. The Coast Guard must revise the standard if it meets practicability criteria.</p> <p>The Coast Guard must also issue rules establishing: (1) reasonable and practicable standards for reception facilities to mitigate adverse effects of aquatic nuisance species on navigable waters, and (2) best management practices for certain discharges for commercial vessels that are at least 79 feet in length and are not fishing vessels.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
         </item>
-      </billCommittees>
-    </committees>
-    <introducedDate>2017-01-17</introducedDate>
-    <relatedBills />
-    <notes />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+        <item>
+          <actionDesc>Reported to Senate without amendment</actionDesc>
+          <actionDate>2017-03-30</actionDate>
+          <lastSummaryUpdateDate>2017-09-11T21:18:03Z</lastSummaryUpdateDate>
+          <name>Reported to Senate without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p><b>Commercial Vessel Incidental Discharge Act</b></p> <p>This bill requires the U.S. Coast Guard to address the regulation of discharges incidental to the normal operation of a commercial vessel into navigable waters, including ballast water discharges and aquatic nuisance species contained in the discharges.</p> <p>(Sec. 2) An aquatic nuisance species means a nonindigenous species (including a pathogen) that threatens the diversity or abundance of native species or the ecological stability of navigable waters of the United States, or commercial, agricultural, aquacultural, or recreational activities dependent on those waters.</p> <p>Ballast water is water and suspended matter taken on board a commercial vessel to control or maintain trim, draught, stability, or stresses of the commercial vessel, regardless of how it is carried. <p>(Sec. 3) Any regulation issued pursuant to the Nonindigenous Aquatic Nuisance Prevention and Control Act of 1990 that is in effect before this bill's enactment must remain in effect until it is superseded by a new regulation issued under this bill. <p>The bill applies the sanctions under that Act relating to violations of a regulation issued under this bill. <p>(Sec. 4) Commercial vessels must meet ballast water discharge standards established by the Coast Guard by applying the best available technology that is economically achievable, unless they are a type of vessel exempted from the standards. Additional requirements are established for commercial vessels that enter the Great Lakes through the Saint Lawrence River after operating outside the exclusive economic zone of the United States or Canada. <p>The bill establishes safety exemptions from the discharge requirements. Specifically, commercial vessels may discharge ballast water into navigable waters of the United States if: <ul> <li> the ballast water is discharged solely to ensure the safety of life at sea;</li> <li> accidentally as the result of damage to the commercial vessel or its equipment and all reasonable precautions to prevent or minimize the discharge have been taken, and the owner or operator did not willfully or recklessly cause such damage; or </li> <li> solely for avoiding or minimizing a discharge from the vessel of a pollutant that would violate an applicable federal or State law. </ul> <p>The Coast Guard may not require the installation of a ballast water management system on a commercial vessel that: (1) carries all of its ballast water in sealed tanks that are not subject to discharge, or (2) discharges ballast water solely into a reception facility that meets certain standards.</p> <p>The Coast Guard must publish a draft policy letter for describing type approval testing methods capable of measuring the concentration of organisms in ballast water that are capable of reproduction.</p> <p>(Sec. 5) By 2022, the Coast Guard, in consultation with the Environmental Protection Agency (EPA), must complete an effectiveness review to determine whether revising ballast water discharge standards will result in reducing the risk of introducing or establishing aquatic nuisance species. Further revisions to the standards must be considered every 10 years.</p> <p>States may petition the Coast Guard to conduct an effectiveness review if there is significant new information that could reasonably indicate the ballast water discharge standard could be revised to result in a reduction in the risk of the introduction or establishment of aquatic nuisance species. However, states may not submit a petition during the year following the completion of an effectiveness review.</p> <p>If the standard would result in reducing the risk of introducing or establishing aquatic nuisance species, then the Coast Guard must conduct a practicability review, in consultation with the EPA, to determine whether: (1) a ballast water management system that is capable of achieving the proposed standard is economically achievable and operationally practicable, and (2) testing protocols can accurately measure compliance. The Coast Guard must revise the standard if it meets practicability criteria.</p> <p>The Coast Guard must establish a process for an owner or operator to request an extension of a compliance deadline. The bill deems an extension request to be approved if the Coast Guard does not approve or deny an extension request within 90 days.</p> <p>The bill considers a commercial vessel to be in compliance with the standard if: (1) the ballast water management system installed on the vessel complies with the standard in effect at the time of installation, notwithstanding any revisions to the ballast water discharge standard occurring after the installation; (2) the system is maintained in proper working condition; and (3) the system continues to meet the standard applicable to the vessel at the time of installation. A vessel will no longer be deemed to be in compliance with the standard after: (1) the expiration of the service life of the vessel's ballast water management system, (2) the expiration of the service life of the vessel, or (3) the completion of a major conversion of the vessel.</p> <p>(Sec. 6) The Coast Guard, in consultation with the EPA, may issue a rule establishing alternative compliance programs for a commercial vessel that: (1) has a maximum ballast water capacity of less than eight cubic meters, or (2) is less than three years from the end of the vessel's service life.</p> <p>(Sec. 7) The EPA, in consultation with the Coast Guard, must also issue a rule establishing reasonable and practicable standards for reception facilities to mitigate adverse effects of aquatic nuisance species on navigable waters.</p> <p>Commercial vessels may discharge ballast water into an onshore or offshore facility for the reception of ballast water that meets those standards.</p> <p>(Sec. 8) The Coast Guard, in consultation with the EPA, must establish best management practices for discharges incidental to the normal operation of a commercial vessel for commercial vessels that are at least 79 feet in length and are not fishing vessels. Any practice, limitation, or concentration applicable to any discharge incidental to the normal operation of a commercial vessel that is required by the existing General Permit (the 2013 Final National Pollutant Discharge Elimination System Vessel General Permit for Discharges Incidental to the Normal Operation of a Vessel issued under the Clean Water Act) must remain in effect until the best management practices are established.</p> <p>If a vessel is under 79 feet or a fishing vessel, it is exempted from requirements for discharges incidental to the normal operation of a commercial vessel, the best management practices, and the requirements under the general permit. </p> <p>(Sec. 9) The bill allows the filing of a petition for review of a final rule issued under this bill in the U.S. Court of Appeals for the District of Columbia Circuit. The petition must be filed not later than 120 days after the date on which the rule to be reviewed is published in the Federal Register.</p> <p>(Sec. 10) The Coast Guard may enter into an agreement with a state to authorize the state to enforce the bill.</p> <p>(Sec. 11) The bill preempts applicable state laws, unless the state has an enforcement agreement with the Coast Guard. However, states may regulate water or other substance discharged or emitted from a vessel in preparation for transport of the vessel by land from one body of water to another body of water.</p> <p>(Sec. 12) The bill does not affect federal authorities under specified Acts relating to pollution from ships or any anti-fouling system covered under a specified International Convention. </p> <p>Actions taken under the bill must be in accordance with international law.</p>]]></text>
+          <versionCode>80</versionCode>
+          <updateDate>2017-03-30T13:15:23Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-18T05:05:00Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

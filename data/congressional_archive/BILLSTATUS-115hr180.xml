@@ -1,111 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committeeReports />
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <billNumber>180</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MULLIN:H.R. 180.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the United StatesConstitution[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-17T22:22:41Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This bill amends title XIX (Medicaid) of the Social Security Act to eliminate the requirement for up to three months of retroactive coverage under Medicaid. </p> <p>Under current law, a state&nbsp;Medicaid program&nbsp;must provide coverage for up to three months prior to an individual's application for benefits if the individual would have been eligible for benefits during that period. The bill eliminates this requirement and instead specifies that coverage begins&nbsp;in the month&nbsp;during which the individual applies for benefits.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>Returned to the Calendar. Calendar No. 120.</text>
+          <actionDate>2017-07-28</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <number>1628</number>
+        <latestTitle>American Health Care Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-04T07:01:12Z</createDate>
     <sponsors>
       <item>
-        <middleName />
-        <party>R</party>
-        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
-        <state>OK</state>
-        <byRequestType />
         <lastName>Mullin</lastName>
-        <district>2</district>
+        <party>R</party>
+        <middleName />
+        <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
         <identifiers>
           <lisID>2156</lisID>
-          <bioguideId>M001190</bioguideId>
           <gpoId />
+          <bioguideId>M001190</bioguideId>
         </identifiers>
+        <state>OK</state>
         <firstName>Markwayne</firstName>
+        <byRequestType />
+        <district>2</district>
         <bioguideId>M001190</bioguideId>
       </item>
     </sponsors>
-    <recordedVotes />
-    <updateDate>2017-01-17T22:31:15Z</updateDate>
+    <notes />
+    <updateDate>2018-08-28T19:58:10Z</updateDate>
+    <committeeReports />
     <actions>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <item>
+        <actionDate>2017-01-25</actionDate>
         <committee>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
         </committee>
         <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
         <text>Referred to the House Committee on Energy and Commerce.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
       </item>
       <item>
-        <committee />
-        <links />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
       </item>
       <item>
-        <committee />
-        <links />
+        <actionDate>2017-01-03</actionDate>
         <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
         <type>IntroReferral</type>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <constitutionalAuthorityStatementText />
     <title>To amend title XIX of the Social Security Act to eliminate the requirement for 3 months of retroactive coverage under the Medicaid program.</title>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-    </latestAction>
     <cosponsors>
       <item>
-        <middleName />
-        <fullName>Rep. Guthrie, Brett [R-KY-2]</fullName>
-        <firstName>Brett</firstName>
+        <party>R</party>
         <state>KY</state>
-        <lastName>Guthrie</lastName>
-        <identifiers>
-          <bioguideId>G000558</bioguideId>
-          <gpoId>7954</gpoId>
-          <lisID>1922</lisID>
-        </identifiers>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
         <district>2</district>
-        <bioguideId>G000558</bioguideId>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <party>R</party>
+        <fullName>Rep. Guthrie, Brett [R-KY-2]</fullName>
+        <middleName />
+        <bioguideId>G000558</bioguideId>
+        <firstName>Brett</firstName>
         <sponsorshipWithdrawnDate />
+        <lastName>Guthrie</lastName>
+        <identifiers>
+          <lisID>1922</lisID>
+          <bioguideId>G000558</bioguideId>
+          <gpoId>7954</gpoId>
+        </identifiers>
       </item>
     </cosponsors>
-    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-25</actionDate>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To amend title XIX of the Social Security Act to eliminate the requirement for 3 months of retroactive coverage under the Medicaid program.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>To amend title XIX of the Social Security Act to eliminate the requirement for 3 months of retroactive coverage under the Medicaid program.</title>
+        <chamberName />
+      </item>
+    </titles>
+    <cboCostEstimates />
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:18:05Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:13:02Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Health</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Health care coverage and access</name>
@@ -114,66 +213,11 @@
             <name>Medicaid</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
-    <policyArea>
-      <name>Health</name>
-    </policyArea>
-    <laws />
-    <cboCostEstimates />
-    <calendarNumbers />
-    <amendments />
-    <summaries>
-      <billSummaries>
-        <item>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <actionDate>2017-01-03</actionDate>
-          <name>Introduced in House</name>
-          <text><![CDATA[<p>This bill amends title XIX (Medicaid) of the Social Security Act to eliminate the requirement for up to three months of retroactive coverage under Medicaid. </p> <p>Under current law, a state&nbsp;Medicaid program&nbsp;must provide coverage for up to three months prior to an individual's application for benefits if the individual would have been eligible for benefits during that period. The bill eliminates this requirement and instead specifies that coverage begins&nbsp;in the month&nbsp;during which the individual applies for benefits.</p>]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-17T22:22:41Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To amend title XIX of the Social Security Act to eliminate the requirement for 3 months of retroactive coverage under the Medicaid program.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To amend title XIX of the Social Security Act to eliminate the requirement for 3 months of retroactive coverage under the Medicaid program.</title>
-        <chamberCode />
-      </item>
-    </titles>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <name>Energy and Commerce Committee</name>
-          <systemCode>hsif00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:18:05Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>180</billNumber>
-    <relatedBills />
-    <notes />
-    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

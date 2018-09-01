@@ -1,138 +1,326 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <committee>
-          <name>Ways and Means Committee</name>
+    <committees>
+      <billCommittees>
+        <item>
           <systemCode>hswm00</systemCode>
-        </committee>
-        <actionDate>2017-01-12</actionDate>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <links />
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees />
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-12T15:03:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Student Loan Opportunity Act of 201</strong><b>7</b></p> <p>This bill amends the Internal Revenue Code, with respect to tax-exempt private activity bond financing, to: (1) eliminate a provision that restricts nonprofit scholarship funding corporations that acquire student loan notes to notes incurred under the Higher Education Act of 1965 (thus allowing such corporations to access tax-exempt financing for other types of student loans), and (2) expand the operations of such corporations to include performing student assistance related activities.</p>]]></text>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-03-01T21:06:21Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Student Loan Opportunity Act of 2017</title>
+        <chamberCode />
       </item>
       <item>
-        <committee />
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Internal Revenue Code of 1986 to allow qualified scholarship funding corporations to access tax-exempt financing for alternative private student loans.</title>
+        <chamberCode />
       </item>
       <item>
-        <committee />
-        <actionDate>2017-01-12</actionDate>
-        <text>Introduced in House</text>
-        <links />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Student Loan Opportunity Act of 2017</title>
+        <chamberCode />
       </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <relatedBills />
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Student Loan Opportunity Act of 2017</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <cosponsors>
+      <item>
+        <firstName>WILLIAM</firstName>
+        <lastName>THORNBERRY</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-02-16</sponsorshipDate>
+        <bioguideId>T000238</bioguideId>
+        <district>13</district>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Thornberry, Mac [R-TX-13]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1155</lisID>
+          <bioguideId>T000238</bioguideId>
+          <gpoId>8755</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Kenny</firstName>
+        <lastName>Marchant</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-03-01</sponsorshipDate>
+        <bioguideId>M001158</bioguideId>
+        <district>24</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Marchant, Kenny [R-TX-24]</fullName>
+        <state>TX</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1806</lisID>
+          <bioguideId>M001158</bioguideId>
+          <gpoId>8766</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Matt</firstName>
+        <lastName>Gaetz</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-04-04</sponsorshipDate>
+        <bioguideId>G000578</bioguideId>
+        <district>1</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
+        <state>FL</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>G000578</bioguideId>
+          <gpoId />
+          <lisID>2314</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <lastName>Roe</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-05-19</sponsorshipDate>
+        <bioguideId>R000582</bioguideId>
+        <district>1</district>
+        <middleName>P.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
+        <state>TN</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+          <lisID>1954</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Henry</firstName>
+        <lastName>Cuellar</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-06-06</sponsorshipDate>
+        <bioguideId>C001063</bioguideId>
+        <district>28</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Cuellar, Henry [D-TX-28]</fullName>
+        <state>TX</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1807</lisID>
+          <gpoId>8184</gpoId>
+          <bioguideId>C001063</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Mike</firstName>
+        <lastName>Coffman</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-07-13</sponsorshipDate>
+        <bioguideId>C001077</bioguideId>
+        <district>6</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Coffman, Mike [R-CO-6]</fullName>
+        <state>CO</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>1912</lisID>
+          <bioguideId>C001077</bioguideId>
+          <gpoId>7864</gpoId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>David</firstName>
+        <lastName>Kustoff</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-07-18</sponsorshipDate>
+        <bioguideId>K000392</bioguideId>
+        <district>8</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Kustoff, David [R-TN-8]</fullName>
+        <state>TN</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>2348</lisID>
+          <bioguideId>K000392</bioguideId>
+          <gpoId />
+        </identifiers>
+      </item>
+      <item>
+        <firstName>JOHN</firstName>
+        <lastName>DUNCAN</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-09-06</sponsorshipDate>
+        <bioguideId>D000533</bioguideId>
+        <district>2</district>
+        <middleName>J.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
+        <state>TN</state>
+        <party>R</party>
+        <identifiers>
+          <lisID>322</lisID>
+          <bioguideId>D000533</bioguideId>
+          <gpoId>8149</gpoId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <cboCostEstimates />
     <latestAction>
       <text>Referred to the House Committee on Ways and Means.</text>
       <links />
       <actionDate>2017-01-12</actionDate>
     </latestAction>
-    <originChamber>House</originChamber>
-    <title>To amend the Internal Revenue Code of 1986 to allow qualified scholarship funding corporations to access tax-exempt financing for alternative private student loans.</title>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>To amend the Internal Revenue Code of 1986 to allow qualified scholarship funding corporations to access tax-exempt financing for alternative private student loans.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>To amend the Internal Revenue Code of 1986 to allow qualified scholarship funding corporations to access tax-exempt financing for alternative private student loans.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <committeeReports />
-    <updateDate>2017-01-13T10:07:04Z</updateDate>
+    <updateDate>2018-08-28T19:59:38Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. FLORES:H.R. 480.Congress has the power to enact thislegislation pursuantto the following:Article 1, Section 8, Clause 1 of the Constitution of theUnited States.[Page H472]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
     <billType>HR</billType>
-    <recordedVotes />
+    <billNumber>480</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>Student Loan Opportunity Act of 2017</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-12</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-12</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-12</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Income tax exclusion</name>
+          </item>
+          <item>
+            <name>Securities</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+          <item>
+            <name>Tax-exempt organizations</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <policyArea />
-    <laws />
-    <amendments />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Ways and Means Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:03:30Z</date>
-            </item>
-          </activities>
-          <systemCode>hswm00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
+    <committeeReports />
+    <introducedDate>2017-01-12</introducedDate>
     <sponsors>
       <item>
-        <identifiers>
-          <gpoId>8173</gpoId>
-          <bioguideId>F000461</bioguideId>
-          <lisID>2065</lisID>
-        </identifiers>
-        <state>TX</state>
         <bioguideId>F000461</bioguideId>
-        <lastName>Flores</lastName>
         <middleName />
-        <party>R</party>
-        <district>17</district>
-        <fullName>Rep. Flores, Bill [R-TX-17]</fullName>
         <byRequestType />
+        <fullName>Rep. Flores, Bill [R-TX-17]</fullName>
+        <lastName>Flores</lastName>
+        <state>TX</state>
+        <district>17</district>
+        <party>R</party>
+        <identifiers>
+          <lisID>2065</lisID>
+          <bioguideId>F000461</bioguideId>
+          <gpoId>8173</gpoId>
+        </identifiers>
         <firstName>Bill</firstName>
       </item>
     </sponsors>
-    <introducedDate>2017-01-12</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <notes />
     <createDate>2017-01-13T04:55:31Z</createDate>
-    <billNumber>480</billNumber>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

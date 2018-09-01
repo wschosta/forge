@@ -1,44 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <congress>115</congress>
-    <introducedDate>2017-01-13</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries>
-        <item>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-13</actionDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <lastSummaryUpdateDate>2017-01-17T19:16:20Z</lastSummaryUpdateDate>
-          <text><![CDATA[<p><b>Constitutional Amendment </b></p> <p>This joint resolution proposes a constitutional amendment prohibiting total outlays for a fiscal year from exceeding total receipts for that fiscal year or 18% of the U.S. gross domestic product unless Congress authorizes the excess by a two-thirds vote of each chamber. The prohibition excludes outlays for repayment of debt principal and receipts derived from borrowing. </p> <p>The amendment requires a two-thirds vote of each chamber of Congress to levy a new tax, increase the rate of any tax, or increase the debt limit. </p> <p>The amendment provides any Member of Congress with standing and a cause of action to seek judicial enforcement of this amendment if authorized by a petition signed by one-third of the Members of either house of Congress. Courts are prohibited from ordering any increase in revenue to enforce this amendment. </p>]]></text>
-          <updateDate>2017-01-13T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
     <policyArea>
       <name>Economics and Public Finance</name>
     </policyArea>
+    <billType>HJRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-31</actionDate>
+      <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+    </latestAction>
+    <createDate>2017-01-14T04:47:30Z</createDate>
+    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-01-31</actionDate>
+        <committee>
+          <systemCode>hsju10</systemCode>
+          <name>Constitution and Civil Justice Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on the Constitution and Civil Justice.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on the Judiciary.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsju00</systemCode>
+          <name>Judiciary Committee</name>
+        </committee>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -60,324 +99,365 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <amendments />
-    <actions>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <committee>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
+    <billNumber>29</billNumber>
+    <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr.LOUDERMILK:H.J. Res. 29.Congress has the power to enact this legislation pursuantto thefollowing:Article V of the Constitution, which grants Congress theauthority, whenever two thirds of both chambers deemitnecessary, to propose amendments to the Constitution.____________________[Page H548]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
+          <systemCode>hsju00</systemCode>
+          <type>Standing</type>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-13T14:05:25Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju10</systemCode>
+              <name>Constitution and Civil Justice Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-31T14:32:54Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>29</billNumber>
-    <updateDate>2017-01-17T19:31:15Z</updateDate>
-    <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
-    <billType>HJRES</billType>
-    <laws />
-    <originChamber>House</originChamber>
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the House Committee on the Judiciary.</text>
-      <links />
-    </latestAction>
-    <committeeReports />
-    <sponsors>
-      <item>
-        <middleName />
-        <state>GA</state>
-        <bioguideId>L000583</bioguideId>
-        <fullName>Rep. Loudermilk, Barry [R-GA-11]</fullName>
-        <identifiers>
-          <lisID>2238</lisID>
-          <bioguideId>L000583</bioguideId>
-          <gpoId />
-        </identifiers>
-        <lastName>Loudermilk</lastName>
-        <byRequestType />
-        <firstName>Barry</firstName>
-        <party>R</party>
-        <district>11</district>
-      </item>
-    </sponsors>
+    <cboCostEstimates />
+    <version>1.0.0</version>
     <cosponsors>
       <item>
+        <lastName>Carter</lastName>
+        <state>GA</state>
+        <firstName>Earl</firstName>
         <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>1</district>
         <fullName>Rep. Carter, Earl L. "Buddy" [R-GA-1]</fullName>
+        <identifiers>
+          <bioguideId>C001103</bioguideId>
+          <gpoId />
+          <lisID>2236</lisID>
+        </identifiers>
+        <bioguideId>C001103</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName>L. "Buddy"</middleName>
-        <lastName>Carter</lastName>
-        <firstName>Earl</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C001103</bioguideId>
-        <identifiers>
-          <lisID>2236</lisID>
-          <gpoId />
-          <bioguideId>C001103</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <state>GA</state>
-        <district>1</district>
       </item>
       <item>
+        <lastName>BARTON</lastName>
+        <state>TX</state>
+        <firstName>JOE</firstName>
         <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>6</district>
         <fullName>Rep. Barton, Joe [R-TX-6]</fullName>
+        <identifiers>
+          <lisID>62</lisID>
+          <gpoId>8162</gpoId>
+          <bioguideId>B000213</bioguideId>
+        </identifiers>
+        <bioguideId>B000213</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName>L.</middleName>
-        <lastName>BARTON</lastName>
-        <firstName>JOE</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B000213</bioguideId>
-        <identifiers>
-          <bioguideId>B000213</bioguideId>
-          <gpoId>8162</gpoId>
-          <lisID>62</lisID>
-        </identifiers>
-        <party>R</party>
-        <state>TX</state>
-        <district>6</district>
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <middleName>Morgan</middleName>
         <lastName>Griffith</lastName>
+        <state>VA</state>
         <firstName>H.</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>G000568</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
         <identifiers>
-          <bioguideId>G000568</bioguideId>
           <lisID>2070</lisID>
           <gpoId>8200</gpoId>
+          <bioguideId>G000568</bioguideId>
         </identifiers>
+        <bioguideId>G000568</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>VA</state>
-        <district>9</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>Morgan</middleName>
       </item>
       <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <middleName />
         <lastName>Brat</lastName>
-        <firstName>Dave</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B001290</bioguideId>
-        <identifiers>
-          <gpoId />
-          <bioguideId>B001290</bioguideId>
-          <lisID>2203</lisID>
-        </identifiers>
-        <party>R</party>
         <state>VA</state>
-        <district>7</district>
-      </item>
-      <item>
+        <firstName>Dave</firstName>
         <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
+        <district>7</district>
+        <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
+        <identifiers>
+          <lisID>2203</lisID>
+          <bioguideId>B001290</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001290</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+      </item>
+      <item>
         <lastName>DesJarlais</lastName>
+        <state>TN</state>
         <firstName>Scott</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>D000616</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
         <identifiers>
+          <gpoId>8151</gpoId>
           <lisID>2062</lisID>
           <bioguideId>D000616</bioguideId>
-          <gpoId>8151</gpoId>
         </identifiers>
+        <bioguideId>D000616</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>TN</state>
-        <district>4</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Schweikert, David [R-AZ-6]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+      </item>
+      <item>
         <lastName>Schweikert</lastName>
+        <state>AZ</state>
         <firstName>David</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>S001183</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Schweikert, David [R-AZ-6]</fullName>
         <identifiers>
           <lisID>1994</lisID>
           <bioguideId>S001183</bioguideId>
           <gpoId>7802</gpoId>
         </identifiers>
-        <party>R</party>
-        <state>AZ</state>
-        <district>6</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Noem, Kristi L. [R-SD-At Large]</fullName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <middleName>L.</middleName>
-        <lastName>Noem</lastName>
-        <firstName>Kristi</firstName>
+        <bioguideId>S001183</bioguideId>
         <sponsorshipWithdrawnDate />
-        <bioguideId>N000184</bioguideId>
-        <identifiers>
-          <lisID>2060</lisID>
-          <bioguideId>N000184</bioguideId>
-          <gpoId>8147</gpoId>
-        </identifiers>
         <party>R</party>
-        <state>SD</state>
-        <district>0</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Davis, Rodney [R-IL-13]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
-        <lastName>Davis</lastName>
-        <firstName>Rodney</firstName>
+      </item>
+      <item>
+        <lastName>Noem</lastName>
+        <state>SD</state>
+        <firstName>Kristi</firstName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>0</district>
+        <fullName>Rep. Noem, Kristi L. [R-SD-At Large]</fullName>
+        <identifiers>
+          <lisID>2060</lisID>
+          <gpoId>8147</gpoId>
+          <bioguideId>N000184</bioguideId>
+        </identifiers>
+        <bioguideId>N000184</bioguideId>
         <sponsorshipWithdrawnDate />
-        <bioguideId>D000619</bioguideId>
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <lastName>Davis</lastName>
+        <state>IL</state>
+        <firstName>Rodney</firstName>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>13</district>
+        <fullName>Rep. Davis, Rodney [R-IL-13]</fullName>
         <identifiers>
           <lisID>2126</lisID>
           <bioguideId>D000619</bioguideId>
           <gpoId />
         </identifiers>
+        <bioguideId>D000619</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>IL</state>
-        <district>13</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+      </item>
+      <item>
         <lastName>SMITH</lastName>
+        <state>TX</state>
         <firstName>LAMAR</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>S000583</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>21</district>
+        <fullName>Rep. Smith, Lamar [R-TX-21]</fullName>
         <identifiers>
           <lisID>1075</lisID>
           <bioguideId>S000583</bioguideId>
           <gpoId>8177</gpoId>
         </identifiers>
+        <bioguideId>S000583</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>TX</state>
-        <district>21</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+      </item>
+      <item>
         <lastName>Collins</lastName>
+        <state>GA</state>
         <firstName>Doug</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>C001093</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
         <identifiers>
           <lisID>2121</lisID>
-          <bioguideId>C001093</bioguideId>
           <gpoId />
+          <bioguideId>C001093</bioguideId>
         </identifiers>
+        <bioguideId>C001093</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>GA</state>
-        <district>9</district>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <fullName>Rep. Gowdy, Trey [R-SC-4]</fullName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName />
+      </item>
+      <item>
         <lastName>Gowdy</lastName>
+        <state>SC</state>
         <firstName>Trey</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>G000566</bioguideId>
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Gowdy, Trey [R-SC-4]</fullName>
         <identifiers>
           <lisID>2058</lisID>
           <bioguideId>G000566</bioguideId>
           <gpoId>8144</gpoId>
         </identifiers>
+        <bioguideId>G000566</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>SC</state>
-        <district>4</district>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
+        <lastName>Hice</lastName>
+        <state>GA</state>
+        <firstName>Jody</firstName>
         <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <district>10</district>
         <fullName>Rep. Hice, Jody B. [R-GA-10]</fullName>
+        <identifiers>
+          <bioguideId>H001071</bioguideId>
+          <lisID>2237</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>H001071</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
         <isOriginalCosponsor>True</isOriginalCosponsor>
         <middleName>B.</middleName>
-        <lastName>Hice</lastName>
-        <firstName>Jody</firstName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>H001071</bioguideId>
+      </item>
+      <item>
+        <lastName>Tenney</lastName>
+        <state>NY</state>
+        <firstName>Claudia</firstName>
+        <sponsorshipDate>2017-04-25</sponsorshipDate>
+        <district>22</district>
+        <fullName>Rep. Tenney, Claudia [R-NY-22]</fullName>
         <identifiers>
+          <lisID>2344</lisID>
+          <bioguideId>T000478</bioguideId>
           <gpoId />
-          <lisID>2237</lisID>
-          <bioguideId>H001071</bioguideId>
         </identifiers>
+        <bioguideId>T000478</bioguideId>
+        <sponsorshipWithdrawnDate />
         <party>R</party>
-        <state>GA</state>
-        <district>10</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Messer</lastName>
+        <state>IN</state>
+        <firstName>Luke</firstName>
+        <sponsorshipDate>2017-05-04</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Messer, Luke [R-IN-6]</fullName>
+        <identifiers>
+          <bioguideId>M001189</bioguideId>
+          <lisID>2130</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>M001189</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
     </cosponsors>
-    <createDate>2017-01-14T04:47:30Z</createDate>
-    <calendarNumbers />
-    <notes />
+    <updateDate>2018-08-28T19:56:37Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-13</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>L000583</bioguideId>
+        <identifiers>
+          <lisID>2238</lisID>
+          <gpoId />
+          <bioguideId>L000583</bioguideId>
+        </identifiers>
+        <fullName>Rep. Loudermilk, Barry [R-GA-11]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Barry</firstName>
+        <state>GA</state>
+        <lastName>Loudermilk</lastName>
+        <district>11</district>
+      </item>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>A joint resolution proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</latestTitle>
+        <type>SJRES</type>
+        <congress>115</congress>
+        <number>7</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on the Judiciary.</text>
+          <actionDate>2017-01-24</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <committeeReports />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Proposing an amendment to the Constitution of the United States requiring that the Federal budget be balanced.</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-01-17T19:16:20Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-13</actionDate>
+          <text><![CDATA[<p><b>Constitutional Amendment </b></p> <p>This joint resolution proposes a constitutional amendment prohibiting total outlays for a fiscal year from exceeding total receipts for that fiscal year or 18% of the U.S. gross domestic product unless Congress authorizes the excess by a two-thirds vote of each chamber. The prohibition excludes outlays for repayment of debt principal and receipts derived from borrowing. </p> <p>The amendment requires a two-thirds vote of each chamber of Congress to levy a new tax, increase the rate of any tax, or increase the debt limit. </p> <p>The amendment provides any Member of Congress with standing and a cause of action to seek judicial enforcement of this amendment if authorized by a petition signed by one-third of the Members of either house of Congress. Courts are prohibited from ordering any increase in revenue to enforce this amendment. </p>]]></text>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

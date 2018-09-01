@@ -1,138 +1,630 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea />
-    <updateDate>2017-01-12T09:58:04Z</updateDate>
+    <policyArea>
+      <name>Energy</name>
+    </policyArea>
     <billType>HR</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
-        <identifiers>
-          <gpoId>8200</gpoId>
-          <bioguideId>G000568</bioguideId>
-          <lisID>2070</lisID>
-        </identifiers>
-        <byRequestType />
-        <firstName>H.</firstName>
-        <bioguideId>G000568</bioguideId>
-        <lastName>Griffith</lastName>
-        <state>VA</state>
-        <district>9</district>
-        <party>R</party>
-        <middleName>Morgan</middleName>
-      </item>
-    </sponsors>
-    <congress>115</congress>
     <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
       <links />
+      <actionDate>2018-07-23</actionDate>
+      <text>Became Public Law No: 115-202.</text>
     </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
+    <createDate>2017-01-12T04:45:49Z</createDate>
+    <notes />
     <actions>
       <item>
+        <text>Became Public Law No: 115-202.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-07-23</actionDate>
         <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <actionCode>E40000</actionCode>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
       </item>
       <item>
+        <text>Became Public Law No: 115-202.</text>
+        <type>BecameLaw</type>
+        <committee />
+        <actionDate>2018-07-23</actionDate>
         <links />
+        <actionCode>36000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Signed by President.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-07-23</actionDate>
+        <links />
+        <actionCode>E30000</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Signed by President.</text>
+        <type>BecameLaw</type>
+        <committee />
+        <actionDate>2018-07-23</actionDate>
+        <links />
+        <actionCode>36000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Presented to President.</text>
+        <type>Floor</type>
+        <committee />
+        <actionDate>2018-07-12</actionDate>
+        <links />
+        <actionCode>E20000</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Presented to President.</text>
+        <type>President</type>
+        <committee />
+        <actionDate>2018-07-12</actionDate>
+        <links />
+        <actionCode>28000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-06-29</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2018-06-28</actionDate>
+        <committee />
+        <links>
+          <link>
+            <name>S4810</name>
+            <url>https://www.congress.gov/congressional-record/volume-164/senate-section/page/S4810</url>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate without amendment by Unanimous Consent. (consideration: CR S4810)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <text>Passed/agreed to in Senate: Passed Senate without amendment by Unanimous Consent.</text>
+        <type>Floor</type>
+        <committee />
+        <actionDate>2018-06-28</actionDate>
+        <links />
+        <actionCode>17000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-06-13</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate. Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 136.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <actionTime>15:47:19</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H38310</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>On motion to suspend the rules and pass the bill Agreed to by voice vote. (text: CR H4824)</text>
+        <actionTime>15:47:18</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H4824</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4824</url>
+          </link>
+        </links>
+        <actionCode>H37300</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>Passed/agreed to in House: On motion to suspend the rules and pass the bill Agreed to by voice vote.(text: CR H4824)</text>
+        <actionTime>15:47:18</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H4824</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4824</url>
+          </link>
+        </links>
+        <actionCode>8000</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>DEBATE - The House proceeded with forty minutes of debate on H.R. 446.</text>
+        <actionTime>15:43:48</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H.R. 446</name>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/446</url>
+          </link>
+        </links>
+        <actionCode>H8D000</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>Considered under suspension of the rules. (consideration: CR H4824)</text>
+        <actionTime>15:43:46</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links>
+          <link>
+            <name>H4824</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H4824</url>
+          </link>
+        </links>
+        <actionCode>H30000</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>Mr. Upton moved to suspend the rules and pass the bill.</text>
+        <actionTime>15:43:36</actionTime>
+        <type>Floor</type>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <links />
+        <actionCode>H30300</actionCode>
+        <actionDate>2017-06-12</actionDate>
+      </item>
+      <item>
+        <text>Placed on the Union Calendar, Calendar No. 113.</text>
+        <type>Calendars</type>
+        <committee />
+        <actionDate>2017-06-12</actionDate>
+        <links />
+        <actionCode>H12410</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-169.</text>
+        <type>Committee</type>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionDate>2017-06-12</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-169</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/169</url>
+          </link>
+        </links>
+        <actionCode>H12200</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Reported by the Committee on Energy and Commerce. H. Rept. 115-169.</text>
+        <type>Committee</type>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionDate>2017-06-12</actionDate>
+        <links>
+          <link>
+            <name>H. Rept. 115-169</name>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/169</url>
+          </link>
+        </links>
+        <actionCode>5000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Energy Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported by Unanimous Consent.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-06-07</actionDate>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif03</systemCode>
+          <name>Energy and Power Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Energy.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
         <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionDate>2017-01-11</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-11</actionDate>
+        <links />
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-11</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionDate>2017-01-11</actionDate>
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <senate>4</senate>
+        <houseOfRepresentatives>16</houseOfRepresentatives>
       </actionByCounts>
       <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
+        <placedOnCalendarSection>1</placedOnCalendarSection>
+        <presentedToPresident>1</presentedToPresident>
+        <finalPassageUnderSuspensionOfTheRulesResults>1</finalPassageUnderSuspensionOfTheRulesResults>
         <introducedInTheHouse>1</introducedInTheHouse>
+        <passedSenate>1</passedSenate>
+        <placeholderTextForH>3</placeholderTextForH>
+        <becamePublicLaw>2</becamePublicLaw>
+        <actionStageOverride>1</actionStageOverride>
+        <billReferrals>1</billReferrals>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <generalDebate>1</generalDebate>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <considerationByHouse>1</considerationByHouse>
+        <placeholderTextForE>3</placeholderTextForE>
+        <motionMadeToSuspendTheRules>1</motionMadeToSuspendTheRules>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <reportedToHouse>1</reportedToHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <sentToHouse>1</sentToHouse>
       </actionTypeCounts>
     </actions>
-    <amendments />
-    <introducedDate>2017-01-11</introducedDate>
-    <billNumber>446</billNumber>
-    <relatedBills />
-    <titles>
+    <calendarNumbers>
       <item>
-        <chamberName />
-        <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0136</number>
       </item>
       <item>
-        <chamberName />
-        <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
+        <calendar>U00113</calendar>
+        <number />
       </item>
-    </titles>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
+    </calendarNumbers>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Energy</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Alternative and renewable resources</name>
+          </item>
+          <item>
+            <name>Dams and canals</name>
+          </item>
+          <item>
+            <name>Electric power generation and transmission</name>
+          </item>
+          <item>
+            <name>Federal Energy Regulatory Commission (FERC)</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Virginia</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-12T04:45:49Z</createDate>
-    <notes />
+    <billNumber>446</billNumber>
+    <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GRIFFITH:H.R. 446.Congress has the power to enactthis legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I,Section 8, Clause 18 of the UnitedStates Constitution.[[Page H392]][Page H391]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsif03</systemCode>
+              <name>Energy and Power Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-06-07T21:14:58Z</date>
+                  <name>Discharged from</name>
+                </item>
+                <item>
+                  <date>2017-01-25T14:37:09Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <type>Standing</type>
+          <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
+              <date>2017-06-12T19:13:48Z</date>
+              <name>Reported by</name>
+            </item>
+            <item>
+              <date>2017-06-07T13:30:58Z</date>
+              <name>Markup by</name>
+            </item>
+            <item>
               <date>2017-01-11T15:03:20Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
+    <cboCostEstimates>
+      <item>
+        <title>H.R. 446, a bill to extend the deadline for commencement of construction of a hydroelectric project</title>
+        <url>https://www.cbo.gov/publication/52814</url>
+        <pubDate>2017-06-13T18:46:00Z</pubDate>
+      </item>
+    </cboCostEstimates>
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:59:17Z</updateDate>
+    <laws>
+      <item>
+        <type>Public Law</type>
+        <number>115-202</number>
+      </item>
+    </laws>
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-11</introducedDate>
+    <sponsors>
+      <item>
+        <middleName>Morgan</middleName>
+        <bioguideId>G000568</bioguideId>
+        <identifiers>
+          <gpoId>8200</gpoId>
+          <lisID>2070</lisID>
+          <bioguideId>G000568</bioguideId>
+        </identifiers>
+        <fullName>Rep. Griffith, H. Morgan [R-VA-9]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>H.</firstName>
+        <state>VA</state>
+        <lastName>Griffith</lastName>
+        <district>9</district>
+      </item>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <latestTitle>To extend the deadline for commencement of construction of a hydroelectric project.</latestTitle>
+        <number>447</number>
+        <latestAction>
+          <text>Became Public Law No: 115-203.</text>
+          <actionDate>2018-07-23</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+      <item>
+        <latestTitle>A bill to extend the deadline for commencement of construction of certain hydroelectric projects.</latestTitle>
+        <number>730</number>
+        <latestAction>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 101.</text>
+          <actionDate>2017-05-24</actionDate>
+        </latestAction>
+        <type>S</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-169</citation>
+      </committeeReport>
+    </committeeReports>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>To extend the deadline for commencement of construction of a hydroelectric project.</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-11</actionDate>
+          <lastSummaryUpdateDate>2017-06-22T13:28:58Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <text><![CDATA[<p>This bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gathright Hydroelectric Project located in Alleghany County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>]]></text>
+        </item>
+        <item>
+          <name>Passed House without amendment</name>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2017-06-12</actionDate>
+          <lastSummaryUpdateDate>2017-07-06T14:50:03Z</lastSummaryUpdateDate>
+          <versionCode>81</versionCode>
+          <updateDate>2017-06-12T15:22:33Z</updateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p>(Sec.1)This bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gathright Hydroelectric Project located in Alleghany County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>]]></text>
+        </item>
+        <item>
+          <name>Passed Senate without amendment</name>
+          <actionDesc>Passed Senate without amendment</actionDesc>
+          <actionDate>2018-06-28</actionDate>
+          <lastSummaryUpdateDate>2018-07-17T15:56:52Z</lastSummaryUpdateDate>
+          <versionCode>82</versionCode>
+          <updateDate>2018-06-28T12:17:31Z</updateDate>
+          <text><![CDATA[<p>(Sec.1)This bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gathright Hydroelectric Project located in Alleghany County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>]]></text>
+        </item>
+        <item>
+          <name>Public Law</name>
+          <actionDesc>Public Law</actionDesc>
+          <actionDate>2018-07-23</actionDate>
+          <lastSummaryUpdateDate>2018-07-31T14:38:17Z</lastSummaryUpdateDate>
+          <versionCode>49</versionCode>
+          <updateDate>2018-07-24T03:59:58Z</updateDate>
+          <text><![CDATA[<p>(Sec.1)This bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gathright Hydroelectric Project located in Alleghany County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

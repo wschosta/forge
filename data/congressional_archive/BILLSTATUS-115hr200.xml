@@ -1,150 +1,3545 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Public Lands and Natural Resources</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <item>
-        <committee>
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
-        </committee>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <committee />
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <policyArea>
-      <name>Public Lands and Natural Resources</name>
-    </policyArea>
     <notes />
-    <createDate>2017-01-04T07:01:13Z</createDate>
     <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
-    <relatedBills />
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-12T17:01:21Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Natural Resources.</text>
-    </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
-    <billNumber>200</billNumber>
-    <amendments />
-    <billType>HR</billType>
     <committees>
       <billCommittees>
         <item>
+          <chamber>Senate</chamber>
+          <systemCode>sscm00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2018-07-12T15:29:34Z</date>
+            </item>
+          </activities>
+        </item>
+        <item>
           <chamber>House</chamber>
+          <systemCode>hsii00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsii13</systemCode>
+              <name>Water, Power and Oceans Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Discharged from</name>
+                  <date>2017-12-12T16:27:36Z</date>
+                </item>
+                <item>
+                  <name>Hearings by</name>
+                  <date>2017-09-26T18:16:27Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-10T16:58:44Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
           <type>Standing</type>
           <name>Natural Resources Committee</name>
           <activities>
+            <item>
+              <name>Reported by</name>
+              <date>2018-06-19T16:10:44Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-12-13T16:32:48Z</date>
+            </item>
             <item>
               <name>Referred to</name>
               <date>2017-01-03T17:20:10Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
+    <committeeReports>
+      <committeeReport>
+        <citation>H. Rept. 115-758</citation>
+      </committeeReport>
+    </committeeReports>
+    <cboCostEstimates>
+      <item>
+        <url>https://www.cbo.gov/publication/53794</url>
+        <pubDate>2018-04-24T20:00:41Z</pubDate>
+        <title>H.R. 200, Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+    </cboCostEstimates>
     <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
+    <laws />
+    <updateDate>2018-08-28T19:58:15Z</updateDate>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <latestTitle>Reef Assassin Act</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+          <actionDate>2017-05-30</actionDate>
+        </latestAction>
+        <number>2560</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+      <item>
+        <type>S</type>
+        <latestTitle>Modernizing Recreational Fisheries Management Act of 2017</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 441.</text>
+          <actionDate>2018-06-05</actionDate>
+        </latestAction>
+        <number>1520</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+      <item>
+        <type>HRES</type>
+        <latestTitle>Providing for consideration of the bill (H.R. 200) to amend the Magnuson-Stevens Fishery Conservation and Management Act to provide flexibility for fishery managers and stability for fishermen, and for other purposes.</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+          <actionTime>14:20:07</actionTime>
+          <actionDate>2018-07-11</actionDate>
+        </latestAction>
+        <number>965</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>House</identifiedBy>
+            <type>Related bill</type>
+          </item>
+          <item>
+            <identifiedBy>House</identifiedBy>
+            <type>Procedurally-related</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2018-07-12</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>UNANIMOUS CONSENT REQUEST - Mr. Young (AK) asked unanimous consent that the engrossment of the bill, H.R. 200, the Clerk be authorized to make technical corrections and conforming changes to the bill. The technical corrections was place at the desk and reads as follows: Page 14, line 15, strike '''including'''. Agreed to without objection.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/200</url>
+            <name>H.R. 200</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:54:44</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H38310</actionCode>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:54:26</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H37100</actionCode>
+        <text>On passage Passed by the Yeas and Nays: 222 - 193 (Roll no. 321).</text>
+        <committee />
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2018/roll321.xml</url>
+            <name>Roll no. 321</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:54:24</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>8000</actionCode>
+        <text>Passed/agreed to in House: On passage Passed by the Yeas and Nays: 222 - 193 (Roll no. 321).</text>
+        <committee />
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2018/roll321.xml</url>
+            <name>Roll no. 321</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionTime>17:54:24</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H36110</actionCode>
+        <text>On motion to recommit with instructions Failed by the Yeas and Nays: 187 - 228 (Roll no. 320).</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2018/roll320.xml</url>
+            <name>Roll no. 320</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:46:44</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8A000</actionCode>
+        <text>The previous question on the motion to recommit with instructions was ordered without objection.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:18:40</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - The House proceeded with 10 minutes of debate on the Gomez motion to recommit with instructions, pending a reservation of a point of order. The instructions contained in the motion seek to require the bill to be reported back to the House with an amendment to impose unilateral tariffs by other countries on any US seafood exports or unilateral tariffs imposed by any country on materials necessary for the economic viability of the US fishing industry. Subsequently, the reservation was withdrawn.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:14:17</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H36100</actionCode>
+        <text>Mr. Gomez moved to recommit with instructions to the Committee on Natural Resources. (text: CR H6097)</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6097</url>
+            <name>H6097</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:14:01</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H34400</actionCode>
+        <text>The House adopted the amendment in the nature of a substitute as agreed to by the Committee of the Whole House on the state of the Union.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:13:17</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H35000</actionCode>
+        <text>The previous question was ordered pursuant to the rule.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:13:09</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H32600</actionCode>
+        <text>The House rose from the Committee of the Whole House on the state of the Union to report H.R. 200.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/200</url>
+            <name>H.R. 200</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:12:49</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Gaetz amendment No. 11, as modified.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:07:23</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Keating amendment No. 10.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:01:03</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Zeldin amendment No. 9.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:51:39</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Poliquin amendment No. 8.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:45:19</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Keating amendment No. 7.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:40:48</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Graves (LA) amendment No. 6, as modified.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:32:20</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Webster amendment No. 5.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:24:20</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Huffman amendment No. 4.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:16:56</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Langevin amendment No. 3.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:09:21</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Courtney amendment No. 2.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>16:03:47</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 965, the Committee of the Whole proceeded with 10 minutes of debate on the Young(AK) amendment No. 1.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H.Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>15:56:03</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>GENERAL DEBATE - The Committee of the Whole proceeded with one hour of general debate on H.R. 200.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/200</url>
+            <name>H.R. 200</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:58:35</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H32400</actionCode>
+        <text>The Speaker designated the Honorable Mike Bost to act as Chairman of the Committee.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:57:40</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H32020</actionCode>
+        <text>House resolved itself into the Committee of the Whole House on the state of the Union pursuant to H. Res. 965 and Rule XVIII.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H. Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:57:39</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H8D000</actionCode>
+        <text>Rule provides for consideration of H.R. 200. Motion to recommit with or without instructions allowed. The resolution makes in order as original text for the purpose of amendment, the amendment in the nature of a substitute recommended by the Committee on Natural Resources now printed in the bill. The resolution makes in order only those amendments printed in the Rules Committee report.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/200</url>
+            <name>H.R. 200</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:57:29</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H30000</actionCode>
+        <text>Considered under the provisions of rule H. Res. 965. (consideration: CR H6069-6098; text of amendment in the nature of a substitute: CR H6076-6082)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H. Res. 965</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6069-6098</url>
+            <name>H6069-6098</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6076-6082</url>
+            <name>H6076-6082</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:57:24</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-07-11</actionDate>
+        <actionCode>H1L220</actionCode>
+        <text>Rule H. Res. 965 passed House.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H. Res. 965</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:20:06</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-06-26</actionDate>
+        <actionCode>H1L210</actionCode>
+        <text>Rules Committee Resolution H. Res. 965 Reported to House. Rule provides for consideration of H.R. 200. Motion to recommit with or without instructions allowed. The resolution makes in order as original text for the purpose of amendment, the amendment in the nature of a substitute recommended by the Committee on Natural Resources now printed in the bill. The resolution makes in order only those amendments printed in the Rules Committee report.</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/965</url>
+            <name>H. Res. 965</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/200</url>
+            <name>H.R. 200</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>17:33:31</actionTime>
+      </item>
+      <item>
+        <actionDate>2018-06-19</actionDate>
+        <actionCode>H12410</actionCode>
+        <text>Placed on the Union Calendar, Calendar No. 591.</text>
+        <committee />
+        <links />
+        <type>Calendars</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-06-19</actionDate>
+        <actionCode>H12200</actionCode>
+        <text>Reported (Amended) by the Committee on Natural Resources. H. Rept. 115-758.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/758</url>
+            <name>H. Rept. 115-758</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2018-06-19</actionDate>
+        <actionCode>5000</actionCode>
+        <text>Reported (Amended) by the Committee on Natural Resources. H. Rept. 115-758.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/house-report/758</url>
+            <name>H. Rept. 115-758</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-12-13</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Ordered to be Reported (Amended) by the Yeas and Nays: 23 - 17.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-12-13</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-12-12</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Committee Consideration and Mark-up Session Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-12-12</actionDate>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Water, Power and Oceans Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-09-26</actionDate>
+        <committee>
+          <systemCode>hsii13</systemCode>
+          <name>Water, Power and Oceans Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee Hearings Held.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <systemCode>hsii13</systemCode>
+          <name>Water, Power and Oceans Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
+        <referredToCommittee>1</referredToCommittee>
+        <committeeOfTheWholeRisesToReportOnLegislation>1</committeeOfTheWholeRisesToReportOnLegislation>
+        <prayer>1</prayer>
+        <unionCalendarAssignment>1</unionCalendarAssignment>
+        <placeholderTextForHL>1</placeholderTextForHL>
+        <designationOfChairmanCommitteeOfTheWhole>1</designationOfChairmanCommitteeOfTheWhole>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+        <motionToCommitRecommitWithInstructionsResults>1</motionToCommitRecommitWithInstructionsResults>
+        <motionForPreviousQuestion>1</motionForPreviousQuestion>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <generalDebate>15</generalDebate>
+        <placeholderTextForH>4</placeholderTextForH>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <committeeReportOfABill>1</committeeReportOfABill>
+        <reportedToHouse>1</reportedToHouse>
+        <actionStageOverride>2</actionStageOverride>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <resolvingIntoCommitteeOfTheWholePursuantToRule>1</resolvingIntoCommitteeOfTheWholePursuantToRule>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForHA>1</placeholderTextForHA>
+        <motionToCommitRecommitWithInstructionsOffered>1</motionToCommitRecommitWithInstructionsOffered>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>41</houseOfRepresentatives>
+        <senate>1</senate>
+      </actionByCounts>
+    </actions>
     <sponsors>
       <item>
-        <lastName>YOUNG</lastName>
-        <state>AK</state>
-        <byRequestType />
-        <firstName>DON</firstName>
-        <bioguideId>Y000033</bioguideId>
         <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
         <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
           <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
         </identifiers>
-        <middleName>E.</middleName>
-        <district>0</district>
+        <bioguideId>Y000033</bioguideId>
+        <lastName>YOUNG</lastName>
+        <firstName>DON</firstName>
         <party>R</party>
+        <byRequestType />
+        <middleName>E.</middleName>
+        <state>AK</state>
+        <district>0</district>
       </item>
     </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 200.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3``The Congress shall have power to regulate commerce withforeign nations, and among the several states, and with theIndian tribes''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <recordedVotes>
+      <recordedVote>
+        <url>http://clerk.house.gov/evs/2018/roll321.xml</url>
+        <fullActionName>Passage of a Measure</fullActionName>
+        <rollNumber>321</rollNumber>
+        <sessionNumber>2</sessionNumber>
+        <congress>115</congress>
+        <date>2018-07-11T21:54:24Z</date>
+        <chamber>House</chamber>
+      </recordedVote>
+      <recordedVote>
+        <url>http://clerk.house.gov/evs/2018/roll320.xml</url>
+        <fullActionName>Motion to Commit/Recommit With Instructions Results</fullActionName>
+        <rollNumber>320</rollNumber>
+        <sessionNumber>2</sessionNumber>
+        <congress>115</congress>
+        <date>2018-07-11T21:46:44Z</date>
+        <chamber>House</chamber>
+      </recordedVote>
+    </recordedVotes>
+    <billNumber>200</billNumber>
     <titles>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
+        <titleType>Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <title>Reef Assassin Act</title>
+      </item>
+      <item>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
         <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
       </item>
       <item>
-        <parentTitleType />
-        <chamberCode />
+        <titleType>Short Titles as Reported to House</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+        <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
         <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+      <item>
         <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>To amend the Magnuson-Stevens Fishery Conservation and Management Act to provide flexibility for fishery managers and stability for fishermen, and for other purposes.</title>
       </item>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
         <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType />
+        <title>Reef Assassin Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType />
+        <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Reported to House</titleType>
+        <chamberName>House</chamberName>
+        <chamberCode>H</chamberCode>
+        <parentTitleType />
+        <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
       </item>
     </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Alaska</name>
+          </item>
+          <item>
+            <name>Arctic and polar regions</name>
+          </item>
+          <item>
+            <name>Atlantic Ocean</name>
+          </item>
+          <item>
+            <name>Business records</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Department of Commerce</name>
+          </item>
+          <item>
+            <name>Disaster relief and insurance</name>
+          </item>
+          <item>
+            <name>Economic performance and conditions</name>
+          </item>
+          <item>
+            <name>Endangered and threatened species</name>
+          </item>
+          <item>
+            <name>Environmental assessment, monitoring, research</name>
+          </item>
+          <item>
+            <name>Fishes</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Gulf of Mexico</name>
+          </item>
+          <item>
+            <name>Hunting and fishing</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>International law and treaties</name>
+          </item>
+          <item>
+            <name>Marine and coastal resources, fisheries</name>
+          </item>
+          <item>
+            <name>Marine pollution</name>
+          </item>
+          <item>
+            <name>Oil and gas</name>
+          </item>
+          <item>
+            <name>Pacific Ocean</name>
+          </item>
+          <item>
+            <name>Public participation and lobbying</name>
+          </item>
+          <item>
+            <name>Research administration and funding</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+          <item>
+            <name>User charges and fees</name>
+          </item>
+          <item>
+            <name>Water use and supply</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <lastName>Graves</lastName>
+        <state>LA</state>
+        <firstName>Garret</firstName>
+        <sponsorshipDate>2018-01-11</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Graves, Garret [R-LA-6]</fullName>
+        <identifiers>
+          <lisID>2245</lisID>
+          <bioguideId>G000577</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>G000577</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Babin</lastName>
+        <state>TX</state>
+        <firstName>Brian</firstName>
+        <sponsorshipDate>2018-01-11</sponsorshipDate>
+        <district>36</district>
+        <fullName>Rep. Babin, Brian [R-TX-36]</fullName>
+        <identifiers>
+          <lisID>2270</lisID>
+          <bioguideId>B001291</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001291</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Higgins</lastName>
+        <state>LA</state>
+        <firstName>Clay</firstName>
+        <sponsorshipDate>2018-01-11</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Higgins, Clay [R-LA-3]</fullName>
+        <identifiers>
+          <lisID>2329</lisID>
+          <gpoId />
+          <bioguideId>H001077</bioguideId>
+        </identifiers>
+        <bioguideId>H001077</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>GREEN</lastName>
+        <state>TX</state>
+        <firstName>GENE</firstName>
+        <sponsorshipDate>2018-02-06</sponsorshipDate>
+        <district>29</district>
+        <fullName>Rep. Green, Gene [D-TX-29]</fullName>
+        <identifiers>
+          <lisID>462</lisID>
+          <gpoId>8185</gpoId>
+          <bioguideId>G000410</bioguideId>
+        </identifiers>
+        <bioguideId>G000410</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Wittman</lastName>
+        <state>VA</state>
+        <firstName>Robert</firstName>
+        <sponsorshipDate>2018-02-06</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Wittman, Robert J. [R-VA-1]</fullName>
+        <identifiers>
+          <lisID>1886</lisID>
+          <bioguideId>W000804</bioguideId>
+          <gpoId>8192</gpoId>
+        </identifiers>
+        <bioguideId>W000804</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <lastName>Zeldin</lastName>
+        <state>NY</state>
+        <firstName>Lee</firstName>
+        <sponsorshipDate>2018-04-24</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2261</lisID>
+          <bioguideId>Z000017</bioguideId>
+        </identifiers>
+        <bioguideId>Z000017</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <lastName>Grothman</lastName>
+        <state>WI</state>
+        <firstName>Glenn</firstName>
+        <sponsorshipDate>2018-05-17</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Grothman, Glenn [R-WI-6]</fullName>
+        <identifiers>
+          <lisID>2276</lisID>
+          <gpoId />
+          <bioguideId>G000576</bioguideId>
+        </identifiers>
+        <bioguideId>G000576</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>King</lastName>
+        <state>IA</state>
+        <firstName>Steve</firstName>
+        <sponsorshipDate>2018-06-14</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. King, Steve [R-IA-4]</fullName>
+        <identifiers>
+          <lisID>1724</lisID>
+          <gpoId>7918</gpoId>
+          <bioguideId>K000362</bioguideId>
+        </identifiers>
+        <bioguideId>K000362</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Duncan</lastName>
+        <state>SC</state>
+        <firstName>Jeff</firstName>
+        <sponsorshipDate>2018-06-19</sponsorshipDate>
+        <district>3</district>
+        <fullName>Rep. Duncan, Jeff [R-SC-3]</fullName>
+        <identifiers>
+          <lisID>2057</lisID>
+          <bioguideId>D000615</bioguideId>
+          <gpoId>8143</gpoId>
+        </identifiers>
+        <bioguideId>D000615</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Scott</lastName>
+        <state>GA</state>
+        <firstName>Austin</firstName>
+        <sponsorshipDate>2018-06-19</sponsorshipDate>
+        <district>8</district>
+        <fullName>Rep. Scott, Austin [R-GA-8]</fullName>
+        <identifiers>
+          <bioguideId>S001189</bioguideId>
+          <gpoId>7905</gpoId>
+          <lisID>2009</lisID>
+        </identifiers>
+        <bioguideId>S001189</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Veasey</lastName>
+        <state>TX</state>
+        <firstName>Marc</firstName>
+        <sponsorshipDate>2018-06-19</sponsorshipDate>
+        <district>33</district>
+        <fullName>Rep. Veasey, Marc A. [D-TX-33]</fullName>
+        <identifiers>
+          <lisID>2166</lisID>
+          <gpoId />
+          <bioguideId>V000131</bioguideId>
+        </identifiers>
+        <bioguideId>V000131</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
+    <calendarNumbers>
+      <item>
+        <number />
+        <calendar>U00591</calendar>
+      </item>
+    </calendarNumbers>
+    <latestAction>
+      <actionDate>2018-07-12</actionDate>
+      <links />
+      <text>Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+    </latestAction>
+    <amendments>
+      <amendment>
+        <number>854</number>
+        <description />
+        <type>HAMDT</type>
+        <amendedBill>
+          <type>HR</type>
+          <number>200</number>
+          <originChamberCode>H</originChamberCode>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <congress>115</congress>
+          <originChamber>House</originChamber>
+        </amendedBill>
+        <description />
+        <number>854</number>
+        <cosponsors>
+          <currentCount>0</currentCount>
+          <totalCount>0</totalCount>
+        </cosponsors>
+        <chamber>House of Representatives</chamber>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <purpose>An amendment numbered 11 printed in House Report 115-786 to reward the elimination of lionfish from United States waters by allowing individuals to exchange lionfish for tags authorizing fishing for certain species in addition to the number of such species otherwise authorized to be taken by such individuals.</purpose>
+        <links />
+        <sponsors>
+          <item>
+            <middleName />
+            <bioguideId>G000578</bioguideId>
+            <identifiers>
+              <lisID>2314</lisID>
+              <gpoId />
+              <bioguideId>G000578</bioguideId>
+            </identifiers>
+            <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
+            <party>R</party>
+            <firstName>Matt</firstName>
+            <state>FL</state>
+            <lastName>Gaetz</lastName>
+            <district>1</district>
+          </item>
+        </sponsors>
+        <congress>115</congress>
+        <actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentOffered>1</amendmentOffered>
+            <permissionGrantedToModifyAmendmentsCommitteeOfTheWhole>1</permissionGrantedToModifyAmendmentsCommitteeOfTheWhole>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:11:58</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+                <link>
+                  <name>H6095-6096</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095-6096</url>
+                </link>
+              </links>
+              <text>On agreeing to the Gaetz amendment (A011) as modified Agreed to by voice vote. (text as modified: CR H6095-6096)</text>
+              <actionCode>H32111</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:06:58</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+              </links>
+              <text>Gaetz amendment (A011) modified by unanimous consent.</text>
+              <actionCode>H32160</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:05:18</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+                <link>
+                  <name>H6095</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095</url>
+                </link>
+                <link>
+                  <name>H6095-6096</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095-6096</url>
+                </link>
+              </links>
+              <text>Amendment (A011) offered by Mr. Gaetz. (consideration: CR H6095-6096; text: CR H6095)</text>
+              <actionCode>H3A100</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:11:58</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+                <link>
+                  <name>H6095-6096</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095-6096</url>
+                </link>
+              </links>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionCode>76000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:11:58</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+                <link>
+                  <name>H6095-6096</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095-6096</url>
+                </link>
+              </links>
+              <text>House amendment agreed to: On agreeing to the Gaetz amendment (A011) as modified Agreed to by voice vote.</text>
+              <actionCode>72000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:05:18</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.854</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/854</url>
+                </link>
+                <link>
+                  <name>H6095</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095</url>
+                </link>
+                <link>
+                  <name>H6095-6096</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6095-6096</url>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A011) offered by Mr. Gaetz.</text>
+              <actionCode>71500</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <links />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>7</houseOfRepresentatives>
+          </actionByCounts>
+          <count>8</count>
+        </actions>
+        <version>1.0.0</version>
+        <proposedDate />
+        <titles />
+        <createDate>2018-07-12T14:01:33Z</createDate>
+        <amendedAmendment />
+        <notes />
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 11 printed in House Report 115-786 to reward the elimination of lionfish from United States waters by allowing individuals to exchange lionfish for tags authorizing fishing for certain species in addition to the number of such species otherwise authorized to be taken by such individuals.</purpose>
+        <latestAction>
+          <text>On agreeing to the Gaetz amendment (A011) as modified Agreed to by voice vote. (text as modified: CR H6095-6096)</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>17:11:58</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>853</number>
+        <description />
+        <proposedDate />
+        <actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:04:30</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.853</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/853</url>
+                </link>
+              </links>
+              <text>On agreeing to the Keating amendment (A010) Agreed to by voice vote.</text>
+              <actionCode>H32111</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:00:36</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.853</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/853</url>
+                </link>
+                <link>
+                  <name>H6094</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6094</url>
+                </link>
+                <link>
+                  <name>H6094-6095</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6094-6095</url>
+                </link>
+              </links>
+              <text>Amendment (A010) offered by Mr. Keating. (consideration: CR H6094-6095; text: CR H6094)</text>
+              <actionCode>H3A100</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:04:30</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.853</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/853</url>
+                </link>
+              </links>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionCode>76000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:04:30</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.853</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/853</url>
+                </link>
+              </links>
+              <text>House amendment agreed to: On agreeing to the Keating amendment (A010) Agreed to by voice vote.</text>
+              <actionCode>72000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>17:00:36</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.853</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/853</url>
+                </link>
+                <link>
+                  <name>H6094</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6094</url>
+                </link>
+                <link>
+                  <name>H6094-6095</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6094-6095</url>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A010) offered by Mr. Keating.</text>
+              <actionCode>71500</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <links />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <number>200</number>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <type>HAMDT</type>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <number>853</number>
+        <description />
+        <titles />
+        <congress>115</congress>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <purpose>An amendment numbered 10 printed in House Report 115-786 to direct the Secretary to use funds collected from penalties and fines for monitoring in addition to traditional enforcement activities.</purpose>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <chamber>House of Representatives</chamber>
+        <links />
+        <createDate>2018-07-12T14:01:32Z</createDate>
+        <sponsors>
+          <item>
+            <lastName>Keating</lastName>
+            <party>D</party>
+            <middleName>R.</middleName>
+            <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
+            <identifiers>
+              <bioguideId>K000375</bioguideId>
+              <lisID>2025</lisID>
+              <gpoId>7975</gpoId>
+            </identifiers>
+            <state>MA</state>
+            <firstName>William</firstName>
+            <district>9</district>
+            <bioguideId>K000375</bioguideId>
+          </item>
+        </sponsors>
+        <notes />
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 10 printed in House Report 115-786 to direct the Secretary to use funds collected from penalties and fines for monitoring in addition to traditional enforcement activities.</purpose>
+        <latestAction>
+          <text>On agreeing to the Keating amendment (A010) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>17:04:30</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>852</number>
+        <description />
+        <titles />
+        <notes />
+        <description />
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <purpose>An amendment numbered 9 printed in House Report 115-786 to lift the ban on striped bass fishing in the Block Island transit zone between Montauk, NY and Block Island, RI.</purpose>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <createDate>2018-07-12T14:01:32Z</createDate>
+        <actions>
+          <count>7</count>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actions>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.852</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/852</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>On agreeing to the Zeldin amendment (A009) Agreed to by voice vote.</text>
+              <actionTime>17:00:24</actionTime>
+              <actionCode>H32111</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.852</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/852</url>
+                </link>
+                <link>
+                  <name>H6093</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6093</url>
+                </link>
+                <link>
+                  <name>H6093-6094</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6093-6094</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment (A009) offered by Mr. Zeldin. (consideration: CR H6093-6094; text: CR H6093)</text>
+              <actionTime>16:51:20</actionTime>
+              <actionCode>H3A100</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.852</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/852</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionTime>17:00:24</actionTime>
+              <actionCode>76000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.852</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/852</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment agreed to: On agreeing to the Zeldin amendment (A009) Agreed to by voice vote.</text>
+              <actionTime>17:00:24</actionTime>
+              <actionCode>72000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.852</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/852</url>
+                </link>
+                <link>
+                  <name>H6093</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6093</url>
+                </link>
+                <link>
+                  <name>H6093-6094</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6093-6094</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered/reported by : Amendment (A009) offered by Mr. Zeldin.</text>
+              <actionTime>16:51:20</actionTime>
+              <actionCode>71500</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links />
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <actionCode>71000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+        </actions>
+        <type>HAMDT</type>
+        <number>852</number>
+        <chamber>House of Representatives</chamber>
+        <amendedAmendment />
+        <version>1.0.0</version>
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <originChamber>House</originChamber>
+          <number>200</number>
+          <type>HR</type>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <congress>115</congress>
+        </amendedBill>
+        <links />
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <sponsors>
+          <item>
+            <fullName>Rep. Zeldin, Lee M. [R-NY-1]</fullName>
+            <party>R</party>
+            <bioguideId>Z000017</bioguideId>
+            <identifiers>
+              <gpoId />
+              <lisID>2261</lisID>
+              <bioguideId>Z000017</bioguideId>
+            </identifiers>
+            <lastName>Zeldin</lastName>
+            <district>1</district>
+            <middleName>M.</middleName>
+            <firstName>Lee</firstName>
+            <state>NY</state>
+          </item>
+        </sponsors>
+        <congress>115</congress>
+        <proposedDate />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 9 printed in House Report 115-786 to lift the ban on striped bass fishing in the Block Island transit zone between Montauk, NY and Block Island, RI.</purpose>
+        <latestAction>
+          <text>On agreeing to the Zeldin amendment (A009) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>17:00:24</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>851</number>
+        <description />
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <links />
+        <congress>115</congress>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <version>1.0.0</version>
+        <createDate>2018-07-12T14:01:29Z</createDate>
+        <description />
+        <chamber>House of Representatives</chamber>
+        <number>851</number>
+        <notes />
+        <proposedDate />
+        <sponsors>
+          <item>
+            <lastName>Poliquin</lastName>
+            <middleName />
+            <bioguideId>P000611</bioguideId>
+            <fullName>Rep. Poliquin, Bruce [R-ME-2]</fullName>
+            <identifiers>
+              <bioguideId>P000611</bioguideId>
+              <lisID>2247</lisID>
+              <gpoId />
+            </identifiers>
+            <state>ME</state>
+            <firstName>Bruce</firstName>
+            <party>R</party>
+            <district>2</district>
+          </item>
+        </sponsors>
+        <amendedAmendment />
+        <purpose>An amendment numbered 8 printed in House Report 115-786 to require NOAA to conduct a study on all fees it charges the lobster industry and report those findings to Congress.</purpose>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>16:50:55</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.851</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/851</url>
+                </link>
+              </links>
+              <text>On agreeing to the Poliquin amendment (A008) Agreed to by voice vote.</text>
+              <actionCode>H32111</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>16:45:00</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.851</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/851</url>
+                </link>
+                <link>
+                  <name>H6092</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6092</url>
+                </link>
+                <link>
+                  <name>H6092-6093</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6092-6093</url>
+                </link>
+              </links>
+              <text>Amendment (A008) offered by Mr. Poliquin. (consideration: CR H6092-6093; text: CR H6092)</text>
+              <actionCode>H3A100</actionCode>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>16:50:55</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.851</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/851</url>
+                </link>
+              </links>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionCode>76000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>16:50:55</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.851</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/851</url>
+                </link>
+              </links>
+              <text>House amendment agreed to: On agreeing to the Poliquin amendment (A008) Agreed to by voice vote.</text>
+              <actionCode>72000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>Floor</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionTime>16:45:00</actionTime>
+              <committee />
+              <links>
+                <link>
+                  <name>H.Amdt.851</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/851</url>
+                </link>
+                <link>
+                  <name>H6092</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6092</url>
+                </link>
+                <link>
+                  <name>H6092-6093</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6092-6093</url>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A008) offered by Mr. Poliquin.</text>
+              <actionCode>71500</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <type>NotUsed</type>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <links />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <congress>115</congress>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <number>200</number>
+          <type>HR</type>
+          <originChamber>House</originChamber>
+        </amendedBill>
+        <type>HAMDT</type>
+        <titles />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 8 printed in House Report 115-786 to require NOAA to conduct a study on all fees it charges the lobster industry and report those findings to Congress.</purpose>
+        <latestAction>
+          <text>On agreeing to the Poliquin amendment (A008) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:50:55</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>850</number>
+        <description />
+        <actions>
+          <count>7</count>
+          <actions>
+            <item>
+              <actionTime>16:44:48</actionTime>
+              <text>On agreeing to the Keating amendment (A007) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/850</url>
+                  <name>H.Amdt.850</name>
+                </link>
+              </links>
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>16:40:31</actionTime>
+              <text>Amendment (A007) offered by Mr. Keating. (consideration: CR H6091-6092; text: CR H6091-6092)</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/850</url>
+                  <name>H.Amdt.850</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6091-6092</url>
+                  <name>H6091-6092</name>
+                </link>
+              </links>
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>16:44:48</actionTime>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/850</url>
+                  <name>H.Amdt.850</name>
+                </link>
+              </links>
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>76000</actionCode>
+            </item>
+            <item>
+              <actionTime>16:44:48</actionTime>
+              <text>House amendment agreed to: On agreeing to the Keating amendment (A007) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/850</url>
+                  <name>H.Amdt.850</name>
+                </link>
+              </links>
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>72000</actionCode>
+            </item>
+            <item>
+              <actionTime>16:40:31</actionTime>
+              <text>House amendment offered/reported by : Amendment (A007) offered by Mr. Keating.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/850</url>
+                  <name>H.Amdt.850</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6091-6092</url>
+                  <name>H6091-6092</name>
+                </link>
+              </links>
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <links />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <amendmentOffered>1</amendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+          </actionTypeCounts>
+        </actions>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <congress>115</congress>
+        <titles />
+        <purpose>An amendment numbered 7 printed in House Report 115-786 to direct the Secretary to submit a plan to establish fully operational electronic monitoring and reporting procedures for the Northeast Multispecies Fishery.</purpose>
+        <links />
+        <description />
+        <amendedBill>
+          <type>HR</type>
+          <congress>115</congress>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <originChamber>House</originChamber>
+          <number>200</number>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <chamber>House of Representatives</chamber>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendedAmendment />
+        <version>1.0.0</version>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <sponsors>
+          <item>
+            <bioguideId>K000375</bioguideId>
+            <party>D</party>
+            <firstName>William</firstName>
+            <fullName>Rep. Keating, William R. [D-MA-9]</fullName>
+            <state>MA</state>
+            <district>9</district>
+            <lastName>Keating</lastName>
+            <middleName>R.</middleName>
+            <identifiers>
+              <bioguideId>K000375</bioguideId>
+              <lisID>2025</lisID>
+              <gpoId>7975</gpoId>
+            </identifiers>
+          </item>
+        </sponsors>
+        <createDate>2018-07-12T14:01:29Z</createDate>
+        <number>850</number>
+        <notes />
+        <type>HAMDT</type>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <proposedDate />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 7 printed in House Report 115-786 to direct the Secretary to submit a plan to establish fully operational electronic monitoring and reporting procedures for the Northeast Multispecies Fishery.</purpose>
+        <latestAction>
+          <text>On agreeing to the Keating amendment (A007) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:44:48</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>849</number>
+        <description />
+        <proposedDate />
+        <actions>
+          <actionByCounts>
+            <houseOfRepresentatives>7</houseOfRepresentatives>
+          </actionByCounts>
+          <actions>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+                <link>
+                  <name>H6090-6091</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090-6091</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>On agreeing to the Graves (LA) amendment (A006) as modified Agreed to by voice vote. (text as modified: CR H6090-6091)</text>
+              <actionTime>16:40:05</actionTime>
+              <actionCode>H32111</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>Graves (LA) amendment (A006) modified by unanimous consent.</text>
+              <actionTime>16:32:08</actionTime>
+              <actionCode>H32160</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+                <link>
+                  <name>H6090</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090</url>
+                </link>
+                <link>
+                  <name>H6090-6091</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090-6091</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment (A006) offered by Mr. Graves (LA). (consideration: CR H6090-6091; text: CR H6090)</text>
+              <actionTime>16:31:40</actionTime>
+              <actionCode>H3A100</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+                <link>
+                  <name>H6090-6091</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090-6091</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionTime>16:40:05</actionTime>
+              <actionCode>76000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+                <link>
+                  <name>H6090-6091</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090-6091</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment agreed to: On agreeing to the Graves (LA) amendment (A006) as modified Agreed to by voice vote.</text>
+              <actionTime>16:40:05</actionTime>
+              <actionCode>72000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.849</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/849</url>
+                </link>
+                <link>
+                  <name>H6090</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090</url>
+                </link>
+                <link>
+                  <name>H6090-6091</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6090-6091</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered/reported by : Amendment (A006) offered by Mr. Graves (LA).</text>
+              <actionTime>16:31:40</actionTime>
+              <actionCode>71500</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links />
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <actionCode>71000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <permissionGrantedToModifyAmendmentsCommitteeOfTheWhole>1</permissionGrantedToModifyAmendmentsCommitteeOfTheWhole>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+          <count>8</count>
+        </actions>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <number>200</number>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <type>HAMDT</type>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <number>849</number>
+        <description />
+        <titles />
+        <congress>115</congress>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <purpose>An amendment numbered 6 printed in House Report 115-786 to require the Comptroller General to submit a report to Congress on resource rent of LAPPs in the Gulf of Mexico and South Atlantic Fishery Management Councils, ways to the Treasury can reclaim that resource rent, and ways to eliminate fiduciary conflicts of interest in the South Atlantic and Gulf of Mexico Fishery Management Councils.</purpose>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <chamber>House of Representatives</chamber>
+        <links />
+        <createDate>2018-07-12T14:01:28Z</createDate>
+        <sponsors>
+          <item>
+            <lastName>Graves</lastName>
+            <party>R</party>
+            <middleName />
+            <fullName>Rep. Graves, Garret [R-LA-6]</fullName>
+            <identifiers>
+              <lisID>2245</lisID>
+              <bioguideId>G000577</bioguideId>
+              <gpoId />
+            </identifiers>
+            <state>LA</state>
+            <firstName>Garret</firstName>
+            <district>6</district>
+            <bioguideId>G000577</bioguideId>
+          </item>
+        </sponsors>
+        <notes />
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 6 printed in House Report 115-786 to require the Comptroller General to submit a report to Congress on resource rent of LAPPs in the Gulf of Mexico and South Atlantic Fishery Management Councils, ways to the Treasury can reclaim that resource rent, and ways to eliminate fiduciary conflicts of interest in the South Atlantic and Gulf of Mexico Fishery Management Councils.</purpose>
+        <latestAction>
+          <text>On agreeing to the Graves (LA) amendment (A006) as modified Agreed to by voice vote. (text as modified: CR H6090-6091)</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:40:05</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>848</number>
+        <description />
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <sponsors>
+          <item>
+            <fullName>Rep. Webster, Daniel [R-FL-11]</fullName>
+            <identifiers>
+              <lisID>2002</lisID>
+              <bioguideId>W000806</bioguideId>
+              <gpoId>7880</gpoId>
+            </identifiers>
+            <lastName>Webster</lastName>
+            <firstName>Daniel</firstName>
+            <state>FL</state>
+            <party>R</party>
+            <middleName />
+            <bioguideId>W000806</bioguideId>
+            <district>11</district>
+          </item>
+        </sponsors>
+        <purpose>An amendment numbered 5 printed in House Report 115-786 to waive compensatory mitigation requirements for maintenance dredging projects in certain inland waterways, inlets, or harbors.</purpose>
+        <amendedAmendment />
+        <notes />
+        <number>848</number>
+        <titles />
+        <links />
+        <congress>115</congress>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <proposedDate />
+        <amendedBill>
+          <congress>115</congress>
+          <number>200</number>
+          <originChamberCode>H</originChamberCode>
+          <originChamber>House</originChamber>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <type>HR</type>
+        </amendedBill>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <type>HAMDT</type>
+        <description />
+        <createDate>2018-07-12T14:01:28Z</createDate>
+        <actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actions>
+            <item>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/848</url>
+                  <name>H.Amdt.848</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <text>On agreeing to the Webster (FL) amendment (A005) Agreed to by voice vote.</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>H32111</actionCode>
+              <actionTime>16:31:28</actionTime>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/848</url>
+                  <name>H.Amdt.848</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6089</url>
+                  <name>H6089</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6089-6090</url>
+                  <name>H6089-6090</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <text>Amendment (A005) offered by Mr. Webster (FL). (consideration: CR H6089-6090; text: CR H6089)</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>H3A100</actionCode>
+              <actionTime>16:24:00</actionTime>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/848</url>
+                  <name>H.Amdt.848</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>76000</actionCode>
+              <actionTime>16:31:28</actionTime>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/848</url>
+                  <name>H.Amdt.848</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <text>House amendment agreed to: On agreeing to the Webster (FL) amendment (A005) Agreed to by voice vote.</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>72000</actionCode>
+              <actionTime>16:31:28</actionTime>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/848</url>
+                  <name>H.Amdt.848</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6089</url>
+                  <name>H6089</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6089-6090</url>
+                  <name>H6089-6090</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <text>House amendment offered/reported by : Amendment (A005) offered by Mr. Webster (FL).</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>71500</actionCode>
+              <actionTime>16:24:00</actionTime>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+            <item>
+              <committee />
+              <links />
+              <type>Floor</type>
+              <text>House amendment offered</text>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>71000</actionCode>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <amendmentOffered>1</amendmentOffered>
+          </actionTypeCounts>
+          <count>7</count>
+        </actions>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <chamber>House of Representatives</chamber>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 5 printed in House Report 115-786 to waive compensatory mitigation requirements for maintenance dredging projects in certain inland waterways, inlets, or harbors.</purpose>
+        <latestAction>
+          <text>On agreeing to the Webster (FL) amendment (A005) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:31:28</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>847</number>
+        <description />
+        <description />
+        <links />
+        <sponsors>
+          <item>
+            <bioguideId>H001068</bioguideId>
+            <middleName />
+            <fullName>Rep. Huffman, Jared [D-CA-2]</fullName>
+            <lastName>Huffman</lastName>
+            <state>CA</state>
+            <district>2</district>
+            <party>D</party>
+            <identifiers>
+              <lisID>2101</lisID>
+              <bioguideId>H001068</bioguideId>
+              <gpoId />
+            </identifiers>
+            <firstName>Jared</firstName>
+          </item>
+        </sponsors>
+        <purpose>An amendment numbered 4 printed in House Report 115-786 to ensure that rebuilding plans are successful in rebuilding overfished fish stocks.</purpose>
+        <number>847</number>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <congress>115</congress>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <notes />
+        <amendedAmendment />
+        <titles />
+        <actions>
+          <actionTypeCounts>
+            <amendmentOffered>1</amendmentOffered>
+            <amendmentFailedInCommitteeOfTheWhole>1</amendmentFailedInCommitteeOfTheWhole>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentNotAgreedTo>1</houseAmendmentNotAgreedTo>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>H32111</actionCode>
+              <committee />
+              <text>On agreeing to the Huffman amendment (A004) Failed by voice vote.</text>
+              <links>
+                <link>
+                  <name>H.Amdt.847</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/847</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <actionTime>16:23:27</actionTime>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>H3A100</actionCode>
+              <committee />
+              <text>Amendment (A004) offered by Mr. Huffman. (consideration: CR H6088-6089; text: CR H6088)</text>
+              <links>
+                <link>
+                  <name>H.Amdt.847</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/847</url>
+                </link>
+                <link>
+                  <name>H6088</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6088</url>
+                </link>
+                <link>
+                  <name>H6088-6089</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6088-6089</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <actionTime>16:16:31</actionTime>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>77000</actionCode>
+              <committee />
+              <text>Amendment failed in Committee of the Whole</text>
+              <links>
+                <link>
+                  <name>H.Amdt.847</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/847</url>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>16:23:27</actionTime>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>73000</actionCode>
+              <committee />
+              <text>House amendment not agreed to: On agreeing to the Huffman amendment (A004) Failed by voice vote.</text>
+              <links>
+                <link>
+                  <name>H.Amdt.847</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/847</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>16:23:27</actionTime>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>71500</actionCode>
+              <committee />
+              <text>House amendment offered/reported by : Amendment (A004) offered by Mr. Huffman.</text>
+              <links>
+                <link>
+                  <name>H.Amdt.847</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/847</url>
+                </link>
+                <link>
+                  <name>H6088</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6088</url>
+                </link>
+                <link>
+                  <name>H6088-6089</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6088-6089</url>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>16:16:31</actionTime>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <actionCode>71000</actionCode>
+              <committee />
+              <text>House amendment offered</text>
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <proposedDate />
+        <type>HAMDT</type>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <chamber>House of Representatives</chamber>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <number>200</number>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <version>1.0.0</version>
+        <createDate>2018-07-12T14:01:28Z</createDate>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 4 printed in House Report 115-786 to ensure that rebuilding plans are successful in rebuilding overfished fish stocks.</purpose>
+        <latestAction>
+          <text>On agreeing to the Huffman amendment (A004) Failed by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:23:27</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>846</number>
+        <description />
+        <actions>
+          <count>7</count>
+          <actions>
+            <item>
+              <actionTime>16:16:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/846</url>
+                  <name>H.Amdt.846</name>
+                </link>
+              </links>
+              <text>On agreeing to the Langevin amendment Failed by voice vote.</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>16:09:02</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/846</url>
+                  <name>H.Amdt.846</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6087</url>
+                  <name>H6087</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6087-6088</url>
+                  <name>H6087-6088</name>
+                </link>
+              </links>
+              <text>Amendment (A003) offered by Mr. Langevin. (consideration: CR H6087-6088; text: CR H6087)</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>16:16:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/846</url>
+                  <name>H.Amdt.846</name>
+                </link>
+              </links>
+              <text>Amendment failed in Committee of the Whole</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>77000</actionCode>
+            </item>
+            <item>
+              <actionTime>16:16:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/846</url>
+                  <name>H.Amdt.846</name>
+                </link>
+              </links>
+              <text>House amendment not agreed to: On agreeing to the Langevin amendment Failed by voice vote.</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>73000</actionCode>
+            </item>
+            <item>
+              <actionTime>16:09:02</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/846</url>
+                  <name>H.Amdt.846</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6087</url>
+                  <name>H6087</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6087-6088</url>
+                  <name>H6087-6088</name>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A003) offered by Mr. Langevin.</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <links />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentNotAgreedTo>1</houseAmendmentNotAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentOffered>1</amendmentOffered>
+            <amendmentFailedInCommitteeOfTheWhole>1</amendmentFailedInCommitteeOfTheWhole>
+          </actionTypeCounts>
+        </actions>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <congress>115</congress>
+        <titles />
+        <purpose>An amendment numbered 3 printed in House Report 115-786 to provide voting representation for Rhode Island on the Mid-Atlantic Fishery Management Council (MAFMC).</purpose>
+        <links />
+        <description />
+        <amendedBill>
+          <type>HR</type>
+          <congress>115</congress>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <originChamber>House</originChamber>
+          <number>200</number>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <chamber>House of Representatives</chamber>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendedAmendment />
+        <version>1.0.0</version>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <sponsors>
+          <item>
+            <bioguideId>L000559</bioguideId>
+            <party>D</party>
+            <firstName>JAMES</firstName>
+            <fullName>Rep. Langevin, James R. [D-RI-2]</fullName>
+            <state>RI</state>
+            <district>2</district>
+            <lastName>LANGEVIN</lastName>
+            <middleName>R.</middleName>
+            <identifiers>
+              <bioguideId>L000559</bioguideId>
+              <lisID>1668</lisID>
+              <gpoId>8140</gpoId>
+            </identifiers>
+          </item>
+        </sponsors>
+        <createDate>2018-07-12T14:01:28Z</createDate>
+        <number>846</number>
+        <notes />
+        <type>HAMDT</type>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <proposedDate />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 3 printed in House Report 115-786 to provide voting representation for Rhode Island on the Mid-Atlantic Fishery Management Council (MAFMC).</purpose>
+        <latestAction>
+          <text>On agreeing to the Langevin amendment Failed by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:16:17</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>845</number>
+        <description />
+        <sponsors>
+          <item>
+            <party>D</party>
+            <state>CT</state>
+            <bioguideId>C001069</bioguideId>
+            <lastName>Courtney</lastName>
+            <fullName>Rep. Courtney, Joe [D-CT-2]</fullName>
+            <firstName>Joe</firstName>
+            <district>2</district>
+            <middleName />
+            <identifiers>
+              <bioguideId>C001069</bioguideId>
+              <lisID>1836</lisID>
+              <gpoId>7867</gpoId>
+            </identifiers>
+          </item>
+        </sponsors>
+        <notes />
+        <titles />
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <chamber>House of Representatives</chamber>
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <proposedDate />
+        <cosponsors>
+          <currentCount>0</currentCount>
+          <totalCount>0</totalCount>
+        </cosponsors>
+        <version>1.0.0</version>
+        <congress>115</congress>
+        <purpose>An amendment numbered 2 printed in House Report 115-786 to create an industry-based pilot trawl survey for the New England and Mid-Atlantic Fishery Management Council regions.</purpose>
+        <createDate>2018-07-12T14:01:27Z</createDate>
+        <links />
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <congress>115</congress>
+          <type>HR</type>
+          <originChamber>House</originChamber>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <number>200</number>
+        </amendedBill>
+        <type>HAMDT</type>
+        <actions>
+          <count>7</count>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actions>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.845</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/845</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>On agreeing to the Courtney amendment (A002) Agreed to by voice vote.</text>
+              <actionTime>16:08:53</actionTime>
+              <actionCode>H32111</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.845</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/845</url>
+                </link>
+                <link>
+                  <name>H6086</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6086</url>
+                </link>
+                <link>
+                  <name>H6086-6087</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6086-6087</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment (A002) offered by Mr. Courtney. (consideration: CR H6086-6087; text: CR H6086)</text>
+              <actionTime>16:03:29</actionTime>
+              <actionCode>H3A100</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.845</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/845</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>Amendment agreed to Committee of the Whole</text>
+              <actionTime>16:08:53</actionTime>
+              <actionCode>76000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links>
+                <link>
+                  <name>H.Amdt.845</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/845</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment agreed to: On agreeing to the Courtney amendment (A002) Agreed to by voice vote.</text>
+              <actionTime>16:08:53</actionTime>
+              <actionCode>72000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>NotUsed</type>
+              <links>
+                <link>
+                  <name>H.Amdt.845</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/845</url>
+                </link>
+                <link>
+                  <name>H6086</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6086</url>
+                </link>
+                <link>
+                  <name>H6086-6087</name>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6086-6087</url>
+                </link>
+              </links>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered/reported by : Amendment (A002) offered by Mr. Courtney.</text>
+              <actionTime>16:03:29</actionTime>
+              <actionCode>71500</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+            <item>
+              <type>Floor</type>
+              <links />
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <actionCode>71000</actionCode>
+              <actionDate>2018-07-11</actionDate>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+          </actionTypeCounts>
+        </actions>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <number>845</number>
+        <description />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 2 printed in House Report 115-786 to create an industry-based pilot trawl survey for the New England and Mid-Atlantic Fishery Management Council regions.</purpose>
+        <latestAction>
+          <text>On agreeing to the Courtney amendment (A002) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:08:53</actionTime>
+        </latestAction>
+      </amendment>
+      <amendment>
+        <number>844</number>
+        <description />
+        <chamber>House of Representatives</chamber>
+        <sponsors>
+          <item>
+            <middleName>E.</middleName>
+            <identifiers>
+              <bioguideId>Y000033</bioguideId>
+              <gpoId>7785</gpoId>
+              <lisID>1256</lisID>
+            </identifiers>
+            <bioguideId>Y000033</bioguideId>
+            <firstName>DON</firstName>
+            <state>AK</state>
+            <lastName>YOUNG</lastName>
+            <district>0</district>
+            <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+            <party>R</party>
+          </item>
+        </sponsors>
+        <purpose>An amendment numbered 1 printed in House Report 115-786 to strike sections 302(c) and 307, and modifies sections 205, 207, 304, 30 6, 406, and 408. The amendment also includes a new section regarding voting procedures for the Western Alaska Community Development Quota Program's administrative panel.</purpose>
+        <version>1.0.0</version>
+        <createDate>2018-07-12T14:01:27Z</createDate>
+        <notes />
+        <titles />
+        <type>HAMDT</type>
+        <amendedAmendment />
+        <submittedDate>2018-07-11T04:00:00Z</submittedDate>
+        <number>844</number>
+        <description />
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <updateDate>2018-08-28T19:58:15Z</updateDate>
+        <actions>
+          <actions>
+            <item>
+              <actionTime>16:03:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/844</url>
+                  <name>H.Amdt.844</name>
+                </link>
+              </links>
+              <text>On agreeing to the Young (AK) amendment (A001) Agreed to by voice vote.</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>15:55:47</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/844</url>
+                  <name>H.Amdt.844</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6082-6083</url>
+                  <name>H6082-6083</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6082-6086</url>
+                  <name>H6082-6086</name>
+                </link>
+              </links>
+              <text>Amendment (A001) offered by Mr. Young (AK). (consideration: CR H6082-6086; text: CR H6082-6083)</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>16:03:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/844</url>
+                  <name>H.Amdt.844</name>
+                </link>
+              </links>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>76000</actionCode>
+            </item>
+            <item>
+              <actionTime>16:03:17</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/844</url>
+                  <name>H.Amdt.844</name>
+                </link>
+              </links>
+              <text>House amendment agreed to: On agreeing to the Young (AK) amendment (A001) Agreed to by voice vote.</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>72000</actionCode>
+            </item>
+            <item>
+              <actionTime>15:55:47</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/844</url>
+                  <name>H.Amdt.844</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6082-6083</url>
+                  <name>H6082-6083</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-164/house-section/page/H6082-6086</url>
+                  <name>H6082-6086</name>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A001) offered by Mr. Young (AK).</text>
+              <committee />
+              <actionDate>2018-07-11</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <actionDate>2018-07-11</actionDate>
+              <links />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentOffered>1</amendmentOffered>
+          </actionTypeCounts>
+          <count>7</count>
+        </actions>
+        <congress>115</congress>
+        <links />
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <amendedBill>
+          <number>200</number>
+          <type>HR</type>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+          <title>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act</title>
+          <originChamber>House</originChamber>
+        </amendedBill>
+        <proposedDate />
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <purpose>An amendment numbered 1 printed in House Report 115-786 to strike sections 302(c) and 307, and modifies sections 205, 207, 304, 30 6, 406, and 408. The amendment also includes a new section regarding voting procedures for the Western Alaska Community Development Quota Program's administrative panel.</purpose>
+        <latestAction>
+          <text>On agreeing to the Young (AK) amendment (A001) Agreed to by voice vote.</text>
+          <actionDate>2018-07-11</actionDate>
+          <actionTime>16:03:17</actionTime>
+        </latestAction>
+      </amendment>
+    </amendments>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Strengthening Fishing Communities and Increasing Flexibility in Fisheries Management Act </b></p> <p>This bill revises and reauthorizes through FY2022 the Magnuson-Stevens Fishery Conservation and Management Act (MSA).</p> <p>Revisions are made to: (1) requirements for fishery management plans for overfished fisheries; and (2) catch limit requirements, including by authorizing Regional Fishery Management Councils to consider changes in an ecosystem and the economic needs of the fishing communities when establishing the limits.</p> <p>To distinguish between fish that are depleted due to fishing and those that are depleted for other reasons, the term &quot;depleted&quot; replaces the term &quot;overfished&quot; throughout the MSA.</p> <p>Fishery impact statements must analyze the impacts of proposed actions in fishery management plans on the quality of the human environment. </p> <p> The National Oceanic and Atmospheric Administration (NOAA) must publish a plan for implementing the Cooperative Research and Management Program.</p> <p> The offshore jurisdiction of Louisiana, Mississippi, and Alabama is extended from three miles to nine miles for the recreational management of red snapper.</p> <p>The Gulf States Marine Fisheries Commission must conduct all fishery stock assessments used for management purposes by the Gulf of Mexico Fishery Management Council for the fisheries managed under the Council's Reef Fish Management Plan.</p> <p>Any commercial catch share allocation in a fishery in the Gulf of Mexico may only be traded by sale or lease within the same commercial fishing sector.</p> <p>NOAA must develop a plan to conduct stock assessments for all fish for which a fishery management plan is in effect under this bill.Additionally, NOAA must develop guidelines that will incorporate data from private entities into fishery management plans.</p>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-06-12T17:51:24Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-04T07:01:13Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

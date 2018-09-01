@@ -1,405 +1,1235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <billReferrals>2</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <text>Referred to House Agriculture</text>
-        <committee>
-          <name>Agriculture Committee</name>
-          <systemCode>hsag00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
+    <amendments>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the Pearce amendment (A006) Agreed to by voice vote.</text>
+          <actionTime>18:29:33</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose>An amendment numbered 6 printed in Part C of House Report 115-212 to ensure that the water rights of federally recognized Indian tribes are not affected by this bill.</purpose>
+        <description />
+        <number>159</number>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+        <proposedDate />
+        <description />
+        <sponsors>
+          <item>
+            <district>2</district>
+            <fullName>Rep. Pearce, Stevan [R-NM-2]</fullName>
+            <firstName>Stevan</firstName>
+            <lastName>Pearce</lastName>
+            <state>NM</state>
+            <bioguideId>P000588</bioguideId>
+            <party>R</party>
+            <identifiers>
+              <lisID>1738</lisID>
+              <gpoId>8057</gpoId>
+              <bioguideId>P000588</bioguideId>
+            </identifiers>
+            <middleName />
+          </item>
+        </sponsors>
+        <number>159</number>
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <titles />
+        <congress>115</congress>
+        <amendedAmendment />
+        <createDate>2017-07-13T07:16:16Z</createDate>
+        <chamber>House of Representatives</chamber>
+        <actions>
+          <actions>
+            <item>
+              <actionTime>18:29:33</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/159</url>
+                  <name>H.Amdt.159</name>
+                </link>
+              </links>
+              <text>On agreeing to the Pearce amendment (A006) Agreed to by voice vote.</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>18:21:11</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/159</url>
+                  <name>H.Amdt.159</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5529</url>
+                  <name>H5529</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5529-5530</url>
+                  <name>H5529-5530</name>
+                </link>
+              </links>
+              <text>Amendment (A006) offered by Mr. Pearce. (consideration: CR H5529-5530; text: CR H5529)</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>18:29:33</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/159</url>
+                  <name>H.Amdt.159</name>
+                </link>
+              </links>
+              <text>House amendment agreed to: On agreeing to the Pearce amendment (A006) Agreed to by voice vote.</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>72000</actionCode>
+            </item>
+            <item>
+              <actionTime>18:29:33</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/159</url>
+                  <name>H.Amdt.159</name>
+                </link>
+              </links>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>76000</actionCode>
+            </item>
+            <item>
+              <actionTime>18:21:11</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/159</url>
+                  <name>H.Amdt.159</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5529</url>
+                  <name>H5529</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5529-5530</url>
+                  <name>H5529-5530</name>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A006) offered by Mr. Pearce.(consideration: CR H5529-5530; text: CR H5529)</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <links />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentOffered>1</amendmentOffered>
+          </actionTypeCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+          <type>HR</type>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <originChamber>House</originChamber>
+          <number>23</number>
+        </amendedBill>
+        <type>HAMDT</type>
         <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
+        <notes />
+        <purpose>An amendment numbered 6 printed in Part C of House Report 115-212 to ensure that the water rights of federally recognized Indian tribes are not affected by this bill.</purpose>
+      </amendment>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the DeSaulnier amendment (A005) Failed by recorded vote: 201 - 221 (Roll no. 350).</text>
+          <actionTime>18:53:49</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose>An amendment numbered 5 printed in Part C of House Report 115-212 to require a review of available and new, innovative technologies for capturing municipal wastewater and recycling it for providing drinking water and energy, and a report on the feasibility of expanding the implementation of these technologies and programs among Central Valley Project contractors.</purpose>
+        <description>Amendment sought to require a review of available and new, innovative technologies for capturing municipal wastewater and recycling it for providing drinking water and energy and report on the feasibility of expanding the implementation of these technologies and programs among Central Valley Project contractors.</description>
+        <number>158</number>
+        <titles />
+        <notes />
+        <description>Amendment sought to require a review of available and new, innovative technologies for capturing municipal wastewater and recycling it for providing drinking water and energy and report on the feasibility of expanding the implementation of these technologies and programs among Central Valley Project contractors.</description>
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <purpose>An amendment numbered 5 printed in Part C of House Report 115-212 to require a review of available and new, innovative technologies for capturing municipal wastewater and recycling it for providing drinking water and energy, and a report on the feasibility of expanding the implementation of these technologies and programs among Central Valley Project contractors.</purpose>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <createDate>2017-07-13T07:16:16Z</createDate>
+        <actions>
+          <count>8</count>
+          <actions>
+            <item>
+              <actionTime>18:53:49</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>http://clerk.house.gov/evs/2017/roll350.xml</url>
+                  <name>Roll no. 350</name>
+                </link>
+              </links>
+              <text>On agreeing to the DeSaulnier amendment (A005) Failed by recorded vote: 201 - 221 (Roll no. 350).</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>18:10:55</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5528</url>
+                  <name>H5528</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5528-5529</url>
+                  <name>H5528-5529</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5530-5531</url>
+                  <name>H5530-5531</name>
+                </link>
+              </links>
+              <text>Amendment (A005) offered by Mr. DeSaulnier. (consideration: CR H5528-5529, H5530-5531; text: CR H5528)</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>18:53:49</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>http://clerk.house.gov/evs/2017/roll350.xml</url>
+                  <name>Roll no. 350</name>
+                </link>
+              </links>
+              <text>Amendment failed in Committee of the Whole</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>77000</actionCode>
+            </item>
+            <item>
+              <actionTime>18:53:49</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>http://clerk.house.gov/evs/2017/roll350.xml</url>
+                  <name>Roll no. 350</name>
+                </link>
+              </links>
+              <text>Roll call votes on amendments in House</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>75000</actionCode>
+            </item>
+            <item>
+              <actionTime>18:53:49</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>http://clerk.house.gov/evs/2017/roll350.xml</url>
+                  <name>Roll no. 350</name>
+                </link>
+              </links>
+              <text>House amendment not agreed to: On agreeing to the DeSaulnier amendment (A005) Failed by recorded vote: 201 - 221 (Roll no. 350).</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>73000</actionCode>
+            </item>
+            <item>
+              <actionTime>18:10:55</actionTime>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/158</url>
+                  <name>H.Amdt.158</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5528</url>
+                  <name>H5528</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5528-5529</url>
+                  <name>H5528-5529</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5530-5531</url>
+                  <name>H5530-5531</name>
+                </link>
+              </links>
+              <text>House amendment offered/reported by : Amendment (A005) offered by Mr. DeSaulnier.(consideration: CR H5528-5529, H5530-5531; text: CR H5528)</text>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <links />
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>7</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <rollCallVotesOnAmendmentsInHouse>1</rollCallVotesOnAmendmentsInHouse>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <amendmentFailedInCommitteeOfTheWhole>1</amendmentFailedInCommitteeOfTheWhole>
+            <houseAmendmentNotAgreedTo>1</houseAmendmentNotAgreedTo>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentOffered>1</amendmentOffered>
+          </actionTypeCounts>
+        </actions>
+        <type>HAMDT</type>
+        <number>158</number>
+        <chamber>House of Representatives</chamber>
+        <amendedAmendment />
+        <version>1.0.0</version>
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <originChamber>House</originChamber>
+          <number>23</number>
+          <type>HR</type>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <congress>115</congress>
+        </amendedBill>
         <links />
-        <actionCode>H11100-A</actionCode>
-      </item>
-      <item>
-        <text>Referred to House Natural Resources</text>
-        <committee>
-          <name>Natural Resources Committee</name>
-          <systemCode>hsii00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+        <sponsors>
+          <item>
+            <fullName>Rep. DeSaulnier, Mark [D-CA-11]</fullName>
+            <party>D</party>
+            <bioguideId>D000623</bioguideId>
+            <identifiers>
+              <lisID>2227</lisID>
+              <gpoId />
+              <bioguideId>D000623</bioguideId>
+            </identifiers>
+            <lastName>DeSaulnier</lastName>
+            <district>11</district>
+            <middleName />
+            <firstName>Mark</firstName>
+            <state>CA</state>
+          </item>
+        </sponsors>
+        <congress>115</congress>
+        <proposedDate />
+      </amendment>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the Denham amendment (A004) Agreed to by voice vote.</text>
+          <actionTime>18:10:45</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose>An amendment numbered 4 printed in Part C of House Report 115-212 to set a timeline for completion of the New Melones Reservoir study, prevents exploitation of water rights, extends the program to protect Anadromous Fish in Stanislaus River for 2 years.</purpose>
+        <description />
+        <number>157</number>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <amendments>
+          <count>0</count>
+        </amendments>
         <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
+        <congress>115</congress>
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+        <version>1.0.0</version>
+        <createDate>2017-07-13T07:16:15Z</createDate>
+        <description />
+        <chamber>House of Representatives</chamber>
+        <number>157</number>
+        <notes />
+        <proposedDate />
+        <sponsors>
+          <item>
+            <lastName>Denham</lastName>
+            <middleName />
+            <bioguideId>D000612</bioguideId>
+            <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
+            <identifiers>
+              <lisID>1995</lisID>
+              <bioguideId>D000612</bioguideId>
+              <gpoId>7824</gpoId>
+            </identifiers>
+            <state>CA</state>
+            <firstName>Jeff</firstName>
+            <party>R</party>
+            <district>10</district>
+          </item>
+        </sponsors>
+        <amendedAmendment />
+        <purpose>An amendment numbered 4 printed in Part C of House Report 115-212 to set a timeline for completion of the New Melones Reservoir study, prevents exploitation of water rights, extends the program to protect Anadromous Fish in Stanislaus River for 2 years.</purpose>
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <actions>
+          <actions>
+            <item>
+              <text>On agreeing to the Denham amendment (A004) Agreed to by voice vote.</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/157</url>
+                  <name>H.Amdt.157</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <committee />
+              <actionTime>18:10:45</actionTime>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <text>Amendment (A004) offered by Mr. Denham. (consideration: CR H5527-5528; text: CR H5527-5528)</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/157</url>
+                  <name>H.Amdt.157</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5527-5528</url>
+                  <name>H5527-5528</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <committee />
+              <actionTime>18:07:28</actionTime>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/157</url>
+                  <name>H.Amdt.157</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionTime>18:10:45</actionTime>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>76000</actionCode>
+            </item>
+            <item>
+              <text>House amendment agreed to: On agreeing to the Denham amendment (A004) Agreed to by voice vote.</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/157</url>
+                  <name>H.Amdt.157</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionTime>18:10:45</actionTime>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>72000</actionCode>
+            </item>
+            <item>
+              <text>House amendment offered/reported by : Amendment (A004) offered by Mr. Denham.(consideration: CR H5527-5528; text: CR H5527-5528)</text>
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/157</url>
+                  <name>H.Amdt.157</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5527-5528</url>
+                  <name>H5527-5528</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionTime>18:07:28</actionTime>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <text>House amendment offered</text>
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+          </actionTypeCounts>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <originChamberCode>H</originChamberCode>
+          <congress>115</congress>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <number>23</number>
+          <type>HR</type>
+          <originChamber>House</originChamber>
+        </amendedBill>
+        <type>HAMDT</type>
+        <titles />
+      </amendment>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the Costa amendment (A003) Agreed to by voice vote.</text>
+          <actionTime>18:07:07</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose>An amendment numbered 3 printed in Part C of House Report 115-212 to authorize the U.S. Bureau of Reclamation to develop a study to enhance mountain runoff to Central Valley Project reservoirs from headwaters restoration activities.</purpose>
+        <description />
+        <number>156</number>
+        <type>HAMDT</type>
+        <amendedBill>
+          <type>HR</type>
+          <number>23</number>
+          <originChamberCode>H</originChamberCode>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <congress>115</congress>
+          <originChamber>House</originChamber>
+        </amendedBill>
+        <description />
+        <number>156</number>
+        <cosponsors>
+          <currentCount>0</currentCount>
+          <totalCount>0</totalCount>
+        </cosponsors>
+        <chamber>House of Representatives</chamber>
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <purpose>An amendment numbered 3 printed in Part C of House Report 115-212 to authorize the U.S. Bureau of Reclamation to develop a study to enhance mountain runoff to Central Valley Project reservoirs from headwaters restoration activities.</purpose>
         <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-03</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
+        <sponsors>
+          <item>
+            <middleName />
+            <bioguideId>C001059</bioguideId>
+            <identifiers>
+              <bioguideId>C001059</bioguideId>
+              <gpoId>7825</gpoId>
+              <lisID>1774</lisID>
+            </identifiers>
+            <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
+            <party>D</party>
+            <firstName>Jim</firstName>
+            <state>CA</state>
+            <lastName>Costa</lastName>
+            <district>16</district>
+          </item>
+        </sponsors>
+        <congress>115</congress>
+        <actions>
+          <actions>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H32111</actionCode>
+              <text>On agreeing to the Costa amendment (A003) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/156</url>
+                  <name>H.Amdt.156</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <actionTime>18:07:07</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H3A100</actionCode>
+              <text>Amendment (A003) offered by Mr. Costa. (consideration: CR H5527; text: CR H5527)</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/156</url>
+                  <name>H.Amdt.156</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5527</url>
+                  <name>H5527</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <actionTime>18:01:28</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>76000</actionCode>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/156</url>
+                  <name>H.Amdt.156</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <actionTime>18:07:07</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>72000</actionCode>
+              <text>House amendment agreed to: On agreeing to the Costa amendment (A003) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/156</url>
+                  <name>H.Amdt.156</name>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <actionTime>18:07:07</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71500</actionCode>
+              <text>House amendment offered/reported by : Amendment (A003) offered by Mr. Costa.(consideration: CR H5527; text: CR H5527)</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/156</url>
+                  <name>H.Amdt.156</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5527</url>
+                  <name>H5527</name>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <actionTime>18:01:28</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71000</actionCode>
+              <text>House amendment offered</text>
+              <committee />
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <amendmentOffered>1</amendmentOffered>
+          </actionTypeCounts>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <version>1.0.0</version>
+        <proposedDate />
+        <titles />
+        <createDate>2017-07-13T07:16:15Z</createDate>
+        <amendedAmendment />
+        <notes />
+        <amendments>
+          <count>0</count>
+        </amendments>
+      </amendment>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the Costa amendment (A002) Agreed to by voice vote.</text>
+          <actionTime>18:00:49</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose />
+        <description>At the end of title II, add the following:    SEC. 204. GEOPHYSICAL SURVEY.    The Bureau of Reclamation, in cooperation with the United States Geological Survey ***.</description>
+        <number>155</number>
+        <proposedDate />
+        <actions>
+          <actionTypeCounts>
+            <amendmentOffered>1</amendmentOffered>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+          </actionTypeCounts>
+          <actions>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H32111</actionCode>
+              <committee />
+              <text>On agreeing to the Costa amendment (A002) Agreed to by voice vote.</text>
+              <links>
+                <link>
+                  <name>H.Amdt.155</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/155</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <actionTime>18:00:49</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>H3A100</actionCode>
+              <committee />
+              <text>Amendment (A002) offered by Mr. Costa. (consideration: CR H5526-5527; text: CR H5526)</text>
+              <links>
+                <link>
+                  <name>H.Amdt.155</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/155</url>
+                </link>
+                <link>
+                  <name>H5526</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5526</url>
+                </link>
+                <link>
+                  <name>H5526-5527</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5526-5527</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>House floor actions</name>
+                <code>2</code>
+              </sourceSystem>
+              <actionTime>17:54:56</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>76000</actionCode>
+              <committee />
+              <text>Amendment agreed to Committee of the Whole</text>
+              <links>
+                <link>
+                  <name>H.Amdt.155</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/155</url>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>18:00:49</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>72000</actionCode>
+              <committee />
+              <text>House amendment agreed to: On agreeing to the Costa amendment (A002) Agreed to by voice vote.</text>
+              <links>
+                <link>
+                  <name>H.Amdt.155</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/155</url>
+                </link>
+              </links>
+              <type>Floor</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>18:00:49</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71500</actionCode>
+              <committee />
+              <text>House amendment offered/reported by : Amendment (A002) offered by Mr. Costa.(consideration: CR H5526-5527; text: CR H5526)</text>
+              <links>
+                <link>
+                  <name>H.Amdt.155</name>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/155</url>
+                </link>
+                <link>
+                  <name>H5526</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5526</url>
+                </link>
+                <link>
+                  <name>H5526-5527</name>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5526-5527</url>
+                </link>
+              </links>
+              <type>NotUsed</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+              <actionTime>17:54:56</actionTime>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <actionCode>71000</actionCode>
+              <committee />
+              <text>House amendment offered</text>
+              <links />
+              <type>Floor</type>
+              <sourceSystem>
+                <name>Library of Congress</name>
+                <code>9</code>
+              </sourceSystem>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <number>23</number>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <type>HAMDT</type>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <number>155</number>
+        <description>At the end of title II, add the following:    SEC. 204. GEOPHYSICAL SURVEY.    The Bureau of Reclamation, in cooperation with the United States Geological Survey ***.</description>
+        <titles />
+        <congress>115</congress>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <purpose />
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <chamber>House of Representatives</chamber>
         <links />
-        <actionCode>1000</actionCode>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <amendments />
-    <updateDate>2017-01-12T09:49:49Z</updateDate>
-    <titles>
-      <item>
-        <title>Water Rights Protection Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced for portions of this bill</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Accelerated Revenue, Repayment, and Surface Water Storage Enhancement Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced for portions of this bill</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Bureau of Reclamation Project Streamlining Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced for portions of this bill</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Water Supply Permitting Coordination Act</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced for portions of this bill</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Gaining Responsibility on Water Act of 2017</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>To provide drought relief in the State of California, and for other purposes.</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberCode />
-      </item>
-      <item>
-        <title>Gaining Responsibility on Water Act of 2017</title>
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <chamberCode />
-      </item>
-    </titles>
-    <notes />
-    <originChamber>House</originChamber>
-    <committeeReports />
-    <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <middleName>G.</middleName>
-        <firstName>David</firstName>
-        <bioguideId>V000129</bioguideId>
-        <district>21</district>
-        <byRequestType />
-        <state>CA</state>
-        <identifiers>
-          <lisID>2105</lisID>
-          <gpoId />
-          <bioguideId>V000129</bioguideId>
-        </identifiers>
-        <party>R</party>
-        <lastName>Valadao</lastName>
-        <fullName>Rep. Valadao, David G. [R-CA-21]</fullName>
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
+        <createDate>2017-07-13T07:16:15Z</createDate>
+        <sponsors>
+          <item>
+            <lastName>Costa</lastName>
+            <party>D</party>
+            <middleName />
+            <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
+            <identifiers>
+              <bioguideId>C001059</bioguideId>
+              <gpoId>7825</gpoId>
+              <lisID>1774</lisID>
+            </identifiers>
+            <state>CA</state>
+            <firstName>Jim</firstName>
+            <district>16</district>
+            <bioguideId>C001059</bioguideId>
+          </item>
+        </sponsors>
+        <notes />
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+      </amendment>
+      <amendment>
+        <type>HAMDT</type>
+        <congress>115</congress>
+        <latestAction>
+          <text>On agreeing to the LaMalfa amendment (A001) Agreed to by voice vote.</text>
+          <actionTime>17:54:37</actionTime>
+          <actionDate>2017-07-12</actionDate>
+        </latestAction>
+        <purpose />
+        <description>Page 63, strike line 19 through page 64, line 2 and insert the following:    (d) Program for Water Rescheduling.-- ***.</description>
+        <number>154</number>
+        <proposedDate />
+        <actions>
+          <actions>
+            <item>
+              <actionTime>17:54:37</actionTime>
+              <text>On agreeing to the LaMalfa amendment (A001) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/154</url>
+                  <name>H.Amdt.154</name>
+                </link>
+              </links>
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H32111</actionCode>
+            </item>
+            <item>
+              <actionTime>17:44:38</actionTime>
+              <text>Amendment (A001) offered by Mr. LaMalfa. (consideration: CR H5525-5526; text: CR H5525)</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/154</url>
+                  <name>H.Amdt.154</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5525</url>
+                  <name>H5525</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5525-5526</url>
+                  <name>H5525-5526</name>
+                </link>
+              </links>
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>2</code>
+                <name>House floor actions</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>H3A100</actionCode>
+            </item>
+            <item>
+              <actionDate>2017-07-12</actionDate>
+              <committee />
+              <links />
+              <text />
+            </item>
+            <item>
+              <actionTime>17:54:37</actionTime>
+              <text>Amendment agreed to Committee of the Whole</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/154</url>
+                  <name>H.Amdt.154</name>
+                </link>
+              </links>
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>76000</actionCode>
+            </item>
+            <item>
+              <actionTime>17:54:37</actionTime>
+              <text>House amendment agreed to: On agreeing to the LaMalfa amendment (A001) Agreed to by voice vote.</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/154</url>
+                  <name>H.Amdt.154</name>
+                </link>
+              </links>
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>Floor</type>
+              <actionCode>72000</actionCode>
+            </item>
+            <item>
+              <actionTime>17:44:38</actionTime>
+              <text>House amendment offered/reported by : Amendment (A001) offered by Mr. LaMalfa.(consideration: CR H5525-5526; text: CR H5525)</text>
+              <committee />
+              <links>
+                <link>
+                  <url>https://www.congress.gov/amendment/115th-congress/house-amendment/154</url>
+                  <name>H.Amdt.154</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5525</url>
+                  <name>H5525</name>
+                </link>
+                <link>
+                  <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5525-5526</url>
+                  <name>H5525-5526</name>
+                </link>
+              </links>
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <type>NotUsed</type>
+              <actionCode>71500</actionCode>
+            </item>
+            <item>
+              <text>House amendment offered</text>
+              <type>Floor</type>
+              <links />
+              <actionDate>2017-07-12</actionDate>
+              <sourceSystem>
+                <code>9</code>
+                <name>Library of Congress</name>
+              </sourceSystem>
+              <committee />
+              <actionCode>71000</actionCode>
+            </item>
+          </actions>
+          <actionByCounts>
+            <houseOfRepresentatives>6</houseOfRepresentatives>
+          </actionByCounts>
+          <actionTypeCounts>
+            <houseAmendmentOfferedReportedBy>1</houseAmendmentOfferedReportedBy>
+            <houseAmendmentOffered>1</houseAmendmentOffered>
+            <agreementToAnAmendmentResultsCommitteeOfTheWhole>1</agreementToAnAmendmentResultsCommitteeOfTheWhole>
+            <houseAmendmentAgreedTo>1</houseAmendmentAgreedTo>
+            <amendmentOffered>1</amendmentOffered>
+            <amendmentAgreedToCommitteeOfTheWhole>1</amendmentAgreedToCommitteeOfTheWhole>
+          </actionTypeCounts>
+          <count>7</count>
+        </actions>
+        <amendedBill>
+          <originChamber>House</originChamber>
+          <type>HR</type>
+          <title>Gaining Responsibility on Water Act of 2017</title>
+          <number>23</number>
+          <congress>115</congress>
+          <originChamberCode>H</originChamberCode>
+        </amendedBill>
+        <type>HAMDT</type>
+        <cosponsors>
+          <totalCount>0</totalCount>
+          <currentCount>0</currentCount>
+        </cosponsors>
+        <number>154</number>
+        <description>Page 63, strike line 19 through page 64, line 2 and insert the following:    (d) Program for Water Rescheduling.-- ***.</description>
+        <titles />
+        <congress>115</congress>
+        <amendments>
+          <count>0</count>
+        </amendments>
+        <version>1.0.0</version>
+        <purpose />
+        <submittedDate>2017-07-12T04:00:00Z</submittedDate>
+        <amendedAmendment />
+        <chamber>House of Representatives</chamber>
+        <links />
+        <createDate>2017-07-13T07:16:14Z</createDate>
+        <sponsors>
+          <item>
+            <lastName>LaMalfa</lastName>
+            <party>R</party>
+            <middleName />
+            <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+            <identifiers>
+              <lisID>2100</lisID>
+              <gpoId />
+              <bioguideId>L000578</bioguideId>
+            </identifiers>
+            <state>CA</state>
+            <firstName>Doug</firstName>
+            <district>1</district>
+            <bioguideId>L000578</bioguideId>
+          </item>
+        </sponsors>
+        <notes />
+        <updateDate>2018-08-28T19:57:23Z</updateDate>
+      </amendment>
+    </amendments>
     <latestAction>
-      <actionDate>2017-01-03</actionDate>
+      <actionDate>2017-07-18</actionDate>
+      <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
       <links />
-      <text>Referred to House Agriculture</text>
     </latestAction>
     <congress>115</congress>
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Nunes, Devin [R-CA-22]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1710</lisID>
-          <gpoId>7826</gpoId>
-          <bioguideId>N000181</bioguideId>
-        </identifiers>
-        <firstName>Devin</firstName>
-        <state>CA</state>
-        <district>22</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>N000181</bioguideId>
-        <lastName>Nunes</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>979</lisID>
-          <gpoId>7851</gpoId>
-          <bioguideId>R000409</bioguideId>
-        </identifiers>
-        <firstName>DANA</firstName>
-        <state>CA</state>
-        <district>48</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>R000409</bioguideId>
-        <lastName>ROHRABACHER</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Cook, Paul [R-CA-8]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>C001094</bioguideId>
-          <lisID>2103</lisID>
-          <gpoId />
-        </identifiers>
-        <firstName>Paul</firstName>
-        <state>CA</state>
-        <district>8</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>C001094</bioguideId>
-        <lastName>Cook</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Issa, Darrell E. [R-CA-49]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>1640</lisID>
-          <gpoId>7854</gpoId>
-          <bioguideId>I000056</bioguideId>
-        </identifiers>
-        <firstName>DARRELL</firstName>
-        <state>CA</state>
-        <district>49</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>I000056</bioguideId>
-        <lastName>ISSA</lastName>
-        <middleName>E.</middleName>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Royce, Edward R. [R-CA-39]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <gpoId>7845</gpoId>
-          <bioguideId>R000487</bioguideId>
-          <lisID>998</lisID>
-        </identifiers>
-        <firstName>ED</firstName>
-        <state>CA</state>
-        <district>39</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>R000487</bioguideId>
-        <lastName>ROYCE</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Walters, Mimi [R-CA-45]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <gpoId />
-          <bioguideId>W000820</bioguideId>
-          <lisID>2232</lisID>
-        </identifiers>
-        <firstName>Mimi</firstName>
-        <state>CA</state>
-        <district>45</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>W000820</bioguideId>
-        <lastName>Walters</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Calvert, Ken [R-CA-42]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <gpoId>7849</gpoId>
-          <bioguideId>C000059</bioguideId>
-          <lisID>165</lisID>
-        </identifiers>
-        <firstName>KEN</firstName>
-        <state>CA</state>
-        <district>42</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>C000059</bioguideId>
-        <lastName>CALVERT</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <lisID>2228</lisID>
-          <gpoId />
-          <bioguideId>K000387</bioguideId>
-        </identifiers>
-        <firstName>Stephen</firstName>
-        <state>CA</state>
-        <district>25</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>K000387</bioguideId>
-        <lastName>Knight</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. McCarthy, Kevin [R-CA-23]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>M001165</bioguideId>
-          <gpoId>7827</gpoId>
-          <lisID>1833</lisID>
-        </identifiers>
-        <firstName>Kevin</firstName>
-        <state>CA</state>
-        <district>23</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>M001165</bioguideId>
-        <lastName>McCarthy</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. Hunter, Duncan D. [R-CA-50]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>H001048</bioguideId>
-          <lisID>1909</lisID>
-          <gpoId>7857</gpoId>
-        </identifiers>
-        <firstName>Duncan</firstName>
-        <state>CA</state>
-        <district>50</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>H001048</bioguideId>
-        <lastName>Hunter</lastName>
-        <middleName>D.</middleName>
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>L000578</bioguideId>
-          <gpoId />
-          <lisID>2100</lisID>
-        </identifiers>
-        <firstName>Doug</firstName>
-        <state>CA</state>
-        <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>L000578</bioguideId>
-        <lastName>LaMalfa</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>R</party>
-        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <gpoId>7809</gpoId>
-          <bioguideId>M001177</bioguideId>
-          <lisID>1908</lisID>
-        </identifiers>
-        <firstName>Tom</firstName>
-        <state>CA</state>
-        <district>4</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <bioguideId>M001177</bioguideId>
-        <lastName>McClintock</lastName>
-        <middleName />
-      </item>
-      <item>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <party>D</party>
-        <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
-        <sponsorshipWithdrawnDate />
-        <identifiers>
-          <bioguideId>C001059</bioguideId>
-          <lisID>1774</lisID>
-          <gpoId>7825</gpoId>
-        </identifiers>
-        <firstName>Jim</firstName>
-        <state>CA</state>
-        <district>16</district>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <bioguideId>C001059</bioguideId>
-        <lastName>Costa</lastName>
-        <middleName />
-      </item>
-    </cosponsors>
-    <relatedBills />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -413,10 +1243,16 @@
             <name>Dams and canals</name>
           </item>
           <item>
+            <name>Disaster relief and insurance</name>
+          </item>
+          <item>
             <name>Endangered and threatened species</name>
           </item>
           <item>
             <name>Environmental assessment, monitoring, research</name>
+          </item>
+          <item>
+            <name>Federal-Indian relations</name>
           </item>
           <item>
             <name>Fishes</name>
@@ -429,6 +1265,9 @@
           </item>
           <item>
             <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Judicial review and appeals</name>
           </item>
           <item>
             <name>Lakes and rivers</name>
@@ -467,46 +1306,1091 @@
       </billSubjects>
     </subjects>
     <laws />
-    <constitutionalAuthorityStatementText />
-    <title>Gaining Responsibility on Water Act of 2017</title>
-    <recordedVotes />
-    <cboCostEstimates />
+    <notes />
+    <billType>HR</billType>
+    <sponsors>
+      <item>
+        <lastName>Valadao</lastName>
+        <middleName>G.</middleName>
+        <bioguideId>V000129</bioguideId>
+        <fullName>Rep. Valadao, David G. [R-CA-21]</fullName>
+        <identifiers>
+          <lisID>2105</lisID>
+          <gpoId />
+          <bioguideId>V000129</bioguideId>
+        </identifiers>
+        <byRequestType />
+        <state>CA</state>
+        <firstName>David</firstName>
+        <party>R</party>
+        <district>21</district>
+      </item>
+    </sponsors>
+    <recordedVotes>
+      <recordedVote>
+        <rollNumber>352</rollNumber>
+        <date>2017-07-12T23:17:27Z</date>
+        <fullActionName>Passage of a Measure</fullActionName>
+        <congress>115</congress>
+        <url>http://clerk.house.gov/evs/2017/roll352.xml</url>
+        <sessionNumber>1</sessionNumber>
+        <chamber>House</chamber>
+      </recordedVote>
+      <recordedVote>
+        <rollNumber>351</rollNumber>
+        <date>2017-07-12T23:10:00Z</date>
+        <fullActionName>Motion to Commit/Recommit With Instructions Results</fullActionName>
+        <congress>115</congress>
+        <url>http://clerk.house.gov/evs/2017/roll351.xml</url>
+        <sessionNumber>1</sessionNumber>
+        <chamber>House</chamber>
+      </recordedVote>
+    </recordedVotes>
+    <committeeReports />
+    <introducedDate>2017-01-03</introducedDate>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <actionDate>2017-07-12</actionDate>
+          <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+          <actionTime>14:53:57</actionTime>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>House</identifiedBy>
+            <type>Procedurally-related</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Providing for consideration of the bill (H.R. 2810) to authorize appropriations for fiscal year 2018 for military activities of the Department of Defense and for military construction, to prescribe military personnel strengths for such fiscal year, and for other purposes, and providing for consideration of the bill (H.R. 23) to provide drought relief in the State of California, and for other purposes.</latestTitle>
+        <type>HRES</type>
+        <number>431</number>
+      </item>
+      <item>
+        <latestAction>
+          <actionDate>2018-05-16</actionDate>
+          <text>Ordered to be Reported (Amended) by the Yeas and Nays: 21 - 14.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Bureau of Reclamation and Bureau of Indian Affairs Water Project Streamlining Act</latestTitle>
+        <type>HR</type>
+        <number>4419</number>
+      </item>
+      <item>
+        <latestAction>
+          <actionDate>2017-02-17</actionDate>
+          <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+        <latestTitle>Bureau of Reclamation Water Project Streamlining Act</latestTitle>
+        <type>HR</type>
+        <number>875</number>
+      </item>
+    </relatedBills>
+    <cosponsors>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Nunes, Devin [R-CA-22]</fullName>
+        <identifiers>
+          <lisID>1710</lisID>
+          <bioguideId>N000181</bioguideId>
+          <gpoId>7826</gpoId>
+        </identifiers>
+        <lastName>Nunes</lastName>
+        <firstName>Devin</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>22</district>
+        <bioguideId>N000181</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
+        <identifiers>
+          <bioguideId>R000409</bioguideId>
+          <lisID>979</lisID>
+          <gpoId>7851</gpoId>
+        </identifiers>
+        <lastName>ROHRABACHER</lastName>
+        <firstName>DANA</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>48</district>
+        <bioguideId>R000409</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Cook, Paul [R-CA-8]</fullName>
+        <identifiers>
+          <bioguideId>C001094</bioguideId>
+          <lisID>2103</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Cook</lastName>
+        <firstName>Paul</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>8</district>
+        <bioguideId>C001094</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Issa, Darrell E. [R-CA-49]</fullName>
+        <identifiers>
+          <gpoId>7854</gpoId>
+          <lisID>1640</lisID>
+          <bioguideId>I000056</bioguideId>
+        </identifiers>
+        <lastName>ISSA</lastName>
+        <firstName>DARRELL</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>E.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>49</district>
+        <bioguideId>I000056</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Royce, Edward R. [R-CA-39]</fullName>
+        <identifiers>
+          <gpoId>7845</gpoId>
+          <lisID>998</lisID>
+          <bioguideId>R000487</bioguideId>
+        </identifiers>
+        <lastName>ROYCE</lastName>
+        <firstName>ED</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>39</district>
+        <bioguideId>R000487</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Walters, Mimi [R-CA-45]</fullName>
+        <identifiers>
+          <lisID>2232</lisID>
+          <gpoId />
+          <bioguideId>W000820</bioguideId>
+        </identifiers>
+        <lastName>Walters</lastName>
+        <firstName>Mimi</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>45</district>
+        <bioguideId>W000820</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Calvert, Ken [R-CA-42]</fullName>
+        <identifiers>
+          <lisID>165</lisID>
+          <bioguideId>C000059</bioguideId>
+          <gpoId>7849</gpoId>
+        </identifiers>
+        <lastName>CALVERT</lastName>
+        <firstName>KEN</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>42</district>
+        <bioguideId>C000059</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
+        <identifiers>
+          <bioguideId>K000387</bioguideId>
+          <lisID>2228</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Knight</lastName>
+        <firstName>Stephen</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>25</district>
+        <bioguideId>K000387</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. McCarthy, Kevin [R-CA-23]</fullName>
+        <identifiers>
+          <bioguideId>M001165</bioguideId>
+          <lisID>1833</lisID>
+          <gpoId>7827</gpoId>
+        </identifiers>
+        <lastName>McCarthy</lastName>
+        <firstName>Kevin</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>23</district>
+        <bioguideId>M001165</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Hunter, Duncan D. [R-CA-50]</fullName>
+        <identifiers>
+          <bioguideId>H001048</bioguideId>
+          <lisID>1909</lisID>
+          <gpoId>7857</gpoId>
+        </identifiers>
+        <lastName>Hunter</lastName>
+        <firstName>Duncan</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>D.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>50</district>
+        <bioguideId>H001048</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. LaMalfa, Doug [R-CA-1]</fullName>
+        <identifiers>
+          <lisID>2100</lisID>
+          <gpoId />
+          <bioguideId>L000578</bioguideId>
+        </identifiers>
+        <lastName>LaMalfa</lastName>
+        <firstName>Doug</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>1</district>
+        <bioguideId>L000578</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. McClintock, Tom [R-CA-4]</fullName>
+        <identifiers>
+          <lisID>1908</lisID>
+          <bioguideId>M001177</bioguideId>
+          <gpoId>7809</gpoId>
+        </identifiers>
+        <lastName>McClintock</lastName>
+        <firstName>Tom</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>4</district>
+        <bioguideId>M001177</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <party>D</party>
+        <fullName>Rep. Costa, Jim [D-CA-16]</fullName>
+        <identifiers>
+          <bioguideId>C001059</bioguideId>
+          <gpoId>7825</gpoId>
+          <lisID>1774</lisID>
+        </identifiers>
+        <lastName>Costa</lastName>
+        <firstName>Jim</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>16</district>
+        <bioguideId>C001059</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-18</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Denham, Jeff [R-CA-10]</fullName>
+        <identifiers>
+          <lisID>1995</lisID>
+          <bioguideId>D000612</bioguideId>
+          <gpoId>7824</gpoId>
+        </identifiers>
+        <lastName>Denham</lastName>
+        <firstName>Jeff</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>10</district>
+        <bioguideId>D000612</bioguideId>
+      </item>
+    </cosponsors>
+    <actions>
+      <actionTypeCounts>
+        <motionForPreviousQuestion>1</motionForPreviousQuestion>
+        <committeeOfTheWholeRisesToReportOnLegislation>1</committeeOfTheWholeRisesToReportOnLegislation>
+        <motionToCommitRecommitWithInstructionsOffered>1</motionToCommitRecommitWithInstructionsOffered>
+        <referredToCommittee>1</referredToCommittee>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <designationOfChairmanCommitteeOfTheWhole>1</designationOfChairmanCommitteeOfTheWhole>
+        <placeholderTextForH>2</placeholderTextForH>
+        <resolvingIntoCommitteeOfTheWholePursuantToRule>1</resolvingIntoCommitteeOfTheWholePursuantToRule>
+        <motionToCommitRecommitWithInstructionsResults>1</motionToCommitRecommitWithInstructionsResults>
+        <considerationByHouse>1</considerationByHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <ruleForConsiderationOfBillReportedToHouse>1</ruleForConsiderationOfBillReportedToHouse>
+        <placeholderTextForHA>1</placeholderTextForHA>
+        <placeholderTextForHL>1</placeholderTextForHL>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <generalDebate>10</generalDebate>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <billReferrals>2</billReferrals>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-07-18</actionDate>
+        <committee>
+          <name>Energy and Natural Resources Committee</name>
+          <systemCode>sseg00</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        <type>IntroReferral</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>19:17:29</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H38310</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll352.xml</url>
+            <name>Roll no. 352</name>
+          </link>
+        </links>
+        <actionTime>19:17:27</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>On passage Passed by recorded vote: 230 - 190 (Roll no. 352).</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H37100</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll352.xml</url>
+            <name>Roll no. 352</name>
+          </link>
+        </links>
+        <actionTime>19:17:27</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Passed/agreed to in House: On passage Passed by recorded vote: 230 - 190 (Roll no. 352).</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>8000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>http://clerk.house.gov/evs/2017/roll351.xml</url>
+            <name>Roll no. 351</name>
+          </link>
+        </links>
+        <actionTime>19:10:00</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>On motion to recommit with instructions Failed by recorded vote: 189 - 230 (Roll no. 351).</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H36110</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>19:03:22</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The previous question on the motion to recommit with instructions was ordered without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8A000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>18:56:53</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Floor summary: DEBATE - The House proceeded with 10 minutes of debate on the Carbajal motion to recommit with instructions. The instructions contained in the motion seek to require the bill to be reported back to the House with an amendment to ensure that there is an adequate supply of water to fight wildfires, utilizing water from reservoirs or other surface waters.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5531</url>
+            <name>H5531</name>
+          </link>
+        </links>
+        <actionTime>18:56:28</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Mr. Carbajal moved to recommit with instructions to the Committee on Natural Resources. (text: CR H5531)</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H36100</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>18:54:51</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The House adopted the amendment in the nature of a substitute as agreed to by the Committee of the Whole House on the state of the Union.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H34400</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>18:54:43</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The previous question was ordered pursuant to the rule.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H35000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/23</url>
+            <name>H.R. 23</name>
+          </link>
+        </links>
+        <actionTime>18:54:01</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The House rose from the Committee of the Whole House on the state of the Union to report H.R. 23.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H32600</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>18:21:30</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H. Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the Pearce amendment No. 6.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>18:20:21</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>POSTPONED PROCEEDINGS - At the conclusion of debate on the DeSaulnier amendment No. 5, the Chair put the question on adoption of the amendment and by voice vote, announced that the noes had prevailed. Mr. DeSaulnier demanded a recorded vote and the Chair postponed further proceedings until a time to be announced.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>18:11:12</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H. Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the DeSaulnier amendment No. 5.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>18:07:50</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H. Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the Denham amendment No. 4.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>18:01:53</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H. Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the Costa amendment No. 3.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>17:54:58</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H. Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the Costa amendment No. 2.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H.Res. 431</name>
+          </link>
+        </links>
+        <actionTime>17:44:40</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>DEBATE - Pursuant to the provisions of H.Res. 431, the Committee of the Whole proceeded with 10 minutes of debate on the LaMalfa amendment No. 1.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/23</url>
+            <name>H.R. 23</name>
+          </link>
+        </links>
+        <actionTime>16:34:57</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>GENERAL DEBATE - The Committee of the Whole proceeded with one hour of general debate on H.R. 23.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <actionTime>16:34:18</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The Speaker designated the Honorable Scott Perry to act as Chairman of the Committee.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H32400</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>16:34:17</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>House resolved itself into the Committee of the Whole House on the state of the Union pursuant to H. Res. 431 and Rule XVIII.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H32020</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/23</url>
+            <name>H.R. 23</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/2810</url>
+            <name>H.R. 2810</name>
+          </link>
+        </links>
+        <actionTime>16:34:10</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>The resolution provides for one hour of debate on both H.R. 2810 and H.R. 23. Both bills are considered under structured rules.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H8D000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5503-5533</url>
+            <name>H5503-5533</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H5511-5524</url>
+            <name>H5511-5524</name>
+          </link>
+        </links>
+        <actionTime>16:34:05</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Considered under the provisions of rule H. Res. 431. (consideration: CR H5503-5533; text of amendment in the nature of a substitute: CR H5511-5524)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+        </links>
+        <actionTime>14:53:57</actionTime>
+        <actionDate>2017-07-12</actionDate>
+        <text>Rule H. Res. 431 passed House.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H1L220</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-resolution/431</url>
+            <name>H. Res. 431</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/23</url>
+            <name>H.R. 23</name>
+          </link>
+          <link>
+            <url>https://www.congress.gov/bill/115th-congress/house-bill/2810</url>
+            <name>H.R. 2810</name>
+          </link>
+        </links>
+        <actionTime>21:22:29</actionTime>
+        <actionDate>2017-07-11</actionDate>
+        <text>Rules Committee Resolution H. Res. 431 Reported to House. The resolution provides for one hour of debate on both H.R. 2810 and H.R. 23. Both bills are considered under structured rules.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H1L210</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-02-10</actionDate>
+        <committee>
+          <name>Water, Power and Oceans Subcommittee</name>
+          <systemCode>hsii13</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <name>Agriculture Committee</name>
+          <systemCode>hsag00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Referred to the Committee on Natural Resources, and in addition to the Committee on Agriculture, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>29</houseOfRepresentatives>
+        <senate>1</senate>
+      </actionByCounts>
+    </actions>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
+          <systemCode>sseg00</systemCode>
+          <chamber>Senate</chamber>
           <type>Standing</type>
-          <name>Agriculture Committee</name>
+          <subcommittees />
+          <name>Energy and Natural Resources Committee</name>
           <activities>
             <item>
+              <date>2017-07-18T20:42:54Z</date>
               <name>Referred to</name>
-              <date>2017-01-03T17:28:00Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsag00</systemCode>
         </item>
         <item>
+          <systemCode>hsii00</systemCode>
           <chamber>House</chamber>
           <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hsii13</systemCode>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:58:22Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Water, Power and Oceans Subcommittee</name>
+            </item>
+          </subcommittees>
           <name>Natural Resources Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-03T17:27:50Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
+        </item>
+        <item>
+          <systemCode>hsag00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
           <subcommittees />
-          <systemCode>hsii00</systemCode>
+          <name>Agriculture Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:28:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
         </item>
       </billCommittees>
     </committees>
+    <updateDate>2018-08-28T19:57:23Z</updateDate>
+    <version>1.0.0</version>
+    <title>Gaining Responsibility on Water Act of 2017</title>
     <createDate>2017-01-04T07:01:08Z</createDate>
-    <billType>HR</billType>
     <billNumber>23</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. VALADAO:H.R. 23.Congress has the power to enact this legislation pursuantto the following:Clauses 1, 3, and 18 of section 8 and clause 7 of section 9of article I, of the Constitution of the United States.[Page H46]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates>
+      <item>
+        <title>H.R. 23, Gaining Responsibility on Water Act of 2017</title>
+        <url>https://www.cbo.gov/publication/52864</url>
+        <pubDate>2017-07-07T19:34:00Z</pubDate>
+      </item>
+    </cboCostEstimates>
+    <calendarNumbers />
     <policyArea>
       <name>Water Resources Development</name>
     </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-09-27T15:13:01Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p><strong>Gaining Responsibility on Water Act of 2017</strong></p>  <p> This bill requires the Central Valley Project (CVP) and the State Water Project in California to be operated pursuant to the water quality standards and operational constraints described in the &quot;Principles for Agreement on the Bay-Delta Standards Between the State of California and the Federal Government&quot; dated December 15, 1994. </p> <p> The Department of the Interior shall cease any action to implement the San Joaquin River Restoration Settlement Act.</p>  <p>The Bureau of Reclamation shall complete specified feasibility studies for water storage projects in California.</p>   <p>Interior is directed, in the operation of the CVP, to adhere to California's water rights laws governing water rights priorities and to honor water rights senior to those held by the United States.</p>   <p>Interior, in the operation of the Trinity River Division of the CVP, shall not make releases from Lewiston Dam in excess of specified volumes for each water-year type.</p> <p>Interior and the Department of Agriculture (USDA) shall recognize: (1) congressional opposition to the violation of private property rights by the California State Water Resources Control Board in its proposal to require a minimum percentage of unimpaired flows in the main tributaries of the San Joaquin River; and (2) the need to provide reliable water supplies to municipal, industrial, and agricultural users across the state.</p>   <p>The Bureau of Reclamation is established as the lead agency for purposes of coordinating all reviews, permits, licenses, or other approvals or decisions required under federal law to construct qualifying water projects. Reclamation shall identify, as early as practicable upon receipt of an application for a qualifying project, any federal agency that may have jurisdiction over a review, permit, license, approval, or decision required for a qualifying project. </p>        <p>Interior must convert certain existing water service contracts between the United States and water users' associations to repayment contracts, upon the request of the contractor, to allow for the prepayment of such contracts. </p>     <p>The bill amends the Reclamation Safety of Dams Act of 1978 to authorize Interior to develop additional project benefits through the construction of new or supplementary works.</p>   <p>Neither Interior nor USDA may condition or withhold issuance or renewal of any land use permit based on federal limitations or encumbrances or otherwise infringe on state water rights.</p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
+    <titles>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Bureau of Reclamation Project Streamlining Act</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Water Supply Permitting Coordination Act</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Water Rights Protection Act of 2017</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Water Rights Protection Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Accelerated Revenue, Repayment, and Surface Water Storage Enhancement Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Bureau of Reclamation Project Streamlining Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Water Supply Permitting Coordination Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>Short Titles as Passed House</titleType>
+        <chamberName>House</chamberName>
+        <title>Gaining Responsibility on Water Act of 2017</title>
+        <parentTitleType>Short Titles House of Representatives</parentTitleType>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Gaining Responsibility on Water Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To provide drought relief in the State of California, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Gaining Responsibility on Water Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Water Rights Protection Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House for portions of this bill</titleType>
+        <chamberName>House</chamberName>
+        <title>Water Supply Permitting Coordination Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode>H</chamberCode>
+        <titleType>(Extracted from GPO) Short Titles as Passed House</titleType>
+        <chamberName>House</chamberName>
+        <title>Gaining Responsibility on Water Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Accelerated Revenue, Repayment, and Surface Water Storage Enhancement Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced for portions of this bill</titleType>
+        <chamberName />
+        <title>Water Supply Permitting Coordination Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Gaining Responsibility on Water Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

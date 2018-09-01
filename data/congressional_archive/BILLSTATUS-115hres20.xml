@@ -1,83 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-03</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-04T07:01:08Z</createDate>
-    <actions>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsgo00</systemCode>
-          <name>Oversight and Government Reform Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Oversight and Government Reform.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors>
-      <item>
-        <sponsorshipDate>2017-01-13</sponsorshipDate>
-        <party>D</party>
-        <lastName>Bordallo</lastName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>B001245</bioguideId>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <district>0</district>
-        <state>GU</state>
-        <middleName>Z.</middleName>
-        <identifiers>
-          <lisID>1723</lisID>
-          <gpoId>7911</gpoId>
-          <bioguideId>B001245</bioguideId>
-        </identifiers>
-        <fullName>Rep. Bordallo, Madeleine Z. [D-GU-At Large]</fullName>
-        <firstName>Madeleine</firstName>
-      </item>
-    </cosponsors>
-    <billNumber>20</billNumber>
-    <amendments />
+    <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:53:44Z</updateDate>
+    <constitutionalAuthorityStatementText />
+    <calendarNumbers />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -96,85 +24,176 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <state>FL</state>
-        <middleName>L.</middleName>
-        <bioguideId>H000324</bioguideId>
-        <lastName>HASTINGS</lastName>
-        <firstName>ALCEE</firstName>
-        <identifiers>
-          <gpoId>7895</gpoId>
-          <bioguideId>H000324</bioguideId>
-          <lisID>511</lisID>
-        </identifiers>
-        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
-        <district>20</district>
-        <byRequestType />
-      </item>
-    </sponsors>
+    <version>1.0.0</version>
     <summaries>
       <billSummaries>
         <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Recognizes the importance of nonprofits to the communities they serve, the issues they support, and the economy of the United States.</p> <p>Supports the designation of Nonprofit Organization Recognition Month.</p>]]></text>
+          <versionCode>00</versionCode>
           <lastSummaryUpdateDate>2017-01-11T19:36:02Z</lastSummaryUpdateDate>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
           <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p>Recognizes the importance of nonprofits to the communities they serve, the issues they support, and the economy of the United States.</p> <p>Supports the designation of Nonprofit Organization Recognition Month.</p>]]></text>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
         </item>
       </billSummaries>
     </summaries>
-    <constitutionalAuthorityStatementText />
     <billType>HRES</billType>
-    <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
+    <latestAction>
+      <text>Referred to the House Committee on Oversight and Government Reform.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
     <policyArea>
       <name>Social Welfare</name>
     </policyArea>
+    <relatedBills />
+    <introducedDate>2017-01-03</introducedDate>
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Oversight and Government Reform.</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsgo00</systemCode>
+          <name>Oversight and Government Reform Committee</name>
+        </committee>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <links />
+        <actionDate>2017-01-03</actionDate>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+    </actions>
+    <laws />
     <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Oversight and Government Reform.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
+    <committeeReports />
+    <billNumber>20</billNumber>
     <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
+    <cosponsors>
+      <item>
+        <firstName>Madeleine</firstName>
+        <lastName>Bordallo</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-13</sponsorshipDate>
+        <bioguideId>B001245</bioguideId>
+        <district>0</district>
+        <middleName>Z.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Bordallo, Madeleine Z. [D-GU-At Large]</fullName>
+        <state>GU</state>
+        <party>D</party>
+        <identifiers>
+          <bioguideId>B001245</bioguideId>
+          <gpoId>7911</gpoId>
+          <lisID>1723</lisID>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>SHEILA</firstName>
+        <lastName>JACKSON LEE</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <bioguideId>J000032</bioguideId>
+        <district>18</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Jackson Lee, Sheila [D-TX-18]</fullName>
+        <state>TX</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>588</lisID>
+          <gpoId>8174</gpoId>
+          <bioguideId>J000032</bioguideId>
+        </identifiers>
+      </item>
+    </cosponsors>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <name>Oversight and Government Reform Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-03T17:14:25Z</date>
             </item>
           </activities>
-          <subcommittees />
+          <chamber>House</chamber>
           <systemCode>hsgo00</systemCode>
+          <name>Oversight and Government Reform Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-14T09:56:07Z</updateDate>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T07:01:08Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>H000324</bioguideId>
+        <party>D</party>
+        <firstName>ALCEE</firstName>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <state>FL</state>
+        <district>20</district>
+        <lastName>HASTINGS</lastName>
+        <middleName>L.</middleName>
+        <identifiers>
+          <bioguideId>H000324</bioguideId>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
     <titles>
       <item>
-        <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
         <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
         <chamberName />
+        <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
+        <parentTitleType />
       </item>
       <item>
-        <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
         <chamberCode />
+        <titleType>Display Title</titleType>
         <chamberName />
+        <title>Recognizing the importance of nonprofit organizations to the economy of the United States and expressing support for designation of September as "Nonprofit Organization (NPO) Recognition Month".</title>
+        <parentTitleType />
       </item>
     </titles>
   </bill>

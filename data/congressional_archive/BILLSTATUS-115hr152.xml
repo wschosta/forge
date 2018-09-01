@@ -1,92 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <committeeReports />
-    <sponsors>
+    <titles>
       <item>
-        <middleName />
-        <party>D</party>
-        <fullName>Rep. Green, Al [D-TX-9]</fullName>
-        <state>TX</state>
-        <byRequestType />
-        <lastName>Green</lastName>
-        <district>9</district>
-        <identifiers>
-          <lisID>1803</lisID>
-          <bioguideId>G000553</bioguideId>
-          <gpoId>8165</gpoId>
-        </identifiers>
-        <firstName>Al</firstName>
-        <bioguideId>G000553</bioguideId>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Prince Hall Freemasonry Stamp Act</title>
+        <parentTitleType />
       </item>
-    </sponsors>
-    <recordedVotes />
-    <updateDate>2017-01-18T17:01:16Z</updateDate>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To provide for the issuance of a forever stamp to recognize the historical importance of Prince Hall Freemasonry, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Prince Hall Freemasonry Stamp Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Prince Hall Freemasonry Stamp Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the House Committee on Oversight and Government Reform.</text>
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. AL GREEN of Texas:H.R. 152.Congress has the power to enact this legislation pursuantto the following:Necessary and Proper Clause (Art. 1, Sec. 8, Cl. 18)[Page H50]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsgo00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-03T17:02:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Oversight and Government Reform Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Oversight and Government Reform.</text>
+        <committee>
+          <systemCode>hsgo00</systemCode>
+          <name>Oversight and Government Reform Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
-      <item>
-        <text>Referred to the House Committee on Oversight and Government Reform.</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Oversight and Government Reform Committee</name>
-          <systemCode>hsgo00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <committee />
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
     </actions>
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <party>D</party>
+        <bioguideId>G000553</bioguideId>
+        <identifiers>
+          <bioguideId>G000553</bioguideId>
+          <lisID>1803</lisID>
+          <gpoId>8165</gpoId>
+        </identifiers>
+        <lastName>Green</lastName>
+        <district>9</district>
+        <middleName />
+        <firstName>Al</firstName>
+        <byRequestType />
+        <state>TX</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:58:03Z</updateDate>
+    <billNumber>152</billNumber>
     <title>Prince Hall Freemasonry Stamp Act</title>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Oversight and Government Reform.</text>
-    </latestAction>
-    <cosponsors />
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-04T07:01:11Z</createDate>
     <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-04-26T18:44:34Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Prince Hall Freemasonry Stamp Act</b></p> <p>This bill directs the U.S. Postal Service to issue a forever stamp in recognition of the historical importance of the Prince Hall Freemasonry. </p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Social Sciences and History</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Postal service</name>
@@ -98,63 +168,11 @@
             <name>U.S. history</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
-    <policyArea>
-      <name>Social Sciences and History</name>
-    </policyArea>
-    <laws />
-    <cboCostEstimates />
-    <calendarNumbers />
-    <amendments />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>Prince Hall Freemasonry Stamp Act</title>
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To provide for the issuance of a forever stamp to recognize the historical importance of Prince Hall Freemasonry, and for other purposes.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>Prince Hall Freemasonry Stamp Act</title>
-      </item>
-    </titles>
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees />
-          <chamber>House</chamber>
-          <name>Oversight and Government Reform Committee</name>
-          <activities>
-            <item>
-              <date>2017-01-03T17:02:20Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <type>Standing</type>
-          <systemCode>hsgo00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>152</billNumber>
-    <relatedBills />
-    <notes />
-    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

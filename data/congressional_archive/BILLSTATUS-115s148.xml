@@ -1,63 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes />
-    <latestAction>
-      <text>Read twice and referred to the Committee on Finance.</text>
-      <actionDate>2017-01-17</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <sponsors>
       <item>
+        <middleName />
         <party>R</party>
-        <identifiers>
-          <lisID>2084</lisID>
-          <bioguideId>R000595</bioguideId>
-          <gpoId>8242</gpoId>
-        </identifiers>
         <bioguideId>R000595</bioguideId>
         <lastName>Rubio</lastName>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <middleName />
-        <state>FL</state>
-        <byRequestType />
         <firstName>Marco</firstName>
+        <state>FL</state>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <byRequestType />
       </item>
     </sponsors>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <cboCostEstimates />
-    <notes />
-    <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against tax for qualified elementary and secondary education tuition.</title>
-    <congress>115</congress>
-    <titles>
-      <item>
-        <parentTitleType />
-        <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against tax for qualified elementary and secondary education tuition.</title>
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <parentTitleType />
-        <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against tax for qualified elementary and secondary education tuition.</title>
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
-    <introducedDate>2017-01-17</introducedDate>
+    <version>1.0.0</version>
+    <createDate>2017-01-18T05:04:59Z</createDate>
     <committeeReports />
-    <billType>S</billType>
+    <latestAction>
+      <text>Read twice and referred to the Committee on Finance.</text>
+      <links />
+      <actionDate>2017-01-17</actionDate>
+    </latestAction>
+    <notes />
+    <introducedDate>2017-01-17</introducedDate>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <name>Finance Committee</name>
           <activities>
             <item>
               <date>2017-01-17T20:25:48Z</date>
@@ -65,17 +38,66 @@
             </item>
           </activities>
           <type>Standing</type>
+          <chamber>Senate</chamber>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <policyArea />
-    <amendments />
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-02-06</actionDate>
+          <text>Referred to the Committee on Ways and Means, and in addition to the Committee on Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>Educational Opportunities Act</latestTitle>
+        <number>895</number>
+      </item>
+    </relatedBills>
+    <billNumber>148</billNumber>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Charitable contributions</name>
+          </item>
+          <item>
+            <name>Elementary and secondary education</name>
+          </item>
+          <item>
+            <name>Income tax credits</name>
+          </item>
+          <item>
+            <name>Sales and excise taxes</name>
+          </item>
+          <item>
+            <name>Social work, volunteer service, charitable organizations</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
+    <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <congress>115</congress>
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -83,40 +105,84 @@
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
-          <systemCode>ssfi00</systemCode>
           <name>Finance Committee</name>
+          <systemCode>ssfi00</systemCode>
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Finance.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
         <links />
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
+        <actionDate>2017-01-17</actionDate>
       </item>
       <actionTypeCounts>
         <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
       </actionTypeCounts>
     </actions>
-    <calendarNumbers />
-    <updateDate>2017-01-18T10:19:53Z</updateDate>
-    <billNumber>148</billNumber>
+    <recordedVotes />
+    <laws />
     <cosponsors />
-    <createDate>2017-01-18T05:04:59Z</createDate>
-    <relatedBills />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Educational Opportunities Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to amend the Internal Revenue Code of 1986 to allow a credit against tax for qualified elementary and secondary education tuition.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Educational Opportunities Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Educational Opportunities Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:22:54Z</updateDate>
+    <calendarNumbers />
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-28T21:21:14Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Educational Opportunities Act</strong></p> <p>This bill amends the Internal Revenue Code to allow individual taxpayers a tax credit for charitable contributions to a scholarship granting organization. The bill allows a maximum credit amount of $4,500 ($2,250 for a married individual filing a separate return). A "scholarship granting organization" is a tax-exempt entity whose exclusive purpose is to provide scholarships for the tuition and other education expenses of elementary and secondary school students from low income households (i.e., household income not exceeding 250% of federal poverty guidelines).</p> <p>The bill allows corporate taxpayers a tax credit, up to $100,000, for contributions to a scholarship granting organization. </p> <p>It also imposes a penalty on scholarship granting organizations that fail to distribute at least 90% of their total receipts for elementary and secondary school expenses in a taxable year.</p>]]></text>
+          <actionDate>2017-01-17</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Educational Opportunities Act</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>29</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-04</actionDate>
-      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-    </latestAction>
-    <introducedDate>2017-01-04</introducedDate>
-    <amendments />
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssga00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-04T22:24:00Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Homeland Security and Governmental Affairs Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
         <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
       </actionTypeCounts>
       <item>
         <actionDate>2017-01-04</actionDate>
         <committee>
-          <name>Homeland Security and Governmental Affairs Committee</name>
           <systemCode>ssga00</systemCode>
+          <name>Homeland Security and Governmental Affairs Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -30,121 +38,185 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
         <actionDate>2017-01-04</actionDate>
+        <links />
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <actionCode>10000</actionCode>
         <committee />
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
-      <item>
-        <firstName>Jon</firstName>
-        <party>D</party>
-        <fullName>Sen. Tester, Jon [D-MT]</fullName>
-        <middleName />
-        <state>MT</state>
-        <byRequestType />
-        <bioguideId>T000464</bioguideId>
-        <identifiers>
-          <gpoId>8258</gpoId>
-          <lisID>1829</lisID>
-          <bioguideId>T000464</bioguideId>
-        </identifiers>
-        <lastName>Tester</lastName>
-      </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
     <recordedVotes />
-    <updateDate>2017-01-19T09:53:56Z</updateDate>
-    <policyArea>
-      <name>Government Operations and Politics</name>
-    </policyArea>
-    <title>Fair RETIRE Act</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-05T04:47:34Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Homeland Security and Governmental Affairs Committee</name>
-          <systemCode>ssga00</systemCode>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T22:24:00Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <relatedBills />
     <laws />
+    <calendarNumbers />
     <titles>
       <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
         <title>Fair RETIRE Act</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
         <titleType>Short Titles as Introduced</titleType>
         <parentTitleType />
-        <title>Fair Return for Employees on Their Initial Retirement Earned Act of 2017</title>
         <chamberCode />
         <chamberName />
       </item>
       <item>
+        <title>Fair Return for Employees on Their Initial Retirement Earned Act of 2017</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>A bill to permit disabled law enforcement officers, customs and border protection officers, firefighters, air traffic controllers, nuclear materials couriers, members of the Capitol Police, members of the Supreme Court Police, employees of the Central Intelligence Agency performing intelligence activities abroad or having specialized security requirements, and diplomatic security special agents of the Department of State to receive retirement benefits in the same manner as if they had not been disabled.</title>
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
-        <title>A bill to permit disabled law enforcement officers, customs and border protection officers, firefighters, air traffic controllers, nuclear materials couriers, members of the Capitol Police, members of the Supreme Court Police, employees of the Central Intelligence Agency performing intelligence activities abroad or having specialized security requirements, and diplomatic security special agents of the Department of State to receive retirement benefits in the same manner as if they had not been disabled.</title>
         <chamberCode />
         <chamberName />
       </item>
       <item>
+        <title>Fair RETIRE Act</title>
         <titleType>Display Title</titleType>
         <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
         <title>Fair RETIRE Act</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Fair Return for Employees on Their Initial Retirement Earned Act of 2017</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberCode />
         <chamberName />
       </item>
     </titles>
     <cosponsors>
       <item>
+        <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
+        <firstName>SUSAN</firstName>
         <lastName>COLLINS</lastName>
         <identifiers>
           <lisID>1541</lisID>
-          <bioguideId>C001035</bioguideId>
           <gpoId>8291</gpoId>
+          <bioguideId>C001035</bioguideId>
         </identifiers>
-        <firstName>SUSAN</firstName>
         <state>ME</state>
+        <bioguideId>C001035</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>R</party>
-        <bioguideId>C001035</bioguideId>
-        <middleName>MARGARET</middleName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Sen. Collins, Susan M. [R-ME]</fullName>
         <sponsorshipDate>2017-01-04</sponsorshipDate>
+        <middleName>MARGARET</middleName>
+      </item>
+      <item>
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <firstName>DIANNE</firstName>
+        <lastName>FEINSTEIN</lastName>
+        <identifiers>
+          <lisID>1332</lisID>
+          <gpoId>8338</gpoId>
+          <bioguideId>F000062</bioguideId>
+        </identifiers>
+        <state>CA</state>
+        <bioguideId>F000062</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2017-03-15</sponsorshipDate>
+        <middleName />
+      </item>
+      <item>
+        <fullName>Sen. Peters, Gary C. [D-MI]</fullName>
+        <firstName>Gary</firstName>
+        <lastName>Peters</lastName>
+        <identifiers>
+          <bioguideId>P000595</bioguideId>
+          <gpoId>7994</gpoId>
+          <lisID>1929</lisID>
+        </identifiers>
+        <state>MI</state>
+        <bioguideId>P000595</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2017-03-29</sponsorshipDate>
+        <middleName>C.</middleName>
+      </item>
+      <item>
+        <fullName>Sen. Hassan, Margaret Wood [D-NH]</fullName>
+        <firstName>Margaret</firstName>
+        <lastName>Hassan</lastName>
+        <identifiers>
+          <lisID>2302</lisID>
+          <bioguideId>H001076</bioguideId>
+          <gpoId />
+        </identifiers>
+        <state>NH</state>
+        <bioguideId>H001076</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <sponsorshipDate>2017-04-24</sponsorshipDate>
+        <middleName>Wood</middleName>
       </item>
     </cosponsors>
-    <committeeReports />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+      <links />
+      <actionDate>2017-01-04</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T20:22:18Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <billType>S</billType>
+    <billNumber>29</billNumber>
+    <originChamber>Senate</originChamber>
+    <relatedBills>
+      <item>
+        <latestTitle>First Responder Fair RETIRE Act</latestTitle>
+        <number>3303</number>
+        <latestAction>
+          <text>Ordered to be Reported (Amended) by Voice Vote.</text>
+          <actionDate>2018-03-15</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <title>Fair RETIRE Act</title>
+    <congress>115</congress>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in Senate</name>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-04</actionDate>
+          <lastSummaryUpdateDate>2017-07-10T20:20:48Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Fair Return for Employees on Their Initial Retirement Earned Act of 2017 or the Fair RETIRE Act </b></p> <p>This bill expresses the sense of Congress with respect to the retention and reappointment of law enforcement officers, customs and border protection officers, firefighters, air traffic controllers, nuclear materials couriers, members of the Capitol and Supreme Court police, Central Intelligence Agency employees or diplomatic security agents of the Department of State (covered positions) who suffer an injury or illness while serving. In developing regulations to carry out this bill, the Office of Personnel Management and the Department of Labor should ensure, to the greatest extent possible, that the reappointment of an individual to a position in the civil service that is not a covered position is with the same federal agency, in the same geographic location, and at a level of pay commensurate to the position which the individual held immediately prior to such injury or illness. </p>  <p>Currently, an employee in a covered position may retire after 20 years of service at age 50, or after 25 years of service at any age, and must retire at age 57. If such an employee is unable to complete the service requirement for retirement due to an illness or injury, such employee must then elect to take a disability retirement or return to work in a non-covered position that provides only for standard civil service retirement benefits. This bill allows such employees with not less than three years of creditable service in a covered position to retain their retirement benefits as if they had never been ill or injured. </p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -193,7 +265,28 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <congress>115</congress>
+    <committeeReports />
+    <introducedDate>2017-01-04</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>T000464</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
+        <lastName>Tester</lastName>
+        <state>MT</state>
+        <party>D</party>
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <firstName>Jon</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-05T04:47:34Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,74 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <sponsors>
+    <titles>
       <item>
-        <identifiers>
-          <bioguideId>F000444</bioguideId>
-          <lisID>1633</lisID>
-          <gpoId>7803</gpoId>
-        </identifiers>
-        <fullName>Sen. Flake, Jeff [R-AZ]</fullName>
-        <lastName>FLAKE</lastName>
-        <middleName />
-        <bioguideId>F000444</bioguideId>
-        <party>R</party>
-        <firstName>JEFF</firstName>
-        <state>AZ</state>
-        <byRequestType />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Stop Paying U.S. in Peanuts Act</title>
+        <chamberName />
       </item>
-    </sponsors>
-    <billType>S</billType>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to amend the Agricultural Act of 2014 to repeal the forfeiture rule for peanuts under the nonrecourse marketing assistance loan program.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Stop Paying U.S. in Peanuts Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Stop Paying U.S. in Peanuts Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry.</text>
+      <actionDate>2017-01-10</actionDate>
+    </latestAction>
     <committees>
       <billCommittees>
         <item>
-          <name>Agriculture, Nutrition, and Forestry Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-10T18:03:03Z</date>
             </item>
           </activities>
-          <subcommittees />
           <chamber>Senate</chamber>
-          <type>Standing</type>
           <systemCode>ssaf00</systemCode>
+          <name>Agriculture, Nutrition, and Forestry Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <chamberCode />
-        <title>A bill to amend the Agricultural Act of 2014 to repeal the forfeiture rule for peanuts under the nonrecourse marketing assistance loan program.</title>
-        <parentTitleType />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-      </item>
-      <item>
-        <chamberCode />
-        <title>A bill to amend the Agricultural Act of 2014 to repeal the forfeiture rule for peanuts under the nonrecourse marketing assistance loan program.</title>
-        <parentTitleType />
-        <titleType>Display Title</titleType>
-        <chamberName />
-      </item>
-    </titles>
-    <billNumber>77</billNumber>
-    <cboCostEstimates />
-    <title>A bill to amend the Agricultural Act of 2014 to repeal the forfeiture rule for peanuts under the nonrecourse marketing assistance loan program.</title>
-    <amendments />
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-10</actionDate>
         <committee>
-          <systemCode>ssaf00</systemCode>
           <name>Agriculture, Nutrition, and Forestry Committee</name>
+          <systemCode>ssaf00</systemCode>
         </committee>
         <links />
         <sourceSystem>
@@ -79,42 +74,84 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-10</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-10</actionDate>
         <actionCode>10000</actionCode>
       </item>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-11T10:17:58Z</updateDate>
-    <createDate>2017-01-11T05:09:45Z</createDate>
+    <policyArea>
+      <name>Agriculture and Food</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Sen. Flake, Jeff [R-AZ]</fullName>
+        <party>R</party>
+        <bioguideId>F000444</bioguideId>
+        <identifiers>
+          <bioguideId>F000444</bioguideId>
+          <lisID>1633</lisID>
+          <gpoId>7803</gpoId>
+        </identifiers>
+        <lastName>FLAKE</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>JEFF</firstName>
+        <state>AZ</state>
+      </item>
+    </sponsors>
     <recordedVotes />
+    <updateDate>2018-08-28T20:22:30Z</updateDate>
+    <billNumber>77</billNumber>
+    <title>Stop Paying U.S. in Peanuts Act</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-11T05:09:45Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-04-18T19:59:26Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-10</actionDate>
+          <text><![CDATA[<p><b>Stop Paying U.S. in Peanuts Act </b></p> <p>This bill amends the Agricultural Act of 2014 to repeal the rules for peanuts under the nonrecourse marketing assistance loan program administered by the Department of Agriculture (USDA). (Under a nonrecourse marketing assistance loan, a farmer pledges a commodity as collateral and may deliver the pledged collateral to USDA to repay the loan.) </p>]]></text>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
     <introducedDate>2017-01-10</introducedDate>
     <congress>115</congress>
-    <committeeReports />
-    <laws />
-    <cosponsors />
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry.</text>
-      <actionDate>2017-01-10</actionDate>
-    </latestAction>
-    <policyArea />
-    <relatedBills />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Agriculture and Food</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Agricultural marketing and promotion</name>
+          </item>
+          <item>
+            <name>Agricultural prices, subsidies, credit</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
   </bill>

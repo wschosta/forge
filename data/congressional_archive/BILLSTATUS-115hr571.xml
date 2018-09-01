@@ -1,138 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>571</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea />
-    <amendments />
-    <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-14T09:58:56Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
+    <titles>
       <item>
-        <type>IntroReferral</type>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the House Committee on House Administration.</text>
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. SERRANO:H.R. 571.Congress has the power to enact this legislation pursuantto the following:Clause 2 of section 5 ofarticle I of the Constitution,which states: ``Each House may determine the Rules of itsProceedings, punish its Members fordisorderly Behaviour, and,with the Concurrence of two thirds, expel a Member.''Additionally, Congress has the power toenact thislegislation under Clause 2 of section 3 of article IV of theConstitution, which states that ``The Congress shallhavePower to dispose of and make all needful Rules andRegulations respecting the Territory or other Propertybelonging to theUnited States; and nothing in thisConstitution shall be so construed as to Prejudice any Claimsof the United States, or of anyparticular State.''[Page H548]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsha00</systemCode>
+          <name>House Administration Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-13T14:09:15Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
         <text>Referred to the House Committee on House Administration.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
+        <type>IntroReferral</type>
         <committee>
           <systemCode>hsha00</systemCode>
           <name>House Administration Committee</name>
         </committee>
         <actionDate>2017-01-13</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <links />
         <actionCode>Intro-H</actionCode>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
       </item>
       <item>
-        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <links />
         <actionCode>1000</actionCode>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
     </actions>
-    <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <titles>
-      <item>
-        <chamberName />
-        <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
-    <introducedDate>2017-01-13</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the House Committee on House Administration.</text>
-      <links />
-    </latestAction>
-    <createDate>2017-01-14T04:47:33Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <systemCode>hsha00</systemCode>
-          <type>Standing</type>
-          <name>House Administration Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:09:15Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
     <sponsors>
       <item>
         <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
-        <firstName>JOSE</firstName>
-        <bioguideId>S000248</bioguideId>
         <party>D</party>
-        <middleName>E.</middleName>
-        <byRequestType />
-        <district>15</district>
-        <state>NY</state>
-        <lastName>SERRANO</lastName>
+        <bioguideId>S000248</bioguideId>
         <identifiers>
-          <gpoId>8077</gpoId>
           <bioguideId>S000248</bioguideId>
+          <gpoId>8077</gpoId>
           <lisID>1042</lisID>
         </identifiers>
+        <lastName>SERRANO</lastName>
+        <district>15</district>
+        <middleName>E.</middleName>
+        <firstName>JOSE</firstName>
+        <byRequestType />
+        <state>NY</state>
       </item>
     </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T20:00:01Z</updateDate>
+    <billNumber>571</billNumber>
+    <title>To permit members of the House of Representatives to donate used computer equipment to public elementary and secondary schools designated by the members.</title>
+    <relatedBills />
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-08-09T19:55:53Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-13</actionDate>
+          <text><![CDATA[<p>This bill amends the Legislative Branch Appropriations Act, 1987 to allow computers and related peripheral tools previously used by a Member of the House of Representatives to be donated to a public elementary or secondary school without regard to whether the donation: (1) is a cost to the government, or (2) has a recoverable value. </p>]]></text>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-13</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Computers and information technology</name>
+          </item>
+          <item>
+            <name>Congressional operations and organization</name>
+          </item>
+          <item>
+            <name>Educational technology and distance education</name>
+          </item>
+          <item>
+            <name>Elementary and secondary education</name>
+          </item>
+          <item>
+            <name>Government buildings, facilities, and property</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

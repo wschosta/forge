@@ -1,42 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
-        <chamberName />
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
-        <chamberName />
-        <parentTitleType />
-      </item>
-    </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <recordedVotes />
-    <cboCostEstimates />
-    <congress>115</congress>
-    <originChamber>Senate</originChamber>
-    <updateDate>2017-01-18T10:23:30Z</updateDate>
+    <amendments />
+    <billNumber>173</billNumber>
     <laws />
+    <cboCostEstimates />
+    <originChamber>Senate</originChamber>
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-03-01T17:14:19Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-17</actionDate>
+          <text><![CDATA[<p>This bill requires the United States Postal Service, by September 30, 2017, to designate a single, unique ZIP code for each of the communities of Ocoee and Miami Lakes, Florida.</p>]]></text>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>768</number>
+        <latestAction>
+          <actionDate>2017-01-31</actionDate>
+          <text>Referred to the House Committee on Oversight and Government Reform.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>To require the United States Postal Service to designate a single, unique ZIP code for Miami Lakes, Florida.</latestTitle>
+      </item>
+      <item>
+        <type>HR</type>
+        <number>4762</number>
+        <latestAction>
+          <actionDate>2018-01-10</actionDate>
+          <text>Referred to the House Committee on Oversight and Government Reform.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>To require the United States Postal Service to designate a single, unique ZIP code for particular communities.</latestTitle>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-18T05:05:00Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Rubio</lastName>
+        <party>R</party>
+        <middleName />
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <state>FL</state>
+        <firstName>Marco</firstName>
+        <byRequestType />
+        <bioguideId>R000595</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T20:22:59Z</updateDate>
+    <committeeReports />
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
-          <systemCode>ssga00</systemCode>
           <name>Homeland Security and Governmental Affairs Committee</name>
+          <systemCode>ssga00</systemCode>
         </committee>
         <links />
         <sourceSystem>
@@ -47,94 +95,102 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
         <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-17</actionDate>
+        <text>Introduced in Senate</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
         <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-17</actionDate>
-        <committee />
       </item>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
     </actions>
-    <createDate>2017-01-18T05:05:00Z</createDate>
-    <notes />
+    <cosponsors>
+      <item>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <party>D</party>
+        <bioguideId>N000032</bioguideId>
+        <identifiers>
+          <lisID>859</lisID>
+          <gpoId>8236</gpoId>
+          <bioguideId>N000032</bioguideId>
+        </identifiers>
+        <lastName>NELSON</lastName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <middleName>WILLIAM</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>CLARENCE</firstName>
+        <state>FL</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
+    <introducedDate>2017-01-17</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-17</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
+        <chamberName />
+      </item>
+    </titles>
     <committees>
       <billCommittees>
         <item>
-          <name>Homeland Security and Governmental Affairs Committee</name>
-          <systemCode>ssga00</systemCode>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-17T22:24:57Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
+          <name>Homeland Security and Governmental Affairs Committee</name>
           <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssga00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <billType>S</billType>
-    <amendments />
-    <cosponsors>
-      <item>
-        <bioguideId>N000032</bioguideId>
-        <middleName>WILLIAM</middleName>
-        <party>D</party>
-        <sponsorshipWithdrawnDate />
-        <lastName>NELSON</lastName>
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>CLARENCE</firstName>
-        <identifiers>
-          <gpoId>8236</gpoId>
-          <bioguideId>N000032</bioguideId>
-          <lisID>859</lisID>
-        </identifiers>
-        <state>FL</state>
-        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
-      </item>
-    </cosponsors>
-    <billNumber>173</billNumber>
-    <sponsors>
-      <item>
-        <middleName />
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <firstName>Marco</firstName>
-        <bioguideId>R000595</bioguideId>
-        <lastName>Rubio</lastName>
-        <party>R</party>
-        <state>FL</state>
-        <identifiers>
-          <lisID>2084</lisID>
-          <bioguideId>R000595</bioguideId>
-          <gpoId>8242</gpoId>
-        </identifiers>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-17</introducedDate>
-    <committeeReports />
-    <policyArea />
-    <title>A bill to require the United States Postal Service to designate a single, unique ZIP code for particular communities.</title>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Florida</name>
+          </item>
+          <item>
+            <name>Postal service</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on Homeland Security and Governmental Affairs.</text>
-      <actionDate>2017-01-17</actionDate>
-    </latestAction>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

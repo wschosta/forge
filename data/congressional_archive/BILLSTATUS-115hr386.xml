@@ -1,150 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Taxation</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <recordedVotes />
-    <congress>115</congress>
-    <updateDate>2017-01-23T15:01:15Z</updateDate>
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Working Parents Tax Relief Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>To amend the Internal Revenue Code of 1986 to increase the amount excludable from gross income for dependent care assistance and dependent care flexible spending arrangements and to provide for a carryover of unused dependent care benefits in dependent care flexible spending arrangements.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Working Parents Tax Relief Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Working Parents Tax Relief Act</title>
+        <chamberName />
+      </item>
+    </titles>
     <notes />
-    <constitutionalAuthorityStatementText />
-    <laws />
     <latestAction>
       <links />
       <text>Referred to the House Committee on Ways and Means.</text>
       <actionDate>2017-01-09</actionDate>
     </latestAction>
-    <introducedDate>2017-01-09</introducedDate>
-    <title>Working Parents Tax Relief Act</title>
-    <relatedBills />
-    <createDate>2017-01-10T05:15:45Z</createDate>
-    <amendments />
-    <sponsors>
-      <item>
-        <lastName>SENSENBRENNER</lastName>
-        <state>WI</state>
-        <middleName>JAMES</middleName>
-        <byRequestType />
-        <bioguideId>S000244</bioguideId>
-        <firstName>F.</firstName>
-        <party>R</party>
-        <identifiers>
-          <lisID>1041</lisID>
-          <bioguideId>S000244</bioguideId>
-          <gpoId>8218</gpoId>
-        </identifiers>
-        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
-        <district>5</district>
-      </item>
-    </sponsors>
-    <cosponsors />
-    <billNumber>386</billNumber>
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <actionCode>H11100</actionCode>
-        <links />
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <type>IntroReferral</type>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <actionDate>2017-01-09</actionDate>
-      </item>
-      <item>
-        <actionCode>Intro-H</actionCode>
-        <links />
-        <text>Introduced in House</text>
-        <type>IntroReferral</type>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-09</actionDate>
-      </item>
-      <item>
-        <actionCode>1000</actionCode>
-        <links />
-        <text>Introduced in House</text>
-        <type>IntroReferral</type>
-        <committee />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionDate>2017-01-09</actionDate>
-      </item>
-      <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 5 (Monday, January 9, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. SENSENBRENNER:H.R. 386.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8[Page H236]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
           <systemCode>hswm00</systemCode>
-          <chamber>House</chamber>
-          <type>Standing</type>
+          <subcommittees />
           <activities>
             <item>
-              <date>2017-01-09T17:01:15Z</date>
               <name>Referred to</name>
+              <date>2017-01-09T17:01:15Z</date>
             </item>
           </activities>
-          <subcommittees />
           <name>Ways and Means Committee</name>
+          <chamber>House</chamber>
+          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
-    <originChamber>House</originChamber>
-    <calendarNumbers />
-    <committeeReports />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionDate>2017-01-09</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-09</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-09</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
+    </actions>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Sensenbrenner, F. James, Jr. [R-WI-5]</fullName>
+        <party>R</party>
+        <bioguideId>S000244</bioguideId>
+        <identifiers>
+          <bioguideId>S000244</bioguideId>
+          <lisID>1041</lisID>
+          <gpoId>8218</gpoId>
+        </identifiers>
+        <lastName>SENSENBRENNER</lastName>
+        <district>5</district>
+        <middleName>JAMES</middleName>
+        <firstName>F.</firstName>
+        <byRequestType />
+        <state>WI</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:59:01Z</updateDate>
+    <billNumber>386</billNumber>
+    <title>Working Parents Tax Relief Act</title>
+    <relatedBills>
+      <item>
+        <latestTitle>To amend the Internal Revenue Code of 1986 to inflation adjust the $5,000 limitation with respect to dependent care assistance programs and flexible spending arrangements.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>775</number>
+        <latestAction>
+          <actionDate>2017-01-31</actionDate>
+          <text>Referred to the House Committee on Ways and Means.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+      <item>
+        <latestTitle>Family Care Savings Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>782</number>
+        <latestAction>
+          <actionDate>2017-02-01</actionDate>
+          <text>Referred to the House Committee on Ways and Means.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>HR</type>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
     <billType>HR</billType>
-    <titles>
-      <item>
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Working Parents Tax Relief Act</title>
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend the Internal Revenue Code of 1986 to increase the amount excludable from gross income for dependent care assistance and dependent care flexible spending arrangements and to provide for a carryover of unused dependent care benefits in dependent care flexible spending arrangements.</title>
-        <chamberCode />
-      </item>
-      <item>
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Working Parents Tax Relief Act</title>
-        <chamberCode />
-      </item>
-    </titles>
+    <createDate>2017-01-10T05:15:45Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Working Parents Tax Relief Act</b></p> <p>This bill amends the Internal Revenue Code to: (1) increase from $5,000 to $7,500 (adjusted for inflation after 2017) the amount of employer-provided dependent care assistance that an employee may exclude from gross income, and (2) permit unused dependent care benefits in cafeteria plans and flexible spending arrangements to be carried forward to the succeeding plan year. </p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-02-08T22:29:19Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <actionDate>2017-01-09</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-09</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Child care and development</name>
+          </item>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Employee benefits and pensions</name>
+          </item>
+          <item>
+            <name>Income tax exclusion</name>
+          </item>
+          <item>
+            <name>Inflation and prices</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

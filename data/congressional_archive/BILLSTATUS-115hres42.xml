@@ -1,180 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-10</introducedDate>
+    <notes />
+    <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsru00</systemCode>
+          <name>Rules Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-10T15:00:16Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <committeeReports />
+    <cboCostEstimates />
+    <congress>115</congress>
     <laws />
-    <createDate>2017-01-11T05:09:40Z</createDate>
+    <updateDate>2018-08-28T19:53:48Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+      </actionTypeCounts>
       <item>
+        <actionDate>2017-01-10</actionDate>
         <links />
+        <text>Referred to the House Committee on Rules.</text>
         <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <committee>
           <systemCode>hsru00</systemCode>
           <name>Rules Committee</name>
         </committee>
-        <text>Referred to the House Committee on Rules.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
         <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <committee />
       </item>
       <item>
+        <actionDate>2017-01-10</actionDate>
         <links />
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
         <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-10</actionDate>
+        <committee />
       </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
     </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
+        <identifiers>
+          <bioguideId>P000608</bioguideId>
+          <lisID>2113</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>P000608</bioguideId>
+        <lastName>Peters</lastName>
+        <firstName>Scott</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName>H.</middleName>
+        <state>CA</state>
+        <district>52</district>
+      </item>
+    </sponsors>
+    <billType>HRES</billType>
+    <constitutionalAuthorityStatementText />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
     <recordedVotes />
-    <relatedBills />
+    <billNumber>42</billNumber>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Legislative rules and procedure</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Congress</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
     <cosponsors>
       <item>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <party>R</party>
-        <lastName>Marino</lastName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>M001179</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>10</district>
-        <state>PA</state>
         <middleName />
         <identifiers>
           <lisID>2053</lisID>
           <gpoId>8128</gpoId>
           <bioguideId>M001179</bioguideId>
         </identifiers>
-        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
         <firstName>Tom</firstName>
+        <state>PA</state>
+        <bioguideId>M001179</bioguideId>
+        <district>10</district>
+        <fullName>Rep. Marino, Tom [R-PA-10]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>R</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Marino</lastName>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
       </item>
       <item>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <party>D</party>
-        <lastName>Kilmer</lastName>
-        <sponsorshipWithdrawnDate />
-        <bioguideId>K000381</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>6</district>
-        <state>WA</state>
         <middleName />
         <identifiers>
           <bioguideId>K000381</bioguideId>
-          <lisID>2169</lisID>
           <gpoId />
+          <lisID>2169</lisID>
         </identifiers>
-        <fullName>Rep. Kilmer, Derek [D-WA-6]</fullName>
         <firstName>Derek</firstName>
+        <state>WA</state>
+        <bioguideId>K000381</bioguideId>
+        <district>6</district>
+        <fullName>Rep. Kilmer, Derek [D-WA-6]</fullName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <party>D</party>
+        <sponsorshipWithdrawnDate />
+        <lastName>Kilmer</lastName>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
       </item>
     </cosponsors>
-    <billNumber>42</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-        <policyArea>
-          <name>Congress</name>
-        </policyArea>
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <state>CA</state>
-        <middleName>H.</middleName>
-        <bioguideId>P000608</bioguideId>
-        <lastName>Peters</lastName>
-        <firstName>Scott</firstName>
-        <identifiers>
-          <lisID>2113</lisID>
-          <gpoId />
-          <bioguideId>P000608</bioguideId>
-        </identifiers>
-        <fullName>Rep. Peters, Scott H. [D-CA-52]</fullName>
-        <district>52</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HRES</billType>
-    <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <congress>115</congress>
+    <introducedDate>2017-01-10</introducedDate>
+    <calendarNumbers />
     <latestAction>
-      <text>Referred to the House Committee on Rules.</text>
       <actionDate>2017-01-10</actionDate>
       <links />
+      <text>Referred to the House Committee on Rules.</text>
     </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
+    <amendments />
+    <summaries>
+      <billSummaries>
         <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Rules Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-10T15:00:16Z</date>
-            </item>
-          </activities>
-          <systemCode>hsru00</systemCode>
+          <lastSummaryUpdateDate>2017-02-27T19:21:16Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-10</actionDate>
+          <text><![CDATA[<p>Amends Rule XIV (Order and Priority of Business) of the Rules of the House of Representatives to authorize the chair and ranking minority member of a committee, or the chair and ranking minority member of its applicable subcommittee, if a bill or joint resolution reported by the committee has not been considered within 60 calendar days, to offer jointly a motion for consideration of the measure.</p>]]></text>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
         </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-11T21:31:12Z</updateDate>
-    <titles>
-      <item>
-        <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>Amending the Rules of the House of Representatives to provide for the consideration of reported bills or joint resolutions that have not been considered by the House within 60 calendar days.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-11T05:09:40Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

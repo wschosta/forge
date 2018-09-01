@@ -1,50 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea />
-    <updateDate>2017-01-11T10:17:59Z</updateDate>
-    <billType>S</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Sen. McCain, John [R-AZ]</fullName>
-        <identifiers>
-          <lisID>754</lisID>
-          <gpoId>8253</gpoId>
-          <bioguideId>M000303</bioguideId>
-        </identifiers>
-        <byRequestType />
-        <bioguideId>M000303</bioguideId>
-        <lastName>MCCAIN</lastName>
-        <state>AZ</state>
-        <firstName>JOHN</firstName>
-        <party>R</party>
-        <middleName>SIDNEY</middleName>
-      </item>
-    </sponsors>
+    <notes />
     <congress>115</congress>
-    <latestAction>
-      <actionDate>2017-01-10</actionDate>
-      <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>sshr00</systemCode>
+          <name>Health, Education, Labor, and Pensions Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-10T22:51:55Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
     <cboCostEstimates />
-    <title>A bill to amend the Federal Food, Drug, and Cosmetic Act to allow for the personal importation of safe and affordable drugs from approved pharmacies in Canada.</title>
+    <title>Safe and Affordable Drugs from Canada Act of 2017</title>
+    <laws />
+    <updateDate>2018-08-28T20:22:35Z</updateDate>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-01-09</actionDate>
+          <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Safe and Affordable Drugs from Canada Act of 2017</latestTitle>
+        <number>64</number>
+      </item>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-03-10</actionDate>
+          <text>Referred to the Subcommittee on Health.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>Safe and Affordable Drugs from Canada Act of 2017</latestTitle>
+        <number>1480</number>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
     <actions>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
       <item>
         <actionDate>2017-01-10</actionDate>
         <committee>
-          <systemCode>sshr00</systemCode>
           <name>Health, Education, Labor, and Pensions Committee</name>
+          <systemCode>sshr00</systemCode>
         </committee>
         <links />
         <sourceSystem>
@@ -56,85 +80,299 @@
       </item>
       <item>
         <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <actionCode>10000</actionCode>
+        <links />
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
         <committee />
+        <text>Introduced in Senate</text>
+        <actionCode>10000</actionCode>
         <actionDate>2017-01-10</actionDate>
       </item>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
     </actions>
-    <amendments />
-    <introducedDate>2017-01-10</introducedDate>
+    <sponsors>
+      <item>
+        <fullName>Sen. McCain, John [R-AZ]</fullName>
+        <identifiers>
+          <lisID>754</lisID>
+          <bioguideId>M000303</bioguideId>
+          <gpoId>8253</gpoId>
+        </identifiers>
+        <bioguideId>M000303</bioguideId>
+        <lastName>MCCAIN</lastName>
+        <firstName>JOHN</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName>SIDNEY</middleName>
+        <state>AZ</state>
+      </item>
+    </sponsors>
+    <billType>S</billType>
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <recordedVotes />
     <billNumber>92</billNumber>
-    <relatedBills />
     <titles>
       <item>
-        <title>A bill to amend the Federal Food, Drug, and Cosmetic Act to allow for the personal importation of safe and affordable drugs from approved pharmacies in Canada.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Safe and Affordable Drugs from Canada Act of 2017</title>
+        <chamberCode />
       </item>
       <item>
-        <title>A bill to amend the Federal Food, Drug, and Cosmetic Act to allow for the personal importation of safe and affordable drugs from approved pharmacies in Canada.</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend the Federal Food, Drug, and Cosmetic Act to allow for the personal importation of safe and affordable drugs from approved pharmacies in Canada.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Safe and Affordable Drugs from Canada Act of 2017</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Safe and Affordable Drugs from Canada Act of 2017</title>
+        <chamberCode />
       </item>
     </titles>
-    <cosponsors>
-      <item>
-        <party>D</party>
-        <middleName />
-        <lastName>Klobuchar</lastName>
-        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
-        <firstName>Amy</firstName>
-        <bioguideId>K000367</bioguideId>
-        <state>MN</state>
-        <identifiers>
-          <bioguideId>K000367</bioguideId>
-          <lisID>1826</lisID>
-          <gpoId>8249</gpoId>
-        </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipDate>2017-01-10</sponsorshipDate>
-        <sponsorshipWithdrawnDate />
-      </item>
-    </cosponsors>
-    <committeeReports />
     <originChamber>Senate</originChamber>
-    <summaries>
-      <billSummaries />
-    </summaries>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Canada</name>
+          </item>
+          <item>
+            <name>Department of Health and Human Services</name>
+          </item>
+          <item>
+            <name>Drug safety, medical device, and laboratory regulation</name>
+          </item>
+          <item>
+            <name>Government information and archives</name>
+          </item>
+          <item>
+            <name>Prescription drugs</name>
+          </item>
+          <item>
+            <name>Trade restrictions</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-11T05:09:45Z</createDate>
-    <notes />
-    <committees>
-      <billCommittees>
+    <cosponsors>
+      <item>
+        <fullName>Sen. Klobuchar, Amy [D-MN]</fullName>
+        <identifiers>
+          <gpoId>8249</gpoId>
+          <lisID>1826</lisID>
+          <bioguideId>K000367</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-10</sponsorshipDate>
+        <lastName>Klobuchar</lastName>
+        <firstName>Amy</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>MN</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>K000367</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Grassley, Chuck [R-IA]</fullName>
+        <identifiers>
+          <lisID>457</lisID>
+          <gpoId>8316</gpoId>
+          <bioguideId>G000386</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-01-23</sponsorshipDate>
+        <lastName>GRASSLEY</lastName>
+        <firstName>CHARLES</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>IA</state>
+        <party>R</party>
+        <middleName>ERNEST</middleName>
+        <bioguideId>G000386</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Leahy, Patrick J. [D-VT]</fullName>
+        <identifiers>
+          <bioguideId>L000174</bioguideId>
+          <lisID>1383</lisID>
+          <gpoId>8244</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>LEAHY</lastName>
+        <firstName>PATRICK</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>VT</state>
+        <party>D</party>
+        <middleName>JOSEPH</middleName>
+        <bioguideId>L000174</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. King, Angus S., Jr. [I-ME]</fullName>
+        <identifiers>
+          <lisID>2185</lisID>
+          <gpoId />
+          <bioguideId>K000383</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>King</lastName>
+        <firstName>Angus</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>ME</state>
+        <party>I</party>
+        <middleName />
+        <bioguideId>K000383</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Whitehouse, Sheldon [D-RI]</fullName>
+        <identifiers>
+          <gpoId>8264</gpoId>
+          <lisID>1823</lisID>
+          <bioguideId>W000802</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>Whitehouse</lastName>
+        <firstName>Sheldon</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>RI</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>W000802</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Brown, Sherrod [D-OH]</fullName>
+        <identifiers>
+          <bioguideId>B000944</bioguideId>
+          <gpoId>8309</gpoId>
+          <lisID>136</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <lastName>BROWN</lastName>
+        <firstName>SHERROD</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>OH</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>B000944</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Baldwin, Tammy [D-WI]</fullName>
+        <identifiers>
+          <lisID>1558</lisID>
+          <bioguideId>B001230</bioguideId>
+          <gpoId>8215</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <lastName>BALDWIN</lastName>
+        <firstName>TAMMY</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>WI</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>B001230</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Shaheen, Jeanne [D-NH]</fullName>
+        <identifiers>
+          <lisID>1901</lisID>
+          <gpoId>8276</gpoId>
+          <bioguideId>S001181</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <lastName>Shaheen</lastName>
+        <firstName>Jeanne</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NH</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>S001181</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Merkley, Jeff [D-OR]</fullName>
+        <identifiers>
+          <bioguideId>M001176</bioguideId>
+          <lisID>1900</lisID>
+          <gpoId>8238</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-28</sponsorshipDate>
+        <lastName>Merkley</lastName>
+        <firstName>Jeff</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>OR</state>
+        <party>D</party>
+        <middleName />
+        <bioguideId>M001176</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+      <item>
+        <fullName>Sen. Hassan, Margaret Wood [D-NH]</fullName>
+        <identifiers>
+          <lisID>2302</lisID>
+          <bioguideId>H001076</bioguideId>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2017-03-07</sponsorshipDate>
+        <lastName>Hassan</lastName>
+        <firstName>Margaret</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>NH</state>
+        <party>D</party>
+        <middleName>Wood</middleName>
+        <bioguideId>H001076</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-10</introducedDate>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-10</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
+    </latestAction>
+    <amendments />
+    <summaries>
+      <billSummaries>
         <item>
-          <type>Standing</type>
-          <chamber>Senate</chamber>
-          <activities>
-            <item>
-              <date>2017-01-10T22:51:55Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>sshr00</systemCode>
-          <name>Health, Education, Labor, and Pensions Committee</name>
+          <text><![CDATA[<p><b>Safe and Affordable Drugs from Canada Act of 2017</b></p> <p>This bill amends the Federal Food, Drug, and Cosmetic Act (FFDCA) to require the Department of Health and Human Services (HHS) to promulgate regulations within 185 days permitting individuals to import a prescription drug purchased from an approved Canadian pharmacy that:</p> <ul> <li> is dispensed by a pharmacist licensed in Canada;</li> <li> is purchased for personal use in quantities not greater than a 90-day supply;</li> <li>is filled using a valid prescription issued by a physician licensed to practice in the United States; and</li> <li>has the same active ingredients, route of administration, dosage form, and strength as a prescription drug approved under the FFDCA.</li> </ul> <p> Certain medications may not be imported, including controlled substances and biological products.</p> <p> The bill establishes a certification process for approving Canadian pharmacies. HHS must publish a list of approved Canadian pharmacies.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-03T22:42:18Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-10</actionDate>
         </item>
-      </billCommittees>
-    </committees>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-11T05:09:45Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

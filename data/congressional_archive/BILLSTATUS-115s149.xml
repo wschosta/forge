@@ -1,94 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <relatedBills />
-    <originChamber>Senate</originChamber>
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-17T20:23:17Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>sshr00</systemCode>
-          <name>Health, Education, Labor, and Pensions Committee</name>
-          <chamber>Senate</chamber>
-        </item>
-      </billCommittees>
-    </committees>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <policyArea>
+      <name>Education</name>
+    </policyArea>
     <billType>S</billType>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>A bill to amend the Higher Education Act of 1965 to provide student loan deferment for victims of terrorist attacks.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>A bill to amend the Higher Education Act of 1965 to provide student loan deferment for victims of terrorist attacks.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <lastName>Rubio</lastName>
-        <firstName>Marco</firstName>
-        <party>R</party>
-        <bioguideId>R000595</bioguideId>
-        <middleName />
-        <identifiers>
-          <lisID>2084</lisID>
-          <bioguideId>R000595</bioguideId>
-          <gpoId>8242</gpoId>
-        </identifiers>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
-        <state>FL</state>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <updateDate>2017-01-18T10:20:01Z</updateDate>
-    <cosponsors />
-    <policyArea />
-    <billNumber>149</billNumber>
-    <createDate>2017-01-18T05:04:59Z</createDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <cboCostEstimates />
     <latestAction>
+      <links />
       <actionDate>2017-01-17</actionDate>
       <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
-      <links />
     </latestAction>
-    <recordedVotes />
+    <createDate>2017-01-18T05:04:59Z</createDate>
+    <notes />
     <actions>
       <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
         <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
       </actionTypeCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
-          <name>Health, Education, Labor, and Pensions Committee</name>
           <systemCode>sshr00</systemCode>
+          <name>Health, Education, Labor, and Pensions Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -99,24 +32,137 @@
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
         <actionDate>2017-01-17</actionDate>
+        <links />
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <actionCode>10000</actionCode>
         <committee />
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <title>A bill to amend the Higher Education Act of 1965 to provide student loan deferment for victims of terrorist attacks.</title>
-    <notes />
+    <calendarNumbers />
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Education</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Crime victims</name>
+          </item>
+          <item>
+            <name>Government lending and loan guarantees</name>
+          </item>
+          <item>
+            <name>Higher education</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+          <item>
+            <name>Terrorism</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>149</billNumber>
+    <title>Terrorism Survivors Student Loan Deferment Act</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-17T20:23:17Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>sshr00</systemCode>
+          <name>Health, Education, Labor, and Pensions Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
     <introducedDate>2017-01-17</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:22:54Z</updateDate>
+    <laws />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>R000595</bioguideId>
+        <identifiers>
+          <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
+          <gpoId>8242</gpoId>
+        </identifiers>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Marco</firstName>
+        <state>FL</state>
+        <lastName>Rubio</lastName>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <cosponsors />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Terrorism Survivors Student Loan Deferment Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A bill to amend the Higher Education Act of 1965 to provide student loan deferment for victims of terrorist attacks.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Terrorism Survivors Student Loan Deferment Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Terrorism Survivors Student Loan Deferment Act</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Terrorism Survivors Student Loan Deferment Act</b></p> <p>This bill amends title IV (Student Assistance) of the Higher Education Act of 1965 to allow a borrower who is a victim of a terrorist attack to defer (i.e., suspend repayments on) student loans made under the Federal Family Education Loan, Federal Direct Loan, and Federal Perkins Loan programs. </p>]]></text>
+          <actionDate>2017-01-17</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2017-05-01T19:41:46Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,144 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>American Fisheries Advisory Committee Act</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>To establish the American Fisheries Advisory Committee to assist in the awarding of fisheries research and development grants, and for other purposes.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>American Fisheries Advisory Committee Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>American Fisheries Advisory Committee Act</title>
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+      <actionDate>2017-02-10</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 214.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 18``The Congress shall have Power to make all Laws whichshall be necessary and proper for carrying into Execution theforegoing Powers, and all other Powers vested by thisConstitution in the Government of the United States, or inany Department or Officer thereof.''[Page H52]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <name>Natural Resources Committee</name>
           <systemCode>hsii00</systemCode>
           <type>Standing</type>
-          <subcommittees />
           <activities>
             <item>
               <date>2017-01-03T17:20:25Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <name>Natural Resources Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsii13</systemCode>
+              <name>Water, Power and Oceans Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:59:17Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <sponsors>
-      <item>
-        <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <district>0</district>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <lastName>YOUNG</lastName>
-        <middleName>E.</middleName>
-        <bioguideId>Y000033</bioguideId>
-        <party>R</party>
-        <firstName>DON</firstName>
-        <state>AK</state>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <billType>HR</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <title>American Fisheries Advisory Committee Act</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>To establish the American Fisheries Advisory Committee to assist in the awarding of fisheries research and development grants, and for other purposes.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>American Fisheries Advisory Committee Act</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <billNumber>214</billNumber>
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <title>American Fisheries Advisory Committee Act</title>
-    <amendments />
     <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
       <item>
-        <type>IntroReferral</type>
+        <actionDate>2017-02-10</actionDate>
         <committee>
-          <name>Natural Resources Committee</name>
-          <systemCode>hsii00</systemCode>
+          <systemCode>hsii13</systemCode>
+          <name>Water, Power and Oceans Subcommittee</name>
         </committee>
         <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Water, Power and Oceans.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <actionDate>2017-01-03</actionDate>
+        <links />
         <text>Referred to the House Committee on Natural Resources.</text>
+        <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
         <actionDate>2017-01-03</actionDate>
+        <links />
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
       </item>
       <item>
-        <type>IntroReferral</type>
-        <committee />
-        <links />
         <actionDate>2017-01-03</actionDate>
+        <links />
         <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>1000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-12T17:01:22Z</updateDate>
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <recordedVotes />
-    <introducedDate>2017-01-03</introducedDate>
-    <congress>115</congress>
-    <committeeReports />
-    <laws />
-    <cosponsors />
-    <originChamber>House</originChamber>
-    <latestAction>
-      <links />
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <actionDate>2017-01-03</actionDate>
-    </latestAction>
     <policyArea>
       <name>Public Lands and Natural Resources</name>
     </policyArea>
-    <relatedBills />
+    <sponsors>
+      <item>
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <party>R</party>
+        <bioguideId>Y000033</bioguideId>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <lastName>YOUNG</lastName>
+        <district>0</district>
+        <middleName>E.</middleName>
+        <firstName>DON</firstName>
+        <byRequestType />
+        <state>AK</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:58:19Z</updateDate>
+    <billNumber>214</billNumber>
+    <title>American Fisheries Advisory Committee Act</title>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <number>1322</number>
+        <latestAction>
+          <actionDate>2018-08-24</actionDate>
+          <text>Referred to the House Committee on Natural Resources.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>American Fisheries Advisory Committee Act</latestTitle>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-04-03T12:34:03Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>American Fisheries Advisory Committee Act</b></p> <p>This bill amends the Saltonstall-Kennedy Act to direct the National Oceanic and Atmospheric Administration (NOAA)to establish the American Fisheries Advisory Committee.</p> <p>NOAA must establish five regions within the committee.The committee must consist of members chosen regionally and across all sectors of the fishing industry.Additionally, the committee must: (1)identify the needs of the fishing industry, (2)develop grant proposals to fund projects that address the industry needs, (3)review grant applications, and (4)provide NOAA with grant applicants for approval.</p> <p>NOAA must not approve a grant application unless the application is selected for funding by the committee.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>AS</state>
+        <sponsorshipDate>2017-05-17</sponsorshipDate>
+        <district>0</district>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Radewagen, Aumua Amata Coleman [R-AS-At Large]</fullName>
+        <middleName>Coleman</middleName>
+        <bioguideId>R000600</bioguideId>
+        <firstName>Aumua Amata</firstName>
+        <sponsorshipWithdrawnDate />
+        <lastName>Radewagen</lastName>
+        <identifiers>
+          <lisID>2222</lisID>
+          <gpoId />
+          <bioguideId>R000600</bioguideId>
+        </identifiers>
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Public Lands and Natural Resources</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Advisory bodies</name>
@@ -159,9 +242,6 @@
             <name>Seafood</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Public Lands and Natural Resources</name>
-        </policyArea>
       </billSubjects>
     </subjects>
   </bill>

@@ -1,56 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <congress>115</congress>
-    <introducedDate>2017-01-03</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Emergency Citrus Disease Response Act of 2017</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Emergency Citrus Disease Response Act of 2017</title>
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries>
-        <item>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-03</actionDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <lastSummaryUpdateDate>2017-01-10T14:45:29Z</lastSummaryUpdateDate>
-          <text><![CDATA[<p><strong>Emergency Citrus Disease Response Act </strong><b>of 2017</b></p> <p>This bill amends the Internal Revenue Code to allow a full deduction in the current taxable year of the cost of replanting lost or damaged citrus plants. The taxpayer must own an equity interest of at least 50% in such replanted plants and may deduct costs paid or incurred through 2026. </p>]]></text>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-        </item>
-      </billSummaries>
-    </summaries>
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
+    <title>Emergency Citrus Disease Response Act of 2017</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:57:56Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. BUCHANAN:H.R. 112.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8 of the U.S. Constitution.[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Taxation</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Business investment and capital</name>
@@ -68,290 +25,770 @@
             <name>Income tax deductions</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <amendments />
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-03</actionDate>
+          <lastSummaryUpdateDate>2017-01-10T14:45:29Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <text><![CDATA[<p><strong>Emergency Citrus Disease Response Act </strong><b>of 2017</b></p> <p>This bill amends the Internal Revenue Code to allow a full deduction in the current taxable year of the cost of replanting lost or damaged citrus plants. The taxpayer must own an equity interest of at least 50% in such replanted plants and may deduct costs paid or incurred through 2026. </p>]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <billType>HR</billType>
+    <latestAction>
+      <text>Referred to the House Committee on Ways and Means.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <relatedBills>
+      <item>
+        <latestTitle>Emergency Citrus Disease Response Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>71</number>
+        <latestAction>
+          <actionDate>2017-01-09</actionDate>
+          <text>Read twice and referred to the Committee on Finance.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+      <item>
+        <latestTitle>An original bill to provide for reconciliation pursuant to title II of the concurrent resolution on the budget for fiscal year 2018.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <number>1</number>
+        <latestAction>
+          <actionDate>2017-11-28</actionDate>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 269.</text>
+        </latestAction>
+        <congress>115</congress>
+        <type>S</type>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-03</introducedDate>
     <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
       <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
         <introducedInTheHouse>1</introducedInTheHouse>
         <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-      </item>
     </actions>
-    <committees>
-      <billCommittees>
-        <item>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:05:05Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>hswm00</systemCode>
-          <chamber>House</chamber>
-          <name>Ways and Means Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <billNumber>112</billNumber>
-    <updateDate>2017-01-17T22:01:42Z</updateDate>
-    <title>Emergency Citrus Disease Response Act of 2017</title>
-    <billType>HR</billType>
     <laws />
-    <originChamber>House</originChamber>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <links />
-    </latestAction>
+    <congress>115</congress>
     <committeeReports />
-    <sponsors>
-      <item>
-        <middleName />
-        <state>FL</state>
-        <bioguideId>B001260</bioguideId>
-        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
-        <identifiers>
-          <bioguideId>B001260</bioguideId>
-          <lisID>1840</lisID>
-          <gpoId>7885</gpoId>
-        </identifiers>
-        <lastName>Buchanan</lastName>
-        <byRequestType />
-        <firstName>Vern</firstName>
-        <party>R</party>
-        <district>16</district>
-      </item>
-    </sponsors>
+    <billNumber>112</billNumber>
+    <cboCostEstimates />
     <cosponsors>
       <item>
-        <identifiers>
-          <bioguideId>R000583</bioguideId>
-          <gpoId>7888</gpoId>
-          <lisID>1916</lisID>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Rooney, Thomas J. [R-FL-17]</fullName>
-        <bioguideId>R000583</bioguideId>
+        <lastName>Rooney</lastName>
         <state>FL</state>
         <firstName>Thomas</firstName>
-        <lastName>Rooney</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName>J.</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>17</district>
-      </item>
-      <item>
+        <fullName>Rep. Rooney, Thomas J. [R-FL-17]</fullName>
         <identifiers>
-          <gpoId />
-          <lisID>2119</lisID>
-          <bioguideId>F000462</bioguideId>
+          <lisID>1916</lisID>
+          <gpoId>7888</gpoId>
+          <bioguideId>R000583</bioguideId>
         </identifiers>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Frankel, Lois [D-FL-22]</fullName>
-        <bioguideId>F000462</bioguideId>
-        <state>FL</state>
-        <firstName>Lois</firstName>
-        <lastName>Frankel</lastName>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>22</district>
-      </item>
-      <item>
-        <identifiers>
-          <bioguideId>P000599</bioguideId>
-          <gpoId>7887</gpoId>
-          <lisID>1915</lisID>
-        </identifiers>
+        <bioguideId>R000583</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>R</party>
-        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
-        <bioguideId>P000599</bioguideId>
-        <state>FL</state>
-        <firstName>Bill</firstName>
-        <lastName>Posey</lastName>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>8</district>
+        <middleName>J.</middleName>
       </item>
       <item>
+        <lastName>Frankel</lastName>
+        <state>FL</state>
+        <firstName>Lois</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>22</district>
+        <fullName>Rep. Frankel, Lois [D-FL-22]</fullName>
+        <identifiers>
+          <lisID>2119</lisID>
+          <bioguideId>F000462</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>F000462</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Posey</lastName>
+        <state>FL</state>
+        <firstName>Bill</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>8</district>
+        <fullName>Rep. Posey, Bill [R-FL-8]</fullName>
+        <identifiers>
+          <bioguideId>P000599</bioguideId>
+          <lisID>1915</lisID>
+          <gpoId>7887</gpoId>
+        </identifiers>
+        <bioguideId>P000599</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Vela</lastName>
+        <state>TX</state>
+        <firstName>Filemon</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <district>34</district>
+        <fullName>Rep. Vela, Filemon [D-TX-34]</fullName>
         <identifiers>
           <lisID>2167</lisID>
           <bioguideId>V000132</bioguideId>
           <gpoId />
         </identifiers>
+        <bioguideId>V000132</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>D</party>
-        <fullName>Rep. Vela, Filemon [D-TX-34]</fullName>
-        <bioguideId>V000132</bioguideId>
-        <state>TX</state>
-        <firstName>Filemon</firstName>
-        <lastName>Vela</lastName>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <district>34</district>
+        <middleName />
       </item>
       <item>
-        <identifiers>
-          <lisID>2115</lisID>
-          <bioguideId>Y000065</bioguideId>
-          <gpoId />
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
-        <bioguideId>Y000065</bioguideId>
+        <lastName>Yoho</lastName>
         <state>FL</state>
         <firstName>Ted</firstName>
-        <lastName>Yoho</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName>S.</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>3</district>
+        <fullName>Rep. Yoho, Ted S. [R-FL-3]</fullName>
+        <identifiers>
+          <lisID>2115</lisID>
+          <gpoId />
+          <bioguideId>Y000065</bioguideId>
+        </identifiers>
+        <bioguideId>Y000065</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>S.</middleName>
       </item>
       <item>
-        <identifiers>
-          <bioguideId>G000581</bioguideId>
-          <lisID>2349</lisID>
-          <gpoId />
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <party>D</party>
-        <fullName>Rep. Gonzalez, Vicente [D-TX-15]</fullName>
-        <bioguideId>G000581</bioguideId>
+        <lastName>Gonzalez</lastName>
         <state>TX</state>
         <firstName>Vicente</firstName>
-        <lastName>Gonzalez</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>15</district>
+        <fullName>Rep. Gonzalez, Vicente [D-TX-15]</fullName>
+        <identifiers>
+          <bioguideId>G000581</bioguideId>
+          <gpoId />
+          <lisID>2349</lisID>
+        </identifiers>
+        <bioguideId>G000581</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
       </item>
       <item>
-        <identifiers>
-          <bioguideId>B001257</bioguideId>
-          <lisID>1838</lisID>
-          <gpoId>7881</gpoId>
-        </identifiers>
-        <sponsorshipWithdrawnDate />
-        <party>R</party>
-        <fullName>Rep. Bilirakis, Gus M. [R-FL-12]</fullName>
-        <bioguideId>B001257</bioguideId>
+        <lastName>Bilirakis</lastName>
         <state>FL</state>
         <firstName>Gus</firstName>
-        <lastName>Bilirakis</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName>M.</middleName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>12</district>
-      </item>
-      <item>
+        <fullName>Rep. Bilirakis, Gus M. [R-FL-12]</fullName>
         <identifiers>
-          <gpoId>7890</gpoId>
-          <lisID>985</lisID>
-          <bioguideId>R000435</bioguideId>
+          <lisID>1838</lisID>
+          <bioguideId>B001257</bioguideId>
+          <gpoId>7881</gpoId>
         </identifiers>
+        <bioguideId>B001257</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>R</party>
-        <fullName>Rep. Ros-Lehtinen, Ileana [R-FL-27]</fullName>
-        <bioguideId>R000435</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <lastName>ROS-LEHTINEN</lastName>
         <state>FL</state>
         <firstName>ILEANA</firstName>
-        <lastName>ROS-LEHTINEN</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>27</district>
-      </item>
-      <item>
+        <fullName>Rep. Ros-Lehtinen, Ileana [R-FL-27]</fullName>
         <identifiers>
-          <lisID>1717</lisID>
-          <bioguideId>D000600</bioguideId>
-          <gpoId>7893</gpoId>
+          <bioguideId>R000435</bioguideId>
+          <gpoId>7890</gpoId>
+          <lisID>985</lisID>
         </identifiers>
+        <bioguideId>R000435</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>R</party>
-        <fullName>Rep. Diaz-Balart, Mario [R-FL-25]</fullName>
-        <bioguideId>D000600</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Diaz-Balart</lastName>
         <state>FL</state>
         <firstName>Mario</firstName>
-        <lastName>Diaz-Balart</lastName>
         <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <middleName />
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <district>25</district>
-      </item>
-      <item>
+        <fullName>Rep. Diaz-Balart, Mario [R-FL-25]</fullName>
         <identifiers>
-          <gpoId>7884</gpoId>
-          <bioguideId>R000593</bioguideId>
-          <lisID>2003</lisID>
+          <bioguideId>D000600</bioguideId>
+          <lisID>1717</lisID>
+          <gpoId>7893</gpoId>
         </identifiers>
+        <bioguideId>D000600</bioguideId>
         <sponsorshipWithdrawnDate />
         <party>R</party>
-        <fullName>Rep. Ross, Dennis A. [R-FL-15]</fullName>
-        <bioguideId>R000593</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Ross</lastName>
         <state>FL</state>
         <firstName>Dennis</firstName>
-        <lastName>Ross</lastName>
         <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <middleName>A.</middleName>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
         <district>15</district>
+        <fullName>Rep. Ross, Dennis A. [R-FL-15]</fullName>
+        <identifiers>
+          <lisID>2003</lisID>
+          <gpoId>7884</gpoId>
+          <bioguideId>R000593</bioguideId>
+        </identifiers>
+        <bioguideId>R000593</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+      </item>
+      <item>
+        <lastName>Curbelo</lastName>
+        <state>FL</state>
+        <firstName>Carlos</firstName>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <district>26</district>
+        <fullName>Rep. Curbelo, Carlos [R-FL-26]</fullName>
+        <identifiers>
+          <lisID>2235</lisID>
+          <gpoId />
+          <bioguideId>C001107</bioguideId>
+        </identifiers>
+        <bioguideId>C001107</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Rooney</lastName>
+        <state>FL</state>
+        <firstName>Francis</firstName>
+        <sponsorshipDate>2017-02-02</sponsorshipDate>
+        <district>19</district>
+        <fullName>Rep. Rooney, Francis [R-FL-19]</fullName>
+        <identifiers>
+          <lisID>2323</lisID>
+          <gpoId />
+          <bioguideId>R000607</bioguideId>
+        </identifiers>
+        <bioguideId>R000607</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Soto</lastName>
+        <state>FL</state>
+        <firstName>Darren</firstName>
+        <sponsorshipDate>2017-02-03</sponsorshipDate>
+        <district>9</district>
+        <fullName>Rep. Soto, Darren [D-FL-9]</fullName>
+        <identifiers>
+          <lisID>2319</lisID>
+          <bioguideId>S001200</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>S001200</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Webster</lastName>
+        <state>FL</state>
+        <firstName>Daniel</firstName>
+        <sponsorshipDate>2017-02-06</sponsorshipDate>
+        <district>11</district>
+        <fullName>Rep. Webster, Daniel [R-FL-11]</fullName>
+        <identifiers>
+          <bioguideId>W000806</bioguideId>
+          <lisID>2002</lisID>
+          <gpoId>7880</gpoId>
+        </identifiers>
+        <bioguideId>W000806</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Mast</lastName>
+        <state>FL</state>
+        <firstName>Brian</firstName>
+        <sponsorshipDate>2017-02-13</sponsorshipDate>
+        <district>18</district>
+        <fullName>Rep. Mast, Brian J. [R-FL-18]</fullName>
+        <identifiers>
+          <bioguideId>M001199</bioguideId>
+          <lisID>2322</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>M001199</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>J.</middleName>
+      </item>
+      <item>
+        <lastName>DeSantis</lastName>
+        <state>FL</state>
+        <firstName>Ron</firstName>
+        <sponsorshipDate>2017-03-08</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. DeSantis, Ron [R-FL-6]</fullName>
+        <identifiers>
+          <lisID>2116</lisID>
+          <gpoId />
+          <bioguideId>D000621</bioguideId>
+        </identifiers>
+        <bioguideId>D000621</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Wasserman Schultz</lastName>
+        <state>FL</state>
+        <firstName>Debbie</firstName>
+        <sponsorshipDate>2017-03-24</sponsorshipDate>
+        <district>23</district>
+        <fullName>Rep. Wasserman Schultz, Debbie [D-FL-23]</fullName>
+        <identifiers>
+          <bioguideId>W000797</bioguideId>
+          <gpoId>7892</gpoId>
+          <lisID>1777</lisID>
+        </identifiers>
+        <bioguideId>W000797</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Franks</lastName>
+        <state>AZ</state>
+        <firstName>Trent</firstName>
+        <sponsorshipDate>2017-03-29</sponsorshipDate>
+        <district>8</district>
+        <fullName>Rep. Franks, Trent [R-AZ-8]</fullName>
+        <identifiers>
+          <gpoId>7799</gpoId>
+          <lisID>1707</lisID>
+          <bioguideId>F000448</bioguideId>
+        </identifiers>
+        <bioguideId>F000448</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Deutch</lastName>
+        <state>FL</state>
+        <firstName>Theodore</firstName>
+        <sponsorshipDate>2017-03-30</sponsorshipDate>
+        <district>22</district>
+        <fullName>Rep. Deutch, Theodore E. [D-FL-22]</fullName>
+        <identifiers>
+          <lisID>1976</lisID>
+          <bioguideId>D000610</bioguideId>
+          <gpoId>7891</gpoId>
+        </identifiers>
+        <bioguideId>D000610</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>E.</middleName>
+      </item>
+      <item>
+        <lastName>Schweikert</lastName>
+        <state>AZ</state>
+        <firstName>David</firstName>
+        <sponsorshipDate>2017-04-04</sponsorshipDate>
+        <district>6</district>
+        <fullName>Rep. Schweikert, David [R-AZ-6]</fullName>
+        <identifiers>
+          <bioguideId>S001183</bioguideId>
+          <lisID>1994</lisID>
+          <gpoId>7802</gpoId>
+        </identifiers>
+        <bioguideId>S001183</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>HASTINGS</lastName>
+        <state>FL</state>
+        <firstName>ALCEE</firstName>
+        <sponsorshipDate>2017-04-04</sponsorshipDate>
+        <district>20</district>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <identifiers>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <bioguideId>H000324</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <lastName>Gosar</lastName>
+        <state>AZ</state>
+        <firstName>Paul</firstName>
+        <sponsorshipDate>2017-04-12</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Gosar, Paul A. [R-AZ-4]</fullName>
+        <identifiers>
+          <lisID>1992</lisID>
+          <gpoId>7798</gpoId>
+          <bioguideId>G000565</bioguideId>
+        </identifiers>
+        <bioguideId>G000565</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+      </item>
+      <item>
+        <lastName>Castor</lastName>
+        <state>FL</state>
+        <firstName>Kathy</firstName>
+        <sponsorshipDate>2017-04-25</sponsorshipDate>
+        <district>14</district>
+        <fullName>Rep. Castor, Kathy [D-FL-14]</fullName>
+        <identifiers>
+          <bioguideId>C001066</bioguideId>
+          <gpoId>7883</gpoId>
+          <lisID>1839</lisID>
+        </identifiers>
+        <bioguideId>C001066</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Brownley</lastName>
+        <state>CA</state>
+        <firstName>Julia</firstName>
+        <sponsorshipDate>2017-04-26</sponsorshipDate>
+        <district>26</district>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <identifiers>
+          <bioguideId>B001285</bioguideId>
+          <lisID>2106</lisID>
+          <gpoId />
+        </identifiers>
+        <bioguideId>B001285</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Crist</lastName>
+        <state>FL</state>
+        <firstName>Charlie</firstName>
+        <sponsorshipDate>2017-06-13</sponsorshipDate>
+        <district>13</district>
+        <fullName>Rep. Crist, Charlie [D-FL-13]</fullName>
+        <identifiers>
+          <lisID>2321</lisID>
+          <bioguideId>C001111</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>C001111</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Dunn</lastName>
+        <state>FL</state>
+        <firstName>Neal</firstName>
+        <sponsorshipDate>2017-06-13</sponsorshipDate>
+        <district>2</district>
+        <fullName>Rep. Dunn, Neal P. [R-FL-2]</fullName>
+        <identifiers>
+          <lisID>2315</lisID>
+          <bioguideId>D000628</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>D000628</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>P.</middleName>
+      </item>
+      <item>
+        <lastName>Demings</lastName>
+        <state>FL</state>
+        <firstName>Val</firstName>
+        <sponsorshipDate>2017-06-22</sponsorshipDate>
+        <district>10</district>
+        <fullName>Rep. Demings, Val Butler [D-FL-10]</fullName>
+        <identifiers>
+          <bioguideId>D000627</bioguideId>
+          <gpoId />
+          <lisID>2320</lisID>
+        </identifiers>
+        <bioguideId>D000627</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>Butler</middleName>
+      </item>
+      <item>
+        <lastName>Wilson</lastName>
+        <state>FL</state>
+        <firstName>Frederica</firstName>
+        <sponsorshipDate>2017-06-28</sponsorshipDate>
+        <district>24</district>
+        <fullName>Rep. Wilson, Frederica S. [D-FL-24]</fullName>
+        <identifiers>
+          <lisID>2004</lisID>
+          <gpoId>7889</gpoId>
+          <bioguideId>W000808</bioguideId>
+        </identifiers>
+        <bioguideId>W000808</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>S.</middleName>
+      </item>
+      <item>
+        <lastName>Rutherford</lastName>
+        <state>FL</state>
+        <firstName>John</firstName>
+        <sponsorshipDate>2017-07-13</sponsorshipDate>
+        <district>4</district>
+        <fullName>Rep. Rutherford, John H. [R-FL-4]</fullName>
+        <identifiers>
+          <lisID>2316</lisID>
+          <gpoId />
+          <bioguideId>R000609</bioguideId>
+        </identifiers>
+        <bioguideId>R000609</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>H.</middleName>
+      </item>
+      <item>
+        <lastName>Murphy</lastName>
+        <state>FL</state>
+        <firstName>Stephanie</firstName>
+        <sponsorshipDate>2017-07-20</sponsorshipDate>
+        <district>7</district>
+        <fullName>Rep. Murphy, Stephanie N. [D-FL-7]</fullName>
+        <identifiers>
+          <lisID>2318</lisID>
+          <bioguideId>M001202</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>M001202</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>N.</middleName>
+      </item>
+      <item>
+        <lastName>Lawson</lastName>
+        <state>FL</state>
+        <firstName>Al</firstName>
+        <sponsorshipDate>2017-07-25</sponsorshipDate>
+        <district>5</district>
+        <fullName>Rep. Lawson, Al, Jr. [D-FL-5]</fullName>
+        <identifiers>
+          <bioguideId>L000586</bioguideId>
+          <gpoId />
+          <lisID>2317</lisID>
+        </identifiers>
+        <bioguideId>L000586</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+      <item>
+        <lastName>Gaetz</lastName>
+        <state>FL</state>
+        <firstName>Matt</firstName>
+        <sponsorshipDate>2017-07-25</sponsorshipDate>
+        <district>1</district>
+        <fullName>Rep. Gaetz, Matt [R-FL-1]</fullName>
+        <identifiers>
+          <bioguideId>G000578</bioguideId>
+          <gpoId />
+          <lisID>2314</lisID>
+        </identifiers>
+        <bioguideId>G000578</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>R</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
       </item>
     </cosponsors>
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <calendarNumbers />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:05:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
     <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>B001260</bioguideId>
+        <party>R</party>
+        <firstName>Vern</firstName>
+        <fullName>Rep. Buchanan, Vern [R-FL-16]</fullName>
+        <state>FL</state>
+        <district>16</district>
+        <lastName>Buchanan</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>1840</lisID>
+          <bioguideId>B001260</bioguideId>
+          <gpoId>7885</gpoId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Emergency Citrus Disease Response Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Emergency Citrus Disease Response Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Emergency Citrus Disease Response Act of 2017</title>
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

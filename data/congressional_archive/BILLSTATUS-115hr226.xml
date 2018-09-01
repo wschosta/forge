@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <titles>
-      <item>
-        <title>African Elephant Conservation and Legal Ivory Possession Act</title>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>To amend the African Elephant Conservation Act of 1988 to conserve elephants while appropriately regulating ivory in the United States, and for other purposes.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <title>African Elephant Conservation and Legal Ivory Possession Act</title>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <laws />
-    <amendments />
-    <createDate>2017-01-04T07:01:13Z</createDate>
-    <updateDate>2017-01-11T22:01:12Z</updateDate>
-    <relatedBills />
+    <title>African Elephant Conservation and Legal Ivory Possession Act</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:58:21Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. YOUNG of Alaska:H.R. 226.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3``The Congress shall have the power to regulate commercewith foreign nations, and among several states, and with theIndian Tribes''[Page H53]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -90,123 +66,181 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>African Elephant Conservation and Legal Ivory Possession Act</b></p> <p>This bill reauthorizes the African Elephant Conservation Act (AECA) through FY2022. </p> <p>Ivory may be imported or exported under the AECA and the Endangered Species Act of 1973 if: (1) the raw ivory or worked ivory is solely for a museum; (2) the raw ivory or worked ivory was lawfully importable into the United States on February 24, 2014, regardless of when it was acquired; or (3) the worked ivory was previously lawfully possessed in the United States.</p> <p>The Department of the Interior may station one U.S. Fish and Wildlife Service law enforcement officer in the primary U.S. diplomatic or consular post in each African country that has significant population of African elephants to assist local wildlife rangers in protecting the elephants and facilitating the apprehension of individuals who illegally kill them or assist in killing them.</p> <p>The President may embargo any products from a country if it is a significant transit or destination point for illegal ivory trade.</p> <p> This bill authorizes: (1) commerce in African elephant ivory or in products containing African elephant ivory that have been lawfully imported or crafted in the United States; and (2) the importation of a sport-hunted African elephant trophy if the trophy was taken from certain elephants populations that at the time were not necessarily threatened with extinction, but may have become so unless trade was closely controlled. </p>]]></text>
+          <lastSummaryUpdateDate>2017-01-11T21:49:45Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
     <billType>HR</billType>
+    <latestAction>
+      <text>Referred to the Subcommittee on Federal Lands.</text>
+      <links />
+      <actionDate>2017-02-10</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Animals</name>
+    </policyArea>
+    <relatedBills />
     <introducedDate>2017-01-03</introducedDate>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <firstName>DON</firstName>
-        <state>AK</state>
-        <district>0</district>
-        <bioguideId>Y000033</bioguideId>
-        <lastName>YOUNG</lastName>
-        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
-        <party>R</party>
-        <identifiers>
-          <lisID>1256</lisID>
-          <gpoId>7785</gpoId>
-          <bioguideId>Y000033</bioguideId>
-        </identifiers>
-        <middleName>E.</middleName>
-      </item>
-    </sponsors>
-    <recordedVotes />
-    <originChamber>House</originChamber>
-    <calendarNumbers />
-    <congress>115</congress>
-    <title>African Elephant Conservation and Legal Ivory Possession Act</title>
-    <cboCostEstimates />
     <actions>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
       <item>
+        <actionDate>2017-02-10</actionDate>
         <committee>
-          <name>Natural Resources Committee</name>
-          <systemCode>hsii00</systemCode>
+          <systemCode>hsii10</systemCode>
+          <name>Federal Lands Subcommittee</name>
         </committee>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Natural Resources.</text>
         <links />
-        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Federal Lands.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Referred to the House Committee on Natural Resources.</text>
         <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
         <sourceSystem>
           <name>House floor actions</name>
           <code>2</code>
         </sourceSystem>
+        <committee>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+        </committee>
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
         <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
       </item>
       <item>
-        <committee />
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
         <links />
-        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
+        <committee />
       </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <links />
-    </latestAction>
+    <laws />
+    <congress>115</congress>
     <committeeReports />
-    <notes />
+    <billNumber>226</billNumber>
+    <cboCostEstimates />
+    <cosponsors />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
+          <systemCode>hsii00</systemCode>
           <type>Standing</type>
-          <name>Natural Resources Committee</name>
           <activities>
             <item>
-              <name>Referred to</name>
               <date>2017-01-03T17:27:20Z</date>
+              <name>Referred to</name>
             </item>
           </activities>
-          <subcommittees />
-          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsii10</systemCode>
+              <name>Federal Lands Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-10T16:48:03Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>226</billNumber>
-    <constitutionalAuthorityStatementText />
-    <policyArea>
-      <name>Animals</name>
-    </policyArea>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p><b>African Elephant Conservation and Legal Ivory Possession Act</b></p> <p>This bill reauthorizes the African Elephant Conservation Act (AECA) through FY2022. </p> <p>Ivory may be imported or exported under the AECA and the Endangered Species Act of 1973 if: (1) the raw ivory or worked ivory is solely for a museum; (2) the raw ivory or worked ivory was lawfully importable into the United States on February 24, 2014, regardless of when it was acquired; or (3) the worked ivory was previously lawfully possessed in the United States.</p> <p>The Department of the Interior may station one U.S. Fish and Wildlife Service law enforcement officer in the primary U.S. diplomatic or consular post in each African country that has significant population of African elephants to assist local wildlife rangers in protecting the elephants and facilitating the apprehension of individuals who illegally kill them or assist in killing them.</p> <p>The President may embargo any products from a country if it is a significant transit or destination point for illegal ivory trade.</p> <p> This bill authorizes: (1) commerce in African elephant ivory or in products containing African elephant ivory that have been lawfully imported or crafted in the United States; and (2) the importation of a sport-hunted African elephant trophy if the trophy was taken from certain elephants populations that at the time were not necessarily threatened with extinction, but may have become so unless trade was closely controlled. </p>]]></text>
-          <name>Introduced in House</name>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <lastSummaryUpdateDate>2017-01-11T21:49:45Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-04T07:01:13Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>Y000033</bioguideId>
+        <party>R</party>
+        <firstName>DON</firstName>
+        <fullName>Rep. Young, Don [R-AK-At Large]</fullName>
+        <state>AK</state>
+        <district>0</district>
+        <lastName>YOUNG</lastName>
+        <middleName>E.</middleName>
+        <identifiers>
+          <bioguideId>Y000033</bioguideId>
+          <gpoId>7785</gpoId>
+          <lisID>1256</lisID>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>African Elephant Conservation and Legal Ivory Possession Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the African Elephant Conservation Act of 1988 to conserve elephants while appropriately regulating ivory in the United States, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>African Elephant Conservation and Legal Ivory Possession Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>African Elephant Conservation and Legal Ivory Possession Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

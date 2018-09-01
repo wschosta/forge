@@ -1,11 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-12</introducedDate>
-    <committeeReports />
-    <laws />
+    <sponsors>
+      <item>
+        <middleName />
+        <party>R</party>
+        <bioguideId>H001041</bioguideId>
+        <lastName>Heller</lastName>
+        <firstName>Dean</firstName>
+        <state>NV</state>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <version>1.0.0</version>
     <createDate>2017-01-13T04:55:34Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Read twice and referred to the Committee on Armed Services.</text>
+      <links />
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
+    <notes />
+    <introducedDate>2017-01-12</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>ssas00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-12T18:58:12Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Armed Services Committee</name>
+          <subcommittees />
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills>
+      <item>
+        <latestTitle>SPACE-A</latestTitle>
+        <number>936</number>
+        <latestAction>
+          <text>Referred to the Subcommittee on Readiness.</text>
+          <actionDate>2017-03-23</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <billNumber>116</billNumber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Aviation and airports</name>
+          </item>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Disability assistance</name>
+          </item>
+          <item>
+            <name>Veterans' pensions and compensation</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <congress>115</congress>
     <actions>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
@@ -14,127 +105,201 @@
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Armed Services.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
+        <actionDate>2017-01-12</actionDate>
         <actionCode>10000</actionCode>
         <committee />
         <text>Introduced in Senate</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
-          <code>9</code>
           <name>Library of Congress</name>
+          <code>9</code>
         </sourceSystem>
-        <actionDate>2017-01-12</actionDate>
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
     </actions>
     <recordedVotes />
-    <cboCostEstimates />
-    <relatedBills />
+    <laws />
     <cosponsors>
       <item>
-        <fullName>Sen. Tester, Jon [D-MT]</fullName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <identifiers>
-          <lisID>1829</lisID>
-          <gpoId>8258</gpoId>
-          <bioguideId>T000464</bioguideId>
-        </identifiers>
         <bioguideId>T000464</bioguideId>
+        <party>D</party>
+        <firstName>Jon</firstName>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
         <lastName>Tester</lastName>
         <state>MT</state>
-        <firstName>Jon</firstName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
         <middleName />
+        <identifiers>
+          <bioguideId>T000464</bioguideId>
+          <lisID>1829</lisID>
+          <gpoId>8258</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001088</bioguideId>
         <party>D</party>
+        <firstName>Christopher</firstName>
+        <fullName>Sen. Coons, Christopher A. [D-DE]</fullName>
+        <lastName>Coons</lastName>
+        <state>DE</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>A.</middleName>
+        <identifiers>
+          <bioguideId>C001088</bioguideId>
+          <lisID>1984</lisID>
+          <gpoId>8297</gpoId>
+        </identifiers>
+        <sponsorshipDate>2017-02-27</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>P000595</bioguideId>
+        <party>D</party>
+        <firstName>Gary</firstName>
+        <fullName>Sen. Peters, Gary C. [D-MI]</fullName>
+        <lastName>Peters</lastName>
+        <state>MI</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>C.</middleName>
+        <identifiers>
+          <bioguideId>P000595</bioguideId>
+          <gpoId>7994</gpoId>
+          <lisID>1929</lisID>
+        </identifiers>
+        <sponsorshipDate>2017-03-09</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>V000128</bioguideId>
+        <party>D</party>
+        <firstName>Chris</firstName>
+        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
+        <lastName>Van Hollen</lastName>
+        <state>MD</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1729</lisID>
+          <gpoId>7983</gpoId>
+          <bioguideId>V000128</bioguideId>
+        </identifiers>
+        <sponsorshipDate>2017-08-03</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>N000032</bioguideId>
+        <party>D</party>
+        <firstName>CLARENCE</firstName>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <lastName>NELSON</lastName>
+        <state>FL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>WILLIAM</middleName>
+        <identifiers>
+          <lisID>859</lisID>
+          <bioguideId>N000032</bioguideId>
+          <gpoId>8236</gpoId>
+        </identifiers>
+        <sponsorshipDate>2018-01-30</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>H001042</bioguideId>
+        <party>D</party>
+        <firstName>Mazie</firstName>
+        <fullName>Sen. Hirono, Mazie K. [D-HI]</fullName>
+        <lastName>Hirono</lastName>
+        <state>HI</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>K.</middleName>
+        <identifiers>
+          <bioguideId>H001042</bioguideId>
+          <gpoId>7913</gpoId>
+          <lisID>1844</lisID>
+        </identifiers>
+        <sponsorshipDate>2018-06-05</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>C001070</bioguideId>
+        <party>D</party>
+        <firstName>Bob</firstName>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <lastName>Casey</lastName>
+        <state>PA</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <lisID>1828</lisID>
+          <bioguideId>C001070</bioguideId>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <sponsorshipDate>2018-06-11</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
+      </item>
+      <item>
+        <bioguideId>D000622</bioguideId>
+        <party>D</party>
+        <firstName>Tammy</firstName>
+        <fullName>Sen. Duckworth, Tammy [D-IL]</fullName>
+        <lastName>Duckworth</lastName>
+        <state>IL</state>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <identifiers>
+          <bioguideId>D000622</bioguideId>
+          <lisID>2123</lisID>
+          <gpoId />
+        </identifiers>
+        <sponsorshipDate>2018-07-17</sponsorshipDate>
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <billNumber>116</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>NV</state>
-        <middleName />
-        <bioguideId>H001041</bioguideId>
-        <lastName>Heller</lastName>
-        <firstName>Dean</firstName>
-        <identifiers>
-          <bioguideId>H001041</bioguideId>
-          <gpoId>8060</gpoId>
-          <lisID>1863</lisID>
-        </identifiers>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <billType>S</billType>
-    <title>A bill to amend title 10, United States Code, to permit veterans who have a service-connected, permanent disability rated as total to travel on military aircraft in the same manner and to the same extent as retired members of the Armed Forces entitled to such travel.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Read twice and referred to the Committee on Armed Services.</text>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <originChamber>Senate</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-          <name>Armed Services Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T18:58:12Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <systemCode>ssas00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-13T10:07:33Z</updateDate>
     <titles>
       <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
         <title>A bill to amend title 10, United States Code, to permit veterans who have a service-connected, permanent disability rated as total to travel on military aircraft in the same manner and to the same extent as retired members of the Armed Forces entitled to such travel.</title>
         <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
+        <chamberName />
       </item>
       <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
         <title>A bill to amend title 10, United States Code, to permit veterans who have a service-connected, permanent disability rated as total to travel on military aircraft in the same manner and to the same extent as retired members of the Armed Forces entitled to such travel.</title>
         <chamberCode />
+        <titleType>Display Title</titleType>
         <parentTitleType />
+        <chamberName />
       </item>
     </titles>
+    <updateDate>2018-08-28T20:22:43Z</updateDate>
+    <calendarNumbers />
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-11T16:55:35Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p> This bill directs the Department of Defense (DOD) to provide transportation on scheduled and unscheduled military flights within the continental United States and on scheduled overseas flights on a space-available basis for veterans with a service-connected, permanent disability rated as total.</p> <p> In establishing space-available transportation priorities under the travel program, DOD shall provide transportation on the same basis as such transportation is provided to members of the Armed Forces entitled to retired or retainer pay.</p>]]></text>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>A bill to amend title 10, United States Code, to permit veterans who have a service-connected, permanent disability rated as total to travel on military aircraft in the same manner and to the same extent as retired members of the Armed Forces entitled to such travel.</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

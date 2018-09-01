@@ -1,298 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-12</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-13T04:55:31Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
+    <title>Cameras in the Courtroom Act</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:59:30Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CONNOLLY:H.R. 464.Congress has the power to enactthis legislation pursuantto the following:The ``necessary and proper'' clause of Article I, Section 8of the United StatesConstitution.[Page H471]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Broadcasting, cable, digital technologies</name>
+          </item>
+          <item>
+            <name>Due process and equal protection</name>
+          </item>
+          <item>
+            <name>Supreme Court</name>
+          </item>
+          <item>
+            <name>Television and film</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Law</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-02-15T19:55:23Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Cameras in the Courtroom Act</b></p> <p>This bill requires the Supreme Court to permit television coverage of all open sessions of the Court unless it decides by majority vote that allowing such coverage in a particular case would violate the due process rights of any of the parties involved.</p>]]></text>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <billType>HR</billType>
+    <latestAction>
+      <text>Referred to the Subcommittee on Courts, Intellectual Property, and the Internet.</text>
+      <links />
+      <actionDate>2017-02-06</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Law</name>
+    </policyArea>
+    <relatedBills>
       <item>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on the Judiciary.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
+        <type>HR</type>
+        <number>4504</number>
+        <latestTitle>Transparency in Government Act of 2017</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-11-30</actionDate>
+          <text>Referred to the Committee on Oversight and Government Reform, and in addition to the Committees on Rules, House Administration, the Judiciary, Ethics, Ways and Means, and Financial Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+      <item>
+        <type>S</type>
+        <number>649</number>
+        <latestTitle>Cameras in the Courtroom Act</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-03-15</actionDate>
+          <text>Read twice and referred to the Committee on the Judiciary. (text of measure as introduced: CR S1846)</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-12</introducedDate>
+    <actions>
+      <item>
+        <actionDate>2017-02-06</actionDate>
+        <committee>
+          <systemCode>hsju03</systemCode>
+          <name>Courts, Intellectual Property, and the Internet Subcommittee</name>
+        </committee>
         <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Courts, Intellectual Property, and the Internet.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on the Judiciary.</text>
         <committee>
           <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
         </committee>
-        <actionDate>2017-01-12</actionDate>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-12</actionDate>
         <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
+        <text>Introduced in House</text>
         <committee />
-        <actionDate>2017-01-12</actionDate>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
         <actionDate>2017-01-12</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
     </actions>
-    <recordedVotes />
-    <relatedBills />
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>464</billNumber>
+    <cboCostEstimates />
     <cosponsors>
       <item>
-        <lastName>Poe</lastName>
-        <state>TX</state>
-        <bioguideId>P000592</bioguideId>
         <firstName>Ted</firstName>
+        <lastName>Poe</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>P000592</bioguideId>
+        <district>2</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
+        <state>TX</state>
+        <party>R</party>
         <identifiers>
-          <bioguideId>P000592</bioguideId>
           <gpoId>8158</gpoId>
           <lisID>1802</lisID>
+          <bioguideId>P000592</bioguideId>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>R</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>2</district>
-        <fullName>Rep. Poe, Ted [R-TX-2]</fullName>
-        <middleName />
       </item>
       <item>
-        <lastName>Castor</lastName>
-        <state>FL</state>
-        <bioguideId>C001066</bioguideId>
         <firstName>Kathy</firstName>
-        <identifiers>
-          <bioguideId>C001066</bioguideId>
-          <gpoId>7883</gpoId>
-          <lisID>1839</lisID>
-        </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <lastName>Castor</lastName>
         <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>C001066</bioguideId>
         <district>14</district>
-        <fullName>Rep. Castor, Kathy [D-FL-14]</fullName>
         <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Castor, Kathy [D-FL-14]</fullName>
+        <state>FL</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1839</lisID>
+          <gpoId>7883</gpoId>
+          <bioguideId>C001066</bioguideId>
+        </identifiers>
       </item>
       <item>
-        <lastName>Cicilline</lastName>
-        <state>RI</state>
-        <bioguideId>C001084</bioguideId>
         <firstName>David</firstName>
+        <lastName>Cicilline</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>C001084</bioguideId>
+        <district>1</district>
+        <middleName>N.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Cicilline, David N. [D-RI-1]</fullName>
+        <state>RI</state>
+        <party>D</party>
         <identifiers>
+          <lisID>2055</lisID>
           <gpoId>8139</gpoId>
           <bioguideId>C001084</bioguideId>
-          <lisID>2055</lisID>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>1</district>
-        <fullName>Rep. Cicilline, David N. [D-RI-1]</fullName>
-        <middleName>N.</middleName>
       </item>
       <item>
-        <lastName>Cohen</lastName>
-        <state>TN</state>
-        <bioguideId>C001068</bioguideId>
         <firstName>Steve</firstName>
+        <lastName>Cohen</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>C001068</bioguideId>
+        <district>9</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
+        <state>TN</state>
+        <party>D</party>
         <identifiers>
           <lisID>1878</lisID>
-          <gpoId>8156</gpoId>
           <bioguideId>C001068</bioguideId>
+          <gpoId>8156</gpoId>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>9</district>
-        <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
-        <middleName />
       </item>
       <item>
-        <lastName>Lynch</lastName>
-        <state>MA</state>
-        <bioguideId>L000562</bioguideId>
         <firstName>Stephen</firstName>
+        <lastName>Lynch</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>L000562</bioguideId>
+        <district>8</district>
+        <middleName>F.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Lynch, Stephen F. [D-MA-8]</fullName>
+        <state>MA</state>
+        <party>D</party>
         <identifiers>
+          <lisID>1686</lisID>
           <gpoId>7974</gpoId>
           <bioguideId>L000562</bioguideId>
-          <lisID>1686</lisID>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>8</district>
-        <fullName>Rep. Lynch, Stephen F. [D-MA-8]</fullName>
-        <middleName>F.</middleName>
       </item>
       <item>
-        <lastName>NADLER</lastName>
-        <state>NY</state>
-        <bioguideId>N000002</bioguideId>
         <firstName>JERROLD</firstName>
+        <lastName>NADLER</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>N000002</bioguideId>
+        <district>10</district>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Nadler, Jerrold [D-NY-10]</fullName>
+        <state>NY</state>
+        <party>D</party>
         <identifiers>
           <bioguideId>N000002</bioguideId>
-          <lisID>850</lisID>
           <gpoId>8069</gpoId>
+          <lisID>850</lisID>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>10</district>
-        <fullName>Rep. Nadler, Jerrold [D-NY-10]</fullName>
-        <middleName />
       </item>
       <item>
-        <lastName>NORTON</lastName>
-        <state>DC</state>
-        <bioguideId>N000147</bioguideId>
         <firstName>ELEANOR</firstName>
+        <lastName>NORTON</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>N000147</bioguideId>
+        <district>0</district>
+        <middleName>HOLMES</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
+        <state>DC</state>
+        <party>D</party>
         <identifiers>
           <lisID>868</lisID>
           <gpoId>7871</gpoId>
           <bioguideId>N000147</bioguideId>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
-        <district>0</district>
-        <fullName>Rep. Norton, Eleanor Holmes [D-DC-At Large]</fullName>
-        <middleName>HOLMES</middleName>
       </item>
       <item>
-        <lastName>Quigley</lastName>
-        <state>IL</state>
-        <bioguideId>Q000023</bioguideId>
         <firstName>Mike</firstName>
-        <identifiers>
-          <gpoId>7925</gpoId>
-          <bioguideId>Q000023</bioguideId>
-          <lisID>1967</lisID>
-        </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <lastName>Quigley</lastName>
         <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>Q000023</bioguideId>
         <district>5</district>
-        <fullName>Rep. Quigley, Mike [D-IL-5]</fullName>
         <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Quigley, Mike [D-IL-5]</fullName>
+        <state>IL</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1967</lisID>
+          <bioguideId>Q000023</bioguideId>
+          <gpoId>7925</gpoId>
+        </identifiers>
       </item>
       <item>
-        <lastName>Yarmuth</lastName>
-        <state>KY</state>
-        <bioguideId>Y000062</bioguideId>
         <firstName>John</firstName>
+        <lastName>Yarmuth</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <bioguideId>Y000062</bioguideId>
+        <district>3</district>
+        <middleName>A.</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <fullName>Rep. Yarmuth, John A. [D-KY-3]</fullName>
+        <state>KY</state>
+        <party>D</party>
         <identifiers>
+          <bioguideId>Y000062</bioguideId>
           <lisID>1853</lisID>
           <gpoId>7955</gpoId>
-          <bioguideId>Y000062</bioguideId>
         </identifiers>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+      </item>
+      <item>
+        <firstName>Keith</firstName>
+        <lastName>Ellison</lastName>
         <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-24</sponsorshipDate>
+        <bioguideId>E000288</bioguideId>
+        <district>5</district>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Ellison, Keith [D-MN-5]</fullName>
+        <state>MN</state>
+        <party>D</party>
+        <identifiers>
+          <lisID>1857</lisID>
+          <gpoId>8005</gpoId>
+          <bioguideId>E000288</bioguideId>
+        </identifiers>
+      </item>
+      <item>
+        <firstName>Raul</firstName>
+        <lastName>Grijalva</lastName>
+        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-02-21</sponsorshipDate>
+        <bioguideId>G000551</bioguideId>
         <district>3</district>
-        <fullName>Rep. Yarmuth, John A. [D-KY-3]</fullName>
-        <middleName>A.</middleName>
+        <middleName>M.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <fullName>Rep. Grijalva, Raul M. [D-AZ-3]</fullName>
+        <state>AZ</state>
+        <party>D</party>
+        <identifiers>
+          <gpoId>7804</gpoId>
+          <lisID>1708</lisID>
+          <bioguideId>G000551</bioguideId>
+        </identifiers>
       </item>
     </cosponsors>
-    <billNumber>464</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <state>VA</state>
-        <middleName>E.</middleName>
-        <bioguideId>C001078</bioguideId>
-        <lastName>Connolly</lastName>
-        <firstName>Gerald</firstName>
-        <identifiers>
-          <lisID>1959</lisID>
-          <gpoId>8202</gpoId>
-          <bioguideId>C001078</bioguideId>
-        </identifiers>
-        <fullName>Rep. Connolly, Gerald E. [D-VA-11]</fullName>
-        <district>11</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To permit the televising of Supreme Court proceedings.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on the Judiciary.</text>
-      <actionDate>2017-01-12</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <name>Judiciary Committee</name>
           <systemCode>hsju00</systemCode>
           <type>Standing</type>
-          <subcommittees />
           <activities>
             <item>
               <date>2017-01-12T15:01:20Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <name>Judiciary Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsju03</systemCode>
+              <name>Courts, Intellectual Property, and the Internet Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-02-06T22:33:57Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-13T10:07:01Z</updateDate>
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-13T04:55:31Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>C001078</bioguideId>
+        <party>D</party>
+        <firstName>Gerald</firstName>
+        <fullName>Rep. Connolly, Gerald E. [D-VA-11]</fullName>
+        <state>VA</state>
+        <district>11</district>
+        <lastName>Connolly</lastName>
+        <middleName>E.</middleName>
+        <identifiers>
+          <bioguideId>C001078</bioguideId>
+          <lisID>1959</lisID>
+          <gpoId>8202</gpoId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
     <titles>
       <item>
-        <title>To permit the televising of Supreme Court proceedings.</title>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
+        <title>Cameras in the Courtroom Act</title>
         <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
       <item>
         <title>To permit the televising of Supreme Court proceedings.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Cameras in the Courtroom Act</title>
+        <chamberCode />
         <titleType>Display Title</titleType>
         <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Cameras in the Courtroom Act</title>
         <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
         <chamberName />
       </item>
     </titles>

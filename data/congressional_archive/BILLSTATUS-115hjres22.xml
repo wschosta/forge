@@ -1,153 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-06</introducedDate>
-    <committeeReports />
-    <laws />
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <billType>HJRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-25</actionDate>
+      <text>Referred to the Subcommittee on Environment.</text>
+    </latestAction>
     <createDate>2017-01-07T04:48:25Z</createDate>
+    <notes />
     <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
       <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <name>Environment and the Economy Subcommittee</name>
+          <systemCode>hsif18</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <committee>
+          <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+        </committee>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-06</actionDate>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
         <actionCode>H11100</actionCode>
-        <links />
       </item>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Introduced in House</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-06</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <links />
       </item>
       <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-06</actionDate>
+        <text>Introduced in House</text>
+        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-06</actionDate>
-        <committee />
-        <text>Introduced in House</text>
         <actionCode>1000</actionCode>
-        <links />
       </item>
       <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
       </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
     </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>22</billNumber>
-    <amendments />
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Administrative law and regulatory procedures</name>
+          </item>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Climate change and greenhouse gases</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Environmental Protection Agency (EPA)</name>
+          </item>
+          <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
+            <name>Environmental technology</name>
+          </item>
+          <item>
+            <name>Industrial facilities</name>
+          </item>
+          <item>
+            <name>Oil and gas</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Environmental Protection</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>PA</state>
-        <middleName />
-        <bioguideId>P000605</bioguideId>
-        <lastName>Perry</lastName>
-        <firstName>Scott</firstName>
-        <identifiers>
-          <lisID>2157</lisID>
-          <gpoId />
-          <bioguideId>P000605</bioguideId>
-        </identifiers>
-        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
-        <district>4</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries>
-        <item>
-          <text><![CDATA[<p>Nullifies the Environmental Protection Agency's rule published on June 3, 2016, that revised new source performance standards (NSPS) under the Clean Air Act and established new standards for emissions of greenhouse gases and volatile organic compounds from the oil and natural gas sector.</p>]]></text>
-          <lastSummaryUpdateDate>2017-01-11T21:09:56Z</lastSummaryUpdateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <versionCode>00</versionCode>
-          <updateDate>2017-01-06T05:00:00Z</updateDate>
-          <name>Introduced in House</name>
-          <actionDate>2017-01-06</actionDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HJRES</billType>
+    <billNumber>22</billNumber>
     <title>Providing for congressional disapproval under chapter 8 of title 5, United States Code, of a rule submitted by the Environmental Protection Agency relating to "Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources".</title>
-    <policyArea>
-      <name>Environmental Protection</name>
-    </policyArea>
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <actionDate>2017-01-06</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 4 (Friday, January 6, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. PERRY:H.J. Res. 22.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the Constitution of theUnited States____________________[Page H195]</pre>]]></constitutionalAuthorityStatementText>
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-          <subcommittees />
           <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsif18</systemCode>
+              <name>Environment and the Economy Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:45:22Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Energy and Commerce Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-06T17:00:30Z</date>
             </item>
           </activities>
-          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-11T21:31:13Z</updateDate>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:56:35Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-06</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>P000605</bioguideId>
+        <identifiers>
+          <lisID>2157</lisID>
+          <bioguideId>P000605</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Perry, Scott [R-PA-4]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Scott</firstName>
+        <state>PA</state>
+        <lastName>Perry</lastName>
+        <district>4</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
     <titles>
       <item>
-        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <chamberName />
-        <title>Providing for congressional disapproval under chapter 8 of title 5, United States Code, of a rule submitted by the Environmental Protection Agency relating to "Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources".</title>
+        <chamberCode />
         <parentTitleType />
+        <title>Providing for congressional disapproval under chapter 8 of title 5, United States Code, of a rule submitted by the Environmental Protection Agency relating to "Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources".</title>
       </item>
       <item>
-        <chamberCode />
         <titleType>Display Title</titleType>
         <chamberName />
-        <title>Providing for congressional disapproval under chapter 8 of title 5, United States Code, of a rule submitted by the Environmental Protection Agency relating to "Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources".</title>
+        <chamberCode />
         <parentTitleType />
+        <title>Providing for congressional disapproval under chapter 8 of title 5, United States Code, of a rule submitted by the Environmental Protection Agency relating to "Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources".</title>
       </item>
     </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-06T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This joint resolution nullifies the Environmental Protection Agency's rule published on June 3, 2016, that revised new source performance standards under the Clean Air Act and established new standards for emissions of greenhouse gases and volatile organic compounds from the oil and natural gas sector.</p>]]></text>
+          <actionDate>2017-01-06</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-30T15:00:12Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

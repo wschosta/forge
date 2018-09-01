@@ -1,64 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cboCostEstimates />
-    <relatedBills />
-    <congress>115</congress>
-    <introducedDate>2017-01-05</introducedDate>
-    <recordedVotes />
-    <titles>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>California Desert Protection and Recreation Act of 2017</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>A bill to provide for conservation, enhanced recreation opportunities, and development of renewable energy in the California Desert Conservation Area, and for other purposes.</title>
-      </item>
-      <item>
-        <chamberName />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>California Desert Protection and Recreation Act of 2017</title>
-      </item>
-    </titles>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <policyArea>
-      <name>Public Lands and Natural Resources</name>
-    </policyArea>
+    <title>California Desert Protection and Recreation Act of 2017</title>
+    <originChamber>Senate</originChamber>
+    <updateDate>2018-08-28T20:22:20Z</updateDate>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Advisory bodies</name>
+          </item>
+          <item>
+            <name>Air quality</name>
+          </item>
+          <item>
+            <name>Alternative and renewable resources</name>
+          </item>
+          <item>
+            <name>Animal and plant health</name>
+          </item>
+          <item>
+            <name>California</name>
+          </item>
+          <item>
+            <name>Climate change and greenhouse gases</name>
+          </item>
+          <item>
+            <name>Congressional oversight</name>
+          </item>
+          <item>
+            <name>Endangered and threatened species</name>
+          </item>
+          <item>
+            <name>Energy revenues and royalties</name>
+          </item>
+          <item>
+            <name>Environmental assessment, monitoring, research</name>
+          </item>
+          <item>
+            <name>Forests, forestry, trees</name>
+          </item>
+          <item>
+            <name>Government studies and investigations</name>
+          </item>
+          <item>
+            <name>Government trust funds</name>
+          </item>
+          <item>
+            <name>Historical and cultural resources</name>
+          </item>
+          <item>
+            <name>Indian lands and resources rights</name>
+          </item>
+          <item>
+            <name>Land transfers</name>
+          </item>
+          <item>
+            <name>Land use and conservation</name>
+          </item>
+          <item>
+            <name>Licensing and registrations</name>
+          </item>
+          <item>
+            <name>Mining</name>
+          </item>
+          <item>
+            <name>Motor vehicles</name>
+          </item>
+          <item>
+            <name>Outdoor recreation</name>
+          </item>
+          <item>
+            <name>Parks, recreation areas, trails</name>
+          </item>
+          <item>
+            <name>Reptiles</name>
+          </item>
+          <item>
+            <name>Veterinary medicine and animal diseases</name>
+          </item>
+          <item>
+            <name>Water quality</name>
+          </item>
+          <item>
+            <name>Water use and supply</name>
+          </item>
+          <item>
+            <name>Wilderness and natural areas, wildlife refuges, wild rivers, habitats</name>
+          </item>
+          <item>
+            <name>Wildlife conservation and habitat protection</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Public Lands and Natural Resources</name>
         </policyArea>
-        <legislativeSubjects />
       </billSubjects>
     </subjects>
-    <amendments />
+    <version>1.0.0</version>
+    <billType>S</billType>
+    <latestAction>
+      <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+      <links />
+      <actionDate>2017-07-26</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Public Lands and Natural Resources</name>
+    </policyArea>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2018-06-26</actionDate>
+          <text>Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>HR</type>
+        <latestTitle>California Off-Road Recreation and Conservation Act</latestTitle>
+        <number>857</number>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-05</introducedDate>
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
+      <item>
+        <actionDate>2017-07-26</actionDate>
+        <committee>
+          <systemCode>sseg03</systemCode>
+          <name>Public Lands, Forests, and Mining Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Energy and Natural Resources Subcommittee on Public Lands, Forests, and Mining. Hearings held.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-05</actionDate>
         <committee>
-          <name>Energy and Natural Resources Committee</name>
           <systemCode>sseg00</systemCode>
+          <name>Energy and Natural Resources Committee</name>
         </committee>
         <links>
           <link>
-            <name>S114-115</name>
             <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S114-115</url>
+            <name>S114-115</name>
           </link>
         </links>
         <sourceSystem>
@@ -69,6 +162,9 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <text>Introduced in Senate</text>
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
@@ -76,64 +172,132 @@
         <committee />
         <actionDate>2017-01-05</actionDate>
         <actionCode>10000</actionCode>
-        <text>Introduced in Senate</text>
-        <links />
-        <type>IntroReferral</type>
       </item>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <hearingsHeld>1</hearingsHeld>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
       <actionByCounts>
-        <senate>2</senate>
+        <senate>3</senate>
       </actionByCounts>
     </actions>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>32</billNumber>
+    <cboCostEstimates />
+    <cosponsors>
+      <item>
+        <fullName>Sen. Harris, Kamala D. [D-CA]</fullName>
+        <party>D</party>
+        <bioguideId>H001075</bioguideId>
+        <identifiers>
+          <lisID>2301</lisID>
+          <bioguideId>H001075</bioguideId>
+          <gpoId />
+        </identifiers>
+        <lastName>Harris</lastName>
+        <sponsorshipDate>2017-01-30</sponsorshipDate>
+        <middleName>D.</middleName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <firstName>Kamala</firstName>
+        <state>CA</state>
+        <sponsorshipWithdrawnDate />
+      </item>
+    </cosponsors>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>California Desert Protection and Recreation Act of 2017</b></p><p>This bill amends the California Desert Protection Act of 1994 to, among other things:</p><ul><li> establish or designate wilderness areas, a special management area, off-highway vehicle recreation areas, and a national scenic area;</li><li> release specified wilderness study areas;</li><li> adjust national park and preserve boundaries; and</li><li> specify land withdrawals and conveyances.</li></ul><p>Specified federal land shall be taken into trust for the Lone Pine Paiute-Shoshone Tribe.</p><p> Lands and interests in land, including improvements, outside the boundary of Joshua Tree National Park in California may be acquired for the purpose of operating a visitor center.</p><p>The bill makes amendments to the California Desert Protection Act of 1994 regarding the California State School lands.</p><p>The bill amends the Wild and Scenic Rivers Act to designate specified segments of rivers and creeks as components of the National Wild and Scenic Rivers System.</p><p>The bill establishes the Renewable Energy Resource Conservation Fund for use in regions impacted by the development of wind or solar energy.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2018-07-20T15:47:51Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <actionDate>2017-01-05</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <committees>
       <billCommittees>
         <item>
+          <systemCode>sseg00</systemCode>
+          <subcommittees>
+            <item>
+              <activities>
+                <item>
+                  <name>Hearings by</name>
+                  <date>2017-07-26T13:45:42Z</date>
+                </item>
+              </activities>
+              <name>Public Lands, Forests, and Mining Subcommittee</name>
+              <systemCode>sseg03</systemCode>
+            </item>
+          </subcommittees>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-05T15:36:55Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>sseg00</systemCode>
           <name>Energy and Natural Resources Committee</name>
           <chamber>Senate</chamber>
+          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
-    <billNumber>32</billNumber>
-    <updateDate>2017-01-21T10:04:57Z</updateDate>
-    <title>California Desert Protection and Recreation Act of 2017</title>
-    <billType>S</billType>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Read twice and referred to the Committee on Energy and Natural Resources. (Sponsor introductory remarks on measure: CR S114-115)</text>
-      <links />
-    </latestAction>
-    <committeeReports />
+    <notes />
+    <amendments />
+    <recordedVotes />
+    <createDate>2017-01-06T04:57:27Z</createDate>
     <sponsors>
       <item>
-        <middleName />
-        <state>CA</state>
         <bioguideId>F000062</bioguideId>
+        <party>D</party>
+        <firstName>DIANNE</firstName>
+        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
+        <state>CA</state>
+        <lastName>FEINSTEIN</lastName>
+        <middleName />
         <identifiers>
+          <lisID>1332</lisID>
           <gpoId>8338</gpoId>
           <bioguideId>F000062</bioguideId>
-          <lisID>1332</lisID>
         </identifiers>
-        <lastName>FEINSTEIN</lastName>
         <byRequestType />
-        <firstName>DIANNE</firstName>
-        <party>D</party>
-        <fullName>Sen. Feinstein, Dianne [D-CA]</fullName>
       </item>
     </sponsors>
-    <cosponsors />
-    <createDate>2017-01-06T04:57:27Z</createDate>
-    <calendarNumbers />
-    <notes />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>California Desert Protection and Recreation Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to provide for conservation, enhanced recreation opportunities, and development of renewable energy in the California Desert Conservation Area, and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>California Desert Protection and Recreation Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>California Desert Protection and Recreation Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,235 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-13</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-14T04:47:32Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>7</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>4</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to House Oversight and Government Reform</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
-          <systemCode>hsgo00</systemCode>
-          <name>Oversight and Government Reform Committee</name>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to House Administration</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
-          <systemCode>hsha00</systemCode>
-          <name>House Administration Committee</name>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to House Energy and Commerce</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
-        <actionCode>H11100-A</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to House Ways and Means</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
-          <systemCode>hswm00</systemCode>
-          <name>Ways and Means Committee</name>
-        </committee>
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-13</actionDate>
-      </item>
-    </actions>
-    <recordedVotes />
-    <relatedBills />
-    <cosponsors />
-    <billNumber>537</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>AZ</state>
-        <middleName />
-        <bioguideId>B001302</bioguideId>
-        <lastName>Biggs</lastName>
-        <firstName>Andy</firstName>
-        <identifiers>
-          <gpoId />
-          <bioguideId>B001302</bioguideId>
-          <lisID>2307</lisID>
-        </identifiers>
-        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
-        <district>5</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To amend the Internal Revenue Code of 1986 to provide an exemption to the individual mandate to maintain health coverage for individuals residing in counties with fewer than 2 health insurance issuers offering plans on an Exchange; to require members of Congress and congressional staff to abide by the Patient Protection and Affordable Care Act with respect to health insurance coverage; and for other purposes.</title>
-    <policyArea />
-    <congress>115</congress>
-    <latestAction>
-      <text>Referred to House Oversight and Government Reform</text>
-      <actionDate>2017-01-13</actionDate>
-      <links />
-    </latestAction>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <name>Oversight and Government Reform Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:07:45Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hsgo00</systemCode>
-        </item>
-        <item>
-          <name>House Administration Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:07:40Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hsha00</systemCode>
-        </item>
-        <item>
-          <name>Energy and Commerce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:07:35Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hsif00</systemCode>
-        </item>
-        <item>
-          <name>Ways and Means Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:07:30Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <systemCode>hswm00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-14T09:58:36Z</updateDate>
     <titles>
       <item>
-        <title>To amend the Internal Revenue Code of 1986 to provide an exemption to the individual mandate to maintain health coverage for individuals residing in counties with fewer than 2 health insurance issuers offering plans on an Exchange; to require members of Congress and congressional staff to abide by the Patient Protection and Affordable Care Act with respect to health insurance coverage; and for other purposes.</title>
+        <title>Budget Process Accountability Act</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To amend the Internal Revenue Code of 1986 to provide an exemption to the individual mandate to maintain health coverage for individuals residing in counties with fewer than 2 health insurance issuers offering plans on an Exchange; to require Members of Congress and congressional staff to abide by the Patient Protection and Affordable Care Act with respect to health insurance coverage; and for other purposes.</title>
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
         <chamberCode />
         <chamberName />
       </item>
       <item>
-        <title>To amend the Internal Revenue Code of 1986 to provide an exemption to the individual mandate to maintain health coverage for individuals residing in counties with fewer than 2 health insurance issuers offering plans on an Exchange; to require members of Congress and congressional staff to abide by the Patient Protection and Affordable Care Act with respect to health insurance coverage; and for other purposes.</title>
+        <title>Budget Process Accountability Act</title>
         <titleType>Display Title</titleType>
         <parentTitleType />
         <chamberCode />
         <chamberName />
       </item>
+      <item>
+        <title>Budget Process Accountability Act</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
     </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the Subcommittee on Health.</text>
+      <actionDate>2017-01-25</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr.BIGGS:H.R. 537.Congress has the power to enact this legislation pursuantto thefollowing:Article I, Section 8 enumerated powers[Page H547]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hsif00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-13T14:07:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Energy and Commerce Committee</name>
+          <subcommittees>
+            <item>
+              <systemCode>hsif14</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <date>2017-01-25T14:40:21Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <systemCode>hsgo00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-13T14:07:45Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Oversight and Government Reform Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <systemCode>hsha00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-13T14:07:40Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>House Administration Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+        <item>
+          <systemCode>hswm00</systemCode>
+          <type>Standing</type>
+          <activities>
+            <item>
+              <date>2017-01-13T14:07:30Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <name>Ways and Means Committee</name>
+          <subcommittees />
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsgo00</systemCode>
+          <name>Oversight and Government Reform Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsha00</systemCode>
+          <name>House Administration Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <text>Referred to the Committee on Ways and Means, and in addition to the Committees on Energy and Commerce, House Administration, and Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>8</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>4</billReferrals>
+        <placeholderTextForH>1</placeholderTextForH>
+      </actionTypeCounts>
+    </actions>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Biggs, Andy [R-AZ-5]</fullName>
+        <party>R</party>
+        <bioguideId>B001302</bioguideId>
+        <identifiers>
+          <bioguideId>B001302</bioguideId>
+          <lisID>2307</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Biggs</lastName>
+        <district>5</district>
+        <middleName />
+        <firstName>Andy</firstName>
+        <byRequestType />
+        <state>AZ</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:59:54Z</updateDate>
+    <billNumber>537</billNumber>
+    <title>Budget Process Accountability Act</title>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>521</number>
+        <latestAction>
+          <actionDate>2017-01-13</actionDate>
+          <text>Referred to the House Committee on Ways and Means.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Protection from Insurance Exchange Monopolies Act</latestTitle>
+      </item>
+      <item>
+        <type>HR</type>
+        <number>499</number>
+        <latestAction>
+          <actionDate>2017-01-31</actionDate>
+          <text>Referred to the Subcommittee on Health.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>No Exemption for Washington from Obamacare Act</latestTitle>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-14T04:47:32Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong></strong><b>Budget Process Accountability Act</b></p> This bill amends the Internal Revenue Code to exempt individuals from the requirement to maintain minimum essential health care coverage if they reside in a county where fewer than two health insurers offer insurance on the health insurance exchange. <p>This bill amends the Patient Protection and Affordable Care Act to extend the requirement for participation in a health insurance exchange to the President, Vice President, executive branch political appointees, and employees of congressional committees and leadership offices of Congress. Currently, this requirement applies to Members of Congress and their staff.</p> <p>The government is prohibited from contributing to or subsidizing the health insurance coverage of officials and employees subject to this requirement.</p> <p> <p><BR> </p>]]></text>
+          <actionDate>2017-01-13</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-27T14:50:06Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors />
+    <introducedDate>2017-01-13</introducedDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>Congressional leadership</name>
+          </item>
+          <item>
+            <name>Congressional officers and employees</name>
+          </item>
+          <item>
+            <name>Federal officials</name>
+          </item>
+          <item>
+            <name>Government employee pay, benefits, personnel management</name>
+          </item>
+          <item>
+            <name>Health care costs and insurance</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Presidents and presidential powers, Vice Presidents</name>
+          </item>
+          <item>
+            <name>Sales and excise taxes</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

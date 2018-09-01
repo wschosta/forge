@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <title>MOBILE NOW Act</title>
+    <originChamber>Senate</originChamber>
+    <updateDate>2018-08-28T20:22:15Z</updateDate>
+    <calendarNumbers>
+      <item>
+        <calendar>Senate Calendar of Business</calendar>
+        <number>0017</number>
+      </item>
+    </calendarNumbers>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -70,10 +79,171 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <version>1.0.0</version>
+    <billType>S</billType>
+    <latestAction>
+      <text>Held at the desk.</text>
+      <links />
+      <actionTime>14:31:57</actionTime>
+      <actionDate>2017-08-04</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Science, Technology, Communications</name>
+    </policyArea>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Consolidated Appropriations Act, 2018</latestTitle>
+        <type>HR</type>
+        <congress>115</congress>
+        <number>1625</number>
+        <latestAction>
+          <text>Became Public Law No: 115-141.</text>
+          <actionDate>2018-03-23</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-03</introducedDate>
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H15000</actionCode>
+        <text>Held at the desk.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>14:31:57</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <actionCode>H14000</actionCode>
+        <text>Received in the House.</text>
+        <committee />
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionTime>13:06:28</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-08-04</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Message on Senate action sent to the House.</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4810-4815</url>
+            <name>S4810-4815</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4810-4815; text: CR S4810-4815)</text>
+        <type>Floor</type>
+      </item>
+      <item>
+        <actionDate>2017-08-03</actionDate>
+        <actionCode>17000</actionCode>
+        <text>Passed/agreed to in Senate: Passed Senate with an amendment by Unanimous Consent.(consideration: CR S4810-4815; text: CR S4810-4815)</text>
+        <committee />
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/senate-section/page/S4810-4815</url>
+            <name>S4810-4815</name>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-03-21</actionDate>
+        <committee />
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 17.</text>
+        <type>Calendars</type>
+      </item>
+      <item>
+        <actionDate>2017-03-21</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/4</url>
+            <name>report No. 115-4</name>
+          </link>
+        </links>
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune with an amendment in the nature of a substitute. With written report No. 115-4.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-03-21</actionDate>
+        <actionCode>14000</actionCode>
+        <text>Committee on Commerce, Science, and Transportation. Reported by Senator Thune with an amendment in the nature of a substitute. With written report No. 115-4.</text>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-report/115th-congress/senate-report/4</url>
+            <name>report No. 115-4</name>
+          </link>
+        </links>
+        <type>Committee</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-24</actionDate>
+        <committee>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>0</code>
+          <name>Senate</name>
+        </sourceSystem>
+        <text>Committee on Commerce, Science, and Transportation. Ordered to be reported with an amendment in the nature of a substitute favorably.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-03</actionDate>
         <committee>
@@ -89,129 +259,312 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <type>IntroReferral</type>
-        <text>Introduced in Senate</text>
-        <committee />
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>10000</actionCode>
       </item>
       <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
+        <receivedInTheHouse>1</receivedInTheHouse>
+        <passedSenate>1</passedSenate>
+        <placedOnCalendarGeneralOrders>1</placedOnCalendarGeneralOrders>
+        <reportedToSenate>2</reportedToSenate>
+        <sentToHouse>1</sentToHouse>
+        <passedAgreedToInSenate>1</passedAgreedToInSenate>
+        <orderedReported>1</orderedReported>
+        <heldAtTheDesk>1</heldAtTheDesk>
         <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>2</houseOfRepresentatives>
+        <senate>9</senate>
+      </actionByCounts>
     </actions>
-    <policyArea>
-      <name>Science, Technology, Communications</name>
-    </policyArea>
-    <notes />
-    <createDate>2017-01-04T04:47:42Z</createDate>
-    <title>MOBILE NOW Act</title>
-    <relatedBills />
+    <laws />
+    <congress>115</congress>
+    <committeeReports>
+      <committeeReport>
+        <citation>S. Rept. 115-4</citation>
+      </committeeReport>
+    </committeeReports>
+    <billNumber>19</billNumber>
+    <cboCostEstimates>
+      <item>
+        <pubDate>2017-02-13T21:59:20Z</pubDate>
+        <title>S. 19, Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
+        <url>https://www.cbo.gov/publication/52422</url>
+      </item>
+    </cboCostEstimates>
     <cosponsors>
       <item>
+        <party>D</party>
+        <state>FL</state>
+        <bioguideId>N000032</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>NELSON</lastName>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <firstName>CLARENCE</firstName>
+        <sponsorshipDate>2017-01-03</sponsorshipDate>
+        <middleName>WILLIAM</middleName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <bioguideId>N000032</bioguideId>
           <lisID>859</lisID>
+          <bioguideId>N000032</bioguideId>
           <gpoId>8236</gpoId>
         </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>NELSON</lastName>
-        <middleName>WILLIAM</middleName>
-        <bioguideId>N000032</bioguideId>
-        <sponsorshipDate>2017-01-03</sponsorshipDate>
-        <party>D</party>
-        <firstName>CLARENCE</firstName>
-        <state>FL</state>
-        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
-        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <cboCostEstimates />
-    <updateDate>2017-01-10T10:34:00Z</updateDate>
-    <laws />
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><b>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act or the MOBILE NOW Act </b></p> <p>This bill requires the National Telecommunications and Information Administration (NTIA) and the Federal Communications Commission (FCC), by December 31, 2020, to make available at least 255 megahertz of federal and nonfederal spectrum below the frequency of 6000 megahertz for mobile and fixed wireless broadband use. At least: (1) 100 megahertz shall be made available on an unlicensed basis; and (2) 100 megahertz shall be made available on an exclusive, licensed basis for commercial mobile use subject to potential continued use by incumbent federal entities in designated geographic areas.</p> <p>The NTIA must assess the feasibility of, and the FCC must consider service rules authorizing, mobile or fixed terrestrial wireless operations in specified millimeter wave bands. </p> <p>The Department of Commerce and the FCC must evaluate allowing commercial wireless services to share frequencies between 3100 and 4200 megahertz. </p> <p>Before 2018, the FCC must take action in its Program Alternatives for Small Wireless Communications Facility Deployments proceeding.</p> <p>The Middle Class Tax Relief and Job Creation Act of 2012 is amended to require executive agencies, within 270 days after receiving an application, to grant or deny easements, rights-of-way, or leases on federal property for communications facility installations. Executive agencies must: (1) notify applicants of the reasons for denials, and (2) designate an agency point of contact for applicants. The bill expands the categories of equipment for which applicants may seek such easements, rights-of-way, or leases.</p> <p>To facilitate installation of broadband infrastructure, the Department of Transportation must ensure that states receiving federal-aid highway funds: (1) identify a broadband utility coordinator to coordinate the broadband infrastructure right-of-way needs of the state with federal-aid highway projects, (2) register broadband infrastructure entities that seek to be included in those coordination efforts, (3) coordinate statewide telecommunication and broadband plans and state and local transportation and land use plans, and (4) minimize repeated excavations.</p> <p>The Office of Science and Technology Policy (OSTP) must establish a single database of real property owned, leased, or managed by executive agencies that is capable of supporting a communications facility installation. The OSTP must make the database available to: (1) entities that construct or operate communications facility installations or provide communications service, and (2) state and local governments so that they may provide information regarding state and local properties to include in the database. </p> <p>The Office of Management and Budget may provide pre-auction funding to federal agencies for auctions intended to occur within eight years (currently, five years) after the transfer of funds. Federal entities may request an immediate transfer of funds to pay for relocation or sharing costs after the frequencies are reallocated by competitive bidding.</p> <p>The Government Accountability Office must recommend policies to increase broadband Internet access in low-income neighborhoods, particularly for elementary and secondary school-aged children.</p> <p>The FCC must: (1) assess options for programs that allow licensees for exclusive use of spectrum in specific geographic areas to make unused spectrum available to unaffiliated small carriers or unaffiliated carriers serving rural areas, and (2) develop a national plan for making additional radio frequency bands available for unlicensed operations.</p> <p>The NTIA must conduct prize competitions to accelerate technology that improves spectrum efficiency. </p> <p><i>Wireless Telecommunications Tax and Fee Collection Fairness Act</i></p> <p>State and local jurisdictions are prohibited from requiring a person to collect from, or remit on behalf of, any other person a state or local tax, fee, or surcharge imposed on the purchase or use of any wireless telecommunications service within the state unless the collection or remittance is in connection with a financial transaction between: (1) the person that the state or local jurisdiction requires to collect or remit the tax, fee, or surcharge; and (2) the purchaser or user of the wireless telecommunications service. Any person who is aggrieved by a violation of such prohibition may bring a civil action for equitable relief.</p>]]></text>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <lastSummaryUpdateDate>2017-02-23T21:11:46Z</lastSummaryUpdateDate>
+        </item>
+        <item>
+          <updateDate>2017-03-21T12:28:45Z</updateDate>
+          <versionCode>01</versionCode>
+          <name>Reported to Senate with amendment(s)</name>
+          <text><![CDATA[<p><b>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act or the MOBILE NOW Act </b></p> <p>(Sec. 3) This bill requires the National Telecommunications and Information Administration (NTIA) and the Federal Communications Commission (FCC), by December 31, 2020, to make available at least 255 megahertz of federal and nonfederal spectrum below the frequency of 6000 megahertz for mobile and fixed wireless broadband use. At least: (1) 100 megahertz shall be made available on an unlicensed basis; and (2) 100 megahertz shall be made available on an exclusive, licensed basis for commercial mobile use, pursuant to the FCC's authority to implement licensing in a flexible manner, and subject to potential continued use of such spectrum by incumbent federal entities in designated geographic areas indefinitely or for a length of time stipulated in transition plans approved by an NTIA technical panel for those incumbent entities to relocate to alternate spectrum.</p> <p>In making such spectrum available, the Department of Commerce and the FCC must consider: (1) the need to preserve critical existing and planned federal government capabilities; (2) the impact on existing state, local, and tribal government capabilities; (3) international implications; (4) appropriate enforcement mechanisms and authorities; and (5) the importance of the deployment of wireless broadband services in rural areas.</p> <p>(Sec. 4) The NTIA must submit to Congress and the FCC an assessment of the feasibility of authorizing mobile or fixed terrestrial wireless operations, including for advanced mobile service operations, on federal entities and operations in specified frequency bands. The FCC must publish a notice of proposed rulemaking within two years after enactment of this bill, or within 90 days after it receives the NTIA's feasibility assessment, whichever is earlier, to consider service rules authorizing such operations.</p> <p>(Sec. 5) Commerce and the FCC must submit reports evaluating the feasibility of allowing commercial wireless services to share use of specified frequencies between 3100 and 4200 megahertz. If such sharing is feasible, the reports must identify which of the frequencies are most suitable for sharing with commercial wireless services through the assignment of new licenses by competitive bidding, for sharing with unlicensed operations, or through a combination of licensing and unlicensed operations. The FCC must seek public comment regarding these reports. </p> <p>(Sec. 6) The Middle Class Tax Relief and Job Creation Act of 2012 is amended to require executive agencies, within 270 days after receiving an application, to grant or deny easements, rights-of-way, or leases to, in, over, or on federal property to install, construct, modify, or maintain a communications facility installation. Executive agencies must: (1) notify applicants of the reasons for denials, and (2) designate an agency point of contact for applicants. The bill expands the categories of infrastructure, antennas, wiring, and wireless transmission equipment for which applicants may seek such easements, rights-of-way, or leases.</p> <p>The NTIA must coordinate with the Departments of the Interior, Agriculture, Defense, and Transportation (DOT), the Office of Management and Budget (OMB), and the General Services Administration to develop recommendations for tracking and expediting such applications.</p> <p>(Sec. 7) To facilitate installation of broadband infrastructure, DOT must ensure that states receiving federal-aid highway funds: (1) identify a broadband utility coordinator to facilitate the broadband infrastructure right-of-way efforts within the state; (2) register broadband infrastructure entities that seek to be included in those facilitation efforts; (3) establish a process to electronically notify such entities of the state transportation improvement program on an annual basis; (4) coordinate statewide telecommunication and broadband plans and state and local transportation and land use plans, including strategies to minimize repeated excavations that involve the installation of broadband infrastructure in a right-of-way; and (5) ensure that any existing broadband infrastructure entities are not disadvantaged.</p> <p>Nothing in this section establishes a mandate or requirement that a state install broadband infrastructure in a highway right-of-way.</p> <p>(Sec. 8) The Office of Science and Technology Policy (OSTP) must establish a single database of real property owned, leased, or managed by executive agencies that is capable of supporting a communications facility installation. The OSTP must make the database available to: (1) entities that construct or operate communications facility installations or provide communications service, and (2) state and local governments so that they may provide information regarding state and local properties to include in the database. The OSTP must report to Congress regarding potential ways to incentivize state and local governments to provide such information.</p> <p>(Sec. 9) After notice and an opportunity for public comment, Commerce must submit recommendations to incentivize federal entities to relinquish, or share with federal or nonfederal users, federal spectrum for commercial wireless broadband services. It must consider whether permitting eligible federal entities to accept payments could expedite access to eligible frequencies.</p> <p>(Sec. 10) The FCC must collaborate with the NTIA to determine the best means of providing federal entities flexible access to nonfederal spectrum on a shared basis across a range of short-, mid-, and long-range timeframes, including for intermittent purposes like emergency use.</p> <p>(Sec. 11) After public notice and comment, the FCC must adopt rules that permit unlicensed services to use guard bands designated to protect frequencies allocated by competitive bidding if it would not cause harmful interference. </p> <p>(Sec. 12) The OMB may provide pre-auction funding to federal agencies for auctions intended to occur within eight years (currently, five years) after the transfer of funds. </p> <p>(Sec. 13) Federal entities may request an immediate transfer of funds to pay for relocation or sharing costs after the frequencies are reallocated by competitive bidding.</p> <p>(Sec. 14) The FCC must provide notice and an opportunity for public comment before it submits reports regarding: (1) the results of rule changes relating to the frequencies between 3550 and 3650 megahertz, and (2) proposals to promote and identify additional spectrum bands that can be shared between incumbent uses and new licensed and unlicensed services under such rules and that identify at least 1 gigahertz between 6 gigahertz and 57 gigahertz for such use.</p> <p>(Sec. 15) The Government Accountability Office must recommend policies to increase the availability of broadband Internet access using unlicensed spectrum and wireless networks in low-income neighborhoods, particularly for elementary and secondary school-aged children.</p> <p>(Sec. 16) The FCC must assess whether to establish a program, or modify existing programs, under which a licensee that receives a license for the exclusive use of spectrum in a specific geographic area may partition or disaggregate the license by sale or long-term lease to provide services consistent with the license and make unused spectrum available to: (1) unaffiliated small carriers with not more than 1,500 employees, or (2) other unaffiliated carriers to serve rural areas.</p> <p>(Sec. 17) The bill declares that it is U.S. policy to: (1) maximize U.S. spectrum resources to benefit U.S. people, (2) advance wireless broadband innovation and investment, and (3) make available on an unlicensed basis radio frequency bands sufficient to meet consumer demand.</p> <p>The FCC must ensure that its spectrum allocation and assignment efforts make available on an unlicensed basis radio frequency bands sufficient to meet demand for unlicensed wireless broadband operations if doing so is reasonable and in the public interest after taking into account the future needs of other spectrum users.</p> <p>(Sec. 18) The FCC must develop a national plan for making additional radio frequency bands available for unlicensed operations. The NTIA must recommend reforms to the Spectrum Relocation Fund to address federal entities sharing costs and expenditures under the plan.</p> <p><i>Spectrum Challenge Prize Act</i></p> <p>(Sec. 19) The NTIA must conduct prize competitions to accelerate the development and commercialization of technology that improves spectrum efficiency and is capable of cost-effective deployment. </p> <p>Not more than $5 million, in the aggregate, may be awarded to prize competition winners. </p> <p>The FCC must publish a technical paper providing criteria that may be used for the design of such competitions.</p> <p><i>Wireless Telecommunications Tax and Fee Collection Fairness Act</i></p> <p>(Sec. 20) State and local jurisdictions are prohibited from requiring a person to collect from, or remit on behalf of, any other person a state or local tax, fee, or surcharge imposed on the purchase or use of any wireless telecommunications service within the state unless the collection or remittance is in connection with a financial transaction in which the purchaser or user upon whom a tax, fee, or surcharge is imposed gives cash, credit, or any other exchange of monetary value or consideration to the person who is required to collect or remit the tax, fee, or surcharge. Any person who is aggrieved by a violation of such prohibition may bring a civil action in U.S. district court for equitable relief.</p>]]></text>
+          <actionDate>2017-03-21</actionDate>
+          <actionDesc>Reported to Senate with amendment(s)</actionDesc>
+          <lastSummaryUpdateDate>2017-05-04T21:33:23Z</lastSummaryUpdateDate>
+        </item>
+        <item>
+          <updateDate>2017-08-03T15:00:24Z</updateDate>
+          <versionCode>35</versionCode>
+          <name>Passed Senate amended</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was reported to the Senate on March 21, 2017. The summary of that version is repeated here.)</p> <p><b>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act or the MOBILE NOW Act </b></p> <p>(Sec. 3) This bill requires the National Telecommunications and Information Administration (NTIA) and the Federal Communications Commission (FCC), by December 31, 2020, to make available at least 255 megahertz of federal and nonfederal spectrum below the frequency of 6000 megahertz for mobile and fixed wireless broadband use. At least: (1) 100 megahertz shall be made available on an unlicensed basis; and (2) 100 megahertz shall be made available on an exclusive, licensed basis for commercial mobile use, pursuant to the FCC's authority to implement licensing in a flexible manner, and subject to potential continued use of such spectrum by incumbent federal entities in designated geographic areas indefinitely or for a length of time stipulated in transition plans approved by an NTIA technical panel for those incumbent entities to relocate to alternate spectrum.</p> <p>In making such spectrum available, the Department of Commerce and the FCC must consider: (1) the need to preserve critical existing and planned federal government capabilities; (2) the impact on existing state, local, and tribal government capabilities; (3) international implications; (4) appropriate enforcement mechanisms and authorities; and (5) the importance of the deployment of wireless broadband services in rural areas.</p> <p>(Sec. 4) The NTIA must submit to Congress and the FCC an assessment of the feasibility of authorizing mobile or fixed terrestrial wireless operations, including for advanced mobile service operations, on federal entities and operations in specified frequency bands. The FCC must publish a notice of proposed rulemaking within two years after enactment of this bill, or within 90 days after it receives the NTIA's feasibility assessment, whichever is earlier, to consider service rules authorizing such operations.</p> <p>(Sec. 5) Commerce and the FCC must submit reports evaluating the feasibility of allowing commercial wireless services to share use of specified frequencies between 3100 and 4200 megahertz. If such sharing is feasible, the reports must identify which of the frequencies are most suitable for sharing with commercial wireless services through the assignment of new licenses by competitive bidding, for sharing with unlicensed operations, or through a combination of licensing and unlicensed operations. The FCC must seek public comment regarding these reports. </p> <p>(Sec. 6) The Middle Class Tax Relief and Job Creation Act of 2012 is amended to require executive agencies, within 270 days after receiving an application, to grant or deny easements, rights-of-way, or leases to, in, over, or on federal property to install, construct, modify, or maintain a communications facility installation. Executive agencies must: (1) notify applicants of the reasons for denials, and (2) designate an agency point of contact for applicants. The bill expands the categories of infrastructure, antennas, wiring, and wireless transmission equipment for which applicants may seek such easements, rights-of-way, or leases.</p> <p>The NTIA must coordinate with the Departments of the Interior, Agriculture, Defense, and Transportation (DOT), the Office of Management and Budget (OMB), and the General Services Administration to develop recommendations for tracking and expediting such applications.</p> <p>(Sec. 7) To facilitate installation of broadband infrastructure, DOT must ensure that states receiving federal-aid highway funds: (1) identify a broadband utility coordinator to facilitate the broadband infrastructure right-of-way efforts within the state; (2) register broadband infrastructure entities that seek to be included in those facilitation efforts; (3) establish a process to electronically notify such entities of the state transportation improvement program on an annual basis; (4) coordinate statewide telecommunication and broadband plans and state and local transportation and land use plans, including strategies to minimize repeated excavations that involve the installation of broadband infrastructure in a right-of-way; and (5) ensure that any existing broadband infrastructure entities are not disadvantaged.</p> <p>Nothing in this section establishes a mandate or requirement that a state install broadband infrastructure in a highway right-of-way.</p> <p>(Sec. 8) The Office of Science and Technology Policy (OSTP) must establish a single database of real property owned, leased, or managed by executive agencies that is capable of supporting a communications facility installation. The OSTP must make the database available to: (1) entities that construct or operate communications facility installations or provide communications service, and (2) state and local governments so that they may provide information regarding state and local properties to include in the database. The OSTP must report to Congress regarding potential ways to incentivize state and local governments to provide such information.</p> <p>(Sec. 9) After notice and an opportunity for public comment, Commerce must submit recommendations to incentivize federal entities to relinquish, or share with federal or nonfederal users, federal spectrum for commercial wireless broadband services. It must consider whether permitting eligible federal entities to accept payments could expedite access to eligible frequencies.</p> <p>(Sec. 10) The FCC must collaborate with the NTIA to determine the best means of providing federal entities flexible access to nonfederal spectrum on a shared basis across a range of short-, mid-, and long-range time frames, including for intermittent purposes like emergency use.</p> <p>(Sec. 11) After public notice and comment, the FCC must adopt rules that permit unlicensed services to use guard bands designated to protect frequencies allocated by competitive bidding if it would not cause harmful interference. </p> <p>(Sec. 12) The OMB may provide pre-auction funding to federal agencies for auctions intended to occur within eight years (currently, five years) after the transfer of funds.</p> <p>(Sec. 13) Federal entities may request an immediate transfer of funds to pay for relocation or sharing costs after the frequencies are reallocated by competitive bidding.</p> <p>(Sec. 14) The FCC must provide notice and an opportunity for public comment before it submits reports regarding: (1) the results of rule changes relating to the frequencies between 3550 and 3650 megahertz, and (2) proposals to promote and identify additional spectrum bands that can be shared between incumbent uses and new licensed and unlicensed services under such rules and that identify at least 1 gigahertz between 6 gigahertz and 57 gigahertz for such use.</p> <p>(Sec. 15) The Government Accountability Office must recommend policies to increase the availability of broadband Internet access using unlicensed spectrum and wireless networks in low-income neighborhoods, particularly for elementary and secondary school-aged children.</p> <p>(Sec. 16) The FCC must assess whether to establish a program, or modify existing programs, under which a licensee that receives a license for the exclusive use of spectrum in a specific geographic area may partition or disaggregate the license by sale or long-term lease to provide services consistent with the license and make unused spectrum available to: (1) unaffiliated small carriers with not more than 1,500 employees, or (2) other unaffiliated carriers to serve rural areas.</p> <p>(Sec. 17) The bill declares that it is U.S. policy to: (1) maximize U.S. spectrum resources to benefit U.S. people, (2) advance wireless broadband innovation and investment, and (3) make available on an unlicensed basis radio frequency bands sufficient to meet consumer demand.</p> <p>The FCC must ensure that its spectrum allocation and assignment efforts make available on an unlicensed basis radio frequency bands sufficient to meet demand for unlicensed wireless broadband operations if doing so is reasonable and in the public interest after taking into account the future needs of other spectrum users.</p> <p>(Sec. 18) The FCC must develop a national plan for making additional radio frequency bands available for unlicensed operations. The NTIA must recommend reforms to the Spectrum Relocation Fund to address federal entities sharing costs and expenditures under the plan.</p> <p><i>Spectrum Challenge Prize Act</i></p> <p>(Sec. 19) The NTIA must conduct prize competitions to accelerate the development and commercialization of technology that improves spectrum efficiency and is capable of cost-effective deployment. </p> <p>Not more than $5 million, in the aggregate, may be awarded to prize competition winners. </p> <p>The FCC must publish a technical paper providing criteria that may be used for the design of such competitions.</p> <p><i>Wireless Telecommunications Tax and Fee Collection Fairness Act</i></p> <p>(Sec. 20) State and local jurisdictions are prohibited from requiring a person to collect from, or remit on behalf of, any other person a state or local tax, fee, or surcharge imposed on the purchase or use of any wireless telecommunications service within the state unless the collection or remittance is in connection with a financial transaction in which the purchaser or user upon whom a tax, fee, or surcharge is imposed gives cash, credit, or any other exchange of monetary value or consideration to the person who is required to collect or remit the tax, fee, or surcharge. Any person who is aggrieved by a violation of such prohibition may bring a civil action in U.S. district court for equitable relief.</p>]]></text>
+          <actionDate>2017-08-03</actionDate>
+          <actionDesc>Passed Senate amended</actionDesc>
+          <lastSummaryUpdateDate>2017-12-06T22:07:07Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
     </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-    </latestAction>
-    <originChamber>Senate</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
-    <billNumber>19</billNumber>
-    <amendments />
-    <billType>S</billType>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <name>Commerce, Science, and Transportation Committee</name>
-          <systemCode>sscm00</systemCode>
-          <type>Standing</type>
           <activities>
             <item>
-              <date>2017-01-03T19:21:08Z</date>
+              <name>Reported by</name>
+              <date>2017-03-21T19:09:51Z</date>
+            </item>
+            <item>
+              <name>Markup by</name>
+              <date>2017-01-24T15:00:00Z</date>
+            </item>
+            <item>
               <name>Referred to</name>
+              <date>2017-01-03T19:21:08Z</date>
             </item>
           </activities>
           <chamber>Senate</chamber>
+          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
+    <notes />
+    <amendments />
     <recordedVotes />
+    <createDate>2017-01-04T04:47:42Z</createDate>
     <sponsors>
       <item>
-        <lastName>THUNE</lastName>
-        <state>SD</state>
-        <byRequestType />
-        <firstName>JOHN</firstName>
         <bioguideId>T000250</bioguideId>
+        <party>R</party>
+        <firstName>JOHN</firstName>
         <fullName>Sen. Thune, John [R-SD]</fullName>
+        <state>SD</state>
+        <lastName>THUNE</lastName>
+        <middleName>R.</middleName>
         <identifiers>
-          <lisID>1534</lisID>
           <gpoId>8257</gpoId>
+          <lisID>1534</lisID>
           <bioguideId>T000250</bioguideId>
         </identifiers>
-        <middleName>R.</middleName>
-        <party>R</party>
+        <byRequestType />
       </item>
     </sponsors>
     <titles>
       <item>
-        <chamberCode />
-        <title>MOBILE NOW Act</title>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Spectrum Challenge Prize Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Spectrum Challenge Prize Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
         <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
+        <titleType>Short Titles as Introduced for portions of this bill</titleType>
+        <chamberCode />
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
         <chamberName />
       </item>
       <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>MOBILE NOW Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>MOBILE NOW Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType>Short Titles Senate</parentTitleType>
+        <titleType>Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>MOBILE NOW Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
         <chamberCode />
         <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
-        <parentTitleType />
-        <titleType>Short Titles as Introduced</titleType>
         <chamberName />
       </item>
       <item>
-        <chamberCode />
-        <title>A bill to provide opportunities for broadband investment, and for other purposes.</title>
         <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to provide opportunities for broadband investment, and for other purposes.</title>
         <chamberName />
       </item>
       <item>
-        <chamberCode />
-        <title>MOBILE NOW Act</title>
         <parentTitleType />
         <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>MOBILE NOW Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Spectrum Challenge Prize Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>MOBILE NOW Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Passed Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Spectrum Challenge Prize Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate for portions of this bill</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>MOBILE NOW Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Reported to Senate</titleType>
+        <chamberCode>S</chamberCode>
+        <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
+        <chamberName>Senate</chamberName>
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced for portions of this bill</titleType>
+        <chamberCode />
+        <title>Wireless Telecommunications Tax and Fee Collection Fairness Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>MOBILE NOW Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Making Opportunities for Broadband Investment and Limiting Excessive and Needless Obstacles to Wireless Act</title>
         <chamberName />
       </item>
     </titles>

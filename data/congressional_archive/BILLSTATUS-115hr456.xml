@@ -1,147 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-11</introducedDate>
-    <committeeReports />
+    <policyArea>
+      <name>Energy</name>
+    </policyArea>
+    <billNumber>456</billNumber>
     <laws />
-    <createDate>2017-01-12T04:45:50Z</createDate>
-    <actions>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 7 (Wednesday, January 11, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. TITUS:H.R. 456.Congress has the power to enact thislegislation pursuantto the following:Article 1, Sec. 8, clause 3[Page H392]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <name>Introduced in House</name>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-11</actionDate>
+          <lastSummaryUpdateDate>2017-05-01T19:37:53Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Nuclear Waste Informed Consent Act</b></p> <p>This bill prohibits the Department of Energy (DOE) from making an expenditure from the Nuclear Waste Fund for the costs incurred by DOE in connection with disposing of spent nuclear fuel or high-level radioactive waste in a repository, unless DOE has entered into an agreement to host the repository with certain affected entities.</p> Additionally, any agreement to host the repository must meet certain conditions.]]></text>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
       <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-11</actionDate>
+        <congress>115</congress>
+        <latestAction>
+          <actionDate>2017-01-11</actionDate>
+          <text>Read twice and referred to the Committee on Environment and Public Works.</text>
+        </latestAction>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <type>S</type>
+        <latestTitle>Nuclear Waste Informed Consent Act</latestTitle>
+        <number>95</number>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-12T04:45:50Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Titus</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Rep. Titus, Dina [D-NV-1]</fullName>
+        <identifiers>
+          <lisID>1940</lisID>
+          <bioguideId>T000468</bioguideId>
+          <gpoId>7493</gpoId>
+        </identifiers>
+        <state>NV</state>
+        <firstName>Dina</firstName>
+        <byRequestType />
+        <district>1</district>
+        <bioguideId>T000468</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:59:24Z</updateDate>
+    <committeeReports />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-25</actionDate>
         <committee>
-          <systemCode>hsif00</systemCode>
+          <name>Environment and the Economy Subcommittee</name>
+          <systemCode>hsif18</systemCode>
+        </committee>
+        <links />
+        <sourceSystem>
+          <name>House committee actions</name>
+          <code>1</code>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Environment.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <committee>
           <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
         </committee>
         <text>Referred to the House Committee on Energy and Commerce.</text>
         <actionCode>H11100</actionCode>
-        <links />
+        <actionDate>2017-01-11</actionDate>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <type>IntroReferral</type>
-        <actionDate>2017-01-11</actionDate>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
         <committee />
         <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
-        <links />
+        <actionDate>2017-01-11</actionDate>
       </item>
       <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <type>IntroReferral</type>
-        <actionDate>2017-01-11</actionDate>
+        <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
         <committee />
         <text>Introduced in House</text>
         <actionCode>1000</actionCode>
-        <links />
+        <actionDate>2017-01-11</actionDate>
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
       <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
         <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
     </actions>
-    <recordedVotes />
-    <relatedBills />
+    <title>Nuclear Waste Informed Consent Act</title>
     <cosponsors>
       <item>
-        <identifiers>
-          <lisID>2340</lisID>
-          <gpoId />
-          <bioguideId>K000390</bioguideId>
-        </identifiers>
-        <state>NV</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>4</district>
-        <middleName />
-        <party>D</party>
-        <sponsorshipWithdrawnDate />
         <bioguideId>K000390</bioguideId>
         <lastName>Kihuen</lastName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
-        <fullName>Rep. Kihuen, Ruben [D-NV-4]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2340</lisID>
+          <bioguideId>K000390</bioguideId>
+        </identifiers>
+        <district>4</district>
+        <middleName>J.</middleName>
+        <sponsorshipWithdrawnDate />
+        <fullName>Rep. Kihuen, Ruben J. [D-NV-4]</fullName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <state>NV</state>
         <firstName>Ruben</firstName>
+        <party>D</party>
       </item>
       <item>
-        <identifiers>
-          <bioguideId>R000608</bioguideId>
-          <lisID>2339</lisID>
-          <gpoId />
-        </identifiers>
-        <state>NV</state>
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
-        <district>3</district>
-        <middleName />
-        <party>D</party>
-        <sponsorshipWithdrawnDate />
         <bioguideId>R000608</bioguideId>
         <lastName>Rosen</lastName>
         <isOriginalCosponsor>True</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2339</lisID>
+          <bioguideId>R000608</bioguideId>
+          <gpoId />
+        </identifiers>
+        <district>3</district>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <fullName>Rep. Rosen, Jacky [D-NV-3]</fullName>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <state>NV</state>
         <firstName>Jacky</firstName>
+        <party>D</party>
       </item>
     </cosponsors>
-    <billNumber>456</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>D</party>
-        <state>NV</state>
-        <middleName />
-        <bioguideId>T000468</bioguideId>
-        <lastName>Titus</lastName>
-        <firstName>Dina</firstName>
-        <identifiers>
-          <lisID>1940</lisID>
-          <gpoId>7493</gpoId>
-          <bioguideId>T000468</bioguideId>
-        </identifiers>
-        <fullName>Rep. Titus, Dina [D-NV-1]</fullName>
-        <district>1</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
-    <policyArea />
+    <introducedDate>2017-01-11</introducedDate>
+    <recordedVotes />
     <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
     <latestAction>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
-      <actionDate>2017-01-11</actionDate>
+      <actionDate>2017-01-25</actionDate>
       <links />
+      <text>Referred to the Subcommittee on Environment.</text>
     </latestAction>
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Nuclear Waste Informed Consent Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>Nuclear Waste Informed Consent Act</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Nuclear Waste Informed Consent Act</title>
+        <chamberCode />
+      </item>
+    </titles>
     <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <notes />
     <committees>
       <billCommittees>
         <item>
-          <systemCode>hsif00</systemCode>
-          <subcommittees />
-          <type>Standing</type>
           <chamber>House</chamber>
+          <systemCode>hsif00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsif18</systemCode>
+              <name>Environment and the Economy Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:38:48Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
           <name>Energy and Commerce Committee</name>
           <activities>
             <item>
@@ -152,24 +235,30 @@
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-12T09:58:10Z</updateDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
-      </item>
-    </titles>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Energy</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Federal-Indian relations</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Nuclear power</name>
+          </item>
+          <item>
+            <name>Radioactive wastes and releases</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

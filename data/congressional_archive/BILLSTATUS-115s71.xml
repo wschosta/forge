@@ -1,157 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>71</billNumber>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billType>S</billType>
     <latestAction>
       <links />
       <actionDate>2017-01-09</actionDate>
       <text>Read twice and referred to the Committee on Finance.</text>
     </latestAction>
-    <introducedDate>2017-01-09</introducedDate>
-    <amendments />
+    <createDate>2017-01-10T05:15:46Z</createDate>
+    <notes />
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <item>
         <actionDate>2017-01-09</actionDate>
         <committee>
-          <name>Finance Committee</name>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Finance.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <type>IntroReferral</type>
         <actionDate>2017-01-09</actionDate>
-        <text>Introduced in Senate</text>
+        <links />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>10000</actionCode>
         <committee />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <actionCode>10000</actionCode>
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
     </actions>
     <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
-      <item>
-        <firstName>CLARENCE</firstName>
-        <party>D</party>
-        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
-        <middleName>WILLIAM</middleName>
-        <state>FL</state>
-        <byRequestType />
-        <bioguideId>N000032</bioguideId>
-        <identifiers>
-          <gpoId>8236</gpoId>
-          <bioguideId>N000032</bioguideId>
-          <lisID>859</lisID>
-        </identifiers>
-        <lastName>NELSON</lastName>
-      </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
-    <recordedVotes />
-    <updateDate>2017-01-18T10:19:36Z</updateDate>
-    <policyArea />
-    <title>A bill to amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-10T05:15:46Z</createDate>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Business investment and capital</name>
+          </item>
+          <item>
+            <name>Forests, forestry, trees</name>
+          </item>
+          <item>
+            <name>Fruit and vegetables</name>
+          </item>
+          <item>
+            <name>Horticulture and plants</name>
+          </item>
+          <item>
+            <name>Income tax deductions</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <billNumber>71</billNumber>
+    <title>Emergency Citrus Disease Response Act</title>
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>ssfi00</systemCode>
-          <name>Finance Committee</name>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-09T23:57:52Z</date>
             </item>
           </activities>
+          <name>Finance Committee</name>
+          <type>Standing</type>
           <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>ssfi00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <relatedBills />
+    <introducedDate>2017-01-09</introducedDate>
+    <version>1.0.0</version>
+    <committeeReports />
+    <updateDate>2018-08-28T20:22:28Z</updateDate>
     <laws />
-    <titles>
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <sponsors>
       <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>A bill to amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
+        <middleName>WILLIAM</middleName>
+        <bioguideId>N000032</bioguideId>
+        <identifiers>
+          <lisID>859</lisID>
+          <bioguideId>N000032</bioguideId>
+          <gpoId>8236</gpoId>
+        </identifiers>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>CLARENCE</firstName>
+        <state>FL</state>
+        <lastName>NELSON</lastName>
+      </item>
+    </sponsors>
+    <relatedBills>
+      <item>
+        <latestTitle>Emergency Citrus Disease Response Act of 2017</latestTitle>
+        <number>112</number>
+        <latestAction>
+          <text>Referred to the House Committee on Ways and Means.</text>
+          <actionDate>2017-01-03</actionDate>
+        </latestAction>
+        <type>HR</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
       </item>
       <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberName />
-        <title>A bill to amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
+        <latestTitle>An original bill to provide for reconciliation pursuant to title II of the concurrent resolution on the budget for fiscal year 2018.</latestTitle>
+        <number>1</number>
+        <latestAction>
+          <text>Placed on Senate Legislative Calendar under General Orders. Calendar No. 269.</text>
+          <actionDate>2017-11-28</actionDate>
+        </latestAction>
+        <type>S</type>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
       </item>
-    </titles>
+    </relatedBills>
     <cosponsors>
       <item>
-        <middleName />
-        <state>FL</state>
         <party>R</party>
+        <state>FL</state>
         <bioguideId>R000595</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <lastName>Rubio</lastName>
+        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
+        <firstName>Marco</firstName>
+        <sponsorshipDate>2017-01-09</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>True</isOriginalCosponsor>
         <identifiers>
-          <lisID>2084</lisID>
           <bioguideId>R000595</bioguideId>
+          <lisID>2084</lisID>
           <gpoId>8242</gpoId>
         </identifiers>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <lastName>Rubio</lastName>
-        <firstName>Marco</firstName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-09</sponsorshipDate>
-        <fullName>Sen. Rubio, Marco [R-FL]</fullName>
       </item>
       <item>
-        <middleName />
-        <state>TX</state>
         <party>R</party>
+        <state>TX</state>
         <bioguideId>C001056</bioguideId>
-        <identifiers>
-          <bioguideId>C001056</bioguideId>
-          <gpoId>8295</gpoId>
-          <lisID>1692</lisID>
-        </identifiers>
-        <isOriginalCosponsor>False</isOriginalCosponsor>
-        <lastName>Cornyn</lastName>
-        <firstName>John</firstName>
         <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <lastName>Cornyn</lastName>
         <fullName>Sen. Cornyn, John [R-TX]</fullName>
+        <firstName>John</firstName>
+        <sponsorshipDate>2017-01-17</sponsorshipDate>
+        <middleName />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1692</lisID>
+          <gpoId>8295</gpoId>
+          <bioguideId>C001056</bioguideId>
+        </identifiers>
       </item>
     </cosponsors>
-    <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <congress>115</congress>
+    <titles>
+      <item>
+        <parentTitleType />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Emergency Citrus Disease Response Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberCode />
+        <title>A bill to amend the Internal Revenue Code of 1986 to temporarily allow expensing of certain costs of replanting citrus plants lost by reason of casualty.</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <chamberCode />
+        <title>Emergency Citrus Disease Response Act</title>
+        <chamberName />
+      </item>
+      <item>
+        <parentTitleType />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberCode />
+        <title>Emergency Citrus Disease Response Act</title>
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-09T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-01-24T19:54:03Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Emergency Citrus Disease Response Act </strong></p> <p>This bill amends the Internal Revenue Code to allow a full deduction in the current taxable year of the cost of replanting lost or damaged citrus plants. The taxpayer must own an equity interest of at least 50% in such replanted plants and may deduct costs paid or incurred through the date that is ten years after the enactment of this bill. </p>]]></text>
+          <actionDate>2017-01-09</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

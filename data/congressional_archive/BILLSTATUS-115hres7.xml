@@ -1,150 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <constitutionalAuthorityStatementText />
+    <sponsors>
+      <item>
+        <middleName />
+        <party>D</party>
+        <bioguideId>C001038</bioguideId>
+        <lastName>CROWLEY</lastName>
+        <firstName>JOSEPH</firstName>
+        <state>NY</state>
+        <identifiers>
+          <lisID>1604</lisID>
+          <gpoId>8068</gpoId>
+          <bioguideId>C001038</bioguideId>
+        </identifiers>
+        <district>14</district>
+        <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-04T07:01:07Z</createDate>
+    <committeeReports />
     <latestAction>
-      <links />
       <text>Motion to reconsider laid on the table Agreed to without objection.</text>
       <actionDate>2017-01-03</actionDate>
+      <links />
       <actionTime>17:37:09</actionTime>
     </latestAction>
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
-    <title>Electing Members to certain standing committees of the House of Representatives.</title>
-    <amendments />
-    <notes />
-    <relatedBills />
     <billNumber>7</billNumber>
+    <notes />
     <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <recordedVotes />
-    <actions>
-      <item>
-        <type>Floor</type>
-        <links />
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H38310</actionCode>
-        <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionTime>17:37:09</actionTime>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H28-29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
-          </link>
-        </links>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H37100</actionCode>
-        <committee />
-        <text>On agreeing to the resolution Agreed to without objection. (text: CR H28-29)</text>
-        <actionTime>17:36:55</actionTime>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H28-29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
-          </link>
-        </links>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>8000</actionCode>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H28-29)</text>
-        <actionTime>17:36:55</actionTime>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-      </item>
-      <item>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H28-29</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
-          </link>
-        </links>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H30000</actionCode>
-        <committee />
-        <text>Considered as privileged matter. (consideration: CR H28-29)</text>
-        <actionTime>17:36:41</actionTime>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <links />
-        <text>Introduced in House</text>
-        <type>IntroReferral</type>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>1000</actionCode>
-        <committee />
-        <links />
-        <text>Introduced in House</text>
-        <type>IntroReferral</type>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInHouse>1</introducedInHouse>
-        <considerationByHouse>1</considerationByHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-      </actionTypeCounts>
-    </actions>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <title>Electing Members to certain standing committees of the House of Representatives.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <title>Electing Members to certain standing committees of the House of Representatives.</title>
-      </item>
-    </titles>
-    <laws />
     <committees>
       <billCommittees />
     </committees>
-    <cboCostEstimates />
+    <relatedBills />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -199,33 +91,161 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <cosponsors />
-    <updateDate>2017-01-06T19:01:18Z</updateDate>
-    <billType>HRES</billType>
-    <sponsors>
-      <item>
-        <middleName />
-        <bioguideId>C001038</bioguideId>
-        <byRequestType />
-        <state>NY</state>
-        <firstName>JOSEPH</firstName>
-        <identifiers>
-          <gpoId>8068</gpoId>
-          <lisID>1604</lisID>
-          <bioguideId>C001038</bioguideId>
-        </identifiers>
-        <district>14</district>
-        <lastName>CROWLEY</lastName>
-        <fullName>Rep. Crowley, Joseph [D-NY-14]</fullName>
-        <party>D</party>
-      </item>
-    </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
-    <createDate>2017-01-04T07:01:07Z</createDate>
-    <constitutionalAuthorityStatementText />
+    <amendments />
     <originChamber>House</originChamber>
-    <committeeReports />
+    <cboCostEstimates />
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <actions>
+      <actionTypeCounts>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInHouse>1</introducedInHouse>
+        <considerationByHouse>1</considerationByHouse>
+      </actionTypeCounts>
+      <item>
+        <links />
+        <actionTime>17:37:09</actionTime>
+        <actionDate>2017-01-03</actionDate>
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H38310</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
+            <name>H28-29</name>
+          </link>
+        </links>
+        <actionTime>17:36:55</actionTime>
+        <actionDate>2017-01-03</actionDate>
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H28-29)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H37100</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
+            <name>H28-29</name>
+          </link>
+        </links>
+        <actionTime>17:36:55</actionTime>
+        <actionDate>2017-01-03</actionDate>
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H28-29)</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>8000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links>
+          <link>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H28-29</url>
+            <name>H28-29</name>
+          </link>
+        </links>
+        <actionTime>17:36:41</actionTime>
+        <actionDate>2017-01-03</actionDate>
+        <text>Considered as privileged matter. (consideration: CR H28-29)</text>
+        <committee />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H30000</actionCode>
+        <type>Floor</type>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-03</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <recordedVotes />
+    <laws />
+    <cosponsors />
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Electing Members to certain standing committees of the House of Representatives.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Electing Members to certain standing committees of the House of Representatives.</title>
+      </item>
+    </titles>
+    <updateDate>2018-08-28T19:53:42Z</updateDate>
+    <calendarNumbers />
+    <billType>HRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-23T21:14:35Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>Elects specified Members to the following House Committees: (1) Appropriations, (2) the Budget, (3) Education and the Workforce, (4) Energy and Commerce, (5) Financial Services, (6) Foreign Affairs, (7) Homeland Security, (8) House Administration, (9) Natural Resources, (10) Oversight and Government Reform, (11) Rules, (12) Small Business, and (13) Ways and Means.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <versionCode>81</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <name>Passed House without amendment</name>
+          <lastSummaryUpdateDate>2017-01-23T21:14:42Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Elects specified Members to the following House Committees: (1) Appropriations, (2) the Budget, (3) Education and the Workforce, (4) Energy and Commerce, (5) Financial Services, (6) Foreign Affairs, (7) Homeland Security, (8) House Administration, (9) Natural Resources, (10) Oversight and Government Reform, (11) Rules, (12) Small Business, and (13) Ways and Means.</p>]]></text>
+          <updateDate>2017-01-03T14:29:11Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <title>Electing Members to certain standing committees of the House of Representatives.</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

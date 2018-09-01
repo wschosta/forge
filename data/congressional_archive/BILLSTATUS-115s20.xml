@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <sponsors>
+      <item>
+        <middleName />
+        <party>D</party>
+        <bioguideId>V000128</bioguideId>
+        <lastName>Van Hollen</lastName>
+        <firstName>Chris</firstName>
+        <state>MD</state>
+        <identifiers>
+          <lisID>1729</lisID>
+          <gpoId>7983</gpoId>
+          <bioguideId>V000128</bioguideId>
+        </identifiers>
+        <district>8</district>
+        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <version>1.0.0</version>
+    <createDate>2017-01-04T04:47:42Z</createDate>
+    <committeeReports />
+    <latestAction>
+      <text>Read twice and referred to the Committee on Finance.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <notes />
+    <introducedDate>2017-01-03</introducedDate>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Finance Committee</name>
+          <systemCode>ssfi00</systemCode>
+          <chamber>Senate</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T19:25:51Z</date>
+            </item>
+          </activities>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <relatedBills />
+    <billNumber>20</billNumber>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -25,15 +72,23 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <amendments />
+    <originChamber>Senate</originChamber>
+    <cboCostEstimates />
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <congress>115</congress>
     <actions>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInSenate>1</introducedInSenate>
+        <referredToCommittee>1</referredToCommittee>
+      </actionTypeCounts>
       <item>
         <actionDate>2017-01-03</actionDate>
         <committee>
-          <name>Finance Committee</name>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -45,117 +100,70 @@
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
+        <links />
+        <text>Introduced in Senate</text>
         <type>IntroReferral</type>
         <actionCode>10000</actionCode>
-        <committee />
-        <text>Introduced in Senate</text>
         <sourceSystem>
           <name>Library of Congress</name>
           <code>9</code>
         </sourceSystem>
-        <links />
+        <committee />
       </item>
-      <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
-        <referredToCommittee>1</referredToCommittee>
-      </actionTypeCounts>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
     </actions>
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <notes />
-    <createDate>2017-01-04T04:47:42Z</createDate>
-    <title>CEO-Employee Paycheck Fairness Act of 2017</title>
-    <relatedBills />
-    <cosponsors />
-    <cboCostEstimates />
-    <updateDate>2017-01-10T10:34:00Z</updateDate>
+    <recordedVotes />
     <laws />
+    <cosponsors />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>CEO-Employee Paycheck Fairness Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to amend the Internal Revenue Code of 1986 to expand the denial of deduction for certain excessive employee remuneration.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>CEO-Employee Paycheck Fairness Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>CEO–Employee Paycheck Fairness Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <updateDate>2018-08-28T20:22:15Z</updateDate>
+    <calendarNumbers />
+    <billType>S</billType>
     <summaries>
       <billSummaries>
         <item>
-          <actionDate>2017-01-03</actionDate>
-          <text><![CDATA[<p><strong>CEO-Employee Paycheck Fairness Act of 2017 </strong></p> <p>This bill amends the Internal Revenue Code to deny a publicly held corporation a tax deduction for the payment of performance-based remuneration in excess of $1 million to any of its current or former&nbsp;officers or directors if such corporation does not meet the pay fairness requirement established by this bill. The pay fairness requirement is satisfied if: (1) the average compensation paid by the&nbsp;employer for all applicable U.S. employees for the taxable year&nbsp;exceeds the inflation and productivity growth adjusted average of such compensation&nbsp;for the preceding taxable year; and (2) the aggregate compensation paid by the employer to or for all applicable employees for the taxable year&nbsp;is not less than the aggregate of such compensation for the preceding taxable year.&nbsp;</p>]]></text>
-          <name>Introduced in Senate</name>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in Senate</actionDesc>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+          <text><![CDATA[<p><strong>CEO-Employee Paycheck Fairness Act of 2017 </strong></p> <p>This bill amends the Internal Revenue Code to deny a publicly held corporation a tax deduction for the payment of performance-based remuneration in excess of $1 million to any of its current or former&nbsp;officers or directors if such corporation does not meet the pay fairness requirement established by this bill. The pay fairness requirement is satisfied if: (1) the average compensation paid by the&nbsp;employer for all applicable U.S. employees for the taxable year&nbsp;exceeds the inflation and productivity growth adjusted average of such compensation&nbsp;for the preceding taxable year; and (2) the aggregate compensation paid by the employer to or for all applicable employees for the taxable year&nbsp;is not less than the aggregate of such compensation for the preceding taxable year.&nbsp;</p>]]></text>
           <lastSummaryUpdateDate>2017-01-05T15:27:52Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
         </item>
       </billSummaries>
     </summaries>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-03</actionDate>
-      <text>Read twice and referred to the Committee on Finance.</text>
-    </latestAction>
-    <originChamber>Senate</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
-    <billNumber>20</billNumber>
-    <amendments />
-    <billType>S</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Finance Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T19:25:51Z</date>
-            </item>
-          </activities>
-          <systemCode>ssfi00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Van Hollen</lastName>
-        <state>MD</state>
-        <byRequestType />
-        <firstName>Chris</firstName>
-        <bioguideId>V000128</bioguideId>
-        <fullName>Sen. Van Hollen, Chris [D-MD]</fullName>
-        <identifiers>
-          <gpoId>7983</gpoId>
-          <bioguideId>V000128</bioguideId>
-          <lisID>1729</lisID>
-        </identifiers>
-        <middleName />
-        <district>8</district>
-        <party>D</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>CEO-Employee Paycheck Fairness Act of 2017</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>A bill to amend the Internal Revenue Code of 1986 to expand the denial of deduction for certain excessive employee remuneration.</title>
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>CEO-Employee Paycheck Fairness Act of 2017</title>
-      </item>
-    </titles>
+    <title>CEO-Employee Paycheck Fairness Act of 2017</title>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

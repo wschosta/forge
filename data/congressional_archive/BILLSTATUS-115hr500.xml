@@ -1,391 +1,511 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-12</introducedDate>
-    <committeeReports />
-    <laws />
-    <createDate>2017-01-13T04:55:31Z</createDate>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-        <billReferrals>1</billReferrals>
-      </actionTypeCounts>
-      <item>
-        <type>IntroReferral</type>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <actionCode>H11100</actionCode>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
-        <committee>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
-        </committee>
-        <actionDate>2017-01-12</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-12</actionDate>
-      </item>
-      <item>
-        <type>IntroReferral</type>
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-        <committee />
-        <actionDate>2017-01-12</actionDate>
-      </item>
-    </actions>
+          <activities>
+            <item>
+              <date>2017-01-12T15:02:40Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <recordedVotes />
-    <relatedBills />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Tax Relief for our Nation's Heroes Act or the Andrew P. Carpenter Tax Act </strong></p> <p>This bill amends the Internal Revenue Code to exclude from gross income any amount attributable to the discharge of student loan indebtedness of a veteran who served on active duty and: (1) is deceased as a result of a service-connected death or disability, or (2) has a service-connected disability that the Department of Veterans Affairs has rated as total. </p> <p>]]></text>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-02-08T22:34:03Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
+      <item>
+        <title>Andrew P. Carpenter Tax Act</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Tax Relief for our Nation's Heroes Act</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>To amend the Internal Revenue Code of 1986 to exclude from gross income any discharge of indebtedness income on education loans of deceased or disabled veterans.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Andrew P. Carpenter Tax Act</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Andrew P. Carpenter Tax Act</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Tax Relief for our Nation’s Heroes Act</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
     <cosponsors>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Black, Diane [R-TN-6]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <bioguideId>B001273</bioguideId>
-          <lisID>2063</lisID>
           <gpoId>8153</gpoId>
+          <lisID>2063</lisID>
         </identifiers>
+        <lastName>Black</lastName>
         <firstName>Diane</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>6</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>B001273</bioguideId>
-        <lastName>Black</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Blackburn, Marsha [R-TN-7]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>1748</lisID>
-          <gpoId>8154</gpoId>
           <bioguideId>B001243</bioguideId>
+          <gpoId>8154</gpoId>
         </identifiers>
+        <lastName>Blackburn</lastName>
         <firstName>Marsha</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>7</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>B001243</bioguideId>
-        <lastName>Blackburn</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Brat, Dave [R-VA-7]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
+          <bioguideId>B001290</bioguideId>
           <lisID>2203</lisID>
           <gpoId />
-          <bioguideId>B001290</bioguideId>
         </identifiers>
+        <lastName>Brat</lastName>
         <firstName>Dave</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>VA</state>
         <district>7</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>B001290</bioguideId>
-        <lastName>Brat</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>D</party>
         <fullName>Rep. Cohen, Steve [D-TN-9]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <lisID>1878</lisID>
-          <gpoId>8156</gpoId>
           <bioguideId>C001068</bioguideId>
+          <gpoId>8156</gpoId>
+          <lisID>1878</lisID>
         </identifiers>
+        <lastName>Cohen</lastName>
         <firstName>Steve</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>9</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>C001068</bioguideId>
-        <lastName>Cohen</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>D</party>
         <fullName>Rep. Cooper, Jim [D-TN-5]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>231</lisID>
           <gpoId>8152</gpoId>
           <bioguideId>C000754</bioguideId>
         </identifiers>
+        <lastName>COOPER</lastName>
         <firstName>JAMES</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>H.</middleName>
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>5</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>C000754</bioguideId>
-        <lastName>COOPER</lastName>
-        <middleName>H.</middleName>
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Duncan, John J., Jr. [R-TN-2]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>322</lisID>
-          <gpoId>8149</gpoId>
           <bioguideId>D000533</bioguideId>
+          <gpoId>8149</gpoId>
         </identifiers>
+        <lastName>DUNCAN</lastName>
         <firstName>JOHN</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>J.</middleName>
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>2</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>D000533</bioguideId>
-        <lastName>DUNCAN</lastName>
-        <middleName>J.</middleName>
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Fleischmann, Charles J. "Chuck" [R-TN-3]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <gpoId>8150</gpoId>
-          <bioguideId>F000459</bioguideId>
           <lisID>2061</lisID>
+          <bioguideId>F000459</bioguideId>
+          <gpoId>8150</gpoId>
         </identifiers>
+        <lastName>Fleischmann</lastName>
         <firstName>Charles</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>J. "Chuck"</middleName>
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>3</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>F000459</bioguideId>
-        <lastName>Fleischmann</lastName>
-        <middleName>J. "Chuck"</middleName>
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. King, Steve [R-IA-4]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>1724</lisID>
           <gpoId>7918</gpoId>
           <bioguideId>K000362</bioguideId>
         </identifiers>
+        <lastName>King</lastName>
         <firstName>Steve</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>IA</state>
         <district>4</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>K000362</bioguideId>
-        <lastName>King</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Kustoff, David [R-TN-8]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>2348</lisID>
-          <gpoId />
           <bioguideId>K000392</bioguideId>
+          <gpoId />
         </identifiers>
+        <lastName>Kustoff</lastName>
         <firstName>David</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>8</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>K000392</bioguideId>
-        <lastName>Kustoff</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Massie, Thomas [R-KY-4]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <lisID>2094</lisID>
           <gpoId>8371</gpoId>
+          <lisID>2094</lisID>
           <bioguideId>M001184</bioguideId>
         </identifiers>
+        <lastName>Massie</lastName>
         <firstName>Thomas</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>KY</state>
         <district>4</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>M001184</bioguideId>
-        <lastName>Massie</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Roe, David P. [R-TN-1]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <lisID>1954</lisID>
-          <gpoId>8148</gpoId>
           <bioguideId>R000582</bioguideId>
+          <gpoId>8148</gpoId>
+          <lisID>1954</lisID>
         </identifiers>
+        <lastName>Roe</lastName>
         <firstName>David</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>P.</middleName>
+        <sponsorshipWithdrawnDate />
         <state>TN</state>
         <district>1</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>R000582</bioguideId>
-        <lastName>Roe</lastName>
-        <middleName>P.</middleName>
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Rohrabacher, Dana [R-CA-48]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <gpoId>7851</gpoId>
           <bioguideId>R000409</bioguideId>
           <lisID>979</lisID>
+          <gpoId>7851</gpoId>
         </identifiers>
+        <lastName>ROHRABACHER</lastName>
         <firstName>DANA</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>CA</state>
         <district>48</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>R000409</bioguideId>
-        <lastName>ROHRABACHER</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Stivers, Steve [R-OH-15]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
-          <bioguideId>S001187</bioguideId>
           <lisID>2047</lisID>
           <gpoId>8105</gpoId>
+          <bioguideId>S001187</bioguideId>
         </identifiers>
+        <lastName>Stivers</lastName>
         <firstName>Steve</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
         <state>OH</state>
         <district>15</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>S001187</bioguideId>
-        <lastName>Stivers</lastName>
-        <middleName />
       </item>
       <item>
         <sponsorshipDate>2017-01-12</sponsorshipDate>
         <party>R</party>
         <fullName>Rep. Brooks, Susan W. [R-IN-5]</fullName>
-        <sponsorshipWithdrawnDate />
         <identifiers>
           <lisID>2129</lisID>
-          <gpoId />
           <bioguideId>B001284</bioguideId>
+          <gpoId />
         </identifiers>
+        <lastName>Brooks</lastName>
         <firstName>Susan</firstName>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <middleName>W.</middleName>
+        <sponsorshipWithdrawnDate />
         <state>IN</state>
         <district>5</district>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
         <bioguideId>B001284</bioguideId>
-        <lastName>Brooks</lastName>
-        <middleName>W.</middleName>
+      </item>
+      <item>
+        <sponsorshipDate>2017-01-31</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Knight, Stephen [R-CA-25]</fullName>
+        <identifiers>
+          <gpoId />
+          <lisID>2228</lisID>
+          <bioguideId>K000387</bioguideId>
+        </identifiers>
+        <lastName>Knight</lastName>
+        <firstName>Stephen</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>25</district>
+        <bioguideId>K000387</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2017-05-18</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Issa, Darrell E. [R-CA-49]</fullName>
+        <identifiers>
+          <gpoId>7854</gpoId>
+          <lisID>1640</lisID>
+          <bioguideId>I000056</bioguideId>
+        </identifiers>
+        <lastName>ISSA</lastName>
+        <firstName>DARRELL</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>E.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>CA</state>
+        <district>49</district>
+        <bioguideId>I000056</bioguideId>
+      </item>
+      <item>
+        <sponsorshipDate>2018-03-22</sponsorshipDate>
+        <party>R</party>
+        <fullName>Rep. Smith, Christopher H. [R-NJ-4]</fullName>
+        <identifiers>
+          <lisID>1071</lisID>
+          <bioguideId>S000522</bioguideId>
+          <gpoId>8046</gpoId>
+        </identifiers>
+        <lastName>SMITH</lastName>
+        <firstName>CHRISTOPHER</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName>H.</middleName>
+        <sponsorshipWithdrawnDate />
+        <state>NJ</state>
+        <district>4</district>
+        <bioguideId>S000522</bioguideId>
       </item>
     </cosponsors>
-    <billNumber>500</billNumber>
-    <amendments />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <state>TN</state>
-        <middleName />
-        <bioguideId>D000616</bioguideId>
-        <lastName>DesJarlais</lastName>
-        <firstName>Scott</firstName>
-        <identifiers>
-          <lisID>2062</lisID>
-          <gpoId>8151</gpoId>
-          <bioguideId>D000616</bioguideId>
-        </identifiers>
-        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
-        <district>4</district>
-        <byRequestType />
-      </item>
-    </sponsors>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <constitutionalAuthorityStatementText />
-    <billType>HR</billType>
-    <title>To amend the Internal Revenue Code of 1986 to exclude from gross income any discharge of indebtedness income on education loans of deceased or disabled veterans.</title>
-    <policyArea />
-    <congress>115</congress>
+    <cboCostEstimates />
     <latestAction>
       <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-12</actionDate>
       <links />
+      <actionDate>2017-01-12</actionDate>
     </latestAction>
-    <cboCostEstimates />
+    <updateDate>2018-08-28T19:59:47Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 8 (Thursday, January 12, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. DesJARLAIS:H.R. 500.Congress has the power to enact this legislation pursuantto the following:Article I, Sec. 8 Clause1: The Congress shall have Power Tolay and collect Taxes, Duties, Imposts and Excises, to paythe Debts and provide for thecommon Defence and generalWelfare of the United States; but all Duties, Imposts andExcises shall be uniform throughout theUnited States;[Page H473]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>500</billNumber>
     <originChamber>House</originChamber>
-    <notes />
-    <committees>
-      <billCommittees>
-        <item>
+    <relatedBills />
+    <title>Andrew P. Carpenter Tax Act</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
-          <subcommittees />
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T15:02:40Z</date>
-            </item>
-          </activities>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <updateDate>2017-01-13T10:07:08Z</updateDate>
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To amend the Internal Revenue Code of 1986 to exclude from gross income any discharge of indebtedness income on education loans of deceased or disabled veterans.</title>
+        </committee>
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <chamberName />
-        <titleType>Display Title</titleType>
-        <title>To amend the Internal Revenue Code of 1986 to exclude from gross income any discharge of indebtedness income on education loans of deceased or disabled veterans.</title>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>Intro-H</actionCode>
       </item>
-    </titles>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-12</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Disability and paralysis</name>
+          </item>
+          <item>
+            <name>Government lending and loan guarantees</name>
+          </item>
+          <item>
+            <name>Higher education</name>
+          </item>
+          <item>
+            <name>Income tax exclusion</name>
+          </item>
+          <item>
+            <name>Student aid and college costs</name>
+          </item>
+          <item>
+            <name>Veterans' education, employment, rehabilitation</name>
+          </item>
+          <item>
+            <name>Veterans' loans, housing, homeless programs</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <committeeReports />
+    <introducedDate>2017-01-12</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>D000616</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. DesJarlais, Scott [R-TN-4]</fullName>
+        <lastName>DesJarlais</lastName>
+        <state>TN</state>
+        <district>4</district>
+        <party>R</party>
+        <identifiers>
+          <lisID>2062</lisID>
+          <bioguideId>D000616</bioguideId>
+          <gpoId>8151</gpoId>
+        </identifiers>
+        <firstName>Scott</firstName>
+      </item>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-13T04:55:31Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

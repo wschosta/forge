@@ -1,57 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <createDate>2017-01-04T07:01:11Z</createDate>
-    <actions>
+    <titles>
       <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To amend the Internal Revenue Code of 1986 to make permanent the exclusion from gross income of discharge of qualified principal residence indebtedness.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Referred to the House Committee on Ways and Means.</text>
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. BROWNLEY of California:H.R. 110.Congress has the power to enact this legislation pursuantto the following:Amendment XVI[Page H49]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-03T17:26:05Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <links />
         <type>IntroReferral</type>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <links />
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <actionDate>2017-01-03</actionDate>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <type>IntroReferral</type>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
         <committee />
-        <actionDate>2017-01-03</actionDate>
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <type>IntroReferral</type>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <links />
+      </item>
+      <item>
         <committee />
-        <actionDate>2017-01-03</actionDate>
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in House</text>
+        <actionDate>2017-01-03</actionDate>
         <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
       <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
         <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
     </actions>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
+        <party>D</party>
+        <bioguideId>B001285</bioguideId>
+        <identifiers>
+          <bioguideId>B001285</bioguideId>
+          <lisID>2106</lisID>
+          <gpoId />
+        </identifiers>
+        <lastName>Brownley</lastName>
+        <district>26</district>
+        <middleName />
+        <firstName>Julia</firstName>
+        <byRequestType />
+        <state>CA</state>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <updateDate>2018-08-28T19:57:55Z</updateDate>
+    <billNumber>110</billNumber>
+    <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
+    <relatedBills>
+      <item>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Tax Extender Act of 2017</latestTitle>
+        <type>S</type>
+        <congress>115</congress>
+        <number>2256</number>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Finance.</text>
+          <actionDate>2017-12-20</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
+    <laws />
+    <cboCostEstimates />
+    <billType>HR</billType>
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <originChamber>House</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-10T15:17:50Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Mortgage Debt Tax Forgiveness Act of 2017 </b></p> <p>This bill amends the Internal Revenue Code to make permanent the exclusion from gross income of income attributable to the discharge of qualified principal residence indebtedness. </p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>NC</state>
+        <bioguideId>J000255</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>J000255</bioguideId>
+          <lisID>612</lisID>
+          <gpoId>8026</gpoId>
+        </identifiers>
+        <fullName>Rep. Jones, Walter B., Jr. [R-NC-3]</fullName>
+        <lastName>JONES</lastName>
+        <sponsorshipDate>2017-05-18</sponsorshipDate>
+        <firstName>WALTER</firstName>
+        <district>3</district>
+        <middleName>B.</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>MD</state>
+        <bioguideId>R000576</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>R000576</bioguideId>
+          <lisID>1728</lisID>
+          <gpoId>7977</gpoId>
+        </identifiers>
+        <fullName>Rep. Ruppersberger, C. A. Dutch [D-MD-2]</fullName>
+        <lastName>Ruppersberger</lastName>
+        <sponsorshipDate>2017-06-12</sponsorshipDate>
+        <firstName>C. A.</firstName>
+        <district>2</district>
+        <middleName>Dutch</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>NY</state>
+        <bioguideId>M001188</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2148</lisID>
+          <gpoId />
+          <bioguideId>M001188</bioguideId>
+        </identifiers>
+        <fullName>Rep. Meng, Grace [D-NY-6]</fullName>
+        <lastName>Meng</lastName>
+        <sponsorshipDate>2017-12-20</sponsorshipDate>
+        <firstName>Grace</firstName>
+        <district>6</district>
+        <middleName />
+      </item>
+      <item>
+        <party>D</party>
+        <state>NY</state>
+        <bioguideId>T000469</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1942</lisID>
+          <bioguideId>T000469</bioguideId>
+          <gpoId>8082</gpoId>
+        </identifiers>
+        <fullName>Rep. Tonko, Paul [D-NY-20]</fullName>
+        <lastName>Tonko</lastName>
+        <sponsorshipDate>2018-05-17</sponsorshipDate>
+        <firstName>Paul</firstName>
+        <district>20</district>
+        <middleName />
+      </item>
+      <item>
+        <party>D</party>
+        <state>HI</state>
+        <bioguideId>H001050</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2010</lisID>
+          <bioguideId>H001050</bioguideId>
+          <gpoId>7912</gpoId>
+        </identifiers>
+        <fullName>Rep. Hanabusa, Colleen [D-HI-1]</fullName>
+        <lastName>Hanabusa</lastName>
+        <sponsorshipDate>2018-05-17</sponsorshipDate>
+        <firstName>Colleen</firstName>
+        <district>1</district>
+        <middleName />
+      </item>
+      <item>
+        <party>D</party>
+        <state>MN</state>
+        <bioguideId>M001143</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <bioguideId>M001143</bioguideId>
+          <lisID>1653</lisID>
+          <gpoId>8004</gpoId>
+        </identifiers>
+        <fullName>Rep. McCollum, Betty [D-MN-4]</fullName>
+        <lastName>MCCOLLUM</lastName>
+        <sponsorshipDate>2018-05-17</sponsorshipDate>
+        <firstName>BETTY</firstName>
+        <district>4</district>
+        <middleName />
+      </item>
+      <item>
+        <party>D</party>
+        <state>CA</state>
+        <bioguideId>N000179</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1602</lisID>
+          <gpoId>7843</gpoId>
+          <bioguideId>N000179</bioguideId>
+        </identifiers>
+        <fullName>Rep. Napolitano, Grace F. [D-CA-32]</fullName>
+        <lastName>NAPOLITANO</lastName>
+        <sponsorshipDate>2018-05-17</sponsorshipDate>
+        <firstName>GRACE</firstName>
+        <district>32</district>
+        <middleName>F.</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>CA</state>
+        <bioguideId>C001112</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2310</lisID>
+          <bioguideId>C001112</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Carbajal, Salud O. [D-CA-24]</fullName>
+        <lastName>Carbajal</lastName>
+        <sponsorshipDate>2018-05-24</sponsorshipDate>
+        <firstName>Salud</firstName>
+        <district>24</district>
+        <middleName>O.</middleName>
+      </item>
+      <item>
+        <party>R</party>
+        <state>AL</state>
+        <bioguideId>B001274</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>1987</lisID>
+          <bioguideId>B001274</bioguideId>
+          <gpoId>7790</gpoId>
+        </identifiers>
+        <fullName>Rep. Brooks, Mo [R-AL-5]</fullName>
+        <lastName>Brooks</lastName>
+        <sponsorshipDate>2018-06-01</sponsorshipDate>
+        <firstName>Mo</firstName>
+        <district>5</district>
+        <middleName />
+      </item>
+      <item>
+        <party>D</party>
+        <state>FL</state>
+        <bioguideId>H000324</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>511</lisID>
+          <gpoId>7895</gpoId>
+          <bioguideId>H000324</bioguideId>
+        </identifiers>
+        <fullName>Rep. Hastings, Alcee L. [D-FL-20]</fullName>
+        <lastName>HASTINGS</lastName>
+        <sponsorshipDate>2018-06-05</sponsorshipDate>
+        <firstName>ALCEE</firstName>
+        <district>20</district>
+        <middleName>L.</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>NH</state>
+        <bioguideId>K000382</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2145</lisID>
+          <bioguideId>K000382</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Kuster, Ann M. [D-NH-2]</fullName>
+        <lastName>Kuster</lastName>
+        <sponsorshipDate>2018-06-05</sponsorshipDate>
+        <firstName>Ann</firstName>
+        <district>2</district>
+        <middleName>M.</middleName>
+      </item>
+      <item>
+        <party>D</party>
+        <state>NV</state>
+        <bioguideId>T000468</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <gpoId>7493</gpoId>
+          <lisID>1940</lisID>
+          <bioguideId>T000468</bioguideId>
+        </identifiers>
+        <fullName>Rep. Titus, Dina [D-NV-1]</fullName>
+        <lastName>Titus</lastName>
+        <sponsorshipDate>2018-06-07</sponsorshipDate>
+        <firstName>Dina</firstName>
+        <district>1</district>
+        <middleName />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-03</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -67,101 +404,6 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees />
-          <chamber>House</chamber>
-          <name>Ways and Means Committee</name>
-          <activities>
-            <item>
-              <date>2017-01-03T17:26:05Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <type>Standing</type>
-          <systemCode>hswm00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <cosponsors />
-    <latestAction>
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-    </latestAction>
-    <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
-    <sponsors>
-      <item>
-        <lastName>Brownley</lastName>
-        <bioguideId>B001285</bioguideId>
-        <fullName>Rep. Brownley, Julia [D-CA-26]</fullName>
-        <byRequestType />
-        <firstName>Julia</firstName>
-        <identifiers>
-          <bioguideId>B001285</bioguideId>
-          <gpoId />
-          <lisID>2106</lisID>
-        </identifiers>
-        <party>D</party>
-        <state>CA</state>
-        <middleName />
-        <district>26</district>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-03</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <text><![CDATA[<p><b>Mortgage Debt Tax Forgiveness Act of 2017 </b></p> <p>This bill amends the Internal Revenue Code to make permanent the exclusion from gross income of income attributable to the discharge of qualified principal residence indebtedness. </p>]]></text>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <actionDate>2017-01-03</actionDate>
-          <versionCode>00</versionCode>
-          <name>Introduced in House</name>
-          <lastSummaryUpdateDate>2017-01-10T15:17:50Z</lastSummaryUpdateDate>
-        </item>
-      </billSummaries>
-    </summaries>
-    <notes />
-    <recordedVotes />
-    <titles>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To amend the Internal Revenue Code of 1986 to make permanent the exclusion from gross income of discharge of qualified principal residence indebtedness.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>Mortgage Debt Tax Forgiveness Act of 2017</title>
-        <chamberName />
-      </item>
-    </titles>
-    <amendments />
-    <cboCostEstimates />
-    <policyArea>
-      <name>Taxation</name>
-    </policyArea>
-    <calendarNumbers />
-    <billNumber>110</billNumber>
-    <congress>115</congress>
-    <originChamber>House</originChamber>
-    <billType>HR</billType>
-    <updateDate>2017-01-17T22:01:42Z</updateDate>
-    <committeeReports />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

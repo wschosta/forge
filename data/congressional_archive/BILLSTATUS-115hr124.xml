@@ -1,172 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <committeeReports />
-    <recordedVotes />
-    <originChamber>House</originChamber>
-    <congress>115</congress>
-    <title>CAM TIP Act of 2017</title>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <relatedBills />
-    <introducedDate>2017-01-03</introducedDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <name>Armed Services Committee</name>
-          <systemCode>hsas00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:02:30Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-        <item>
-          <chamber>House</chamber>
-          <name>Judiciary Committee</name>
-          <systemCode>hsju00</systemCode>
-          <type>Standing</type>
-          <subcommittees />
-          <activities>
-            <item>
-              <date>2017-01-03T17:02:25Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <updateDate>2017-01-17T23:01:19Z</updateDate>
-    <createDate>2017-01-04T07:01:11Z</createDate>
     <policyArea>
       <name>Crime and Law Enforcement</name>
     </policyArea>
-    <notes />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>CAM TIP Act of 2017</title>
-      </item>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>Camera Accountability Maintenance and Transparency in Policing Act of 2017</title>
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>To establish a grant program providing for the acquisition, operation, and maintenance of body-worn cameras for law enforcement officers, and for other purposes.</title>
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <chamberCode />
-        <parentTitleType />
-        <title>CAM TIP Act of 2017</title>
-      </item>
-    </titles>
-    <amendments />
-    <cboCostEstimates />
-    <constitutionalAuthorityStatementText />
-    <billNumber>124</billNumber>
     <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-02-21</actionDate>
+      <text>Referred to the Subcommittee on Readiness.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:11Z</createDate>
+    <notes />
     <actions>
-      <actionTypeCounts>
-        <billReferrals>2</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferralsAggregate>1</billReferralsAggregate>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <actionByCounts>
-        <houseOfRepresentatives>5</houseOfRepresentatives>
-      </actionByCounts>
+      <item>
+        <actionDate>2017-02-21</actionDate>
+        <committee>
+          <systemCode>hsas03</systemCode>
+          <name>Readiness Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Readiness.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-23</actionDate>
+        <committee>
+          <systemCode>hsju08</systemCode>
+          <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations.</text>
+        <type>Committee</type>
+      </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Armed Services</text>
+        <links />
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
         <committee>
           <systemCode>hsas00</systemCode>
           <name>Armed Services Committee</name>
         </committee>
-        <links />
-        <actionCode>H11100</actionCode>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <links />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
         <committee />
-        <links />
-        <actionCode>H11100-A</actionCode>
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
         <type>IntroReferral</type>
+        <actionCode>H11100-A</actionCode>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Referred to House Judiciary</text>
+        <links />
         <sourceSystem>
-          <name>House floor actions</name>
           <code>2</code>
+          <name>House floor actions</name>
         </sourceSystem>
         <committee>
           <systemCode>hsju00</systemCode>
           <name>Judiciary Committee</name>
         </committee>
-        <links />
+        <text>Referred to the Committee on the Judiciary, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+        <type>IntroReferral</type>
         <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <links />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
         <committee />
-        <links />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
       </item>
       <item>
         <actionDate>2017-01-03</actionDate>
-        <text>Introduced in House</text>
+        <links />
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
         <committee />
-        <links />
-        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
         <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>7</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferralsAggregate>1</billReferralsAggregate>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>2</billReferrals>
+        <placeholderTextForH>2</placeholderTextForH>
+      </actionTypeCounts>
     </actions>
     <calendarNumbers />
-    <cosponsors />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to House Armed Services</text>
-    </latestAction>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -200,24 +153,159 @@
         </policyArea>
       </billSubjects>
     </subjects>
+    <billNumber>124</billNumber>
+    <title>CAM TIP Act of 2017</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. AL GREEN of Texas:H.R. 124.Congress has the power to enact this legislation pursuantto the following:Commerce Clause (Art. 1, Sec. 8, Cl. 3)Necessary and Proper Clause (Art. 1, Sec. 8, Cl. 18)[Page H50]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <type>Standing</type>
+          <name>Armed Services Committee</name>
+          <systemCode>hsas00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:02:30Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Readiness Subcommittee</name>
+              <systemCode>hsas03</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-02-21T19:00:22Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+        <item>
+          <type>Standing</type>
+          <name>Judiciary Committee</name>
+          <systemCode>hsju00</systemCode>
+          <chamber>House</chamber>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:02:25Z</date>
+            </item>
+          </activities>
+          <subcommittees>
+            <item>
+              <name>Crime, Terrorism, Homeland Security, and Investigations Subcommittee</name>
+              <systemCode>hsju08</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-23T16:26:52Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
+      <item>
+        <lastName>Khanna</lastName>
+        <state>CA</state>
+        <firstName>Ro</firstName>
+        <sponsorshipDate>2018-07-03</sponsorshipDate>
+        <district>17</district>
+        <fullName>Rep. Khanna, Ro [D-CA-17]</fullName>
+        <identifiers>
+          <lisID>2308</lisID>
+          <bioguideId>K000389</bioguideId>
+          <gpoId />
+        </identifiers>
+        <bioguideId>K000389</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <party>D</party>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T19:57:58Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <bioguideId>G000553</bioguideId>
-        <lastName>Green</lastName>
-        <district>9</district>
-        <fullName>Rep. Green, Al [D-TX-9]</fullName>
-        <state>TX</state>
         <middleName />
-        <byRequestType />
-        <firstName>Al</firstName>
-        <party>D</party>
+        <bioguideId>G000553</bioguideId>
         <identifiers>
+          <gpoId>8165</gpoId>
           <lisID>1803</lisID>
           <bioguideId>G000553</bioguideId>
-          <gpoId>8165</gpoId>
         </identifiers>
+        <fullName>Rep. Green, Al [D-TX-9]</fullName>
+        <byRequestType />
+        <party>D</party>
+        <firstName>Al</firstName>
+        <state>TX</state>
+        <lastName>Green</lastName>
+        <district>9</district>
       </item>
     </sponsors>
+    <relatedBills />
+    <committeeReports />
+    <titles>
+      <item>
+        <title>CAM TIP Act of 2017</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Camera Accountability Maintenance and Transparency in Policing Act of 2017</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To establish a grant program providing for the acquisition, operation, and maintenance of body-worn cameras for law enforcement officers, and for other purposes.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>CAM TIP Act of 2017</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Camera Accountability Maintenance and Transparency in Policing Act of 2017</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <actionDate>2017-01-03</actionDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong></strong></p> <p> <p><b>Camera Accountability Maintenance and Transparency in Policing Act of 2017 or the CAM TIP Act of 2017</b></p> <p>This bill amends the Omnibus Crime Control and Safe Streets Act of 1968 to establish a grant program for state, local, and tribal governments to acquire, operate, and maintain body-worn cameras for law enforcement officers.</p> <p>Additionally, it establishes a task force in the Department of Justice (DOJ) to provide recommendations on community policing, including best practices for accountability and transparency.</p> <p>DOJ must study the cost to purchase and use body-worn cameras. </p> <p>Finally, the Government Accountability Office must study and report on the Department of Defense Excess Personal Property Program. </p>]]></text>
+          <lastSummaryUpdateDate>2017-03-06T17:42:35Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

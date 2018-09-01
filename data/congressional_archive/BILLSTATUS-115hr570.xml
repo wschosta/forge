@@ -1,78 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <cosponsors />
-    <laws />
-    <congress>115</congress>
-    <billNumber>570</billNumber>
-    <billType>HR</billType>
-    <cboCostEstimates />
-    <policyArea />
     <amendments />
+    <latestAction>
+      <actionDate>2017-01-13</actionDate>
+      <text>Referred to the House Committee on Foreign Affairs.</text>
+      <links />
+    </latestAction>
+    <congress>115</congress>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>International Affairs</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Alternative and renewable resources</name>
+          </item>
+          <item>
+            <name>Business investment and capital</name>
+          </item>
+          <item>
+            <name>Foreign aid and international relief</name>
+          </item>
+          <item>
+            <name>Small business</name>
+          </item>
+          <item>
+            <name>Women in business</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
+    <laws />
     <notes />
-    <constitutionalAuthorityStatementText />
-    <recordedVotes />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <updateDate>2017-01-14T09:58:55Z</updateDate>
-    <originChamber>House</originChamber>
-    <actions>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
+    <billType>HR</billType>
+    <sponsors>
       <item>
-        <text>Referred to the House Committee on Foreign Affairs.</text>
+        <lastName>SERRANO</lastName>
+        <middleName>E.</middleName>
+        <bioguideId>S000248</bioguideId>
+        <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
+        <identifiers>
+          <bioguideId>S000248</bioguideId>
+          <gpoId>8077</gpoId>
+          <lisID>1042</lisID>
+        </identifiers>
+        <byRequestType />
+        <state>NY</state>
+        <firstName>JOSE</firstName>
+        <party>D</party>
+        <district>15</district>
+      </item>
+    </sponsors>
+    <recordedVotes />
+    <committeeReports />
+    <introducedDate>2017-01-13</introducedDate>
+    <relatedBills />
+    <cosponsors />
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <type>IntroReferral</type>
+        <links />
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
         <committee>
           <name>Foreign Affairs Committee</name>
           <systemCode>hsfa00</systemCode>
         </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
+        <text>Referred to the House Committee on Foreign Affairs.</text>
         <actionCode>H11100</actionCode>
+        <actionDate>2017-01-13</actionDate>
       </item>
       <item>
-        <text>Introduced in House</text>
-        <committee />
         <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
         <actionCode>Intro-H</actionCode>
+        <actionDate>2017-01-13</actionDate>
       </item>
       <item>
-        <text>Introduced in House</text>
-        <committee />
         <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <links />
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
         <actionCode>1000</actionCode>
+        <actionDate>2017-01-13</actionDate>
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
     </actions>
-    <committeeReports />
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <systemCode>hsfa00</systemCode>
+          <name>Foreign Affairs Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-13T14:07:25Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
+    <updateDate>2018-08-28T20:00:01Z</updateDate>
+    <version>1.0.0</version>
+    <title>Solar Villages Initiative Act</title>
+    <createDate>2017-01-14T04:47:33Z</createDate>
+    <billNumber>570</billNumber>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. SERRANO:H.R. 570.Congress has the power to enact this legislationpursuantto the following:Article I, Section 8 of the Constitution[Page H548]</pre>]]></constitutionalAuthorityStatementText>
+    <cboCostEstimates />
+    <calendarNumbers />
+    <policyArea>
+      <name>International Affairs</name>
+    </policyArea>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-13</actionDate>
+          <lastSummaryUpdateDate>2017-02-09T20:52:51Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Solar Villages Initiative Act</strong></p> <p> This bill authorizes the President, through the U.S. Agency for International Development, to provide assistance for renewable energy projects in developing countries to increase the availability of credit, savings, and other services to microfinance and microenterprise clients lacking full access to capital, training, technical assistance, and business development services. </p> <p> In providing such assistance, the President shall give priority to empowering female-owned businesses.]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <originChamber>House</originChamber>
     <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Solar Villages Initiative Act</title>
+        <parentTitleType />
+      </item>
       <item>
         <chamberCode />
         <titleType>Official Title as Introduced</titleType>
@@ -84,55 +168,17 @@
         <chamberCode />
         <titleType>Display Title</titleType>
         <chamberName />
-        <title>To authorize microenterprise assistance for renewable energy projects in developing countries.</title>
+        <title>Solar Villages Initiative Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Solar Villages Initiative Act</title>
         <parentTitleType />
       </item>
     </titles>
-    <relatedBills />
-    <calendarNumbers />
-    <title>To authorize microenterprise assistance for renewable energy projects in developing countries.</title>
-    <introducedDate>2017-01-13</introducedDate>
-    <latestAction>
-      <actionDate>2017-01-13</actionDate>
-      <text>Referred to the House Committee on Foreign Affairs.</text>
-      <links />
-    </latestAction>
-    <createDate>2017-01-14T04:47:33Z</createDate>
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hsfa00</systemCode>
-          <name>Foreign Affairs Committee</name>
-          <subcommittees />
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-13T14:07:25Z</date>
-            </item>
-          </activities>
-          <type>Standing</type>
-        </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <fullName>Rep. Serrano, Jose E. [D-NY-15]</fullName>
-        <firstName>JOSE</firstName>
-        <bioguideId>S000248</bioguideId>
-        <party>D</party>
-        <middleName>E.</middleName>
-        <byRequestType />
-        <district>15</district>
-        <state>NY</state>
-        <lastName>SERRANO</lastName>
-        <identifiers>
-          <gpoId>8077</gpoId>
-          <bioguideId>S000248</bioguideId>
-          <lisID>1042</lisID>
-        </identifiers>
-      </item>
-    </sponsors>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

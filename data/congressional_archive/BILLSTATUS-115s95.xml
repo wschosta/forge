@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <policyArea />
-    <updateDate>2017-01-12T14:39:52Z</updateDate>
-    <billType>S</billType>
-    <laws />
-    <sponsors>
-      <item>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <identifiers>
-          <lisID>1863</lisID>
-          <gpoId>8060</gpoId>
-          <bioguideId>H001041</bioguideId>
-        </identifiers>
-        <byRequestType />
-        <bioguideId>H001041</bioguideId>
-        <lastName>Heller</lastName>
-        <state>NV</state>
-        <firstName>Dean</firstName>
-        <party>R</party>
-        <middleName />
-      </item>
-    </sponsors>
-    <congress>115</congress>
-    <latestAction>
-      <actionDate>2017-01-11</actionDate>
-      <text>Read twice and referred to the Committee on Environment and Public Works.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <calendarNumbers />
-    <cboCostEstimates />
-    <title>A bill to require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <date>2017-01-11T17:30:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <systemCode>ssev00</systemCode>
+          <name>Environment and Public Works Committee</name>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -44,97 +30,174 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Environment and Public Works.</text>
         <type>IntroReferral</type>
       </item>
       <item>
         <committee />
-        <actionCode>10000</actionCode>
+        <links />
         <type>IntroReferral</type>
         <text>Introduced in Senate</text>
         <actionDate>2017-01-11</actionDate>
+        <actionCode>10000</actionCode>
         <sourceSystem>
-          <name>Library of Congress</name>
           <code>9</code>
+          <name>Library of Congress</name>
         </sourceSystem>
-        <links />
       </item>
       <actionTypeCounts>
         <referredToCommittee>1</referredToCommittee>
         <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
     </actions>
-    <amendments />
-    <introducedDate>2017-01-11</introducedDate>
-    <billNumber>95</billNumber>
-    <relatedBills />
+    <recordedVotes />
+    <laws />
+    <calendarNumbers />
     <titles>
       <item>
-        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
         <chamberName />
+        <chamberCode />
         <parentTitleType />
+        <title>Nuclear Waste Informed Consent Act</title>
+      </item>
+      <item>
         <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
         <title>A bill to require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
       </item>
       <item>
-        <chamberCode />
-        <chamberName />
-        <parentTitleType />
         <titleType>Display Title</titleType>
-        <title>A bill to require the Secretary of Energy to obtain the consent of affected State and local governments before making an expenditure from the Nuclear Waste Fund for a nuclear waste repository.</title>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Nuclear Waste Informed Consent Act</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Nuclear Waste Informed Consent Act</title>
       </item>
     </titles>
     <cosponsors>
       <item>
-        <middleName />
-        <firstName>Catherine</firstName>
-        <bioguideId>C001113</bioguideId>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <lastName>Cortez Masto</lastName>
         <state>NV</state>
+        <middleName />
+        <party>D</party>
+        <bioguideId>C001113</bioguideId>
+        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <firstName>Catherine</firstName>
+        <sponsorshipWithdrawnDate />
         <identifiers>
+          <lisID>2299</lisID>
           <gpoId />
           <bioguideId>C001113</bioguideId>
-          <lisID>2299</lisID>
         </identifiers>
-        <party>D</party>
         <fullName>Sen. Cortez Masto, Catherine  [D-NV]</fullName>
-        <lastName>Cortez Masto</lastName>
-        <sponsorshipWithdrawnDate />
-        <sponsorshipDate>2017-01-11</sponsorshipDate>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
     </cosponsors>
-    <committeeReports />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Read twice and referred to the Committee on Environment and Public Works.</text>
+      <links />
+      <actionDate>2017-01-11</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T20:22:36Z</updateDate>
+    <version>1.0.0</version>
+    <policyArea>
+      <name>Energy</name>
+    </policyArea>
+    <billType>S</billType>
+    <billNumber>95</billNumber>
     <originChamber>Senate</originChamber>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <number>456</number>
+        <type>HR</type>
+        <latestTitle>Nuclear Waste Informed Consent Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Subcommittee on Environment.</text>
+          <actionDate>2017-01-25</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <title>Nuclear Waste Informed Consent Act</title>
+    <congress>115</congress>
     <summaries>
-      <billSummaries />
+      <billSummaries>
+        <item>
+          <name>Introduced in Senate</name>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <actionDate>2017-01-11</actionDate>
+          <lastSummaryUpdateDate>2017-05-02T17:44:02Z</lastSummaryUpdateDate>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-11T05:00:00Z</updateDate>
+          <text><![CDATA[<p><b>Nuclear Waste Informed Consent Act</b></p> <p>This bill prohibits the Department of Energy (DOE) from making an expenditure from the Nuclear Waste Fund for the costs incurred by DOE in connection with disposing of spent nuclear fuel or high-level radioactive waste in a repository, unless DOE has entered into an agreement to host the repository with certain affected entities.</p> Additionally, any agreement to host the repository must meet certain conditions.]]></text>
+        </item>
+      </billSummaries>
     </summaries>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Energy</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Federal-Indian relations</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Nuclear power</name>
+          </item>
+          <item>
+            <name>Radioactive wastes and releases</name>
+          </item>
+          <item>
+            <name>State and local government operations</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <createDate>2017-01-12T08:17:36Z</createDate>
+    <committeeReports />
+    <introducedDate>2017-01-11</introducedDate>
+    <sponsors>
+      <item>
+        <bioguideId>H001041</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <lastName>Heller</lastName>
+        <state>NV</state>
+        <party>R</party>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <firstName>Dean</firstName>
+      </item>
+    </sponsors>
     <notes />
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees />
-          <name>Environment and Public Works Committee</name>
-          <systemCode>ssev00</systemCode>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <date>2017-01-11T17:30:20Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <chamber>Senate</chamber>
-        </item>
-      </billCommittees>
-    </committees>
+    <createDate>2017-01-12T08:17:36Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

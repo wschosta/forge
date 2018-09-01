@@ -1,63 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <introducedDate>2017-01-03</introducedDate>
-    <cosponsors />
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:16:00Z</date>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+          <type>Standing</type>
+          <subcommittees />
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-04-03T12:18:43Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-03</actionDate>
+          <text><![CDATA[<p><b>Worksite Reporting Act</b></p> <p>This bill directs the Department of Labor to revise regulations under the Occupational Safety and Health Act of 1970 by requiring site-controlling employers to keep a site log for all recordable injuries and illnesses occurring among all employees on the particular site, irrespective of whether such employees are employed directly by the site-controlling employer or are employed by contractors or temporary help or employee leasing services.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
     <calendarNumbers />
+    <titles>
+      <item>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Worksite Reporting Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>To direct the Secretary of Labor to revise regulations concerning the recording and reporting of occupational injuries and illnesses under the Occupational Safety and Health Act of 1970.</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Worksite Reporting Act</title>
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+        <title>Worksite Reporting Act</title>
+      </item>
+    </titles>
+    <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the House Committee on Education and the Workforce.</text>
+      <links />
+      <actionDate>2017-01-03</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:04Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. GENE GREEN of Texas:H.R. 155.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 3 of the U.S. Constitution(``the Commerce Clause'').[Page H51]</pre>]]></constitutionalAuthorityStatementText>
     <policyArea>
       <name>Labor and Employment</name>
     </policyArea>
     <billType>HR</billType>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <notes />
-    <congress>115</congress>
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <party>D</party>
-        <middleName />
-        <lastName>GREEN</lastName>
-        <fullName>Rep. Green, Gene [D-TX-29]</fullName>
-        <bioguideId>G000410</bioguideId>
-        <state>TX</state>
-        <byRequestType />
-        <district>29</district>
-        <identifiers>
-          <lisID>462</lisID>
-          <gpoId>8185</gpoId>
-          <bioguideId>G000410</bioguideId>
-        </identifiers>
-        <firstName>GENE</firstName>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <chamberName />
-        <title>Worksite Reporting Act</title>
-        <chamberCode />
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>To direct the Secretary of Labor to revise regulations concerning the recording and reporting of occupational injuries and illnesses under the Occupational Safety and Health Act of 1970.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>Worksite Reporting Act</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-      </item>
-    </titles>
     <billNumber>155</billNumber>
+    <originChamber>House</originChamber>
     <relatedBills />
+    <title>Worksite Reporting Act</title>
+    <congress>115</congress>
+    <actions>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hsed00</systemCode>
+          <name>Education and the Workforce Committee</name>
+        </committee>
+        <text>Referred to the House Committee on Education and the Workforce.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -88,85 +162,29 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <amendments />
-    <originChamber>House</originChamber>
-    <updateDate>2017-01-10T16:32:08Z</updateDate>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <links />
-      <text>Referred to the House Committee on Education and the Workforce.</text>
-    </latestAction>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <subcommittees />
-          <type>Standing</type>
-          <name>Education and the Workforce Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:16:00Z</date>
-            </item>
-          </activities>
-          <systemCode>hsed00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
     <committeeReports />
-    <constitutionalAuthorityStatementText />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
       <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <name>Education and the Workforce Committee</name>
-          <systemCode>hsed00</systemCode>
-        </committee>
-        <text>Referred to the House Committee on Education and the Workforce.</text>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <links />
+        <bioguideId>G000410</bioguideId>
+        <middleName />
+        <byRequestType />
+        <fullName>Rep. Green, Gene [D-TX-29]</fullName>
+        <lastName>GREEN</lastName>
+        <state>TX</state>
+        <district>29</district>
+        <party>D</party>
+        <identifiers>
+          <lisID>462</lisID>
+          <gpoId>8185</gpoId>
+          <bioguideId>G000410</bioguideId>
+        </identifiers>
+        <firstName>GENE</firstName>
       </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <item>
-        <actionDate>2017-01-03</actionDate>
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <links />
-      </item>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-    </actions>
-    <laws />
-    <cboCostEstimates />
-    <title>Worksite Reporting Act</title>
+    </sponsors>
+    <notes />
+    <createDate>2017-01-04T07:01:12Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

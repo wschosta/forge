@@ -1,33 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <updateDate>2017-01-17T17:01:14Z</updateDate>
-    <relatedBills />
-    <laws />
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>House</chamber>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-03T17:18:20Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <name>Veterans' Affairs Committee</name>
-          <type>Standing</type>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <billType>HR</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-05-02</actionDate>
+      <text>Referred to the Subcommittee on Health.</text>
+    </latestAction>
+    <createDate>2017-01-04T07:01:09Z</createDate>
+    <notes />
+    <actions>
+      <item>
+        <actionDate>2017-05-02</actionDate>
+        <committee>
+          <systemCode>hsvr03</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-19</actionDate>
+        <committee>
           <systemCode>hsvr00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <amendments />
-    <constitutionalAuthorityStatementText />
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Subcommittee on Oversight and Investigations Discharged.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
+        <text>Referred to the House Committee on Veterans' Affairs.</text>
+        <committee>
+          <systemCode>hsvr00</systemCode>
+          <name>Veterans' Affairs Committee</name>
+        </committee>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>1000</actionCode>
+        <text>Introduced in House</text>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionTypeCounts>
+        <placeholderTextForH>2</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+      <actionByCounts>
+        <houseOfRepresentatives>5</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <policyArea>
-          <name>Armed Forces and National Security</name>
-        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Department of Veterans Affairs</name>
@@ -51,125 +117,154 @@
             <name>Veterans' medical care</name>
           </item>
         </legislativeSubjects>
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <billType>HR</billType>
-    <titles>
+    <billNumber>42</billNumber>
+    <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. MULLIN:H.R. 42.Congress has the power to enact this legislation pursuantto the following:Article I, Section 8, Clause 18 of the U.S. Constitution[Page H47]</pre>]]></constitutionalAuthorityStatementText>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>House</chamber>
+          <systemCode>hsvr00</systemCode>
+          <subcommittees>
+            <item>
+              <systemCode>hsvr03</systemCode>
+              <name>Health Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-05-02T19:38:17Z</date>
+                </item>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-19T15:35:26Z</date>
+                </item>
+              </activities>
+            </item>
+            <item>
+              <systemCode>hsvr08</systemCode>
+              <name>Oversight and Investigations Subcommittee</name>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-19T20:10:26Z</date>
+                </item>
+                <item>
+                  <name>Discharged from</name>
+                  <date>2017-01-19T15:35:07Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
+          <type>Standing</type>
+          <name>Veterans' Affairs Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-03T17:18:20Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors>
       <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
-        <chamberName />
-      </item>
-      <item>
-        <parentTitleType />
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
-        <chamberName />
-      </item>
-    </titles>
-    <sponsors>
-      <item>
-        <byRequestType />
-        <lastName>Mullin</lastName>
-        <firstName>Markwayne</firstName>
-        <state>OK</state>
+        <sponsorshipDate>2017-12-06</sponsorshipDate>
         <party>R</party>
-        <bioguideId>M001190</bioguideId>
-        <middleName />
+        <fullName>Rep. Russell, Steve [R-OK-5]</fullName>
         <identifiers>
-          <lisID>2156</lisID>
-          <bioguideId>M001190</bioguideId>
+          <lisID>2265</lisID>
+          <bioguideId>R000604</bioguideId>
           <gpoId />
         </identifiers>
+        <lastName>Russell</lastName>
+        <firstName>Steve</firstName>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <middleName />
+        <sponsorshipWithdrawnDate />
+        <state>OK</state>
+        <district>5</district>
+        <bioguideId>R000604</bioguideId>
+      </item>
+    </cosponsors>
+    <updateDate>2018-08-28T19:57:28Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-03</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>M001190</bioguideId>
+        <identifiers>
+          <lisID>2156</lisID>
+          <gpoId />
+          <bioguideId>M001190</bioguideId>
+        </identifiers>
         <fullName>Rep. Mullin, Markwayne [R-OK-2]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Markwayne</firstName>
+        <state>OK</state>
+        <lastName>Mullin</lastName>
         <district>2</district>
       </item>
     </sponsors>
-    <calendarNumbers />
-    <congress>115</congress>
+    <relatedBills>
+      <item>
+        <type>S</type>
+        <number>1266</number>
+        <latestAction>
+          <actionDate>2017-12-20</actionDate>
+          <text>Became Public Law No: 115-95.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Enhancing Veteran Care Act</latestTitle>
+      </item>
+    </relatedBills>
     <committeeReports />
-    <cosponsors />
-    <policyArea>
-      <name>Armed Forces and National Security</name>
-    </policyArea>
-    <billNumber>42</billNumber>
-    <createDate>2017-01-04T07:01:09Z</createDate>
+    <titles>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
+    <recordedVotes />
     <summaries>
       <billSummaries>
         <item>
-          <text><![CDATA[<p> This bill authorizes the Director of a Veterans Integrated Service Network of the Department of Veterans Affairs to contract with an entity specializing in civilian accreditation or health care evaluation to investigate any medical center within the network to assess deficiencies of the facilities at such medical center.</p>]]></text>
           <updateDate>2017-01-03T05:00:00Z</updateDate>
           <actionDate>2017-01-03</actionDate>
-          <versionCode>00</versionCode>
-          <actionDesc>Introduced in House</actionDesc>
           <lastSummaryUpdateDate>2017-01-11T20:38:20Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p> This bill authorizes the Director of a Veterans Integrated Service Network of the Department of Veterans Affairs to contract with an entity specializing in civilian accreditation or health care evaluation to investigate any medical center within the network to assess deficiencies of the facilities at such medical center.</p>]]></text>
+          <actionDesc>Introduced in House</actionDesc>
+          <versionCode>00</versionCode>
           <name>Introduced in House</name>
         </item>
       </billSummaries>
     </summaries>
-    <cboCostEstimates />
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Veterans' Affairs.</text>
-      <links />
-    </latestAction>
-    <recordedVotes />
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-      </actionTypeCounts>
-      <item>
-        <sourceSystem>
-          <name>House floor actions</name>
-          <code>2</code>
-        </sourceSystem>
-        <text>Referred to the House Committee on Veterans' Affairs.</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee>
-          <name>Veterans' Affairs Committee</name>
-          <systemCode>hsvr00</systemCode>
-        </committee>
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-      </item>
-      <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in House</text>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <actionDate>2017-01-03</actionDate>
-        <committee />
-      </item>
-    </actions>
-    <title>To authorize the Directors of Veterans Integrated Service Networks of the Department of Veterans Affairs to enter into contracts with appropriate civilian accreditation entities or appropriate health care evaluation entities to investigate medical centers of the Department of Veterans Affairs.</title>
-    <notes />
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-03</introducedDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <notes />
+    <congress>115</congress>
+    <committees>
+      <billCommittees>
+        <item>
+          <chamber>Senate</chamber>
+          <systemCode>ssfi00</systemCode>
+          <subcommittees />
+          <type>Standing</type>
+          <name>Finance Committee</name>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-12T21:51:43Z</date>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <committeeReports />
+    <cboCostEstimates />
+    <title>Promise Zone Job Creation Act of 2017</title>
+    <laws />
+    <updateDate>2018-08-28T20:22:53Z</updateDate>
+    <relatedBills />
+    <version>1.0.0</version>
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -13,8 +34,8 @@
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Finance Committee</name>
           <systemCode>ssfi00</systemCode>
+          <name>Finance Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -25,116 +46,153 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in Senate</text>
+        <actionDate>2017-01-12</actionDate>
         <actionCode>10000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <links />
       </item>
       <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
     </actions>
-    <policyArea />
-    <notes />
-    <createDate>2017-01-13T04:55:35Z</createDate>
-    <title>A bill to amend the Internal Revenue Code of 1986 to provide for the establishment of Promise Zones.</title>
-    <relatedBills />
+    <sponsors>
+      <item>
+        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
+        <identifiers>
+          <bioguideId>C001070</bioguideId>
+          <lisID>1828</lisID>
+          <gpoId>8282</gpoId>
+        </identifiers>
+        <bioguideId>C001070</bioguideId>
+        <lastName>Casey</lastName>
+        <firstName>Bob</firstName>
+        <party>D</party>
+        <byRequestType />
+        <middleName />
+        <state>PA</state>
+      </item>
+    </sponsors>
+    <billType>S</billType>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>144</billNumber>
+    <titles>
+      <item>
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Promise Zone Job Creation Act of 2017</title>
+      </item>
+      <item>
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>A bill to amend the Internal Revenue Code of 1986 to provide for the establishment of Promise Zones.</title>
+      </item>
+      <item>
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Promise Zone Job Creation Act of 2017</title>
+      </item>
+      <item>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <chamberCode />
+        <parentTitleType />
+        <title>Promise Zone Job Creation Act of 2017</title>
+      </item>
+    </titles>
+    <originChamber>Senate</originChamber>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Business investment and capital</name>
+          </item>
+          <item>
+            <name>Economic development</name>
+          </item>
+          <item>
+            <name>Employee hiring</name>
+          </item>
+          <item>
+            <name>Income tax credits</name>
+          </item>
+          <item>
+            <name>Income tax deductions</name>
+          </item>
+          <item>
+            <name>Indian social and development programs</name>
+          </item>
+          <item>
+            <name>Rural conditions and development</name>
+          </item>
+          <item>
+            <name>Urban and suburban affairs and development</name>
+          </item>
+          <item>
+            <name>Wages and earnings</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
     <cosponsors>
       <item>
         <fullName>Sen. Murray, Patty [D-WA]</fullName>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <bioguideId>M001111</bioguideId>
         <identifiers>
           <lisID>1409</lisID>
           <gpoId>8237</gpoId>
           <bioguideId>M001111</bioguideId>
         </identifiers>
-        <bioguideId>M001111</bioguideId>
         <lastName>MURRAY</lastName>
-        <state>WA</state>
-        <firstName>PATTY</firstName>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <sponsorshipWithdrawnDate />
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
         <middleName />
-        <party>D</party>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
+        <firstName>PATTY</firstName>
+        <state>WA</state>
+        <sponsorshipWithdrawnDate />
       </item>
     </cosponsors>
-    <cboCostEstimates />
-    <updateDate>2017-01-13T10:07:39Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <introducedDate>2017-01-12</introducedDate>
+    <calendarNumbers />
     <latestAction>
-      <links />
       <actionDate>2017-01-12</actionDate>
+      <links />
       <text>Read twice and referred to the Committee on Finance.</text>
     </latestAction>
-    <originChamber>Senate</originChamber>
-    <introducedDate>2017-01-12</introducedDate>
-    <billNumber>144</billNumber>
     <amendments />
-    <billType>S</billType>
-    <committees>
-      <billCommittees>
+    <summaries>
+      <billSummaries>
         <item>
-          <name>Finance Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-12T21:51:43Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <type>Standing</type>
-          <systemCode>ssfi00</systemCode>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <lastSummaryUpdateDate>2017-03-30T18:58:50Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><strong>Promise Zone Job Creation Act of 201</strong><b>7</b></p> <p>This bill amends the Internal Revenue Code to direct the Departments of Housing and Urban Development and Agriculture, acting jointly, to designate, before January 1, 2019, not more than 40 areas as Promise Zones for purposes of priority consideration in federal grant programs and initiatives. Twelve of such areas shall be outside of a metropolitan statistical area or shall be determined to be rural areas. </p> <p>A "Promise Zone" is any area with a&nbsp;continuous boundary and a&nbsp;population of not more than&nbsp;200,000 that is nominated by one or more local governments or Indian tribes and designated on the basis of unemployment rates, poverty rates, vacancy rates, crime rates, household income, home ownership, labor force participation, and educational attainment. An application for designation as a Promise Zone shall include a competitiveness plan that addresses the need of the area to attract investment and jobs and improve educational opportunities.</p> <p>The bill allows: (1) a Promise Zone employment tax credit for wages paid to a qualified zone or resident employee, and (2) expensing of Promise Zone property. </p> <p>A "Promise Zone property" is a property that is: (1) tangible property with a&nbsp;recovery period of 20 years or less for depreciation purposes,&nbsp;water utility property, computer software, or qualified leasehold improvement property; (2) acquired by purchase for use&nbsp;in the active conduct of a trade or business; and (3) originally placed in service in a Promise Zone. </p>]]></text>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
         </item>
-      </billCommittees>
-    </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Casey</lastName>
-        <state>PA</state>
-        <byRequestType />
-        <firstName>Bob</firstName>
-        <bioguideId>C001070</bioguideId>
-        <fullName>Sen. Casey, Robert P., Jr. [D-PA]</fullName>
-        <identifiers>
-          <gpoId>8282</gpoId>
-          <bioguideId>C001070</bioguideId>
-          <lisID>1828</lisID>
-        </identifiers>
-        <middleName />
-        <party>D</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to amend the Internal Revenue Code of 1986 to provide for the establishment of Promise Zones.</title>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A bill to amend the Internal Revenue Code of 1986 to provide for the establishment of Promise Zones.</title>
-        <parentTitleType />
-      </item>
-    </titles>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-13T04:55:35Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

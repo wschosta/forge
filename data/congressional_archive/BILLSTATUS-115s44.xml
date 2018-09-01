@@ -1,101 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <recordedVotes />
-    <latestAction>
-      <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
-      <actionDate>2017-01-05</actionDate>
-      <links />
-    </latestAction>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <sponsors>
-      <item>
-        <party>R</party>
-        <identifiers>
-          <bioguideId>H001041</bioguideId>
-          <lisID>1863</lisID>
-          <gpoId>8060</gpoId>
-        </identifiers>
-        <bioguideId>H001041</bioguideId>
-        <lastName>Heller</lastName>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <middleName />
-        <state>NV</state>
-        <byRequestType />
-        <firstName>Dean</firstName>
-      </item>
-    </sponsors>
-    <laws />
-    <originChamber>Senate</originChamber>
-    <cboCostEstimates />
-    <notes />
     <title>End Pay Discrimination Through Information Act</title>
-    <congress>115</congress>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <chamberName />
-        <title>End Pay Discrimination Through Information Act</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to amend the Fair Labor Standards Act of 1938 to improve nonretaliation provisions relating to equal pay requirements.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>End Pay Discrimination Through Information Act</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <introducedDate>2017-01-05</introducedDate>
-    <committeeReports />
-    <billType>S</billType>
-    <committees>
-      <billCommittees>
-        <item>
-          <subcommittees />
-          <chamber>Senate</chamber>
-          <name>Health, Education, Labor, and Pensions Committee</name>
-          <activities>
-            <item>
-              <date>2017-01-05T19:36:37Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <type>Standing</type>
-          <systemCode>sshr00</systemCode>
-        </item>
-      </billCommittees>
-    </committees>
-    <policyArea>
-      <name>Labor and Employment</name>
-    </policyArea>
-    <amendments />
+    <originChamber>Senate</originChamber>
+    <updateDate>2018-08-28T20:22:22Z</updateDate>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Employment discrimination and employee rights</name>
+          </item>
+          <item>
+            <name>Labor standards</name>
+          </item>
+          <item>
+            <name>Sex, gender, sexual orientation discrimination</name>
+          </item>
+          <item>
+            <name>Wages and earnings</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Labor and Employment</name>
         </policyArea>
       </billSubjects>
     </subjects>
+    <version>1.0.0</version>
+    <billType>S</billType>
+    <latestAction>
+      <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
+      <links />
+      <actionDate>2017-01-05</actionDate>
+    </latestAction>
+    <policyArea>
+      <name>Labor and Employment</name>
+    </policyArea>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <number>819</number>
+        <type>S</type>
+        <latestTitle>Paycheck Fairness Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
+          <actionDate>2017-04-04</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>1869</number>
+        <type>HR</type>
+        <latestTitle>Paycheck Fairness Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the House Committee on Education and the Workforce.</text>
+          <actionDate>2017-04-04</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <introducedDate>2017-01-05</introducedDate>
     <actions>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
-      <actionByCounts>
-        <senate>2</senate>
-      </actionByCounts>
       <item>
         <actionDate>2017-01-05</actionDate>
         <committee>
@@ -104,31 +80,137 @@
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Health, Education, Labor, and Pensions.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <links />
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <actionCode>10000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-05</actionDate>
-        <committee />
         <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionByCounts>
+        <senate>2</senate>
+      </actionByCounts>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
     </actions>
-    <calendarNumbers />
-    <updateDate>2017-01-20T09:55:48Z</updateDate>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
     <billNumber>44</billNumber>
-    <cosponsors />
+    <cboCostEstimates />
+    <cosponsors>
+      <item>
+        <lastName>Murkowski</lastName>
+        <sponsorshipDate>2017-05-08</sponsorshipDate>
+        <party>R</party>
+        <fullName>Sen. Murkowski, Lisa [R-AK]</fullName>
+        <identifiers>
+          <bioguideId>M001153</bioguideId>
+          <gpoId>8234</gpoId>
+          <lisID>1694</lisID>
+        </identifiers>
+        <firstName>Lisa</firstName>
+        <sponsorshipWithdrawnDate />
+        <state>AK</state>
+        <middleName />
+        <bioguideId>M001153</bioguideId>
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+      </item>
+    </cosponsors>
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-05-31T15:28:19Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-05</actionDate>
+          <text><![CDATA[<p><b>End Pay Discrimination Through Information Act</b></p> <p> This bill amends the Fair Labor Standards Act of 1938 to prohibit an employer from discriminating against an employee who inquires about, discusses, or discloses the wages of the employee or another employee. This protection does not apply to an employee who has access to wage information as part of the employee's essential job functions, unless the disclosure is in response to a sex discrimination complaint or charge, or in furtherance of a sex discrimination investigation, proceeding, hearing, or action, including an investigation conducted by the employer. </p>]]></text>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in Senate</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committees>
+      <billCommittees>
+        <item>
+          <activities>
+            <item>
+              <name>Referred to</name>
+              <date>2017-01-05T19:36:37Z</date>
+            </item>
+          </activities>
+          <name>Health, Education, Labor, and Pensions Committee</name>
+          <type>Standing</type>
+          <chamber>Senate</chamber>
+          <subcommittees />
+          <systemCode>sshr00</systemCode>
+        </item>
+      </billCommittees>
+    </committees>
+    <notes />
+    <amendments />
+    <recordedVotes />
     <createDate>2017-01-06T04:57:27Z</createDate>
-    <relatedBills />
+    <sponsors>
+      <item>
+        <bioguideId>H001041</bioguideId>
+        <party>R</party>
+        <firstName>Dean</firstName>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <state>NV</state>
+        <lastName>Heller</lastName>
+        <middleName />
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <title>End Pay Discrimination Through Information Act</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>A bill to amend the Fair Labor Standards Act of 1938 to improve nonretaliation provisions relating to equal pay requirements.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>End Pay Discrimination Through Information Act</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>End Pay Discrimination Through Information Act</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

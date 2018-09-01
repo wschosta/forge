@@ -1,63 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
-    <calendarNumbers />
-    <cboCostEstimates />
-    <actions>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>H11100</actionCode>
-        <committee>
-          <systemCode>hsii00</systemCode>
-          <name>Natural Resources Committee</name>
-        </committee>
-        <text>Referred to the House Committee on Natural Resources.</text>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>Intro-H</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
-      </item>
-      <item>
-        <links />
-        <type>IntroReferral</type>
-        <actionCode>1000</actionCode>
-        <committee />
-        <text>Introduced in House</text>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-04</actionDate>
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-    </actions>
+    <policyArea>
+      <name>Environmental Protection</name>
+    </policyArea>
+    <billNumber>16</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LAMBORN:H.J. Res. 16.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 18[Page H98]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
+    <billType>HJRES</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <versionCode>00</versionCode>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>This joint resolution nullifies the Stream Protection Rule finalized by the Department of the Interior's Office of Surface Mining Reclamation and Enforcement on December 20, 2016. The rule addresses the impacts of surface coal mining operations on surface water, groundwater, and the productivity of mining operation sites.</p>]]></text>
+          <actionDate>2017-01-04</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <lastSummaryUpdateDate>2017-01-26T16:45:08Z</lastSummaryUpdateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <relatedBills>
       <item>
-        <type>HJRES</type>
         <congress>115</congress>
         <number>11</number>
+        <type>HJRES</type>
         <latestTitle>Disapproving the rule submitted by the Department of the Interior known as the Stream Protection Rule.</latestTitle>
         <relationshipDetails>
           <item>
@@ -66,38 +35,145 @@
           </item>
         </relationshipDetails>
         <latestAction>
-          <actionDate>2017-01-03</actionDate>
           <text>Referred to the House Committee on Natural Resources.</text>
+          <actionDate>2017-01-03</actionDate>
+        </latestAction>
+      </item>
+      <item>
+        <congress>115</congress>
+        <number>10</number>
+        <type>SJRES</type>
+        <latestTitle>A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the final rule submitted by the Secretary of the Interior relating to stream protection.</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Read twice and referred to the Committee on Energy and Natural Resources.</text>
+          <actionDate>2017-01-30</actionDate>
         </latestAction>
       </item>
     </relatedBills>
-    <latestAction>
-      <text>Referred to the House Committee on Natural Resources.</text>
-      <links />
-      <actionDate>2017-01-04</actionDate>
-    </latestAction>
-    <originChamber>House</originChamber>
+    <createDate>2017-01-05T04:47:31Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Lamborn</lastName>
+        <party>R</party>
+        <middleName />
+        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
+        <identifiers>
+          <lisID>1834</lisID>
+          <bioguideId>L000564</bioguideId>
+          <gpoId>7863</gpoId>
+        </identifiers>
+        <state>CO</state>
+        <firstName>Doug</firstName>
+        <byRequestType />
+        <district>5</district>
+        <bioguideId>L000564</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:56:34Z</updateDate>
+    <committeeReports />
+    <actions>
+      <actionTypeCounts>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
+      </actionTypeCounts>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-04</actionDate>
+        <text>Referred to the House Committee on Natural Resources.</text>
+        <committee>
+          <name>Natural Resources Committee</name>
+          <systemCode>hsii00</systemCode>
+        </committee>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-04</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <links />
+        <type>IntroReferral</type>
+        <actionDate>2017-01-04</actionDate>
+        <text>Introduced in House</text>
+        <committee />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <actionCode>1000</actionCode>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
     <title>Disapproving a rule submitted by the Department of the Interior known as the "Stream Protection Rule".</title>
+    <cosponsors />
+    <introducedDate>2017-01-04</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-04</actionDate>
+      <links />
+      <text>Referred to the House Committee on Natural Resources.</text>
+    </latestAction>
     <titles>
       <item>
-        <title>Disapproving a rule submitted by the Department of the Interior known as the "Stream Protection Rule".</title>
+        <chamberCode />
         <titleType>Official Title as Introduced</titleType>
         <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <title>Disapproving a rule submitted by the Department of the Interior known as the "Stream Protection Rule".</title>
       </item>
       <item>
-        <title>Disapproving a rule submitted by the Department of the Interior known as the "Stream Protection Rule".</title>
+        <chamberCode />
         <titleType>Display Title</titleType>
         <parentTitleType />
-        <chamberCode />
         <chamberName />
+        <title>Disapproving a rule submitted by the Department of the Interior known as the "Stream Protection Rule".</title>
       </item>
     </titles>
-    <committeeReports />
-    <updateDate>2017-01-09T14:02:29Z</updateDate>
-    <billType>HJRES</billType>
-    <recordedVotes />
+    <cboCostEstimates />
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>hsii00</systemCode>
+          <name>Natural Resources Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-04T15:00:20Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>House</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <subjects>
       <billSubjects>
         <legislativeSubjects>
@@ -117,7 +193,13 @@
             <name>Environmental assessment, monitoring, research</name>
           </item>
           <item>
+            <name>Environmental regulatory procedures</name>
+          </item>
+          <item>
             <name>Hydrology and hydrography</name>
+          </item>
+          <item>
+            <name>Lakes and rivers</name>
           </item>
           <item>
             <name>Licensing and registrations</name>
@@ -134,65 +216,6 @@
         </policyArea>
       </billSubjects>
     </subjects>
-    <policyArea>
-      <name>Environmental Protection</name>
-    </policyArea>
-    <laws />
-    <amendments />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hsii00</systemCode>
-          <subcommittees />
-          <type>Standing</type>
-          <chamber>House</chamber>
-          <name>Natural Resources Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T15:00:20Z</date>
-            </item>
-          </activities>
-        </item>
-      </billCommittees>
-    </committees>
-    <sponsors>
-      <item>
-        <identifiers>
-          <lisID>1834</lisID>
-          <gpoId>7863</gpoId>
-          <bioguideId>L000564</bioguideId>
-        </identifiers>
-        <state>CO</state>
-        <bioguideId>L000564</bioguideId>
-        <lastName>Lamborn</lastName>
-        <middleName />
-        <party>R</party>
-        <district>5</district>
-        <fullName>Rep. Lamborn, Doug [R-CO-5]</fullName>
-        <byRequestType />
-        <firstName>Doug</firstName>
-      </item>
-    </sponsors>
-    <introducedDate>2017-01-04</introducedDate>
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDesc>Introduced in House</actionDesc>
-          <text><![CDATA[<p>Nullifies the Stream Protection Rule submitted by the Department of the Interior's Office of Surface Mining Reclamation and Enforcement. The rule addresses the impacts of surface coal mining operations on surface water, groundwater, and the productivity of mining operation sites.</p>]]></text>
-          <versionCode>00</versionCode>
-          <lastSummaryUpdateDate>2017-01-09T13:58:16Z</lastSummaryUpdateDate>
-          <updateDate>2017-01-04T05:00:00Z</updateDate>
-          <actionDate>2017-01-04</actionDate>
-          <name>Introduced in House</name>
-        </item>
-      </billSummaries>
-    </summaries>
-    <notes />
-    <createDate>2017-01-05T04:47:31Z</createDate>
-    <billNumber>16</billNumber>
-    <cosponsors />
-    <constitutionalAuthorityStatementText />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

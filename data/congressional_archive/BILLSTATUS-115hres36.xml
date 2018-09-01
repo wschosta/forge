@@ -1,179 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
+    <policyArea>
+      <name>Congress</name>
+    </policyArea>
+    <billType>HRES</billType>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-10</actionDate>
+      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+      <actionTime>12:33:29</actionTime>
+    </latestAction>
+    <createDate>2017-01-11T05:09:40Z</createDate>
+    <notes />
+    <actions>
+      <actionTypeCounts>
+        <motionToReconsiderResults>1</motionToReconsiderResults>
+        <introducedInTheHouse>1</introducedInTheHouse>
+        <passageOfAMeasure>1</passageOfAMeasure>
+        <considerationByHouse>1</considerationByHouse>
+        <introducedInHouse>1</introducedInHouse>
+        <passedAgreedToInHouse>1</passedAgreedToInHouse>
+      </actionTypeCounts>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>H38310</actionCode>
+        <committee />
+        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
+        <links />
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>12:33:29</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>H37100</actionCode>
+        <committee />
+        <text>On agreeing to the resolution Agreed to without objection. (text: CR H249)</text>
+        <links>
+          <link>
+            <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>12:33:26</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>8000</actionCode>
+        <committee />
+        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.(text: CR H249)</text>
+        <links>
+          <link>
+            <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <actionTime>12:33:26</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>H30000</actionCode>
+        <committee />
+        <text>Considered as privileged matter. (consideration: CR H249)</text>
+        <links>
+          <link>
+            <name>H249</name>
+            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
+          </link>
+        </links>
+        <type>Floor</type>
+        <sourceSystem>
+          <name>House floor actions</name>
+          <code>2</code>
+        </sourceSystem>
+        <actionTime>12:31:57</actionTime>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>Intro-H</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <item>
+        <actionDate>2017-01-10</actionDate>
+        <actionCode>1000</actionCode>
+        <committee />
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>6</houseOfRepresentatives>
+      </actionByCounts>
+    </actions>
+    <calendarNumbers />
     <congress>115</congress>
-    <billNumber>36</billNumber>
-    <cosponsors />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Congressional committees</name>
+          </item>
+          <item>
+            <name>House Committee on Armed Services</name>
+          </item>
+          <item>
+            <name>House Committee on the Budget</name>
+          </item>
+          <item>
+            <name>House of Representatives</name>
+          </item>
+          <item>
+            <name>Members of Congress</name>
+          </item>
+        </legislativeSubjects>
         <policyArea>
           <name>Congress</name>
         </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <constitutionalAuthorityStatementText />
-    <updateDate>2017-01-11T21:01:17Z</updateDate>
-    <actions>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>12:33:29</actionTime>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-        <actionCode>H38310</actionCode>
-        <type>Floor</type>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>12:33:26</actionTime>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>On agreeing to the resolution Agreed to without objection. (text: CR H249)</text>
-        <actionCode>H37100</actionCode>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H249</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionTime>12:33:26</actionTime>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Passed/agreed to in House: On agreeing to the resolution Agreed to without objection.</text>
-        <actionCode>8000</actionCode>
-        <type>Floor</type>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionTime>12:31:57</actionTime>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Considered as privileged matter. (consideration: CR H249)</text>
-        <actionCode>H30000</actionCode>
-        <type>Floor</type>
-        <links>
-          <link>
-            <name>H249</name>
-            <url>https://www.congress.gov/congressional-record/volume-163/house-section/page/H249</url>
-          </link>
-        </links>
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>Intro-H</actionCode>
-        <links />
-      </item>
-      <item>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-10</actionDate>
-        <committee />
-        <text>Introduced in House</text>
-        <actionCode>1000</actionCode>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>6</houseOfRepresentatives>
-      </actionByCounts>
-      <actionTypeCounts>
-        <motionToReconsiderResults>1</motionToReconsiderResults>
-        <introducedInHouse>1</introducedInHouse>
-        <passedAgreedToInHouse>1</passedAgreedToInHouse>
-        <considerationByHouse>1</considerationByHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-        <passageOfAMeasure>1</passageOfAMeasure>
-      </actionTypeCounts>
-    </actions>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>HRES</billType>
-    <committeeReports />
-    <originChamber>House</originChamber>
-    <notes />
-    <policyArea>
-      <name>Congress</name>
-    </policyArea>
+    <billNumber>36</billNumber>
     <title>Electing Members to certain standing committees of the House of Representatives.</title>
-    <createDate>2017-01-11T05:09:40Z</createDate>
-    <sponsors>
-      <item>
-        <lastName>Collins</lastName>
-        <identifiers>
-          <lisID>2121</lisID>
-          <gpoId />
-          <bioguideId>C001093</bioguideId>
-        </identifiers>
-        <byRequestType />
-        <middleName />
-        <state>GA</state>
-        <firstName>Doug</firstName>
-        <party>R</party>
-        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
-        <district>9</district>
-        <bioguideId>C001093</bioguideId>
-      </item>
-    </sponsors>
+    <constitutionalAuthorityStatementText />
     <committees>
       <billCommittees />
     </committees>
+    <cboCostEstimates />
+    <version>1.0.0</version>
+    <cosponsors />
+    <updateDate>2018-08-28T19:53:47Z</updateDate>
+    <laws />
+    <originChamber>House</originChamber>
+    <introducedDate>2017-01-10</introducedDate>
+    <sponsors>
+      <item>
+        <middleName />
+        <bioguideId>C001093</bioguideId>
+        <identifiers>
+          <lisID>2121</lisID>
+          <bioguideId>C001093</bioguideId>
+          <gpoId />
+        </identifiers>
+        <fullName>Rep. Collins, Doug [R-GA-9]</fullName>
+        <byRequestType />
+        <party>R</party>
+        <firstName>Doug</firstName>
+        <state>GA</state>
+        <lastName>Collins</lastName>
+        <district>9</district>
+      </item>
+    </sponsors>
+    <relatedBills />
+    <committeeReports />
     <titles>
       <item>
         <chamberCode />
-        <chamberName />
-        <parentTitleType />
         <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
         <title>Electing Members to certain standing committees of the House of Representatives.</title>
       </item>
       <item>
         <chamberCode />
-        <chamberName />
-        <parentTitleType />
         <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
         <title>Electing Members to certain standing committees of the House of Representatives.</title>
       </item>
     </titles>
     <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <latestAction>
-      <links />
-      <text>Motion to reconsider laid on the table Agreed to without objection.</text>
-      <actionDate>2017-01-10</actionDate>
-      <actionTime>12:33:29</actionTime>
-    </latestAction>
-    <calendarNumbers />
-    <introducedDate>2017-01-10</introducedDate>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:39:16Z</lastSummaryUpdateDate>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p>Elects specified Members to the following House Committees: (1) Armed Services, and (2) the Budget.</p>]]></text>
+          <versionCode>00</versionCode>
+          <updateDate>2017-01-10T05:00:00Z</updateDate>
+        </item>
+        <item>
+          <actionDesc>Passed House without amendment</actionDesc>
+          <actionDate>2017-01-10</actionDate>
+          <lastSummaryUpdateDate>2017-03-15T18:39:26Z</lastSummaryUpdateDate>
+          <name>Passed House without amendment</name>
+          <text><![CDATA[<p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Elects specified Members to the following House Committees: (1) Armed Services, and (2) the Budget.</p>]]></text>
+          <versionCode>81</versionCode>
+          <updateDate>2017-01-10T14:40:30Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
     <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">

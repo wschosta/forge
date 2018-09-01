@@ -1,145 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <introducedDate>2017-01-05</introducedDate>
-    <laws />
-    <createDate>2017-01-06T04:57:26Z</createDate>
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Medicaid Expansion Parity Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To amend title XIX of the Social Security Act to provide parity among States in the timing of the application of higher Federal Medicaid matching rates for the ACA-expansion population.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Medicaid Expansion Parity Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
+    <title>Medicaid Expansion Parity Act of 2017</title>
+    <originChamber>House</originChamber>
+    <updateDate>2018-08-28T19:58:51Z</updateDate>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. LEWIS of Georgia:H.R. 335.Congress has the power to enact this legislation pursuantto the following:This bill is enacted pursuant to the power granted toCongress under Article I of the United States Constitutionand its subsequent amendments, and further clarified andinterpreted by the Supreme Court of the United States.[Page H183]</pre>]]></constitutionalAuthorityStatementText>
+    <calendarNumbers />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <legislativeSubjects>
+          <item>
+            <name>Health programs administration and funding</name>
+          </item>
+          <item>
+            <name>Intergovernmental relations</name>
+          </item>
+          <item>
+            <name>Medicaid</name>
+          </item>
+          <item>
+            <name>State and local finance</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Health</name>
+        </policyArea>
       </billSubjects>
     </subjects>
-    <title>Medicaid Expansion Parity Act of 2017</title>
-    <constitutionalAuthorityStatementText />
-    <updateDate>2017-01-23T13:31:56Z</updateDate>
-    <cosponsors />
-    <sponsors>
-      <item>
-        <state>GA</state>
-        <bioguideId>L000287</bioguideId>
-        <party>D</party>
-        <middleName />
-        <byRequestType />
-        <fullName>Rep. Lewis, John [D-GA-5]</fullName>
-        <lastName>LEWIS</lastName>
-        <identifiers>
-          <gpoId>7902</gpoId>
-          <lisID>688</lisID>
-          <bioguideId>L000287</bioguideId>
-        </identifiers>
-        <firstName>JOHN</firstName>
-        <district>5</district>
-      </item>
-    </sponsors>
-    <congress>115</congress>
-    <notes />
-    <committeeReports />
-    <relatedBills />
+    <version>1.0.0</version>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><strong>Medicaid Expansion Parity Act of 2017</strong></p> <p>This bill amends title XIX (Medicaid) of the Social Security Act to provide the enhanced federal medical assistance percentage (FMAP) to every state that expands Medicaid&nbsp;coverage for&nbsp;individuals who are newly eligible under the Patient Protection and Affordable Care Act, regardless of when&nbsp;such expansion takes place. </p> <p>Under current law, the enhanced FMAP is equivalent to 100% in 2014 through 2016, 95% in 2017, 94% in 2018, 93% in 2019, and 90% thereafter. The bill retains this enhanced FMAP, but bases it on a term of years rather than on specific dates.</p> <p>The bill applies retroactively.</p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-27T16:41:41Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <actionDate>2017-01-05</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <billType>HR</billType>
     <latestAction>
-      <actionDate>2017-01-05</actionDate>
-      <text>Referred to the House Committee on Energy and Commerce.</text>
+      <text>Referred to the Subcommittee on Health.</text>
       <links />
+      <actionDate>2017-01-25</actionDate>
     </latestAction>
-    <calendarNumbers />
+    <policyArea>
+      <name>Health</name>
+    </policyArea>
+    <relatedBills />
+    <introducedDate>2017-01-05</introducedDate>
+    <actions>
+      <item>
+        <actionDate>2017-01-25</actionDate>
+        <committee>
+          <systemCode>hsif14</systemCode>
+          <name>Health Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Health.</text>
+        <type>Committee</type>
+      </item>
+      <item>
+        <text>Referred to the House Committee on Energy and Commerce.</text>
+        <type>IntroReferral</type>
+        <committee>
+          <systemCode>hsif00</systemCode>
+          <name>Energy and Commerce Committee</name>
+        </committee>
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>H11100</actionCode>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>Intro-H</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <committee />
+        <actionDate>2017-01-05</actionDate>
+        <links />
+        <actionCode>1000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+      </item>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <actionTypeCounts>
+        <introducedInHouse>1</introducedInHouse>
+        <placeholderTextForH>1</placeholderTextForH>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
+    </actions>
+    <laws />
+    <congress>115</congress>
+    <committeeReports />
+    <billNumber>335</billNumber>
+    <cboCostEstimates />
+    <cosponsors />
     <committees>
       <billCommittees>
         <item>
-          <subcommittees />
           <type>Standing</type>
-          <chamber>House</chamber>
-          <systemCode>hsif00</systemCode>
           <name>Energy and Commerce Committee</name>
+          <systemCode>hsif00</systemCode>
+          <chamber>House</chamber>
           <activities>
             <item>
               <name>Referred to</name>
               <date>2017-01-05T15:00:25Z</date>
             </item>
           </activities>
+          <subcommittees>
+            <item>
+              <name>Health Subcommittee</name>
+              <systemCode>hsif14</systemCode>
+              <activities>
+                <item>
+                  <name>Referred to</name>
+                  <date>2017-01-25T14:26:55Z</date>
+                </item>
+              </activities>
+            </item>
+          </subcommittees>
         </item>
       </billCommittees>
     </committees>
-    <recordedVotes />
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
-      <item>
-        <text>Referred to the House Committee on Energy and Commerce.</text>
-        <committee>
-          <systemCode>hsif00</systemCode>
-          <name>Energy and Commerce Committee</name>
-        </committee>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <actionDate>2017-01-05</actionDate>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
-    </actions>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <billType>HR</billType>
-    <cboCostEstimates />
+    <notes />
     <amendments />
-    <policyArea />
-    <originChamber>House</originChamber>
-    <billNumber>335</billNumber>
+    <recordedVotes />
+    <createDate>2017-01-06T04:57:26Z</createDate>
+    <sponsors>
+      <item>
+        <bioguideId>L000287</bioguideId>
+        <party>D</party>
+        <firstName>JOHN</firstName>
+        <fullName>Rep. Lewis, John [D-GA-5]</fullName>
+        <state>GA</state>
+        <district>5</district>
+        <lastName>LEWIS</lastName>
+        <middleName />
+        <identifiers>
+          <lisID>688</lisID>
+          <gpoId>7902</gpoId>
+          <bioguideId>L000287</bioguideId>
+        </identifiers>
+        <byRequestType />
+      </item>
+    </sponsors>
+    <titles>
+      <item>
+        <title>Medicaid Expansion Parity Act of 2017</title>
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>To amend title XIX of the Social Security Act to provide parity among States in the timing of the application of higher Federal Medicaid matching rates for the ACA-expansion population.</title>
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Medicaid Expansion Parity Act of 2017</title>
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+      <item>
+        <title>Medicaid Expansion Parity Act of 2017</title>
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberCode />
+        <chamberName />
+      </item>
+    </titles>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

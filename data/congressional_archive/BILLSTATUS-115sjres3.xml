@@ -1,11 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <congress>115</congress>
+    <calendarNumbers />
+    <amendments />
+    <committeeReports />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-04T05:00:00Z</updateDate>
+          <actionDate>2017-01-04</actionDate>
+          <lastSummaryUpdateDate>2017-01-09T13:58:31Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Constitutional Amendment </b></p> <p>This joint resolution proposes a constitutional amendment prohibiting the total amount of money expended by the United States during a fiscal year from exceeding total revenues received for that fiscal year, excluding revenue from the issuance of bonds, notes, or other obligations of the United States. </p> <p>The amendment prohibits the total amount of money expended by the United States in any fiscal year from exceeding 20% of the gross domestic product of the United States. </p> <p>The restrictions do not apply during a fiscal year in which a declaration of war is in effect, or if three-fifths of each chamber of Congress votes to suspend the restrictions.</p>]]></text>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <versionCode>00</versionCode>
+          <name>Introduced in Senate</name>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills />
+    <createDate>2017-01-05T04:47:33Z</createDate>
+    <latestAction>
+      <links />
+      <actionDate>2017-01-04</actionDate>
+      <text>Read twice and referred to the Committee on the Judiciary.</text>
+    </latestAction>
+    <sponsors>
+      <item>
+        <party>R</party>
+        <state>AL</state>
+        <bioguideId>S000320</bioguideId>
+        <middleName>CRAIG</middleName>
+        <lastName>SHELBY</lastName>
+        <fullName>Sen. Shelby, Richard C. [R-AL]</fullName>
+        <firstName>RICHARD</firstName>
+        <byRequestType />
+        <identifiers>
+          <lisID>1049</lisID>
+          <bioguideId>S000320</bioguideId>
+          <gpoId>8277</gpoId>
+        </identifiers>
+      </item>
+    </sponsors>
     <billNumber>3</billNumber>
-    <cosponsors />
+    <updateDate>2018-08-28T20:21:58Z</updateDate>
+    <cboCostEstimates />
+    <notes />
+    <titles>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Official Title as Introduced</titleType>
+        <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
+        <chamberCode />
+      </item>
+      <item>
+        <chamberName />
+        <parentTitleType />
+        <titleType>Display Title</titleType>
+        <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
+        <chamberCode />
+      </item>
+    </titles>
+    <introducedDate>2017-01-04</introducedDate>
     <subjects>
       <billSubjects>
+        <policyArea>
+          <name>Economics and Public Finance</name>
+        </policyArea>
         <legislativeSubjects>
           <item>
             <name>Budget deficits and national debt</name>
@@ -14,18 +76,33 @@
             <name>Constitution and constitutional amendments</name>
           </item>
         </legislativeSubjects>
-        <policyArea>
-          <name>Economics and Public Finance</name>
-        </policyArea>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on the Judiciary.</text>
-      <actionDate>2017-01-04</actionDate>
-    </latestAction>
-    <updateDate>2017-01-11T10:17:57Z</updateDate>
+    <billType>SJRES</billType>
+    <originChamber>Senate</originChamber>
+    <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
+    <cosponsors />
+    <recordedVotes />
+    <policyArea>
+      <name>Economics and Public Finance</name>
+    </policyArea>
+    <committees>
+      <billCommittees>
+        <item>
+          <subcommittees />
+          <type>Standing</type>
+          <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-04T22:08:35Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+          <chamber>Senate</chamber>
+        </item>
+      </billCommittees>
+    </committees>
     <actions>
       <actionTypeCounts>
         <introducedInSenate>1</introducedInSenate>
@@ -34,111 +111,35 @@
       <item>
         <actionDate>2017-01-04</actionDate>
         <committee>
-          <name>Judiciary Committee</name>
           <systemCode>ssju00</systemCode>
+          <name>Judiciary Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <code>0</code>
           <name>Senate</name>
+          <code>0</code>
         </sourceSystem>
         <text>Read twice and referred to the Committee on the Judiciary.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <text>Introduced in Senate</text>
-        <committee />
-        <type>IntroReferral</type>
         <actionDate>2017-01-04</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
         <links />
+        <text>Introduced in Senate</text>
+        <type>IntroReferral</type>
         <actionCode>10000</actionCode>
+        <sourceSystem>
+          <name>Library of Congress</name>
+          <code>9</code>
+        </sourceSystem>
+        <committee />
       </item>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
     </actions>
-    <billType>SJRES</billType>
-    <committeeReports />
-    <originChamber>Senate</originChamber>
-    <notes />
-    <policyArea>
-      <name>Economics and Public Finance</name>
-    </policyArea>
-    <committees>
-      <billCommittees>
-        <item>
-          <chamber>Senate</chamber>
-          <systemCode>ssju00</systemCode>
-          <type>Standing</type>
-          <name>Judiciary Committee</name>
-          <activities>
-            <item>
-              <name>Referred to</name>
-              <date>2017-01-04T22:08:35Z</date>
-            </item>
-          </activities>
-          <subcommittees />
-        </item>
-      </billCommittees>
-    </committees>
-    <createDate>2017-01-05T04:47:33Z</createDate>
-    <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
-    <titles>
-      <item>
-        <chamberName />
-        <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-      </item>
-      <item>
-        <chamberName />
-        <title>A joint resolution proposing an amendment to the Constitution of the United States which requires (except during time of war and subject to suspension by Congress) that the total amount of money expended by the United States during any fiscal year not exceed the amount of certain revenue received by the United States during such fiscal year and not exceed 20 percent of the gross domestic product of the United States during the previous calendar year.</title>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-      </item>
-    </titles>
-    <recordedVotes />
-    <cboCostEstimates />
-    <laws />
-    <summaries>
-      <billSummaries>
-        <item>
-          <actionDesc>Introduced in Senate</actionDesc>
-          <name>Introduced in Senate</name>
-          <actionDate>2017-01-04</actionDate>
-          <lastSummaryUpdateDate>2017-01-09T13:58:31Z</lastSummaryUpdateDate>
-          <updateDate>2017-01-04T05:00:00Z</updateDate>
-          <versionCode>00</versionCode>
-          <text><![CDATA[<p><b>Constitutional Amendment </b></p> <p>This joint resolution proposes a constitutional amendment prohibiting the total amount of money expended by the United States during a fiscal year from exceeding total revenues received for that fiscal year, excluding revenue from the issuance of bonds, notes, or other obligations of the United States. </p> <p>The amendment prohibits the total amount of money expended by the United States in any fiscal year from exceeding 20% of the gross domestic product of the United States. </p> <p>The restrictions do not apply during a fiscal year in which a declaration of war is in effect, or if three-fifths of each chamber of Congress votes to suspend the restrictions.</p>]]></text>
-        </item>
-      </billSummaries>
-    </summaries>
-    <calendarNumbers />
-    <introducedDate>2017-01-04</introducedDate>
-    <amendments />
-    <sponsors>
-      <item>
-        <lastName>SHELBY</lastName>
-        <identifiers>
-          <bioguideId>S000320</bioguideId>
-          <lisID>1049</lisID>
-          <gpoId>8277</gpoId>
-        </identifiers>
-        <byRequestType />
-        <middleName>CRAIG</middleName>
-        <state>AL</state>
-        <firstName>RICHARD</firstName>
-        <party>R</party>
-        <fullName>Sen. Shelby, Richard C. [R-AL]</fullName>
-        <bioguideId>S000320</bioguideId>
-      </item>
-    </sponsors>
+    <version>1.0.0</version>
+    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

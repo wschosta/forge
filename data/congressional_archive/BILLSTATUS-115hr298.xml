@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <laws />
-    <committeeReports />
-    <recordedVotes />
-    <originChamber>House</originChamber>
-    <congress>115</congress>
+    <notes />
     <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <relatedBills />
-    <introducedDate>2017-01-05</introducedDate>
     <committees>
       <billCommittees>
         <item>
@@ -21,130 +12,206 @@
               <date>2017-01-05T15:01:40Z</date>
             </item>
           </activities>
-          <subcommittees />
-          <type>Standing</type>
-          <systemCode>hsba00</systemCode>
           <name>Financial Services Committee</name>
+          <type>Standing</type>
           <chamber>House</chamber>
+          <subcommittees />
+          <systemCode>hsba00</systemCode>
         </item>
       </billCommittees>
     </committees>
-    <updateDate>2017-01-17T13:01:31Z</updateDate>
-    <createDate>2017-01-06T04:57:25Z</createDate>
-    <policyArea>
-      <name>Government Operations and Politics</name>
-    </policyArea>
-    <notes />
-    <titles>
-      <item>
-        <titleType>Short Titles as Introduced</titleType>
-        <parentTitleType />
-        <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <parentTitleType />
-        <title>To require additional entities to be subject to the requirements of section 552 of title 5, United States Code (commonly referred to as the Freedom of Information Act), and for other purposes.</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <parentTitleType />
-        <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
-        <chamberCode />
-        <chamberName />
-      </item>
-    </titles>
-    <amendments />
+    <committeeReports />
     <cboCostEstimates />
-    <constitutionalAuthorityStatementText />
-    <billNumber>298</billNumber>
-    <billType>HR</billType>
-    <actions>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+    <congress>115</congress>
+    <laws />
+    <updateDate>2018-08-28T23:10:41Z</updateDate>
+    <relatedBills>
       <item>
-        <text>Referred to the House Committee on Financial Services.</text>
+        <type>HR</type>
+        <latestTitle>Fannie and Freddie Open Records Act of 2017</latestTitle>
+        <congress>115</congress>
+        <latestAction>
+          <text>Received in the Senate and Read twice and referred to the Committee on the Judiciary.</text>
+          <actionDate>2017-04-28</actionDate>
+        </latestAction>
+        <number>1694</number>
+        <relationshipDetails>
+          <item>
+            <identifiedBy>CRS</identifiedBy>
+            <type>Related bill</type>
+          </item>
+        </relationshipDetails>
+      </item>
+    </relatedBills>
+    <version>1.0.0</version>
+    <actions>
+      <item>
+        <actionDate>2017-01-05</actionDate>
         <links />
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-05</actionDate>
         <committee>
           <systemCode>hsba00</systemCode>
           <name>Financial Services Committee</name>
         </committee>
+        <text>Referred to the House Committee on Financial Services.</text>
+        <type>IntroReferral</type>
+        <actionCode>H11100</actionCode>
       </item>
       <item>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
         <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+        <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-05</actionDate>
-        <committee />
       </item>
       <item>
-        <text>Introduced in House</text>
+        <actionDate>2017-01-05</actionDate>
         <links />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-05</actionDate>
         <committee />
+        <text>Introduced in House</text>
+        <type>IntroReferral</type>
+        <actionCode>1000</actionCode>
       </item>
+      <actionByCounts>
+        <houseOfRepresentatives>3</houseOfRepresentatives>
+      </actionByCounts>
       <actionTypeCounts>
-        <introducedInHouse>1</introducedInHouse>
         <billReferrals>1</billReferrals>
+        <introducedInHouse>1</introducedInHouse>
         <introducedInTheHouse>1</introducedInTheHouse>
       </actionTypeCounts>
     </actions>
+    <sponsors>
+      <item>
+        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
+        <identifiers>
+          <lisID>1956</lisID>
+          <gpoId>8191</gpoId>
+          <bioguideId>C001076</bioguideId>
+        </identifiers>
+        <bioguideId>C001076</bioguideId>
+        <lastName>Chaffetz</lastName>
+        <firstName>Jason</firstName>
+        <party>R</party>
+        <byRequestType />
+        <middleName />
+        <state>UT</state>
+        <district>3</district>
+      </item>
+    </sponsors>
+    <billType>HR</billType>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 3 (Thursday, January 5, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. CHAFFETZ:H.R. 298.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8, Clause 1; Article 1, Section 8,Clause 2; and Article 1, Section 8, Clause 18 of the UnitedStates Constitution[Page H182]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Government Operations and Politics</name>
+    </policyArea>
+    <recordedVotes />
+    <billNumber>298</billNumber>
+    <titles>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To require additional entities to be subject to the requirements of section 552 of title 5, United States Code (commonly referred to as the Freedom of Information Act), and for other purposes.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Fannie Mae and Freddie Mac Transparency Act of 2017</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <originChamber>House</originChamber>
+    <subjects>
+      <billSubjects>
+        <legislativeSubjects>
+          <item>
+            <name>Executive agency funding and structure</name>
+          </item>
+          <item>
+            <name>Freedom of information</name>
+          </item>
+          <item>
+            <name>Government corporations and government-sponsored enterprises</name>
+          </item>
+          <item>
+            <name>Housing finance and home ownership</name>
+          </item>
+        </legislativeSubjects>
+        <policyArea>
+          <name>Government Operations and Politics</name>
+        </policyArea>
+      </billSubjects>
+    </subjects>
+    <cosponsors>
+      <item>
+        <party>R</party>
+        <state>KY</state>
+        <bioguideId>M001184</bioguideId>
+        <sponsorshipWithdrawnDate />
+        <isOriginalCosponsor>False</isOriginalCosponsor>
+        <identifiers>
+          <lisID>2094</lisID>
+          <gpoId>8371</gpoId>
+          <bioguideId>M001184</bioguideId>
+        </identifiers>
+        <fullName>Rep. Massie, Thomas [R-KY-4]</fullName>
+        <lastName>Massie</lastName>
+        <sponsorshipDate>2017-02-03</sponsorshipDate>
+        <firstName>Thomas</firstName>
+        <district>4</district>
+        <middleName />
+      </item>
+    </cosponsors>
+    <introducedDate>2017-01-05</introducedDate>
     <calendarNumbers />
-    <cosponsors />
     <latestAction>
       <actionDate>2017-01-05</actionDate>
       <links />
       <text>Referred to the House Committee on Financial Services.</text>
     </latestAction>
-    <subjects>
-      <billSubjects>
-        <policyArea>
-          <name>Government Operations and Politics</name>
-        </policyArea>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
-    <sponsors>
-      <item>
-        <bioguideId>C001076</bioguideId>
-        <lastName>Chaffetz</lastName>
-        <district>3</district>
-        <fullName>Rep. Chaffetz, Jason [R-UT-3]</fullName>
-        <state>UT</state>
-        <middleName />
-        <byRequestType />
-        <firstName>Jason</firstName>
-        <party>R</party>
-        <identifiers>
-          <lisID>1956</lisID>
-          <bioguideId>C001076</bioguideId>
-          <gpoId>8191</gpoId>
-        </identifiers>
-      </item>
-    </sponsors>
+    <amendments />
+    <summaries>
+      <billSummaries>
+        <item>
+          <lastSummaryUpdateDate>2017-01-26T22:17:28Z</lastSummaryUpdateDate>
+          <actionDate>2017-01-05</actionDate>
+          <text><![CDATA[<p><strong>Fannie Mae and Freddie Mac Transparency Act of 2017</strong></p> <p>This bill requires either the Federal National Mortgage Association (Fannie Mae) or the Federal Home Loan Mortgage Corporation (Freddie Mac) to be considered an agency subject to the public information disclosure requirements of the Freedom of Information Act during any period in which such entity is under conservatorship or receivership.</p>]]></text>
+          <updateDate>2017-01-05T05:00:00Z</updateDate>
+          <name>Introduced in House</name>
+          <versionCode>00</versionCode>
+          <actionDesc>Introduced in House</actionDesc>
+        </item>
+      </billSummaries>
+    </summaries>
+    <createDate>2017-01-06T04:57:25Z</createDate>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

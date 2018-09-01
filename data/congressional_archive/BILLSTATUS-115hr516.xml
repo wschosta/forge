@@ -1,138 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <subjects>
-      <billSubjects>
-        <legislativeSubjects />
-      </billSubjects>
-    </subjects>
+    <policyArea>
+      <name>Taxation</name>
+    </policyArea>
+    <billNumber>516</billNumber>
+    <laws />
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 9 (Friday, January 13, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. ELLISON:H.R. 516.Congress has the power to enactthis legislation pursuantto the following:Article I, Section 7, Clause 1 and Section 8, Clause 1.[Page H546]</pre>]]></constitutionalAuthorityStatementText>
+    <originChamber>House</originChamber>
+    <billType>HR</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <text><![CDATA[<p><b>Tax Benefit for Homeownership Clarification Act </b></p> <p>This bill amends the Internal Revenue Code to reduce the limitation on the mortgage interest deduction for the acquisition indebtedness of certain taxpayers. (Acquisition indebtedness is indebtedness that: (1) is incurred in acquiring, constructing, or substantially improving any qualified residence of the taxpayer; and (2) is secured by such residence. It also includes refinancing of the debt in certain situations.) </p>]]></text>
+          <versionCode>00</versionCode>
+          <lastSummaryUpdateDate>2017-01-27T14:29:06Z</lastSummaryUpdateDate>
+          <updateDate>2017-01-13T05:00:00Z</updateDate>
+          <actionDate>2017-01-13</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <congress>115</congress>
+        <number>1146</number>
+        <type>HR</type>
+        <latestTitle>Equal Opportunity for Residential Representation Act</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestAction>
+          <text>Referred to the Committee on Financial Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.</text>
+          <actionDate>2017-02-16</actionDate>
+        </latestAction>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-14T04:47:32Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>Ellison</lastName>
+        <party>D</party>
+        <middleName />
+        <fullName>Rep. Ellison, Keith [D-MN-5]</fullName>
+        <identifiers>
+          <lisID>1857</lisID>
+          <bioguideId>E000288</bioguideId>
+          <gpoId>8005</gpoId>
+        </identifiers>
+        <state>MN</state>
+        <firstName>Keith</firstName>
+        <byRequestType />
+        <district>5</district>
+        <bioguideId>E000288</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T19:59:50Z</updateDate>
+    <committeeReports />
     <actions>
+      <item>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>2</code>
+          <name>House floor actions</name>
+        </sourceSystem>
+        <committee>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
+        </committee>
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>H11100</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>Intro-H</actionCode>
+      </item>
+      <item>
+        <text>Introduced in House</text>
+        <links />
+        <type>IntroReferral</type>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
+        <committee />
+        <actionDate>2017-01-13</actionDate>
+        <actionCode>1000</actionCode>
+      </item>
       <actionTypeCounts>
         <introducedInTheHouse>1</introducedInTheHouse>
         <billReferrals>1</billReferrals>
         <introducedInHouse>1</introducedInHouse>
       </actionTypeCounts>
-      <item>
-        <text>Referred to the House Committee on Ways and Means.</text>
-        <committee>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-        </committee>
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>2</code>
-          <name>House floor actions</name>
-        </sourceSystem>
-        <links />
-        <actionCode>H11100</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>Intro-H</actionCode>
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-13</actionDate>
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
-        <links />
-        <actionCode>1000</actionCode>
-      </item>
       <actionByCounts>
         <houseOfRepresentatives>3</houseOfRepresentatives>
       </actionByCounts>
     </actions>
-    <policyArea />
-    <notes />
-    <createDate>2017-01-14T04:47:32Z</createDate>
-    <title>To amend the Internal Revenue Code of 1986 to reduce the mortgage interest deduction relating to acquisition indebtedness for certain taxpayers.</title>
-    <relatedBills />
+    <title>Tax Benefit for Homeownership Clarification Act</title>
     <cosponsors />
-    <constitutionalAuthorityStatementText />
-    <cboCostEstimates />
-    <updateDate>2017-01-14T09:58:22Z</updateDate>
-    <laws />
-    <summaries>
-      <billSummaries />
-    </summaries>
+    <introducedDate>2017-01-13</introducedDate>
+    <recordedVotes />
+    <congress>115</congress>
+    <amendments />
+    <version>1.0.0</version>
+    <calendarNumbers />
     <latestAction>
-      <links />
       <actionDate>2017-01-13</actionDate>
+      <links />
       <text>Referred to the House Committee on Ways and Means.</text>
     </latestAction>
-    <originChamber>House</originChamber>
-    <introducedDate>2017-01-13</introducedDate>
-    <billNumber>516</billNumber>
-    <amendments />
-    <billType>HR</billType>
+    <titles>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <title>Tax Benefit for Homeownership Clarification Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <title>To amend the Internal Revenue Code of 1986 to reduce the mortgage interest deduction relating to acquisition indebtedness for certain taxpayers.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <title>Tax Benefit for Homeownership Clarification Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberName />
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <title>Tax Benefit for Homeownership Clarification Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <cboCostEstimates />
     <committees>
       <billCommittees>
         <item>
-          <chamber>House</chamber>
-          <name>Ways and Means Committee</name>
-          <systemCode>hswm00</systemCode>
-          <type>Standing</type>
           <subcommittees />
+          <type>Standing</type>
+          <systemCode>hswm00</systemCode>
+          <name>Ways and Means Committee</name>
           <activities>
             <item>
               <date>2017-01-13T14:00:36Z</date>
               <name>Referred to</name>
             </item>
           </activities>
+          <chamber>House</chamber>
         </item>
       </billCommittees>
     </committees>
-    <calendarNumbers />
-    <congress>115</congress>
-    <committeeReports />
-    <recordedVotes />
-    <sponsors>
-      <item>
-        <lastName>Ellison</lastName>
-        <state>MN</state>
-        <byRequestType />
-        <firstName>Keith</firstName>
-        <bioguideId>E000288</bioguideId>
-        <fullName>Rep. Ellison, Keith [D-MN-5]</fullName>
-        <identifiers>
-          <bioguideId>E000288</bioguideId>
-          <gpoId>8005</gpoId>
-          <lisID>1857</lisID>
-        </identifiers>
-        <middleName />
-        <district>5</district>
-        <party>D</party>
-      </item>
-    </sponsors>
-    <titles>
-      <item>
-        <title>To amend the Internal Revenue Code of 1986 to reduce the mortgage interest deduction relating to acquisition indebtedness for certain taxpayers.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Official Title as Introduced</titleType>
-      </item>
-      <item>
-        <title>To amend the Internal Revenue Code of 1986 to reduce the mortgage interest deduction relating to acquisition indebtedness for certain taxpayers.</title>
-        <chamberCode />
-        <parentTitleType />
-        <chamberName />
-        <titleType>Display Title</titleType>
-      </item>
-    </titles>
+    <subjects>
+      <billSubjects>
+        <policyArea>
+          <name>Taxation</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Housing finance and home ownership</name>
+          </item>
+          <item>
+            <name>Income tax deductions</name>
+          </item>
+          <item>
+            <name>Interest, dividends, interest rates</name>
+          </item>
+        </legislativeSubjects>
+      </billSubjects>
+    </subjects>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

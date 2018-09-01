@@ -1,85 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <notes />
-    <billNumber>153</billNumber>
-    <latestAction>
-      <links />
-      <actionDate>2017-01-17</actionDate>
-      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
-    </latestAction>
-    <introducedDate>2017-01-17</introducedDate>
     <amendments />
+    <billNumber>153</billNumber>
+    <laws />
+    <cboCostEstimates />
+    <originChamber>Senate</originChamber>
+    <billType>S</billType>
+    <summaries>
+      <billSummaries>
+        <item>
+          <updateDate>2017-01-17T05:00:00Z</updateDate>
+          <lastSummaryUpdateDate>2017-07-11T21:15:39Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p><b>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</b></p> <p>This bill directs the National Oceanic and Atmospheric Administration to maintain secondary backup capability for each class of hurricane reconnaissance, research, surveillance, and response aircraft sufficient to prevent a single point of failure. </p>]]></text>
+          <actionDate>2017-01-17</actionDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+        </item>
+      </billSummaries>
+    </summaries>
+    <relatedBills>
+      <item>
+        <type>HR</type>
+        <number>1008</number>
+        <latestAction>
+          <actionDate>2017-04-25</actionDate>
+          <text>Referred to the Subcommittee on Environment.</text>
+        </latestAction>
+        <congress>115</congress>
+        <relationshipDetails>
+          <item>
+            <type>Identical bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <latestTitle>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</latestTitle>
+      </item>
+    </relatedBills>
+    <createDate>2017-01-18T05:04:59Z</createDate>
+    <sponsors>
+      <item>
+        <lastName>NELSON</lastName>
+        <party>D</party>
+        <middleName>WILLIAM</middleName>
+        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
+        <identifiers>
+          <lisID>859</lisID>
+          <bioguideId>N000032</bioguideId>
+          <gpoId>8236</gpoId>
+        </identifiers>
+        <state>FL</state>
+        <firstName>CLARENCE</firstName>
+        <byRequestType />
+        <bioguideId>N000032</bioguideId>
+      </item>
+    </sponsors>
+    <notes />
+    <updateDate>2018-08-28T20:22:55Z</updateDate>
+    <committeeReports />
     <actions>
       <actionByCounts>
         <senate>2</senate>
       </actionByCounts>
-      <actionTypeCounts>
-        <referredToCommittee>1</referredToCommittee>
-        <introducedInSenate>1</introducedInSenate>
-      </actionTypeCounts>
       <item>
         <actionDate>2017-01-17</actionDate>
         <committee>
-          <name>Commerce, Science, and Transportation Committee</name>
           <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
         </committee>
         <links />
         <sourceSystem>
-          <name>Senate</name>
           <code>0</code>
+          <name>Senate</name>
         </sourceSystem>
         <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
         <type>IntroReferral</type>
       </item>
       <item>
-        <sourceSystem>
-          <name>Library of Congress</name>
-          <code>9</code>
-        </sourceSystem>
-        <text>Introduced in Senate</text>
+        <committee />
         <links />
         <type>IntroReferral</type>
-        <actionCode>10000</actionCode>
+        <text>Introduced in Senate</text>
         <actionDate>2017-01-17</actionDate>
-        <committee />
+        <actionCode>10000</actionCode>
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
+      <actionTypeCounts>
+        <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
+      </actionTypeCounts>
     </actions>
-    <calendarNumbers />
-    <billType>S</billType>
-    <sponsors>
-      <item>
-        <firstName>CLARENCE</firstName>
-        <party>D</party>
-        <fullName>Sen. Nelson, Bill [D-FL]</fullName>
-        <middleName>WILLIAM</middleName>
-        <state>FL</state>
-        <byRequestType />
-        <bioguideId>N000032</bioguideId>
-        <identifiers>
-          <gpoId>8236</gpoId>
-          <bioguideId>N000032</bioguideId>
-          <lisID>859</lisID>
-        </identifiers>
-        <lastName>NELSON</lastName>
-      </item>
-    </sponsors>
-    <originChamber>Senate</originChamber>
+    <cosponsors />
+    <title>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</title>
+    <introducedDate>2017-01-17</introducedDate>
     <recordedVotes />
-    <updateDate>2017-01-18T10:20:35Z</updateDate>
-    <policyArea />
-    <title>A bill to ensure reliable observation of hurricanes.</title>
-    <cboCostEstimates />
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <createDate>2017-01-18T05:04:59Z</createDate>
+    <congress>115</congress>
+    <policyArea>
+      <name>Science, Technology, Communications</name>
+    </policyArea>
+    <version>1.0.0</version>
+    <calendarNumbers />
+    <latestAction>
+      <actionDate>2017-01-17</actionDate>
+      <links />
+      <text>Read twice and referred to the Committee on Commerce, Science, and Transportation.</text>
+    </latestAction>
+    <titles>
+      <item>
+        <title>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</title>
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>A bill to ensure reliable observation of hurricanes.</title>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</title>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+      <item>
+        <title>Ensuring the Reliability of Our Hurricane Hunter Aircraft Act</title>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <parentTitleType />
+        <chamberName />
+      </item>
+    </titles>
     <committees>
       <billCommittees>
         <item>
-          <type>Standing</type>
-          <name>Commerce, Science, and Transportation Committee</name>
-          <chamber>Senate</chamber>
+          <systemCode>sscm00</systemCode>
           <subcommittees />
           <activities>
             <item>
@@ -87,36 +150,30 @@
               <date>2017-01-17T21:00:59Z</date>
             </item>
           </activities>
-          <systemCode>sscm00</systemCode>
+          <name>Commerce, Science, and Transportation Committee</name>
+          <chamber>Senate</chamber>
+          <type>Standing</type>
         </item>
       </billCommittees>
     </committees>
-    <relatedBills />
-    <laws />
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to ensure reliable observation of hurricanes.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A bill to ensure reliable observation of hurricanes.</title>
-        <parentTitleType />
-        <chamberCode />
-      </item>
-    </titles>
-    <cosponsors />
-    <committeeReports />
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Science, Technology, Communications</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Atmospheric science and weather</name>
+          </item>
+          <item>
+            <name>Aviation and airports</name>
+          </item>
+          <item>
+            <name>Natural disasters</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <congress>115</congress>
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

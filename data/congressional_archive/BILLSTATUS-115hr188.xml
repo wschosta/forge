@@ -1,62 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <actions>
-      <actionTypeCounts>
-        <billReferrals>1</billReferrals>
-        <introducedInHouse>1</introducedInHouse>
-        <introducedInTheHouse>1</introducedInTheHouse>
-      </actionTypeCounts>
+    <committees>
+      <billCommittees>
+        <item>
+          <systemCode>hswm00</systemCode>
+          <chamber>House</chamber>
+          <type>Standing</type>
+          <subcommittees>
+            <item>
+              <systemCode>hswm04</systemCode>
+              <activities>
+                <item>
+                  <date>2017-01-13T21:51:47Z</date>
+                  <name>Referred to</name>
+                </item>
+              </activities>
+              <name>Trade Subcommittee</name>
+            </item>
+          </subcommittees>
+          <name>Ways and Means Committee</name>
+          <activities>
+            <item>
+              <date>2017-01-03T17:22:50Z</date>
+              <name>Referred to</name>
+            </item>
+          </activities>
+        </item>
+      </billCommittees>
+    </committees>
+    <recordedVotes />
+    <laws />
+    <summaries>
+      <billSummaries>
+        <item>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-03</actionDate>
+          <actionDesc>Introduced in House</actionDesc>
+          <name>Introduced in House</name>
+          <lastSummaryUpdateDate>2017-01-13T19:15:53Z</lastSummaryUpdateDate>
+          <text><![CDATA[<p>This bill amends the Harmonized Tariff Schedule of the United States to extend through 2027 the production certificate program requiring the Department of Commerce and the Department of the Interior to jointly issue to producers of watches and watch movements in the U.S. insular possessions production certificates entitling the certificate holders to a refund of duties paid on such articles imported into the United States.</p>]]></text>
+          <updateDate>2017-01-03T05:00:00Z</updateDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <calendarNumbers />
+    <titles>
       <item>
-        <text>Referred to the House Committee on Ways and Means.</text>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <cosponsors />
+    <cboCostEstimates />
+    <latestAction>
+      <text>Referred to the Subcommittee on Trade.</text>
+      <links />
+      <actionDate>2017-01-13</actionDate>
+    </latestAction>
+    <updateDate>2018-08-28T19:58:12Z</updateDate>
+    <version>1.0.0</version>
+    <constitutionalAuthorityStatementText><![CDATA[<pre>[Congressional Record Volume 163, Number 1 (Tuesday, January 3, 2017)]From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. PLASKETT:H.R. 188.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3, Congress shall have Power to disposeof and make needful Rules and Regulations respecting theTerritory and other Property belonging to the United States.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
+    <policyArea>
+      <name>Foreign Trade and International Finance</name>
+    </policyArea>
+    <billType>HR</billType>
+    <billNumber>188</billNumber>
+    <originChamber>House</originChamber>
+    <relatedBills />
+    <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
+    <congress>115</congress>
+    <actions>
+      <actionByCounts>
+        <houseOfRepresentatives>4</houseOfRepresentatives>
+      </actionByCounts>
+      <item>
+        <actionDate>2017-01-13</actionDate>
+        <committee>
+          <systemCode>hswm04</systemCode>
+          <name>Trade Subcommittee</name>
+        </committee>
+        <links />
+        <sourceSystem>
+          <code>1</code>
+          <name>House committee actions</name>
+        </sourceSystem>
+        <text>Referred to the Subcommittee on Trade.</text>
+        <type>Committee</type>
+      </item>
+      <item>
         <committee>
           <systemCode>hswm00</systemCode>
           <name>Ways and Means Committee</name>
         </committee>
+        <links />
+        <type>IntroReferral</type>
+        <text>Referred to the House Committee on Ways and Means.</text>
+        <actionDate>2017-01-03</actionDate>
+        <actionCode>H11100</actionCode>
         <sourceSystem>
           <code>2</code>
           <name>House floor actions</name>
         </sourceSystem>
-        <actionDate>2017-01-03</actionDate>
-        <actionCode>H11100</actionCode>
-        <type>IntroReferral</type>
-        <links />
       </item>
       <item>
-        <text>Introduced in House</text>
         <committee />
-        <sourceSystem>
-          <code>9</code>
-          <name>Library of Congress</name>
-        </sourceSystem>
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
         <actionDate>2017-01-03</actionDate>
         <actionCode>Intro-H</actionCode>
-        <type>IntroReferral</type>
-        <links />
-      </item>
-      <item>
-        <text>Introduced in House</text>
-        <committee />
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
+      </item>
+      <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
+        <text>Introduced in House</text>
         <actionDate>2017-01-03</actionDate>
         <actionCode>1000</actionCode>
-        <type>IntroReferral</type>
-        <links />
+        <sourceSystem>
+          <code>9</code>
+          <name>Library of Congress</name>
+        </sourceSystem>
       </item>
-      <actionByCounts>
-        <houseOfRepresentatives>3</houseOfRepresentatives>
-      </actionByCounts>
+      <actionTypeCounts>
+        <placeholderTextForH>1</placeholderTextForH>
+        <introducedInHouse>1</introducedInHouse>
+        <billReferrals>1</billReferrals>
+        <introducedInTheHouse>1</introducedInTheHouse>
+      </actionTypeCounts>
     </actions>
-    <billType>HR</billType>
-    <billNumber>188</billNumber>
-    <cboCostEstimates />
-    <originChamber>House</originChamber>
-    <createDate>2017-01-04T07:01:12Z</createDate>
-    <constitutionalAuthorityStatementText><![CDATA[<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Ms. PLASKETT:H.R. 188.Congress has the power to enact this legislation pursuantto the following:Article IV, Section 3, Congress shall have Power to disposeof and make needful Rules and Regulations respecting theTerritory and other Property belonging to the United States.[Page H51]</pre>]]></constitutionalAuthorityStatementText>
-    <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
     <subjects>
       <billSubjects>
         <policyArea>
@@ -72,89 +159,29 @@
         </legislativeSubjects>
       </billSubjects>
     </subjects>
-    <relatedBills />
-    <summaries>
-      <billSummaries>
-        <item>
-          <updateDate>2017-01-03T05:00:00Z</updateDate>
-          <actionDesc>Introduced in House</actionDesc>
-          <text><![CDATA[<p>This bill amends the Harmonized Tariff Schedule of the United States to extend through 2027 the production certificate program requiring the Department of Commerce and the Department of the Interior to jointly issue to producers of watches and watch movements in the U.S. insular possessions production certificates entitling the certificate holders to a refund of duties paid on such articles imported into the United States.</p>]]></text>
-          <versionCode>00</versionCode>
-          <actionDate>2017-01-03</actionDate>
-          <lastSummaryUpdateDate>2017-01-13T19:15:53Z</lastSummaryUpdateDate>
-          <name>Introduced in House</name>
-        </item>
-      </billSummaries>
-    </summaries>
-    <congress>115</congress>
-    <laws />
-    <updateDate>2017-01-23T19:01:16Z</updateDate>
-    <notes />
-    <introducedDate>2017-01-03</introducedDate>
-    <calendarNumbers />
-    <committees>
-      <billCommittees>
-        <item>
-          <systemCode>hswm00</systemCode>
-          <chamber>House</chamber>
-          <type>Standing</type>
-          <activities>
-            <item>
-              <date>2017-01-03T17:22:50Z</date>
-              <name>Referred to</name>
-            </item>
-          </activities>
-          <subcommittees />
-          <name>Ways and Means Committee</name>
-        </item>
-      </billCommittees>
-    </committees>
-    <latestAction>
-      <actionDate>2017-01-03</actionDate>
-      <text>Referred to the House Committee on Ways and Means.</text>
-      <links />
-    </latestAction>
-    <cosponsors />
     <committeeReports />
-    <amendments />
+    <introducedDate>2017-01-03</introducedDate>
     <sponsors>
       <item>
-        <state>VI</state>
+        <bioguideId>P000610</bioguideId>
         <middleName>E.</middleName>
+        <byRequestType />
+        <fullName>Rep. Plaskett, Stacey E. [D-VI-At Large]</fullName>
+        <lastName>Plaskett</lastName>
+        <state>VI</state>
+        <district>0</district>
         <party>D</party>
         <identifiers>
-          <lisID>2274</lisID>
           <bioguideId>P000610</bioguideId>
+          <lisID>2274</lisID>
           <gpoId />
         </identifiers>
-        <bioguideId>P000610</bioguideId>
-        <byRequestType />
         <firstName>Stacey</firstName>
-        <lastName>Plaskett</lastName>
-        <fullName>Rep. Plaskett, Stacey E. [D-VI-At Large]</fullName>
-        <district>0</district>
       </item>
     </sponsors>
-    <recordedVotes />
-    <policyArea>
-      <name>Foreign Trade and International Finance</name>
-    </policyArea>
-    <titles>
-      <item>
-        <chamberCode />
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
-      </item>
-      <item>
-        <chamberCode />
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <parentTitleType />
-        <title>To amend the Harmonized Tariff Schedule of the United States to extend to 2027 the production certificate program that allows refunds of duties on certain articles produced in United States insular possessions.</title>
-      </item>
-    </titles>
+    <notes />
+    <createDate>2017-01-04T07:01:12Z</createDate>
+    <amendments />
   </bill>
   <dublinCore xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:format>text/xml</dc:format>

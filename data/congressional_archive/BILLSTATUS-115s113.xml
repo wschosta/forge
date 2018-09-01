@@ -1,28 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <billStatus>
   <bill>
-    <summaries>
-      <billSummaries />
-    </summaries>
-    <calendarNumbers />
-    <sponsors>
+    <titles>
       <item>
-        <identifiers>
-          <bioguideId>H001041</bioguideId>
-          <gpoId>8060</gpoId>
-          <lisID>1863</lisID>
-        </identifiers>
-        <fullName>Sen. Heller, Dean [R-NV]</fullName>
-        <lastName>Heller</lastName>
-        <middleName />
-        <bioguideId>H001041</bioguideId>
-        <party>R</party>
-        <firstName>Dean</firstName>
-        <state>NV</state>
-        <byRequestType />
+        <chamberCode />
+        <titleType>Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Maximizing Efficiency and Improving Access to Providers at the Department of Veterans Affairs Act</title>
+        <parentTitleType />
       </item>
-    </sponsors>
-    <billType>S</billType>
+      <item>
+        <chamberCode />
+        <titleType>Official Title as Introduced</titleType>
+        <chamberName />
+        <title>A bill to require the Secretary of Veterans Affairs to carry out a pilot program to increase the use of medical scribes to maximize the efficiency of physicians at medical facilities of the Department of Veterans Affairs.</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>Display Title</titleType>
+        <chamberName />
+        <title>Maximizing Efficiency and Improving Access to Providers at the Department of Veterans Affairs Act</title>
+        <parentTitleType />
+      </item>
+      <item>
+        <chamberCode />
+        <titleType>(Extracted from GPO) Short Titles as Introduced</titleType>
+        <chamberName />
+        <title>Maximizing Efficiency and Improving Access to Providers at the Department of Veterans Affairs Act</title>
+        <parentTitleType />
+      </item>
+    </titles>
+    <notes />
+    <latestAction>
+      <links />
+      <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
+      <actionDate>2017-01-12</actionDate>
+    </latestAction>
     <committees>
       <billCommittees>
         <item>
@@ -35,31 +49,11 @@
           <chamber>Senate</chamber>
           <systemCode>ssva00</systemCode>
           <name>Veterans' Affairs Committee</name>
-          <subcommittees />
           <type>Standing</type>
+          <subcommittees />
         </item>
       </billCommittees>
     </committees>
-    <titles>
-      <item>
-        <titleType>Official Title as Introduced</titleType>
-        <chamberName />
-        <title>A bill to require the Secretary of Veterans Affairs to carry out a pilot program to increase the use of medical scribes to maximize the efficiency of physicians at medical facilities of the Department of Veterans Affairs.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-      <item>
-        <titleType>Display Title</titleType>
-        <chamberName />
-        <title>A bill to require the Secretary of Veterans Affairs to carry out a pilot program to increase the use of medical scribes to maximize the efficiency of physicians at medical facilities of the Department of Veterans Affairs.</title>
-        <chamberCode />
-        <parentTitleType />
-      </item>
-    </titles>
-    <billNumber>113</billNumber>
-    <cboCostEstimates />
-    <title>A bill to require the Secretary of Veterans Affairs to carry out a pilot program to increase the use of medical scribes to maximize the efficiency of physicians at medical facilities of the Department of Veterans Affairs.</title>
-    <amendments />
     <actions>
       <actionByCounts>
         <senate>2</senate>
@@ -67,8 +61,8 @@
       <item>
         <actionDate>2017-01-12</actionDate>
         <committee>
-          <name>Veterans' Affairs Committee</name>
           <systemCode>ssva00</systemCode>
+          <name>Veterans' Affairs Committee</name>
         </committee>
         <links />
         <sourceSystem>
@@ -79,60 +73,135 @@
         <type>IntroReferral</type>
       </item>
       <item>
+        <committee />
+        <links />
+        <type>IntroReferral</type>
         <text>Introduced in Senate</text>
+        <actionDate>2017-01-12</actionDate>
         <actionCode>10000</actionCode>
         <sourceSystem>
           <code>9</code>
           <name>Library of Congress</name>
         </sourceSystem>
-        <committee />
-        <type>IntroReferral</type>
-        <actionDate>2017-01-12</actionDate>
-        <links />
       </item>
       <actionTypeCounts>
-        <introducedInSenate>1</introducedInSenate>
         <referredToCommittee>1</referredToCommittee>
+        <introducedInSenate>1</introducedInSenate>
       </actionTypeCounts>
     </actions>
-    <notes />
-    <updateDate>2017-01-13T10:07:32Z</updateDate>
-    <createDate>2017-01-13T04:55:34Z</createDate>
+    <policyArea>
+      <name>Armed Forces and National Security</name>
+    </policyArea>
+    <sponsors>
+      <item>
+        <fullName>Sen. Heller, Dean [R-NV]</fullName>
+        <party>R</party>
+        <bioguideId>H001041</bioguideId>
+        <identifiers>
+          <bioguideId>H001041</bioguideId>
+          <lisID>1863</lisID>
+          <gpoId>8060</gpoId>
+        </identifiers>
+        <lastName>Heller</lastName>
+        <byRequestType />
+        <middleName />
+        <firstName>Dean</firstName>
+        <state>NV</state>
+      </item>
+    </sponsors>
     <recordedVotes />
-    <introducedDate>2017-01-12</introducedDate>
-    <congress>115</congress>
-    <committeeReports />
+    <updateDate>2018-08-28T20:22:41Z</updateDate>
+    <billNumber>113</billNumber>
+    <title>Maximizing Efficiency and Improving Access to Providers at the Department of Veterans Affairs Act</title>
+    <relatedBills>
+      <item>
+        <latestAction>
+          <text>By Senator Isakson from Committee on Veterans' Affairs filed written report. Report No. 115-212.</text>
+          <actionDate>2018-03-07</actionDate>
+        </latestAction>
+        <type>S</type>
+        <number>2193</number>
+        <latestTitle>Caring for our Veterans Act of 2017</latestTitle>
+        <relationshipDetails>
+          <item>
+            <type>Related bill</type>
+            <identifiedBy>CRS</identifiedBy>
+          </item>
+        </relationshipDetails>
+        <congress>115</congress>
+      </item>
+    </relatedBills>
+    <amendments />
+    <version>1.0.0</version>
     <laws />
+    <cboCostEstimates />
+    <billType>S</billType>
+    <createDate>2017-01-13T04:55:34Z</createDate>
+    <originChamber>Senate</originChamber>
+    <summaries>
+      <billSummaries>
+        <item>
+          <text><![CDATA[<p><strong>Maximizing Efficiency and Improving Access to Providers at the Department of Veterans Affairs Act</strong></p> <p>This bill directs the Department of Veterans Affairs (VA) to carry out an 18-month pilot program to increase the use of medical scribes to maximize the efficiency of physicians at VA medical facilities. A "medical scribe" is defined as a member of the medical team hired and trained to perform documentation in an electronic health record to maximize the productivity of a physician.</p> <p>The program shall be conducted at not fewer than five medical facilities that: (1) have a high volume of patients; or (2) are in rural areas where there is a shortage of physicians and where each physician has a high caseload.</p> <p>To carry out such program, the VA shall enter into a contract with one or more nongovernmental entities that train and employ professional medical scribes who specialize in the collection of medical data and data entry into electronic health records. </p> <p>The VA shall collect data to determine the effectiveness of the program, including information on changes in the average wait times for veterans to receive care, the average number of patients that a physician is able to see, the average amount of time such a physician spends on documentation, physician satisfaction and retention scores, and patient satisfaction scores.</p>]]></text>
+          <lastSummaryUpdateDate>2017-02-11T16:46:24Z</lastSummaryUpdateDate>
+          <actionDesc>Introduced in Senate</actionDesc>
+          <updateDate>2017-01-12T05:00:00Z</updateDate>
+          <name>Introduced in Senate</name>
+          <versionCode>00</versionCode>
+          <actionDate>2017-01-12</actionDate>
+        </item>
+      </billSummaries>
+    </summaries>
+    <committeeReports />
+    <calendarNumbers />
     <cosponsors>
       <item>
-        <fullName>Sen. Tester, Jon [D-MT]</fullName>
-        <bioguideId>T000464</bioguideId>
-        <party>D</party>
-        <isOriginalCosponsor>True</isOriginalCosponsor>
-        <firstName>Jon</firstName>
-        <middleName />
-        <state>MT</state>
-        <sponsorshipDate>2017-01-12</sponsorshipDate>
         <lastName>Tester</lastName>
+        <sponsorshipDate>2017-01-12</sponsorshipDate>
+        <party>D</party>
+        <fullName>Sen. Tester, Jon [D-MT]</fullName>
         <identifiers>
+          <bioguideId>T000464</bioguideId>
           <lisID>1829</lisID>
           <gpoId>8258</gpoId>
-          <bioguideId>T000464</bioguideId>
         </identifiers>
+        <firstName>Jon</firstName>
         <sponsorshipWithdrawnDate />
+        <state>MT</state>
+        <middleName />
+        <bioguideId>T000464</bioguideId>
+        <isOriginalCosponsor>True</isOriginalCosponsor>
       </item>
     </cosponsors>
-    <originChamber>Senate</originChamber>
-    <latestAction>
-      <links />
-      <text>Read twice and referred to the Committee on Veterans' Affairs.</text>
-      <actionDate>2017-01-12</actionDate>
-    </latestAction>
-    <policyArea />
-    <relatedBills />
+    <introducedDate>2017-01-12</introducedDate>
+    <congress>115</congress>
     <subjects>
       <billSubjects>
-        <legislativeSubjects />
+        <policyArea>
+          <name>Armed Forces and National Security</name>
+        </policyArea>
+        <legislativeSubjects>
+          <item>
+            <name>Department of Veterans Affairs</name>
+          </item>
+          <item>
+            <name>Health care coverage and access</name>
+          </item>
+          <item>
+            <name>Health care quality</name>
+          </item>
+          <item>
+            <name>Health information and medical records</name>
+          </item>
+          <item>
+            <name>Health personnel</name>
+          </item>
+          <item>
+            <name>Rural conditions and development</name>
+          </item>
+          <item>
+            <name>Veterans' medical care</name>
+          </item>
+        </legislativeSubjects>
       </billSubjects>
     </subjects>
   </bill>
