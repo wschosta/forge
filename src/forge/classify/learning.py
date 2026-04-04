@@ -173,11 +173,13 @@ def generate_learning_table(
         if bill_count == 0:
             continue
 
-        # Aggregate all parsed text tokens from bills in this category
-        merged_tokens: list[str] = []
-        for i, c in enumerate(code_array):
-            if c == code:
-                merged_tokens.extend(materials.parsed_texts[i])
+        # Count word frequencies directly from bills in this category
+        counts: Counter[str] = Counter(
+            token
+            for i, c in enumerate(code_array)
+            if c == code
+            for token in materials.parsed_texts[i]
+        )
 
         # Clean and process issue code name text
         issue_name = issue_codes_map.get(code, "")
@@ -186,9 +188,6 @@ def generate_learning_table(
         # Clean and process additional issue text
         additional_text_raw = additional_issue_codes_map.get(code, "")
         additional_text, additional_text_weight = cleanup_text(additional_text_raw, common_words)
-
-        # Count word frequencies from merged tokens
-        counts = Counter(merged_tokens)
         # Sort by frequency descending (matching MATLAB's sort(count, 'descend'))
         sorted_words = sorted(counts.keys(), key=lambda w: counts[w], reverse=True)
         sorted_counts = [counts[w] for w in sorted_words]
