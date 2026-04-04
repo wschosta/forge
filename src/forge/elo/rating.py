@@ -14,7 +14,7 @@ import logging
 import numpy as np
 import pandas as pd
 
-from forge.config import ForgeConfig, create_id_strings, cstr_ainbp
+from forge.config import ForgeConfig, create_id_strings
 from forge.predict.bayes import predict_bill, update_bayes
 
 logger = logging.getLogger(__name__)
@@ -54,13 +54,14 @@ def elo_prediction(
         DataFrame with Elo scores, or None if no bills processed.
     """
     ids = list(chamber_matrix.index)
+    id_to_idx = {lid: i for i, lid in enumerate(ids)}
     chamber_specifics = chamber_matrix.values
     n = len(ids)
 
     # Get chamber size
     chamber_size = config.house_size if chamber == "house" else config.senate_size
 
-    # Sponsor matrix values
+    # Extract sponsor matrix components once (not per bill)
     sponsor_values = None
     sponsor_row_names = None
     sponsor_col_names = None
@@ -102,20 +103,17 @@ def elo_prediction(
         sponsor_ids = create_id_strings(bill.sponsors, ids)
         if result["n_sponsors"] > 1:
             for i, sid in enumerate(sponsor_ids):
-                idx_list, _ = cstr_ainbp(ids, [sid])
-                for idx in idx_list:
-                    t1[idx] = result["sponsor_values"][i]
+                if sid in id_to_idx:
+                    t1[id_to_idx[sid]] = result["sponsor_values"][i]
 
         # Set up final results
         t_final_results = np.full(n, np.nan)
         for sid in result["yes_ids"]:
-            idx_list, _ = cstr_ainbp(ids, [sid])
-            for idx in idx_list:
-                t_final_results[idx] = 1.0
+            if sid in id_to_idx:
+                t_final_results[id_to_idx[sid]] = 1.0
         for sid in result["no_ids"]:
-            idx_list, _ = cstr_ainbp(ids, [sid])
-            for idx in idx_list:
-                t_final_results[idx] = 0.0
+            if sid in id_to_idx:
+                t_final_results[id_to_idx[sid]] = 0.0
 
         # Run Bayesian updates to get per-legislator accuracy
         # (MATLAB records accuracy at each step but doesn't update t_current_value in elo)
@@ -130,10 +128,7 @@ def elo_prediction(
             accuracy_per_leg[i] = acc
 
         # Get indices of legislators in the Elo score arrays
-        leg_indices = []
-        for lid in legislator_order:
-            idx_list, _ = cstr_ainbp(ids, [lid])
-            leg_indices.append(idx_list[0] if idx_list else -1)
+        leg_indices = [id_to_idx.get(lid, -1) for lid in legislator_order]
 
         # Pairwise Elo updates
         local_count = count[leg_indices].copy()

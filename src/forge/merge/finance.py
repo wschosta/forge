@@ -156,3 +156,43 @@ def merge_finance_data(
                     suffixes=("", "_finance"),
                 )
                 total_merge.to_csv(output_dir / filepath.name, index=False)
+
+
+def _merge_attribute_data(
+    attribute_data: pd.DataFrame,
+    merge_data_dir: Path,
+    suffix: str,
+) -> None:
+    """Shared merge logic for joining attribute data with existing CSVs by name.
+
+    Used by both seniority and ideology merge functions to avoid duplicating
+    the file-iteration + name-matching + merge pattern.
+
+    Args:
+        attribute_data: DataFrame with a 'full_name' column to merge in.
+        merge_data_dir: Directory containing CSV files to merge into.
+        suffix: Suffix for duplicate column names (e.g. '_seniority', '_shor').
+    """
+    for filepath in merge_data_dir.glob("*.csv"):
+        read_file = pd.read_csv(filepath)
+
+        if "last_name" in read_file.columns:
+            read_file["full_name"] = read_file.apply(_build_full_name, axis=1)
+
+            a_idx, _ = cstr_ainbp(
+                attribute_data["full_name"].tolist(),
+                read_file["full_name"].tolist(),
+            )
+            b_idx, _ = cstr_ainbp(
+                read_file["full_name"].tolist(),
+                attribute_data["full_name"].tolist(),
+            )
+
+            if a_idx and b_idx:
+                total_merge = read_file.iloc[b_idx].merge(
+                    attribute_data.iloc[a_idx],
+                    on="full_name",
+                    how="inner",
+                    suffixes=("", suffix),
+                )
+                total_merge.to_csv(filepath, index=False)
