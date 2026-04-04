@@ -7,17 +7,15 @@ and averages the scores. Supports per-category analysis.
 from __future__ import annotations
 
 import logging
-import re
 
 import numpy as np
 import pandas as pd
 
-from forge.config import ForgeConfig, create_id_strings
+from forge.config import ForgeConfig
 from forge.elo.rating import elo_prediction
+from forge.predict.bayes import find_passage_vote
 
 logger = logging.getLogger(__name__)
-
-_PASSAGE_PATTERN = re.compile(r"(THIRD|3RD|ON PASSAGE)", re.IGNORECASE)
 
 
 def _filter_bills_by_category(
@@ -47,7 +45,6 @@ def _filter_bills_by_category(
         category_capture[i] is the list of bill IDs for category_flags[i].
     """
     ids = list(chamber_matrix.index)
-    chamber_data_attr = f"{chamber}_data"
 
     # Normalize category flags
     if any(c < 0 for c in category_flags):
@@ -62,24 +59,9 @@ def _filter_bills_by_category(
         if bill is None or not bill.complete:
             continue
 
-        # Check for passage vote
-        chamber_data = getattr(bill, chamber_data_attr, None)
-        if chamber_data is None:
-            continue
-
-        has_passage = False
-        for vote in reversed(chamber_data.chamber_votes):
-            desc = vote.description
-            if isinstance(desc, list):
-                desc = " ".join(str(d) for d in desc)
-            if _PASSAGE_PATTERN.search(desc.upper() if desc else ""):
-                yes_ids = create_id_strings(vote.yes_list, ids)
-                no_ids = create_id_strings(vote.no_list, ids)
-                if len(yes_ids) + len(no_ids) >= chamber_size * 0.5:
-                    has_passage = True
-                break
-
-        if not has_passage:
+        # Check for passage vote using shared helper
+        yes_ids, no_ids, legislator_list = find_passage_vote(bill, chamber, ids)
+        if legislator_list is None or len(legislator_list) < chamber_size * 0.5:
             continue
 
         # Assign to matching category buckets

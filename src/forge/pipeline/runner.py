@@ -16,12 +16,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from forge.config import ForgeConfig, cstr_ainbp, create_id_strings
+from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
 from forge.matrices.rollcalls import process_chamber_rollcalls
 from forge.models.bill import Bill
-from forge.models.vote import Vote
 
 logger = logging.getLogger(__name__)
 
@@ -93,6 +92,12 @@ def _init_bills(
     """
     bill_set: dict[int, Bill] = {}
 
+    # Pre-group by bill_id for O(1) lookup instead of O(N) filtering per bill
+    sponsors_by_bill = (
+        sponsors_df.groupby("bill_id") if sponsors_df is not None and not sponsors_df.empty else {}
+    )
+    rollcalls_by_bill = rollcalls_df.groupby("bill_id")
+
     for _, row in bills_df.iterrows():
         bill_id = int(row["bill_id"])
         bill = Bill(
@@ -102,13 +107,18 @@ def _init_bills(
         )
 
         # Sponsors
-        if sponsors_df is not None and not sponsors_df.empty:
-            bill_sponsors = sponsors_df[sponsors_df["bill_id"] == bill_id]
-            if "sponsor_id" in bill_sponsors.columns:
+        if sponsors_by_bill and "sponsor_id" in sponsors_df.columns:
+            try:
+                bill_sponsors = sponsors_by_bill.get_group(bill_id)
                 bill.sponsors = bill_sponsors["sponsor_id"].tolist()
+            except KeyError:
+                pass
 
         # Rollcalls and votes for each chamber
-        bill_rollcalls = rollcalls_df[rollcalls_df["bill_id"] == bill_id]
+        try:
+            bill_rollcalls = rollcalls_by_bill.get_group(bill_id)
+        except KeyError:
+            bill_rollcalls = rollcalls_df.iloc[0:0]  # empty DataFrame
 
         if not bill_rollcalls.empty:
             # Senate

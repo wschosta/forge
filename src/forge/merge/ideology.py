@@ -11,8 +11,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from forge.config import cstr_ainbp
-from forge.merge.finance import _build_full_name
+from forge.merge.finance import _merge_attribute_data
 
 logger = logging.getLogger(__name__)
 
@@ -50,28 +49,5 @@ def merge_shor_mccarty(
             "Run finance.merge_finance_data first!"
         )
 
-    for filepath in merge_data_directory.glob("*.csv"):
-        read_file = pd.read_csv(filepath)
-
-        if "last_name" in read_file.columns:
-            read_file["full_name"] = read_file.apply(_build_full_name, axis=1)
-
-            a_idx, _ = cstr_ainbp(
-                merged_data["full_name"].tolist(),
-                read_file["full_name"].tolist(),
-            )
-            b_idx, _ = cstr_ainbp(
-                read_file["full_name"].tolist(),
-                merged_data["full_name"].tolist(),
-            )
-
-            if a_idx and b_idx:
-                total_merge = read_file.iloc[b_idx].merge(
-                    merged_data.iloc[a_idx],
-                    on="full_name",
-                    how="inner",
-                    suffixes=("", "_shor"),
-                )
-                total_merge.to_csv(filepath, index=False)
-
+    _merge_attribute_data(merged_data, merge_data_directory, "_shor")
     logger.info("Shor-McCarty merge complete for %s", state)

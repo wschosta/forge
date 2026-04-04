@@ -268,17 +268,18 @@ def predict_bill(
     sponsor_ids = create_id_strings(bill.sponsors, ids)
     n_sponsors = len(sponsor_ids)
 
+    # Build ID→index lookup for O(1) access
+    id_to_idx = {lid: i for i, lid in enumerate(ids)}
+
     # Set up final results vector
     n = len(ids)
     t_final_results = np.full(n, np.nan)
     for sid in yes_ids:
-        idx_list, _ = cstr_ainbp(ids, [sid])
-        for idx in idx_list:
-            t_final_results[idx] = 1.0
+        if sid in id_to_idx:
+            t_final_results[id_to_idx[sid]] = 1.0
     for sid in no_ids:
-        idx_list, _ = cstr_ainbp(ids, [sid])
-        for idx in idx_list:
-            t_final_results[idx] = 0.0
+        if sid in id_to_idx:
+            t_final_results[id_to_idx[sid]] = 0.0
 
     # Sponsor effect (t1)
     if n_sponsors > 1:
@@ -288,9 +289,8 @@ def predict_bill(
         )
         t1 = np.ones(n) * bayes_initial
         for i, sid in enumerate(sponsor_ids):
-            idx_list, _ = cstr_ainbp(ids, [sid])
-            for idx in idx_list:
-                t1[idx] = sponsor_values[i]
+            if sid in id_to_idx:
+                t1[id_to_idx[sid]] = sponsor_values[i]
     else:
         sponsor_values = np.array([bayes_initial])
         t1 = np.ones(n) * bayes_initial

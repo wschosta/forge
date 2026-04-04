@@ -89,18 +89,15 @@ def add_votes(
     if not row_ids or not column_ids:
         return vote_matrix
 
-    # Filter to IDs that actually exist in the matrix
     valid_rows = [r for r in row_ids if r in vote_matrix.index]
     valid_cols = [c for c in column_ids if c in vote_matrix.columns]
 
     if not valid_rows or not valid_cols:
         return vote_matrix
 
-    # Get the sub-matrix (copy to avoid read-only issues)
     sub = vote_matrix.loc[valid_rows, valid_cols].values.copy()
     mask_nan = np.isnan(sub)
 
-    # Where NaN, set to value; where not NaN, add value
     sub[mask_nan] = value
     sub[~mask_nan] += value
 
@@ -131,12 +128,11 @@ def clean_votes(
         return people_matrix, possible_votes
 
     # Find legislators where ALL values are NaN
-    to_drop: list[str] = []
-    for name in list(people_matrix.index):
-        if people_matrix.loc[name].isna().all() or possible_votes.loc[name].isna().all():
-            to_drop.append(name)
-            if show_warnings:
-                logger.warning("No votes recorded for %s", name)
+    all_nan_mask = people_matrix.isna().all(axis=1) | possible_votes.isna().all(axis=1)
+    to_drop = list(all_nan_mask[all_nan_mask].index)
+    if show_warnings:
+        for name in to_drop:
+            logger.warning("No votes recorded for %s", name)
 
     if to_drop:
         people_matrix = people_matrix.drop(index=to_drop, columns=to_drop)
@@ -170,7 +166,6 @@ def clean_sponsor_votes(
             logger.warning("Empty sponsor matrix")
         return people_matrix, possible_votes
 
-    # First, clean NaN rows
     people_matrix, possible_votes = clean_votes(people_matrix, possible_votes, show_warnings)
 
     if people_matrix.empty:

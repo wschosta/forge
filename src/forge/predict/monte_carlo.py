@@ -11,7 +11,6 @@ import logging
 import numpy as np
 import pandas as pd
 
-from forge.config import create_id_strings, cstr_ainbp
 from forge.predict.bayes import predict_bill
 
 logger = logging.getLogger(__name__)
