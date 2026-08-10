@@ -206,7 +206,15 @@ def _init_bills(
                     pct = ch_data.final_yes_percentage
                     if pct >= 0:
                         setattr(bill, f"passed_{ch}", 1 if pct > 0.5 else 0)
-                        ch_data.competitive = int(pct < config.competitive_threshold)
+                        # Competitive means the vote was close in *either*
+                        # direction, so MATLAB brackets it on both sides
+                        # (forge.m:156-157): (1 - threshold) < pct < threshold.
+                        # Testing only the upper bound would also admit bills
+                        # that failed near-unanimously, which are just as
+                        # lopsided as the ones the threshold exists to exclude.
+                        ch_data.competitive = int(
+                            (1 - config.competitive_threshold) < pct < config.competitive_threshold
+                        )
 
             if bill.passed_house >= 0 or bill.passed_senate >= 0:
                 bill.complete = 1

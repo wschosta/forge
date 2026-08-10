@@ -172,3 +172,55 @@ def test_every_golden_csv_has_a_python_counterpart(golden_dir: Path, indiana_run
         if (golden_dir / name).exists() and not (indiana_run / name).exists()
     ]
     assert not missing, f"Pipeline stopped producing outputs that MATLAB produced: {missing}"
+
+
+class TestCompetitiveBand:
+    """The competitive test must bracket the vote on both sides.
+
+    MATLAB (forge.m:156-157) treats a bill as competitive only when
+    ``(1 - threshold) < yes% < threshold``. An upper-bound-only test admits
+    bills that failed near-unanimously, which are exactly as lopsided as the
+    near-unanimous passes the threshold exists to exclude.
+
+    No Indiana bill currently falls in the leaked region, so this is asserted
+    directly on the flagging logic rather than via the golden files — the
+    reference state cannot exercise it.
+    """
+
+    @staticmethod
+    def _competitive(pct: float, threshold: float = 0.85) -> int:
+        import pandas as pd
+
+        from forge.config import ForgeConfig
+        from forge.pipeline.runner import _init_bills
+
+        yea = round(pct * 100)
+        nay = 100 - yea
+        bills = pd.DataFrame([{"bill_id": 1, "bill_number": "HB1", "title": "Test bill."}])
+        rollcalls = pd.DataFrame([{
+            "bill_id": 1, "roll_call_id": 1, "date": "2013-01-01",
+            "description": "Third reading: passed", "yea": yea, "nay": nay, "nv": 0,
+            "total_vote": yea + nay, "yes_percent": pct, "year": 2013,
+        }])
+        votes = pd.DataFrame(
+            [{"roll_call_id": 1, "sponsor_id": i, "vote": 1, "year": 2013} for i in range(yea)]
+            + [{"roll_call_id": 1, "sponsor_id": 100 + i, "vote": 2, "year": 2013} for i in range(nay)]
+        )
+        empty = pd.DataFrame(columns=["bill_id", "sponsor_id"])
+        config = ForgeConfig(state_id="IN", competitive_threshold=threshold)
+        bill_set = _init_bills(bills, rollcalls, votes, empty, None, config, None)
+        data = bill_set[1].house_data
+        return int(data.competitive) if data is not None else -1
+
+    @pytest.mark.parametrize("pct", [0.50, 0.60, 0.70, 0.80])
+    def test_close_votes_are_competitive(self, pct: float) -> None:
+        assert self._competitive(pct) == 1
+
+    @pytest.mark.parametrize("pct", [0.90, 0.95, 1.00])
+    def test_near_unanimous_passes_are_not_competitive(self, pct: float) -> None:
+        assert self._competitive(pct) == 0
+
+    @pytest.mark.parametrize("pct", [0.00, 0.05, 0.10])
+    def test_near_unanimous_failures_are_not_competitive(self, pct: float) -> None:
+        """The case an upper-bound-only test would wrongly admit."""
+        assert self._competitive(pct) == 0

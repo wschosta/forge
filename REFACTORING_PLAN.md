@@ -657,13 +657,57 @@ matrix against the committed MATLAB outputs gives:
 | sponsor matrices | 2 columns differ | 3.3e-1 | 5.6e-3 |
 
 Read this as: **structure matches, arithmetic is close, bill selection is not
-yet identical.** Seat proximity — the one output that does not depend on which
+identical.** Seat proximity — the one output that does not depend on which
 bills are included — agrees to floating point, which is good evidence the
-numerical core is correct. The co-vote matrices are raw integer tallies, so
-their disagreement cannot be rounding; the two implementations are including
-slightly different sets of rollcalls (Python processes 299 House / 323 Senate
-bills). Chasing that residual is the next piece of Phase 10 work, and the
-1e-10 target in Phase 10.2 should be restored once it is closed.
+numerical core is correct.
+
+#### Why the residual cannot currently be closed
+
+The residual was tracked down rather than left open, and the conclusion is that
+it is a **data-provenance gap, not a code defect**. The evidence:
+
+1. **The difference is strictly additive.** Comparing golden to Python co-vote
+   counts cell by cell: golden is higher in 56% of cells, equal in 44%, and
+   lower in **0%**. Python never counts a co-vote MATLAB did not; it only
+   misses some. So the logic does not fabricate agreement — it is
+   under-inclusive.
+
+2. **The shortfall is bimodal by legislator.** Exactly 25 of 100 House members
+   match perfectly; the other 75 are short by ~4.3 votes each. The 25 average
+   181 recorded votes against 280 for the rest — they are short-serving
+   members. The bills Python is missing therefore sit in a period those 25
+   were not present for.
+
+3. **The missing bills are ones MATLAB classified and Python cannot.** Five
+   House bills (*Novelty lighters*, *Mopeds*, *Expungement* ×2, *Motorsports*)
+   score zero against every category, so both implementations' final guard
+   returns NaN and the category filter drops them. Forcing them in collapses
+   the worst per-legislator gap from 4.97 to 0.92.
+
+4. **Their vocabulary is missing from the committed classifier.** The pruned
+   `description_text` in `+la/learning_algorithm_data.mat` holds 8,752 distinct
+   words and contains none of EXPUNGEMENT, MOTORSPORTS, or NOVELTY. The
+   unpruned `unique_text_full_store` in the same file holds 24,238 words and
+   contains all three.
+
+The committed classifier is therefore **a different vintage from the one that
+generated the committed outputs** — it was pruned harder. `data/IN/saved_data.mat`
+is stale in the same way: it lists 310 House bills, and forcing Python to use
+exactly that set makes agreement *worse* (mean gap 3.06 → 4.68), so it does not
+correspond to the golden CSVs either.
+
+Closing the gap from here means recovering or retraining the classifier that
+produced the goldens, then regenerating them — not adjusting filters. Tuning
+selection logic until the numbers line up would overfit to an artifact whose
+provenance is unknown, and would silently trade correctness for a green test.
+The 1e-10 target in Phase 10.2 should be restored only once inputs and outputs
+are known to come from the same run.
+
+One genuine fidelity bug *was* found while investigating and is fixed: the
+competitive test only bracketed the vote on one side (`pct < threshold`) where
+MATLAB brackets both (`(1 - threshold) < pct < threshold`, forge.m:156-157), so
+near-unanimous *failures* were treated as competitive. No Indiana bill falls in
+that band, so it does not move these numbers, but it would affect other states.
 
 Three defects had to be fixed before any comparison was possible at all:
 
