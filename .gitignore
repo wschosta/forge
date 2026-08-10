@@ -31,3 +31,13 @@ Thumbs.db
 # Forge cached data
 *.pkl
 *.parquet
+
+# Congressional corpus: the archives under data/congressional_archive/Store/
+# are the committed copy. Extracting them here is expected and useful, but the
+# ~35,000 loose files are byte-identical to the archives and must not be
+# committed again — the parser reads the archives directly.
+data/congressional_archive/BILLSTATUS-*.xml
+
+# Learning-algorithm scratch. +la/main.m and the optimizers write dated run
+# artifacts here; they are experiment output, not inputs to any pipeline.
++la/temp/
