@@ -41,3 +41,12 @@ data/congressional_archive/BILLSTATUS-*.xml
 # Learning-algorithm scratch. +la/main.m and the optimizers write dated run
 # artifacts here; they are experiment output, not inputs to any pipeline.
 +la/temp/
+
+# Generated pipeline outputs. These are produced by `forge run` and are not
+# inputs to anything, so they are regenerated rather than committed.
+# data/{STATE}/outputs/ is deliberately NOT ignored — those CSVs are the MATLAB
+# golden files that tests/test_integration/ validates the Python port against.
+data/*/prediction_model/*.mat
+data/*/elo_model/
+data/*/merged_data/
+data/*/merged_data.zip
