@@ -44,9 +44,12 @@ data/congressional_archive/BILLSTATUS-*.xml
 
 # Generated pipeline outputs. These are produced by `forge run` and are not
 # inputs to anything, so they are regenerated rather than committed.
-# data/{STATE}/outputs/ is deliberately NOT ignored — those CSVs are the MATLAB
-# golden files that tests/test_integration/ validates the Python port against.
+#
+# The CSVs under data/{STATE}/outputs/ and data/{STATE}/elo_model/ are NOT
+# ignored: they are the MATLAB results of record, and the only reference the
+# Python port can be validated against. Only the binary .mat companions and the
+# large Monte Carlo dumps are excluded.
 data/*/prediction_model/*.mat
-data/*/elo_model/
+data/*/elo_model/**/*.mat
 data/*/merged_data/
 data/*/merged_data.zip
