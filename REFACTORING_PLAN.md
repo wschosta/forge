@@ -709,6 +709,75 @@ MATLAB brackets both (`(1 - threshold) < pct < threshold`, forge.m:156-157), so
 near-unanimous *failures* were treated as competitive. No Indiana bill falls in
 that band, so it does not move these numbers, but it would affect other states.
 
+---
+
+## Phase 5 status: Monte Carlo prediction
+
+The prediction half was run against real Indiana data for the first time and
+compared to the committed `H_prediction_model_results_m2500.csv` at matching
+iteration count (2,500), over the 87 legislators the two runs share:
+
+| Column | Golden | Python | Pearson | Spearman |
+|--------|--------|--------|---------|----------|
+| `coverage` | mean 0.844, sd 0.174 | mean 0.841, sd 0.178 | **0.9995** | 0.9974 |
+| `results` | mean 0.752, sd 0.155 | mean 8.194, sd 3.986 | 0.7417 | 0.7621 |
+
+`coverage` agreeing to 0.9995 is strong evidence the Monte Carlo machinery is
+sound: bill selection, legislator ordering and iteration counting all line up.
+
+**Open defect: impact scores are sign-inverted upstream of normalization.**
+MATLAB's `results` span [0.0287, 1.0] with 1.0 at the maximum — the shape
+produced by dividing *positive* scores by their maximum. This implementation's
+raw scores are negative. Normalizing them by their absolute maximum gives
+[-1.0, -0.026], which negated lands on the golden almost exactly, so the sign
+flip happens before normalization.
+
+Two things follow, and the second is the one that matters for analysis:
+
+- Ranking direction is correct (Spearman +0.76), so "who is most impactful"
+  broadly survives.
+- Scale is not. Dividing negative scores by their *least-negative* element
+  makes the divisor the noisiest value in the column, so the output is
+  unbounded above ([1.0, 18.2]) rather than bounded by 1. **Impact magnitudes
+  are not comparable across runs, chambers or states** until this is fixed.
+
+Two candidate causes, neither confirmed:
+
+1. The denominator `1 - accuracy` is evaluated on a percentage (0-100), so it
+   is large and negative. MATLAB computes accuracy the same way
+   (predictOutcomes.m:149), so this alone may not explain the divergence.
+2. MATLAB divides by a fixed `specific_accuracy_list(1,1)` — iteration 1's
+   starting accuracy, reused for every iteration — where this implementation
+   divides per-iteration (`impact.py`, `denom_j`). That is arguably a MATLAB
+   bug, but it changes the arithmetic.
+
+An earlier attempt to fix this at the normalization step (switching to MATLAB's
+signed maximum) is what produced the unbounded scale: it corrected the output
+sign while leaving the underlying inversion in place. That change is retained
+because it keeps MATLAB's literal formula and preserves ranking direction, but
+it is a compensation, not a cure. **Fix the sign upstream; do not patch the
+normalization again.** With positive raw scores the signed and absolute maxima
+coincide and the formula choice stops mattering.
+
+Two further notes from the same run:
+
+- `montecarloPrediction.m:20` writes the results CSV; the port computed the
+  table and ignored its `outputs_directory`, leaving the directory empty on a
+  successful run. Fixed.
+- The prediction golden carries 104 legislators — LegiScan's roster — where the
+  matrix goldens carry the curated 100. The committed outputs were not all
+  generated from one configuration, which is more evidence for the provenance
+  problem described under Phase 10.
+
+### Performance
+
+`update_bayes` dominated at 92% of Monte Carlo runtime. Removing a linear ID
+scan, an N-1 element list rebuilt per call, and numpy dispatch overhead on
+~100-element arrays took it from 7.04 ms to 3.12 ms per iteration, verified
+bit-identical on a 25-bill signature over real data. A production 16,000
+iteration House run extrapolates to ~4.1 hours, down from ~9.3 — a long batch
+job, but a feasible one.
+
 Three defects had to be fixed before any comparison was possible at all:
 
 | Defect | Effect | Fix |

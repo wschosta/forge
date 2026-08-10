@@ -123,18 +123,30 @@ def process_legislator_impacts(
     # Divide by the SIGNED maximum, matching processLegislatorImpacts.m:81
     # (`results / max(results)`).
     #
-    # This looks like it should be an absolute maximum, and it is worth being
-    # explicit about why it must not be. In practice every raw impact score
-    # comes out negative, so the signed maximum is the least-negative value and
-    # dividing by it flips the whole column positive, mapping the most-negative
-    # raw score to +1.0. Normalising by the absolute maximum instead leaves the
-    # column negative and sends that same legislator to -1.0 — which inverts
-    # the impact ranking relative to every committed MATLAB output and to the
-    # Stata analyses built on them.
+    # KNOWN DEFECT, upstream of this line: the raw scores accumulated above come
+    # out negative, where MATLAB's came out positive. Evidence — MATLAB's
+    # committed m2500 output spans [0.0287, 1.0] with 1.0 at the *maximum*,
+    # which is what dividing positive scores by their maximum produces.
+    # Normalizing this implementation's negative scores by their absolute
+    # maximum yields [-1.0, -0.026]; negate that and you land on the golden
+    # almost exactly. So the sign is inverted before normalization ever runs.
     #
-    # Whether MATLAB's sign flip was deliberate is a separate question worth
-    # asking; until it is answered the port reproduces it, because the results
-    # of record depend on it.
+    # Consequences of that, both visible in the m2500 comparison:
+    #   - Ranking direction is right (Spearman +0.76 against the golden).
+    #   - Scale is not. Dividing negatives by their least-negative element makes
+    #     the column unbounded above ([1.0, 18.2] instead of [0, 1]), because
+    #     the divisor is the noisiest element rather than the largest. Impact
+    #     magnitudes are therefore NOT comparable across runs, chambers or
+    #     states until the upstream sign is fixed.
+    #
+    # Two candidate causes, neither confirmed: the denominator `1 - accuracy`
+    # is evaluated on a percentage (0-100), making it large and negative; and
+    # MATLAB divides by a *fixed* `specific_accuracy_list(1,1)` (iteration 1)
+    # where this implementation divides per-iteration.
+    #
+    # This keeps MATLAB's literal formula rather than compensating here —
+    # patching the normalization to force the sign is what produced the
+    # unbounded scale above, and papering over it twice would be worse.
     max_results = agg["results"].max()
     if max_results != 0:
         agg["results"] = agg["results"] / max_results

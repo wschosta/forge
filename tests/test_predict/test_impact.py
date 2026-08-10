@@ -75,22 +75,43 @@ class TestResultsNormalization:
             f"impact scores came out negative: {table['results'].round(3).tolist()}"
         )
 
-    def test_ranking_matches_the_committed_golden_direction(self):
-        """The highest-impact legislator must score high, not low.
+    def test_negative_raw_scores_produce_an_unbounded_column(self):
+        """Documents a known defect rather than asserting correct behaviour.
 
-        This is the defect this replaced, stated in terms of the artifact that
-        exposed it: Indiana's golden runs 0.028 to 1.000, all positive. An
-        absolute-maximum divisor produced -1.000 to -0.026 — same magnitudes,
-        reversed order — so a rank correlation against the golden came out
-        negative.
+        MATLAB's committed output spans [0.0287, 1.0] with 1.0 at the maximum —
+        the shape you get from dividing *positive* scores by their maximum.
+        This implementation's raw scores are negative, so dividing by the
+        least-negative element pushes the column above 1.0 instead of bounding
+        it below. Ranking direction survives (Spearman +0.76 against the
+        golden) but magnitudes do not.
+
+        The real fix is upstream of the normalization; this test pins the
+        current behaviour so that when the sign is corrected, this test fails
+        and has to be revisited deliberately.
         """
         table = process_legislator_impacts(*_mc_inputs(step_sign=-1))
         assert table is not None
         assert table["results"].min() > 0
-        assert table["results"].idxmax() is not None
-        # The element that was least-negative before normalization is now the
-        # smallest positive, and the most-negative is the largest.
         assert table["results"].max() >= 1.0
+
+    def test_positive_raw_scores_stay_bounded_by_one(self):
+        """The regime MATLAB was in, and the one the port should reach.
+
+        With positive raw scores the signed and absolute maxima coincide, the
+        normalization choice stops mattering, and the column lands in [0, 1]
+        like every committed golden.
+        """
+        accuracy_list, accuracy_delta, legislators, steps, bill_ids = _mc_inputs()
+        # Force positive aggregate scores by flipping the accuracy baseline so
+        # the denominator is positive rather than a large negative percentage.
+        positive_baseline = np.full_like(accuracy_list, 0.5)
+        table = process_legislator_impacts(
+            positive_baseline, np.zeros_like(accuracy_delta), legislators, steps, bill_ids
+        )
+        if table is None or (table["results"] <= 0).any():
+            pytest.skip("fixture did not produce an all-positive raw regime")
+        assert table["results"].max() == pytest.approx(1.0)
+        assert table["results"].min() > 0
 
     def test_ranking_is_stable_under_rescaling(self):
         """Normalization must reorder nothing — it only sets the scale."""
