@@ -148,6 +148,10 @@ class ForgeConfig:
     cut_off: int = 3001
     iwv: float = 0.13
     awv: float = 0.0
+    # Trained classifier produced by the MATLAB learning algorithm. Its weights
+    # are what the committed MATLAB outputs were generated from, so the golden
+    # comparison depends on classifying against this exact file.
+    learning_data_path: str = "+la/learning_algorithm_data.mat"
 
     # Elo
     elo_initial_score: int = 1500

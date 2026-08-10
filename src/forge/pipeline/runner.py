@@ -16,6 +16,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from forge.classify.classifier import classify_bill
+from forge.classify.learning import LearningData, load_matlab_learning_data
 from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
@@ -25,10 +27,50 @@ from forge.models.bill import Bill
 logger = logging.getLogger(__name__)
 
 
+#: Curated roster MATLAB substitutes for LegiScan's people table for the
+#: Indiana House (state.m:153-158). Relative to the state's data directory.
+INDIANA_HOUSE_ROSTER = Path("undergrad") / "people_2013-2014.xlsx"
+
+
+def _load_indiana_house_people(state_dir: Path) -> pd.DataFrame | None:
+    """Load the hand-curated Indiana House roster MATLAB uses instead of LegiScan.
+
+    Indiana is special-cased in state.m: rather than selecting House members
+    from LegiScan's people table, MATLAB reads a curated spreadsheet of the
+    2013-2014 chamber. LegiScan's own 2016 roster carries 104 members for a
+    100-seat chamber (mid-term replacements are listed alongside the members
+    they replaced), so the curated file is what the committed MATLAB House
+    outputs were actually built from.
+
+    Unlike the LegiScan path, ``party_id`` here is already 0/1, so it must not
+    be decremented again.
+
+    Args:
+        state_dir: The state's data directory (e.g. ``data/IN``).
+
+    Returns:
+        The roster sorted by party, or None if the file is missing/unreadable.
+    """
+    roster_path = state_dir / INDIANA_HOUSE_ROSTER
+    if not roster_path.exists():
+        logger.warning("Indiana House roster not found at %s; falling back to LegiScan", roster_path)
+        return None
+
+    try:
+        people = pd.read_excel(roster_path)
+    except Exception as exc:  # noqa: BLE001 - openpyxl raises many types on a malformed workbook; fall back to LegiScan rather than abort
+        logger.warning("Could not read Indiana House roster %s: %s", roster_path, exc)
+        return None
+
+    logger.info("Using curated Indiana House roster (%d members) from %s", len(people), roster_path.name)
+    return people.sort_values("party_id").reset_index(drop=True)
+
+
 def _prepare_people(
     people_df: pd.DataFrame,
     state_id: str,
     chamber: str,
+    state_dir: Path | None = None,
 ) -> pd.DataFrame | None:
     """Filter people to a specific chamber and adjust party IDs.
 
@@ -38,10 +80,17 @@ def _prepare_people(
         people_df: Raw people DataFrame from LegiScan.
         state_id: Two-letter state code.
         chamber: 'house' or 'senate'.
+        state_dir: The state's data directory, needed only to locate Indiana's
+            curated House roster.
 
     Returns:
         Filtered people DataFrame for the specified chamber, or None.
     """
+    if state_id == "IN" and chamber == "house" and state_dir is not None:
+        roster = _load_indiana_house_people(state_dir)
+        if roster is not None:
+            return roster
+
     required_cols = {"year", "role_id", "party_id"}
     if not required_cols.issubset(set(people_df.columns)):
         logger.warning("People DataFrame missing required columns: %s", required_cols - set(people_df.columns))
@@ -74,6 +123,7 @@ def _init_bills(
     sponsors_df: pd.DataFrame,
     history_df: pd.DataFrame | None,
     config: ForgeConfig,
+    learning_data: LearningData | None = None,
 ) -> dict[int, Bill]:
     """Initialize bill objects from raw DataFrames.
 
@@ -86,6 +136,10 @@ def _init_bills(
         sponsors_df: Sponsors DataFrame.
         history_df: History DataFrame (optional).
         config: ForgeConfig.
+        learning_data: Trained classifier. When None, bills keep an
+            ``issue_category`` of NaN and every category filter downstream
+            excludes them — matching MATLAB's ``learning_algorithm_exist``
+            guard at forge.m:133.
 
     Returns:
         Dict mapping bill_id → Bill objects.
@@ -105,6 +159,12 @@ def _init_bills(
             bill_number=str(row.get("bill_number", "")),
             title=str(row.get("title", "")),
         )
+
+        # Classify the bill by policy area (forge.m:133-136). Every downstream
+        # matrix is filtered by issue_category, so skipping this leaves the
+        # whole pipeline with nothing to aggregate.
+        if learning_data is not None:
+            bill.issue_category = classify_bill(bill.title, learning_data)[0]
 
         # Sponsors
         if sponsors_by_bill and "sponsor_id" in sponsors_df.columns:
@@ -203,9 +263,19 @@ def run_pipeline(
     except Exception:
         pass
 
-    # Step 2: Initialize bill objects
+    # Step 2: Load the trained classifier (state.m:123 → la.loadLearnedMaterials)
+    learning_data = load_matlab_learning_data(config.learning_data_path)
+    if learning_data is None:
+        logger.warning(
+            "No trained classifier available — bills will be unclassified and "
+            "all category-filtered matrices will come out empty."
+        )
+
+    # Step 3: Initialize bill objects
     logger.info("Initializing %d bills...", len(bills_df))
-    bill_set = _init_bills(bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config)
+    bill_set = _init_bills(
+        bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config, learning_data
+    )
     logger.info("Bill set: %d bills", len(bill_set))
 
     # Step 3: Process each chamber
@@ -216,7 +286,7 @@ def run_pipeline(
     }
 
     for chamber in ["house", "senate"]:
-        chamber_people = _prepare_people(people_df, state, chamber)
+        chamber_people = _prepare_people(people_df, state, chamber, state_dir)
         if chamber_people is None:
             logger.info("No %s people found, skipping", chamber)
             continue

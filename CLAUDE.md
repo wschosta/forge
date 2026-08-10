@@ -127,7 +127,7 @@ Configured in `@state/state_properties.m`: CA, NY, WI, OH, OR, VT, KY, IN, ME, M
 1. Committee vote processing is commented out in `processChamberVotes.m`; committee matrices are always empty.
 2. Senate vs. House determination uses `total_vote <= senate_size` — fragile for committees. Source: "THIS REALLY FUCKS UP COMMITTEES."
 3. `eloPrediction.m` and `predictOutcomes.m` contain ~60 lines of duplicated code (acknowledged in comments).
-4. Indiana has special-case hardcoded data reading logic.
+4. Indiana has special-case hardcoded data reading logic — the House roster comes from `data/IN/undergrad/people_2013-2014.xlsx`, not LegiScan (LegiScan's 2016 roster lists 104 members for a 100-seat chamber). Ported in `runner._load_indiana_house_people`.
 5. Some file paths use Windows backslashes (`+la\parsed_xml.mat`).
 6. A `keyboard` debugging statement remains in `state.m:run()` line 263.
 7. No automated test suite — `tester.m` is just a manual run script.
@@ -135,6 +135,30 @@ Configured in `@state/state_properties.m`: CA, NY, WI, OH, OR, VT, KY, IN, ME, M
 9. Bug in `classifyBill.m`: references `text` instead of `clean_title` at line 13.
 10. Bug in `outputBillInformation.m`: references `senate_bill_ids` instead of `chamber_bill_ids` at line 14.
 11. Accuracy formula uses hardcoded `100` instead of actual legislator count.
+
+## Validating the Python Port
+
+`tests/test_integration/` runs the real Indiana pipeline and diffs its output
+against the committed MATLAB results in `data/IN/outputs/`. This is the only
+test that can catch a stage silently producing nothing — the rest of the suite
+builds synthetic inputs, so it validates self-consistency, not correctness.
+
+```bash
+pytest tests/test_integration/ -v     # golden-file comparison (~1 min)
+pytest                                # everything
+```
+
+Current parity: structure matches exactly, seat proximity agrees to 5e-14,
+agreement matrices agree to ~0.4% mean absolute error. The residual comes from
+the two implementations selecting slightly different sets of bills — see the
+Phase 10 status table in `REFACTORING_PLAN.md`. Tolerances in
+`test_indiana_golden.py` are set just above measured error so they act as a
+regression gate; tighten them as that residual is closed.
+
+Two things this harness depends on, both easy to break:
+- `+la/learning_algorithm_data.mat` — the MATLAB-trained classifier. Without
+  it, bills go unclassified and every category-filtered matrix comes out empty.
+- `data/IN/undergrad/people_2013-2014.xlsx` — Indiana's curated House roster.
 
 ## Build / Run (Current MATLAB)
 

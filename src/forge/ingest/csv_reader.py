@@ -92,4 +92,39 @@ def read_all_csv(
     # pandas concat handles missing columns by filling with NaN automatically.
     result = pd.concat(frames, ignore_index=True, sort=False)
 
+    if data_type == "rollcalls":
+        result = _derive_rollcall_columns(result)
+
     return result
+
+
+def _derive_rollcall_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Add the derived vote-tally columns LegiScan does not ship.
+
+    Mirrors @forge/forge.m:98-99, which computes these immediately after
+    reading the rollcall CSVs. The raw LegiScan schema is
+    ``bill_id,roll_call_id,date,description,yea,nay,nv`` — ``total_vote`` and
+    ``yes_percent`` are derived, not stored, so every downstream consumer that
+    reads them depends on this step having run.
+
+    ``total_vote`` deliberately excludes ``nv`` (not voting), matching MATLAB.
+    Rollcalls with no recorded yea/nay yield ``yes_percent`` of NaN rather than
+    raising on division by zero, which is how MATLAB's ``./`` behaves.
+
+    Args:
+        df: Concatenated rollcalls DataFrame.
+
+    Returns:
+        The DataFrame with ``total_vote`` and ``yes_percent`` columns added.
+    """
+    if df.empty or not {"yea", "nay"}.issubset(df.columns):
+        return df
+
+    yea = pd.to_numeric(df["yea"], errors="coerce")
+    nay = pd.to_numeric(df["nay"], errors="coerce")
+
+    df["total_vote"] = yea + nay
+    # Guard division by zero: MATLAB's ./ yields NaN/Inf rather than raising.
+    df["yes_percent"] = yea.divide(df["total_vote"]).replace([float("inf"), float("-inf")], float("nan"))
+
+    return df

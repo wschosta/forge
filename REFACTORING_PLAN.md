@@ -639,8 +639,45 @@ Use this to track progress across all phases:
 - [ ] **Phase 7** — Surface plots, histograms, boxplots, visual spot-check
 - [ ] **Phase 8** — CSV export, finance merge, ideology merge, seniority merge, output validated
 - [ ] **Phase 9** — Pipeline orchestrator, CLI, logging, progress bars, caching, end-to-end test
-- [ ] **Phase 10** — Golden-file validation, Stata compatibility, performance benchmarking, code quality
+- [~] **Phase 10** — Golden-file validation **in place for Indiana** (`tests/test_integration/`); Stata compatibility, performance benchmarking, and full multi-state validation still outstanding
 - [ ] **Cleanup** — All bugs fixed, documentation updated, MATLAB files in `matlab/`
+
+### Phase 10 status: what the golden comparison currently shows
+
+Running the pipeline against real Indiana data and diffing every category-0
+matrix against the committed MATLAB outputs gives:
+
+| Output | Labels | max abs diff | mean abs diff |
+|--------|--------|--------------|---------------|
+| `H_seat_matrix_0` | identical | 5e-14 | 3e-15 |
+| `H_cha_A_matrix_0` (agreement) | identical | 4.4e-2 | 4.4e-3 |
+| `S_cha_A_matrix_0` (agreement) | identical | 1.3e-2 | 3.4e-3 |
+| `H_cha_A_votes_0` (co-vote counts) | identical | 7 votes | 3.1 votes |
+| `S_cha_A_votes_0` (co-vote counts) | identical | 3 votes | 2.1 votes |
+| sponsor matrices | 2 columns differ | 3.3e-1 | 5.6e-3 |
+
+Read this as: **structure matches, arithmetic is close, bill selection is not
+yet identical.** Seat proximity — the one output that does not depend on which
+bills are included — agrees to floating point, which is good evidence the
+numerical core is correct. The co-vote matrices are raw integer tallies, so
+their disagreement cannot be rounding; the two implementations are including
+slightly different sets of rollcalls (Python processes 299 House / 323 Senate
+bills). Chasing that residual is the next piece of Phase 10 work, and the
+1e-10 target in Phase 10.2 should be restored once it is closed.
+
+Three defects had to be fixed before any comparison was possible at all:
+
+| Defect | Effect | Fix |
+|--------|--------|-----|
+| `total_vote` / `yes_percent` never derived | Pipeline raised `KeyError` on the first real rollcall file | Derive at ingest, mirroring forge.m:98-99 |
+| Bills never classified | Every category filter excluded every bill; pipeline completed and wrote **empty 0×0 matrices** without erroring | Load the MATLAB-trained classifier and classify in `_init_bills`, mirroring forge.m:133-136 |
+| Indiana House roster not special-cased | LegiScan's 2016 roster yields 104 members for a 100-seat chamber | Read `data/IN/undergrad/people_2013-2014.xlsx`, mirroring state.m:153-158 |
+
+The second is the one to keep in mind when planning future phases: the unit
+suite was fully green throughout, because every unit test builds its own
+synthetic inputs. Only a test that runs real data through the whole pipeline
+and compares against a known-good result can catch a stage that silently
+produces nothing.
 
 ---
 
