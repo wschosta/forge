@@ -119,8 +119,24 @@ def process_legislator_impacts(
 
     # Normalize
     agg["coverage"] = agg["coverage"] / len(bill_ids)
-    max_results = agg["results"].abs().max()
-    if max_results > 0:
+
+    # Divide by the SIGNED maximum, matching processLegislatorImpacts.m:81
+    # (`results / max(results)`).
+    #
+    # This looks like it should be an absolute maximum, and it is worth being
+    # explicit about why it must not be. In practice every raw impact score
+    # comes out negative, so the signed maximum is the least-negative value and
+    # dividing by it flips the whole column positive, mapping the most-negative
+    # raw score to +1.0. Normalising by the absolute maximum instead leaves the
+    # column negative and sends that same legislator to -1.0 — which inverts
+    # the impact ranking relative to every committed MATLAB output and to the
+    # Stata analyses built on them.
+    #
+    # Whether MATLAB's sign flip was deliberate is a separate question worth
+    # asking; until it is answered the port reproduces it, because the results
+    # of record depend on it.
+    max_results = agg["results"].max()
+    if max_results != 0:
         agg["results"] = agg["results"] / max_results
 
     return agg

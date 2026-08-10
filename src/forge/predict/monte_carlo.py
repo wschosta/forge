@@ -7,6 +7,7 @@ to produce robust accuracy estimates.
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -232,7 +233,63 @@ def monte_carlo_prediction(
             mc_results["bill_ids"],
         )
         mc_results["results_table"] = results_table
+        _write_results_table(
+            results_table, chamber_people, chamber, monte_carlo_number, outputs_directory
+        )
     else:
         mc_results["results_table"] = None
 
     return mc_results
+
+
+def _write_results_table(
+    results_table: pd.DataFrame | None,
+    chamber_people: pd.DataFrame,
+    chamber: str,
+    monte_carlo_number: int,
+    outputs_directory: str | None,
+) -> Path | None:
+    """Write the per-legislator impact table as MATLAB's results CSV.
+
+    Mirrors montecarloPrediction.m:20. Without this the Monte Carlo run
+    computes the impact table, returns it, and leaves nothing on disk — the
+    outputs directory ends up empty even though the run reported success.
+
+    Column names and order follow the committed MATLAB outputs:
+    ``master_unique_legislators, sponsor_names, coverage, results``. Names are
+    resolved from the chamber roster the way getSponsorName.m does; a
+    legislator absent from the roster gets an empty name rather than dropping
+    the row, so the table stays aligned with the impact scores.
+
+    Args:
+        results_table: Per-legislator impact scores, or None.
+        chamber_people: Roster used for the run, supplying id → name.
+        chamber: 'house' or 'senate'; its initial prefixes the filename.
+        monte_carlo_number: Iteration count, recorded in the filename.
+        outputs_directory: Destination directory; no file is written if None.
+
+    Returns:
+        The path written, or None if there was nothing to write.
+    """
+    if results_table is None or results_table.empty or outputs_directory is None:
+        return None
+
+    table = results_table.rename(columns={"legislator_id": "master_unique_legislators"})
+
+    names: dict[int, str] = {}
+    if {"sponsor_id", "name"}.issubset(chamber_people.columns):
+        names = {
+            int(sid): str(name)
+            for sid, name in zip(chamber_people["sponsor_id"], chamber_people["name"])
+        }
+    table["sponsor_names"] = [names.get(int(i), "") for i in table["master_unique_legislators"]]
+
+    columns = ["master_unique_legislators", "sponsor_names", "coverage", "results"]
+    table = table[[c for c in columns if c in table.columns]]
+
+    directory = Path(outputs_directory)
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{chamber[0].upper()}_prediction_model_results_m{monte_carlo_number}.csv"
+    table.to_csv(path, index=False)
+    logger.info("Wrote prediction results: %s (%d legislators)", path, len(table))
+    return path
