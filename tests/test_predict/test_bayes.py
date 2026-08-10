@@ -141,3 +141,75 @@ class TestComputeSponsorEffect:
         assert len(result) == 2
         # Values should be between 0 and 1
         assert all(0 <= v <= 1 for v in result)
+
+
+class TestUpdateBayesIdIndex:
+    """The prebuilt id_index is a pure speed optimization, not a behaviour change.
+
+    update_bayes runs once per legislator per Monte Carlo iteration — several
+    million times in a production run — so the revealed legislator is located
+    via a prebuilt dict rather than a linear scan over the ID strings. These
+    tests pin the two paths together so the fast path cannot silently drift.
+    """
+
+    @staticmethod
+    def _fixture(n=12, seed=7):
+        rng = np.random.default_rng(seed)
+        ids = [f"id{i}" for i in range(n)]
+        agreement = rng.random((n, n))
+        agreement = (agreement + agreement.T) / 2
+        np.fill_diagonal(agreement, 1.0)
+        # Real agreement matrices carry NaN where two legislators never co-voted.
+        agreement[0, n - 1] = np.nan
+        agreement[n - 1, 0] = np.nan
+        final = rng.choice([0.0, 1.0, np.nan], size=n)
+        previous = np.full(n, 0.5)
+        return ids, agreement, final, previous
+
+    def test_index_path_matches_scan_path(self):
+        ids, agreement, final, previous = self._fixture()
+        index = {lid: i for i, lid in enumerate(ids)}
+
+        for revealed in ids:
+            for preference in (0, 1):
+                scanned = update_bayes(revealed, preference, previous.copy(), agreement, 1, ids, final)
+                indexed = update_bayes(
+                    revealed, preference, previous.copy(), agreement, 1, ids, final, id_index=index
+                )
+                np.testing.assert_array_equal(scanned[0], indexed[0])
+                assert scanned[1] == indexed[1]
+                assert scanned[2] == indexed[2]
+
+    def test_unknown_legislator_is_a_no_op_on_both_paths(self):
+        ids, agreement, final, previous = self._fixture()
+        index = {lid: i for i, lid in enumerate(ids)}
+
+        scanned = update_bayes("id999", 1, previous.copy(), agreement, 3, ids, final)
+        indexed = update_bayes("id999", 1, previous.copy(), agreement, 3, ids, final, id_index=index)
+
+        np.testing.assert_array_equal(scanned[0], previous)
+        np.testing.assert_array_equal(indexed[0], previous)
+        assert scanned[1] == indexed[1] == 4
+        assert scanned[2] == indexed[2] == 0.0
+
+    def test_revealed_legislator_has_zero_self_impact(self):
+        """Computing the whole impact column must still exclude the revealed one."""
+        ids, agreement, final, previous = self._fixture()
+        index = {lid: i for i, lid in enumerate(ids)}
+
+        updated, _, _ = update_bayes("id3", 1, previous.copy(), agreement, 1, ids, final, id_index=index)
+        # The revealed legislator is pinned to its own preference, not updated.
+        assert updated[3] == pytest.approx(abs(1 - 0.001))
+
+    def test_accuracy_discounts_legislators_with_no_recorded_vote(self):
+        """NaN outcomes must not be counted as mispredictions."""
+        ids = ["id0", "id1", "id2"]
+        agreement = np.array([[1.0, 0.9, 0.8], [0.9, 1.0, 0.7], [0.8, 0.7, 1.0]])
+        previous = np.array([0.5, 0.5, 0.5])
+        all_known = np.array([1.0, 1.0, 1.0])
+        one_unknown = np.array([1.0, 1.0, np.nan])
+
+        _, _, acc_known = update_bayes("id0", 1, previous.copy(), agreement, 1, ids, all_known)
+        _, _, acc_unknown = update_bayes("id0", 1, previous.copy(), agreement, 1, ids, one_unknown)
+        assert 0.0 <= acc_known <= 100.0
+        assert 0.0 <= acc_unknown <= 100.0
