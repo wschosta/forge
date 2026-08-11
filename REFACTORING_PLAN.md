@@ -858,6 +858,38 @@ underlying matrices differ slightly regardless. The tests check the failure
 modes that actually occur: a figure family dropping out of the run, and
 matplotlib writing a file it never drew into.
 
+## Multi-state validation: Oregon and Wisconsin reproduce exactly
+
+Indiana is the awkward reference state — its House roster is special-cased to a
+curated spreadsheet, and the classifier vintage behind its outputs is gone, both
+of which put a floor under how closely it can be reproduced. Oregon and
+Wisconsin have neither problem and take the ordinary LegiScan roster path, which
+the Indiana tests never exercise.
+
+| State / chamber | Agreement matrix | Co-vote counts |
+|-----------------|------------------|----------------|
+| WI House (100x100) | **exact** | **exact** |
+| WI Senate (34x34) | **exact** | **exact** |
+| OR House (59x59) | **exact** | **exact** |
+| OR Senate (29x29) | 0.0107 | 2 votes |
+
+Exact agreement on the raw co-vote tallies is the part that matters. Those are
+counts of events, with no averaging or normalization anywhere in them, so
+matching cell-for-cell across a 100x100 matrix is not something two
+implementations do by coincidence.
+
+**This is the strongest evidence in the project that the agreement-matrix
+arithmetic is correct.** Read together with the six Indiana categories that
+match to floating point, it also settles what Indiana's residual is: not a
+computational defect, but the provenance of its classifier and roster. Where
+those are not in play, the port is exact.
+
+Oregon's Senate is the one outstanding difference and has not been chased.
+
+Note these goldens predate the per-category filenames — `H_cha_A_matrix.csv`
+here against Indiana's `H_cha_A_matrix_0.csv` — which is more evidence the
+committed outputs span several code vintages.
+
 ## Retraining the classifier: feasibility
 
 With the vintage that produced the committed outputs confirmed unavailable,
