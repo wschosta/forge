@@ -602,7 +602,7 @@ These bugs were identified during code analysis and should be fixed during their
 |-----|-------|-----|
 | `classifyBill.m` line 13 references undeclared `text` instead of `clean_title` | Phase 3 | Use correct variable name |
 | `outputBillInformation.m` line 14 references `senate_bill_ids` instead of `chamber_bill_ids` | Phase 4 | Use correct parameter name |
-| Accuracy formula uses hardcoded `100` instead of actual legislator count | Phase 5 | Use `len(legislators)` |
+| Accuracy formula uses hardcoded `100` instead of actual legislator count | Phase 5 | Use `len(legislators)` — **see below, this changes every Senate figure** |
 | `keyboard` debug statement in `state.m` line 263 | Phase 9 | Remove |
 | Windows backslash paths throughout `+la/` | Phase 0 | Use `pathlib.Path` / forward slashes |
 | Committee processing entirely commented out | Phase 4 | Leave disabled but structure code so it can be re-enabled later |
@@ -973,6 +973,34 @@ training time (main.m:38, 80) rather than from a hardcoded table, so nothing is
 missing. They are simply not connected. This matters more than it did before:
 with the classifier vintage that produced the goldens unavailable, retraining is
 the only route to a reproducible baseline.
+
+### The accuracy denominator: an intended fix with a large, undocumented effect
+
+`predictOutcomes.m:149` computes accuracy as
+`100*(1-(incorrect-are_nan)/(100-are_nan))`. That literal `100` stands in for
+the number of legislators and is only correct for a 100-seat chamber. The port
+divides by the actual roster size instead, which is listed above as an intended
+fix — but the consequence was not recorded anywhere, and it is not small.
+
+With five mispredictions and no abstentions:
+
+| Chamber | MATLAB | Port | Difference |
+|---------|--------|------|------------|
+| House (100 seats) | 95.00% | 95.00% | 0.00 pts |
+| Indiana Senate (51) | 95.00% | 90.20% | 4.80 pts |
+| Wisconsin Senate (34) | 95.00% | 85.29% | 9.71 pts |
+| Oregon Senate (29) | 95.00% | 82.76% | **12.24 pts** |
+
+So **every Senate prediction and Elo accuracy figure is expected to disagree
+with the committed MATLAB outputs**, independently of every other difference in
+this document, and by up to twelve percentage points. The House agrees exactly
+because that is the case MATLAB's constant happens to fit.
+
+This is worth a research decision rather than being left implicit. The port's
+version is the defensible one — scoring a 29-seat chamber out of 100 understates
+error by design — but it means Senate accuracies are not comparable to any
+previously published figure. Pinned by tests in `test_bayes.py` so it cannot be
+rediscovered as a bug.
 
 ### Elo against Oregon and Wisconsin
 
