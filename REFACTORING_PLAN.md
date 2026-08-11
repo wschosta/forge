@@ -858,6 +858,50 @@ underlying matrices differ slightly regardless. The tests check the failure
 modes that actually occur: a figure family dropping out of the run, and
 matplotlib writing a file it never drew into.
 
+## Retraining the classifier: feasibility
+
+With the vintage that produced the committed outputs confirmed unavailable,
+retraining is the only route to a reproducible baseline. It was measured rather
+than assumed, and it is cheap:
+
+| Step | Cost |
+|------|------|
+| Parse 30,495 bills from the committed corpus archives | 40 s |
+| Preprocess (clean and tokenize titles and summaries) | 16 s |
+| Build the learning table | <1 s |
+
+About a minute end to end, against 12 hours or more for a full analysis run.
+Retraining is not the expensive part of anything.
+
+The retrained model recovers vocabulary the committed one lacks: 9,197 distinct
+words against 8,752, sharing 88.1% of the committed vocabulary. Of the five
+words whose absence causes bills to go unclassified (see Phase 10), the
+retrained model contains **MOTORSPORTS**; MOPEDS, EXPUNGEMENT, NOVELTY and
+LIGHTERS remain absent even after retraining, so the vocabulary gap is only
+partly a pruning artifact.
+
+**One blocker, and it must be fixed before retraining is usable.** The corpus
+contains **35** distinct policy areas, but the concise recode table maps only
+**32**. Three areas have no concise category and are silently dropped:
+
+| Code | Policy area |
+|------|-------------|
+| 33 | Transportation and Public Works |
+| 34 | Unemployment |
+| 35 | Water Resources Development |
+
+This is not a porting error — MATLAB's own table covers the same 32
+(`main.m:55`), and the port transcribed it faithfully. It is data drift: the
+table was written against a smaller corpus, and the committed archives have
+since grown. Rerunning MATLAB today would drop the same three.
+
+The saving grace is that all three sort at the end of the alphabet, so they take
+codes 33-35 and leave the existing 1-32 assignments untouched. Extending
+`CONCISE_RECODE` to place them is therefore a purely additive change — but it is
+a substantive one, since transportation is not a marginal policy area, and it
+decides which concise category those bills join. That is a research judgement,
+not a refactoring decision.
+
 ## Known gap: the training path is not wired
 
 `forge classify` is a stub. It prints "Bill classification not yet fully wired
