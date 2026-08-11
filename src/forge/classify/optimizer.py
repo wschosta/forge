@@ -105,14 +105,15 @@ def optimize_frontier(
             best_iwv = float(iwv_array[best_idx[0]])
             best_awv = float(awv_array[best_idx[1]])
 
-        # Zoom in around the best point
-        if iteration > 0 or True:
-            iwv_center = float(iwv_array[best_idx[0]])
-            awv_center = float(awv_array[best_idx[1]])
-            iwv_min = max(0.0, iwv_center - iwv_step)
-            iwv_max = max(0.0, iwv_center + iwv_step)
-            awv_min = max(0.0, awv_center - awv_step)
-            awv_max = max(0.0, awv_center + awv_step)
+        # Zoom in around the best point. The guard here was `iteration > 0 or
+        # True`, which is unconditionally true; removed rather than preserved,
+        # since keeping it would imply a condition that never applied.
+        iwv_center = float(iwv_array[best_idx[0]])
+        awv_center = float(awv_array[best_idx[1]])
+        iwv_min = max(0.0, iwv_center - iwv_step)
+        iwv_max = max(0.0, iwv_center + iwv_step)
+        awv_min = max(0.0, awv_center - awv_step)
+        awv_max = max(0.0, awv_center + awv_step)
 
         iwv_step *= step_multiplier
         awv_step *= step_multiplier
@@ -122,6 +123,20 @@ def optimize_frontier(
             "Iteration %d: best=%.4f%% iwv=%.4f awv=%.4f step=%.6f",
             iteration, best_accuracy, best_iwv, best_awv, iwv_step,
         )
+
+    if iteration == 0:
+        # The stopping condition was already satisfied by the starting step
+        # size, so no candidate was ever evaluated. Writing the zeroed defaults
+        # back would silently destroy the caller's parameters and rebuild the
+        # classification vectors with zero weighting on the issue and
+        # additional word lists — leaving a model that classifies nothing.
+        # Leave the data untouched and report what it already carries.
+        logger.warning(
+            "Optimization did not run: starting step %s is already at depth %d. "
+            "Leaving iwv=%s awv=%s unchanged.",
+            step_sizes, depth, data.iwv, data.awv,
+        )
+        return OptimizationResult(accuracy=best_accuracy, iwv=data.iwv, awv=data.awv)
 
     # Set the data to the best values
     data.iwv = best_iwv
