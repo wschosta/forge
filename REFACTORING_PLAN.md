@@ -719,11 +719,22 @@ iteration count (2,500), over the 87 legislators the two runs share:
 
 | Column | Golden | Python | Pearson | Spearman |
 |--------|--------|--------|---------|----------|
-| `coverage` | mean 0.844, sd 0.174 | mean 0.841, sd 0.178 | **0.9995** | 0.9974 |
-| `results` | mean 0.752, sd 0.155 | mean 8.194, sd 3.986 | 0.7417 | 0.7621 |
+| `coverage` | mean 0.844, sd 0.174 | mean 0.841, sd 0.177 | **0.9995** | 0.9974 |
+| `results` | mean 0.752, sd 0.155 | mean 0.673, sd 0.189 | **0.8057** | **0.8159** |
 
 `coverage` agreeing to 0.9995 is strong evidence the Monte Carlo machinery is
 sound: bill selection, legislator ordering and iteration counting all line up.
+
+Measured again at the same 2,500 iterations before and after the two fixes
+below, impact scores moved from Pearson 0.7417 / Spearman 0.7621 to
+0.8057 / 0.8159, and their mean from 8.194 to 0.673 against the golden's 0.752.
+
+Worth noting which fix did what. The rollcall date sort made Indiana's
+*matrices* slightly worse — that is documented above and accepted — while making
+its *predictions* measurably better. There is no contradiction: the sort changes
+which rollcall counts as a bill's final vote, and prediction reads that vote
+directly where the matrices only use it to decide inclusion. It is a further
+reason to trust the sort over Indiana's matrix goldens.
 
 **Resolved: impact scores were sign-inverted by a percentage/fraction mixup.**
 Accuracies travel through the Monte Carlo as percentages, so the denominator

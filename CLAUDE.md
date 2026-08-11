@@ -176,7 +176,7 @@ Current parity:
 | Indiana per-category, categories 1–5, 8 | up to 0.33 |
 | Indiana pooled category 0 | ~0.6% mean absolute error |
 | Indiana Monte Carlo `coverage` | Pearson 0.9995 |
-| Indiana Monte Carlo impact `results` | Spearman ~0.74 |
+| Indiana Monte Carlo impact `results` | Spearman ~0.82 |
 | Elo | structure and invariants only — see below |
 
 **Oregon and Wisconsin reproduce MATLAB exactly** — every committed output file,
