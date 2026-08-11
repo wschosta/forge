@@ -80,30 +80,35 @@ def process_legislator_impacts(
 
         unique_legislators = np.unique(leg_array)
 
+        # Denominator: how much accuracy was left to gain from the starting
+        # point (processLegislatorImpacts.m:66, `1 - specific_accuracy_list(1,1)`).
+        #
+        # Accuracies are carried through the Monte Carlo as percentages, so
+        # `1 - accuracy` on the raw value gives roughly -46 rather than the
+        # ~0.53 headroom the expression is reaching for. That sign is what
+        # inverted every impact score: a positive numerator over a negative
+        # denominator made every score negative, and normalizing negatives by
+        # their maximum then produced an unbounded column instead of the
+        # golden's [0, 1]. Scaling to a fraction restores both.
+        #
+        # MATLAB takes the starting accuracy of *iteration 1* and reuses it for
+        # every iteration, rather than each iteration's own. That looks like an
+        # indexing slip, but it is the arithmetic the committed results were
+        # produced with, so it is reproduced here.
+        baseline_accuracy = specific_accuracy[0, 0] / 100.0
+        denominator = 1.0 - baseline_accuracy
+        if denominator == 0:
+            continue
+
         for leg_id in unique_legislators:
-            # For each legislator, compute their score across all iterations
-            mask = (leg_array == leg_id)  # (n_iters, n_legs_per_iter)
+            mask = leg_array == leg_id  # (n_iters, n_legs_per_iter)
 
-            # Delta score weighted by placement
-            delta_score = specific_delta * mask
-            placement = np.sum(mask[:, :len(placement_points)] * placement_points, axis=1)
-
-            # Score = sum of (delta_score * placement) / (1 - starting_accuracy)
-            starting_acc = specific_accuracy[:, 0]
-            denom = 1.0 - starting_acc
-            denom[denom == 0] = 1.0  # avoid division by zero
-
-            score = np.sum(delta_score @ placement_points) / np.mean(denom) if denom.mean() != 0 else 0.0
-
-            # Simpler faithful port: replicate MATLAB's exact computation
-            leg_score = 0.0
-            for j in range(n_iters):
-                delta_row = specific_delta[j] * mask[j]
-                place_row = mask[j, :len(placement_points)].astype(float) * placement_points
-                contribution = np.dot(delta_row, place_row)
-                denom_j = 1.0 - specific_accuracy[j, 0]
-                if denom_j != 0:
-                    leg_score += contribution / denom_j
+            # Placement weight is summed over *all* iterations before being
+            # applied, so a legislator repeatedly drawn into an influential
+            # position is weighted by how often that happened, not just by the
+            # position itself (processLegislatorImpacts.m:65).
+            placement = mask[:, : len(placement_points)].sum(axis=0) * placement_points
+            leg_score = float(((specific_delta * mask) @ placement).sum() / denominator)
 
             master_list.append((int(leg_id), leg_score))
 
@@ -120,33 +125,14 @@ def process_legislator_impacts(
     # Normalize
     agg["coverage"] = agg["coverage"] / len(bill_ids)
 
-    # Divide by the SIGNED maximum, matching processLegislatorImpacts.m:81
-    # (`results / max(results)`).
+    # Divide by the maximum, matching processLegislatorImpacts.m:81.
     #
-    # KNOWN DEFECT, upstream of this line: the raw scores accumulated above come
-    # out negative, where MATLAB's came out positive. Evidence — MATLAB's
-    # committed m2500 output spans [0.0287, 1.0] with 1.0 at the *maximum*,
-    # which is what dividing positive scores by their maximum produces.
-    # Normalizing this implementation's negative scores by their absolute
-    # maximum yields [-1.0, -0.026]; negate that and you land on the golden
-    # almost exactly. So the sign is inverted before normalization ever runs.
-    #
-    # Consequences of that, both visible in the m2500 comparison:
-    #   - Ranking direction is right (Spearman +0.76 against the golden).
-    #   - Scale is not. Dividing negatives by their least-negative element makes
-    #     the column unbounded above ([1.0, 18.2] instead of [0, 1]), because
-    #     the divisor is the noisiest element rather than the largest. Impact
-    #     magnitudes are therefore NOT comparable across runs, chambers or
-    #     states until the upstream sign is fixed.
-    #
-    # Two candidate causes, neither confirmed: the denominator `1 - accuracy`
-    # is evaluated on a percentage (0-100), making it large and negative; and
-    # MATLAB divides by a *fixed* `specific_accuracy_list(1,1)` (iteration 1)
-    # where this implementation divides per-iteration.
-    #
-    # This keeps MATLAB's literal formula rather than compensating here —
-    # patching the normalization to force the sign is what produced the
-    # unbounded scale above, and papering over it twice would be worse.
+    # With the accuracy denominator read as a fraction (see above), scores in
+    # a normal run are positive and this bounds the column to (0, 1] — the
+    # shape every committed MATLAB output has. A run whose accuracy falls on
+    # average produces negative scores, and dividing those by their
+    # least-negative element leaves values above 1.0; that is a property of
+    # normalizing by a signed maximum rather than a defect.
     max_results = agg["results"].max()
     if max_results != 0:
         agg["results"] = agg["results"] / max_results

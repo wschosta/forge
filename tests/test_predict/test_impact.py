@@ -41,15 +41,68 @@ def _mc_inputs(n_bills=3, n_mc=4, n_legs=5, seed=3, step_sign=0):
     return accuracy_list, accuracy_delta, legislators_list, accuracy_steps_list, bill_ids
 
 
-class TestResultsNormalization:
-    """`results` is normalized by the SIGNED maximum, per processLegislatorImpacts.m:81.
+class TestAccuracyDenominator:
+    """The `1 - accuracy` denominator reads accuracy as a fraction, not a percent.
 
-    Raw impact scores come out negative in practice, so dividing by the signed
-    maximum — the least-negative value — flips the column positive and maps the
-    most-negative raw score to +1.0. Using an absolute maximum instead leaves
-    the column negative and sends that legislator to -1.0, inverting the impact
-    ranking against every committed MATLAB output.
+    Accuracies travel through the Monte Carlo as percentages (0-100), so
+    evaluating `1 - accuracy` on the raw value gives about -46 rather than the
+    ~0.53 of remaining headroom the expression means. That negative denominator
+    inverted every impact score, and normalizing negative scores by their
+    maximum then produced an unbounded column instead of the golden's [0, 1].
+
+    Indiana's committed output spans [0.0287, 1.0]; before this was corrected
+    the port produced [1.0, 18.2] with a mean of 8.19 against the golden's 0.75.
     """
+
+    def test_typical_accuracy_gives_a_positive_denominator(self):
+        """Percentage accuracies must not flip the sign of every score.
+
+        Accuracy rises as preferences are revealed, so with positive step
+        deltas the impact scores should be positive.
+        """
+        table = process_legislator_impacts(*_mc_inputs(step_sign=1))
+        assert table is not None
+        assert (table["results"] > 0).all(), (
+            f"positive deltas produced negative impact scores: "
+            f"{table['results'].round(3).tolist()}"
+        )
+
+    def test_scores_stay_bounded_by_one_in_the_golden_regime(self):
+        """Positive scores normalized by their maximum land in (0, 1].
+
+        This is the shape every committed MATLAB output has.
+        """
+        table = process_legislator_impacts(*_mc_inputs(step_sign=1))
+        assert table is not None
+        assert table["results"].max() == pytest.approx(1.0)
+        assert table["results"].min() > 0
+        assert (table["results"] <= 1.0).all()
+
+    def test_accuracy_baseline_comes_from_the_first_iteration(self):
+        """MATLAB reuses iteration 1's starting accuracy for every iteration.
+
+        processLegislatorImpacts.m:66 indexes `specific_accuracy_list(1,1)`
+        rather than `(j,1)`. That looks like an indexing slip, but the
+        committed results depend on it, so changing only later iterations'
+        accuracies must not move the scores.
+        """
+        accuracy_list, accuracy_delta, legislators, steps, bill_ids = _mc_inputs(step_sign=1)
+        baseline = process_legislator_impacts(
+            accuracy_list, accuracy_delta, legislators, steps, bill_ids
+        )
+
+        perturbed = accuracy_list.copy()
+        perturbed[:, 1:] += 5.0  # every iteration except the first
+        shifted = process_legislator_impacts(
+            perturbed, accuracy_delta, legislators, steps, bill_ids
+        )
+
+        assert baseline is not None and shifted is not None
+        pd.testing.assert_frame_equal(baseline, shifted)
+
+
+class TestResultsNormalization:
+    """`results` is normalized by the maximum, per processLegislatorImpacts.m:81."""
 
     def test_the_former_maximum_normalizes_to_exactly_one(self):
         """Dividing by the signed maximum pins that element at 1.0.
@@ -75,43 +128,18 @@ class TestResultsNormalization:
             f"impact scores came out negative: {table['results'].round(3).tolist()}"
         )
 
-    def test_negative_raw_scores_produce_an_unbounded_column(self):
-        """Documents a known defect rather than asserting correct behaviour.
+    def test_net_negative_deltas_still_normalize_to_one_at_the_maximum(self):
+        """Falling accuracy is a legitimate regime and must not blow up.
 
-        MATLAB's committed output spans [0.0287, 1.0] with 1.0 at the maximum —
-        the shape you get from dividing *positive* scores by their maximum.
-        This implementation's raw scores are negative, so dividing by the
-        least-negative element pushes the column above 1.0 instead of bounding
-        it below. Ranking direction survives (Spearman +0.76 against the
-        golden) but magnitudes do not.
-
-        The real fix is upstream of the normalization; this test pins the
-        current behaviour so that when the sign is corrected, this test fails
-        and has to be revisited deliberately.
+        With net-negative deltas the scores are negative and the maximum is the
+        least-negative element, so dividing by it flips the column positive and
+        leaves values above 1.0. That is inherent to normalizing by a signed
+        maximum, not the percentage-denominator defect that used to force every
+        run into this regime; it is pinned here so the distinction stays clear.
         """
         table = process_legislator_impacts(*_mc_inputs(step_sign=-1))
         assert table is not None
-        assert table["results"].min() > 0
-        assert table["results"].max() >= 1.0
-
-    def test_positive_raw_scores_stay_bounded_by_one(self):
-        """The regime MATLAB was in, and the one the port should reach.
-
-        With positive raw scores the signed and absolute maxima coincide, the
-        normalization choice stops mattering, and the column lands in [0, 1]
-        like every committed golden.
-        """
-        accuracy_list, accuracy_delta, legislators, steps, bill_ids = _mc_inputs()
-        # Force positive aggregate scores by flipping the accuracy baseline so
-        # the denominator is positive rather than a large negative percentage.
-        positive_baseline = np.full_like(accuracy_list, 0.5)
-        table = process_legislator_impacts(
-            positive_baseline, np.zeros_like(accuracy_delta), legislators, steps, bill_ids
-        )
-        if table is None or (table["results"] <= 0).any():
-            pytest.skip("fixture did not produce an all-positive raw regime")
-        assert table["results"].max() == pytest.approx(1.0)
-        assert table["results"].min() > 0
+        assert np.isclose(table["results"], 1.0).sum() == 1
 
     def test_ranking_is_stable_under_rescaling(self):
         """Normalization must reorder nothing — it only sets the scale."""
