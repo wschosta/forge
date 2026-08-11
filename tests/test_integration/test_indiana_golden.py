@@ -44,13 +44,19 @@ COUNT_FILES = [
     "S_cha_A_votes_0.csv",
 ]
 
-# Sponsor matrices. These additionally disagree on which sponsors appear at all,
-# so they are checked for numerical agreement on the shared labels only.
+# Sponsor matrices, including the per-party subsets. These additionally disagree
+# on which sponsors appear at all — by one or two columns — so they are checked
+# for numerical agreement on the shared labels only. Together with the files
+# above this covers every category-0 output MATLAB emitted for Indiana.
 SPONSOR_FILES = [
     "H_cha_A_s_matrix_0.csv",
     "H_cha_A_s_votes_0.csv",
+    "H_cha_R_s_votes_0.csv",
+    "H_cha_D_s_votes_0.csv",
     "S_cha_A_s_matrix_0.csv",
     "S_cha_A_s_votes_0.csv",
+    "S_cha_R_s_votes_0.csv",
+    "S_cha_D_s_votes_0.csv",
 ]
 
 #: Measured worst case is 4.4e-2; headroom left for run-to-run variation.
