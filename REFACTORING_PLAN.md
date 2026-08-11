@@ -816,6 +816,63 @@ inner loop (numba/Cython) or an algorithmic change, and neither is a
 refactoring decision — it is a question about how often this analysis actually
 needs to be rerun.
 
+---
+
+## Phase 3/4 status: per-category matrices
+
+The golden harness originally compared only category 0 — the matrix pooled
+across every classified bill — which is structurally blind to
+misclassification: a bill filed under the wrong policy area lands in the same
+pooled aggregate, so the matrix does not move. The per-category matrices are
+99 of the 128 committed golden CSVs, and comparing them localizes the residual
+sharply.
+
+Maximum absolute difference by policy area (House, agreement matrix):
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|----|----|
+| 0 | .098 | .250 | .050 | .143 | 0 | 0 | .029 | 0 | 0 | 0 |
+
+Six of eleven categories agree with MATLAB to ~5e-16 — accumulated rounding and
+nothing else. The disagreement is confined to categories 2, 3, 4, 5 and 8.
+
+Stated positively: **wherever the two classifier vintages agree on which bills
+belong to a policy area, the resulting matrices are the same numbers.** The
+agreement-matrix arithmetic is correct; what remains is which bills get sorted
+where, which is consistent with the missing classifier vintage rather than with
+any computational defect.
+
+## Phase 7 status: visualization
+
+`plot.plotRunner` is called from inside `state.run()` (state.m:218, 249, 315),
+so plotting is part of a normal MATLAB run rather than an optional extra. The
+port had never executed it against real data.
+
+It works. All 20 pooled-category figures MATLAB produced are produced here, all
+48 files (figures plus histograms) are valid PNGs, none empty, each surface plot
+paired with its flattened companion. The port additionally emits four Senate
+party-sponsor figures the golden lacks, which is harmless.
+
+Figures are not compared pixel-for-pixel — different plotting engines, and the
+underlying matrices differ slightly regardless. The tests check the failure
+modes that actually occur: a figure family dropping out of the run, and
+matplotlib writing a file it never drew into.
+
+## Known gap: the training path is not wired
+
+`forge classify` is a stub. It prints "Bill classification not yet fully wired
+(data files needed)" and returns without doing anything, and its default
+`--xml-dir` points at `legiscan_data/congressional_xml` while the corpus is at
+`data/congressional_archive`.
+
+The underlying pieces all exist — `parse_congressional_xml`,
+`generate_learning_table`, `build_concise_code_map`, `ADDITIONAL_ISSUE_WORDS` —
+and MATLAB derives its category codes from the sorted unique policy areas at
+training time (main.m:38, 80) rather than from a hardcoded table, so nothing is
+missing. They are simply not connected. This matters more than it did before:
+with the classifier vintage that produced the goldens unavailable, retraining is
+the only route to a reproducible baseline.
+
 ### Roster provenance, again
 
 The Elo golden carries LegiScan's 104-member roster, like the prediction

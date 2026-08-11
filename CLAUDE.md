@@ -148,12 +148,36 @@ pytest tests/test_integration/ -v     # golden-file comparison (~1 min)
 pytest                                # everything
 ```
 
-Current parity: structure matches exactly, seat proximity agrees to 5e-14,
-agreement matrices agree to ~0.4% mean absolute error. The residual comes from
-the two implementations selecting slightly different sets of bills — see the
-Phase 10 status table in `REFACTORING_PLAN.md`. Tolerances in
-`test_indiana_golden.py` are set just above measured error so they act as a
-regression gate; tighten them as that residual is closed.
+Current parity:
+
+| Output | Agreement with MATLAB |
+|--------|-----------------------|
+| Seat proximity | 5e-14 (floating point) |
+| Per-category matrices, categories 1, 6, 7, 9, 10, 11 | ~5e-16 (floating point) |
+| Per-category matrices, categories 2, 3, 4, 5, 8 | up to 0.25 |
+| Pooled category 0 | ~0.4% mean absolute error |
+| Monte Carlo `coverage` | Pearson 0.9995 |
+| Monte Carlo impact `results` | Spearman ~0.74 |
+| Elo | structure and invariants only — see below |
+
+Six of the eleven policy areas reproduce MATLAB to floating point. That is the
+useful summary: wherever the two classifier vintages agree on which bills belong
+to a category, the matrices are identical, so the arithmetic is right and the
+residual is classification. See the Phase 10 section of `REFACTORING_PLAN.md`.
+
+**The classifier that generated the committed outputs no longer exists** — it is
+not in the repository and neither author has it. That means the goldens cannot
+be reproduced exactly by any amount of work, and they are best treated as a
+historical reference rather than a target. The route to a reproducible baseline
+is retraining from the congressional corpus and regenerating; note that
+`forge classify` is currently a stub, so that path needs wiring first.
+
+Elo is validated for structure and rating invariants but not values: MATLAB's
+goldens are at 15,000 Monte Carlo iterations, roughly a day of compute, so a
+test-scale run has not converged and any tolerance loose enough to pass would
+prove nothing.
+
+Tolerances are set just above measured error so they act as regression gates.
 
 Two things this harness depends on, both easy to break:
 - `+la/learning_algorithm_data.mat` — the MATLAB-trained classifier. Without
