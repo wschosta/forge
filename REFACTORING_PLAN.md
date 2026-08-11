@@ -974,6 +974,30 @@ missing. They are simply not connected. This matters more than it did before:
 with the classifier vintage that produced the goldens unavailable, retraining is
 the only route to a reproducible baseline.
 
+### Elo against Oregon and Wisconsin
+
+Their single-pass Elo goldens (`{H,S}_elo_score_0.csv`, from
+eloPrediction.m:222) were checked too, now that their matrices reproduce
+exactly.
+
+Scores cannot be compared. MATLAB shuffles the legislator order with `randperm`
+(eloPrediction.m:114) and numpy's generator produces a different sequence from
+any seed, and in a *single* pass that ordering dominates the result — Monte
+Carlo averaging is what makes Elo scores stable. Rank correlations against the
+goldens are accordingly near zero in both directions, which says nothing about
+correctness.
+
+The `count` column is the exception: it tallies pairwise comparisons and does
+not depend on ordering, so it is deterministic given the same bills. Oregon's
+House matches it **exactly**. Oregon's Senate and both Wisconsin chambers do
+not, despite every one of their matrices matching cell for cell.
+
+That gap has not been chased. The likely explanation is that Elo processes a
+subset of the matrix bills — `predict_bill` drops any bill whose passage vote
+covers less than half the chamber — so the Elo goldens depend on more than the
+bill selection the matrices already agree on. It is also consistent with these
+goldens being yet another vintage.
+
 ### Roster provenance, again
 
 The Elo golden carries LegiScan's 104-member roster, like the prediction
