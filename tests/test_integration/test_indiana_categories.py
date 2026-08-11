@@ -12,6 +12,23 @@ category moves a small denominator much further than it moves the pooled one.
 The tolerances reflect that rather than pretending otherwise, and the tests that
 matter most are the structural ones: whether a category came out empty, and
 whether the classifier distributed bills across categories the way MATLAB's did.
+
+--------------------------------------------------------------------------
+THESE TESTS ARE PINNED TO THE COMMITTED CLASSIFIER VINTAGE.
+
+Every expectation below — which categories match exactly, how far the rest
+drift — describes the word-frequency classifier in
+`+la/learning_algorithm_data.mat` compared against outputs from a classifier
+that no longer exists. The categorization logic is slated to be replaced, and
+when it is, these numbers stop meaning anything: bills will land in different
+categories by design, and the whole module should be retired rather than
+retuned.
+
+What survives a classifier change is `test_matrix_invariants.py`, which asserts
+properties the matrices must satisfy for *any* assignment of bills to
+categories. If both modules fail at once, look there first — that is a real
+defect. If only this one fails, it is most likely just out of date.
+--------------------------------------------------------------------------
 """
 
 from __future__ import annotations
@@ -124,7 +141,11 @@ def test_exactly_matching_categories_stay_exact(
     if comparison.compared_cells == 0:
         pytest.skip(f"{family}_{category} has no comparable cells")
     assert comparison.max_abs_diff < EXACT_TOLERANCE, (
-        f"category {category} no longer matches MATLAB to precision: {comparison.summary()}"
+        f"category {category} no longer matches MATLAB to precision: "
+        f"{comparison.summary()}\n"
+        f"If the categorization logic was replaced, this is expected and this "
+        f"module should be retired rather than retuned — check "
+        f"test_matrix_invariants.py, which is classifier-independent."
     )
 
 
