@@ -8,9 +8,8 @@ used to train the bill classification learning algorithm.
 from __future__ import annotations
 
 import logging
-import re
 import zipfile
-from collections.abc import Iterator, Sequence
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 from xml.etree.ElementTree import ParseError

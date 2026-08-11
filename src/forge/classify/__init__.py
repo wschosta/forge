@@ -12,13 +12,13 @@ from forge.classify.stopwords import get_common_words
 from forge.classify.text_cleanup import cleanup_text
 
 __all__ = [
+    "LearningData",
+    "LearningMaterials",
     "classify_bill",
     "cleanup_text",
     "generate_learning_table",
     "get_common_words",
     "load_learning_data",
-    "LearningData",
-    "LearningMaterials",
     "process_all_bills",
     "save_learning_data",
 ]

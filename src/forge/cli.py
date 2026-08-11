@@ -78,7 +78,7 @@ def run(
 
     # Summary
     for chamber in ["house", "senate"]:
-        if chamber in results and results[chamber]:
+        if results.get(chamber):
             ch_data = results[chamber]
             n_bills = len(ch_data.get("bill_ids", []))
             click.echo(f"{chamber.capitalize()}: {n_bills} bills processed")
@@ -89,7 +89,6 @@ def run(
 @click.option("--xml-dir", type=click.Path(), default="legiscan_data/congressional_xml", help="Congressional XML directory.")
 def classify(optimize: bool, xml_dir: str) -> None:
     """Run the bill classification learning algorithm."""
-    from forge.classify import cleanup_text, generate_learning_table
 
     click.echo("Bill classification not yet fully wired (data files needed).")
     if optimize:

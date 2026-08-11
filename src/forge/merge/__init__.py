@@ -6,7 +6,7 @@ from forge.merge.seniority import merge_seniority
 
 __all__ = [
     "merge_finance_data",
-    "merge_shor_mccarty",
     "merge_seniority",
+    "merge_shor_mccarty",
     "process_finance",
 ]

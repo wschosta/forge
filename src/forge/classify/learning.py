@@ -15,7 +15,6 @@ from typing import Any
 
 import numpy as np
 
-from forge.classify.stopwords import get_common_words
 from forge.classify.text_cleanup import cleanup_text
 from forge.config import CONCISE_RECODE
 

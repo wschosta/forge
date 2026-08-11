@@ -10,9 +10,8 @@ This module replaces:
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import Sequence
-
 
 # ---------------------------------------------------------------------------
 # State chamber sizes — replaces @state/state_properties.m
