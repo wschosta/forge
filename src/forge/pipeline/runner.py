@@ -174,9 +174,19 @@ def _init_bills(
             except KeyError:
                 pass
 
-        # Rollcalls and votes for each chamber
+        # Rollcalls and votes for each chamber, in chronological order.
+        #
+        # The sort is load-bearing (forge.m:147). A bill's outcome is taken from
+        # its *last* chamber vote, and LegiScan orders rollcalls by
+        # roll_call_id, which is not chronological once a bill has votes
+        # recorded across more than one session file. Without sorting, "last"
+        # can be a committee vote or an early reading rather than the final
+        # passage vote, which changes the recorded yes-percentage and with it
+        # whether the bill counts as competitive at all.
         try:
             bill_rollcalls = rollcalls_by_bill.get_group(bill_id)
+            if "date" in bill_rollcalls.columns:
+                bill_rollcalls = bill_rollcalls.sort_values("date", kind="stable")
         except KeyError:
             bill_rollcalls = rollcalls_df.iloc[0:0]  # empty DataFrame
 

@@ -12,7 +12,13 @@ are reproduced *exactly*:
     WI House    agreement and co-vote counts   identical
     WI Senate   agreement and co-vote counts   identical
     OR House    agreement and co-vote counts   identical
-    OR Senate   agreement within 0.011, counts within 2 votes
+    OR Senate   agreement and co-vote counts   identical
+
+Oregon's Senate was the last chamber to disagree, by two co-votes. It came down
+to a single bill, and the cause was rollcalls not being sorted by date
+(forge.m:147): a bill's outcome is read from its last chamber vote, LegiScan
+orders rollcalls by id, and once a bill has votes across more than one session
+file that ordering is not chronological. Sorting closed it completely.
 
 Exact agreement on the raw integer co-vote tallies is the part worth dwelling
 on. Those are counts of events with no averaging or normalization anywhere in
@@ -39,10 +45,11 @@ from tests.test_integration.golden import compare_to_golden
 #: no known source of divergence, so any drift is a real regression.
 EXACT_TOLERANCE = 1e-9
 
-#: Oregon's Senate is the one chamber that differs. Measured: 0.0107 on
-#: agreement ratios, 2 whole votes on the tallies.
-OREGON_SENATE_RATIO_TOLERANCE = 0.05
-OREGON_SENATE_COUNT_TOLERANCE = 5.0
+#: Every chamber in both states is now exact, so there is no per-state
+#: exception left. Kept as named constants so that if one ever drifts, the
+#: allowance is written down rather than quietly widened at the call site.
+OREGON_SENATE_RATIO_TOLERANCE = EXACT_TOLERANCE
+OREGON_SENATE_COUNT_TOLERANCE = EXACT_TOLERANCE
 
 
 @pytest.fixture(scope="module", params=["OR", "WI"])

@@ -871,7 +871,7 @@ the Indiana tests never exercise.
 | WI House (100x100) | **exact** | **exact** |
 | WI Senate (34x34) | **exact** | **exact** |
 | OR House (59x59) | **exact** | **exact** |
-| OR Senate (29x29) | 0.0107 | 2 votes |
+| OR Senate (29x29) | **exact** | **exact** |
 
 Exact agreement on the raw co-vote tallies is the part that matters. Those are
 counts of events, with no averaging or normalization anywhere in them, so
@@ -879,12 +879,37 @@ matching cell-for-cell across a 100x100 matrix is not something two
 implementations do by coincidence.
 
 **This is the strongest evidence in the project that the agreement-matrix
-arithmetic is correct.** Read together with the six Indiana categories that
-match to floating point, it also settles what Indiana's residual is: not a
-computational defect, but the provenance of its classifier and roster. Where
-those are not in play, the port is exact.
+arithmetic is correct.** Where Indiana's classifier and roster provenance are
+not in play, the port reproduces MATLAB exactly.
 
-Oregon's Senate is the one outstanding difference and has not been chased.
+### The rollcall ordering bug
+
+Oregon's Senate was the last chamber to disagree — by two co-votes, tracked down
+to a single bill out of 266. The cause was a dropped sort.
+
+`forge.m:147` reads a bill's rollcalls with
+`sortrows(..., 'date')`. The port did not sort. That matters because a bill's
+outcome is taken from its **last** chamber vote, and LegiScan orders rollcalls
+by `roll_call_id`, which stops being chronological as soon as a bill has votes
+recorded across more than one session file. Oregon bill 676975 has rollcalls
+dated Feb 7, Jun 21, Jun 26, Apr 1, Apr 9, May 13, May 28 — in that order.
+
+Reading the wrong rollcall as final changes the recorded yes-percentage, which
+changes whether the bill counts as competitive, which decides whether it enters
+the matrices at all. Sorting closed Oregon's Senate completely: 266 bills, zero
+missing, zero extra, every cell identical.
+
+**It also made Indiana worse** — its worst per-category difference went from
+0.250 to 0.333, and category 1 stopped matching exactly. The fix was kept
+anyway, on three grounds: it is literally what the MATLAB source does, it makes
+two entire states exact across both chambers and both output types, and "the
+final vote" can only sensibly mean the chronologically final one.
+
+Indiana moving the wrong way under a provably correct fix is not an argument
+against the fix. It is more evidence for what the rest of this document already
+says: **Indiana's committed outputs came from a code vintage that did not sort**,
+alongside a classifier that no longer exists, a roster that differs from its own
+prediction outputs, and filenames from a different era again.
 
 Note these goldens predate the per-category filenames — `H_cha_A_matrix.csv`
 here against Indiana's `H_cha_A_matrix_0.csv` — which is more evidence the

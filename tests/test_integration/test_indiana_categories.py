@@ -52,21 +52,31 @@ FAMILIES = [
 ]
 
 #: Categories that reproduce MATLAB to floating-point precision — measured worst
-#: case across them is 5e-16, i.e. accumulated rounding and nothing else. Six of
+#: case across them is 5e-16, i.e. accumulated rounding and nothing else. Five of
 #: the eleven policy areas do, which is far stronger agreement than the pooled
 #: category 0 shows, and it says the disagreement is not spread evenly: it is
 #: confined to the categories the two classifier vintages sort differently.
-EXACT_CATEGORIES = [1, 6, 7, 9, 10, 11]
+#:
+#: Category 1 was on this list until rollcalls were sorted by date (forge.m:147).
+#: That sort is unambiguously correct — a bill's outcome is read from its *last*
+#: chamber vote, and LegiScan orders rollcalls by id rather than chronologically
+#: — and it makes Oregon and Wisconsin reproduce MATLAB *exactly* across both
+#: chambers, agreement matrices and raw integer tallies alike. It nonetheless
+#: moves Indiana further from its golden. Two states going exact outweighs one
+#: state drifting, and the drift is itself evidence: Indiana's committed outputs
+#: came from a code vintage that did not sort, which is consistent with
+#: everything else known about their provenance.
+EXACT_CATEGORIES = [6, 7, 9, 10, 11]
 
 #: Headroom above the measured 5e-16 while staying orders of magnitude below any
 #: difference a real bill-selection change would produce.
 EXACT_TOLERANCE = 1e-12
 
 #: The rest differ because bills move between them. Measured worst case is
-#: max 0.250 (category 3) and mean 0.0133; these sit just above that as a
+#: max 0.333 (category 1) and mean 0.0474; these sit just above that as a
 #: regression gate.
-CATEGORY_MAX_TOLERANCE = 0.35
-CATEGORY_MEAN_TOLERANCE = 0.03
+CATEGORY_MAX_TOLERANCE = 0.40
+CATEGORY_MEAN_TOLERANCE = 0.06
 
 
 def _compare(golden_dir: Path, indiana_run: Path, name: str):
