@@ -970,20 +970,62 @@ a substantive one, since transportation is not a marginal policy area, and it
 decides which concise category those bills join. That is a research judgement,
 not a refactoring decision.
 
-## Known gap: the training path is not wired
+## Replacing the classifier
 
-`forge classify` is a stub. It prints "Bill classification not yet fully wired
-(data files needed)" and returns without doing anything, and its default
-`--xml-dir` points at `legiscan_data/congressional_xml` while the corpus is at
-`data/congressional_archive`.
+The word-frequency classifier scores a title by summing learned per-word weights
+per policy area and taking the argmax. Measured on held-out congressional bills
+for the first time — it had never been scored on data it did not train on — it
+reaches **42.9%** across 11 categories, against a 20.9% majority-class floor.
 
-The underlying pieces all exist — `parse_congressional_xml`,
-`generate_learning_table`, `build_concise_code_map`, `ADDITIONAL_ISSUE_WORDS` —
-and MATLAB derives its category codes from the sorted unique policy areas at
-training time (main.m:38, 80) rather than from a hardcoded table, so nothing is
-missing. They are simply not connected. This matters more than it did before:
-with the classifier vintage that produced the goldens unavailable, retraining is
-the only route to a reproducible baseline.
+A standard TF-IDF + linear SVM on the same stratified split:
+
+| Configuration | Accuracy | Macro-F1 |
+|---------------|----------|----------|
+| title + summary, LinearSVC | 94.6% | 93.7% |
+| **title only, LinearSVC** | **84.3%** | **83.1%** |
+| title only, ComplementNB | 78.2% | 76.3% |
+| title only, LogisticRegression | 77.9% | 74.8% |
+| word-frequency (current) | 42.9% | — |
+| majority class | 20.9% | — |
+
+**Title-only is the honest comparison, and it roughly doubles accuracy.** The
+94.6% row cannot be used: LegiScan's state bill data carries only
+`bill_number,bill_id,title`, so a model needing summaries could be trained and
+never applied.
+
+Much of the gain is not the algorithm. The original **trains on bill summaries
+but classifies bill titles**, so its training and prediction feature spaces do
+not match. Training on titles alone fixes that regardless of model choice.
+
+Two caveats worth carrying forward:
+
+1. **Domain shift is real and unmeasured.** Accuracy is measured on
+   congressional bills because that is the only labelled corpus available; the
+   model is applied to *state* titles, which are shorter and drafted
+   differently. The relative improvement should carry; the absolute number will
+   not, and 84.3% must not be quoted as state-level accuracy. Nothing in the
+   repository can currently measure that gap — a hand-labelled sample of state
+   bills would be the way to close it.
+2. **A linear model never abstains.** The word-frequency classifier returns NaN
+   for unfamiliar vocabulary, leaving 5% of bills unclassified. An SVM always
+   has a best guess, so those bills now get confident-looking labels.
+   `classify_with_confidence` returns the decision margin so a caller can
+   recover the distinction, but the default path does not.
+
+`forge classify` now trains and writes this model. The word-frequency classifier
+is left in place and still drives the pipeline — switching the default changes
+scientific output and is a research decision, not a refactoring one.
+
+## The training path (was: not wired)
+
+`forge classify` used to be a stub that printed "Bill classification not yet
+fully wired" and returned, with its default `--xml-dir` pointing at a directory
+that does not hold the corpus. It now reads the corpus, derives category codes
+from the sorted unique policy areas at training time (matching main.m:38), fits
+the TF-IDF model, reports held-out accuracy and writes the result.
+
+It also reports which policy areas were skipped for having no concise category,
+so the 35-vs-32 gap is visible at training time rather than silent.
 
 ### The accuracy denominator: an intended fix with a large, undocumented effect
 

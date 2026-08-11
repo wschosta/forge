@@ -85,14 +85,74 @@ def run(
 
 
 @cli.command()
-@click.option("--optimize", is_flag=True, help="Run iwv/awv grid search optimization.")
-@click.option("--xml-dir", type=click.Path(), default="legiscan_data/congressional_xml", help="Congressional XML directory.")
-def classify(optimize: bool, xml_dir: str) -> None:
-    """Run the bill classification learning algorithm."""
+@click.option(
+    "--xml-dir",
+    type=click.Path(),
+    default="data/congressional_archive",
+    help="Congressional corpus directory (reads the zip archives directly).",
+)
+@click.option(
+    "--output",
+    type=click.Path(),
+    default="+la/tfidf_classifier.pkl",
+    help="Where to write the trained classifier.",
+)
+@click.option("--test-size", default=0.2, help="Fraction held out to score accuracy.")
+@click.option("--seed", default=42, help="Seed for the train/test split.")
+def classify(xml_dir: str, output: str, test_size: float, seed: int) -> None:
+    """Train the bill classifier from the congressional corpus.
 
-    click.echo("Bill classification not yet fully wired (data files needed).")
-    if optimize:
-        click.echo("Optimization requires pre-parsed training data.")
+    Reads the corpus, maps each bill's policy area to a concise category, fits a
+    TF-IDF + linear SVM model, and reports held-out accuracy before writing it
+    out.
+    """
+    from forge.classify.learning import build_concise_code_map
+    from forge.classify.tfidf_classifier import save_tfidf_classifier, train_tfidf_classifier
+    from forge.ingest.xml_parser import parse_congressional_xml
+
+    click.echo(f"Reading corpus from {xml_dir} ...")
+    bills = parse_congressional_xml(xml_dir)
+    if not bills:
+        raise click.ClickException(f"No bills parsed from {xml_dir}")
+    click.echo(f"  {len(bills)} bills")
+
+    # Category codes are derived from the sorted unique policy areas at training
+    # time, matching la/main.m:38 rather than any stored table.
+    areas = sorted({bill.policy_area for bill in bills if bill.policy_area})
+    area_to_code = {area: index + 1 for index, area in enumerate(areas)}
+    concise = build_concise_code_map()
+
+    titles: list[str] = []
+    categories: list[int] = []
+    unmapped: set[str] = set()
+    for bill in bills:
+        code = area_to_code.get(bill.policy_area)
+        category = concise.get(code) if code else None
+        if category is None:
+            if bill.policy_area:
+                unmapped.add(bill.policy_area)
+            continue
+        if bill.title:
+            titles.append(bill.title)
+            categories.append(category)
+
+    click.echo(f"  {len(titles)} bills across {len(set(categories))} categories")
+    if unmapped:
+        # These are policy areas the corpus contains but the concise recode
+        # table does not cover, so their bills are dropped from training.
+        click.echo(f"  {len(unmapped)} policy areas have no concise category and were skipped:")
+        for area in sorted(unmapped):
+            click.echo(f"      {area}")
+
+    model = train_tfidf_classifier(titles, categories, test_size=test_size, random_state=seed)
+    click.echo(f"\nHeld-out accuracy: {model.accuracy:.2f}%")
+    click.echo(
+        "  (measured on congressional bills; state legislature titles are a "
+        "different domain and will score lower)"
+    )
+
+    save_tfidf_classifier(model, output)
+    click.echo(f"Wrote {output}")
 
 
 def main() -> None:
