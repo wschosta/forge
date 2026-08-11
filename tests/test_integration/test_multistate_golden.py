@@ -6,27 +6,23 @@ classifier vintage behind its committed outputs no longer exists, which puts a
 floor under how closely it can ever be reproduced.
 
 Oregon and Wisconsin have neither problem. They take the ordinary LegiScan
-roster path — never exercised by the Indiana tests — and their committed outputs
-are reproduced *exactly*:
-
-    WI House    agreement and co-vote counts   identical
-    WI Senate   agreement and co-vote counts   identical
-    OR House    agreement and co-vote counts   identical
-    OR Senate   agreement and co-vote counts   identical
+roster path — never exercised by the Indiana tests — and **every one of their
+sixteen committed outputs is reproduced exactly**, per state: pooled agreement,
+sponsorship agreement, the raw integer tallies underneath both, and each party
+subset, across both chambers.
 
 Oregon's Senate was the last chamber to disagree, by two co-votes. It came down
-to a single bill, and the cause was rollcalls not being sorted by date
-(forge.m:147): a bill's outcome is read from its last chamber vote, LegiScan
-orders rollcalls by id, and once a bill has votes across more than one session
-file that ordering is not chronological. Sorting closed it completely.
+to a single bill out of 266, and the cause was rollcalls not being sorted by
+date (forge.m:147): a bill's outcome is read from its last chamber vote,
+LegiScan orders rollcalls by id, and once a bill has votes across more than one
+session file that ordering is not chronological. Sorting closed it completely.
 
-Exact agreement on the raw integer co-vote tallies is the part worth dwelling
-on. Those are counts of events with no averaging or normalization anywhere in
-them, so matching cell-for-cell across a 100x100 matrix is not something two
-implementations do by accident. Together with the six Indiana categories that
-match to floating point, this is the evidence that the agreement-matrix
-arithmetic is right, and that Indiana's residual is about provenance rather
-than computation.
+Exact agreement on the raw integer tallies is the part worth dwelling on. Those
+are counts of events with no averaging or normalization anywhere in them, so
+matching cell-for-cell across a 100x100 matrix is not something two
+implementations do by accident. This is the evidence that the agreement-matrix
+arithmetic is right, and that Indiana's residual is about the provenance of its
+classifier and roster rather than about computation.
 
 These outputs also predate the per-category filenames: the goldens here are
 `H_cha_A_matrix.csv`, where Indiana's are `H_cha_A_matrix_0.csv`. Another sign
@@ -44,13 +40,6 @@ from tests.test_integration.golden import compare_to_golden
 #: Exact to floating point. Set as a hard gate deliberately: these states have
 #: no known source of divergence, so any drift is a real regression.
 EXACT_TOLERANCE = 1e-9
-
-#: Every chamber in both states is now exact, so there is no per-state
-#: exception left. Kept as named constants so that if one ever drifts, the
-#: allowance is written down rather than quietly widened at the call site.
-OREGON_SENATE_RATIO_TOLERANCE = EXACT_TOLERANCE
-OREGON_SENATE_COUNT_TOLERANCE = EXACT_TOLERANCE
-
 
 @pytest.fixture(scope="module", params=["OR", "WI"])
 def state_run(request, tmp_path_factory: pytest.TempPathFactory):
@@ -92,38 +81,37 @@ def _compare(golden_dir: Path, run_dir: Path, family: str):
     return compare_to_golden(golden, produced)
 
 
-class TestNonIndianaStatesReproduceExactly:
-    """These states take the plain LegiScan roster path and match it exactly."""
+#: Every family MATLAB emitted for these states: pooled agreement, sponsor
+#: agreement, sponsor tallies, co-vote tallies, and both party subsets, per
+#: chamber. All sixteen reproduce exactly, so all sixteen are asserted.
+FAMILIES = [
+    f"{chamber}_cha_{group}"
+    for chamber in ("H", "S")
+    for group in (
+        "A_matrix", "A_votes", "A_s_matrix", "A_s_votes",
+        "R_votes", "R_s_votes", "D_votes", "D_s_votes",
+    )
+]
 
-    @pytest.mark.parametrize("family", ["H_cha_A_matrix", "H_cha_A_votes"])
-    def test_house_matches_exactly(self, state_run, family: str) -> None:
+
+class TestNonIndianaStatesReproduceExactly:
+    """These states take the plain LegiScan roster path and match it exactly.
+
+    Not approximately: every committed output file, for both chambers, for both
+    states, agrees cell for cell. That covers agreement ratios, sponsorship
+    agreement, and the raw integer tallies underneath both, across the full
+    chamber and each party subset.
+    """
+
+    @pytest.mark.parametrize("family", FAMILIES)
+    def test_every_output_matches_exactly(self, state_run, family: str) -> None:
         state, golden_dir, run_dir = state_run
         comparison = _compare(golden_dir, run_dir, family)
         assert comparison.labels_match, comparison.summary()
         assert comparison.compared_cells > 0, comparison.summary()
         assert comparison.max_abs_diff < EXACT_TOLERANCE, (
-            f"{state} House no longer reproduces MATLAB exactly: {comparison.summary()}"
-        )
-
-    @pytest.mark.parametrize("family", ["S_cha_A_matrix", "S_cha_A_votes"])
-    def test_senate_matches(self, state_run, family: str) -> None:
-        """Wisconsin's Senate is exact; Oregon's carries a small known difference."""
-        state, golden_dir, run_dir = state_run
-        comparison = _compare(golden_dir, run_dir, family)
-        assert comparison.labels_match, comparison.summary()
-        assert comparison.compared_cells > 0, comparison.summary()
-
-        if state == "OR":
-            tolerance = (
-                OREGON_SENATE_COUNT_TOLERANCE
-                if family.endswith("_votes")
-                else OREGON_SENATE_RATIO_TOLERANCE
-            )
-        else:
-            tolerance = EXACT_TOLERANCE
-
-        assert comparison.max_abs_diff < tolerance, (
-            f"{state} Senate diverged further than expected: {comparison.summary()}"
+            f"{state} {family} no longer reproduces MATLAB exactly: "
+            f"{comparison.summary()}"
         )
 
 
