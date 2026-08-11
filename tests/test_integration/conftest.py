@@ -61,9 +61,12 @@ def indiana_run(tmp_path_factory: pytest.TempPathFactory) -> Path:
 
     config = ForgeConfig(
         state_id=REFERENCE_STATE,
-        # Category 0 (all categories pooled) is what the committed golden files
-        # were generated for; per-category runs would multiply runtime by 11.
-        generate_all_categories=False,
+        # All 12 categories: 0 is the pooled matrix, 1-11 are the per-policy-area
+        # ones. The pooled matrix cannot see a bill filed under the wrong
+        # category — it lands in the same aggregate either way — so the
+        # per-category outputs are the only ones that exercise classification.
+        # One run serves every comparison in this package.
+        generate_all_categories=True,
         learning_data_path=str(classifier),
     )
 

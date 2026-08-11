@@ -50,14 +50,14 @@ def elo_golden(golden_dir: Path) -> pd.DataFrame:
 @pytest.fixture(scope="module")
 def elo_run(indiana_run: Path):
     """Run Elo over the real Indiana House bills at a tractable iteration count."""
+    import numpy as np
+
     from forge.classify.learning import load_matlab_learning_data
     from forge.config import ForgeConfig
     from forge.elo.rating import elo_prediction
     from forge.ingest.csv_reader import read_all_csv
     from forge.matrices.agreement import process_chamber_votes
     from forge.pipeline.runner import _init_bills, _prepare_people
-
-    import numpy as np
 
     root = Path(__file__).resolve().parents[2]
     config = ForgeConfig(
