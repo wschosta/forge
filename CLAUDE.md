@@ -144,26 +144,52 @@ test that can catch a stage silently producing nothing — the rest of the suite
 builds synthetic inputs, so it validates self-consistency, not correctness.
 
 ```bash
-pytest tests/test_integration/ -v     # golden-file comparison (~1 min)
-pytest                                # everything
+pytest tests/test_integration/ -v     # all golden comparisons (~5 min)
+pytest                                # everything (~7 min)
 ```
+
+What lives where in `tests/test_integration/`:
+
+| Module | Scope |
+|--------|-------|
+| `test_multistate_golden.py` | Oregon and Wisconsin — exact, both chambers |
+| `test_matrix_invariants.py` | Properties true for *any* classification |
+| `test_indiana_golden.py` | Indiana pooled category 0 |
+| `test_indiana_categories.py` | Indiana per-category — pinned to the current classifier |
+| `test_indiana_elo.py` | Elo structure and rating invariants |
+| `test_indiana_plots.py` | Figures are produced and are real PNGs |
+
+`test_matrix_invariants.py` is the module to trust when the categorization logic
+is replaced: it asserts pooling consistency, symmetry, ratio bounds and party
+partitioning, none of which depend on how bills are assigned to policy areas.
+`test_indiana_categories.py` is the one to retire at that point rather than
+retune — its expectations describe the current classifier.
 
 Current parity:
 
 | Output | Agreement with MATLAB |
 |--------|-----------------------|
-| Seat proximity | 5e-14 (floating point) |
-| Per-category matrices, categories 1, 6, 7, 9, 10, 11 | ~5e-16 (floating point) |
-| Per-category matrices, categories 2, 3, 4, 5, 8 | up to 0.25 |
-| Pooled category 0 | ~0.4% mean absolute error |
-| Monte Carlo `coverage` | Pearson 0.9995 |
-| Monte Carlo impact `results` | Spearman ~0.74 |
+| **Oregon — all 16 outputs, both chambers** | **exact** |
+| **Wisconsin — all 16 outputs, both chambers** | **exact** |
+| Indiana seat proximity | 5e-14 (floating point) |
+| Indiana per-category, categories 6, 7, 9, 10, 11 | ~5e-16 (floating point) |
+| Indiana per-category, categories 1–5, 8 | up to 0.33 |
+| Indiana pooled category 0 | ~0.6% mean absolute error |
+| Indiana Monte Carlo `coverage` | Pearson 0.9995 |
+| Indiana Monte Carlo impact `results` | Spearman ~0.74 |
 | Elo | structure and invariants only — see below |
 
-Six of the eleven policy areas reproduce MATLAB to floating point. That is the
-useful summary: wherever the two classifier vintages agree on which bills belong
-to a category, the matrices are identical, so the arithmetic is right and the
-residual is classification. See the Phase 10 section of `REFACTORING_PLAN.md`.
+**Oregon and Wisconsin reproduce MATLAB exactly** — every committed output file,
+both chambers, agreement ratios and raw integer tallies alike. That is the
+headline: where Indiana's classifier and roster provenance are not in play, the
+port is not approximately right, it is identical.
+
+Indiana is the outlier and its goldens are the unreliable party. Its classifier
+vintage is gone, its prediction and Elo outputs use a different roster from its
+matrix outputs, its `saved_data.mat` is stale, and its filenames come from a
+different era again. Do not tune the port to close Indiana's residual — a fix
+that is provably correct (sorting rollcalls by date, forge.m:147) made Oregon
+and Wisconsin exact while making Indiana *worse*. See `REFACTORING_PLAN.md`.
 
 **The classifier that generated the committed outputs no longer exists** — it is
 not in the repository and neither author has it. That means the goldens cannot
