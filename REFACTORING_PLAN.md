@@ -784,6 +784,47 @@ bit-identical on a 25-bill signature over real data. A production 16,000
 iteration House run extrapolates to ~4.1 hours, down from ~9.3 — a long batch
 job, but a feasible one.
 
+---
+
+## Phase 6 status: Elo rating
+
+Elo had also never been run against real data. It works: output is
+structurally correct, `score_fixed_k` stays pinned at exactly 1500 (the
+rating system is zero-sum, so this is a real invariant rather than a
+coincidence), and pairwise comparison counts scale linearly with iteration
+count in line with the golden.
+
+`tests/test_integration/test_indiana_elo.py` covers structure, the rating
+invariants, and the comparison budget. It deliberately does **not** assert
+score values against the golden: MATLAB's were produced at 15,000 iterations,
+where the spread has narrowed to 1232-1516; a tractable test run sits at
+1060-1880 simply because it has not converged. Any tolerance loose enough to
+pass would prove nothing.
+
+**Performance is the open problem here, and it is worse than prediction.**
+The pairwise update is O(n^2) per bill per iteration — about 4,950 comparisons
+for a 100-seat chamber — and each comparison reads scores that earlier
+comparisons in the same sweep already wrote, so the loop is inherently
+sequential and cannot be vectorized without changing the numbers. Hoisting
+config lookups out of the inner loop (they were being resolved tens of millions
+of times) and switching to plain Python floats gave 2.36x, verified
+bit-identical. That takes a full 15,000-iteration run over all 12 categories
+from roughly 58 hours to roughly 25.
+
+25 hours is still not a routine run. Closing that gap needs either a compiled
+inner loop (numba/Cython) or an algorithmic change, and neither is a
+refactoring decision — it is a question about how often this analysis actually
+needs to be rerun.
+
+### Roster provenance, again
+
+The Elo golden carries LegiScan's 104-member roster, like the prediction
+golden, while the agreement-matrix goldens carry the curated 100 that state.m
+substitutes for Indiana. The two rosters share 87 members; neither contains the
+other. That is now three committed output families generated from at least two
+different configurations, which is worth keeping in view when interpreting any
+comparison against them.
+
 Three defects had to be fixed before any comparison was possible at all:
 
 | Defect | Effect | Fix |

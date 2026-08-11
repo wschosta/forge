@@ -135,42 +135,72 @@ def elo_prediction(
         local_score1 = score_variable_k[leg_indices].copy()
         local_score2 = score_fixed_k[leg_indices].copy()
 
+        # Every pair reads scores that earlier pairs in the same sweep already
+        # updated, so this loop is inherently sequential and cannot be
+        # vectorized without changing the numbers. What it can avoid is
+        # re-resolving the same constants tens of millions of times: the four
+        # config attributes below were being looked up on every comparison.
+        k_numerator = config.elo_variable_k_numerator
+        k_min_count = config.elo_variable_k_min_count
+        k_max_count = config.elo_variable_k_max_count
+        fixed_k = config.elo_fixed_k
+
+        # Plain Python lists outperform numpy scalars for this access pattern —
+        # the loop is millions of single-element reads and writes, where numpy
+        # pays boxing cost on every one.
+        counts = [float(c) for c in local_count]
+        scores_variable = [float(s) for s in local_score1]
+        scores_fixed = [float(s) for s in local_score2]
+        accuracies = [float(a) for a in accuracy_per_leg]
+
         n_legs = len(legislator_order)
         for i in range(n_legs):
+            accuracy_i = accuracies[i]
             for j in range(i + 1, n_legs):
-                local_count[i] += 1
-                local_count[j] += 1
+                counts[i] += 1
+                counts[j] += 1
 
                 # Win/loss/draw
-                if accuracy_per_leg[i] > accuracy_per_leg[j]:
+                accuracy_j = accuracies[j]
+                if accuracy_i > accuracy_j:
                     wa, wb = 1.0, 0.0
-                elif accuracy_per_leg[i] == accuracy_per_leg[j]:
+                elif accuracy_i == accuracy_j:
                     wa, wb = 0.5, 0.5
                 else:
                     wa, wb = 0.0, 1.0
 
                 # Variable-K Elo
-                ea = 1.0 / (1.0 + 10.0 ** ((local_score1[j] - local_score1[i]) / 400.0))
-                eb = 1.0 / (1.0 + 10.0 ** ((local_score1[i] - local_score1[j]) / 400.0))
+                score_i = scores_variable[i]
+                score_j = scores_variable[j]
+                ea = 1.0 / (1.0 + 10.0 ** ((score_j - score_i) / 400.0))
+                eb = 1.0 / (1.0 + 10.0 ** ((score_i - score_j) / 400.0))
 
-                ka = config.elo_variable_k_numerator / max(
-                    config.elo_variable_k_min_count,
-                    min(local_count[i], config.elo_variable_k_max_count),
-                )
-                kb = config.elo_variable_k_numerator / max(
-                    config.elo_variable_k_min_count,
-                    min(local_count[j], config.elo_variable_k_max_count),
-                )
+                count_i = counts[i]
+                if count_i > k_max_count:
+                    count_i = k_max_count
+                if count_i < k_min_count:
+                    count_i = k_min_count
+                count_j = counts[j]
+                if count_j > k_max_count:
+                    count_j = k_max_count
+                if count_j < k_min_count:
+                    count_j = k_min_count
 
-                local_score1[i] += ka * (wa - ea)
-                local_score1[j] += kb * (wb - eb)
+                scores_variable[i] = score_i + (k_numerator / count_i) * (wa - ea)
+                scores_variable[j] = score_j + (k_numerator / count_j) * (wb - eb)
 
                 # Fixed-K Elo
-                ea = 1.0 / (1.0 + 10.0 ** ((local_score2[j] - local_score2[i]) / 400.0))
-                eb = 1.0 / (1.0 + 10.0 ** ((local_score2[i] - local_score2[j]) / 400.0))
+                score_i = scores_fixed[i]
+                score_j = scores_fixed[j]
+                ea = 1.0 / (1.0 + 10.0 ** ((score_j - score_i) / 400.0))
+                eb = 1.0 / (1.0 + 10.0 ** ((score_i - score_j) / 400.0))
 
-                local_score2[i] += config.elo_fixed_k * (wa - ea)
-                local_score2[j] += config.elo_fixed_k * (wb - eb)
+                scores_fixed[i] = score_i + fixed_k * (wa - ea)
+                scores_fixed[j] = score_j + fixed_k * (wb - eb)
+
+        local_count = counts
+        local_score1 = scores_variable
+        local_score2 = scores_fixed
 
         # Write back
         for k, idx in enumerate(leg_indices):
