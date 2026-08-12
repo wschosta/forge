@@ -147,10 +147,25 @@ class ForgeConfig:
     cut_off: int = 3001
     iwv: float = 0.13
     awv: float = 0.0
+
+    #: Which classifier assigns bills to policy areas.
+    #:
+    #: ``"tfidf"`` — TF-IDF + linear SVM, 84.3% held-out accuracy. The default
+    #: for new analysis.
+    #: ``"legacy"`` — the MATLAB word-frequency scorer, 42.9%. Required to
+    #: reproduce the committed MATLAB outputs, because it leaves ~5% of bills
+    #: unclassified and those bills are consequently absent from the pooled
+    #: category-0 matrices. The golden comparisons pin this value; changing it
+    #: changes which bills enter every matrix.
+    classifier: str = "tfidf"
+
     # Trained classifier produced by the MATLAB learning algorithm. Its weights
     # are what the committed MATLAB outputs were generated from, so the golden
     # comparison depends on classifying against this exact file.
     learning_data_path: str = "+la/learning_algorithm_data.mat"
+
+    #: Trained TF-IDF model, produced by ``forge classify``.
+    tfidf_classifier_path: str = "+la/tfidf_classifier.pkl"
 
     # Elo
     elo_initial_score: int = 1500

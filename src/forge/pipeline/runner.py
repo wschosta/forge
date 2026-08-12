@@ -12,12 +12,14 @@ Runs the full Forge analysis pipeline for a given state:
 from __future__ import annotations
 
 import logging
+from collections.abc import Callable
 from pathlib import Path
 
 import pandas as pd
 
 from forge.classify.classifier import classify_bill
-from forge.classify.learning import LearningData, load_matlab_learning_data
+from forge.classify.learning import load_matlab_learning_data
+from forge.classify.tfidf_classifier import load_tfidf_classifier
 from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
@@ -116,6 +118,57 @@ def _prepare_people(
     return chamber_people.reset_index(drop=True)
 
 
+def _resolve_classifier(config: ForgeConfig) -> Callable[[str], int | float] | None:
+    """Return a title → category function for the configured classifier.
+
+    Choosing between them is a scientific decision, not a detail: the legacy
+    scorer leaves roughly 5% of bills unclassified, and those bills are absent
+    from every category-filtered matrix as a result. The TF-IDF model always
+    produces a category, so switching changes which bills are analysed at all.
+
+    Falls back to the legacy classifier when ``"tfidf"`` is requested but no
+    trained model is present, so a fresh checkout still runs — loudly, because
+    silently analysing a different set of bills than intended is worse than a
+    warning.
+
+    Args:
+        config: Pipeline configuration.
+
+    Returns:
+        A callable taking a bill title and returning a category code (or NaN),
+        or None when no classifier could be loaded at all.
+    """
+    if config.classifier == "tfidf":
+        model = load_tfidf_classifier(config.tfidf_classifier_path)
+        if model is not None:
+            logger.info(
+                "Classifying with the TF-IDF model (%.1f%% held-out accuracy, %d bills)",
+                model.accuracy, model.n_training_bills,
+            )
+            return model.classify
+        logger.warning(
+            "classifier='tfidf' but no trained model at %s — falling back to the "
+            "legacy word-frequency classifier. Run `forge classify` to train one. "
+            "Results will differ from a TF-IDF run.",
+            config.tfidf_classifier_path,
+        )
+    elif config.classifier != "legacy":
+        raise ValueError(
+            f"Unknown classifier {config.classifier!r}; expected 'tfidf' or 'legacy'"
+        )
+
+    learning_data = load_matlab_learning_data(config.learning_data_path)
+    if learning_data is None:
+        logger.warning(
+            "No trained classifier available — bills will be unclassified and "
+            "all category-filtered matrices will come out empty."
+        )
+        return None
+
+    logger.info("Classifying with the legacy word-frequency classifier")
+    return lambda title: classify_bill(title, learning_data)[0]
+
+
 def _init_bills(
     bills_df: pd.DataFrame,
     rollcalls_df: pd.DataFrame,
@@ -123,7 +176,7 @@ def _init_bills(
     sponsors_df: pd.DataFrame,
     history_df: pd.DataFrame | None,
     config: ForgeConfig,
-    learning_data: LearningData | None = None,
+    classify_fn: Callable[[str], int | float] | None = None,
 ) -> dict[int, Bill]:
     """Initialize bill objects from raw DataFrames.
 
@@ -136,7 +189,7 @@ def _init_bills(
         sponsors_df: Sponsors DataFrame.
         history_df: History DataFrame (optional).
         config: ForgeConfig.
-        learning_data: Trained classifier. When None, bills keep an
+        classify_fn: Title → category function. When None, bills keep an
             ``issue_category`` of NaN and every category filter downstream
             excludes them — matching MATLAB's ``learning_algorithm_exist``
             guard at forge.m:133.
@@ -163,8 +216,8 @@ def _init_bills(
         # Classify the bill by policy area (forge.m:133-136). Every downstream
         # matrix is filtered by issue_category, so skipping this leaves the
         # whole pipeline with nothing to aggregate.
-        if learning_data is not None:
-            bill.issue_category = classify_bill(bill.title, learning_data)[0]
+        if classify_fn is not None:
+            bill.issue_category = classify_fn(bill.title)
 
         # Sponsors
         if sponsors_by_bill and "sponsor_id" in sponsors_df.columns:
@@ -281,18 +334,13 @@ def run_pipeline(
     except Exception:
         pass
 
-    # Step 2: Load the trained classifier (state.m:123 → la.loadLearnedMaterials)
-    learning_data = load_matlab_learning_data(config.learning_data_path)
-    if learning_data is None:
-        logger.warning(
-            "No trained classifier available — bills will be unclassified and "
-            "all category-filtered matrices will come out empty."
-        )
+    # Step 2: Load the configured classifier (state.m:123 → la.loadLearnedMaterials)
+    classify_fn = _resolve_classifier(config)
 
     # Step 3: Initialize bill objects
     logger.info("Initializing %d bills...", len(bills_df))
     bill_set = _init_bills(
-        bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config, learning_data
+        bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config, classify_fn
     )
     logger.info("Bill set: %d bills", len(bill_set))
 

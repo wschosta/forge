@@ -136,6 +136,39 @@ Configured in `@state/state_properties.m`: CA, NY, WI, OH, OR, VT, KY, IN, ME, M
 10. Bug in `outputBillInformation.m`: references `senate_bill_ids` instead of `chamber_bill_ids` at line 14.
 11. Accuracy formula uses hardcoded `100` instead of actual legislator count.
 
+## Bill Classification
+
+Two classifiers exist. `ForgeConfig.classifier` selects between them, and the
+choice changes which bills are analysed, so it is a scientific decision rather
+than a setting.
+
+| | Held-out accuracy | Unclassified |
+|---|---|---|
+| `"tfidf"` (default) — TF-IDF + linear SVM | **84.3%** | 0% |
+| `"legacy"` — MATLAB word-frequency scorer | 42.9% | ~5% |
+
+Accuracy is measured on held-out *congressional* bills, the only labelled corpus
+available. The model is applied to *state* titles, which are shorter and drafted
+differently — **84.3% must not be quoted as state-level accuracy.** Closing that
+gap needs a hand-labelled sample of state bills; nothing here can measure it.
+
+Train the model once after cloning (it is not committed — 4.4 MB, and
+scikit-learn pickles are version-fragile):
+
+```bash
+forge classify              # ~40s, writes +la/tfidf_classifier.pkl
+```
+
+Without it the pipeline warns and falls back to `"legacy"`.
+
+`"legacy"` is required to reproduce the committed MATLAB outputs: it leaves ~5%
+of bills unclassified, and those bills are consequently absent from the pooled
+category-0 matrices. Every golden comparison pins `classifier="legacy"` for that
+reason. Switching to `"tfidf"` on Indiana adds 5 House bills to the matrices and
+moves the pooled agreement matrix by 0.0055 mean absolute — small, because
+pooling depends on which bills are included rather than on their category.
+Per-category matrices move much more.
+
 ## Validating the Python Port
 
 `tests/test_integration/` runs the real Indiana pipeline and diffs its output

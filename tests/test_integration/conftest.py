@@ -67,6 +67,13 @@ def indiana_run(tmp_path_factory: pytest.TempPathFactory) -> Path:
         # per-category outputs are the only ones that exercise classification.
         # One run serves every comparison in this package.
         generate_all_categories=True,
+        # Pinned to the legacy classifier deliberately. These tests compare
+        # against MATLAB's committed outputs, which were produced by the
+        # word-frequency scorer; it leaves ~5% of bills unclassified and those
+        # bills are consequently absent from the pooled category-0 matrices.
+        # The TF-IDF default classifies everything, so running it here would
+        # compare different bill sets and fail for reasons that are not defects.
+        classifier="legacy",
         learning_data_path=str(classifier),
     )
 

@@ -52,28 +52,34 @@ def elo_run(indiana_run: Path):
     """Run Elo over the real Indiana House bills at a tractable iteration count."""
     import numpy as np
 
-    from forge.classify.learning import load_matlab_learning_data
     from forge.config import ForgeConfig
     from forge.elo.rating import elo_prediction
     from forge.ingest.csv_reader import read_all_csv
     from forge.matrices.agreement import process_chamber_votes
-    from forge.pipeline.runner import _init_bills, _prepare_people
+    from forge.pipeline.runner import _init_bills, _prepare_people, _resolve_classifier
 
     root = Path(__file__).resolve().parents[2]
     config = ForgeConfig(
         state_id="IN",
         generate_all_categories=False,
+        # Pinned to the legacy classifier deliberately. These tests compare
+        # against MATLAB's committed outputs, which were produced by the
+        # word-frequency scorer; it leaves ~5% of bills unclassified and those
+        # bills are consequently absent from the pooled category-0 matrices.
+        # The TF-IDF default classifies everything, so running it here would
+        # compare different bill sets and fail for reasons that are not defects.
+        classifier="legacy",
         elo_monte_carlo_number=TEST_ITERATIONS,
         learning_data_path=str(root / "+la" / "learning_algorithm_data.mat"),
     )
-    learning = load_matlab_learning_data(config.learning_data_path)
+    classify_fn = _resolve_classifier(config)
     frames = {
         name: read_all_csv(name, "IN", root / "legiscan_data")
         for name in ["bills", "people", "rollcalls", "votes", "sponsors", "history"]
     }
     bill_set = _init_bills(
         frames["bills"], frames["rollcalls"], frames["votes"],
-        frames["sponsors"], frames["history"], config, learning,
+        frames["sponsors"], frames["history"], config, classify_fn,
     )
     people = _prepare_people(frames["people"], "IN", "house", root / "data" / "IN")
     matrices = process_chamber_votes(

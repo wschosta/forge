@@ -42,6 +42,12 @@ data/congressional_archive/BILLSTATUS-*.xml
 # artifacts here; they are experiment output, not inputs to any pipeline.
 +la/temp/
 
+# Trained TF-IDF classifier. Deliberately not committed: it is a 4.4 MB pickle,
+# scikit-learn pickles do not load reliably across versions, and `forge classify`
+# rebuilds it from the committed corpus in about 40 seconds. Run that once after
+# cloning; without it the pipeline warns and falls back to the legacy classifier.
++la/tfidf_classifier.pkl
+
 # Generated pipeline outputs. These are produced by `forge run` and are not
 # inputs to anything, so they are regenerated rather than committed.
 #
