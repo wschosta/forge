@@ -59,3 +59,11 @@ data/*/prediction_model/*.mat
 data/*/elo_model/**/*.mat
 data/*/merged_data/
 data/*/merged_data.zip
+
+# The reproducible baseline (scripts/regenerate_baseline.sh). Unlike the MATLAB
+# outputs above it regenerates deterministically from committed inputs in about
+# fifteen minutes, so the ~100 MB of CSVs is not worth carrying in the history —
+# being reproducible is the whole point of it. The README explaining what it is
+# and how to rebuild it is committed.
+baseline/*
+!baseline/README.md

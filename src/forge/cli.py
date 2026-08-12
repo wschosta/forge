@@ -40,6 +40,14 @@ def cli(verbose: bool) -> None:
 @click.option("--mc-number", type=int, default=16000, help="Monte Carlo iterations.")
 @click.option("--elo-mc-number", type=int, default=15000, help="Elo Monte Carlo iterations.")
 @click.option("--show-warnings", is_flag=True, help="Show verbose warnings.")
+@click.option(
+    "--classifier",
+    type=click.Choice(["tfidf", "legacy"]),
+    default="tfidf",
+    show_default=True,
+    help="Which classifier assigns bills to policy areas. Changes which bills "
+         "enter every matrix, so it is a scientific choice, not a preference.",
+)
 @click.option("--legiscan-dir", type=click.Path(), default="legiscan_data", help="LegiScan data directory.")
 @click.option("--data-dir", type=click.Path(), default="data", help="Output data directory.")
 def run(
@@ -54,6 +62,7 @@ def run(
     mc_number: int,
     elo_mc_number: int,
     show_warnings: bool,
+    classifier: str,
     legiscan_dir: str,
     data_dir: str,
 ) -> None:
@@ -68,6 +77,7 @@ def run(
         predict_elo=predict_elo,
         recompute_elo=recompute_elo,
         show_warnings=show_warnings,
+        classifier=classifier,
         monte_carlo_number=mc_number,
         elo_monte_carlo_number=elo_mc_number,
     )

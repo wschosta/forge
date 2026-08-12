@@ -122,6 +122,27 @@ LegiScan CSV/JSON → forge.init() → bill_set map + tables
 
 Configured in `@state/state_properties.m`: CA, NY, WI, OH, OR, VT, KY, IN, ME, MT, US. Each has Senate and House chamber sizes specified. Adding a state requires adding a case to the switch statement and having LegiScan data in `legiscan_data/{STATE}/`.
 
+Nine of the eleven produce full output. Two do not, and both were only
+discovered by running every state rather than the three with goldens:
+
+| State | Status |
+|-------|--------|
+| KY | **No output.** `legiscan_data/KY/` has zero rollcall rows — a data gap, not a code defect. |
+| ME | **Substantially incomplete** (31 House / 6 Senate bills). Maine records passage as parliamentary abbreviations — "Acc Maj OTP Rep" — which the passage pattern does not model; only 84 of 2,514 rollcalls are recognised. Deciding which motions count is a domain judgement, so it is left open. |
+
+A state whose rollcall vocabulary is unrecognised produces **empty matrices
+while the run exits successfully**. New York was in this state until the
+`FINAL PASSAGE` alternative was added: all 10,127 of its rollcalls read
+"Floor Vote - Final Passage" and every one was discarded, because the pattern
+required the literal "ON PASSAGE". The pipeline now logs a WARNING when a
+chamber matches no bills, and `tests/test_integration/test_passage_vocabulary.py`
+asserts a floor on matches for every state with committed data.
+
+When extending `_PASSAGE_PATTERN`, keep the change *additive*. Relaxing it to a
+bare `PASSAGE` was measured and would additionally match committee "Do Pass"
+motions in OR (+124), OH (+446), CA (+574) and US (+3) — silently changing
+results for states that currently reproduce MATLAB exactly.
+
 ## Known Issues / Technical Debt
 
 1. Committee vote processing is commented out in `processChamberVotes.m`; committee matrices are always empty.
@@ -169,6 +190,39 @@ moves the pooled agreement matrix by 0.0055 mean absolute — small, because
 pooling depends on which bills are included rather than on their category.
 Per-category matrices move much more.
 
+## The Reproducible Baseline
+
+The committed MATLAB outputs cannot be reproduced — the classifier that made
+them is gone. `baseline/` is the reproducible counterpart: matrix outputs for
+all eleven configured states, regenerated from committed inputs by
+
+```bash
+forge classify                      # ~60s, trains +la/tfidf_classifier.pkl
+./scripts/regenerate_baseline.sh    # ~15 min, all states
+```
+
+It is gitignored (~100 MB of derived CSVs) apart from `baseline/README.md`,
+which carries the per-state coverage table and the agreement measurements.
+Verified byte-identical across repeated runs. Monte Carlo and Elo outputs are
+*not* included: they are stochastic and cost hours to days, so they remain
+on-demand.
+
+`scripts/compare_baseline_to_matlab.py` quantifies the gap against the MATLAB
+outputs for the three states that have them. The headline result:
+
+**Oregon and Wisconsin reproduce MATLAB exactly under the TF-IDF classifier**
+— mean|Δ| = 0.0000 on every golden file. This is not luck. The legacy scorer
+left 36 Oregon and 25 Wisconsin bills unclassified, and none of them had a
+competitive passage vote, so none was ever eligible for the pooled matrix; the
+bill set is identical either way. Indiana is the exception because 9 of its 142
+unclassified bills *are* eligible, so the new classifier adds them — which is
+why only Indiana moves (mean|Δ| 0.0073 House, 0.0009 Senate) and why its raw
+co-vote tallies shift by ~4 on average.
+
+The practical consequence: **switching classifiers does not invalidate the
+pooled Oregon and Wisconsin results.** Per-category matrices are a different
+matter and do move.
+
 ## Validating the Python Port
 
 `tests/test_integration/` runs the real Indiana pipeline and diffs its output
@@ -187,6 +241,7 @@ What lives where in `tests/test_integration/`:
 |--------|-------|
 | `test_multistate_golden.py` | Oregon and Wisconsin — exact, both chambers |
 | `test_matrix_invariants.py` | Properties true for *any* classification |
+| `test_passage_vocabulary.py` | Every state's rollcall phrasing is recognised |
 | `test_indiana_golden.py` | Indiana pooled category 0 |
 | `test_indiana_categories.py` | Indiana per-category — pinned to the current classifier |
 | `test_indiana_elo.py` | Elo structure and rating invariants |

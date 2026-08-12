@@ -391,6 +391,21 @@ def run_pipeline(
 
             # Store results for category 0
             if category == 0:
+                # A chamber that matches no bills at all is almost never a
+                # legitimate result — it means a filter rejected everything, and
+                # the pipeline would otherwise report success while writing
+                # empty matrices. That is how New York went unnoticed: all
+                # 10,127 of its rollcalls failed the passage-description match,
+                # so every category came out empty and the run still exited 0.
+                if not matrix_results.bill_ids:
+                    logger.warning(
+                        "%s %s: no bills matched — every output for this chamber "
+                        "will be empty. Common causes: rollcall descriptions that "
+                        "do not match the passage pattern, or no rollcall data for "
+                        "this state.",
+                        state,
+                        chamber,
+                    )
                 results_all[chamber]["matrix_results"] = matrix_results
                 results_all[chamber]["people"] = chamber_people
                 results_all[chamber]["bill_ids"] = matrix_results.bill_ids
