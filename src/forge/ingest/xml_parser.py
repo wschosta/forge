@@ -48,9 +48,8 @@ def _extract_best_summary(bill_element: etree._Element) -> str:
     # Multiple summaries: find the last one that's not the placeholder
     for item in reversed(items):
         text_el = item.find("text")
-        if text_el is not None and text_el.text:
-            if "(This measure has not been amended" not in text_el.text:
-                return text_el.text
+        if text_el is not None and text_el.text and "(This measure has not been amended" not in text_el.text:
+            return text_el.text
 
     # Fallback to the last summary
     text_el = items[-1].find("text")

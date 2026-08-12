@@ -328,11 +328,14 @@ def run_pipeline(
     votes_df = read_all_csv("votes", state, legiscan_dir)
     sponsors_df = read_all_csv("sponsors", state, legiscan_dir)
 
+    # History is optional: it supplies introduction and last-action dates for
+    # bill metadata export, and nothing in the matrix or prediction path reads
+    # it. A state without history CSVs should still run.
     history_df = None
     try:
         history_df = read_all_csv("history", state, legiscan_dir)
-    except Exception:
-        pass
+    except (FileNotFoundError, OSError, ValueError) as exc:
+        logger.info("No history data for %s (%s); continuing without it", state, exc)
 
     # Step 2: Load the configured classifier (state.m:123 → la.loadLearnedMaterials)
     classify_fn = _resolve_classifier(config)

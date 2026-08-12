@@ -2,21 +2,19 @@
 
 from __future__ import annotations
 
-import math
-
 import numpy as np
 import pandas as pd
 import pytest
 
 from forge.matrices.agreement import (
-    add_votes,
-    clean_sponsor_votes,
-    clean_votes,
-    normalize_votes,
     _create_nan_table,
     _create_zero_table,
     _extract_party_submatrix,
     _process_parties,
+    add_votes,
+    clean_sponsor_votes,
+    clean_votes,
+    normalize_votes,
 )
 
 
@@ -129,18 +127,18 @@ class TestCleanVotes:
         votes_mat.loc["id1", "id2"] = 1.0
         votes_mat.loc["id2", "id1"] = 1.0
 
-        cleaned_matrix, cleaned_votes = clean_votes(matrix, votes_mat)
+        cleaned_matrix, _cleaned_votes = clean_votes(matrix, votes_mat)
         assert "id3" not in cleaned_matrix.index
         assert "id3" not in cleaned_matrix.columns
         assert "id1" in cleaned_matrix.index
 
     def test_empty_matrix(self):
         empty_df = pd.DataFrame()
-        result_m, result_v = clean_votes(empty_df, empty_df)
+        result_m, _result_v = clean_votes(empty_df, empty_df)
         assert result_m.empty
 
     def test_none_matrix(self):
-        result_m, result_v = clean_votes(None, None)
+        result_m, _result_v = clean_votes(None, None)
         assert result_m is None
 
 

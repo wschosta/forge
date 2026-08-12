@@ -41,7 +41,6 @@ def process_legislator_impacts(
     master_list: list[tuple[int, float]] = []
 
     n_bills = len(legislators_list)
-    n_mc = accuracy_list.shape[1] if accuracy_list.ndim > 1 else 1
 
     for i in range(n_bills):
         bill_legislators = legislators_list[i]  # list of MC iterations

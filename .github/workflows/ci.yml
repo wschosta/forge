@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+# A newer push to the same branch makes the older run irrelevant. The test job
+# is slow enough that letting superseded runs finish wastes real minutes.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source only
+        uses: actions/checkout@v4
+        with:
+          # Linting needs no data. The repository carries ~2 GB of committed
+          # LegiScan CSVs, congressional archives and golden outputs, so a
+          # sparse checkout turns a multi-minute clone into a few seconds and
+          # gets lint feedback back long before the test job finishes.
+          sparse-checkout: |
+            src
+            tests
+            pyproject.toml
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ruff
+        run: pip install ruff
+
+      # Not `--exit-non-zero-on-fix`; this only reports, it never rewrites.
+      - name: Ruff
+        run: ruff check src tests
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    # The integration suite runs the real Indiana, Oregon and Wisconsin
+    # pipelines against committed data. Locally it takes about five minutes;
+    # the ceiling is generous because the checkout is large.
+    timeout-minutes: 45
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        # Full working tree, but only the tip commit. History is ~700 MB and
+        # nothing in the suite reads it.
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Confirm the reference data is present
+        # Every golden comparison depends on these three. Without them the
+        # suite skips rather than fails, which would turn a broken checkout
+        # into a green run — the exact failure mode this branch exists to
+        # prevent.
+        run: |
+          set -euo pipefail
+          test -f "+la/learning_algorithm_data.mat"        || { echo "::error::missing the MATLAB classifier"; exit 1; }
+          test -f "data/IN/undergrad/people_2013-2014.xlsx" || { echo "::error::missing the curated Indiana House roster"; exit 1; }
+          test -d "data/IN/outputs"                         || { echo "::error::missing the MATLAB golden outputs"; exit 1; }
+          echo "golden CSVs:  $(ls data/IN/outputs/*.csv | wc -l)"
+          echo "corpus zips:  $(ls data/congressional_archive/Store/*.zip | wc -l)"
+
+      # No `forge classify` step. The trained TF-IDF model is not committed,
+      # and every golden comparison pins classifier="legacy" precisely so that
+      # it is not needed. Verified: the full suite passes with the model absent.
+      #
+      # `-rs` reports skip reasons in the same run rather than costing a second
+      # five-minute pass. Skips matter here: a skipped golden comparison looks
+      # exactly like a passing one, so they are surfaced rather than swallowed.
+      - name: Pytest
+        env:
+          MPLBACKEND: Agg   # the plotting tests render figures with no display
+        run: |
+          set -euo pipefail
+          pytest -q -rs --durations=10 2>&1 | tee /tmp/pytest.out
+
+      - name: Flag skipped tests
+        if: always()
+        run: |
+          if grep -qE "^SKIPPED" /tmp/pytest.out; then
+            echo "::warning::tests were skipped — reference data may be incomplete"
+            grep -E "^SKIPPED" /tmp/pytest.out
+          else
+            echo "no skips"
+          fi

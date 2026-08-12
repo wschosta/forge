@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from forge.viz.plots import generate_plots, generate_histograms, plot_prediction_boxplots
+from forge.viz.plots import generate_histograms, generate_plots, plot_prediction_boxplots
 
 
 @pytest.fixture

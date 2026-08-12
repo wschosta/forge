@@ -55,20 +55,20 @@ class TestCleanupText:
         assert weights[dog_idx] == 2.0
 
     def test_empty_string(self):
-        words, weights = cleanup_text("", [])
+        words, _weights = cleanup_text("", [])
         assert words == []
 
     def test_empty_list(self):
-        words, weights = cleanup_text([], [])
+        words, _weights = cleanup_text([], [])
         assert words == []
 
     def test_all_stop_words(self):
-        words, weights = cleanup_text("the and for", ["the", "and", "for"])
+        words, _weights = cleanup_text("the and for", ["the", "and", "for"])
         assert words == []
 
     def test_list_input(self):
         """Pre-tokenized list input should skip regex step."""
-        words, weights = cleanup_text(["HELLO", "WORLD", "HELLO"], [])
+        words, _weights = cleanup_text(["HELLO", "WORLD", "HELLO"], [])
         assert "HELLO" in words
         assert "WORLD" in words
 
