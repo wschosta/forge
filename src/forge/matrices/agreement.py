@@ -8,13 +8,13 @@ from __future__ import annotations
 
 import logging
 import math
-import re
 from dataclasses import dataclass, field
 
 import numpy as np
 import pandas as pd
 
 from forge.config import create_id_strings, cstr_ainbp
+from forge.passage import is_passage_description
 
 logger = logging.getLogger(__name__)
 
@@ -272,45 +272,6 @@ def _extract_party_submatrix(
     return matrix.loc[row_labels, col_labels]
 
 
-#: Rollcall descriptions that identify a final floor passage vote.
-#:
-#: MATLAB matched ``THIRD|3RD|ON PASSAGE``, which is the vocabulary LegiScan
-#: uses for Wisconsin, Oregon and Indiana ("Read a third time", "Third
-#: Reading"). Other states describe the same event differently, and because a
-#: bill with no matching rollcall is skipped silently, a state whose phrasing is
-#: unrecognised produces empty matrices while reporting success. New York is the
-#: clearest case: all 10,127 of its rollcalls are "Senate/Assembly Floor Vote -
-#: Final Passage", and every one was discarded because the pattern requires the
-#: literal "ON PASSAGE".
-#:
-#: ``FINAL PASSAGE`` is added rather than relaxing the term to a bare
-#: ``PASSAGE``. The bare form was measured and would additionally match motions
-#: in Oregon (+124), Ohio (+446), California (+574) and Congress (+3) — changing
-#: results for states that currently reproduce MATLAB exactly. This alternative
-#: is strictly additive: rollcall match counts are unchanged for IN, OR, WI, VT,
-#: MT, OH, CA and US, and the golden comparisons confirm it.
-#:
-#: ``ENACTMENT``, ``ENACT-`` and ``TO BE ENGROSSED`` cover Maine, whose floor
-#: sequence is committee report → passed to be engrossed → enacted, so its
-#: decisive floor vote is enactment rather than anything called "passage". This
-#: takes Maine from 84 matched rollcalls to 446 and is state-isolated by
-#: measurement: match counts are unchanged for IN, OR, WI, NY, VT, MT, OH, CA
-#: and US.
-#:
-#: Two large Maine families are deliberately excluded, on the authors'
-#: instruction:
-#:
-#: * **Committee-report acceptance** (~907 rollcalls) — "Acc Maj OTP Rep" and
-#:   the ought-not-to-pass variants. Accepting an ONTP report is what actually
-#:   kills a Maine bill, so these are substantively decisive, but they are
-#:   committee-report votes and the pipeline excludes committee votes for every
-#:   other state. Including them would make Maine incomparable to the rest.
-#: * **Veto votes** (~620) — "Veto Override (2/3)", "Reconsideration - Veto".
-#:   A veto override measures a different question than passage.
-_PASSAGE_PATTERN = re.compile(
-    r"(THIRD|3RD|ON PASSAGE|FINAL PASSAGE|ENACTMENT|ENACT-|TO BE ENGROSSED)",
-    re.IGNORECASE,
-)
 
 
 def process_chamber_votes(
@@ -398,11 +359,7 @@ def process_chamber_votes(
         no_ids: list[str] = []
 
         for vote in bill_chamber_data.chamber_votes:
-            # Filter for THIRD/3RD/ON PASSAGE votes
-            desc = vote.description
-            if isinstance(desc, list):
-                desc = " ".join(str(d) for d in desc)
-            if not _PASSAGE_PATTERN.search(desc.upper() if desc else ""):
+            if not is_passage_description(vote.description):
                 continue
 
             # Get voter IDs filtered to known legislators

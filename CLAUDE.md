@@ -128,7 +128,7 @@ discovered by running every state rather than the three with goldens:
 | State | Status |
 |-------|--------|
 | KY | **No output.** `legiscan_data/KY/` has zero rollcall rows — a data gap, not a code defect. |
-| ME | **Substantially incomplete** (31 House / 6 Senate bills). Maine records passage as parliamentary abbreviations — "Acc Maj OTP Rep" — which the passage pattern does not model; only 84 of 2,514 rollcalls are recognised. Deciding which motions count is a domain judgement, so it is left open. |
+| ME | Covered as of the floor-passage fix (123 House / 69 Senate). Maine's decisive floor vote is **enactment**, not anything named "passage"; committee-report acceptance and veto motions are excluded by author decision — see `forge.passage` for why that is *not* a committee-vote exclusion. |
 
 A state whose rollcall vocabulary is unrecognised produces **empty matrices
 while the run exits successfully**. New York was in this state until the
@@ -142,6 +142,42 @@ When extending `_PASSAGE_PATTERN`, keep the change *additive*. Relaxing it to a
 bare `PASSAGE` was measured and would additionally match committee "Do Pass"
 motions in OR (+124), OH (+446), CA (+574) and US (+3) — silently changing
 results for states that currently reproduce MATLAB exactly.
+
+### Coverage audit — two states still under-cover, one verified correct
+
+Every state's unmatched motions were reviewed after the Maine fix. Most
+unmatched text is correctly excluded (committee "Do pass", amendments, tabling
+motions). Three cases needed measuring, and **two are open questions for the
+authors**:
+
+| State | Bills covered now | Would be newly covered | Verdict |
+|-------|------------------|------------------------|---------|
+| **OH** | 618 | **+417 (+67%)** | **open** — real gap |
+| **VT** | 81 | **+20 (+25%)** | **open** — real gap |
+| MT | 2045 | +54 | **correctly excluded** |
+
+**Ohio** records passage as "House/Senate Favorable Passage", "House - Bill
+Passed (Vote)", "House Passed", "Senate Passed" — 1,143 rollcalls none of which
+match. Ohio matches only via "Third Consideration", so roughly **40% of its
+passage votes are currently invisible**. Unlike New York this does not produce
+empty output, which is why it survived the last pass: partial coverage looks
+exactly like a less active legislature.
+
+**Vermont** phrases the motion as a question — "Shall the bill pass?", "Shall
+the bill pass in concurrence with proposal of amendment?" — 81 unmatched.
+
+**Montana** was the one that looked worst by raw count (3,867 unmatched "2nd
+Reading Passed") and is the one that is *right*. Montana's second reading is a
+Committee-of-the-Whole floor vote that precedes third reading on the same bill:
+2,042 of the 2,096 bills involved already have a matched third-reading vote, so
+including them would double-count rather than extend coverage. Leave it alone.
+
+Both open cases carry the same hazard, which is why they were not simply
+patched: `process_chamber_votes` accumulates agreement for *every* matching
+floor vote on a bill, so adding a second phrasing double-counts the bills that
+have both (180 in Ohio, 22 in Vermont) while genuinely extending the rest.
+Deciding whether "House Passed" is a distinct event from "Third Consideration"
+or a duplicate record of it is a domain judgement, like Maine's.
 
 ## Known Issues / Technical Debt
 

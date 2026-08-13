@@ -6,13 +6,10 @@ duplicated between predictOutcomes.m and eloPrediction.m (~60 lines).
 
 from __future__ import annotations
 
-import re
-
 import numpy as np
 
 from forge.config import create_id_strings, cstr_ainbp
-
-_PASSAGE_PATTERN = re.compile(r"(THIRD|3RD|ON PASSAGE)", re.IGNORECASE)
+from forge.passage import is_passage_description
 
 
 def get_specific_impact(revealed_preference: int, specific_impact: float) -> float:
@@ -136,13 +133,9 @@ def update_bayes(
 
     # Divide by the legislators who actually cast a recorded vote, not by a
     # constant. MATLAB divided by a literal 100 (predictOutcomes.m), which is
-    # only correct for a 100-seat chamber — it happens to be right for the
-    # Indiana House and wrong everywhere else. For Oregon's 29-seat Senate the
-    # two differ by 12.24 accuracy points.
-    #
-    # The consequence is deliberate and was chosen by the authors: Senate
-    # accuracy figures produced here do not compare to any previously published
-    # number, and no compatibility mode reproduces the old ones. The 100.0
+    # only correct for a 100-seat chamber — right for the Indiana House and
+    # wrong everywhere else; Oregon's 29-seat Senate differs by 12.24 points.
+    # There is deliberately no compatibility mode (see CLAUDE.md). The 100.0
     # below is a percent conversion and nothing else.
     n_known = t_final_results.size - final_nan.sum()
     if n_known > 0:
@@ -232,12 +225,12 @@ def find_passage_vote(bill, chamber: str, ids: list[str]):
     if chamber_data is None:
         return None, None, None
 
-    # Search from last to first for THIRD/3RD/ON PASSAGE vote
+    # Search from last to first for the passage vote. This must use the same
+    # definition as the matrix builder: when the two drifted apart, New York and
+    # Maine were recognised by `process_chamber_votes` and invisible here, so
+    # both states built agreement matrices that no prediction could ever use.
     for vote in reversed(chamber_data.chamber_votes):
-        desc = vote.description
-        if isinstance(desc, list):
-            desc = " ".join(str(d) for d in desc)
-        if _PASSAGE_PATTERN.search(desc.upper() if desc else ""):
+        if is_passage_description(vote.description):
             yes_ids = create_id_strings(vote.yes_list, ids)
             no_ids = create_id_strings(vote.no_list, ids)
             return yes_ids, no_ids, yes_ids + no_ids
@@ -322,6 +315,8 @@ def predict_bill(
         t1 = np.ones(n) * bayes_initial
 
     # Compute t1 accuracy
+    # Same accuracy definition as update_bayes — scaled by the legislators who
+    # actually voted, not MATLAB's literal 100. See the note there.
     t1_check = np.round(t1) == t_final_results
     incorrect = np.sum(~t1_check)
     nan_in_incorrect = np.sum(np.isnan(t_final_results[~t1_check]))
