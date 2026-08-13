@@ -133,6 +133,17 @@ def update_bayes(
     # A legislator with no recorded vote compares unequal to NaN and so lands
     # in `wrong`; those are discounted rather than counted as mispredictions.
     nan_in_incorrect = (wrong & final_nan).sum()
+
+    # Divide by the legislators who actually cast a recorded vote, not by a
+    # constant. MATLAB divided by a literal 100 (predictOutcomes.m), which is
+    # only correct for a 100-seat chamber — it happens to be right for the
+    # Indiana House and wrong everywhere else. For Oregon's 29-seat Senate the
+    # two differ by 12.24 accuracy points.
+    #
+    # The consequence is deliberate and was chosen by the authors: Senate
+    # accuracy figures produced here do not compare to any previously published
+    # number, and no compatibility mode reproduces the old ones. The 100.0
+    # below is a percent conversion and nothing else.
     n_known = t_final_results.size - final_nan.sum()
     if n_known > 0:
         accuracy = 100.0 * (1.0 - (incorrect - nan_in_incorrect) / n_known)

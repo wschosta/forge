@@ -155,7 +155,32 @@ results for states that currently reproduce MATLAB exactly.
 8. Third-party MEX binaries (`CStrAinBP.mexw64`, `xml2struct.mexw64`) are Windows-only.
 9. Bug in `classifyBill.m`: references `text` instead of `clean_title` at line 13.
 10. Bug in `outputBillInformation.m`: references `senate_bill_ids` instead of `chamber_bill_ids` at line 14.
-11. Accuracy formula uses hardcoded `100` instead of actual legislator count.
+11. Accuracy formula uses hardcoded `100` instead of actual legislator count. **Resolved in the port — see below.**
+
+## Accuracy Is Scaled by the Real Roster
+
+MATLAB divided prediction accuracy by a literal `100` (`predictOutcomes.m:149`).
+That constant stands in for the number of legislators and is correct only for a
+100-seat chamber — right for the Indiana House, wrong for every Senate.
+
+The port divides by the legislators who actually cast a recorded vote
+(`bayes.py`). **This is the authors' decision and there is deliberately no
+compatibility mode**: no flag reproduces the old numbers.
+
+The divergence is not small, and Senate figures from this pipeline **do not
+compare to any previously published Senate number**:
+
+| Chamber | MATLAB | Port | Difference |
+|---------|--------|------|------------|
+| House (100 seats) | 95.00% | 95.00% | 0.00 pts |
+| Indiana Senate (51) | 95.00% | 90.20% | 4.80 pts |
+| Wisconsin Senate (34) | 95.00% | 85.29% | 9.71 pts |
+| Oregon Senate (29) | 95.00% | 82.76% | 12.24 pts |
+
+Anyone finding Senate accuracies "wrong" against the committed MATLAB outputs
+should check this first — it is expected, and independent of every other
+documented difference. `tests/test_predict/test_bayes.py::TestAccuracyDenominator`
+pins all of it.
 
 ## Bill Classification
 

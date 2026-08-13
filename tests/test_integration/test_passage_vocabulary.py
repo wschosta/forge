@@ -31,6 +31,7 @@ MINIMUM_MATCHES = {
     "CA": 15000,  # measured 16160
     "US": 600,    # measured  638
     "VT": 100,    # measured  135
+    "ME": 400,    # measured  446 — enactment + engrossment, see below
 }
 
 #: Phrasings drawn verbatim from the committed data, one per distinct style.
@@ -40,9 +41,21 @@ REAL_DESCRIPTIONS = [
     ("House Third Reading", True),
     ("Senate Floor Vote - Final Passage", True),
     ("Assembly Floor Vote - Final Passage", True),
+    ("Enactment", True),
+    ("Enactment - Emer", True),
+    ("Enact-emer 2/3 Elect", True),
+    ("Passage To Be Engrossed", True),
+    ("Pass To Be Engrossed As Amend", True),
     ("House Committee Do Pass", False),
     ("Senate Committee Do pass as amended", False),
+    # Maine committee-report and veto motions stay out: the first are committee
+    # votes, which are excluded for every other state, and the second measure
+    # override rather than passage.
     ("Acc Maj Ought Not To Pass Rep RC #30", False),
+    ("Acc Maj Otp As Amended Rep RC #119", False),
+    ("Accept Min Ontp Rpt RC #106", False),
+    ("Veto Override (2/3) RC #12", False),
+    ("Reconsideration - Veto RC #398", False),
 ]
 
 
@@ -76,24 +89,38 @@ def test_state_vocabulary_is_recognised(state: str) -> None:
     )
 
 
-def test_maine_vocabulary_remains_largely_unrecognised() -> None:
-    """Maine is a known gap, recorded here so it is not mistaken for working.
+def test_maine_excludes_committee_reports_and_vetoes() -> None:
+    """Maine's scope decision is pinned, because it is a judgement not a fact.
 
-    Maine records passage through parliamentary abbreviations — "Acc Maj OTP
-    Rep" for accepting a majority ought-to-pass report — which the pattern does
-    not model. It yields a small number of matches, enough to produce non-empty
-    output, which makes the gap easy to miss. Deciding which Maine motions
-    constitute the passage vote is a domain judgement for the authors; this test
-    documents the status quo and will fail if someone changes it, prompting the
-    floor above to be updated deliberately.
+    Maine's floor sequence is committee report → passed to be engrossed →
+    enacted, so enactment is its decisive floor vote. Two large families are
+    deliberately left out and this test is what stops them drifting back in:
+
+    * committee-report acceptance (~907 rollcalls) — substantively decisive in
+      Maine, since accepting an ought-not-to-pass report kills the bill, but
+      they are committee votes and every other state excludes those;
+    * veto overrides (~620) — a different question than passage.
+
+    Together those are more rollcalls than the passage votes themselves, so
+    admitting them by accident would quietly change what Maine's matrices mean.
     """
     rollcalls = read_all_csv("rollcalls", "ME", "legiscan_data")
     descriptions = rollcalls["description"].dropna().astype(str)
 
-    matches = sum(bool(_PASSAGE_PATTERN.search(d.upper())) for d in descriptions)
+    def matched(pattern: str) -> int:
+        hits = descriptions[descriptions.str.upper().str.contains(pattern, regex=True)]
+        return sum(bool(_PASSAGE_PATTERN.search(d.upper())) for d in hits)
 
-    assert 0 < matches < 0.1 * len(descriptions), (
-        f"Maine now matches {matches} of {len(descriptions)} rollcalls. If the "
-        f"vocabulary was deliberately extended, update this test and regenerate "
-        f"Maine's baseline outputs."
+    assert matched(r"OUGHT NOT TO PASS|ONTP") == 0, (
+        "Maine ought-not-to-pass committee reports are now being counted as "
+        "passage votes. These are committee votes; including them makes Maine "
+        "incomparable to the other ten states."
+    )
+    assert matched(r"\bOTP\b|OTP-A") == 0, (
+        "Maine ought-to-pass committee reports are now being counted as passage "
+        "votes. See above — committee reports are excluded by design."
+    )
+    assert matched(r"VETO") == 0, (
+        "Maine veto motions are now being counted as passage votes. A veto "
+        "override measures a different question than passage."
     )

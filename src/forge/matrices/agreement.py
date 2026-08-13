@@ -290,11 +290,27 @@ def _extract_party_submatrix(
 #: is strictly additive: rollcall match counts are unchanged for IN, OR, WI, VT,
 #: MT, OH, CA and US, and the golden comparisons confirm it.
 #:
-#: Maine remains substantially unmatched (84 of 2,514) — it records passage
-#: through parliamentary abbreviations such as "Acc Maj OTP Rep" (accept
-#: majority ought-to-pass report). Deciding which of those motions is the
-#: passage vote is a domain judgement, not a pattern-matching one.
-_PASSAGE_PATTERN = re.compile(r"(THIRD|3RD|ON PASSAGE|FINAL PASSAGE)", re.IGNORECASE)
+#: ``ENACTMENT``, ``ENACT-`` and ``TO BE ENGROSSED`` cover Maine, whose floor
+#: sequence is committee report → passed to be engrossed → enacted, so its
+#: decisive floor vote is enactment rather than anything called "passage". This
+#: takes Maine from 84 matched rollcalls to 446 and is state-isolated by
+#: measurement: match counts are unchanged for IN, OR, WI, NY, VT, MT, OH, CA
+#: and US.
+#:
+#: Two large Maine families are deliberately excluded, on the authors'
+#: instruction:
+#:
+#: * **Committee-report acceptance** (~907 rollcalls) — "Acc Maj OTP Rep" and
+#:   the ought-not-to-pass variants. Accepting an ONTP report is what actually
+#:   kills a Maine bill, so these are substantively decisive, but they are
+#:   committee-report votes and the pipeline excludes committee votes for every
+#:   other state. Including them would make Maine incomparable to the rest.
+#: * **Veto votes** (~620) — "Veto Override (2/3)", "Reconsideration - Veto".
+#:   A veto override measures a different question than passage.
+_PASSAGE_PATTERN = re.compile(
+    r"(THIRD|3RD|ON PASSAGE|FINAL PASSAGE|ENACTMENT|ENACT-|TO BE ENGROSSED)",
+    re.IGNORECASE,
+)
 
 
 def process_chamber_votes(
