@@ -58,18 +58,44 @@ import re
 #: these two layers should know they genuinely disagree here, and that the
 #: disagreement is deliberate.
 #:
-#: Every extension so far has been verified state-isolated by measurement: match
-#: counts must be unchanged for every state other than the one being fixed.
-#: ``tests/test_integration/test_passage_vocabulary.py`` enforces that, and
-#: ``CLAUDE.md`` records the coverage audit — including Ohio and Vermont, which
-#: are still under-covered and awaiting a scope decision.
+#: **Ohio** was a defect of the same class as New York rather than a judgement.
+#: LegiScan records Ohio Senate passage as "Third Consideration" but House
+#: passage as "House - Bill Passed (Vote)" / "House Passed" / "House Favorable
+#: Passage", so the original vocabulary caught one chamber and missed the other:
+#: 292 House rollcalls matched against 785 missed, which is why Ohio produced 62
+#: House bills against 95 Senate for a 99-seat House. Of the 180 bills carrying
+#: both phrasings, none shared a date or a yea/nay tally with the vote already
+#: counted — they are distinct votes in the other chamber, not duplicate records.
+#:
+#: Ohio's terms are anchored to a chamber prefix for a measured reason. An
+#: unanchored ``BILL PASSED`` additionally matched 845 Montana *committee*
+#: motions ("(H) Appropriations Committee Executive Action -- Bill Passed"),
+#: which is exactly the silent scope creep the isolation check exists to catch.
+#:
+#: **Vermont** counts both its third-reading motion and "Shall the bill pass?",
+#: by author decision. The latter is the actual passage vote and was previously
+#: excluded, so Vermont had been measuring only the procedural motion to advance
+#: a bill. Counting both is consistent with Oregon and Montana, where a bill's
+#: sequential floor votes each contribute.
+#:
+#: Every extension is verified state-isolated by measurement: match counts must
+#: be unchanged for every state other than the one being fixed.
+#: ``tests/test_integration/test_passage_vocabulary.py`` enforces that.
+#:
 #: Every alternative below is load-bearing — dropping any one was measured:
 #: ``ON PASSAGE`` alone carries Congress (638 → 1), ``FINAL PASSAGE`` carries
 #: New York (10,127 → 0), and ``ENACTMENT``/``ENACT-``/``TO BE ENGROSSED``
 #: carry distinct Maine strings ("Enactment - Emer" against "Enact-emer 2/3
-#: Elect"). The group is non-capturing because only match/no-match is ever read.
+#: Elect"). The groups are non-capturing because only match/no-match is read.
 PASSAGE_PATTERN = re.compile(
-    r"(?:THIRD|3RD|ON PASSAGE|FINAL PASSAGE|ENACTMENT|ENACT-|TO BE ENGROSSED)",
+    r"(?:"
+    r"THIRD|3RD|ON PASSAGE|FINAL PASSAGE"          # WI, OR, IN, US, NY
+    r"|ENACTMENT|ENACT-|TO BE ENGROSSED"            # ME
+    r"|(?:HOUSE|SENATE)\s*-\s*BILL PASSED"          # OH
+    r"|(?:HOUSE|SENATE) FAVORABLE PASSAGE"          # OH
+    r"|(?:HOUSE|SENATE) PASSED\b"                   # OH
+    r"|SHALL THE BILL PASS"                         # VT
+    r")",
     re.IGNORECASE,
 )
 

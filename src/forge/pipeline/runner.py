@@ -20,6 +20,7 @@ import pandas as pd
 from forge.classify.classifier import classify_bill
 from forge.classify.learning import load_matlab_learning_data
 from forge.classify.tfidf_classifier import load_tfidf_classifier
+from forge.checkpoint import Checkpoint
 from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
@@ -291,6 +292,7 @@ def run_pipeline(
     config: ForgeConfig,
     legiscan_dir: str | Path = "legiscan_data",
     data_dir: str | Path = "data",
+    checkpoint_dir: str | Path | None = None,
 ) -> dict:
     """Run the full Forge analysis pipeline for a state.
 
@@ -300,6 +302,11 @@ def run_pipeline(
         config: ForgeConfig with all parameters.
         legiscan_dir: Path to legiscan_data directory.
         data_dir: Base path for output data directory.
+        checkpoint_dir: Where the Monte Carlo and Elo drivers store partial
+            progress. Supplying it makes those stages resumable after an
+            interruption; omitting it restores the original behaviour, where an
+            interrupted run loses everything. Matrix building is fast enough
+            that it is never checkpointed.
 
     Returns:
         Dict with all results: bill_set, matrix_results, prediction results, etc.
@@ -317,6 +324,11 @@ def run_pipeline(
 
     for d in [state_dir, outputs_dir, prediction_dir, elo_dir, histogram_dir]:
         d.mkdir(parents=True, exist_ok=True)
+
+    checkpoint = Checkpoint(checkpoint_dir)
+    if checkpoint.enabled:
+        logger.info("Checkpointing to %s (%d entries present)",
+                    checkpoint.directory, len(checkpoint.keys()))
 
     logger.info("Starting pipeline for %s", state)
 
@@ -423,6 +435,7 @@ def run_pipeline(
                 config.monte_carlo_number,
                 str(prediction_dir), str(outputs_dir),
                 config.recompute_montecarlo,
+                checkpoint=checkpoint,
             )
             results_all[chamber]["mc_results"] = mc_results
 
@@ -445,6 +458,7 @@ def run_pipeline(
                 mr.bill_ids, bill_set, [-1],
                 chamber_people, mr.chamber_sponsor_matrix, mr.chamber_matrix,
                 chamber, config,
+                checkpoint=checkpoint,
             )
             results_all[chamber]["elo_results"] = elo_results
 

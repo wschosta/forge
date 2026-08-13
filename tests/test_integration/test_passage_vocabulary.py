@@ -35,10 +35,10 @@ MINIMUM_MATCHES = {
     "WI": 800,    # measured  856 — "Read a third time and passed"
     "NY": 9000,   # measured 10127 — "Floor Vote - Final Passage"
     "MT": 4000,   # measured 4423
-    "OH": 900,    # measured  968
+    "OH": 2000,   # measured 2111 — "Third Consideration" plus House passage
     "CA": 15000,  # measured 16160
     "US": 600,    # measured  638
-    "VT": 100,    # measured  135
+    "VT": 200,    # measured  216 — third reading plus "Shall the bill pass?"
     "ME": 400,    # measured  446 — enactment + engrossment, see below
 }
 
@@ -53,11 +53,21 @@ REAL_DESCRIPTIONS = [
     ("Enactment", True),
     ("Enact-emer 2/3 Elect", True),
     ("Passage To Be Engrossed", True),
+    ("House Favorable Passage", True),
+    ("House - Bill Passed (Vote)", True),
+    ("Senate Passed", True),
+    ("Shall the bill pass?", True),
+    ("Shall the bill pass in concurrence with proposal of amendment?", True),
     # Committee motions must stay out for every state: broadening the pattern to
     # a bare PASSAGE would sweep in "Do Pass" and silently change results for
     # the states that currently reproduce MATLAB exactly.
     ("House Committee Do Pass", False),
     ("Senate Committee Do pass as amended", False),
+    # Ohio's terms are anchored to a chamber prefix precisely so this Montana
+    # committee motion cannot match. An unanchored "BILL PASSED" swept in 845 of
+    # these.
+    ("(H) Appropriations Committee Executive Action -- Bill Passed", False),
+    ("(H) Judiciary Committee Executive Action--Bill Passed as Amended", False),
 ]
 
 
