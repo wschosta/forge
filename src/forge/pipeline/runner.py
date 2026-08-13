@@ -17,10 +17,10 @@ from pathlib import Path
 
 import pandas as pd
 
+from forge.checkpoint import Checkpoint
 from forge.classify.classifier import classify_bill
 from forge.classify.learning import load_matlab_learning_data
 from forge.classify.tfidf_classifier import load_tfidf_classifier
-from forge.checkpoint import Checkpoint
 from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes

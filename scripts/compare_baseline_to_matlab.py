@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tests"))
 
-from test_integration.golden import compare_to_golden  # noqa: E402
+from test_integration.golden import compare_to_golden
 
 #: The pooled agreement matrices are the headline outputs — the ones downstream
 #: Stata scripts consume. Per-category files are compared too, but summarised.

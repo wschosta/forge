@@ -35,8 +35,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Pinned deliberately. Unpinned, this installed whatever ruff had shipped
+      # most recently, so a release that adds a rule to the default set turned
+      # CI red on a branch whose code had not changed — and disagreed with the
+      # ruff a contributor had locally, which is worse than either alone. Bump
+      # this line to adopt a new ruff, as a change that can be reviewed.
+      # Keep it in step with the pin in pyproject.toml's dev extra.
       - name: Install ruff
-        run: pip install ruff
+        run: pip install ruff==0.16.2
 
       # Not `--exit-non-zero-on-fix`; this only reports, it never rewrites.
       - name: Ruff
