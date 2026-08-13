@@ -27,9 +27,16 @@ class TestCli:
         assert "--predict-elo" in result.output
 
     def test_classify_help(self, runner):
+        """The command trains the classifier; it used to be a stub.
+
+        `--optimize` belonged to the word-frequency classifier's iwv/awv grid
+        search and has no analogue in the TF-IDF model, so it is gone rather
+        than kept as a no-op.
+        """
         result = runner.invoke(cli, ["classify", "--help"])
         assert result.exit_code == 0
-        assert "--optimize" in result.output
+        for option in ["--xml-dir", "--output", "--test-size", "--seed"]:
+            assert option in result.output, f"{option} missing from classify --help"
 
     def test_run_invalid_state(self, runner):
         result = runner.invoke(cli, ["run", "XX"])

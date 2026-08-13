@@ -60,15 +60,13 @@ def _filter_bills_by_category(
             continue
 
         # Check for passage vote using shared helper
-        yes_ids, no_ids, legislator_list = find_passage_vote(bill, chamber, ids)
+        _yes_ids, _no_ids, legislator_list = find_passage_vote(bill, chamber, ids)
         if legislator_list is None or len(legislator_list) < chamber_size * 0.5:
             continue
 
         # Assign to matching category buckets
         for i, cat in enumerate(category_flags):
-            if cat == 0:
-                category_capture[i].append(bill_id)
-            elif bill.issue_category == cat:
+            if cat == 0 or bill.issue_category == cat:
                 category_capture[i].append(bill_id)
 
     # Remove empty categories
@@ -129,7 +127,6 @@ def elo_monte_carlo(
     for flag, capture in zip(filtered_flags, category_capture):
         logger.info("Category %d: %d bills", flag, len(capture))
 
-    mc_flag = config.elo_monte_carlo_number > 1
     results: dict[int, pd.DataFrame] = {}
 
     for cat_idx, cat_flag in enumerate(filtered_flags):

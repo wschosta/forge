@@ -13,7 +13,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from forge.classify.stopwords import get_common_words
+import numpy as np
+
 from forge.classify.text_cleanup import cleanup_text
 from forge.config import CONCISE_RECODE
 
@@ -257,3 +258,79 @@ def load_learning_data(path: str | Path) -> LearningData | None:
         return None
     with open(p, "rb") as f:
         return pickle.load(f)
+
+
+def _mat_cell_to_str_list(value: Any) -> list[str]:
+    """Coerce a MATLAB cell array of char to a list of Python strings."""
+    if value is None:
+        return []
+    return [str(v) for v in np.atleast_1d(value).ravel().tolist()]
+
+
+def _mat_cell_to_float_list(value: Any) -> list[float]:
+    """Coerce a MATLAB numeric array to a list of Python floats."""
+    if value is None:
+        return []
+    return [float(v) for v in np.atleast_1d(value).ravel().tolist()]
+
+
+def _mat_nested(value: Any, converter: Any) -> list[list[Any]]:
+    """Coerce a MATLAB cell-of-cells into a list of lists via ``converter``."""
+    if value is None:
+        return []
+    return [converter(entry) for entry in np.atleast_1d(value).ravel().tolist()]
+
+
+def load_matlab_learning_data(path: str | Path) -> LearningData | None:
+    """Load the MATLAB-trained classifier from ``+la/learning_algorithm_data.mat``.
+
+    The classifier was trained once in MATLAB and its output committed as a
+    ``.mat`` file; retraining from the congressional XML is a separate, much
+    more expensive operation. Loading the existing model lets the Python
+    pipeline classify bills with the exact weights the MATLAB results were
+    produced from, which is what makes golden-file comparison meaningful.
+
+    ``master_issue_codes``/``additional_issue_codes`` are MATLAB
+    ``containers.Map`` objects, which serialize as opaque blobs that scipy
+    cannot unpack. They hold display labels only and play no part in
+    classification, so they are skipped rather than reconstructed.
+
+    Args:
+        path: Path to the ``.mat`` file.
+
+    Returns:
+        Populated LearningData, or None if the file is absent or unreadable.
+    """
+    p = Path(path)
+    if not p.exists():
+        logger.warning("MATLAB learning data not found: %s", p)
+        return None
+
+    try:
+        import scipy.io as sio
+
+        mat = sio.loadmat(str(p), squeeze_me=True, struct_as_record=False)
+    except Exception as exc:  # noqa: BLE001 - scipy raises many types on a malformed .mat; the classifier is optional, so degrade rather than abort
+        logger.warning("Could not read MATLAB learning data %s: %s", p, exc)
+        return None
+
+    store = mat.get("data_storage")
+    if store is None:
+        logger.warning("No 'data_storage' struct in %s", p)
+        return None
+
+    data = LearningData(
+        cut_off=int(getattr(store, "cut_off", 3001)),
+        common_words=_mat_cell_to_str_list(getattr(store, "common_words", None)),
+        issue_code_count=int(getattr(store, "issue_code_count", 0)),
+        iwv=float(getattr(store, "iwv", 0.13)),
+        awv=float(getattr(store, "awv", 0.0)),
+        description_text=_mat_nested(getattr(store, "description_text", None), _mat_cell_to_str_list),
+        weights=_mat_nested(getattr(store, "weights", None), _mat_cell_to_float_list),
+    )
+
+    logger.info(
+        "Loaded MATLAB classifier from %s: %d categories, iwv=%s, awv=%s",
+        p, data.issue_code_count, data.iwv, data.awv,
+    )
+    return data

@@ -602,7 +602,7 @@ These bugs were identified during code analysis and should be fixed during their
 |-----|-------|-----|
 | `classifyBill.m` line 13 references undeclared `text` instead of `clean_title` | Phase 3 | Use correct variable name |
 | `outputBillInformation.m` line 14 references `senate_bill_ids` instead of `chamber_bill_ids` | Phase 4 | Use correct parameter name |
-| Accuracy formula uses hardcoded `100` instead of actual legislator count | Phase 5 | Use `len(legislators)` |
+| Accuracy formula uses hardcoded `100` instead of actual legislator count | Phase 5 | Use `len(legislators)` — **see below, this changes every Senate figure** |
 | `keyboard` debug statement in `state.m` line 263 | Phase 9 | Remove |
 | Windows backslash paths throughout `+la/` | Phase 0 | Use `pathlib.Path` / forward slashes |
 | Committee processing entirely commented out | Phase 4 | Leave disabled but structure code so it can be re-enabled later |
@@ -639,8 +639,468 @@ Use this to track progress across all phases:
 - [ ] **Phase 7** — Surface plots, histograms, boxplots, visual spot-check
 - [ ] **Phase 8** — CSV export, finance merge, ideology merge, seniority merge, output validated
 - [ ] **Phase 9** — Pipeline orchestrator, CLI, logging, progress bars, caching, end-to-end test
-- [ ] **Phase 10** — Golden-file validation, Stata compatibility, performance benchmarking, code quality
+- [~] **Phase 10** — Golden-file validation **in place for Indiana** (`tests/test_integration/`); Stata compatibility, performance benchmarking, and full multi-state validation still outstanding
 - [ ] **Cleanup** — All bugs fixed, documentation updated, MATLAB files in `matlab/`
+
+### Phase 10 status: what the golden comparison currently shows
+
+Running the pipeline against real Indiana data and diffing every category-0
+matrix against the committed MATLAB outputs gives:
+
+| Output | Labels | max abs diff | mean abs diff |
+|--------|--------|--------------|---------------|
+| `H_seat_matrix_0` | identical | 5e-14 | 3e-15 |
+| `H_cha_A_matrix_0` (agreement) | identical | 4.4e-2 | 4.4e-3 |
+| `S_cha_A_matrix_0` (agreement) | identical | 1.3e-2 | 3.4e-3 |
+| `H_cha_A_votes_0` (co-vote counts) | identical | 7 votes | 3.1 votes |
+| `S_cha_A_votes_0` (co-vote counts) | identical | 3 votes | 2.1 votes |
+| sponsor matrices | 2 columns differ | 3.3e-1 | 5.6e-3 |
+
+Read this as: **structure matches, arithmetic is close, bill selection is not
+identical.** Seat proximity — the one output that does not depend on which
+bills are included — agrees to floating point, which is good evidence the
+numerical core is correct.
+
+#### Why the residual cannot currently be closed
+
+The residual was tracked down rather than left open, and the conclusion is that
+it is a **data-provenance gap, not a code defect**. The evidence:
+
+1. **The difference is strictly additive.** Comparing golden to Python co-vote
+   counts cell by cell: golden is higher in 56% of cells, equal in 44%, and
+   lower in **0%**. Python never counts a co-vote MATLAB did not; it only
+   misses some. So the logic does not fabricate agreement — it is
+   under-inclusive.
+
+2. **The shortfall is bimodal by legislator.** Exactly 25 of 100 House members
+   match perfectly; the other 75 are short by ~4.3 votes each. The 25 average
+   181 recorded votes against 280 for the rest — they are short-serving
+   members. The bills Python is missing therefore sit in a period those 25
+   were not present for.
+
+3. **The missing bills are ones MATLAB classified and Python cannot.** Five
+   House bills (*Novelty lighters*, *Mopeds*, *Expungement* ×2, *Motorsports*)
+   score zero against every category, so both implementations' final guard
+   returns NaN and the category filter drops them. Forcing them in collapses
+   the worst per-legislator gap from 4.97 to 0.92.
+
+4. **Their vocabulary is missing from the committed classifier.** The pruned
+   `description_text` in `+la/learning_algorithm_data.mat` holds 8,752 distinct
+   words and contains none of EXPUNGEMENT, MOTORSPORTS, or NOVELTY. The
+   unpruned `unique_text_full_store` in the same file holds 24,238 words and
+   contains all three.
+
+The committed classifier is therefore **a different vintage from the one that
+generated the committed outputs** — it was pruned harder. `data/IN/saved_data.mat`
+is stale in the same way: it lists 310 House bills, and forcing Python to use
+exactly that set makes agreement *worse* (mean gap 3.06 → 4.68), so it does not
+correspond to the golden CSVs either.
+
+Closing the gap from here means recovering or retraining the classifier that
+produced the goldens, then regenerating them — not adjusting filters. Tuning
+selection logic until the numbers line up would overfit to an artifact whose
+provenance is unknown, and would silently trade correctness for a green test.
+The 1e-10 target in Phase 10.2 should be restored only once inputs and outputs
+are known to come from the same run.
+
+One genuine fidelity bug *was* found while investigating and is fixed: the
+competitive test only bracketed the vote on one side (`pct < threshold`) where
+MATLAB brackets both (`(1 - threshold) < pct < threshold`, forge.m:156-157), so
+near-unanimous *failures* were treated as competitive. No Indiana bill falls in
+that band, so it does not move these numbers, but it would affect other states.
+
+---
+
+## Phase 5 status: Monte Carlo prediction
+
+The prediction half was run against real Indiana data for the first time and
+compared to the committed `H_prediction_model_results_m2500.csv` at matching
+iteration count (2,500), over the 87 legislators the two runs share:
+
+| Column | Golden | Python | Pearson | Spearman |
+|--------|--------|--------|---------|----------|
+| `coverage` | mean 0.844, sd 0.174 | mean 0.841, sd 0.177 | **0.9995** | 0.9974 |
+| `results` | mean 0.752, sd 0.155 | mean 0.673, sd 0.189 | **0.8057** | **0.8159** |
+
+`coverage` agreeing to 0.9995 is strong evidence the Monte Carlo machinery is
+sound: bill selection, legislator ordering and iteration counting all line up.
+
+Measured again at the same 2,500 iterations before and after the two fixes
+below, impact scores moved from Pearson 0.7417 / Spearman 0.7621 to
+0.8057 / 0.8159, and their mean from 8.194 to 0.673 against the golden's 0.752.
+
+Worth noting which fix did what. The rollcall date sort made Indiana's
+*matrices* slightly worse — that is documented above and accepted — while making
+its *predictions* measurably better. There is no contradiction: the sort changes
+which rollcall counts as a bill's final vote, and prediction reads that vote
+directly where the matrices only use it to decide inclusion. It is a further
+reason to trust the sort over Indiana's matrix goldens.
+
+**Resolved: impact scores were sign-inverted by a percentage/fraction mixup.**
+Accuracies travel through the Monte Carlo as percentages, so the denominator
+`1 - accuracy` (processLegislatorImpacts.m:66) was evaluating to about -46
+instead of the ~0.53 of remaining headroom it means. A positive numerator over
+a negative denominator made every impact score negative; normalizing negatives
+by their maximum then produced an unbounded column rather than the golden's
+[0, 1]. Reading the accuracy as a fraction fixes both.
+
+| | min | max | mean |
+|---|---|---|---|
+| Golden | 0.0287 | 1.0000 | 0.683 |
+| Before | 1.0000 | 18.2419 | 8.194 |
+| After | 0.1428 | 1.0000 | 0.694 |
+
+Two further divergences from MATLAB were corrected at the same time, both
+affecting magnitude rather than sign:
+
+1. Placement weight is summed over *all* Monte Carlo iterations before being
+   applied (processLegislatorImpacts.m:65), so a legislator repeatedly drawn
+   into an influential position is weighted by how often that happened. The
+   port applied a per-iteration placement instead.
+2. MATLAB uses iteration 1's starting accuracy as the denominator for every
+   iteration (`specific_accuracy_list(1,1)`, not `(j,1)`). This looks like an
+   indexing slip, but the committed results depend on it, so it is reproduced.
+
+Rank correlation against the golden is essentially unchanged (Spearman 0.74 vs
+0.76) — the ranking was always roughly right. What changed is that magnitudes
+are now on the same scale as MATLAB's and therefore comparable across runs,
+chambers and states.
+
+The residual correlation of ~0.75 is consistent with the provenance
+differences documented under Phase 10: the two runs use different bill sets,
+different rosters (100 vs 104) and different classifier vintages.
+
+An earlier attempt to fix this at the normalization step, by switching to
+MATLAB's signed maximum, corrected the output sign while leaving the inversion
+in place and is what produced the unbounded scale. The lesson generalizes:
+a normalization that has to be adjusted to make signs come out is usually
+compensating for something upstream.
+
+Two further notes from the same run:
+
+- `montecarloPrediction.m:20` writes the results CSV; the port computed the
+  table and ignored its `outputs_directory`, leaving the directory empty on a
+  successful run. Fixed.
+- The prediction golden carries 104 legislators — LegiScan's roster — where the
+  matrix goldens carry the curated 100. The committed outputs were not all
+  generated from one configuration, which is more evidence for the provenance
+  problem described under Phase 10.
+
+### Performance
+
+`update_bayes` dominated at 92% of Monte Carlo runtime. Removing a linear ID
+scan, an N-1 element list rebuilt per call, and numpy dispatch overhead on
+~100-element arrays took it from 7.04 ms to 3.12 ms per iteration, verified
+bit-identical on a 25-bill signature over real data. A production 16,000
+iteration House run extrapolates to ~4.1 hours, down from ~9.3 — a long batch
+job, but a feasible one.
+
+---
+
+## Phase 6 status: Elo rating
+
+Elo had also never been run against real data. It works: output is
+structurally correct, `score_fixed_k` stays pinned at exactly 1500 (the
+rating system is zero-sum, so this is a real invariant rather than a
+coincidence), and pairwise comparison counts scale linearly with iteration
+count in line with the golden.
+
+`tests/test_integration/test_indiana_elo.py` covers structure, the rating
+invariants, and the comparison budget. It deliberately does **not** assert
+score values against the golden: MATLAB's were produced at 15,000 iterations,
+where the spread has narrowed to 1232-1516; a tractable test run sits at
+1060-1880 simply because it has not converged. Any tolerance loose enough to
+pass would prove nothing.
+
+**Performance is the open problem here, and it is worse than prediction.**
+The pairwise update is O(n^2) per bill per iteration — about 4,950 comparisons
+for a 100-seat chamber — and each comparison reads scores that earlier
+comparisons in the same sweep already wrote, so the loop is inherently
+sequential and cannot be vectorized without changing the numbers. Hoisting
+config lookups out of the inner loop (they were being resolved tens of millions
+of times) and switching to plain Python floats gave 2.36x, verified
+bit-identical. That takes a full 15,000-iteration run over all 12 categories
+from roughly 58 hours to roughly 25.
+
+25 hours is still not a routine run. Closing that gap needs either a compiled
+inner loop (numba/Cython) or an algorithmic change, and neither is a
+refactoring decision — it is a question about how often this analysis actually
+needs to be rerun.
+
+---
+
+## Phase 3/4 status: per-category matrices
+
+The golden harness originally compared only category 0 — the matrix pooled
+across every classified bill — which is structurally blind to
+misclassification: a bill filed under the wrong policy area lands in the same
+pooled aggregate, so the matrix does not move. The per-category matrices are
+99 of the 128 committed golden CSVs, and comparing them localizes the residual
+sharply.
+
+Maximum absolute difference by policy area (House, agreement matrix):
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|----|----|
+| 0 | .098 | .250 | .050 | .143 | 0 | 0 | .029 | 0 | 0 | 0 |
+
+Six of eleven categories agree with MATLAB to ~5e-16 — accumulated rounding and
+nothing else. The disagreement is confined to categories 2, 3, 4, 5 and 8.
+
+Stated positively: **wherever the two classifier vintages agree on which bills
+belong to a policy area, the resulting matrices are the same numbers.** The
+agreement-matrix arithmetic is correct; what remains is which bills get sorted
+where, which is consistent with the missing classifier vintage rather than with
+any computational defect.
+
+## Phase 7 status: visualization
+
+`plot.plotRunner` is called from inside `state.run()` (state.m:218, 249, 315),
+so plotting is part of a normal MATLAB run rather than an optional extra. The
+port had never executed it against real data.
+
+It works. All 20 pooled-category figures MATLAB produced are produced here, all
+48 files (figures plus histograms) are valid PNGs, none empty, each surface plot
+paired with its flattened companion. The port additionally emits four Senate
+party-sponsor figures the golden lacks, which is harmless.
+
+Figures are not compared pixel-for-pixel — different plotting engines, and the
+underlying matrices differ slightly regardless. The tests check the failure
+modes that actually occur: a figure family dropping out of the run, and
+matplotlib writing a file it never drew into.
+
+## Multi-state validation: Oregon and Wisconsin reproduce exactly
+
+Indiana is the awkward reference state — its House roster is special-cased to a
+curated spreadsheet, and the classifier vintage behind its outputs is gone, both
+of which put a floor under how closely it can be reproduced. Oregon and
+Wisconsin have neither problem and take the ordinary LegiScan roster path, which
+the Indiana tests never exercise.
+
+| State / chamber | Agreement matrix | Co-vote counts |
+|-----------------|------------------|----------------|
+| WI House (100x100) | **exact** | **exact** |
+| WI Senate (34x34) | **exact** | **exact** |
+| OR House (59x59) | **exact** | **exact** |
+| OR Senate (29x29) | **exact** | **exact** |
+
+Exact agreement on the raw co-vote tallies is the part that matters. Those are
+counts of events, with no averaging or normalization anywhere in them, so
+matching cell-for-cell across a 100x100 matrix is not something two
+implementations do by coincidence.
+
+**This is the strongest evidence in the project that the agreement-matrix
+arithmetic is correct.** Where Indiana's classifier and roster provenance are
+not in play, the port reproduces MATLAB exactly.
+
+### The rollcall ordering bug
+
+Oregon's Senate was the last chamber to disagree — by two co-votes, tracked down
+to a single bill out of 266. The cause was a dropped sort.
+
+`forge.m:147` reads a bill's rollcalls with
+`sortrows(..., 'date')`. The port did not sort. That matters because a bill's
+outcome is taken from its **last** chamber vote, and LegiScan orders rollcalls
+by `roll_call_id`, which stops being chronological as soon as a bill has votes
+recorded across more than one session file. Oregon bill 676975 has rollcalls
+dated Feb 7, Jun 21, Jun 26, Apr 1, Apr 9, May 13, May 28 — in that order.
+
+Reading the wrong rollcall as final changes the recorded yes-percentage, which
+changes whether the bill counts as competitive, which decides whether it enters
+the matrices at all. Sorting closed Oregon's Senate completely: 266 bills, zero
+missing, zero extra, every cell identical.
+
+**It also made Indiana worse** — its worst per-category difference went from
+0.250 to 0.333, and category 1 stopped matching exactly. The fix was kept
+anyway, on three grounds: it is literally what the MATLAB source does, it makes
+two entire states exact across both chambers and both output types, and "the
+final vote" can only sensibly mean the chronologically final one.
+
+Indiana moving the wrong way under a provably correct fix is not an argument
+against the fix. It is more evidence for what the rest of this document already
+says: **Indiana's committed outputs came from a code vintage that did not sort**,
+alongside a classifier that no longer exists, a roster that differs from its own
+prediction outputs, and filenames from a different era again.
+
+Note these goldens predate the per-category filenames — `H_cha_A_matrix.csv`
+here against Indiana's `H_cha_A_matrix_0.csv` — which is more evidence the
+committed outputs span several code vintages.
+
+## Retraining the classifier: feasibility
+
+With the vintage that produced the committed outputs confirmed unavailable,
+retraining is the only route to a reproducible baseline. It was measured rather
+than assumed, and it is cheap:
+
+| Step | Cost |
+|------|------|
+| Parse 30,495 bills from the committed corpus archives | 40 s |
+| Preprocess (clean and tokenize titles and summaries) | 16 s |
+| Build the learning table | <1 s |
+
+About a minute end to end, against 12 hours or more for a full analysis run.
+Retraining is not the expensive part of anything.
+
+The retrained model recovers vocabulary the committed one lacks: 9,197 distinct
+words against 8,752, sharing 88.1% of the committed vocabulary. Of the five
+words whose absence causes bills to go unclassified (see Phase 10), the
+retrained model contains **MOTORSPORTS**; MOPEDS, EXPUNGEMENT, NOVELTY and
+LIGHTERS remain absent even after retraining, so the vocabulary gap is only
+partly a pruning artifact.
+
+**One blocker, and it must be fixed before retraining is usable.** The corpus
+contains **35** distinct policy areas, but the concise recode table maps only
+**32**. Three areas have no concise category and are silently dropped:
+
+| Code | Policy area |
+|------|-------------|
+| 33 | Transportation and Public Works |
+| 34 | Unemployment |
+| 35 | Water Resources Development |
+
+This is not a porting error — MATLAB's own table covers the same 32
+(`main.m:55`), and the port transcribed it faithfully. It is data drift: the
+table was written against a smaller corpus, and the committed archives have
+since grown. Rerunning MATLAB today would drop the same three.
+
+The saving grace is that all three sort at the end of the alphabet, so they take
+codes 33-35 and leave the existing 1-32 assignments untouched. Extending
+`CONCISE_RECODE` to place them is therefore a purely additive change — but it is
+a substantive one, since transportation is not a marginal policy area, and it
+decides which concise category those bills join. That is a research judgement,
+not a refactoring decision.
+
+## Replacing the classifier
+
+The word-frequency classifier scores a title by summing learned per-word weights
+per policy area and taking the argmax. Measured on held-out congressional bills
+for the first time — it had never been scored on data it did not train on — it
+reaches **42.9%** across 11 categories, against a 20.9% majority-class floor.
+
+A standard TF-IDF + linear SVM on the same stratified split:
+
+| Configuration | Accuracy | Macro-F1 |
+|---------------|----------|----------|
+| title + summary, LinearSVC | 94.6% | 93.7% |
+| **title only, LinearSVC** | **84.3%** | **83.1%** |
+| title only, ComplementNB | 78.2% | 76.3% |
+| title only, LogisticRegression | 77.9% | 74.8% |
+| word-frequency (current) | 42.9% | — |
+| majority class | 20.9% | — |
+
+**Title-only is the honest comparison, and it roughly doubles accuracy.** The
+94.6% row cannot be used: LegiScan's state bill data carries only
+`bill_number,bill_id,title`, so a model needing summaries could be trained and
+never applied.
+
+Much of the gain is not the algorithm. The original **trains on bill summaries
+but classifies bill titles**, so its training and prediction feature spaces do
+not match. Training on titles alone fixes that regardless of model choice.
+
+Two caveats worth carrying forward:
+
+1. **Domain shift is real and unmeasured.** Accuracy is measured on
+   congressional bills because that is the only labelled corpus available; the
+   model is applied to *state* titles, which are shorter and drafted
+   differently. The relative improvement should carry; the absolute number will
+   not, and 84.3% must not be quoted as state-level accuracy. Nothing in the
+   repository can currently measure that gap — a hand-labelled sample of state
+   bills would be the way to close it.
+2. **A linear model never abstains.** The word-frequency classifier returns NaN
+   for unfamiliar vocabulary, leaving 5% of bills unclassified. An SVM always
+   has a best guess, so those bills now get confident-looking labels.
+   `classify_with_confidence` returns the decision margin so a caller can
+   recover the distinction, but the default path does not.
+
+`forge classify` now trains and writes this model. The word-frequency classifier
+is left in place and still drives the pipeline — switching the default changes
+scientific output and is a research decision, not a refactoring one.
+
+## The training path (was: not wired)
+
+`forge classify` used to be a stub that printed "Bill classification not yet
+fully wired" and returned, with its default `--xml-dir` pointing at a directory
+that does not hold the corpus. It now reads the corpus, derives category codes
+from the sorted unique policy areas at training time (matching main.m:38), fits
+the TF-IDF model, reports held-out accuracy and writes the result.
+
+It also reports which policy areas were skipped for having no concise category,
+so the 35-vs-32 gap is visible at training time rather than silent.
+
+### The accuracy denominator: an intended fix with a large, undocumented effect
+
+`predictOutcomes.m:149` computes accuracy as
+`100*(1-(incorrect-are_nan)/(100-are_nan))`. That literal `100` stands in for
+the number of legislators and is only correct for a 100-seat chamber. The port
+divides by the actual roster size instead, which is listed above as an intended
+fix — but the consequence was not recorded anywhere, and it is not small.
+
+With five mispredictions and no abstentions:
+
+| Chamber | MATLAB | Port | Difference |
+|---------|--------|------|------------|
+| House (100 seats) | 95.00% | 95.00% | 0.00 pts |
+| Indiana Senate (51) | 95.00% | 90.20% | 4.80 pts |
+| Wisconsin Senate (34) | 95.00% | 85.29% | 9.71 pts |
+| Oregon Senate (29) | 95.00% | 82.76% | **12.24 pts** |
+
+So **every Senate prediction and Elo accuracy figure is expected to disagree
+with the committed MATLAB outputs**, independently of every other difference in
+this document, and by up to twelve percentage points. The House agrees exactly
+because that is the case MATLAB's constant happens to fit.
+
+This is worth a research decision rather than being left implicit. The port's
+version is the defensible one — scoring a 29-seat chamber out of 100 understates
+error by design — but it means Senate accuracies are not comparable to any
+previously published figure. Pinned by tests in `test_bayes.py` so it cannot be
+rediscovered as a bug.
+
+### Elo against Oregon and Wisconsin
+
+Their single-pass Elo goldens (`{H,S}_elo_score_0.csv`, from
+eloPrediction.m:222) were checked too, now that their matrices reproduce
+exactly.
+
+Scores cannot be compared. MATLAB shuffles the legislator order with `randperm`
+(eloPrediction.m:114) and numpy's generator produces a different sequence from
+any seed, and in a *single* pass that ordering dominates the result — Monte
+Carlo averaging is what makes Elo scores stable. Rank correlations against the
+goldens are accordingly near zero in both directions, which says nothing about
+correctness.
+
+The `count` column is the exception: it tallies pairwise comparisons and does
+not depend on ordering, so it is deterministic given the same bills. Oregon's
+House matches it **exactly**. Oregon's Senate and both Wisconsin chambers do
+not, despite every one of their matrices matching cell for cell.
+
+That gap has not been chased. The likely explanation is that Elo processes a
+subset of the matrix bills — `predict_bill` drops any bill whose passage vote
+covers less than half the chamber — so the Elo goldens depend on more than the
+bill selection the matrices already agree on. It is also consistent with these
+goldens being yet another vintage.
+
+### Roster provenance, again
+
+The Elo golden carries LegiScan's 104-member roster, like the prediction
+golden, while the agreement-matrix goldens carry the curated 100 that state.m
+substitutes for Indiana. The two rosters share 87 members; neither contains the
+other. That is now three committed output families generated from at least two
+different configurations, which is worth keeping in view when interpreting any
+comparison against them.
+
+Three defects had to be fixed before any comparison was possible at all:
+
+| Defect | Effect | Fix |
+|--------|--------|-----|
+| `total_vote` / `yes_percent` never derived | Pipeline raised `KeyError` on the first real rollcall file | Derive at ingest, mirroring forge.m:98-99 |
+| Bills never classified | Every category filter excluded every bill; pipeline completed and wrote **empty 0×0 matrices** without erroring | Load the MATLAB-trained classifier and classify in `_init_bills`, mirroring forge.m:133-136 |
+| Indiana House roster not special-cased | LegiScan's 2016 roster yields 104 members for a 100-seat chamber | Read `data/IN/undergrad/people_2013-2014.xlsx`, mirroring state.m:153-158 |
+
+The second is the one to keep in mind when planning future phases: the unit
+suite was fully green throughout, because every unit test builds its own
+synthetic inputs. Only a test that runs real data through the whole pipeline
+and compares against a known-good result can catch a stage that silently
+produces nothing.
 
 ---
 

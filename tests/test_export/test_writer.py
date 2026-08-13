@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from forge.export.writer import write_tables, output_bill_information
+from forge.export.writer import output_bill_information, write_tables
 from forge.matrices.agreement import MatrixResults
 from forge.models.bill import Bill
 

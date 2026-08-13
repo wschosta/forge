@@ -39,17 +39,17 @@ def _make_simple_learning_data() -> LearningData:
 class TestClassifyBill:
     def test_classifies_agriculture_bill(self):
         data = _make_simple_learning_data()
-        category, matches = classify_bill("Farm crop wheat production", data)
+        category, _matches = classify_bill("Farm crop wheat production", data)
         assert category == 1  # Agriculture
 
     def test_classifies_education_bill(self):
         data = _make_simple_learning_data()
-        category, matches = classify_bill("School student education program", data)
+        category, _matches = classify_bill("School student education program", data)
         assert category == 2  # Education
 
     def test_classifies_health_bill(self):
         data = _make_simple_learning_data()
-        category, matches = classify_bill("Hospital patient health care medicine", data)
+        category, _matches = classify_bill("Hospital patient health care medicine", data)
         assert category == 3  # Health
 
     def test_returns_nan_for_empty_text(self):

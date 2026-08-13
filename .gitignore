@@ -31,3 +31,39 @@ Thumbs.db
 # Forge cached data
 *.pkl
 *.parquet
+
+# Congressional corpus: the archives under data/congressional_archive/Store/
+# are the committed copy. Extracting them here is expected and useful, but the
+# ~35,000 loose files are byte-identical to the archives and must not be
+# committed again — the parser reads the archives directly.
+data/congressional_archive/BILLSTATUS-*.xml
+
+# Learning-algorithm scratch. +la/main.m and the optimizers write dated run
+# artifacts here; they are experiment output, not inputs to any pipeline.
++la/temp/
+
+# Trained TF-IDF classifier. Deliberately not committed: it is a 4.4 MB pickle,
+# scikit-learn pickles do not load reliably across versions, and `forge classify`
+# rebuilds it from the committed corpus in about 40 seconds. Run that once after
+# cloning; without it the pipeline warns and falls back to the legacy classifier.
++la/tfidf_classifier.pkl
+
+# Generated pipeline outputs. These are produced by `forge run` and are not
+# inputs to anything, so they are regenerated rather than committed.
+#
+# The CSVs under data/{STATE}/outputs/ and data/{STATE}/elo_model/ are NOT
+# ignored: they are the MATLAB results of record, and the only reference the
+# Python port can be validated against. Only the binary .mat companions and the
+# large Monte Carlo dumps are excluded.
+data/*/prediction_model/*.mat
+data/*/elo_model/**/*.mat
+data/*/merged_data/
+data/*/merged_data.zip
+
+# The reproducible baseline (scripts/regenerate_baseline.sh). Unlike the MATLAB
+# outputs above it regenerates deterministically from committed inputs in about
+# fifteen minutes, so the ~100 MB of CSVs is not worth carrying in the history —
+# being reproducible is the whole point of it. The README explaining what it is
+# and how to rebuild it is committed.
+baseline/*
+!baseline/README.md

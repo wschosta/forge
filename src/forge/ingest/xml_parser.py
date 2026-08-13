@@ -8,10 +8,10 @@ used to train the bill classification learning algorithm.
 from __future__ import annotations
 
 import logging
-import re
+import zipfile
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Sequence
 from xml.etree.ElementTree import ParseError
 
 from lxml import etree
@@ -48,9 +48,8 @@ def _extract_best_summary(bill_element: etree._Element) -> str:
     # Multiple summaries: find the last one that's not the placeholder
     for item in reversed(items):
         text_el = item.find("text")
-        if text_el is not None and text_el.text:
-            if "(This measure has not been amended" not in text_el.text:
-                return text_el.text
+        if text_el is not None and text_el.text and "(This measure has not been amended" not in text_el.text:
+            return text_el.text
 
     # Fallback to the last summary
     text_el = items[-1].find("text")
@@ -66,6 +65,51 @@ def _extract_subjects(bill_element: etree._Element) -> list[str]:
         if name_el is not None and name_el.text:
             subjects.append(name_el.text)
     return subjects
+
+
+def iter_xml_documents(xml_dir: str | Path) -> Iterator[tuple[str, bytes]]:
+    """Yield ``(filename, contents)`` for every bill XML under a directory.
+
+    The congressional corpus is stored twice: as ~35,000 loose
+    ``BILLSTATUS-*.xml`` files and as the zip archives they were extracted
+    from, under ``Store/``. Reading the archives directly means the loose copies
+    do not have to be committed, which is worth roughly 35,000 files in the
+    repository. Both forms are still accepted so an already-extracted working
+    directory keeps working.
+
+    A bill present in both forms is yielded once. The loose file wins, on the
+    grounds that anyone who extracted or edited one meant to use it.
+
+    Args:
+        xml_dir: Directory holding loose ``*.xml`` files, ``*.zip`` archives, or
+            a ``Store/`` subdirectory of archives.
+
+    Yields:
+        Tuples of (filename, raw XML bytes), ordered by filename.
+    """
+    xml_dir = Path(xml_dir)
+    seen: set[str] = set()
+    documents: list[tuple[str, bytes]] = []
+
+    for xml_file in sorted(xml_dir.glob("*.xml")):
+        seen.add(xml_file.name)
+        documents.append((xml_file.name, xml_file.read_bytes()))
+
+    archives = sorted(xml_dir.glob("*.zip")) + sorted((xml_dir / "Store").glob("*.zip"))
+    for archive in archives:
+        try:
+            with zipfile.ZipFile(archive) as zf:
+                for entry in zf.namelist():
+                    name = Path(entry).name
+                    if not name.endswith(".xml") or name in seen:
+                        continue
+                    seen.add(name)
+                    documents.append((name, zf.read(entry)))
+        except (zipfile.BadZipFile, OSError) as exc:
+            logger.warning("Could not read archive %s: %s", archive, exc)
+
+    documents.sort(key=lambda item: item[0])
+    yield from documents
 
 
 def parse_congressional_xml(
@@ -86,23 +130,23 @@ def parse_congressional_xml(
     if not xml_dir.is_dir():
         raise FileNotFoundError(f"XML directory not found: {xml_dir}")
 
-    xml_files = sorted(xml_dir.glob("*.xml"))
-    if not xml_files:
-        logger.warning("No XML files found in %s", xml_dir)
+    documents = list(iter_xml_documents(xml_dir))
+    if not documents:
+        logger.warning("No XML documents found in %s (looked for *.xml and *.zip)", xml_dir)
         return []
 
     parsed: list[ParsedBill] = []
     incomplete = 0
 
-    for xml_file in xml_files:
+    for name, data in documents:
         try:
-            tree = etree.parse(str(xml_file))
+            root = etree.fromstring(data)
         except (ParseError, etree.XMLSyntaxError) as e:
-            logger.warning("Failed to parse %s: %s", xml_file.name, e)
+            logger.warning("Failed to parse %s: %s", name, e)
             incomplete += 1
             continue
 
-        root = tree.getroot()
+        xml_file = Path(name)
         bill = root.find("bill")
         if bill is None:
             incomplete += 1

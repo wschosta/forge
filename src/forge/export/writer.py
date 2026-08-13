@@ -69,11 +69,16 @@ def write_tables(
     _write(results.republicans_committee_sponsor, "com_R_s_matrix")
     _write(results.democrats_committee_sponsor, "com_D_s_matrix")
 
-    # Consistency matrix
-    if results.consistency_matrix is not None and not results.consistency_matrix.empty:
-        if "percentage" in results.consistency_matrix.columns:
-            if results.consistency_matrix["percentage"].notna().any():
-                _write(results.consistency_matrix, "consistency_matrix")
+    # Consistency matrix. MATLAB never populates it, so it is written only when
+    # it actually holds values rather than emitting an all-NaN file.
+    consistency = results.consistency_matrix
+    if (
+        consistency is not None
+        and not consistency.empty
+        and "percentage" in consistency.columns
+        and consistency["percentage"].notna().any()
+    ):
+        _write(consistency, "consistency_matrix")
 
     # Seat matrix
     _write(results.seat_matrix, "seat_matrix")

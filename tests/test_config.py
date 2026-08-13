@@ -1,6 +1,5 @@
 """Tests for forge.config — constants, state properties, and cstr_ainbp."""
 
-import math
 
 import pytest
 
@@ -16,7 +15,6 @@ from forge.config import (
     create_id_strings,
     cstr_ainbp,
 )
-
 
 # ---------------------------------------------------------------------------
 # State properties

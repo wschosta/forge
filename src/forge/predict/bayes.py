@@ -54,6 +54,7 @@ def update_bayes(
     t_count: int,
     ids: list[str],
     t_final_results: np.ndarray,
+    id_index: dict[str, int] | None = None,
 ) -> tuple[np.ndarray, int, float]:
     """Perform a single Bayesian posterior update for one revealed legislator.
 
@@ -71,28 +72,37 @@ def update_bayes(
         t_count: Current time step counter.
         ids: List of all legislator ID strings.
         t_final_results: Ground-truth final vote outcomes (1/0/NaN).
+        id_index: Optional prebuilt ``{id_string: position}`` map. Supplying it
+            replaces a linear scan over ``ids`` with a dict lookup; results are
+            identical either way.
 
     Returns:
         Tuple of (updated_values, new_t_count, accuracy_percentage).
     """
     t_count += 1
 
-    # Find the index of the revealed legislator
-    matched_ids, _ = cstr_ainbp(ids, [revealed_id])
-    if not matched_ids:
-        return t_set_previous_value, t_count, 0.0
+    # Find the index of the revealed legislator. This runs once per legislator
+    # per Monte Carlo iteration — on the order of millions of times in a full
+    # run — so callers in the hot path pass a prebuilt index rather than paying
+    # for a linear scan over the ID strings every time.
+    if id_index is not None:
+        matched_idx = id_index.get(revealed_id, -1)
+        if matched_idx < 0:
+            return t_set_previous_value, t_count, 0.0
+    else:
+        matched_ids, _ = cstr_ainbp(ids, [revealed_id])
+        if not matched_ids:
+            return t_set_previous_value, t_count, 0.0
+        matched_idx = matched_ids[0]
 
-    matched_idx = matched_ids[0]
-
-    # Build the list of all other legislators
-    n = len(ids)
-    id_list = [i for i in range(n) if i != matched_idx]
-
-    # Compute impacts for all other legislators
-    combined_impact = np.zeros(n)
-    combined_impact[id_list] = np.abs(
-        1.0 - revealed_preference - chamber_specifics[id_list, matched_idx]
+    # Impact of the revealed preference on every other legislator. Computing
+    # the whole column and zeroing the revealed legislator is equivalent to
+    # excluding it via an index list, and avoids rebuilding an N-1 element
+    # Python list on every call.
+    combined_impact = np.abs(
+        1.0 - revealed_preference - chamber_specifics[:, matched_idx]
     )
+    combined_impact[matched_idx] = 0.0
 
     # Bayesian update: P_new = (impact * P_old) / (impact * P_old + (1-impact) * (1-P_old))
     prev = t_set_previous_value
@@ -114,11 +124,16 @@ def update_bayes(
     # Set the revealed legislator's value
     t_set_current_value[matched_idx] = abs(revealed_preference - 0.001)
 
-    # Compute accuracy
-    t_check = np.round(t_set_current_value) == t_final_results
-    incorrect = np.sum(~t_check)
-    nan_in_incorrect = np.sum(np.isnan(t_final_results[~t_check]))
-    n_known = np.sum(~np.isnan(t_final_results))
+    # Compute accuracy. ndarray methods are used in preference to the np.*
+    # wrappers throughout: they skip numpy's dispatch layer, which dominates
+    # the cost at these array sizes (~100 elements).
+    wrong = t_set_current_value.round() != t_final_results
+    final_nan = np.isnan(t_final_results)
+    incorrect = wrong.sum()
+    # A legislator with no recorded vote compares unequal to NaN and so lands
+    # in `wrong`; those are discounted rather than counted as mispredictions.
+    nan_in_incorrect = (wrong & final_nan).sum()
+    n_known = t_final_results.size - final_nan.sum()
     if n_known > 0:
         accuracy = 100.0 * (1.0 - (incorrect - nan_in_incorrect) / n_known)
     else:
@@ -324,7 +339,8 @@ def predict_bill(
     t_count = 1
     for i, lid in enumerate(legislator_order):
         t_current_value, t_count, acc = update_bayes(
-            lid, int(direction[i]), t_current_value, chamber_specifics, t_count, ids, t_final_results
+            lid, int(direction[i]), t_current_value, chamber_specifics, t_count, ids,
+            t_final_results, id_index=id_to_idx,
         )
         accuracies[i + 1] = acc
 

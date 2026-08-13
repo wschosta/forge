@@ -12,10 +12,14 @@ Runs the full Forge analysis pipeline for a given state:
 from __future__ import annotations
 
 import logging
+from collections.abc import Callable
 from pathlib import Path
 
 import pandas as pd
 
+from forge.classify.classifier import classify_bill
+from forge.classify.learning import load_matlab_learning_data
+from forge.classify.tfidf_classifier import load_tfidf_classifier
 from forge.config import ForgeConfig
 from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
@@ -25,10 +29,50 @@ from forge.models.bill import Bill
 logger = logging.getLogger(__name__)
 
 
+#: Curated roster MATLAB substitutes for LegiScan's people table for the
+#: Indiana House (state.m:153-158). Relative to the state's data directory.
+INDIANA_HOUSE_ROSTER = Path("undergrad") / "people_2013-2014.xlsx"
+
+
+def _load_indiana_house_people(state_dir: Path) -> pd.DataFrame | None:
+    """Load the hand-curated Indiana House roster MATLAB uses instead of LegiScan.
+
+    Indiana is special-cased in state.m: rather than selecting House members
+    from LegiScan's people table, MATLAB reads a curated spreadsheet of the
+    2013-2014 chamber. LegiScan's own 2016 roster carries 104 members for a
+    100-seat chamber (mid-term replacements are listed alongside the members
+    they replaced), so the curated file is what the committed MATLAB House
+    outputs were actually built from.
+
+    Unlike the LegiScan path, ``party_id`` here is already 0/1, so it must not
+    be decremented again.
+
+    Args:
+        state_dir: The state's data directory (e.g. ``data/IN``).
+
+    Returns:
+        The roster sorted by party, or None if the file is missing/unreadable.
+    """
+    roster_path = state_dir / INDIANA_HOUSE_ROSTER
+    if not roster_path.exists():
+        logger.warning("Indiana House roster not found at %s; falling back to LegiScan", roster_path)
+        return None
+
+    try:
+        people = pd.read_excel(roster_path)
+    except Exception as exc:  # noqa: BLE001 - openpyxl raises many types on a malformed workbook; fall back to LegiScan rather than abort
+        logger.warning("Could not read Indiana House roster %s: %s", roster_path, exc)
+        return None
+
+    logger.info("Using curated Indiana House roster (%d members) from %s", len(people), roster_path.name)
+    return people.sort_values("party_id").reset_index(drop=True)
+
+
 def _prepare_people(
     people_df: pd.DataFrame,
     state_id: str,
     chamber: str,
+    state_dir: Path | None = None,
 ) -> pd.DataFrame | None:
     """Filter people to a specific chamber and adjust party IDs.
 
@@ -38,10 +82,17 @@ def _prepare_people(
         people_df: Raw people DataFrame from LegiScan.
         state_id: Two-letter state code.
         chamber: 'house' or 'senate'.
+        state_dir: The state's data directory, needed only to locate Indiana's
+            curated House roster.
 
     Returns:
         Filtered people DataFrame for the specified chamber, or None.
     """
+    if state_id == "IN" and chamber == "house" and state_dir is not None:
+        roster = _load_indiana_house_people(state_dir)
+        if roster is not None:
+            return roster
+
     required_cols = {"year", "role_id", "party_id"}
     if not required_cols.issubset(set(people_df.columns)):
         logger.warning("People DataFrame missing required columns: %s", required_cols - set(people_df.columns))
@@ -67,6 +118,57 @@ def _prepare_people(
     return chamber_people.reset_index(drop=True)
 
 
+def _resolve_classifier(config: ForgeConfig) -> Callable[[str], int | float] | None:
+    """Return a title → category function for the configured classifier.
+
+    Choosing between them is a scientific decision, not a detail: the legacy
+    scorer leaves roughly 5% of bills unclassified, and those bills are absent
+    from every category-filtered matrix as a result. The TF-IDF model always
+    produces a category, so switching changes which bills are analysed at all.
+
+    Falls back to the legacy classifier when ``"tfidf"`` is requested but no
+    trained model is present, so a fresh checkout still runs — loudly, because
+    silently analysing a different set of bills than intended is worse than a
+    warning.
+
+    Args:
+        config: Pipeline configuration.
+
+    Returns:
+        A callable taking a bill title and returning a category code (or NaN),
+        or None when no classifier could be loaded at all.
+    """
+    if config.classifier == "tfidf":
+        model = load_tfidf_classifier(config.tfidf_classifier_path)
+        if model is not None:
+            logger.info(
+                "Classifying with the TF-IDF model (%.1f%% held-out accuracy, %d bills)",
+                model.accuracy, model.n_training_bills,
+            )
+            return model.classify
+        logger.warning(
+            "classifier='tfidf' but no trained model at %s — falling back to the "
+            "legacy word-frequency classifier. Run `forge classify` to train one. "
+            "Results will differ from a TF-IDF run.",
+            config.tfidf_classifier_path,
+        )
+    elif config.classifier != "legacy":
+        raise ValueError(
+            f"Unknown classifier {config.classifier!r}; expected 'tfidf' or 'legacy'"
+        )
+
+    learning_data = load_matlab_learning_data(config.learning_data_path)
+    if learning_data is None:
+        logger.warning(
+            "No trained classifier available — bills will be unclassified and "
+            "all category-filtered matrices will come out empty."
+        )
+        return None
+
+    logger.info("Classifying with the legacy word-frequency classifier")
+    return lambda title: classify_bill(title, learning_data)[0]
+
+
 def _init_bills(
     bills_df: pd.DataFrame,
     rollcalls_df: pd.DataFrame,
@@ -74,6 +176,7 @@ def _init_bills(
     sponsors_df: pd.DataFrame,
     history_df: pd.DataFrame | None,
     config: ForgeConfig,
+    classify_fn: Callable[[str], int | float] | None = None,
 ) -> dict[int, Bill]:
     """Initialize bill objects from raw DataFrames.
 
@@ -86,6 +189,10 @@ def _init_bills(
         sponsors_df: Sponsors DataFrame.
         history_df: History DataFrame (optional).
         config: ForgeConfig.
+        classify_fn: Title → category function. When None, bills keep an
+            ``issue_category`` of NaN and every category filter downstream
+            excludes them — matching MATLAB's ``learning_algorithm_exist``
+            guard at forge.m:133.
 
     Returns:
         Dict mapping bill_id → Bill objects.
@@ -106,6 +213,12 @@ def _init_bills(
             title=str(row.get("title", "")),
         )
 
+        # Classify the bill by policy area (forge.m:133-136). Every downstream
+        # matrix is filtered by issue_category, so skipping this leaves the
+        # whole pipeline with nothing to aggregate.
+        if classify_fn is not None:
+            bill.issue_category = classify_fn(bill.title)
+
         # Sponsors
         if sponsors_by_bill and "sponsor_id" in sponsors_df.columns:
             try:
@@ -114,9 +227,19 @@ def _init_bills(
             except KeyError:
                 pass
 
-        # Rollcalls and votes for each chamber
+        # Rollcalls and votes for each chamber, in chronological order.
+        #
+        # The sort is load-bearing (forge.m:147). A bill's outcome is taken from
+        # its *last* chamber vote, and LegiScan orders rollcalls by
+        # roll_call_id, which is not chronological once a bill has votes
+        # recorded across more than one session file. Without sorting, "last"
+        # can be a committee vote or an early reading rather than the final
+        # passage vote, which changes the recorded yes-percentage and with it
+        # whether the bill counts as competitive at all.
         try:
             bill_rollcalls = rollcalls_by_bill.get_group(bill_id)
+            if "date" in bill_rollcalls.columns:
+                bill_rollcalls = bill_rollcalls.sort_values("date", kind="stable")
         except KeyError:
             bill_rollcalls = rollcalls_df.iloc[0:0]  # empty DataFrame
 
@@ -146,7 +269,15 @@ def _init_bills(
                     pct = ch_data.final_yes_percentage
                     if pct >= 0:
                         setattr(bill, f"passed_{ch}", 1 if pct > 0.5 else 0)
-                        ch_data.competitive = int(pct < config.competitive_threshold)
+                        # Competitive means the vote was close in *either*
+                        # direction, so MATLAB brackets it on both sides
+                        # (forge.m:156-157): (1 - threshold) < pct < threshold.
+                        # Testing only the upper bound would also admit bills
+                        # that failed near-unanimously, which are just as
+                        # lopsided as the ones the threshold exists to exclude.
+                        ch_data.competitive = int(
+                            (1 - config.competitive_threshold) < pct < config.competitive_threshold
+                        )
 
             if bill.passed_house >= 0 or bill.passed_senate >= 0:
                 bill.complete = 1
@@ -197,15 +328,23 @@ def run_pipeline(
     votes_df = read_all_csv("votes", state, legiscan_dir)
     sponsors_df = read_all_csv("sponsors", state, legiscan_dir)
 
+    # History is optional: it supplies introduction and last-action dates for
+    # bill metadata export, and nothing in the matrix or prediction path reads
+    # it. A state without history CSVs should still run.
     history_df = None
     try:
         history_df = read_all_csv("history", state, legiscan_dir)
-    except Exception:
-        pass
+    except (FileNotFoundError, OSError, ValueError) as exc:
+        logger.info("No history data for %s (%s); continuing without it", state, exc)
 
-    # Step 2: Initialize bill objects
+    # Step 2: Load the configured classifier (state.m:123 → la.loadLearnedMaterials)
+    classify_fn = _resolve_classifier(config)
+
+    # Step 3: Initialize bill objects
     logger.info("Initializing %d bills...", len(bills_df))
-    bill_set = _init_bills(bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config)
+    bill_set = _init_bills(
+        bills_df, rollcalls_df, votes_df, sponsors_df, history_df, config, classify_fn
+    )
     logger.info("Bill set: %d bills", len(bill_set))
 
     # Step 3: Process each chamber
@@ -216,7 +355,7 @@ def run_pipeline(
     }
 
     for chamber in ["house", "senate"]:
-        chamber_people = _prepare_people(people_df, state, chamber)
+        chamber_people = _prepare_people(people_df, state, chamber, state_dir)
         if chamber_people is None:
             logger.info("No %s people found, skipping", chamber)
             continue
@@ -252,6 +391,21 @@ def run_pipeline(
 
             # Store results for category 0
             if category == 0:
+                # A chamber that matches no bills at all is almost never a
+                # legitimate result — it means a filter rejected everything, and
+                # the pipeline would otherwise report success while writing
+                # empty matrices. That is how New York went unnoticed: all
+                # 10,127 of its rollcalls failed the passage-description match,
+                # so every category came out empty and the run still exited 0.
+                if not matrix_results.bill_ids:
+                    logger.warning(
+                        "%s %s: no bills matched — every output for this chamber "
+                        "will be empty. Common causes: rollcall descriptions that "
+                        "do not match the passage pattern, or no rollcall data for "
+                        "this state.",
+                        state,
+                        chamber,
+                    )
                 results_all[chamber]["matrix_results"] = matrix_results
                 results_all[chamber]["people"] = chamber_people
                 results_all[chamber]["bill_ids"] = matrix_results.bill_ids

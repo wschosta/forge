@@ -41,7 +41,6 @@ def process_legislator_impacts(
     master_list: list[tuple[int, float]] = []
 
     n_bills = len(legislators_list)
-    n_mc = accuracy_list.shape[1] if accuracy_list.ndim > 1 else 1
 
     for i in range(n_bills):
         bill_legislators = legislators_list[i]  # list of MC iterations
@@ -80,30 +79,35 @@ def process_legislator_impacts(
 
         unique_legislators = np.unique(leg_array)
 
+        # Denominator: how much accuracy was left to gain from the starting
+        # point (processLegislatorImpacts.m:66, `1 - specific_accuracy_list(1,1)`).
+        #
+        # Accuracies are carried through the Monte Carlo as percentages, so
+        # `1 - accuracy` on the raw value gives roughly -46 rather than the
+        # ~0.53 headroom the expression is reaching for. That sign is what
+        # inverted every impact score: a positive numerator over a negative
+        # denominator made every score negative, and normalizing negatives by
+        # their maximum then produced an unbounded column instead of the
+        # golden's [0, 1]. Scaling to a fraction restores both.
+        #
+        # MATLAB takes the starting accuracy of *iteration 1* and reuses it for
+        # every iteration, rather than each iteration's own. That looks like an
+        # indexing slip, but it is the arithmetic the committed results were
+        # produced with, so it is reproduced here.
+        baseline_accuracy = specific_accuracy[0, 0] / 100.0
+        denominator = 1.0 - baseline_accuracy
+        if denominator == 0:
+            continue
+
         for leg_id in unique_legislators:
-            # For each legislator, compute their score across all iterations
-            mask = (leg_array == leg_id)  # (n_iters, n_legs_per_iter)
+            mask = leg_array == leg_id  # (n_iters, n_legs_per_iter)
 
-            # Delta score weighted by placement
-            delta_score = specific_delta * mask
-            placement = np.sum(mask[:, :len(placement_points)] * placement_points, axis=1)
-
-            # Score = sum of (delta_score * placement) / (1 - starting_accuracy)
-            starting_acc = specific_accuracy[:, 0]
-            denom = 1.0 - starting_acc
-            denom[denom == 0] = 1.0  # avoid division by zero
-
-            score = np.sum(delta_score @ placement_points) / np.mean(denom) if denom.mean() != 0 else 0.0
-
-            # Simpler faithful port: replicate MATLAB's exact computation
-            leg_score = 0.0
-            for j in range(n_iters):
-                delta_row = specific_delta[j] * mask[j]
-                place_row = mask[j, :len(placement_points)].astype(float) * placement_points
-                contribution = np.dot(delta_row, place_row)
-                denom_j = 1.0 - specific_accuracy[j, 0]
-                if denom_j != 0:
-                    leg_score += contribution / denom_j
+            # Placement weight is summed over *all* iterations before being
+            # applied, so a legislator repeatedly drawn into an influential
+            # position is weighted by how often that happened, not just by the
+            # position itself (processLegislatorImpacts.m:65).
+            placement = mask[:, : len(placement_points)].sum(axis=0) * placement_points
+            leg_score = float(((specific_delta * mask) @ placement).sum() / denominator)
 
             master_list.append((int(leg_id), leg_score))
 
@@ -119,8 +123,17 @@ def process_legislator_impacts(
 
     # Normalize
     agg["coverage"] = agg["coverage"] / len(bill_ids)
-    max_results = agg["results"].abs().max()
-    if max_results > 0:
+
+    # Divide by the maximum, matching processLegislatorImpacts.m:81.
+    #
+    # With the accuracy denominator read as a fraction (see above), scores in
+    # a normal run are positive and this bounds the column to (0, 1] — the
+    # shape every committed MATLAB output has. A run whose accuracy falls on
+    # average produces negative scores, and dividing those by their
+    # least-negative element leaves values above 1.0; that is a property of
+    # normalizing by a signed maximum rather than a defect.
+    max_results = agg["results"].max()
+    if max_results != 0:
         agg["results"] = agg["results"] / max_results
 
     return agg
