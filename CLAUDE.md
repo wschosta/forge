@@ -128,7 +128,7 @@ discovered by running every state rather than the three with goldens:
 | State | Status |
 |-------|--------|
 | KY | **No output.** `legiscan_data/KY/` has zero rollcall rows — a data gap, not a code defect. |
-| ME | **Substantially incomplete** (31 House / 6 Senate bills). Maine records passage as parliamentary abbreviations — "Acc Maj OTP Rep" — which the passage pattern does not model; only 84 of 2,514 rollcalls are recognised. Deciding which motions count is a domain judgement, so it is left open. |
+| ME | Covered as of the floor-passage fix (123 House / 69 Senate). Maine's decisive floor vote is **enactment**, not anything named "passage"; committee-report acceptance and veto motions are excluded by author decision — see `forge.passage` for why that is *not* a committee-vote exclusion. |
 
 A state whose rollcall vocabulary is unrecognised produces **empty matrices
 while the run exits successfully**. New York was in this state until the
@@ -143,6 +143,42 @@ bare `PASSAGE` was measured and would additionally match committee "Do Pass"
 motions in OR (+124), OH (+446), CA (+574) and US (+3) — silently changing
 results for states that currently reproduce MATLAB exactly.
 
+### Coverage audit — two states still under-cover, one verified correct
+
+Every state's unmatched motions were reviewed after the Maine fix. Most
+unmatched text is correctly excluded (committee "Do pass", amendments, tabling
+motions). Three cases needed measuring, and **two are open questions for the
+authors**:
+
+| State | Bills covered now | Would be newly covered | Verdict |
+|-------|------------------|------------------------|---------|
+| **OH** | 618 | **+417 (+67%)** | **open** — real gap |
+| **VT** | 81 | **+20 (+25%)** | **open** — real gap |
+| MT | 2045 | +54 | **correctly excluded** |
+
+**Ohio** records passage as "House/Senate Favorable Passage", "House - Bill
+Passed (Vote)", "House Passed", "Senate Passed" — 1,143 rollcalls none of which
+match. Ohio matches only via "Third Consideration", so roughly **40% of its
+passage votes are currently invisible**. Unlike New York this does not produce
+empty output, which is why it survived the last pass: partial coverage looks
+exactly like a less active legislature.
+
+**Vermont** phrases the motion as a question — "Shall the bill pass?", "Shall
+the bill pass in concurrence with proposal of amendment?" — 81 unmatched.
+
+**Montana** was the one that looked worst by raw count (3,867 unmatched "2nd
+Reading Passed") and is the one that is *right*. Montana's second reading is a
+Committee-of-the-Whole floor vote that precedes third reading on the same bill:
+2,042 of the 2,096 bills involved already have a matched third-reading vote, so
+including them would double-count rather than extend coverage. Leave it alone.
+
+Both open cases carry the same hazard, which is why they were not simply
+patched: `process_chamber_votes` accumulates agreement for *every* matching
+floor vote on a bill, so adding a second phrasing double-counts the bills that
+have both (180 in Ohio, 22 in Vermont) while genuinely extending the rest.
+Deciding whether "House Passed" is a distinct event from "Third Consideration"
+or a duplicate record of it is a domain judgement, like Maine's.
+
 ## Known Issues / Technical Debt
 
 1. Committee vote processing is commented out in `processChamberVotes.m`; committee matrices are always empty.
@@ -155,7 +191,32 @@ results for states that currently reproduce MATLAB exactly.
 8. Third-party MEX binaries (`CStrAinBP.mexw64`, `xml2struct.mexw64`) are Windows-only.
 9. Bug in `classifyBill.m`: references `text` instead of `clean_title` at line 13.
 10. Bug in `outputBillInformation.m`: references `senate_bill_ids` instead of `chamber_bill_ids` at line 14.
-11. Accuracy formula uses hardcoded `100` instead of actual legislator count.
+11. Accuracy formula uses hardcoded `100` instead of actual legislator count. **Resolved in the port — see below.**
+
+## Accuracy Is Scaled by the Real Roster
+
+MATLAB divided prediction accuracy by a literal `100` (`predictOutcomes.m:149`).
+That constant stands in for the number of legislators and is correct only for a
+100-seat chamber — right for the Indiana House, wrong for every Senate.
+
+The port divides by the legislators who actually cast a recorded vote
+(`bayes.py`). **This is the authors' decision and there is deliberately no
+compatibility mode**: no flag reproduces the old numbers.
+
+The divergence is not small, and Senate figures from this pipeline **do not
+compare to any previously published Senate number**:
+
+| Chamber | MATLAB | Port | Difference |
+|---------|--------|------|------------|
+| House (100 seats) | 95.00% | 95.00% | 0.00 pts |
+| Indiana Senate (51) | 95.00% | 90.20% | 4.80 pts |
+| Wisconsin Senate (34) | 95.00% | 85.29% | 9.71 pts |
+| Oregon Senate (29) | 95.00% | 82.76% | 12.24 pts |
+
+Anyone finding Senate accuracies "wrong" against the committed MATLAB outputs
+should check this first — it is expected, and independent of every other
+documented difference. `tests/test_predict/test_bayes.py::TestAccuracyDenominator`
+pins all of it.
 
 ## Bill Classification
 

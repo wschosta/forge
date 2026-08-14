@@ -12,9 +12,25 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from forge.checkpoint import Checkpoint
 from forge.predict.bayes import predict_bill
 
 logger = logging.getLogger(__name__)
+
+#: Marker recorded for a bill that produced no prediction. Distinguishing "not
+#: attempted" from "attempted and yielded nothing" is what stops a resumed run
+#: retrying the unpredictable bills on every restart.
+#:
+#: It is matched by *content*, not identity. A sentinel object compared with
+#: ``is`` looks correct and works in the same process, then silently fails after
+#: a checkpoint round-trip because unpickling reconstructs a different object —
+#: at which point the marker gets treated as a real result.
+_SKIPPED = {"__forge_skipped__": True}
+
+
+def _is_skipped(value: object) -> bool:
+    """Whether a checkpoint payload marks a bill as having produced nothing."""
+    return isinstance(value, dict) and value.get("__forge_skipped__") is True
 
 
 def predict_outcomes(
@@ -108,6 +124,7 @@ def run_monte_carlo(
     chamber_size: int,
     monte_carlo_number: int,
     bayes_initial: float = 0.5,
+    checkpoint: Checkpoint | None = None,
 ) -> dict:
     """Run Monte Carlo prediction across all bills.
 
@@ -123,6 +140,10 @@ def run_monte_carlo(
         chamber_size: Expected chamber size.
         monte_carlo_number: Number of MC iterations.
         bayes_initial: Prior probability.
+        checkpoint: Optional store of per-bill results. When supplied, bills
+            already present are reloaded rather than recomputed, so an
+            interrupted run resumes. Each bill's result depends only on that
+            bill, so resuming is exact rather than approximate.
 
     Returns:
         Dict with keys: 'accuracy_list' (bills x MC), 'accuracy_delta' (bills x MC),
@@ -138,16 +159,33 @@ def run_monte_carlo(
     result_steps: list[list[np.ndarray]] = []
     result_bill_ids: list[int] = []
 
+    # Checkpoint keys carry the chamber and iteration count so a House run and a
+    # Senate run — or the same chamber at a different scale — cannot be resumed
+    # from each other's partial results.
+    prefix = f"mc_{chamber}_m{monte_carlo_number}_bill"
+    resumed = 0
+
     for bill_id in bill_ids:
         bill = bill_set.get(bill_id)
         if bill is None:
             continue
 
-        out = predict_outcomes(
-            bill, bill_id, ids,
-            chamber_sponsor_matrix, chamber_specifics,
-            chamber, chamber_size, monte_carlo_number, bayes_initial,
-        )
+        out = checkpoint.load(f"{prefix}{bill_id}") if checkpoint else None
+        if out is None:
+            out = predict_outcomes(
+                bill, bill_id, ids,
+                chamber_sponsor_matrix, chamber_specifics,
+                chamber, chamber_size, monte_carlo_number, bayes_initial,
+            )
+            # A bill that yields nothing is checkpointed as such, so a resumed
+            # run does not repeatedly retry the bills that cannot be predicted.
+            if checkpoint:
+                checkpoint.save(f"{prefix}{bill_id}", out if out is not None else _SKIPPED)
+        elif _is_skipped(out):
+            resumed += 1
+            out = None
+        else:
+            resumed += 1
 
         if out is None:
             continue
@@ -159,6 +197,9 @@ def run_monte_carlo(
         result_bill_ids.append(bill_id)
 
         logger.info("Bill %d processed (%d/%d)", bill_id, len(result_bill_ids), len(bill_ids))
+
+    if resumed:
+        logger.info("Resumed %d/%d bills from checkpoint", resumed, len(bill_ids))
 
     if not result_accuracy:
         return {
@@ -191,6 +232,7 @@ def monte_carlo_prediction(
     outputs_directory: str | None = None,
     recompute: bool = True,
     bayes_initial: float = 0.5,
+    checkpoint: Checkpoint | None = None,
 ) -> dict:
     """Top-level Monte Carlo prediction entry point with caching.
 
@@ -209,16 +251,16 @@ def monte_carlo_prediction(
         outputs_directory: Directory for saving results CSVs.
         recompute: If True, always recompute. If False, use cache.
         bayes_initial: Prior probability.
+        checkpoint: Optional per-bill checkpoint, so an interrupted run resumes.
 
     Returns:
         Dict from run_monte_carlo with added 'results_table' from impact analysis.
     """
-    # TODO: Add caching support (check for existing .pkl files)
-
     mc_results = run_monte_carlo(
         bill_ids, bill_set, chamber_people,
         chamber_sponsor_matrix, chamber_matrix,
         chamber, chamber_size, monte_carlo_number, bayes_initial,
+        checkpoint=checkpoint,
     )
 
     # Process legislator impacts

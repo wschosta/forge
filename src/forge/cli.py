@@ -50,6 +50,14 @@ def cli(verbose: bool) -> None:
 )
 @click.option("--legiscan-dir", type=click.Path(), default="legiscan_data", help="LegiScan data directory.")
 @click.option("--data-dir", type=click.Path(), default="data", help="Output data directory.")
+@click.option(
+    "--checkpoint-dir",
+    type=click.Path(),
+    default=None,
+    help="Store Monte Carlo and Elo progress here so an interrupted run resumes "
+         "instead of restarting. Resuming is exact. Delete the directory to "
+         "force a clean run.",
+)
 def run(
     state: str,
     reprocess: bool,
@@ -65,6 +73,7 @@ def run(
     classifier: str,
     legiscan_dir: str,
     data_dir: str,
+    checkpoint_dir: str | None,
 ) -> None:
     """Run the Forge pipeline for a state."""
     config = ForgeConfig(
@@ -84,7 +93,10 @@ def run(
 
     from forge.pipeline.runner import run_pipeline
 
-    results = run_pipeline(config, legiscan_dir=legiscan_dir, data_dir=data_dir)
+    results = run_pipeline(
+        config, legiscan_dir=legiscan_dir, data_dir=data_dir,
+        checkpoint_dir=checkpoint_dir,
+    )
 
     # Summary
     for chamber in ["house", "senate"]:
