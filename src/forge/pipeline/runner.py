@@ -11,6 +11,7 @@ Runs the full Forge analysis pipeline for a given state:
 
 from __future__ import annotations
 
+import hashlib
 import logging
 from collections.abc import Callable
 from pathlib import Path
@@ -26,6 +27,7 @@ from forge.ingest.csv_reader import read_all_csv
 from forge.matrices.agreement import process_chamber_votes
 from forge.matrices.rollcalls import process_chamber_rollcalls
 from forge.models.bill import Bill
+from forge.passage import PASSAGE_SIGNATURE
 
 logger = logging.getLogger(__name__)
 
@@ -288,6 +290,61 @@ def _init_bills(
     return bill_set
 
 
+def _matrix_signature(
+    config: ForgeConfig,
+    bill_set: dict[int, Bill],
+    chamber_people: pd.DataFrame,
+    chamber: str,
+) -> str:
+    """Fingerprint every input the matrix stage reads, for cache validation.
+
+    Reusing a cached matrix is only safe if nothing it was built from has
+    changed, and "nothing has changed" is not something a timestamp can
+    establish — a reclassified bill set or an edited passage pattern leaves file
+    times untouched while changing every cell. So the cache key is a digest of
+    the inputs themselves: the roster, and for each bill the fields
+    ``process_chamber_votes`` actually consults.
+
+    Computing it costs well under a second against the minutes of matrix
+    building it guards, and a miss is merely slow, whereas a false hit would be
+    silently wrong.
+
+    Args:
+        config: Pipeline configuration.
+        bill_set: The initialised bills.
+        chamber_people: The roster for this chamber.
+        chamber: 'house' or 'senate'.
+
+    Returns:
+        A hex digest identifying this exact set of matrix inputs.
+    """
+    digest = hashlib.sha256()
+    digest.update(
+        f"v1|{config.state_id}|{chamber}|{config.competitive_threshold}"
+        f"|{config.classifier}|{PASSAGE_SIGNATURE}|".encode()
+    )
+    for sponsor_id in chamber_people["sponsor_id"].tolist():
+        digest.update(f"{int(sponsor_id)},".encode())
+
+    digest.update(b"|bills|")
+    for bill_id in sorted(bill_set):
+        bill = bill_set[bill_id]
+        chamber_data = getattr(bill, f"{chamber}_data", None)
+        competitive = getattr(chamber_data, "competitive", None) if chamber_data else None
+        passed = getattr(bill, f"passed_{chamber}", -1)
+        digest.update(f"{bill_id}:{bill.issue_category}:{passed}:{competitive}:".encode())
+        digest.update(",".join(str(s) for s in bill.sponsors).encode())
+        if chamber_data is not None:
+            for vote in chamber_data.chamber_votes:
+                # Description drives the passage match; the voter counts stand in
+                # for the vote lists, which are what actually enters the matrix.
+                digest.update(
+                    f"|{vote.description}#{len(vote.yes_list)}/{len(vote.no_list)}".encode()
+                )
+        digest.update(b";")
+    return digest.hexdigest()
+
+
 def run_pipeline(
     config: ForgeConfig,
     legiscan_dir: str | Path = "legiscan_data",
@@ -377,16 +434,39 @@ def run_pipeline(
         # Categories to process (0 = all, then 1-11)
         categories = list(range(12)) if config.generate_all_categories else [0]
 
+        # Matrix building costs a couple of minutes per state and is entirely
+        # determined by its inputs, so a run that is only resuming a Monte Carlo
+        # or Elo stage should not pay for it again. The signature covers every
+        # input the stage reads, so a cached matrix is reused only when it would
+        # have been recomputed identically. `--recompute` skips the cache
+        # entirely, which is what that flag has always claimed to mean.
+        signature = None
+        if checkpoint.enabled and not config.recompute:
+            signature = _matrix_signature(config, bill_set, chamber_people, chamber)
+
         for category in categories:
             logger.info("  Category %d...", category)
 
-            # Build matrices
-            matrix_results = process_chamber_votes(
-                bill_set, chamber_people, chamber,
-                category=category,
-                competitive_threshold=config.competitive_threshold,
-                show_warnings=config.show_warnings,
-            )
+            cache_key = f"matrix_{chamber}_cat{category}"
+            matrix_results = None
+            if signature is not None:
+                cached = checkpoint.load(cache_key)
+                if cached is not None and cached.get("signature") == signature:
+                    matrix_results = cached["results"]
+                    logger.info("    reused cached matrices")
+
+            if matrix_results is None:
+                matrix_results = process_chamber_votes(
+                    bill_set, chamber_people, chamber,
+                    category=category,
+                    competitive_threshold=config.competitive_threshold,
+                    show_warnings=config.show_warnings,
+                    state_id=state,
+                )
+                if signature is not None:
+                    checkpoint.save(
+                        cache_key, {"signature": signature, "results": matrix_results}
+                    )
 
             # Export CSVs
             from forge.export.writer import write_tables
@@ -435,7 +515,7 @@ def run_pipeline(
                 config.monte_carlo_number,
                 str(prediction_dir), str(outputs_dir),
                 config.recompute_montecarlo,
-                checkpoint=checkpoint,
+                checkpoint=checkpoint, state_id=state,
             )
             results_all[chamber]["mc_results"] = mc_results
 

@@ -27,6 +27,7 @@ def _filter_bills_by_category(
     chamber_size: int,
     category_flags: list[int],
     issue_code_count: int,
+    state_id: str | None = None,
 ) -> tuple[list[list[int]], list[int]]:
     """Filter bills into category buckets.
 
@@ -61,7 +62,7 @@ def _filter_bills_by_category(
             continue
 
         # Check for passage vote using shared helper
-        _yes_ids, _no_ids, legislator_list = find_passage_vote(bill, chamber, ids)
+        _yes_ids, _no_ids, legislator_list = find_passage_vote(bill, chamber, ids, state_id)
         if legislator_list is None or len(legislator_list) < chamber_size * 0.5:
             continue
 
@@ -121,7 +122,7 @@ def elo_monte_carlo(
     # Filter bills into category buckets
     category_capture, filtered_flags = _filter_bills_by_category(
         bill_ids, bill_set, chamber, chamber_matrix, chamber_size,
-        category_flags, issue_code_count,
+        category_flags, issue_code_count, config.state_id,
     )
 
     if not category_capture:

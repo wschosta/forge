@@ -23,7 +23,16 @@ import pytest
 
 import forge
 from forge.ingest.csv_reader import read_all_csv
-from forge.passage import is_passage_description
+from forge.passage import STATE_TERMS, is_passage_description
+
+#: Exact matched-rollcall counts per state. Unlike the floors below these are
+#: equalities, because they are what proves the per-state vocabulary is a
+#: refactor and not a change: every count here is what the previous single
+#: global pattern produced.
+EXACT_MATCHES = {
+    "IN": 3227, "OR": 2512, "WI": 856, "NY": 10127, "ME": 446,
+    "VT": 216, "MT": 4423, "OH": 2111, "CA": 16160, "US": 638,
+}
 
 #: States whose rollcall descriptions must yield at least this many passage
 #: matches. The floors are set well below the measured counts so ordinary data
@@ -75,6 +84,65 @@ def _descriptions(state: str) -> pd.Series:
     """Return every non-null rollcall description for a state, as strings."""
     rollcalls = read_all_csv("rollcalls", state, "legiscan_data")
     return rollcalls["description"].dropna().astype(str)
+
+
+@pytest.mark.parametrize("state", sorted(EXACT_MATCHES))
+def test_state_vocabulary_matches_exactly_what_the_global_pattern_did(state: str) -> None:
+    """Scoping terms per state must not change any state's result.
+
+    This is the property that makes the per-state table a refactor rather than a
+    scientific change. Each count is what the previous single global pattern
+    produced; if scoping Ohio's terms to Ohio quietly cost some other state a
+    vote, or cost Ohio one, it shows up here as an inequality rather than as a
+    silently different matrix months later.
+    """
+    matches = sum(is_passage_description(d, state) for d in _descriptions(state))
+
+    assert matches == EXACT_MATCHES[state], (
+        f"{state}: per-state matching yields {matches}, but the global pattern "
+        f"yielded {EXACT_MATCHES[state]}. The per-state split was supposed to be "
+        f"result-neutral."
+    )
+
+
+@pytest.mark.parametrize("state", sorted(EXACT_MATCHES))
+def test_restricting_to_one_state_never_loses_a_match(state: str) -> None:
+    """A state's own vocabulary must find everything the union finds, for it.
+
+    The union of every state's terms is strictly more permissive, so it can only
+    ever match more. Equality here is what says the extra terms in the union are
+    genuinely irrelevant to this state — i.e. that no state is quietly relying on
+    another's vocabulary.
+    """
+    descriptions = _descriptions(state)
+    scoped = sum(is_passage_description(d, state) for d in descriptions)
+    union = sum(is_passage_description(d) for d in descriptions)
+
+    assert scoped == union, (
+        f"{state}: scoped matching found {scoped} but the union found {union}. "
+        f"{state} is relying on another state's terms, which means the table "
+        f"assigns them to the wrong state."
+    )
+
+
+def test_every_state_specific_term_is_used_by_its_state() -> None:
+    """A term scoped to a state must actually match something there.
+
+    A term that matches nothing is either misspelled or left over from a
+    vocabulary that has since changed, and in both cases it is misleading — it
+    documents a phrasing the state does not use.
+    """
+    unused: list[str] = []
+    for state, terms in STATE_TERMS.items():
+        if state not in EXACT_MATCHES:
+            continue  # no committed rollcall data to check against
+        descriptions = _descriptions(state)
+        for term in terms:
+            pattern = re.compile(term, re.IGNORECASE)
+            if not any(pattern.search(d) for d in descriptions):
+                unused.append(f"{state}:{term}")
+
+    assert not unused, f"these state-specific terms match nothing in their state: {unused}"
 
 
 def test_only_one_module_defines_the_passage_vocabulary() -> None:
