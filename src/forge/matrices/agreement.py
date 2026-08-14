@@ -280,6 +280,7 @@ def process_chamber_votes(
     chamber: str,
     category: int | list[int] = 0,
     competitive_threshold: float = 0.85,
+    state_id: str | None = None,
     show_warnings: bool = False,
 ) -> MatrixResults:
     """Build all agreement and sponsor matrices for one chamber.
@@ -295,6 +296,9 @@ def process_chamber_votes(
         chamber: 'house' or 'senate'.
         category: Issue category to filter by (0 = all categories 1-11).
         competitive_threshold: Threshold for competitive votes (default 0.85).
+        state_id: Two-letter state code, so the state's own passage vocabulary is
+            used. Omitting it matches against every state's, which can only
+            over-match; callers that know their state should pass it.
         show_warnings: If True, log warnings.
 
     Returns:
@@ -359,7 +363,7 @@ def process_chamber_votes(
         no_ids: list[str] = []
 
         for vote in bill_chamber_data.chamber_votes:
-            if not is_passage_description(vote.description):
+            if not is_passage_description(vote.description, state_id):
                 continue
 
             # Get voter IDs filtered to known legislators

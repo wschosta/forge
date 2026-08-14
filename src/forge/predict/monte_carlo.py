@@ -43,6 +43,7 @@ def predict_outcomes(
     chamber_size: int,
     monte_carlo_number: int = 1,
     bayes_initial: float = 0.5,
+    state_id: str | None = None,
 ) -> dict | None:
     """Predict outcomes for a specific bill with Monte Carlo iterations.
 
@@ -84,7 +85,7 @@ def predict_outcomes(
             bill, bill_id, ids,
             sponsor_values, sponsor_row_names, sponsor_col_names,
             chamber_specifics, chamber, chamber_size,
-            rng=rng, bayes_initial=bayes_initial,
+            rng=rng, bayes_initial=bayes_initial, state_id=state_id,
         )
 
         if result is None:
@@ -125,6 +126,7 @@ def run_monte_carlo(
     monte_carlo_number: int,
     bayes_initial: float = 0.5,
     checkpoint: Checkpoint | None = None,
+    state_id: str | None = None,
 ) -> dict:
     """Run Monte Carlo prediction across all bills.
 
@@ -144,6 +146,7 @@ def run_monte_carlo(
             already present are reloaded rather than recomputed, so an
             interrupted run resumes. Each bill's result depends only on that
             bill, so resuming is exact rather than approximate.
+        state_id: Two-letter state code, passed through to the passage match.
 
     Returns:
         Dict with keys: 'accuracy_list' (bills x MC), 'accuracy_delta' (bills x MC),
@@ -176,6 +179,7 @@ def run_monte_carlo(
                 bill, bill_id, ids,
                 chamber_sponsor_matrix, chamber_specifics,
                 chamber, chamber_size, monte_carlo_number, bayes_initial,
+                state_id=state_id,
             )
             # A bill that yields nothing is checkpointed as such, so a resumed
             # run does not repeatedly retry the bills that cannot be predicted.
@@ -233,6 +237,7 @@ def monte_carlo_prediction(
     recompute: bool = True,
     bayes_initial: float = 0.5,
     checkpoint: Checkpoint | None = None,
+    state_id: str | None = None,
 ) -> dict:
     """Top-level Monte Carlo prediction entry point with caching.
 
@@ -252,6 +257,7 @@ def monte_carlo_prediction(
         recompute: If True, always recompute. If False, use cache.
         bayes_initial: Prior probability.
         checkpoint: Optional per-bill checkpoint, so an interrupted run resumes.
+        state_id: Two-letter state code, passed through to the passage match.
 
     Returns:
         Dict from run_monte_carlo with added 'results_table' from impact analysis.
@@ -260,7 +266,7 @@ def monte_carlo_prediction(
         bill_ids, bill_set, chamber_people,
         chamber_sponsor_matrix, chamber_matrix,
         chamber, chamber_size, monte_carlo_number, bayes_initial,
-        checkpoint=checkpoint,
+        checkpoint=checkpoint, state_id=state_id,
     )
 
     # Process legislator impacts

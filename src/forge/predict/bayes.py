@@ -206,8 +206,8 @@ def compute_sponsor_effect(
     return sponsor_specific
 
 
-def find_passage_vote(bill, chamber: str, ids: list[str]):
-    """Find the passage vote (THIRD/3RD/ON PASSAGE) for a bill.
+def find_passage_vote(bill, chamber: str, ids: list[str], state_id: str | None = None):
+    """Find the passage vote for a bill.
 
     Shared helper extracted from the duplicated logic in predictOutcomes.m
     and eloPrediction.m.
@@ -216,6 +216,11 @@ def find_passage_vote(bill, chamber: str, ids: list[str]):
         bill: A Bill object.
         chamber: 'house' or 'senate'.
         ids: List of valid legislator IDs.
+        state_id: Two-letter state code, so the state's own passage vocabulary
+            is used. Omitting it matches against every state's, which is more
+            permissive and so can only over-match — but callers that know their
+            state should pass it, since that is what makes a state's terms
+            unable to affect any other.
 
     Returns:
         Tuple of (yes_ids, no_ids, legislator_list) or (None, None, None)
@@ -230,7 +235,7 @@ def find_passage_vote(bill, chamber: str, ids: list[str]):
     # Maine were recognised by `process_chamber_votes` and invisible here, so
     # both states built agreement matrices that no prediction could ever use.
     for vote in reversed(chamber_data.chamber_votes):
-        if is_passage_description(vote.description):
+        if is_passage_description(vote.description, state_id):
             yes_ids = create_id_strings(vote.yes_list, ids)
             no_ids = create_id_strings(vote.no_list, ids)
             return yes_ids, no_ids, yes_ids + no_ids
@@ -250,6 +255,7 @@ def predict_bill(
     chamber_size: int,
     rng: np.random.Generator | None = None,
     bayes_initial: float = 0.5,
+    state_id: str | None = None,
 ) -> dict | None:
     """Run a single-pass prediction for one bill.
 
@@ -269,6 +275,7 @@ def predict_bill(
         chamber_size: Expected chamber size for minimum-vote check.
         rng: Numpy random generator for shuffling.
         bayes_initial: Prior probability.
+        state_id: Two-letter state code, passed through to the passage match.
 
     Returns:
         Dict with keys: 'yes_ids', 'no_ids', 'legislator_order', 'direction',
@@ -279,7 +286,7 @@ def predict_bill(
         return None
 
     # Find passage vote
-    yes_ids, no_ids, legislator_list = find_passage_vote(bill, chamber, ids)
+    yes_ids, no_ids, legislator_list = find_passage_vote(bill, chamber, ids, state_id)
     if legislator_list is None or len(legislator_list) < chamber_size * 0.5:
         return None
 

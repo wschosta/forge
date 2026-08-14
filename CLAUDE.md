@@ -138,10 +138,49 @@ required the literal "ON PASSAGE". The pipeline now logs a WARNING when a
 chamber matches no bills, and `tests/test_integration/test_passage_vocabulary.py`
 asserts a floor on matches for every state with committed data.
 
-When extending `_PASSAGE_PATTERN`, keep the change *additive*. Relaxing it to a
-bare `PASSAGE` was measured and would additionally match committee "Do Pass"
-motions in OR (+124), OH (+446), CA (+574) and US (+3) — silently changing
-results for states that currently reproduce MATLAB exactly.
+### The passage vocabulary is per state
+
+`forge/passage.py` holds `SHARED_TERMS` plus a `STATE_TERMS` table. Extending a
+state's vocabulary means adding to its entry, not to a global pattern.
+
+It was global until it had accumulated terms for four separate states, and it
+worked only because every extension was manually measured against all eleven
+states to prove it changed nothing elsewhere. That was a convention, and
+conventions are not enforced: an unanchored `BILL PASSED` added for Ohio would
+have silently swept in **845 Montana committee motions**, and only the
+measurement caught it. Scoping terms to the state that needs them makes the
+isolation structural.
+
+The split is a refactor, not a change — the per-state matcher reproduces the
+global pattern's counts exactly for all ten states with data, and
+`test_passage_vocabulary.py` asserts those as equalities rather than floors.
+Two further tests keep the table honest: no state may rely on another's terms,
+and a term scoped to a state must actually match something there.
+
+`is_passage_description(desc)` without a state still matches against the union,
+which is strictly more permissive and so can only over-match. Callers that know
+their state pass it; the pipeline, prediction and Elo paths all do.
+
+Still keep extensions *additive within a state*. Relaxing Ohio's terms to a bare
+`PASSAGE` was measured and would match committee "Do Pass" motions in OR (+124),
+OH (+446), CA (+574) and US (+3).
+
+### Matrix results are cached when a checkpoint directory is given
+
+`--checkpoint-dir` now caches the matrix stage as well as Monte Carlo and Elo,
+so resuming a long run stops re-deriving matrices it already wrote. Measured on
+Indiana: 50s cold against 30s warm, with all 204 output CSVs byte-identical
+either way.
+
+The cache key is a digest of every input `process_chamber_votes` reads — roster,
+per-bill category, passage flags, competitiveness, sponsors, vote descriptions
+and voter counts, the competitive threshold, the classifier, and the passage
+vocabulary itself. A timestamp would not do: reclassifying bills or editing a
+passage term changes every matrix while leaving file times untouched.
+`--recompute` bypasses the cache outright, which is what that flag always
+claimed to mean and previously did not do for this stage.
+`tests/test_pipeline/test_matrix_cache.py` perturbs each input in turn and
+asserts the key moves.
 
 ### Coverage audit — two states still under-cover, one verified correct
 
@@ -351,6 +390,37 @@ Elo is validated for structure and rating invariants but not values: MATLAB's
 goldens are at 15,000 Monte Carlo iterations, roughly a day of compute, so a
 test-scale run has not converged and any tolerance loose enough to pass would
 prove nothing.
+
+### How far from converged — measured, so nobody repeats the experiment
+
+A full Indiana pilot was run at 1,000 iterations, both chambers, and compared
+against the committed MATLAB outputs. **Monte Carlo is usable at that scale and
+Elo is not**, which is worth knowing before spending a day of compute:
+
+| Output | Agreement with MATLAB at 1,000 iterations |
+|--------|-------------------------------------------|
+| MC coverage | Pearson 0.9994 House, 0.9997 Senate |
+| MC impact results | Pearson 0.786 House, 0.944 Senate |
+| **Elo** | **Spearman 0.04 — no rank agreement at all** |
+
+The Elo figure is non-convergence rather than a defect, and the tell is
+dispersion. Elo scores all start at 1500 and random-order averaging pulls them
+together as iterations accumulate:
+
+* pilot at 1,000 iterations — sd **227**, range 828
+* MATLAB golden at 15,000 — sd **48.8**, range 285
+
+The pilot carries 4.6× the golden's spread, i.e. ordering noise has not averaged
+out. Two further checks confirm the machinery itself is sound: variable-K and
+fixed-K agree with each other at Pearson 0.992 (the golden's own figure is
+0.984), and per-category rankings within the pilot are mutually uncorrelated
+(category 0 against category 9, Spearman −0.02) — the signature of noise
+dominance, not of a broken update rule.
+
+**So Elo genuinely requires the production 15,000 iterations.** There is no
+shortcut and no cheaper scale at which its numbers mean anything. Monte Carlo,
+by contrast, is already trustworthy at 1,000, so a quick sanity run of the
+prediction half is worth doing and a quick Elo run is not.
 
 Tolerances are set just above measured error so they act as regression gates.
 

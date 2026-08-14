@@ -87,6 +87,7 @@ def elo_prediction(
             sponsor_values, sponsor_row_names, sponsor_col_names,
             chamber_specifics, chamber, chamber_size,
             rng=bill_rng, bayes_initial=config.bayes_initial,
+            state_id=config.state_id,
         )
 
         if result is None:
